@@ -1,0 +1,1737 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=ec1b4717d08f17a417a70c4e8f25f7a8&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=175401";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="بين, حوار, صاحب, غناء, قرآن, هادئ, وصاحب" />
+	<meta name="description" content="حوار هادئ بين صاحب قرآن وصاحب غناء 
+ يعقوب عبد الرحمن محمد 
+ 	 	  
+ 
+ 
+إن  الحمد لله نحمده و نستعينه ونستغفره ونتوب إليه ونعوذ بالله من شرور   أنفسنا  ومن سيئات أعملنا من يهده الله فلا مضل له ومن يضلل فلا هادى له   وأشهد أن لا اله  إلا الله واشهد أن محمدا عبده ورسوله 
+ أما بعد 
+ صح عن  النبي - صلى الله عليه وسلم - أنه قال: &quot; إن بين يدي الساعة سنين  خداعة  يكذب  فيها الصادق ويصدق فيها الكاذب ويتكلم الرويبضة قيل وما  الرويبضة  قال: حثالة الناس  يتكلمون في أمر العامة &quot; والواقع شاهد على ما  ذكرنا." />
+
+	<title> حوار هادئ بين صاحب قرآن وصاحب غناء</title>
+	<link rel="canonical" href="showthread.php?t=175401&s=ec1b4717d08f17a417a70c4e8f25f7a8" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> حوار هادئ بين صاحب قرآن وصاحب غناء</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 2 من 2
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=175401&s=ec1b4717d08f17a417a70c4e8f25f7a8" title="تحديث الصفحة">حوار هادئ بين صاحب قرآن وصاحب غناء</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=175401" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;t=175401&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=addsubscription&amp;t=175401" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;search_type=1&amp;searchthreadid=175401&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="175401" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_911819">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-06-27,&nbsp;<span class="time">04:44 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post911819" href="showthread.php?t=175401&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=911819#post911819" class="postcounter">#1</a><a id="postcount911819" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,743</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> حوار هادئ بين صاحب قرآن وصاحب غناء
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_911819">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="6"><font color="red">حوار هادئ بين صاحب قرآن وصاحب غناء<br />
+</font></font></span><span style="font-family: traditional arabic"><font size="6"><font color="red"> يعقوب عبد الرحمن محمد</font></font></span><br />
+ 	 	 <span style="font-family: traditional arabic"><font size="5"><br />
+</font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><br />
+</font></span><span style="font-family: traditional arabic"><font size="5">إن  الحمد لله نحمده و نستعينه ونستغفره ونتوب إليه ونعوذ بالله من شرور   أنفسنا  ومن سيئات أعملنا من يهده الله فلا مضل له ومن يضلل فلا هادى له   وأشهد أن لا اله  إلا الله واشهد أن محمدا عبده ورسوله</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">أما بعد</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">صح عن  النبي - صلى الله عليه وسلم - أنه قال: &quot; إن بين يدي الساعة سنين  خداعة  يكذب  فيها الصادق ويصدق فيها الكاذب ويتكلم الرويبضة قيل وما  الرويبضة  قال: حثالة الناس  يتكلمون في أمر العامة &quot; والواقع شاهد على ما  ذكرنا.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وقد شكا  أصحاب رسول الله - صلى الله عليه وسلم - إلى أنس بن مالك رضى  الله عنه ما   يلقونه من الحجاج بن يوسف فقال اصبروا فإنه لا يأتي عليكم  زمان إلا والذي  بعده شر  منه حتى تلقوا ربكم، سمعته من رسول الله - صلى  الله عليه وسلم -  &quot; رواه البخاري  والواقع ـ أيضا ـ شاهد لما ذكرنا!.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وقد صح عن النبي - صلى الله عليه وسلم - أنه قال &quot; ليشربن ناس من أمتي الخمر  ويسمونها بغير اسمها &quot;</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">فشربوا الخمور وسموها: مشروبات روحية</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وتعاطوا الزنا باسم: الحرية الشخصية</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">والغناء والموسيقى باسم: الغذاء الروحي</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">والرشوة باسم: الهدية</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">والكذب والنفاق باسم: الدبلوماسية</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">والسفور والتبرج والعرى: التقدم والحضارة</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وقد تقادم العهد وطال الأمد ودرست معالم السنن وتوالت السنون وتعقبت العصور فإنعكست  الأمور وانقلبت الموازين،</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">فأصبح الحق باطلا والباطل حقا</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">والمنكر معروفا والمعروف منكرا</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">والأمر بالمعروف فضولا والنهى عن المنكر تطفلا</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">والتمسك بدين الله - تعالى -تزمتا والتمرد على شرع الله تحررا</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وبغض الكفار و معاداتهم تطرفا و موالاتهم و محبتهم توسطا واعتذارا</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">والكذب سياسة و النفاق لباقة</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">والسكوت عن قول الحق حكمة و الصدع بالحق فتنة</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و الناصح عدوا والعدو صديقا</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و المجرم بطلا و المواطن مبطلا</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و المصلح مفسدا و الداعي إلى الفساد مصلحا</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و التهور شجاعة و الفوضى حرية</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و الزواج قيدا و التعدد جريمة</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و الحب فجورا و الفجور تسلية</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و الغش ذكاء و الرشوة هدية</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و الصلاة عادة و الزكاة غرامة</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و الصوم كسلا و نوما و الحج نزهة</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و العلم تكسبا واتباع الأئمة تعصبا</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و الدعوة إلى الله تحزبا</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و تتبع الرخص دينا و الفقه جمودا</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و الفن مجونا و الرياضة غاية!!</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و هكذا انعكست الأمور و انقلبت الموازين فصارت ظهرا لبطن و رأسا لعقب ولكن:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">فجائع الدهر أنواع منوعة  ***  و للزمان مسرات و أحزان</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و للحوادث سلوان يسهلها *** و ما لما حل بالإسلام سلوان</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">من أجل هذا يذوب القلب من كمد *** إن كان في القلب إسلام وإيمان</font></span><br />
+ <br />
+ <span style="font-family: traditional arabic"><font size="5">فهلا عكست الأمر إن كنت حازما *** و لكن أضعت الحزم لو كنت تفهم</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و تزعم مع هذا انك عارف  *** كذبت يقينا في الذي تزعم</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و ما أنت إلا ظالم ثم جاهل ***   و انك بين الجاهلين مقدم</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">إذا كان هذا نصح عبد لنفسه *** فمن ذا الذي من الهدى يتعلم</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وفي مثل هذا الحال قد قال من ***  مضى و احسن فيما قاله المتكلم</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">فإن كنت لا تدري فتلك مصيبة *** وان كنت تدري فالمصيبة اعظم</font></span><br />
+ <br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> الأحاديث الصحيحة في تحريم الغناء</font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">(1) عن أبي  عامر أو أبي مالك الأشعري - رضي الله عنه - قال: قال رسول  الله - صلى   الله عليه وسلم -: &quot; ليكون من أمتي أقوام يستحلون الحر و  الحرير والخمر و  المعازف &quot;  رواه البخاري</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> تعريف المعازف: </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">في القاموس المحيط: هي الملاهي كالعود و الطنبور، و العازف اللاعب بها.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و قال ابن القيم - رحمه الله -: و هي آلات اللهو كلها لا خلاف بين أهل اللغة في  ذلك.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و قال الذهبي في سير أعلام النبلاء: المعازف اسم لكل آلات الملاهي التي يعزف بها  كالمزمار و الطنبور و الشبابة و الصنوج.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">(2) وفي رواية &quot; يمسخ منهم قردة وخنازير إلى يوم القيامة &quot; صحح هذه الزيادة الشيخ  الألباني .</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">(3) عن أنس  بن مالك - رضي الله عنه - قال قال رسول الله - صلى الله عليه  وسلم - &quot;   صوتان ملعونان في الدنيا والآخرة: مزمار عند نعمة ورنة عند  مصيبة &quot; صححه  الألباني .</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">(4) عن عبد  الله بن عباس - رضي الله عنهما - قال قال رسول الله - صلى  الله عليه   وسلم - &quot; إن الله حرم عليّ ـ أو حرم ـ الخمر والميسر والكوبة  وكل مسكر  حرام &quot; أخرجه  أبو داود وأحمد والبيهقي والطبراني وصححه الألباني</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">والكوبة هي الطبل ويدخل في معناه كل وتر ومزهر ونحو ذلك من الملاهي والغناء .</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">(5) عن  عمران بن حصين - رضي الله عنه – قال : قال رسول الله - صلى الله  عليه وسلم   -: &quot; يكون في أمتي قذف ومسخ وخسف قيل يا رسول الله ومتى ذلك  قال: إذا  ظهرت المعازف  وكثرت القيان وشربت الخمور &quot; أخرجه الترمذي في كتاب  الفتن  وصححه الألباني .</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">قوله &quot; وكثرت القيان &quot; القيان جمع قينة وهي المغنية من الإماء وتجمع على قينات أيضا .</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> نتف من أقوال المخالفين: </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">قال بعضهم:  (ومن اللهو الذي تستريح إليه النفوس وتطرب له القلوب وتنعم  به الآذان:   الغناء.. ولا بأس بأن تصحبه الموسيقى غير المثيرة).</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وقال بعضهم أيضا: (كل ما روي فيها ـ أي الأغاني ـ باطل موضوع).</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وقال ثالث: (إن الرقص على الطريقة الفرنسية فتوّة وأناقة).</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وقال آخر:  (بالنسبة للغناء إذا لم يكن فيه ما يثير الغريزة الجنسية  فإننا لا نجد   موجبا لتحريمه.. إلى أن قال: وعلى أي حال فمن المتفق عليه  أنه ما دام لا  يثير  الغريزة الجنسية ولا يشغل عن ذكر الله وعن الصلاة فليس  فيه ما يمس  الدين) ا. هـ</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">* قال  الشيخ العلامة محمد ناصر الدين الألباني - رحمه الله -: (و إني  والله  لأتعجب  أشد العجب من تتابع هؤلاء الشيوخ الأزهريين على هذا القيد  النظري  فإنهم مع مخالفتهم  للأحاديث الصحيحة ومعارضتهم لمذاهب الأئمة  الأربعة  وأقوال السلف، يختلقون عللا من  عند أنفسهم لم يقل بها أحد من  الأئمة  المتبوعين ومن أثارها استباحة الغناء  والموسيقى عندهم أيضا …إلى أن  قال:  تالله إنه لفقه لا يصدر إلا من ظاهري جامد بغيض  أو صاحب هوى غير  رشيد) أ.  هـ باختصار.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">قلت: لا عجب فإن الطيور على أشكالها تقع.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">بعض أقوال السلف في الغناء:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">1/ قال عبد  الله بن مسعود - رضي الله عنه - في قوله - تعالى -(ومن الناس  من يشتري   لهو الحديث ليضل عن سبيل الله بغير علم ويتخذها هزوا أولئك لهم  عذاب  مهين): والله  الذي لا اله غيره انه الغناء، وكذا قال عبد الله بن  عباس  ومجاهد وعكرمة وأسانيد هذه  الروايات كلها صحيحة.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">2/ وقال محمد بن الحنفية - رحمه الله - في قوله - تعالى -(واجتنبوا قول الزور):  يعني الغناء.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">3/ وقال - تعالى -(أفمن هذا الحديث تعجبون وتضحكون ولا تبكون وأنتم سامدون) يقال  سمد لنا يعني غنّى لنا في لغة حمير من أهل اليمن.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">4/ قال ابن مسعود - رضي الله عنه -: الغناء ينبت النفاق في القلب كما ينبت الماء  العشب.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">5/ قال الضحاك - رحمه الله -: الغناء مفسدة للقلب مسخطة للرب.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">6/ وسأل  رجل ابن عباس - رضي الله عنهما - عن الغناء أحلال هو أم حرام  فقال ابن  عباس  أرأيت الحق والباطل إذا جاءا يوم القيامة فأين يكون الغناء  قال مع  الباطل قال اذهب  فقد أفتيت نفسك.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">7/ وقال القاضي تقي الدين السبكي - رحمه الله -: الرقص نقص والغناء سفاهة.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">8/ وقال  ابن كثير - رحمه الله -: حسبي الله ونعم الوكيل استعمال آلات  الطرب   والاستماع إليها حرام كما دلت على ذلك الأحاديث الصحيحة، ثم استدل  بحديث  المعازف.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">9/ قال ابن  القيم - رحمه الله -: والتحقيق في السماع أنه مركب من شبهة  وشهوة وهما   الأصلان اللذان ذم الله من يتبعهما ويحكّمهما على الوحي الذي  بعث الله به  أنبياءه  ورسله قال - تعالى -(إن يتبعون إلا الظن وما تهوى  الأنفس ولقد  جاءهم من ربهم الهدى)  فالظن الشبهة، وما تهوى الأنفس الشهوة،  والهدى الذي  جاءنا من ربنا مخالف لهذا وهذا.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> من أقوال الأئمة الأربعة في حكم الغناء: </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">* لما نسب  ابن المطهر الشيعي إلي أهل السنة &quot; إباحة الملاهي والغناء &quot;  كذبه شيخ   الإسلام ابن تيمية في رده عليه في منهاج السنة (3/439) فقال: &quot;  هذا من  الكذب على  الأئمة الأربعة فإنهم متفقون على تحريم المعازف التي هي  آلات  اللهو كالعود ونحوه و  لو أتلفها متلف لم يضمن صورة التالف بل يحرم  عندهم  اتخاذها &quot;</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">1- وقال الإمام مالك: لما سئل عما يترخص فيه أهل المدينة من الغناء فقال: &quot;إنما  يفعله عندنا الفسّاق&quot;.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">2- وقال  الإمام محمد بن إدريس الشافعي - رحمه الله -: &quot;تركت شيئا  بالعراق يقال له   التغبير أحدثته الزنادقة يصدون به الناس عن القرآن&quot;.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> تعريف التغبير:</font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">شعر يزهد في الدنيا يغني به مغن فيضرب بعض الحاضرين بقضيب على نطع أو مخدة على  توقيع غنائه.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">3- وقال العلامة أحمد: الغناء ينبت النفاق في القلب لا يعجبني.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">4- وقال العلامة ابن القيم - رحمه الله - ما خلاصته:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">&quot;إن هذا  السماع على هذا الوجه حرام قبيح لا يبيحه أحد من المسلمين و لا  يستحسنه  إلا  من خلع جلباب الحياء و الدين عن وجهه و جاهر الله و رسوله و  دينه و  عباده بالقبيح،  و سماع مشتمل على مثل هذه الأمور قبحه مستقر في  الفطر -أو  في فطر الناس- حتى إن  الكفار ليعيرون به المسلمين ودينهم&quot;ا. ه</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> أول من أحدث بدعة الرقص و التواجد: </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">سئل  العلامة أبوبكر الطرطوشي المالكي القرطبي - رحمه الله - عن قوم في  مكان  يقرؤون  شيئا من القرآن ثم ينشد لهم منشد شيئا من الشعر فيرقصون  ويطربون و  يضربون بالدف و  الشبابة هل الحضور معهم حلال أم حرام؟</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> فأجاب: </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">مذهب  الصوفية هذا بطالة و ضلالة، و ما الإسلام إلا كتاب الله و سنة  رسوله - صلى   الله عليه وسلم - و أما الرقص و التواجد فأول من أحدثه أصحاب  السامري  لما اتخذ لهم  عجلا جسدا له خوار فأتوا يرقصون حوله و يتواجدون وهو  -أي  الرقص- دين الكفار و عباد  العجل و إنما كان مجلس النبي - صلى الله  عليه  وسلم - و أصحابه كأن على رؤوسهم الطير  من الوقار فينبغي للسلطان و  نوابه  أن يمنعوهم من الحضور في المساجد و غيرها و لا  يحل لأحد يؤمن بالله و   اليوم الآخر أن يحضر و لا يعينهم على باطلهم هذا مذهب مالك و  أبي حنيفة و   أحمد و غيرهم من أئمة المسلمين &quot;أ. هـ</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> الحكمة من تحريم الغناء وآلات الطرب</font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">(1) الغناء  يصد عن القرآن و هو قرآن الشيطان و لا يمكن أن يجتمع في قلب  رجل واحد   قرآن الرحمن و قرآن الشيطان. قال الشافعي - رحمه الله -:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">(تركت شيئا بالعراق يقال له التغبير أحدثته الزنادقة يصدون به الناس عن القرآن) قال  ابن القيم - رحمه الله -</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> تعليقا على الإمام الشافعي هذا: </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">(و ما ذكره  الشافعي -رضي الله عنه- من أنه إحداث الزنادقة فهو كلام إمام  خبير بأصول   الإسلام فإن السماع لم يرغب فيه و يدعو إليه في الأصل إلا من  هو متهم  بالزندقة كابن  الراوندي و الفارابي و ابن سينا و أمثالهم كما ذكر  أبو عبد  الرحمن السلمي في &quot;مسألة  السماع&quot; عن ابن الراوندي قال: اختلف  العلماء  الفقهاء في السماع فأباحه قوم و كرهه  قوم فإنا أوجبه أو آمر به،  فخالف  إجماع العلماء في الأمر به.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و الفارابي  كان بارعا في الغناء الذي يسمونه الموسيقى، وله فيه طريقة  عند أهل   الغناء، و حكايته مع ابن حمدان مشهورة لما ضرب فأبكاهم ثم أضحكهم  ثم نومهم  ثم خرج &quot;  أ. ه</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">(2) الغناء ينبت النفاق في القلب قال ابن القيم (الغناء يفسد القلب فإذا القلب هاج  في النفاق)</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">(3) أنه رقية الزنا و الفواحش و التشبيب بالنساء و الواقع شاهد لما ذكرنا.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">(4) الغناء يلهي عن ذكر الله - تعالى -و عن طاعته، قال بعضهم:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">أتذكر ليلة و قد اجتمعنا *** على طيب السماع إلى الصباح</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">و دارت بيننا كأس الأغاني *** فأسكرت النفوس بغير راح</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">فلم تر فيهم إلا نشاوى  *** سرورا و السرور هناك صاحي</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">إذا نادى أخو اللذات فيه أجاب*** اللهو حي على السماح</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">ولم نملك سوى المهجات  *** شيئا أرقناها لألحاظ الملاح</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">قال بعض العارفين: &quot;السماع يورث النفاق في قوم و العناد في قوم و الكذب في قوم و  الفجور في قوم و الرعونة في قوم &quot;</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">فإن قيل  فما وجه إنبات الغناء النفاق في القلب؟ فالجواب: قال ابن القيم -  رحمه  الله  -: &quot; إن للغناء خواص لها تأثير في صبغ القلب بالنفاق و نباته  فيه  كنبات الزرع  بالماء. فمن خواصه:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">أنه يلهي  القلب و يصده عن فهم القرآن و تدبره والعمل بما فيه فإن القرآن  و الغناء   لا يجتمعان في القلب أبدا لما بينهما من التضاد فإن القرآن ينهى  عن اتباع  الهوى و  يأمر بالعفة و مجانبة شهوات النفوس و أسباب الغي و ينهى  عن اتباع  خطوات الشيطان. و  الغناء يأمر بضد ذلك كله و يحسنه و يهيج  النفوس إلى  شهوات الغي فيثير كامنها و يزعج  قاطنها و يحركها إلى كل قبيح و  يسوقها  إلى وصل كل مليحة و مليح فهو و الخمر رضيعا  لبان و في تهييجهما  على  القبائح فرسا رهان فإنه صنو الخمر و رضيعه و نائبه و حليفه  و خدينه و   صديقه.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">عقد  الشيطان بينهما عقد الإخاء الذي لا يفسخ، و أحكم شريعة الوفاء التي  لا  تنسخ و  هو جاسوس القلب و سارق المروءة و سوس العقل. يتغلغل في مكامن   القلوب و يطلع على  سرائر الأفئدة و يدب إلى محل التخييل فيثير ما فيه من   الهوى و الشهوة و السخافة و  الرقاعة و الرعونة و الحماقة.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">فبينا ترى  الرجل وعليه سمة الوقار وبهاء العقل وبهجة الإيمان ووقار  الإسلام وحلاوة   القرآن فإذا استمع إلى الغناء ومال إليه نقص عقله وقل  حياؤه وذهبت مروءته  وفارقه  بهاؤه وتخلّى عنه وقاره وفرح شيطانه وشكا إلى  الله - تعالى  -إيمانه وثقل عليه قرآنه،  وقال يا رب: لا تجمع بيني وبين  قرآن عدوك في  صدر واحد فاستحسن ما كان قبل السماع  يستقبحه وأبدى من سره ما  كان يكتمه  وانتقل من الوقار والسكينة إلى كثرة الكلام  والكذب والزهزهة  والفرقعة  بالأصابع فيميل برأسه ويهزّ منكبيه ويضرب الأرض برجليه  ويدق على  أمّ رأسه  بيديه ويثب وثبات الدّباب ويدور دوران الحمار حول الدولاب ويصفق   بيديه  تصفيق النسوان ويخور من الوجد ولا كخوار الثيران وتارة يتأوه تأوه  الحزين   وتارة يزعق زعقات المجانين ولقد صدق الخبير به من أهله حيث يقول:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">أتذكر ليلة وقد اجتمعنا ***  على طيب السماع إلى الصباح</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وقد صح أن  الملائكة كانت تتنزل لاستماع قراءة أسيد بن حضير - رضي الله  عنه - وإذا   كان ذلك كذلك فإن إنشاد الأبيات بدل الآيات يستوجب أن تتنزل  الشياطين  ولابد وما  أعظم الفرق بينهما والله المستعان.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> الحوار</font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">1/ قال صاحب غناء (الفنان):</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">دعنا من  بنيات الطريق فقد ثبت عن النبي - صلى الله عليه وسلم - في  الحديث الصحيح   الذي علمه العام والخاص من إباحة الغناء، فقد جاء في الصحيح  عن عائشة -  رضي الله  عنه - قالت: دخل عليّ رسول الله - صلى الله عليه  وسلم - وعندي  جاريتين من جواري  الأنصار تغنيان بغناء الأنصار يوم بعاث  وليستا بمغنيتين  فاضطجع رسول الله - صلى  الله عليه وسلم - على الفراش  وحوّل وجهه ودخل  أبو بكر والنبي - صلى الله عليه وسلم  - متغش بثوبه  فانتهرني وفي رواية  فانتهرهما وقال: أمزمور الشيطان عند رسول الله -  صلى  الله عليه وسلم -  مرتين فأقبل عليه رسول الله - صلى الله عليه وسلم - فقال   دعهما يا أبا  بكر فإن لكل قوم عيدا وهذا عيدنا، فلما غفل غمزتهما فخرجتا.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> قال صاحب قرآن: </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> الجواب عن هذا الحديث من وجوه:  - </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">1- المستقر عند الصحابة في الأصل تحريم الغناء.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">2- إقرار النبي - صلى الله عليه وسلم - لأبي بكر في تسمية الغناء بمزمار الشيطان.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">3- قولها (وليستا بمغنيتين) فيه دليل على أن الغناء ليس حرفة لهما.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">4- إباحة الغناء هنا مقيدة لا مطلقة (في الزمان والجنس) أي في العيد وكذا العرس  بأدلة أخرى والجنس ومرادنا به الصبيات الصغيرات.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">5- لم يبح الغناء والضرب على الدف للرجال قط بل النساء الصغيرات دون البلوغ.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">6- قوله - صلى الله عليه وسلم - (إن لكل قوم عيدا وهذا عيدنا) دليل على علة الإباحة  في ذلك اليوم وهو العيد.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">7- المشروع الضرب على الدّف في العيد والعرس فقط.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">8- الحكم  يدور مع علته وجودا وعدما فإذا عدم العيد لم يبح الغناء بحال  إلا في   الأعراس بشروط وهذا الحديث من أكبر الحجج على تحريم الغناء.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">9- إن الذي  كن يقلنه هو إنشاد أشعار العرب في الشجاعة ومكارم الأخلاق  ومدحها وذم   الجبن ومساوئ الأخلاق ومع هذا أسماه صديق الأمة مزمور الشيطان  وأقره النبي  - صلى  الله عليه وسلم - على ذلك.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">10- ليس فيه آلات محرمة بل الضرب بالدف فقط.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">11- إنما أبيح الغناء يوم العيد والعرس للنساء والصبيان لنقص عقولهم:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">فلم أر في عيوب الناس عيبا ***  كنقص القادرين على التمام</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وما عجب أن النساء ترجلت ***  ولكن تأنيث الرجال عجاب!</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">2/ قال الفنان:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">فإن أثبت أن الغناء مزمار الشيطان، فلم أباح النبي - صلى الله عليه وسلم - ذلك  لعائشة والجاريتين؟</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> يتبع</font></font></span><br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_911819" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_911819" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=911819" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_911819" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_911822">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-06-27,&nbsp;<span class="time">04:45 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post911822" href="showthread.php?t=175401&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=911822#post911822" class="postcounter">#2</a><a id="postcount911822" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,743</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حوار هادئ بين صاحب قرآن وصاحب غناء
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_911822">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="6"><font color="red">حوار هادئ بين صاحب قرآن وصاحب غناء<br />
+ </font></font></span><span style="font-family: traditional arabic"><font size="6"><font color="red"> يعقوب عبد الرحمن محمد<br />
+<br />
+</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#800000">قال صاحب القرآن: </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">قال ابن  القيم - رحمه الله - ما ملخصه: معلوم أن هذا من الشيطان وان كان  رخّص فيه   لهؤلاء ـ يعني النساء والصبيان ـ وذلك لضعف عقولهم ولئلا يدعوهم  الشيطان  إلى ما  يفسد عليهم دينهم إذ لا يمكن صرفهم عن كل ما تتقاضاه  الطباع من  الباطل، والشريعة  جاءت بتحصيل المصالح وتكميلها وتعطيل المفاسد  وتقليلها  فهي تحصل أعظم المصلحتين  بتفويت أدناهما وتدفع أعظم المفسدتين  باحتمال  أدناهما.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">3/ قال الفنان:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">لقد صح أن  الرسول - عليه السلام - كان يستمع إلى الشعر من الصحابة - رضي  الله عنهم  -  كحسان بن ثابت وأبيّ بن كعب وغيرهما وكان - صلى الله عليه  وسلم - يتمثل  قول  بعضهم: اللهم لا عيش إلا عيش الآخرة فاغفر للأنصار  والمهاجرة ونحو  ذلك؟</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> قال صاحب القرآن: </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">1- الحمد لله الذي عافإنا مما ابتلاكم به وفضلنا على كثير ممن خلق تفضيلا.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">2- جهلت فعاديت العلوم وأهلها *** كذاك يعادي العلم من هو جاهله</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">ومن كان يهوى أن يرى متصدرا *** ويكره لا أدري أصيب مقاتله.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">3- لو فرض  أن الشعر جرى على لسانه - صلى الله عليه وسلم - إنشاء ابتداء  لم يكن في   ذلك شبهة لكم في حل الغناء والموسيقى وسماع الألحان. عجبا لكم  أيها  السماعاتية.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">4- لقد ثبت  في سبب النزول أن الله - تعالى -ذم الشعراء في أواخر سورة  الشعراء ثم   استثنى منهم الذين آمنوا وعملوا الصالحات قال - تعالى  -(والشعراء يتبعهم  الغاوون  ألم تر أنهم في كل واد يهيمون وأنهم يقولون ما  لا يفعلون إلا  الذين آمنوا وعملوا  الصالحات وذكروا الله كثيرا وانتصروا من  بعد ما  ظلموا..) فهذا هو شعر الصحابة -  رضي الله عنهم - وقد كان دفاعا عن   الإسلام والمسلمين:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">إن الرسول لنور يستضاء به *** مهند من سيوف الله مسلول</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وأبيض يستسقى الغمام بوجهه ***  ثمال اليتامى عصمة للأرامل</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">أين هذا من شعر المتأخرين المشتمل على الشرك والكفر والخنا والفحش:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">فإنت باب الله إلى أمري ***أتاه من غيرك لا يدخل</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">عجل بإذهاب الذي اشتكي ***  فإن توقفت فمن أسأل</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وقال آخر:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">تقول وقد قبلتها ألف قبلة كفاك *** أما شئ لديك سوى القبل؟!</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وقال بعض الملاحدة:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">دع المساجد للعباد يعمرها ***هيا اسقني خمرا بالحوانيت</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">ما قال ربك ويل للأولى سكروا *** إنما قال ويل للمصلين</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">5- ثم إن  الصحابة - رضي الله عنهم - لم يشغلوا جل أوقاتهم بهذه الأبيات  والإنشاد و   إنما كان ذلك عرضا في الجهاد وعند مفاخرة الكفار على رسول الله  - صلى  الله عليه  وسلم - ونحو ذلك ولم يكن ذلك ديدنهم ليلا ونهارا كما نرى  ذلك  في هذه الأزمنة  المتأخرة والله المستعان.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وان تعجب  فعجب قولهم أن هذه هي الموسيقى الإسلامية على وزن الاشتراكية  الإسلامية   والديمقراطية الإسلامية وغيرها مما يصدق عليها قوله- تبارك  وتعالى -(إن هي  إلا  أسماء سميتموها أنتم وآباؤكم ما أنزل الله بها من  سلطان) وقد أشار  النبي - صلى الله  عليه وسلم - إلى شئ من ذلك بقوله:  ليشربن ناس من أمتي  الخمر يسمونها بغير اسمها،  والله المستعان.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">4/ قال صاحب الغناء (الفنان):</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">يكفينا في  هذا الباب ما ثبت عن أبي محمد بن حزم  - رحمه الله -  من انه  تتبع   الأحاديث في تحريم الغناء وآلات الطرب وضعفها كلها ثم قال: &quot; فإذا لم  يصح  في هذا شئ  أصلا فقد قال - تعالى- (وقد فصل لكم ما حرم عليكم) إلى أن  قال:  فصح أن كل شئ حرمه -  تعالى -علينا قد فصله لنا وما لم يفصل لنا  تحريمه  فهو حلال &quot; ا. هـ</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وناهيك من ابن حزم علما وتحقيقا وتدقيقا؟</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> قال صاحب القرآن: </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> جوابنا عن هذه الشبهة كما يلي: </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">1- الواجب  علينا عند التنازع رد الحكم إلى الله ورسوله - صلى الله عليه  وسلم - لا   إلى فلان ولا إلى علان ونحن إذا رددنا هذه المسألة إلى الله  ورسوله وجدنا  أن الحق  من جمهور أهل العلم خلافا لابن حزم - رحمه الله -  للأدلة التي  سبق ذكرها.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">2-  الأحاديث التي استندنا إليها على حرمة الغناء أحاديث صحيحة لا مطعن  فيها  بوجه من  الوجوه ومن علم حجة على من لم يعلم. فعلى سبيل المثال: حديث  أبي  مالك الأشجعي &quot;  ليكونن من أمتي قوم … الخ &quot; فهذا الحديث صححه من  الأئمة  الحفاظ &quot; البخاري،  الإسماعيلي، ابن الصلاح، النووي، ابن تيمية، ابن   القيم، ابن كثير، ابن حجر  العسقلاني، ابن الوزير الصنعاني، السخاوي،   الأمير الصنعاني &quot;.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">قال ابن  القيم - رحمه الله - &quot; ولم يصب من قدح في صحة هذا الحديث شيئا  كابن حزم   نصرة لمذهبه الباطل في إباحته الملاهي وزعم انه منقطع لأن  البخاري لم يصل  سنده به  وهذا القدح باطل من وجوه ثم ذكرها &quot; ا. ه باختصار</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">3- أن هذا  الذي قاله أبو محمد ابن حزم - رحمه الله - اجتهد منه لكن لم  يكن الحق   حليفه فله اجر واحد للحديث المشهور &quot; إذا اجتهد الحاكم فاصاب فله  أجران  وان اجتهد  فأخطأ فله أجر &quot; وعليه فلا يجوز تقليده أو متابعته في  هذه  المسألة ولا يصح  الاستدلال بالقاعدة التي قعدها العوام: (من قلد عالما   لقي الله سالما).</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">4- الاحتجاج بقول ابن حزم هنا يعتبر من تتبع رخص الفقهاء وقد قال بعض السلف: &quot;من  تتبع الرخص تزندق&quot;</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">ولهذا  قالوا: &quot; زلة العالم زلة العالم &quot; وقد رد على الإمام ابن حزم -  رحمه الله -   على مر العصور جهابذة من أهل العلم منهم ابن تيمية وابن القيم  وابن  الجوزي وغيرهم  كثير، ولكن كل هذا لغربة الدين وبعد الناس عن الحق،</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">ولقد صدق  في هذه الأمة ما قاله عبد الله بن مسعود - رضي الله عنه -: &quot;  كيف أنتم إذا   لبستكم فتنة يهرم فيها الكبير ويربو فيها الصغير ويتخذها  الناس سنة فإذا  غيرت  قالوا: غيرت السنة قيل متى ذلك يا أبا عبد الرحمن؟  قال: إذا كثرت  قراؤكم وقلت  فقهاؤكم وكثرت أمراؤكم وقلّت أمناؤكم والتمست  الدنيا بعمل  الآخرة وتفقّه لغير  الدين. رواه الحاكم والدارمي بسند صحيح.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">5/ قال الفنان - صاحب الغناء:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">قد ثبت في  الحديث الصحيح أن النبي - صلى الله عليه وسلم - سمع الحداء ـ  هو سوق   الإبل بإنشاد الأشعار ـ وحدا الحداة بين يديه وكذلك عمر بن الخطاب  بعده  رخّص في  الحداء، والغناء والحداء كل منهما إنشاد بأصوات مطربة؟</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> قال صاحب القرآن: </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">قد اتفق  الناس على جواز الحداء وثبت أن عامر بن الأكوع كان يحدو  بالصحابة مع النبي   - صلى الله عليه وسلم - فسرنا ليلا فقال رجل من القوم  لعامر بن الأكوع  ألا تسمعنا  من هنيّاتك ـ أي من كلماتك أو أراجيزك تصغير  هنيهة ـ وكان  عامر رجلا شاعرا فنزل  يحدو بالقوم يقول:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">اللهم لولا أنت ما ***اهتدينا ولا تصدقنا ولاصلينا</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">فإنزلن سكينة علينا *** وثبت الأقدام إن لاقينا</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وألقين سكينة علينا *** إنا إذا صيح بنا أتينا</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وبالصياح عوّلوا علينا</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">فقال رسول  الله - صلى الله عليه وسلم - من هذا السائق؟ قالوا: عامر بن  الأكوع قال -   يرحمه الله - رواه البخاري ومسلم، وحديث أنجشة الحبشي الذي  كان يحدو  بالنبي - صلى  الله عليه وسلم - حتى قال النبي - صلى الله عليه  وسلم -:  رويدك يا أنجشة سوقك  بالقوارير &quot; يعني النساء أمره بالرفق بهن  لئلا  تزعجهن الإبل في المسير إذا اشتد  سيرها والحديث متفق عليه</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> فمن الذي حرم الحداء؟ </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">لكن: هل يجعل هذا ديدنه؟ وهل يستخدم معه الآلات والموسيقى؟ وهل يتقرب به إلى الله -  عز وجل -؟</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">ثم إن قياس  هذا مع قياس الغناء المحرم من جنس قياس النكاح الحلال بقياس  الزنى   الحرام وقياس نكاح المتعة بنكاح الرغبة وهذا من أفسد القياس وأبطل  الباطل.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">6/ قال الفنان:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">لقد ثبت أن  النبي - صلى الله عليه وسلم - ندب إلى تحسين الصوت بالقرآن  فروى البراء   بن عازب قال سمعت رسول الله - صلى الله عليه وسلم - يقول:  حسنوا القرآن  بأصواتكم  فإن الصوت الحسن يزيد القرآن حسنا &quot; حسنه الألباني</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وصح عنه انه - عليه السلام - قال: ليس منا من لم يتغن بالقرآن &quot; رواه البخاري وأحمد</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">قالوا:  فإذا ندب إلى تحسين الصوت بالقرآن والتغني به فمن باب أولى أن  يجوز له  تحسين  الصوت بالشعر ويتغنى به وأي حرج في تحسين الصوت بالشعر؟</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> قال صاحب القرآن:</font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">حجج تهافت كالزجاج تخالها حقا وكل كاسر مكسور</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">أولا: هذه  الأدلة إنما تدل على فضل الصوت الحسن بكتاب الله لا على فضل  الصوت الحسن   بالغناء الذي هو مزمور الشيطان ومن قاس هذا بهذا وشبه أحدهما  بالآخر فقد  شبه الباطل  بالحق وقاس قرآن الشيطان على كتاب الرحمن.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">ثانيا: من  يقول بهذا نلزمه أن يقول بفضيلة القتال في غير سبيل الله -  تعالى -قياسا   على القتال في سبيل الله بجامع فضيلة الطعن والرمى والضرب!</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">ثالثا:  تحسين الصوت ندب إليه وحمد الصوت الحسن لما فيه من الإعانة على  ما يحب  الله  من سماع القرآن وترقيق القلوب وتزهيدها عن الدنيا ولأنه يقرب  إلى  الله - تعالى -ومحابه  فكيف يجعل هذا نظير الصوت الملعون بالغناء   والموسيقى الذي ينبت النفاق قي القلب  والذي أخف أنواعه وأقلها شرا ما   وضعته الزنادقة يصدون به الناس عن القرآن.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">7/ قال الفنان ـ صاحب الغناء ـ:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">صح عن  النبي - صلى الله عليه وسلم - أنه قال (صوتان ملعونان: صوت ويل  عند مصيبة   وصوت مزمار عند نعمة) وفي رواية &quot; إني نهيت عن صوتين فاجرين …  الحديث  الأول صححه  الألباني في السلسلة الصحيحة (428) فالنهي هنا عن صوت  الغناء  وليس عن الغناء نفسه؟</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> قال صاحب القرآن: </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وهذا  الحديث من أجود ما يحتج به على تحريم الغناء لأنه هنا نهي عن الصوت  الذي  يفعل  عند المصيبة والصوت الذي يفعل عند النعمة هو صوت الغناء،  والمراد  بصوت المزمار هنا  هو نفس الغناء فإن نفس صوت الإنسان يسمى مزمارا  ومزمورا  كما قال - صلى الله عليه  وسلم - لأبي موسى &quot; لقد أوتي هذا مزمارا  من  مزامير آل داؤد &quot; وسمى صوته مزمارا وكما  قال الصديق ـرضي الله عنه ـ   لغناء الجاريتين &quot; أبمزمور الشيطان في بيت رسول الله -  صلى الله عليه وسلم   - &quot; ولم يكن معهما مزمور غير أصواتهما فكذلك قوله - صلى الله  عليه وسلم -   &quot; نهيت عن صوتين أحمقين فاجرين.. &quot; ثم فسرهما بالغناء والنوح اللذين    يثيرهما الطرب والحزن.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">8/ قال الفنان:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">لقد ثبت أن  ابن عمر - رضي الله عنه - سمع صوت زمارة راع فوضع إصبعيه في  أذنيه وعدل   راحلته عن الطريق وهو يقول: يا نافع أتسمع فأقول نعم فيمضي حتى  قلت: لا  فوضع يديه  وأعاد راحلته إلى الطريق وقال: رأيت رسول الله - صلى  الله عليه  وسلم - وسمع زمارة  راع فصنع مثل هذا &quot; أخرجه أحمد وأبو داود.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">قالوا لو كان الغناء حراما ما أباح رسول الله - صلى الله عليه وسلم - لابن عمر  سماعه ولا أباح ابن عمر لنافع مولاه سماعه أيضا؟</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> قال صاحب القرآن: </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">• غاب عن  هؤلاء الفرق بين السماع والاستماع حيث فسروا الأول بالثاني وهو  خطأ ظاهر   لغة وقرآنا وسنة ولذلك قال ابن تيمية - رحمه الله - عقب حديث  الجاريتين: &quot;  وليس في  حديث الجاريتين أن النبي - صلى الله عليه وسلم -  استمع إلى ذلك  والأمر والنهي إنما  يتعلق بالاستماع لا بمجرد السماع كما في  الرؤية فإنه  إنما يتعلق بقصد الرؤية لا ما  يحصل منها بغير الاختيار..  الخ.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">• الرسول -  صلى الله عليه وسلم - لم يأمر ابن عمر بسد أذنيه لأنه ـ أي  ابن عمرـ لم   يكن يستمع و إنما كان يسمع فقط وهذا لا إثم فيه و إنما النبي -  صلى الله  عليه وسلم  - عدل طلبا للأكمل والأفضل.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">• قال العلامة ابن عبد الهادي - رحمه الله - ما خلاصته:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">&quot; وتقرير  الراعي لا يدل على اباحته لأنها قضية عين فلعلّه سمعه بلا رؤية  أو بعيدا   منه على رأس جبل أو مكان لا يمكن الوصول إليه أو لعلّ الراعي لم  يكن مكلفا  فلم  يتعين الإنكار &quot; ا. ه.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">• وقال  الألباني &quot; كذلك نحن نقول على افتراض دلالة الحديث على الإباحة  انه يحتمل   أنه كان قبل التحريم ومع الاحتمال يسقط الاستدلال &quot;.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">• وأخيرا  وعلى افتراض الإباحة فهي خاصة بمزمار الراعي وهو آلة بدائية  ساذجة سخيفة   من حيث اثارتها للنفوس وتحريك الطباع واخراجها عن حد الاعتدال  فأين هي من  الآلات  الأخرى كالعود والقانون وغيرهما من الآلات التي تنوعت  مع مرور  الزمن وبخاصة في  العصر الحاضر …!</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> • قال ابن الجوزي - رحمه الله -: </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">&quot; إذا كان هذا فعلهم في حق صوت لا يخرج عن الاعتدال فكيف بغناء أهل الزمان وزمورهم  &quot;؟!</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">قلت: فماذا يقال في أهل زماننا وموسيقاهم؟!</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">والله المستعان وعليه التكلان.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">9/ قال الفنان:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">روي عن ابن  عمر وعبد الله بن جعفر الطيار ابن أبي طالب آثار في اباحة  السماع هذا مع   تشدد ابن عمر وزهده ودينه وحرصه على متابعة الرسول - صلى  الله عليه وسلم -  وبعده من  البدع؟ وكذا قالوا روي عن الشافعي - رحمه الله -  أنه يبيحه ولا  يحرمه؟</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> قال صاحب القرآن: </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">1- قال ابن  القيم - رحمه الله - &quot; أما ما نقل عن ابن عمر فإنه نقل باطل  والمحفوظ عن   ابن عمر ذمه للغناء ونهيه عنه كما هو المحفوظ عن اخوانه من  أصحاب الرسول -  صلى الله  عليه وسلم - كابن مسعود وابن عباس وجابر وغيرهم  ممن رضيهم  المسلمون قدوة وأئمة وهذه  سيرة ابن عمر وأخباره ومناقبه وفتاواه  بين  الأمة هل تجد فيها انه عمل هذا السماع أو  حضره أو رخص فيه فقد نزه  الله  ابن عمر عنه بل وأصحاب ابن عمر.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">2- لو فرض صحة ذلك لكان اجتهاد منه وله اجر واحد والحجة في قول رسول الله - صلى  الله عليه وسلم -.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">3- أما ما نقل عن عبد الله بن جعفر الطيار فلا ريب أن النقل صحيح وأنه قد نقل عنه  ذلك لكن المنقول عنه خلاصته ما يلي:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">أ*- أنه كانت له جارية في بيته فيستمتع بسماع غنائها.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">ب*- أن ذلك في بيته ومع جاريته لا مع عشيقته.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">ج*- أن فعل ابن جعفر ليس ممن يعارض به أركان الأمة كابن مسعود وابن عباس وجابر وابن  عمر.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">د*- أن من  احتج بفعل عبد الله بن جعفر هذا فنلزمه أن يحتج بفعل مروان بن  الحكم   عندما خطب يوم العيد قبل الصلاة وهذا معلوم انه لا يصلح أن يكون  دليلا  يدخل في  الشرع.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">ه*- لا  يجوز لهؤلاء أن يتركوا سبيل مثل أبي ذر وأبي أيوب الأنصاري وعمار  بن ياسر   وأبي الدرداء ومعاذ بن جبل وأبي عبيدة بن الجراح والمشهورين  بالنسك  والعبادة  ويتبعون سبيل من اتخذ جارية تغنيه في بيته للهو واللذة.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">4- وأما  قولهم أن الشافعي - رحمه الله - لا يرى به بأسا وأنه يبيحه فكذب  صريح على   الإمام الشافعي فقوله في الغناء للعوام من الناس أنه مكروه ولكن  هل  الكراهة للتحريم  أو التنزيه هذا محل خلاف عند أصحابه. وأما سماع  الخاصة  الذي أشار إليه الفنان فهذا  عند الشافعي أنه من فعل الزنادقة كما  تقدم  حكاية كلامه.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> قال ابن القيم: </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">&quot; وبالجملة فالكلام في السماع على وجهين:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">أحدهما: سماع اللهو واللعب والطرب فهذا يقال فيه مكروه أو محرم أو باطل أو مرخص في  بعض أنواعه ـ يعني في العرس والعيد للنساء.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">والثاني:  السماع المحدث لأهل الدين والقربة ـ يعني الصوفية ـ فهذا يقال  فيه أنه   بدعة وضلالة وأنه مخالف لكتاب الله وسنة رسوله - صلى الله عليه  وسلم -  واجماع  المسلمين جميعهم &quot; أ. ه</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">والخلاصة كل من نقل عنه أنه يجوزالغناء والموسيقىوآلات الطرب وغيرها فإن هذا لا  يخلو من الأمورالآتية:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">1- أن يكون النقل كذبا فهذا أراحنا ولله الحمد.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">2- أن يكون النقل صحيحا فهذا يكون متأوّلا مجتهدا لا يجوز تقليده فيه.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">3- أنه لا حجة مع بعد رسول الله - صلى الله عليه وسلم - فإن الحجة في قوله وفعله.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وكذلك الفرية التي ألصقت بالإمام مالك - رحمه الله - في إباحة الغناء، كذب صريح وهو  أشد العلماء نهيا عنه وقوله عنه لم يختلف فيه.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">4- قال ابن القيم - رحمه الله -:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">&quot; وهاهنا  أصل يجب اعتماده وهو أن الله - سبحانه - عصم هذه الأمة أن  تجتمع على ضلالة   ولم يعصم آحادها من الخطأ لا صدّيقا ولا غيره لكن إذا وقع  في بعضها خطأ  فلا بد أن  يقيم الله فيها من يكون على الصواب لأن هذه الأمة  شهداء الله  في الأرض وهم شهداء  على الناس يوم القيامة.. الخ &quot;</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">10/ قال الفنان:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">لقد حرمتم  علينا الغناء بجميع أنواعه وصوره وأتيتم بخيل الأدلة ورجلها  وأوردتم ما   لذ لكم وطاب من حجج الكتاب. لكن من المعلوم في الدين يقينا أن  الله –  تعالى-  لا  يحرم شيئا إلا وقد فتح للعباد من الحلال ما يكون به  سلوان  القلوب وشفاء ما في  الصدور: فمن حرم الزنى وأباح النكاح وحرم  الربا.. الخ  وقد قال - تعالى -(يا أيها  الذين آمنوا لا تقولوا راعنا ولكن  قولوا  انظرنا.. )</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">فقد رضينا بما قلتم أيها الحاملون للقرآن الكريم لكننا لم نر أي أثر لهذه القاعدة  المتفق عليها فما قولكم؟!</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5"><font color="#800000"> قال صاحب القرآن: </font></font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">1- قال  الله - تعالى -(يا أيها الذين آمنوا كونوا قوامين لله شهداء  بالقسط ولا   يجرمنكم شنئان قوم على أن لا تعدلوا اعدلوا هو أقرب للتقوى  واتقوا الله إن  الله  خبير بما تعملون) 8 المائدة.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">2- هذا  الذي سألت عنه يمكن أن يعنون له تحت عنوان &quot; الغناء بدون آلة &quot;  فنقول: لا   يصح إطلاق القول بتحريم الغناء ـ الشعر ـ بدون آلة لأنه لا دليل  على هذا  الإطلاق  كما لا يصح إطلاق القول بإباحته كما يفعل بعض أهل  الأهواء اليوم.  وذلك لأن الغناء  يكون بالشعر وليس الشعر بالمحرّم إطلاقا  لقول النبي -  صلى الله عليه وسلم - &quot; إن من  الشعر لحكمة &quot; رواه البخاري،  وقد كان - صلى  الله عليه وسلم - يتمثل بشيء من الشعر  أحيانا كمثل شعر عبد  الله بن  رواحة - رضي الله عنه -:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">ويأتيك بالأخبار من لم تزود</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">ولما سئل -  عليه السلام - عن الشعر قال: &quot; هو كلام فحسنه حسن وقبيحه  قبيح &quot; وكذا   قالت عائشة - رضي الله عنها -: &quot; خذ بالحسن ودع القبيح &quot;.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">3- وصح أن  عائشة - رضي الله عنها - قالت: لما قدم رسول الله - صلى الله  عليه وسلم -   المدينة وعك أبو بكر وبلال فكان أبو بكر إذا أخذته الحمى قال:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">كل امرئ مصبّح في أهله والموت أدنى من شراك نعله</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وبلال - رضي الله عنه - إذا اشتدت به الحمى يقول:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">ألا ليت شعري هل أبيتن ليلة بواد وحولي اذخر وجليل</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وهل أردنّ يوما مياه مجنة وهل يبدون لي شامة وطفيل</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">اللهم أخز عتبة بن ربيعة وأمية بن خلف كما أخرجونا من مكة.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وقد كان بعض الصحابة يتغنون النّصب: قال في القاموس: نصب العرب ضرب من مغانيها أرقّ  من الحداء.</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">4- قال الشيخ العلامة الألباني - رحمه الله -:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">&quot; فأقول  وفي هذه الأحاديث والآثار دلالة ظاهرة على جواز الغناء بدون آلة  في بعض   المناسبات كالتذكير بالموت أو الشوق إلى الأهل والوطن أو للترويح  عن النفس   والالتهاء عن وعثاء السفر ومشاقه ونحو ذلك مما يتخذ مهنة ولا  يخرج به عن  حد  الاعتدال فلا يقترن به التثني والضرب بالرجل مما يخل  بالمروءة &quot; ا. ه</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وقال الشاطبي - رحمه الله - في الكلام على حديث أنجشة السابق:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">&quot; وهذا حسن  لكن العرب لم يكن لها من تحسين النغمات ما يجري مجرى ما  الناس عليه   اليوم بل كانوا ينشدون الشعر مطلقا ومن غير أن يتعلموا هذه  الترجيعات التي  حدثت  بعدهم بل كانوا يرققون الصوت ويمططونه على وجه يليق  بأمية العرب  الذين لم يعرفوا  صنائع الموسيقى فلم يكن فيه الذاذ ولا إطراب  يلهي و إنما  كان لهم شئ من النشاط كما  كان عبد الله بن رواحة يحدو بين يدي  رسول الله  - صلى الله عليه وسلم - كما كان  الأنصار يقولون عند حفر  الخندق:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">نحن الذين بايعوا محمدا على الجهاد ما حيينا أبدا</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">فيجيبهم - صلى الله عليه وسلم - بقوله:</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">اللهم لا خير إلا خير الآخرة فاغفر للأنصار والمهاجرة &quot; ا. ه</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">ومن ذلك  أيضا: الأشعار التي ينشدها المتزهدون بتطريب وتلحين يذكر الآخرة  وقد روى   ابن الجوزي بسنده عن أبي حامد الخلقاني أنّه قال: قلت لأحمد بن  حنبل يا  أبا عبد  الله هذه القصائد الرقاق التي في ذكر الجنة والنار أي شئ  تقول  فيها؟ فقال مثل أي شئ؟  قلت: يقولون</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">إذا ما قال لي ربي  ***  أما استحييت تعصيني</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">وتخفي الذنب من خلقي ***  وبالعصيان تأتيني</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">فقال أعد عليّ فأعدت عليه فقام ودخل بيته ورد الباب فسمعت نحيبه من داخل البيت وهو  يقول: فذكر البيتين &quot; ا. هـ</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">هذا ما يسّر الله لي جمعه وإعداده</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">والله - تعالى - أعلم</font></span><br />
+ <span style="font-family: traditional arabic"><font size="5">ومرجع العلم إليه أسلم وأحكم</font></span><br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_911822" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_911822" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=911822" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_911822" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=175401&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=175401#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">لوحة التحكم</a></li>
+		<li><a href="private.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الاشتراكات</a></li>
+		<li><a href="online.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=169828&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">كيف نحيا بالقرآن؟</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=175418&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">يمن الاستقامة وشؤم المعصية</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A8%D9%8A%D9%86">بين</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%AD%D9%88%D8%A7%D8%B1">حوار</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%B5%D8%A7%D8%AD%D8%A8">صاحب</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%BA%D9%86%D8%A7%D8%A1">غناء</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D9%82%D8%B1%D8%A2%D9%86">قرآن</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D9%87%D8%A7%D8%AF%D8%A6">هادئ</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D9%88%D8%B5%D8%A7%D8%AD%D8%A8">وصاحب</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=175401#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=175401#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">01:40 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	<img src="https://majles.alukah.net/cron.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;rand=1714905607" alt="" width="1" height="1" border="0" />
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

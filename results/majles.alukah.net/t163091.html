@@ -1,0 +1,1841 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=696d1a7d9adaea36633b28fa7c3827c1&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=163091";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="الهوى, خمسون, للتخلص, وسيلة" />
+	<meta name="description" content="قال شيخ الإسلام ابن القيم رحمه الله عن وسائل دفع الهوى وخطر متابعته  
+ 
+وأن الدنيا كما شبهها النبى بما يخرج من الإنسان نهايتها بلا لذة ونهايتها مرار 
+ 
+وأن من ابتلى بداء عشق النساء فاليتذكر مناتنها وكذلك من عشقت رجل تتذكر مناتنه. 
+وأن متابعة الهوى سبب الحسد والبغى والتنافس 
+يقول فى كتابه روضة المحبين 
+وينبغي أن يتمرن على دفع الهوى  المأمون العواقب ليتمرن بذلك على ترك ما تؤذي عواقبه وليعلم اللبيب أن  مدمني الشهوات يصيرون إلى حالة لا يلتذون بها  وهم مع ذلك لا يستطيعون تركها  لأنها قد صارت عندهم" />
+
+	<title> خمسون وسيلة للتخلص من الهوى</title>
+	<link rel="canonical" href="showthread.php?t=163091&s=696d1a7d9adaea36633b28fa7c3827c1" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=696d1a7d9adaea36633b28fa7c3827c1 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=696d1a7d9adaea36633b28fa7c3827c1">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> خمسون وسيلة للتخلص من الهوى</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=696d1a7d9adaea36633b28fa7c3827c1&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 4 من 4
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=163091&s=696d1a7d9adaea36633b28fa7c3827c1" title="تحديث الصفحة">خمسون وسيلة للتخلص من الهوى</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=163091" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;t=163091&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=addsubscription&amp;t=163091" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;search_type=1&amp;searchthreadid=163091&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="163091" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_866634">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2017-09-25,&nbsp;<span class="time">10:00 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post866634" href="showthread.php?t=163091&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=866634#post866634" class="postcounter">#1</a><a id="postcount866634" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=58087&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مسلم طالب العفو غير متواجد حالياً"><strong>مسلم طالب العفو</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=58087&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=58087&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="مسلم طالب العفو غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Apr 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,699</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> خمسون وسيلة للتخلص من الهوى
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_866634">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: Traditional Arabic"><font size="5"><b><span style="font-family: traditional arabic"><font size="6">ق<font color="black">ال شيخ الإسلام ابن القيم رحمه الله عن وسائل دفع الهوى وخطر متابعته <br />
+</font></font></span></b><br />
+<font color="black"><b><span style="font-family: traditional arabic"><font size="6">وأن الدنيا كما شبهها النبى بما يخرج من الإنسان نهايتها بلا لذة ونهايتها مرار<br />
+</font></span></b></font><br />
+<font color="black"><b><span style="font-family: traditional arabic"><font size="6">وأن من ابتلى بداء عشق النساء فاليتذكر مناتنها وكذلك من عشقت رجل تتذكر مناتنه.</font></span></b></font><br />
+<font color="black"><b><span style="font-family: traditional arabic"><font size="6">وأن متابعة الهوى سبب الحسد والبغى والتنافس</font></span></b></font><br />
+<font color="magenta"><b><span style="font-family: traditional arabic"><font size="6">يقول فى كتابه روضة المحبين</font></span></b></font><br />
+<font color="indigo"><b><span style="font-family: traditional arabic"><font size="6">وينبغي أن يتمرن على دفع الهوى  المأمون العواقب ليتمرن بذلك على ترك ما<font color="red"> تؤذي عواقبه</font> وليعلم اللبيب أن  مدمني الشهوات يصيرون إلى حالة <font color="red">لا يلتذون </font>بها  وهم مع ذلك لا يستطيعون تركها  لأنها قد صارت عندهم بمنزلة العيش الذي لا  بد لهم منه ولهذا ترى مدمن  الخمر والجماع لا يلتذ به عشر معشار التذاذ من  يفعله نادرا في الأحيان غير  أن العادة مقتضية ذلك فيلقي نفسه في المهالك  لنيل ما تطالبه به العادة ولو  زال عنه رين الهوى لعلم أنه قد شقي من حيث  قدر السعادة واغتم من حيث ظن  الفرح وألم من حيث أراد اللذة فهو<font color="red"> كالطائر المخدوع </font></font></span></b></font><br />
+<br />
+<br />
+<font color="indigo"><b><span style="font-family: traditional arabic"><font size="6">  بحبة القمح لا هو نال الحبة ولا هو تخلص مما وقع  فيه فإن قيل فكيف يتخلص  من هذا من قد وقع فيه قيل يمكنه التخلص بعون الله  وتوفيقه له بأمور <br />
+ <font color="black">أحدها</font> عزيمة حر يغار لنفسه وعليها <br />
+ <font color="black">الثاني</font> جرعة صبر يصبر نفسه على مرارتها تلك الساعة <br />
+ <font color="black">الثالث</font> قوة نفس تشجعه على شرب تلك الجرعة والشجاعة كلها صبر ساعة وخير عيش أدركه العبد بصبره <br />
+ <font color="black">الرابع </font>ملاحظته حسن موقع العاقبة والشفاء بتلك الجرعة <br />
+ <font color="black">الخامس </font>ملاحظته الألم الزائد على لذة طاعة هواه <br />
+ <font color="black">السادس</font> إبقاؤه على منزلته عند الله تعالى وفي قلوب عباده وهو خير وأنفع له من لذة موافقة الهوى <br />
+ <font color="black">السابع</font> إيثاره لذة العفة وعزتها وحلاوتها على لذة المعصية <br />
+ <font color="black">الثامن</font> فرحه بغلبة عدوه وقهره له ورده خاسئا  بغيظه وغمه وهمه حيث لم ينل  منه أمنيته والله تعالى يحب من عبده أن يراغم  عدوه ويغيظه كما قال الله  تعالى في كتابه العزيز[<font color="darkred"><font color="seagreen"> ولا يطؤن موطئا يغبط الكفار ولا ينالون من عدو نيلا  إلا كتب لهم به عمل صالح</font> </font>]وقال[<font color="seagreen"> ليغيظ بهم الكفار</font>] وقال تعالى [<font color="seagreen">ومن يهاجر في  سبيل الله يجد في الأرض </font></font></span><span style="font-family: traditional arabic"><font size="6"><font color="seagreen">مراغما كثيرة وسعة</font>] أي مكانا يراغم فيه أعداء الله وعلامة المحبة الصادقة مغايظة أعداء المحبوب ومراغمتهم <br />
+ <font color="black">التاسع </font>التفكر في أنه لم يخلق للهوى وإنما هيء لأمر عظيم لا يناله إلا بمعصيت للهوى كما قيل <br />
+ <font color="darkred">قد هيأوك لأمر لو فطنت له ... فاربأ بنفسك أن ترعى مع الهمل </font><br />
+ <font color="black">العاشر </font>أن لا يختار لنفسه أن يكون الحيوان  البهيم أحسن حالا منه فإن  الحيوان يميز بطبعه بين مواقع ما يضره وما ينفعه  فيؤثر النافع على الضار  والإنسان أعطي العقل لهذا المعنى فإذا لم يميز به  بين ما يضره وما ينفعه أو  عرف ذلك وآثر ما يضره كان حال الحيوان البهيم  أحسن منه ويدل على ذلك أن  البهيمة تصيب من لذة المطعم والمشرب والمنكح  مالا يناله الإنسان مع عيش  هنيء خال عن الفكر والهم ولهذا تساق إلى منحرها  وهي منهمكة على شهواتها  لفقدان العلم بالعواقب والآدمي لا يناله ما يناله  الحيوان لقوة الفكر  الشاغل وضعف الآلة المستعملة وغير ذلك فلو كان نيل  المشتهى فضيلة لما بخس  منه حق الآدمي الذي هو خلاصة العالم ووفر منه حظ  البهائم وفي توفير حظ  الآدمي من العقل والعلم والمعرفة عوض عن ذلك <br />
+ <font color="black">الحادي عشر</font> أن يسير بقلبه في عواقب الهوى فيتأمل كما أفاتت معصيته <br />
+</font></span></b></font><br />
+<font color="indigo"><b><span style="font-family: traditional arabic"><font size="6"><br />
+</font></span></b></font><br />
+<font color="indigo"><b><span style="font-family: traditional arabic"><font size="6">  من فضيلة وكم أوقعت في رذيلة وكم أكلة منعت أكلات  وكم من لذة فوتت لذات  وكم من شهوة كسرت جاها ونكست رأسا وقبحت ذكرا وأورثت  ذما وأعقبت ذلا  وألزمت عارا لا يغسله الماء غير أن عين صاحب الهوى عمياء <br />
+ <font color="black">الثاني عشر </font>أن يتصور العاقل انقضاء غرضه ممن يهواه ثم يتصور حاله بعد قضاء الوطر وما فاته وما حصل له <br />
+ <font color="darkred">فأفضل الناس من لم يرتكب سببا ... حتى يميز لما تجني عواقبه </font><br />
+ <font color="black">الثالث عشر </font>أن يتصور ذلك في حق غيره حق التصور ثم ينزل نفسه تلك المنزلة فحكم الشيء حكم نظيره <br />
+ <font color="black">الرابع عشر</font> أن يتفكر فيما تطالبه به نفسه من ذلك ويسأل عنه عقله ودينه  يخبرانه بأنه ليس بشيء قال عبدالله بن مسعود رضي الله عنه<u><font color="red"> إذا أعجب أحدكم  امرأة فليذكر مناتنها</font></u> وهذا أحسن من قول أحمد بن الحسين <br />
+ <font color="darkred">لو فكر العاشق في منتهى ... حسن الذي يسبيه لم يسبه</font> <br />
+ لأن ابن مسعود رضي الله عنه ذكر الحال الحاضرة الملازمة والشاعر حال على أمر متأخر <br />
+ <font color="black">الخامس عشر </font>أن يأنف لنفسه من ذل طاعة الهوى  فإنه ما أطاع أحد هواه قط إلا  وجد في نفسه ذلا ولا يغتر بصولة أتباع الهوى  وكبرهم فهم أذل الناس بواطن قد  أجمعوا بين فصيلتي الكبر والذل <br />
+ <font color="black">السادس عشر</font> أن يوازن بين سلامة الدين والعرض والمال والجاه ونيل </font></span><span style="font-family: traditional arabic"><font size="6">اللذة المطلوبة فإنه لا يحد بينهما نسبة البتة فليعلم أنه من أسفه الناس ببيعه هذا بهذا <br />
+ <font color="black">السابع عشر </font>أن يأنف لنفسه أن يكون تحت قهر  عدوه فإن الشيطان إذا رأى من  العبد ضعف عزيمة وهمة وميلا إلى هواه طمع فيه  وصرعه وألجمه بلجام الهوى  وساقه حيث أراد ومتى أحس منه بقوة عزم وشرف نفس  وعلو همة لم يطمع فيه إلا  اختلاسا وسرقة <br />
+ <font color="black">الثامن عشر</font> أن يعلم أن الهوى ما خالط شيئا إلا  أفسده  فإن وقع في العلم أخرجه إلى البدعة والضلالة وصار صاحبه من جملة  أهل  الأهواء وإن وقع في الزهد أخرج صاحبه إلى الرياء ومخالفة السنة وإن  وقع في  الحكم أخرج صاحبه إلى الظلم وصده عن الحق وإن وقع في القسمة خرجت  عن قسمة  العدل إلى قسمة الجور وإن وقع في الولاية والعزل أخرج صاحبه إلى  خيانة الله  والمسلمين حيث يولي بهواه ويعزل بهواه وإن وقع في العبادة خرجت  عن أن تكون  طاعة وقربة فما قارن شيئا إلا أفسده <br />
+<br />
+</font></span></b></font><br />
+<font color="indigo"><b><span style="font-family: traditional arabic"><font size="6"><font color="plum">نتابع...</font></font></span></b></font></font></span><br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_866634" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_866634" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=866634" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_866634" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_866635">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2017-09-25,&nbsp;<span class="time">10:01 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post866635" href="showthread.php?t=163091&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=866635#post866635" class="postcounter">#2</a><a id="postcount866635" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=58087&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مسلم طالب العفو غير متواجد حالياً"><strong>مسلم طالب العفو</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=58087&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=58087&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="مسلم طالب العفو غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Apr 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,699</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_866635">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: Traditional Arabic"><font size="5"><font color="navy"><b><span style="font-family: traditional arabic"><font size="6"><font color="black">التاسع عشر</font>  أن يعلم أن الشيطان ليس له مدخل على ابن آدم  إلا من باب هواه فإنه يطيف  به من أين يدخل عليه حتى يفسد عليه قلبه  وأعماله فلا يجد مدخلا إلا من باب  الهوى فيسري معه سريان<font color="red"> السم </font>في الأعضاء <br />
+ <font color="black">العشرون</font> أن الله سبحانه وتعالى جعل الهوى  مضادا لما أنزله على رسوله وجعل  اتباعه مقابلا لمتابعة رسله وقسم الناس  إلى قسمين أتباع الوحي وأتباع الهوى  وهذا كثير في القرآن كقوله تعالى [<font color="darkorchid">فإن لم يستجيبوا لك فاعلم أنما يتبعون  أهواءهم </font>]</font></span><span style="font-family: traditional arabic"><font size="6">وقوله تعالى [<font color="darkorchid">ولئن اتبعت أهواءهم بعد الذي جاءك من العلم</font>] ونظائره <br />
+ <font color="black">الحادي والعشرون</font> أن الله سبحانه وتعالى شبه أتباع الهوى بأخس الحيوانات  صورة ومعنى فشبههم بالكلب تارة كقوله تعالى <font color="darkorchid">[ولكنه أخلد إلى الأرض واتبع  هواه فمثله كمثل الكلب</font>]وبالحمر تارة كقوله تعالى <font color="darkorchid">[كأنهم حمر مستنفرة فرت من  قسورة</font> ]وقلب صورهم إلى صورة القردة والخنازير تارة <br />
+ <font color="black">الثاني والعشرون</font> أن  متبع الهوى ليس أهلا أن  يطاع ولا يكون إماما ولا متبوعا فإن الله سبحانه  وتعالى عزله عن الإمامة  ونهى عن طاعته أما عزله فإن الله سبحانه وتعالى قال  لخليله إبراهيم[<font color="darkorchid"> إني جاعلك للناس إماما قال ومن ذريتي قال لا ينال عهدي  الظالمين </font>]أي لا ينال عهدي بالإمامة ظالما وكل من اتبع هواه فهو ظالم كما  قال الله تعالى [<font color="darkorchid">بل اتبع الذين ظلموا أهواءهم بغير علم</font> ]وأما النهي عن طاعته  فكقوله تعالى[<font color="darkorchid"> ولا تطع من أغفلنا قلبه عن ذكرنا واتبع هواه وكان أمره فرطا</font> ]<br />
+ <font color="black">الثالث والعشرون</font> أن الله سبحانه وتعالى جعل متبع الهوى بمنزلة </font></span></b></font><font color="navy"><b><span style="font-family: traditional arabic"><font size="6"> عابد الوثن فقال تعالى [<font color="darkorchid">أرأيت من اتخذ إلهه هواه</font>] في  موضعين من كتابه قال الحسن هو المنافق لا يهوى شيئا إلا ركبه وقال أيضا  المنافق عبد هواه لا يهوى شيئا إلا فعله <br />
+ <font color="black">الرابع والعشرون </font>أن الهوى هو  حظار جهنم المحيط بها حولها فمن وقع فيه وقع فيها كما في الصحيحين عن النبي  أنه[ <font color="darkorchid">قال حفت الجنة بالمكاره وحفت النار بالشهوات]</font> <br />
+ وفي الترمذي من حديث  أبي هريرة رضي الله عنه يرفعه [<font color="darkorchid">لما  خلق الله الجنة أرسل إليها جبريل فقال  انظر إليها وإلى ما أعددت لأهلها  فيها فجاء فنظر إليها وإلى ما أعد الله  لأهلها فيها فرجع إليه وقال وعزتك  لا يسمع بها أحد من عبادك إلا دخلها فأمر  بها فحجبت بالمكاره وقال ارجع  إليها فانظر إليها فرجع فإذا هي قد حجبت  بالمكاره فقال وعزتك لقد خشيت أن  لا يدخلها أحد قال اذهب إلى النار فانظر  إليها وإلى ما أعددت لأهلها فيها  فجاء فنظر إليها وإلى ما أعد الله لأهلها  فيها فإذا هي يركب بعضها بعضا  فقال وعزتك لا يسمع بها أحد فيدخلها فأمر بها  فحفت بالشهوات فقال ارجع  فانظر إليها فرجع إليها فإذا هي قد حفت بالشهوات  فرجع إليه فقال وعزتك لقد  خشيت أن لا ينجو منها أحد</font> ]قال الترمذي - هذا حديث  حسن صحيح <br />
+ <font color="black">الخامس والعشرون</font> أنه يخاف على من اتبع الهوى أن ينسلخ من </font></span></b></font><br />
+<font color="navy"><b><span style="font-family: traditional arabic"><font size="6"> الإيمان وهو لا يشعر وقد ثبت عن النبي أنه قال[<font color="darkorchid"> لا  يؤمن أحدكم حتى يكون هواه تبعا لما جئت به</font> ]وصح عنه أنه قال [<font color="darkorchid">أخوف ما أخاف  عليكم شهوات الغي في بطونكم وفروجكم ومضلات الهوى ] </font><br />
+ <font color="black">السادس والعشرون </font>أن  اتباع الهوى من المهلكات قال صلى الله عليه وسلم[ <font color="darkorchid">ثلاث  منجيات وثلاث مهلكات فأما المنجيات فتقوى  الله عز و جل في السر والعلانية  والقول بالحق في الرضا والسخط والقصد في  الغنى والفقر وأما المهلكات فهوى  متبع وشح مطاع وإعجاب المرء بنفسه  ] </font><br />
+  <font color="black">السابع والعشرون </font>أن مخالفة الهوى تورث العبد قوة في بدنه وقلبه ولسانه قال  بعض السلف<font color="red"> الغالب لهواه أشد من الذي يفتح المدينة وحده</font> وفي الحديث الصحيح  المرفوع [ <font color="darkorchid">ليس الشديد بالصرعة ولكن الشديد الذي يملك نفسه عند الغضب</font> ]وكلما  تمرن على مخالفة هواه اكتسب قوة إلى قوته <br />
+ <font color="black">الثامن والعشرون</font> أن أغزر الناس مروءة أشدهم مخالفة لهواه قال معاوية المروءة ترك الشهوات وعصيان الهوى فاتباع الهوى يزمن </font></span></b></font><br />
+<font color="navy"><b><span style="font-family: traditional arabic"><font size="6"> المروءة ومخالفته تنعشها <br />
+ <font color="black">التاسع والعشرون </font>أنه  ما من يوم إلا والهوى والعقل يعتلجان في صاحبه فأيها قوي على صاحبه طرده  وتحكم وكان الحكم له قال أبو الدرداء <font color="darkred">إذا أصبح الرجل اجتمع هواه وعمله فإن  كان عمله تبعا لهواه فيومه يوم سوء وإن كان هواه تبعا لعمله فيومه يوم صالح  </font><br />
+ <font color="black">الثلاثون </font>أن الله سبحانه وتعالى جعل الخطأ واتباع الهوى قرينين وجعل  الصواب ومخالفة الهوى قرينين كما قال بعض السلف <font color="red">إذا أشكل عليك أمران لا  تدري أيها أرشد فخالف أقربهما من هواك فإن أقرب ما يكون الخطأ في متابعة  الهوى </font><br />
+ <font color="black">الحادي والثلاثون</font> أن الهوى داء ودواؤه مخالفته قال بعض العارفين  <font color="darkred">إن شئت أخبرتك بدائك وإن شئت أخبرتك بدوائك داؤك هواك ودواؤك ترك هواك  ومخالفته </font><br />
+ وقال بشر الحافي رحمه الله تعالى <font color="darkred">البلاء كله في هواك والشفاء كله في مخالفتك إياه </font><br />
+ <font color="black">الثاني والثلاثون</font> أن جهاد الهوى إن لم يكن أعظم من جهاد الكفار فليس بدونه  قال رجل للحسن البصري رحمه الله تعالى يا أبا سعيد أي الجهاد أفضل <font color="red">قال  جهادك هواك وسمعت</font> شيخنا يقول <font color="red">جهاد النفس والهوى أصل جهاد الكفار والمنافقين  فإنه لا يقدر على جهادهم حتى يجاهد نفسه وهواه أولا حتى يخرج إليهم</font> </font></span></b></font><br />
+<font color="navy"><b><span style="font-family: traditional arabic"><font size="6"> <font color="black">الثالث والثلاثون</font>  أن الهوى تخليط ومخالفته حمية  ويخاف على من أفرط في التخليط وجانب الحمية  أن يصرعه داؤه قال عبدالملك بن  قريب مررت بأعرابي به رمد شديد ودموعه  تسيل على خديه فقلت ألا تمسح عي************  قال نهاني الطبيب عن ذلك ولا  خير فيمن إذا زجر لا ينزجر وإذا أمر لا يأتمر  فقلت ألا تشتهي شيئا فقال  بلى ولكني أحتمي إن أهل النار غلبت شهوتهم حميتهم  فهلكوا <br />
+ <font color="black">الرابع والثلاثون</font> أن اتباع الهوى يغلق عن  العبد أبواب التوفيق  ويفتح عليه أبواب الخذلان فتراه يلهج بأن الله لو وفق  لكان كذا وكذا وقد  سد على نفسه طرق التوفيق باتباعه هواه قال الفضيل ابن  عياض <font color="red">من استحوذ عليه  الهوى واتباع الشهوات انقطعت عنه موارد التوفيق </font><br />
+ <font color="yellowgreen">وقال بعض العلماء  </font><font color="red">الكفر في أربعة أشياء في الغضب والشهوة والرغبة والرهبة ثم قال رأيت منهن  اثنتين رجلا غضب فقتل أمه ورجلا عشق فتنصر </font>وكان بعض السلف يطوف بالبيت فنظر  إلى امرأة جميلة فمشى إلى جانبها ثم قال <br />
+ <font color="darkred">أهوى هوى الدين واللذات تعجبني ... فكيف لي بهوى اللذات والدين </font><br />
+ <font color="yellowgreen">فقالت دع أحدهما تنل الآخر </font></font></span></b></font><br />
+<font color="navy"><b><span style="font-family: traditional arabic"><font size="6"> <font color="black">الخامس والثلاثون</font>  أن من نصر هواه فسد عليه عقله  ورأيه لأنه قد خان الله في عقله فأفسده  عليه وهذا شأنه سبحانه وتعالى في كل  من خانه في أمر من الأمور فإنه يفسده  عليه <br />
+ وقال المعتصم يوما لبعض  أصحابه يا فلان إذا نصر الهوى ذهب الرأي وسمعت  رجلا يقول لشيخنا إذا خان  الرجل في نقد الدراهم سلبه الله معرفة النقد أو  قال نسيه فقال الشيخ هكذا  من خان الله تعالى ورسوله في مسائل العلم <br />
+ <font color="black">السادس والثلاثون</font> <font size="7">أن من فسح  لنفسه في اتباع الهوى ضيق عليها في قبره ويوم معاده ومن ضيق عليها بمخالفة  الهوى وسع عليها في</font> قبره ومعاده وقد أشار الله تعالى إلى هذا في قوله تعالى[  <font color="darkorchid">وجزاهم بما صبروا جنة وحريرا</font>]فلما كان في الصبر الذي هو حبس النفس عن  الهوى خشونة وتضييق جازاهم على ذلك نعومة الحرير وسعة الجنة <font color="black">وقال أبو  سليمان الداراني</font> رحمه الله تعالى في هذه الآية جزاهم بما صبروا عن الشهوات <br />
+ <font color="black">السابع والثلاثون </font>أن اتباع الهوى يصرع العبد  عن النهوض يوم القيامة عن  السعي مع الناجين كما صرع قلبه في الدنيا عن  مرافقتهم قال محمد بن أبي  الورد إن لله عز و جل يوما لا ينجو من شره منقاد  لهواه وإن أبطأ الصرعى  نهضة يوم القيامة صريع شهوته وإن العقول لما جرت  في ميادين الطلب كان  أوفرها حظا من يطالبها بقدر ما صحبه من الصبر والعقل  معدن والفكر معول <br />
+ <font color="black">الثامن والثلاثون</font> أن اتباع الهوى يحل العزائم ويوهنها ومخالفته تشدها </font></span></b></font><br />
+<font color="navy"><b><span style="font-family: traditional arabic"><font size="6"><font color="darkslateblue"><b><span style="font-family: traditional arabic"><font size="6">وتقويها والعزائم هي مركب العبد الذي يسيره إلى  الله والدار الآخرة </font></span></b></font> </font></span></b></font><br />
+<font color="navy"><b><span style="font-family: traditional arabic"><font size="6"><font color="magenta">نتابع....</font></font></span></b></font></font></span><br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_866635" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_866635" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=866635" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_866635" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_866636">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2017-09-25,&nbsp;<span class="time">10:03 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post866636" href="showthread.php?t=163091&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=866636#post866636" class="postcounter">#3</a><a id="postcount866636" name="3"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=58087&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مسلم طالب العفو غير متواجد حالياً"><strong>مسلم طالب العفو</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=58087&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=58087&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="مسلم طالب العفو غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Apr 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,699</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_866636">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: Traditional Arabic"><font size="5"><font color="darkslateblue"><b><span style="font-family: traditional arabic"><font size="6">فمتى  تعطل المركوب أوشك أن ينقطع المسافر قيل ليحيى بن  معاذ من أصح الناس عزما  قال الغالب لهواه ودخل خلف بن خليفة على سليمان بن  حبيب بن المهلب وعنده  جارية يقال لها البدر من أحسن الناس وجها فقال له  سليمان كيف ترى هذه  الجارية فقال أصلح الله الأمير ما رأت عيناي أحسن منها  قط فقال له خذ  بيدها فقال ما كنت لأفجع الأمير بها وقد رأيت شدة عجبه بها  فقال ويحك خذها  على شدة عجبي بها ليعلم هواي أني له غالب وأخذ بيدها وخرج  وهو يقول <br />
+ <font color="darkred">لقد حباني وأعطاني وفضلني ... عن غير مسألة منه سليمان <br />
+ أعطاني البدر خودا في محاسنها ... والبدر لم يعطه إنس ولا جان <br />
+ ولست يوما بناس فضله أبدا ... حتى يغيبني لحد وأكفان </font><br />
+ <font color="black">التاسع والثلاثون</font> أن مثل راكب الهوى كمثل راكب  فرس حديد صعب جموح لا لجام  له فيوشك أن يصرعه فرسه في خلال جريه به أو  يسير به إلى مهلك قال بعض  العارفين أسرع المطايا إلى الجنة الزهد في  الدنيا وأسرع المطايا إلى النار  حب الشهوات ومن استوى على متن هواه أسرع  به إلى وادي الهلكات وقال آخر أشرف  العلماء من هرب بدينه من الدنيا  واستصعب قياده على الهوى وقال عطاء من غلب  هواه عقله وجزعه صبره افتضح <br />
+ <font color="black">الأربعون</font> أن التوحيد واتباع الهوى  متضادان  فإن الهوى صنم ولكل عبد صنم في قلبه بحسب هواه وإنما بعث الله رسله  بكسر  الأصنام وعبادته وحده لا شريك له وليس مراد الله سبحانه كسر الأصنام   المجسدة وترك </font></span></b></font><br />
+<font color="darkslateblue"><b><span style="font-family: traditional arabic"><font size="6">  الأصنام التي في القلب بل المراد كسرها من القلب  أولا قال الحسن بن علي  المطوعي صنم كل إنسان هواه فمن كسره بالمخالفة استحق  اسم الفتوة وتأمل قول  الخليل لقومه[ <font color="darkorchid">ما هذه التماثيل التي أنتم لها عاكفون ] </font>كيف  تجده مطابقا للتمائيل التي يهواها القلب ويعكف عليها ويعبدها من دون  الله  قال الله تعالى أرأيت من اتخذ إلهه هواه أفأنت تكون عليه وكيلا [<font color="darkorchid">أم  تحسب أن أكثرهم يسمعون أو يعقلون إن هم إلا كالأنعام بل هم أضل سبيلا</font> ]<br />
+  <font color="black">الحادي والأربعون</font> أن مخالفة الهوى مطردة  للداء عن القلب والبدن ومتابعته  مجلبة لداء القلب والبدن فأمراض القلب  كلها من متابعة الهوى ولو فتشت على  أمراض البدن لرأيت غالبها من إيثار  الهوى على ما ينبغي تركه <br />
+ <font color="black">الثاني  والأربعون </font><font size="7">أن أصل العداوة والشر والحسد الواقع بين الناس من اتباع الهوى  </font>فمن  خالف هواه أراح قلبه وبدنه وجوارحه فاستراح وأراح قال أبو بكر الوراق  إذا  غلب الهوى أظلم القلب وإذا أظلم ضاق الصدر وإذا ضاق الصدر ساء الخلق  وإذا  ساء الخلق أبغضه الخلق وأبغضهم فانظر ماذا يتولد من التباغض من الشر   والعداوة وترك الحقوق وغيرها <br />
+ <font color="black">الثالث والأربعون </font>أن الله سبحانه وتعالى  جعل  في العبد هوى وعقلا فأيهما ظهر توارى الآخر كما قال أبو علي الثقفي من   غلبه هواه توارى عنه عقله فانظر عاقبة من استتر عنه عقله وظهر عليه خلافه   وقال علي بن سهل رحمه الله العقل والهوى يتنازعان فالتوفيق قرين العقل   والخذلان قرين الهوى والنفس واقفة بينهما فأيهما غلب كانت النفس معه </font></span><span style="font-family: traditional arabic"><font size="6">الرابع  والأربعون أن الله سبحانه وتعالى جعل القلب ملك  الجوارح ومعدن معرفته  ومحبته وعبوديته وامتحنه بسلطانين وجيشين وعونين  وعدتين فالحق والزهد  والهدى سلطان وأعوانه الملائكة وجيشه الصدق والإخلاص  ومجانبة الهوى  والباطل سلطان وأعوانه الشياطين وجنده وعدته اتباع الهوى  والنفس واقفة بين  الجيشين ولا يقدم جيش الباطل على القلب إلا من ثغرتها  وناحيتها فهي تخامر  على القلب وتصير مع عدوه عليه فتكون الدائرة عليه فهي  التي تعطي عدوها  عدة من قبلها وتفتح له باب المدينة فيدخل ويتملك ويقع  الخذلان على القلب <br />
+ <font color="black">الخامس والأربعون</font> أن أعدى عدو للمرء شيطانه  وهواه  وأصدق صديق له عقله والملك الناصح له فإذا اتبع هواه أعطي بيده  لعدوه  واستأسر له وأشمته به وساء صديقه ووليه وهذا هو بعينه هو جهد البلاء  ودرك  الشقاء وسوء القضاء وشماتة الأعداء <br />
+ <font color="black">السادس والأربعون </font>أن لكل عبد بداية  ونهاية  فمن كانت بدايته اتباع الهوى كانت نهايته الذل والصغار والحرمان  والبلاء  المتبوع بحسب ما اتبع من هواه بل يصير له ذلك في نهايته عذابا يعذب  به في  قلبه كما قال القائل <br />
+ <font color="darkred">مآرب كانت في الشباب لأهلها ... عذابا فصارت في المشيب</font> <font color="darkred">عذابا </font><br />
+ فلو تأملت حال كل ذي حال سيئة زرية لرأيت بدايته الذهاب مع هواه وإيثاره   على عقله ومن كانت بدايته مخالفة هواه وطاعة داعي رشده كانت نهايته العز   والشرف والغنى والجاه عند الله وعند الناس قال أبو علي الدقاق من ملك شهوته   في حال شبيبته أعزه الله تعالى في حال كهولته </font></span></b></font><br />
+<font color="darkslateblue"><b><span style="font-family: traditional arabic"><font size="6">  وقيل للمهلب بن أبي صفرة بم نلت ما نلت قال بطاعة  الحزم وعصيان الهوى  فهذا في بداية الدنيا ونهايتها وأما الآخرة فقد جعل  الله سبحانه الجنة  نهاية من خالف هواه والنار نهاية من اتبع هواه <br />
+  <font color="black">السابع والأربعون</font> أن الهوى رق في القلب وغل  في العنق وقيد في الرجل ومتابعه  أسير لكل سيء الملكة فمن خالفه عتق من رقه  وصار حرا وخلع الغل من عنقه  والقيد من رجله وصار بمنزلة رجل سالم لرجل  بعد أن كان رجلا فيه شركاء  متشاكسون <br />
+ <font color="darkred">رب مستور سبته شهوة ... فتعرى ستره فانهتكا <br />
+ صاحب الشهوة عبد فإذا ... غلب الشهوة أضحى ملكا </font><br />
+ وقال ابن المبارك <br />
+ <font color="darkred">ومن البلاء وللبلاء علامة ... أن لا يرى لك عن هواك نزوع <br />
+ العبد عبد النفس في شهواتها ... والحر يشبع تارة ويجوع </font><br />
+ <font color="black">الثامن والأربعون</font> أن مخالفة الهوى تقيم العبد  في مقام من لو أقسم على الله  لأبره فيقضي له من الحوائج أضعاف أضعاف ما  فاته من هواه فهو كمن رغب عن  بعرة فأعطي عوضها درة ومتبع الهوى يفوته من  مصالحه العاجلة والآجلة والعيش  الهنيء مالا نسبة لما ظفر به من هواه البتة  فتأمل انبساط يد يوسف الصديق  عليه الصلاة و السلام ولسانه وقدمه ونفسه  بعد خروجه من السجن لما قبض نفسه  عن الحرام <br />
+ وقال عبدالرحمن بن مهدي رأيت سفيان الثوري رحمه الله تعالى  في المنام  فقلت له ما فعل الله بك قال لم يكن إلا أن وضعت في لحدي حتى وقفت  </font></span><span style="font-family: traditional arabic"><font size="6">بين  يدي الله تبارك وتعالى فحاسبني حسابا يسيرا ثم أمر  بي إلى الجنة فبينا  أنا أدور بين أشجارها وأنهارها لا أسمع حسا ولا حركة إذ  سمعت قائلا يقول  سفيان بن سعيد فقلت سفيان بن سعيد فقال تحفظ أنك آثرت  الله عز و جل على  هواك يوما قلت إي والله فأخذني النثار من كل جانب <br />
+  وقال عبدالرزاق بعث أبو جعفر الخشابين حين خرج إلى مكة وقال إن رأتم  سفيان  فاصلبوه فجاءوا ونصبوا الخشب وطلب ورأسه في حجر الفضيل فقال له  أصحابه اتق  الله عز و جل ولا تشمت بنا الأعداء فتقدم إلى الأستار ثم أخذها  بيده وقال  برئت منه إن دخلها أبو جعفر فمات قبل أن يدخل مكة فتأمل عاقبة  مخالفة الهوى  كيف أقامه في هذا المقام <br />
+ <font color="black">التاسع والأربعون</font> أن مخالفة الهوى توجب شرف   الدنيا وشرف الآخرة وعز الظاهر وعز الباطن ومتابعته تضع العبد في الدنيا   والآخرة وتذله في الظاهر وفي الباطن وإذا جمع الله الناس في صعيد واحد نادى   مناد ليعلمن أهل الجمع من أهل الكرم اليوم ألا ليقم المتقون فيقومون إلى   محل الكرامة وأتباع الهوى ناكسو رؤسهم في الموقف في حر الهوى وعرقه وألمه   وأولئك في ظل العرش <br />
+ <font color="black">الخمسون</font> أنك إذا تأملت السبعة الذين يظلهم  الله عز  و جل في ظل عرشه يوم لا ظل إلا ظله وجدتهم إنما نالوا ذلك الظل  بمخالفة  الهوى فإن الإمام المسلط القادر لا يتمكن من العدل إلا بمخالفة  هواه والشاب  المؤثر </font></span></b></font><br />
+<font color="darkslateblue"><b><span style="font-family: traditional arabic"><font size="6">  لعبادة الله على داعي شبابه لولا مخالفة هواه لم  يقدر على ذلك والرجل  الذي قلبه معلق بالمساجد إنما حمله على ذلك مخالفة  الهوى الداعي له إلى  أماكن اللذات والمتصدق المخفي لصدقته عن شماله لولا  قهره لهواه لم يقدر  على ذلك والذي دعته المرأة الجميلة الشريفة فخاف الله  عز و جل وخالف هواه  والذي ذكر الله عز و جل خاليا ففاضت عيناه من خشيته  إنما أوصله إلى ذلك  مخالفة هواه فلم يكن لحر الموقف وعرقه وشدته سبيل عليهم  يوم القيامة  وأصحاب الهوى قد بلغ منهم الحر والعرق كل مبلغ وهم ينتظرون  بعد هذا دخول  سجن الهوى فالله سبحانه وتعالى المسؤول أن يعيذنا من أهواء  نفوسنا الأمارة  بالسوء وأن يجعل هوانا تبعا لما يحبه ويرضاه إنه على كل شيء  قدير  وبالإجابة جدير تم الكتاب والحمد لله </font></span></b></font></font></span><br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_866636" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_866636" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=866636" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_866636" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_935636">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2020-05-09,&nbsp;<span class="time">09:12 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post935636" href="showthread.php?t=163091&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=935636#post935636" class="postcounter">#4</a><a id="postcount935636" name="4"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=58087&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مسلم طالب العفو غير متواجد حالياً"><strong>مسلم طالب العفو</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=58087&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=58087&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="مسلم طالب العفو غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Apr 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,699</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: خمسون وسيلة للتخلص من الهوى
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_935636">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;">تقبل الله منكم أعمال رمضان<br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_935636" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_935636" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=935636" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_935636" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=163091&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=163091#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=696d1a7d9adaea36633b28fa7c3827c1">لوحة التحكم</a></li>
+		<li><a href="private.php?s=696d1a7d9adaea36633b28fa7c3827c1">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1">الاشتراكات</a></li>
+		<li><a href="online.php?s=696d1a7d9adaea36633b28fa7c3827c1">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=55935&amp;s=696d1a7d9adaea36633b28fa7c3827c1">كم ساعة كان ابن تيمية يذكر ربه من رواية ابن القيم</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=183558&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أفضل ٤ أعمال تعملها في رمضان فيها أعظم الأجر</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D9%87%D9%88%D9%89">الهوى</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%AE%D9%85%D8%B3%D9%88%D9%86">خمسون</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%84%D9%84%D8%AA%D8%AE%D9%84%D8%B5">للتخلص</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%85%D9%86">من</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%88%D8%B3%D9%8A%D9%84%D8%A9">وسيلة</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=163091#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=163091#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">04:58 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

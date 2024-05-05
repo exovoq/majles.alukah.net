@@ -1,0 +1,4401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=696d1a7d9adaea36633b28fa7c3827c1&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=145288&amp;page=2";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="السلوك, جمع, والتزكية, والرقائق, يقابلني, وترك, الله, المرتبة, اتقى, الواجبات, بعض, بفعل, المحرمات, وفعل, مسلم, المستحبات, المكروهات, بأس, تقي, مراتب, المذكورة،, التقوى, مرتبة, يخلو, فمهما, وهذا, كتب, وكل, العقيدة, قولهم, ولي, المسلم, فهو, تقي،, معنى, كان, فيه, محمد, بازمول, الأولى, المكروهات،, الشيخ, تقوى, الحمد, لله, وبعد, خشية, المستحبات،, الرابعة, الخامسة" />
+	<meta name="description" content="الحمد لله وبعد   
+ 
+ جمع ما يقابلني  من السلوك والتزكية والرقائق .  
+ 
+    مراتب تقوى الله :  
+ 
+ الشيخ محمد بازمول   
+ 
+المرتبة الأولى :  من اتقى الله بفعل الواجبات وترك المحرمات وفعل  المستحبات وترك المكروهات، وترك ما لا بأس به خشية من الوقوع فيما فيه بأس." />
+
+	<title> جمع ما يقابلني  من السلوك والتزكية والرقائق . - الصفحة 2</title>
+	<link rel="canonical" href="showthread.php?t=145288&page=2&s=696d1a7d9adaea36633b28fa7c3827c1" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=696d1a7d9adaea36633b28fa7c3827c1 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=696d1a7d9adaea36633b28fa7c3827c1">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> جمع ما يقابلني  من السلوك والتزكية والرقائق .</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=696d1a7d9adaea36633b28fa7c3827c1&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<form action="showthread.php?t=145288&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" method="get" class="pagination popupmenu nohovermenu">
+<input type="hidden" name="t" value="145288" /><input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+	
+		<span><a href="javascript://" class="popupctrl">صفحة 2 من 3</a></span>
+		
+		<span class="first_last"><a rel="start" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة الأولى - النتائج 1 إلى 20 من 41"><img src="images/metro/purple/pagination/first-left.png" alt="الأولى" />الأولى</a></span>
+		
+		
+		<span class="prev_next"><a rel="prev" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة السابقة - النتائج 1 إلى 20 من 41"><img src="images/metro/purple/pagination/previous-left.png" alt="السابق" /></a></span>
+		
+		
+		<span><a href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مشاهدة النتائج 1 إلى 20 من 41">1</a></span><span class="selected"><a href="javascript://" title="النتائج 21 إلى 40 من 41">2</a></span><span><a href="showthread.php?t=145288&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مشاهدة النتائج 41 إلى 41 من 41">3</a></span>
+		
+		
+		<span class="prev_next"><a rel="next" href="showthread.php?t=145288&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة التالية - النتائج 41 إلى 41 من 41"><img src="images/metro/purple/pagination/next-left.png" alt="التالي" /></a></span>
+		
+		
+		<span class="first_last"><a href="showthread.php?t=145288&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة الأخيرة - النتائج 41 إلى 41 من 41">الأخيرة<img src="images/metro/purple/pagination/last-left.png" alt="الأخيرة" /></a></span>
+		
+	
+	<ul class="popupbody popuphover">
+		<li class="formsubmit jumptopage"><label>إذهب إلى الصفحة: <input type="text" name="page" size="4" /></label> <input type="submit" class="button" value="إذهب" /></li>
+	</ul>
+</form>
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 21 إلى 40 من 41
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=145288&page=2&s=696d1a7d9adaea36633b28fa7c3827c1" title="تحديث الصفحة">جمع ما يقابلني  من السلوك والتزكية والرقائق .</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=145288" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;t=145288&amp;pp=20&amp;page=2" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=addsubscription&amp;t=145288" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;search_type=1&amp;searchthreadid=145288&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="145288" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_791848">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-09-06,&nbsp;<span class="time">08:47 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post791848" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=791848#post791848" class="postcounter">#21</a><a id="postcount791848" name="21"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=54631&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أم علي طويلبة علم غير متواجد حالياً"><strong>أم علي طويلبة علم</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=54631&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=54631&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أم علي طويلبة علم غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Mar 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>7,532</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_791848">
+				<blockquote class="postcontent restore">
+					<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				<div class="bbcode_postedby">
+					<img src="images/metro/purple/misc/quote_icon.png" alt="اقتباس" /> المشاركة الأصلية كتبت بواسطة ابوخزيمةالمصرى
+					<a href="showthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=791744#post791744" rel="nofollow"><img class="inlineimg" src="images/metro/purple/buttons/viewpost-left.png" alt="مشاهدة المشاركة" /></a>
+				</div>
+				<div class="message">لا بأس بارك الله فيكم <br />
+<br />
+إلم نستطع أن نؤلف الكتب  فما يسعنا إلا أن نرفع المشاركات المفيدة  في المنتديات وشبكات التواصل <br />
+عسى ربنا أن يتقبلها فتكون ( أو علم ينتفع به ) اللهم لا تقطع أعمالنا من الخير</div>
+			
+		</div>
+	</div>
+</div><font size="5"><b>اللهم آمين ، بارك الله فيكم ، إذن لابد من التثبت من المصدر الأصلي، فليس كل ما ينقل صحيح، فأحيانا نجد؛ &quot; قال ابن القيم:.....&quot; ثم يتبين أن الكلام ليس من قوله وإنما فيما معناه أو على حسب فهم القارئ!<br />
+وأحيانا ينتشر في مواقع التواصل &quot; قال ابن تيمية:..... أو ابن القيم:....&quot; وعند البحث لا تجد ما نسب إليهم! </b></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><span style="font-family: arial"><font color="#ff0000"><b>اللهم اغفر لأبي وارحمه وعافه واعف عنه اللهم اجعل ولدي عمر ذخرا لوالديه واجعله في كفالة إبراهيم عليه السلام</b></font></span></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_791848" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_791848" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=791848" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_791848" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_792018">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-09-08,&nbsp;<span class="time">01:39 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post792018" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=792018#post792018" class="postcounter">#22</a><a id="postcount792018" name="22"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابوخزيمةالمصرى غير متواجد حالياً"><strong>ابوخزيمةالمصرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=63496&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابوخزيمةالمصرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						<dt>الدولة</dt> <dd>مصر المنصورة</dd>
+						
+						<dt>المشاركات</dt> <dd>5,230</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_792018">
+				<blockquote class="postcontent restore">
+					صدقتم
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_792018" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_792018" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=792018" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_792018" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_792339">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-09-10,&nbsp;<span class="time">08:08 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post792339" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=792339#post792339" class="postcounter">#23</a><a id="postcount792339" name="23"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابوخزيمةالمصرى غير متواجد حالياً"><strong>ابوخزيمةالمصرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=63496&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابوخزيمةالمصرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						<dt>الدولة</dt> <dd>مصر المنصورة</dd>
+						
+						<dt>المشاركات</dt> <dd>5,230</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_792339">
+				<blockquote class="postcontent restore">
+					وقال ابن رجب الحنبليّ: أفِي دَارِ الخَرَابِ تَظلُّ تَبنِي *** وتَعمُرُ؟ مَا لِعمرَانٍ خُلِقتَا! (القصيدة)<br />
+بسم الله الرّحمن الرّحيم...<br />
+ إنّ الحمد لله، نحمده ونستعينه ونستغفره، ونعوذ بالله من شرور أنفسنا  وسيّئات أعمالنا، من يهده الله فلا مضلّ له، ومن يضلل فلا هادي له، وأشهد  أنْ لا إله إلا اللّه وحده لا شريك له، وأن محمّدًا عبده ورسوله.<br />
+أمّا بعد:<br />
+فهذه قصيدةٌ بليغةٌ في معانيها؛ عظيمةٌ في مقاصدها؛ للحافظِ ابنِ رجبَ الحنبليِّ ـ رحمه الله تعالى ـ في رسالته (ذمّ قسوة القلب)...<br />
+يبيّنُ فيها زخرفَ هذه الدّنيا؛ ومآلَ العبدِ فيها...فأبدعَ قائلاً:<br />
+1- أفِي دَارِ الخَـــــــــــ  ـــــــــــــــ  ـــرَابِ تَظلُّ تَبنِي ***  وتَعمُرُ؟ مَا لِعــُـــــــــ  ـــــــــــــــ  ـــــــمرَانٍ خُلِقتَا!<br />
+2- وَمَا تَركَتْ لَكَ الأَيَّامُ عُـــــــــــــ  ـــــــــــــــ  ــــذرًا  *** لَقَد وَعَظَتْكَ لَكِـــــــــــ  ـــــــــــنْ مَا اتَّعَظتَا!<br />
+3- تُنادي للرَّحِيـــــــ  ـــــــــــــــ  ـــــــــــــــ  لِ بِكُلِّ حِينٍ  *** وَتُعلِنُ إنَّمَا المَقصُــــــــ  ـــــــــــــــ  ــــــــــودُ  أنْتَا!<br />
+4- وتُسمِعُكَ النِّــــــــــ  ـــــــــــــــ  ـــــــــدَاءَ وأنتَ لاَهٍ  *** عَـــــــــــــ  ــــــــنِ الدَّاعِي كأنَّكَ مَا سَمِعتَا!<br />
+5- وتَعلَمُ أنَّهُ سَفَرٌ  بَعِيــــــــــ  ـــــــــــــــ  ـــــــــــــــ  ـــــــــــــــ  دٌ ***  وعَــــــــــــ  ـــــــــــــــ  ـــن إِعدَادِ زَادٍ قَد غَفَلتَا!<br />
+6- تَنَـــــــــــ  ـــــــــــــــ  ـــــــــــــــ  امُ وَطالِبُ الأيَّامِ  سَاعٍ *** ورَاءكَ لاَ يَنَامُ فَكيـــــــــــ  ـــــــــــــــ  ــــفَ  نِمتَا!<br />
+7- مَعائِبُ هَـــــــــــــ  ـــــــــــــــ  ــــــــــــــذ  ِهِ الدُّنيَا  كَثِيرٌ *** وأنتَ عَلَـــــــــــ  ـــــــــــــــ  ـــــــى محبَّتِهَا  طُبِعتَا!<br />
+8- يَضِيعُ العُمرُ فِـــــــــــــ  ـــــــــــــــ  ي لَعِبٍ وَلهوٍ *** وَ  لَـــــــــــــ  ـو أُعطِيتَ عَقــــــــــــ  ــلاً مَا لَعِبتَا!<br />
+9- فمَا بَعــــــــــــ  ـــــدَ الممَاتِ سِوَى جَحِيمٍ *** لِعــــــــــــ  ـــــــــــــــ  ـــــــــــاصٍ أو نَعِيمٍ إِن أَطعتَا!<br />
+10- ولستَ بآمِـــــــــــ  ـــــــــــــــ  ــــــــــلٍ  ردًّا لِدُنيَا ***  فَتعمــــــــــ  ـــــــــــــلُ صَالِحًا فِيمَــــــــــ  ا تَركتَا!<br />
+11- وأوَّلُ مَـــــــــــــ  ـــــــــــــن ألُومُ اليَومَ نفسِي  ***  فَقَـــــــــــ  ـــــــــد فَعَلتْ نَظَائِرَ مَا فَعلتَا!<br />
+12- أيَا نفسِيَ أَخوضًا فِــــــــــي المَعاصِي  *** وَبعـــــــــــ  ـــــــــــــــ  ـدَ الأربَعِينَ وغِبَّ سِتَّا!<br />
+13- وَأرجُـــــو أَن يَطُولَ العُمــــــــــ  ـــــــرُ حَتَّى  *** أَرى زَادَ الرَّحِيـــــــ  ــــــــــــــل  ِ وقَد تأتَّى!<br />
+14- أيَـــــا غُصنَ الشَّبابِ تَمِيــــــــــ  ــلُ زَهوًا  *** كأنَّكَ قَــــــــــــد مَضَى زَمنٌ وعِشتَا!<br />
+15- عَلِمتَ فَدَعْ سَبِيلَ الجَهلِ واحذَرْ  *** وَصحِّحْ قَــــــــد عَلِمتَ ومَا عَمِلْتَا!<br />
+16- وَيَا مَـــــــــــــ  ـــــن يَجمعُ الأَموالَ قُلْ لِي *** أَيَمنَعُكَ الـــــــــرَّد  َى مَا قَد جَمَعتَا!<br />
+17- وَيَا مَـــــــــــــ  ـــــــــــــــ  ــــــــن يَبتَغِي أَمرًا  مُطَاعًا *** يُسمَعُ نَافِذٌ مَـــــــــــــ  ــــــــــــــن قَد  أَمَرتَا!<br />
+18- أَجَجْتَ إلَــــــــــــ  ــــــــــــى الوِلاَيَةِ لاَ تُبَالِي *** أَجِرْتَ عَلَـــــــــــ  ـــى البرِيَّةِ أَم عدَلتَا!<br />
+19- ألاَ تَدرِي بأنَّكَ يَـــــــــــــ  ــــــــــــومَ صَارَتْ *** إِلَيكَ بِغَيــــــــــ  ـــــــــــــــ  ــرِ سِكِّينٍ ذُبِحتَا!<br />
+20- ولَيسَ يَقُـــــــــــ  ـــــــــــــــ  ــــومُ فَرحةُ قَد تَولَّى *** بِتَرحةِ يَـــــــــــــ  ـــــومَ تَسمعُ قَد عُزِلتَا!<br />
+21- وَلاَ تُهمِــــــــــ  ــــــــــلْ فَإنَّ الوَقتَ يَسرِي *** فإنْ لَـــــــــــــ  ــــــــم تَغتَنِمهُ فَقَد أَضَعتَا!<br />
+22- تَـــــــــــــ  ــــــــــــــر  َى الأيَّامَ تُبلِي كُلَّ غُصنٍ *** وَتَطوِي مِــــــــــــن سُرُورِكَ مَا نَشَرْتَا!<br />
+23- وَتَعلَــــــــ  ـــــــــــــــ  ـــــــــــــــ  ــــمُ إنَّمَا  الدُّنيَا مَنامٌ  *** فَأحلَى مَا تَكُـــــــــــ  ــــــونُ إذَا  انتبَهتَا!<br />
+24- فَكَيفَ تصدُّ عَـــــــــــــ  ــن تَحصِيلِ بَاقٍ *** وَبِالفَانِــــ  ـــــــــــــــ  ــــــــــــي وزُخرُفِهِ شُغِلتَا!<br />
+25- هِـــــــــــــ  ـــــــــــــــ  ـــيَ الدُّنيَا إذَا سَرَّتكَ يَومًا *** تسُؤْكَ ضِعــــــــــــ  فَ مَا فِيهَا سُرِرتَا!<br />
+26- تَغُـــــــــــ  ـــــــرُّكَ كالسَّرابِ فأنتَ تَسرِي *** إليــــــــــــ  ـــــهِ ولَيسَ تَشعُرُ إن غُرِرتَا!<br />
+27- وَأشهدُ كَـــــــــــــ  ــــم أبادَتْ مِن حَبِيبٍ *** كأنَّكَ آمٍــــــــــــ  ـــــــــــــنٌ مِمَّنْ شَهِدتَا!<br />
+28- وَتدْفِنُهُم وَتــــــــــــ  ـــــــــــــــ  ـــــرجِعُ ذَا سُرُورٍ *** بِمَا قَـــــــــــد نِلتَ مِن إِرثٍ وَحَرثَا!<br />
+29- وتَنسَاهُمْ وأنتَ غَـــــــــــــ  ــــــــــــدًا سَتَفنَى *** كأنَّكَ مَا خُلِــــــــــق  تَ ولاَ وُجِدتا!<br />
+30- تُحدِّثُ عَنهُــــــــــ  ــــــــــــمُ وَتقُولُوا كَانُوا *** نَعــــــــــــ  ـــــــــــمْ كَانُوا كَماَ واللهِ كُنتَا!<br />
+31- حَدِيثُكَ هـــــــــمُ وأنتَ غدًا حَدِيثٌ *** لِغَيرِهِــــــ  ــــــــمُ فَأحسِن مَا استطَعتَا!<br />
+32- يَعُـــــــــــ  ـــــــودُ المرءُ بَعدَ الموتِ ذِكرًا *** فَكُن حَسَن الحَدِيثِ إذَا ذُكِرتَا!<br />
+33- سلِ الأيَــــــــــ  ـــــــــــــــ  ــــــــامَ عَن عَمٍّ وخالٍ *** وَمَالَكَ والسُّؤالُ؟! وقَــــد عَلِمتَا!<br />
+34- ألَستَ تَـــــــــــــ  ـــــــــــــــ  ـــرى دِيارَهُمُ خَوَاءٌ *** فَقَـــــــــــ  ــــد أنكَرْتَ منهَا مَا عرفتَا!<br />
+،،،،،،،،،<br />
+الأحد/ 8/ صفر/ 1431هـ.<br />
+مرسلة بواسطة حَسَّانَة بنت محمد ناصر الدين الألبانيّ في 8:54 م<br />
+<br />
+وهنا تسمع <br />
+ عظيمة 
+<iframe class="restrain" title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/FS-HVJZjKdw?wmode=opaque" frameborder="0"></iframe>
+
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_792339" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_792339" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=792339" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_792339" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_792478">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-09-11,&nbsp;<span class="time">02:59 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post792478" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=792478#post792478" class="postcounter">#24</a><a id="postcount792478" name="24"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=1230&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="علي أحمد عبد الباقي غير متواجد حالياً"><strong>علي أحمد عبد الباقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=1230&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=1230&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="علي أحمد عبد الباقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						مشرف
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Mar 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>7,908</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_792478">
+				<blockquote class="postcontent restore">
+					قصيدة رائعة ، بارك الله فيك ونفع بك !<br />
+رحم الله شيخ الإسلام ابن رجب وأسكنه فسيح الجنات !
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><font size="3"><div style="text-align: center;"><span style="font-family: lotus linotype"><b>قال أبو عبدِ الله ابنِ الأعرابي:</b><br />
+<b>لنا جلـساء مـا نــمَلُّ حـدِيثَهم   ***   ألِبَّاء مأمونون غيبًا ومشهدا</b><br />
+<b>يُفيدوننا مِن عِلمهم علمَ ما مضى   ***   وعقلًا وتأديبًا ورأيا مُسدَّدا</b><br />
+<b>بلا فتنةٍ تُخْشَى ولا سـوء عِشرَةٍ   ***   ولا نَتَّقي منهم لسانًا ولا يدا</b><br />
+<b>فإن قُلْتَ أمـواتٌ فلـستَ بكاذبٍ   ***   وإن قُلْتَ أحياءٌ فلستَ مُفَنّدا</b><br />
+</span><br />
+</div></font></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_792478" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_792478" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=792478" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_792478" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_792888">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-09-13,&nbsp;<span class="time">03:20 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post792888" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=792888#post792888" class="postcounter">#25</a><a id="postcount792888" name="25"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابوخزيمةالمصرى غير متواجد حالياً"><strong>ابوخزيمةالمصرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=63496&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابوخزيمةالمصرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						<dt>الدولة</dt> <dd>مصر المنصورة</dd>
+						
+						<dt>المشاركات</dt> <dd>5,230</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_792888">
+				<blockquote class="postcontent restore">
+					وإياكم <br />
+<br />
+<hr /> 			 		  		 		 			 			قال الحافظ ابن رجب في جامع العلوم والحكم عند حديث :&quot; اتق الله حيثما كنت ...&quot; .<br />
+وفي الجملة فتقوى الله في السر هو علامة كمال الإيمان ، وله تأثير عظيم في  إلقاء الله لصاحبه الثناء في قلوب المؤمنين ، وفي الحديث : &quot; ما أسر عبدٌ  سريرةً إلا ألبسه الله رداءها علانية ، إن خيرا فخيرا ، وإن شرا فشرا &quot; روي  هذا مرفوعا ، وروي عن ابن مسعود موقوفا من قوله .<br />
+وقال أبو الدرداء رضي الله عنه : ليتق أحدكم أن تلعنه قلوب المؤمنين وهو لا  يشعر ، يخلو بمعاصي الله ، فيلقي الله له البغض في قلوب المؤمنين .<br />
+وقال سليمان التيمي رحمه الله : إن الرجل ليصيب الذنب في السر فيصبح وعليه مذلته .<br />
+قال ابن رجب رحمه الله : فالسعيد من أصلح ما بينه وبين الله ، فإنه من أصلح  ما بينه وبين الله أصلح الله ما بينه وبين الخلق ، ومن التمس محامد الناس  بسخط الله ، عاد حامده من الناس له ذاما .<br />
+وقال أبوسليمان رحمه الله : الخاسر من أبدى للناس صالح عمله ، وبارز بالقبيح من هو أقرب إليه من حبل الوريد . <br />
+<br />
+المسيطير
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_792888" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_792888" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=792888" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_792888" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_793499">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-09-17,&nbsp;<span class="time">01:50 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post793499" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=793499#post793499" class="postcounter">#26</a><a id="postcount793499" name="26"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابوخزيمةالمصرى غير متواجد حالياً"><strong>ابوخزيمةالمصرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=63496&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابوخزيمةالمصرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						<dt>الدولة</dt> <dd>مصر المنصورة</dd>
+						
+						<dt>المشاركات</dt> <dd>5,230</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_793499">
+				<blockquote class="postcontent restore">
+					يقول الإمام ابن القيم –رحمه الله- :&quot;الخوف -أي من الله- علامة صحة  الإيمان، وترحٌّلُه من القلب علامة ترحل الإيمان منه&quot;. مدارج السالكين  (1/515)
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_793499" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_793499" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=793499" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_793499" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_794156">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-09-21,&nbsp;<span class="time">06:47 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post794156" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=794156#post794156" class="postcounter">#27</a><a id="postcount794156" name="27"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=118578&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="عادل الغرياني غير متواجد حالياً"><strong>عادل الغرياني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=118578&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=118578&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="عادل الغرياني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2014</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>631</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_794156">
+				<blockquote class="postcontent restore">
+					<font color="#800080"><b>اللهم اجعلنا سعداء في الدنيا والآخرة</b></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_794156" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_794156" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=794156" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_794156" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_795103">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-09-29,&nbsp;<span class="time">01:35 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post795103" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=795103#post795103" class="postcounter">#28</a><a id="postcount795103" name="28"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابوخزيمةالمصرى غير متواجد حالياً"><strong>ابوخزيمةالمصرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=63496&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابوخزيمةالمصرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						<dt>الدولة</dt> <dd>مصر المنصورة</dd>
+						
+						<dt>المشاركات</dt> <dd>5,230</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_795103">
+				<blockquote class="postcontent restore">
+					قال شيخ الإسلام ابن تيمية -رحمه الله-:  &quot;ومن أمراض القلوب الحسد...<br />
+ والتحقيق: أنّ الحسد هو البُغْض والكراهة لِمَا يراه [الحاسد] مِنْ حُسْنِ حالِ المحسود،<br />
+ وهو نوعان: أحدهما كراهةٌ للنعمة عليه مُطلَقًا، فهذا هو الحسد المذموم...  فإنه يتألّم ويتأذّى بوجود ما يُبْغِضُه فيكون ذلك مَرَضًا في قلبه،  ويَلْتَذُّ بزوال النعمة عنه وإنْ لم يحصل له نَفْعٌ بزوالها، لكن نفعه  زوال الألم الذي كان في نفسه...<br />
+  والنوع الثاني: أن يَكْرَه فَضْلَ ذلك الشخص عليه فيُحِب أن يكون مِثْلَه  أو أفضل منه، فهذا حسد وهو الذي سَمّوه الغِبْطَة، وقد سمّاه النبي صلى  الله عليه وسلم حَسَدًا في الحديث المتفق عليه من حديث ابن مسعود وابن عمر  رضي الله عنهما أنه قال: ((لا حسد إلا في اثنتين: رجل آتَاه اللهُ الحكمة  فهو يقضي بها ويعلّمها، ورجل آتاه الله مالًا وسَلَّطه على هلكته في  الحق))، هذا لفظ ابن مسعود. ولفظ ابن عمر: ((رجل آتاه الله القرآن فهو يقوم  به آناء الليل والنهار، ورجل آتاه الله مالًا فهو ينفق منه في الحق آناء  الليل والنهار))...<br />
+ فهذا الحسد الذي نهى عنه النبي صلى الله عليه وسلم  إلّا في موضعين هو الذي سمّاه أولئك الغبطة، وهو أن يُحِب مثل حال الغير  ويَكره أن يفضل عليه... وقد تُسمّى المنافسة، فيتنافس الاثنان في الأمر  المحبوب المطلوب كلاهما يَطْلُب أن يَأخُذَه، وذلك لكراهية أحدهما أن  يتفضّل عليه الآخر... والتنافس ليس مذمومًا مطلقًا، بل هو محمودٌ في الخير؛  قال تعالى: {إنّ الأبرار لَفِي نعيم * على الأرائك يَنظُرون * تَعْرِفُ في  وجوهِهِم نَضْرَةَ النعيم * يُسْقَوْنَ مِن رحيقٍ مختوم * خِتَامُه مِسْكٌ  وفي ذلك فَلْيَتَنافَسِ المُتَنافِسُون}&quot;  . اهـ<br />
+ [مجموع الفتاوى ج10 ص111-113 باختصار]<br />
+<br />
+منقول
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_795103" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_795103" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=795103" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_795103" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_795115">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-09-29,&nbsp;<span class="time">09:07 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post795115" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=795115#post795115" class="postcounter">#29</a><a id="postcount795115" name="29"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابوخزيمةالمصرى غير متواجد حالياً"><strong>ابوخزيمةالمصرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=63496&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابوخزيمةالمصرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						<dt>الدولة</dt> <dd>مصر المنصورة</dd>
+						
+						<dt>المشاركات</dt> <dd>5,230</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_795115">
+				<blockquote class="postcontent restore">
+					قال الإمام ابن القيم رحمه الله: <br />
+  &quot;إذا تأملت في السبعة الذين يظلهم الله في ظل عرشه يوم لا ظل إلا ظله، لوجدت انما نالوا ذلك الظل بمخالفة الهوى&quot;.<br />
+ روضة المحبين ص 485.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_795115" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_795115" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=795115" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_795115" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_795147">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-09-29,&nbsp;<span class="time">05:17 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post795147" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=795147#post795147" class="postcounter">#30</a><a id="postcount795147" name="30"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=61784&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الخدمة الإسلامية غير متواجد حالياً"><strong>الخدمة الإسلامية</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=61784&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=61784&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="الخدمة الإسلامية غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jun 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>36</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_795147">
+				<blockquote class="postcontent restore">
+					قال ابن الجوزي رحمه الله: مايزال التغافل عن الزلات والأخطاء من أرقى شيم الكرام ،فإن الناس مجبولون على الزلات والأخطاء،فإن اهتم المرء بكل زلة وخطيئة تعب وأتعب غيره، والعاقل الذكي من لايدقق في كل صغيرة وكبيرة مع أهله وأحبابه وأصحابه وجيرانه،ولهذا قال الإمام أحمد بن حنبل رحمه الله :تسعة أعشار حسن الخلق في التغافل.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="5">قال ابن رجب رحمه الله :&quot;خاتمة السوء تكون بسبب <font color="red">دسيسة باطنة</font> للعبد لايطلع عليها الناس&quot;.</font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_795147" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_795147" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=795147" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_795147" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_795278">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-09-30,&nbsp;<span class="time">06:06 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post795278" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=795278#post795278" class="postcounter">#31</a><a id="postcount795278" name="31"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=118578&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="عادل الغرياني غير متواجد حالياً"><strong>عادل الغرياني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=118578&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=118578&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="عادل الغرياني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2014</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>631</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_795278">
+				<blockquote class="postcontent restore">
+					<font color="#000080"><b>سيد القوم المتغافل </b></font><b><font color="#800080">وحمد الرجل الفهد لأن الفهد يتميز بالتغافل عن الصغائر</font></b>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_795278" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_795278" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=795278" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_795278" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_795519">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-10-02,&nbsp;<span class="time">09:18 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post795519" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=795519#post795519" class="postcounter">#32</a><a id="postcount795519" name="32"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابوخزيمةالمصرى غير متواجد حالياً"><strong>ابوخزيمةالمصرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=63496&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابوخزيمةالمصرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						<dt>الدولة</dt> <dd>مصر المنصورة</dd>
+						
+						<dt>المشاركات</dt> <dd>5,230</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_795519">
+				<blockquote class="postcontent restore">
+					قال طلق بن حبيب اذا وقعت الفتنة فاطفئوها بالتقوى قالوا : وما التقوى قال : ان تعمل بطاعة الله على نور من الله ترجوا ثواب الله وان تترك معصية الله على نور من الله تخاف عقاب الله<br />
+وهذا احسن ما قيل في حد التقوى <br />
+<br />
+<br />
+زاد المهاجر إلى ربه لابن القيم
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_795519" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_795519" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=795519" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_795519" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_795729">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-10-03,&nbsp;<span class="time">09:21 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post795729" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=795729#post795729" class="postcounter">#33</a><a id="postcount795729" name="33"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=118578&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="عادل الغرياني غير متواجد حالياً"><strong>عادل الغرياني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=118578&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=118578&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="عادل الغرياني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2014</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>631</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_795729">
+				<blockquote class="postcontent restore">
+					نفع الله بك
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_795729" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_795729" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=795729" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_795729" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_795964">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-10-04,&nbsp;<span class="time">10:04 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post795964" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=795964#post795964" class="postcounter">#34</a><a id="postcount795964" name="34"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابوخزيمةالمصرى غير متواجد حالياً"><strong>ابوخزيمةالمصرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=63496&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابوخزيمةالمصرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						<dt>الدولة</dt> <dd>مصر المنصورة</dd>
+						
+						<dt>المشاركات</dt> <dd>5,230</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_795964">
+				<blockquote class="postcontent restore">
+					آمين وإياكم <br />
+<br />
+أعظم المعاقبة أن لا يحس المعاقب بالعقوبة. وأشد من ذلك أن يقع السرور بما هو عقوبة، كالفرح بالمال الحرام، والتمكن من الذنوب.<br />
+ومن هذه حاله، لا يفوز بطاعة.<br />
+وإني تدبرت أحوال أكثر العلماء والمتزهدين فرأيتهم في عقوبات لا يحسون بها، ومعظمها من قبل طلبهم للرياسة.<br />
+فالعالم منهم، يغضب إن رد عليه خطؤه، والواعظ متصنع بوعظه، والمتزهد منافق أو مراء.<br />
+فأول عقوباتهم، إعراضهم عن الحق شغلاً بالخلق.<br />
+ومن خفي عقوباتهم، سلب حلاوة المناجاة، ولذة التعبد.<br />
+إلا رجال مؤمنون، ونساء مؤمنات، يحفظ الله بهم الأرض، بواطنهم كظواهرهم، بل  أجلى، وسرائرهم كعلانيتهم، بل أحلى، وهممهم عند الثريا، بل أعلى.<br />
+إن عرفوا تنكروا، وإن رئيت لهم كرامة، أنكروا.<br />
+فالناس في غفلاتهم، وهم في قطع فلاتهم، تحبهم بقاع الأرض، وتفرح بهم أملاك السماء.<br />
+نسأل الله معز وجل التوفيق لاتباعهم، وأن يجعلنا من أتباعهم.<br />
+صيد الخاطر<br />
+ <br />
+ <br />
+ <font color="#0000cd">قلت سمعت شيخنا عادل الشوربجي حفظه الله في سلسلة أمراض القلوب <br />
+&quot;قال رجل مسرف على نفسه في المعاصي ، إلهي كم أعصيك ولا تعاقبني ، فأوحى  الله إلى نبيه أن قل له ، كم أعاقبك وأنت لا تدري ، ألم أحرمك مناجاتي  والقيام بالليل بين يدي &quot;</font> بتصرف
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_795964" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_795964" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=795964" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_795964" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_795975">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-10-04,&nbsp;<span class="time">10:57 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post795975" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=795975#post795975" class="postcounter">#35</a><a id="postcount795975" name="35"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابوخزيمةالمصرى غير متواجد حالياً"><strong>ابوخزيمةالمصرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=63496&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابوخزيمةالمصرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						<dt>الدولة</dt> <dd>مصر المنصورة</dd>
+						
+						<dt>المشاركات</dt> <dd>5,230</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_795975">
+				<blockquote class="postcontent restore">
+					<div style="margin-right:40px"> <span style="font-family: Traditional Arabic">فصل: </span><font color="#A52A2A"><span style="font-family: Traditional Arabic">من أحب تصفية الأحوال</span></font><span style="font-family: Traditional Arabic">.</span><br />
+ <span style="font-family: Traditional Arabic">  من أحب تصفية الأحوال1، فليجتهد في تصفية الأعمال، قال الله عز وجل:  {وَأَلَّوِ اسْتَقَامُوا عَلَى الطَّرِيقَةِ لَأَسْقَيْنَاهُ مْ مَاءً  غَدَقًا} &quot;الجن:19&quot;.</span><br />
+ <span style="font-family: Traditional Arabic">وقال  النبي صلى الله عليه وسلم فيما يروي، عن ربه عز وجل: &quot;لو أنَّ عبادي  أطاعوني، لسقيتهم المطر بالليل، وأطلعت عليهم الشمس بالنهار، ولم أسمعهم  صوت الرعد&quot; 2.</span><br />
+ <span style="font-family: Traditional Arabic">وقال صلى الله عليه سلم: &quot;البِرُّ لا يَبْلَى، والإثْمُ لا يُنْسَى، والديان لا ينام، وكما تدين تدان&quot; 3.</span><br />
+ <span style="font-family: Traditional Arabic">وقال  أبو سليمان الداراني4: من صَفَّى، صُفِّيَ له، ومن كدر، كدر عليه، ومن  أحسن في ليله، كوفئ في نهاره، ومن أحسن في نهاره، كوفئ في ليله.</span><br />
+ <span style="font-family: Traditional Arabic">وكان شيخ يدور في المجالس ويقول: من سره أن تدوم له العافية، فليتق الله -عز وجل.</span><br />
+ <span style="font-family: Traditional Arabic">وكان الفضيل بن عياض5 يقول: إني لأعصي الله، فأعرف ذلك في خلق دابتي وجاريتي.</span><br />
+ <span style="font-family: Traditional Arabic">29 واعلم -وفقك الله- أنه لا يحس بضربةٍ مبنج 6؛ وإنما يعرف الزيادة من النقصان المحاسب لنفسه.</span><hr /><font color="#665555"><span style="font-family: Simplified Arabic">1 الأحوال: أحوال النفس.<br />
+2 رواه أحمد &quot;2/ 359&quot; والحاكم &quot;4/ 256&quot; وفي سنده صدقة بن موسى، قال الذهبي: ضعفوه ضعيف.<br />
+3 رواه عبد الرازق &quot;20262&quot; مرسلًا عن أبي قلابة، وأحمد في الزهد ص &quot;100&quot; وابن أبي شيبة &quot;34569&quot; موقوفًا على أبي الدرداء ضعيف.<br />
+4 عبد الرحمن بن أحمد بن عطية العنسي المذحجي، زاهد مشهور، من أهل داريا بغوطة دمشق، وتوفي ببلده سنة &quot;215هـ&quot;.<br />
+5 أبو علي التميمي الخراساني &quot;105-187هـ&quot; الإمام العابد الزاهد، شيخ الحرم المكي.<br />
+6 مبنّج: خدر بالبنج، وهو نبات مخدر من الفصيلة الباذنجانية.<br />
+<br />
+صيد الخاطر<br />
+</span></font> </div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_795975" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_795975" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=795975" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_795975" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_796669">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-10-09,&nbsp;<span class="time">10:36 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post796669" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=796669#post796669" class="postcounter">#36</a><a id="postcount796669" name="36"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابوخزيمةالمصرى غير متواجد حالياً"><strong>ابوخزيمةالمصرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=63496&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابوخزيمةالمصرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						<dt>الدولة</dt> <dd>مصر المنصورة</dd>
+						
+						<dt>المشاركات</dt> <dd>5,230</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_796669">
+				<blockquote class="postcontent restore">
+					وقع لي خاطر <br />
+<br />
+أن المعصية تظلم الفهم ، مهما حاول المرء  الفهم ، والتركيز ، فإذا أقلع  ، منَّ الله عليه بالفهم ،<br />
+<br />
+وتذكرت قوله سبحانه &quot; واتقوا الله ويعلمكم الله &quot; <br />
+<br />
+اللهم اغفر لنا وارحمنا
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_796669" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_796669" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=796669" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_796669" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_796670">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-10-09,&nbsp;<span class="time">10:42 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post796670" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=796670#post796670" class="postcounter">#37</a><a id="postcount796670" name="37"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابوخزيمةالمصرى غير متواجد حالياً"><strong>ابوخزيمةالمصرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=63496&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابوخزيمةالمصرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						<dt>الدولة</dt> <dd>مصر المنصورة</dd>
+						
+						<dt>المشاركات</dt> <dd>5,230</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_796670">
+				<blockquote class="postcontent restore">
+					وقع لي خاطر <br />
+<br />
+أن المعصية تظلم الفهم ، مهما حاول المرء  الفهم ، والتركيز ، فإذا أقلع  ، منَّ الله عليه بالفهم ،<br />
+<br />
+وتذكرت قوله سبحانه &quot; واتقوا الله ويعلمكم الله &quot; <br />
+<br />
+اللهم اغفر لنا وارحمنا
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_796670" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_796670" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=796670" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_796670" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_796679">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-10-09,&nbsp;<span class="time">12:52 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post796679" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=796679#post796679" class="postcounter">#38</a><a id="postcount796679" name="38"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=66768&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="رضا الحملاوي غير متواجد حالياً"><strong>رضا الحملاوي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=66768&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=66768&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="رضا الحملاوي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>10,731</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_796679">
+				<blockquote class="postcontent restore">
+					بارك الله فيك يا شيخ أبا خزيمة
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><img src="images/smilies/mid.gif" border="0" alt="" title="فاصل بين الآيات - باختصار=///" class="inlineimg" /><font size="6"><font color="Green"><span style="font-family: Arial"> لا إله إلا الله</span></font></font> <img src="images/smilies/mid.gif" border="0" alt="" title="فاصل بين الآيات - باختصار=///" class="inlineimg" /><br />
+</div><font size="5"><font color="Teal"><div style="text-align: center;">اللهم اغفر لي وارحمني ووالديّ وأهلي والمؤمنين والمؤمنات وآتنا الفردوس الأعلى</div></font></font></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_796679" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_796679" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=796679" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_796679" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_798072">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2015-10-18,&nbsp;<span class="time">10:44 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post798072" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=798072#post798072" class="postcounter">#39</a><a id="postcount798072" name="39"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابوخزيمةالمصرى غير متواجد حالياً"><strong>ابوخزيمةالمصرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=63496&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=63496&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابوخزيمةالمصرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						<dt>الدولة</dt> <dd>مصر المنصورة</dd>
+						
+						<dt>المشاركات</dt> <dd>5,230</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_798072">
+				<blockquote class="postcontent restore">
+					وفيكم بارك الله <br />
+<br />
+- أم علي<br />
+<br />
+    بسم الله والحمد لله والصلاة والسلام على رسول الله<br />
+<br />
+    &quot;في قوله تعالى : { وَيَغْفِرُ مَا دُونَ ذَلِكَ لِمَنْ يَشَاءُ } [النساء:48] نعمة عظيمة من وجهين : أحدهما: أنه يقتضي أن كل ميت على ذنب دون الشرك لا نقطع له بالعذاب وإن كان مصرا. والثانية: أن تعليقه بالمشيئة فيه نفع للمسلمين، وهو أن يكونوا على خوف وطمع&quot;. [ابن الجوزي]
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_798072" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_798072" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=798072" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_798072" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_842792">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2016-12-07,&nbsp;<span class="time">01:34 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post842792" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=842792#post842792" class="postcounter">#40</a><a id="postcount842792" name="40"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=132682&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبوعبدالله عبدالرحمن غير متواجد حالياً"><strong>أبوعبدالله عبدالرحمن</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=132682&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=132682&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبوعبدالله عبدالرحمن غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>May 2016</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>76</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_842792">
+				<blockquote class="postcontent restore">
+					نفع الله بكم
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_842792" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_842792" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=842792" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_842792" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<form action="showthread.php?t=145288&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" method="get" class="pagination popupmenu nohovermenu">
+<input type="hidden" name="t" value="145288" /><input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+	
+		<span><a href="javascript://" class="popupctrl">صفحة 2 من 3</a></span>
+		
+		<span class="first_last"><a rel="start" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة الأولى - النتائج 1 إلى 20 من 41"><img src="images/metro/purple/pagination/first-left.png" alt="الأولى" />الأولى</a></span>
+		
+		
+		<span class="prev_next"><a rel="prev" href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة السابقة - النتائج 1 إلى 20 من 41"><img src="images/metro/purple/pagination/previous-left.png" alt="السابق" /></a></span>
+		
+		
+		<span><a href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مشاهدة النتائج 1 إلى 20 من 41">1</a></span><span class="selected"><a href="javascript://" title="النتائج 21 إلى 40 من 41">2</a></span><span><a href="showthread.php?t=145288&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مشاهدة النتائج 41 إلى 41 من 41">3</a></span>
+		
+		
+		<span class="prev_next"><a rel="next" href="showthread.php?t=145288&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة التالية - النتائج 41 إلى 41 من 41"><img src="images/metro/purple/pagination/next-left.png" alt="التالي" /></a></span>
+		
+		
+		<span class="first_last"><a href="showthread.php?t=145288&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة الأخيرة - النتائج 41 إلى 41 من 41">الأخيرة<img src="images/metro/purple/pagination/last-left.png" alt="الأخيرة" /></a></span>
+		
+	
+	<ul class="popupbody popuphover">
+		<li class="formsubmit jumptopage"><label>إذهب إلى الصفحة: <input type="text" name="page" size="4" /></label> <input type="submit" class="button" value="إذهب" /></li>
+	</ul>
+</form>
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=145288&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=145288&amp;page=2#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=696d1a7d9adaea36633b28fa7c3827c1">لوحة التحكم</a></li>
+		<li><a href="private.php?s=696d1a7d9adaea36633b28fa7c3827c1">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1">الاشتراكات</a></li>
+		<li><a href="online.php?s=696d1a7d9adaea36633b28fa7c3827c1">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=187819&amp;s=696d1a7d9adaea36633b28fa7c3827c1">من أكاذيب المنجمين والعرافين ودجلهم</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=187840&amp;s=696d1a7d9adaea36633b28fa7c3827c1">فترة الامتحانات .. كي لا تكون عتبة في طريق انحراف الشباب</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%B3%D9%84%D9%88%D9%83">السلوك</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%AC%D9%85%D8%B9">جمع</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%85%D8%A7">ما</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%85%D9%86">من</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%88%D8%A7%D9%84%D8%AA%D8%B2%D9%83%D9%8A%D8%A9">والتزكية</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%88%D8%A7%D9%84%D8%B1%D9%82%D8%A7%D8%A6%D9%82">والرقائق</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%8A%D9%82%D8%A7%D8%A8%D9%84%D9%86%D9%8A">يقابلني</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=145288&amp;page=2#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=145288&amp;page=2#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">04:53 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

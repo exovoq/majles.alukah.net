@@ -1,0 +1,1376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=ec1b4717d08f17a417a70c4e8f25f7a8&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=155061";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="المبين, النصح, للمربين, والمدرسين" />
+	<meta name="description" content="النُصحُ المُبين للمُربين والمُدرسين 
+الحمد لله والصلاة والسلام على رسول الله وعلى آله وصحبه وسلم أجمعين .....وبعد : 
+فهذه بعض النصائح المهمة للمربين والمدرسين بمناسبة بدء العام الدراسى الجديد الذى نسأل الله تعالى أن يكون عام نجاح وتوفيق لكل أبناء المسلمين وأن يجعل نجاحهم عوناً لهم على طاعة ربهم سبحانه وتعالى إنه ولى ذلك والقادر عليه. اللهم آمين .  
+1- يجب على المربين والمدرسين أن يغرسوا فى نفوس الأولاد العقيدة الصحيحة وأن يربوهم على التوحيد الخالص لله تعالى منذ نعومة أظفارهم وأن يُحَفظُوهم معنى" />
+
+	<title> النصح المبين للمربين والمدرسين</title>
+	<link rel="canonical" href="showthread.php?t=155061&s=ec1b4717d08f17a417a70c4e8f25f7a8" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> النصح المبين للمربين والمدرسين</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 1 من 1
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=155061&s=ec1b4717d08f17a417a70c4e8f25f7a8" title="تحديث الصفحة">النصح المبين للمربين والمدرسين</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=155061" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;t=155061&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=addsubscription&amp;t=155061" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;search_type=1&amp;searchthreadid=155061&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="155061" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_829941">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2016-08-02,&nbsp;<span class="time">09:16 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post829941" href="showthread.php?t=155061&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=829941#post829941" class="postcounter">#1</a><a id="postcount829941" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=133820&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="عبد القادر فاروق غير متواجد حالياً"><strong>عبد القادر فاروق</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=133820&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=133820&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="عبد القادر فاروق غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2016</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>29</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> النصح المبين للمربين والمدرسين
+		</h2>
+		
+				
+					
+					
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_829941">
+				<blockquote class="postcontent restore">
+					<b>النُصحُ المُبين للمُربين والمُدرسين</b><br />
+الحمد لله والصلاة والسلام على رسول الله وعلى آله وصحبه وسلم أجمعين .....وبعد :<br />
+فهذه بعض النصائح المهمة للمربين والمدرسين بمناسبة بدء العام الدراسى الجديد الذى نسأل الله تعالى أن يكون عام نجاح وتوفيق لكل أبناء المسلمين وأن يجعل نجاحهم عوناً لهم على طاعة ربهم سبحانه وتعالى إنه ولى ذلك والقادر عليه. اللهم آمين . <br />
+1- يجب على المربين والمدرسين أن يغرسوا فى نفوس الأولاد العقيدة الصحيحة وأن يربوهم على التوحيد الخالص لله تعالى منذ نعومة أظفارهم وأن يُحَفظُوهم معنى لا إله إلا الله أى لا معبود بحقٍ إلا الله. وأن يعلموهم أن الله فوق عرشه وعرشه فوق سبع سموات. قال تعالى {الرَّحْمَنُ عَلَى الْعَرْشِ اسْتَوَى }طه5 والمداومة على أذكار الصباح والمساء وغيرها. ودليل تعليم الأطفال منذ الصغر حديث ابن عباس رضى الله عنهما قال [كنت خلف النبى صلى الله عليه وآله وسلم يوماً فقال لى &quot;يا غلام إنى أُعلمك كلمات إِحفظ الله يحفظك إِحفظ الله تَجِدْهُ تِجاهَك إذا سألت فاسأل الله وإذا استعنت فاستعن بالله&quot;....الحديث] رواه أحمد والترمذى وقال حسن صحيح. ودليل تعليم الأطفال الحرام والحلال ما ثبت فى الصحيحين من حديث أبى هريرة رضى الله عنه قال: أخذ الحسن تمرة من تمر الصدقة فقال النبى صلى الله عليه وآله وسلم:[كِخ كِخ ليطرحها، أما شَعرت أَنَّا لا نأكل الصدقة]. فالصدقة لا تجوز لنبينا صلى الله عليه وآله وسلم وآل بيته. فلم يقل هذا طفل صغير بل قام بتعليمه.<br />
+2- يجب على المربين والمدرسين تربية الأولاد على الإخلاص والجِد والعزيمة والصبر وحسن الفهم والمذاكرة أملاً فى الحصول على شهادة للعمل بها فى خدمة المسلمين ونفعهم وإسعاداً للوالدين وحرصاً على تقدم وطنه وأمته الإسلامية وبهذه النية يؤجر الجميع بإذن الله و لا تقتصر خدمة المسلمين على الوظيفة بل كلٌ يخدم في مجاله و حرفته و الحرفة أمان من الفقر لأنها سبب في التكسب و الرزق قال تعالى {---------- وَاللَّهُ خَيْرُ الرَّازِقِينَ }الجمعة11.<br />
+3- يجب على المربين تعليم أولادهم الصلاة و الأخلاق و الآداب الإسلامية و اجتناب الرذائل قال الله تعالى {يَا أَيُّهَا الَّذِينَ آمَنُوا قُوا أَنفُسَكُمْ وَأَهْلِيكُمْ نَاراً وَقُودُهَا النَّاسُ وَالْحِجَارَةُ عَلَيْهَا مَلائِكَةٌ غِلاظٌ شِدَادٌ لا يَعْصُونَ اللَّهَ مَا أَمَرَهُمْ وَيَفْعَلُونَ مَا يُؤْمَرُونَ }التحريم6 و قال نبينا صلى الله عليه وآله وسلم [ مُروا أولادكم بالصلاة و هم أبناء سبع سنين و اضربوهم عليها و هم أبناء عشر سنين و فرقوا بينهم في المضاجع] رواه أبو داود صحيح الجامع 5868. فكثير من الآباء يحرص على ذهاب أولاده للمدرسة مبكراً لكن لا يهتم بأدائهم لصلاة الصبح قبل نزولهم من البيت وذهابهم للمدرسة فليس إدراك موعد المدرسة أهم من إدراك وقت الصلاة. فمن سجد لله وتضرع له يرجى له التوفيق والسداد فى الدنيا والآخره.<br />
+4- المحافظة على أداء الصلاة فى مواقيتها قال الله تعالى { ----- إِنَّ الصَّلاَةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَاباً مَّوْقُوتاً }النساء103 قال العلامة السعدى رحمه الله فى تفسير هذه الآيه: أى مفروضاً فى وقته فدل ذلك على فرضيتها وأن لها وقتاً لا تصح إلا به وهو هذه الأوقات التى قد تقررت عند المسلمين صغيرهم وكبيرهم عالمهم وجاهلهم وأخذوا ذلك عن نبيهم محمد صلى الله عليه وآله وسلم بقوله [صلوا كما رأيتمونى أُصلى] رواه البخارى. تفسير السعدى صـ 162، فبعض الطلبة والطالبات يسهرون لساعات متأخرة من الليل فى المذاكرة ثم ينامون نوماً عميقاً دون تنظيم وحرص على أداء الصلاة فى مواقيتها.<br />
+5- يجب على المربين والمدرسين الإهتمام بزى البنات المدرسى وحجابهن الشرعى فكثيراً من البنات يلبسن البنطلون والملابس المعطرة والقصيرة والشفافة والضيقة وهذه الأمور محرمة والحجاب فرض على البنت كما أن الصلاة فرض عليها وكذلك سائر الأركان فإذا قالت البنت أو المرأة لما أقتنع ألبس الحجاب فى هذه الحالة يخشى عليها الوقوع فى الكفر لأن الإقتناع بكلام الله شك والشك فى كلام الله كفر والواجب أن تقول {--------- وَقَالُواْ سَمِعْنَا وَأَطَعْنَا غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ }البقرة285  وقال تعالى {وَمَا كَانَ لِمُؤْمِنٍ وَلا مُؤْمِنَةٍ إِذَا قَضَى اللَّهُ وَرَسُولُهُ أَمْراً أَن يَكُونَ لَهُمُ الْخِيَرَةُ مِنْ أَمْرِهِمْ وَمَن يَعْصِ اللَّهَ وَرَسُولَهُ فَقَدْ ضَلَّ ضَلالاً مُّبِيناً }الأحزاب36 وقال تعالى {يَا أَيُّهَا النَّبِيُّ قُل لأَزْوَاجِكَ وَبَنَاتِكَ وَنِسَاء الْمُؤْمِنِينَ يُدْنِينَ عَلَيْهِنَّ مِن جَلابِيبِهِنَّ ذَلِكَ أَدْنَى أَن يُعْرَفْنَ فَلا يُؤْذَيْنَ وَكَانَ اللَّهُ غَفُوراً رَّحِيماً }الأحزاب59 قال العلامة السعدى: هذه الآية هى التى تسمى آية الحجاب فأمر الله نبيه صلى الله عليه وآله وسلم أن يأمر النساء عموماً ويبدأ بزوجاته وبناته لأنهن آكد من غيرهن ولأن الآمر لغيره ينبغى أن يبدأ بأهله قبل غيرهم كما قال تعالى: {يَا أَيُّهَا الَّذِينَ آمَنُوا قُوا أَنفُسَكُمْ وَأَهْلِيكُمْ نَاراً وَقُودُهَا النَّاسُ وَالْحِجَارَةُ عَلَيْهَا مَلائِكَةٌ غِلاظٌ شِدَادٌ لَا يَعْصُونَ اللَّهَ مَا أَمَرَهُمْ وَيَفْعَلُونَ مَا يُؤْمَرُونَ }التحريم6 {يَا أَيُّهَا النَّبِيُّ قُل لأَزْوَاجِكَ وَبَنَاتِكَ وَنِسَاء الْمُؤْمِنِينَ يُدْنِينَ عَلَيْهِنَّ مِن جَلابِيبِهِنَّ -------- }الأحزاب59 وهن اللاتى يكن فوق الثياب من ملحفة وخمار ورداء ونحوه أى يغطين بها وجوههن وصدورهن. ثم ذكر حكمة ذلك فقال: { --------- ذَلِكَ أَدْنَى أَن يُعْرَفْنَ فَلا يُؤْذَيْنَ وَكَانَ اللَّهُ غَفُوراً رَّحِيماً }الأحزاب59 دل ذلك على وجود أذية إن لم يحتجبن وربما ظن أنهن غير عفيفات فيتعرض لهن من فى قلبه مرض فيؤذيهن وربما استهين بهن وظن أنهن إماء فتهاون بهن من يريد الشر فالاحتجاب حاسم لمطامع الطامعين فيهن...] تفسير السعدى صـ 618 ولجنة الفتوى بالأزهر الشريف قامت بالرد على القرار رقم 113 الصادر من وزير التعليم فى 17/5/1994م  بشأن مواصفات الزى المدرسى وقالت مانصه [الزى المفروض على طالبات المدارس معارض لأمر الله شكلاً وموضوعاً وتشريع مضاد لما أمر الله عز وجل به] وللاستزادة راجع مجلة الأزهر صــ275 عدد ربيع الأول 415هـ أغسطس / سبتمبر 1994م. (وفتوى اللجنة الدائمة فى حكم لبس البنطلون مجلة التوحيد عدد جُمادى الآخرسـنة1422هـ صـ52] قال الدكتور نصر فريد- المفتى السابق[لبس المرأة للبنطلون الضيق المفصل لجسدها حرام شرعا وبالنسبة لعقوبة التبرج والسفور فى الآخرة فهى عقوبة شديدة والتبرج والسفور من الكبائر شرعا لأنه يؤدى إلى انتشار الفساد وإشاعة الفاحشة فى المجتمع] فتوى رقم 421/ 158 -11/10/2001م  24/ 7/1422هـ ،قال الشيخ ابن عثيمين [حتى وإن كان واسعا فضفاضاً لأن تميز رجل عن رجل يكون به شىء من عدم الستر ثم إنه يخشى أن يكون ذلك أيضاً من تشبه النساء بالرجال لأن [البنطال من ألبسة الرجال] مجلة الدعوة العدد 1476، وفى معرض الكلام عن لبس الصغيرات للبناطيل والملابس الضيقة قال ابن عثيمين [إذا تعودت هذا اللباس وهى صغيرة نُزِعَ منها الحياء وصارت لا تبالى أن تتبين عورتها با؟لرؤية أو بالحجم فتعتاد هذا اللباس وفى النهاية تبقى عليه ولو بلغت].<br />
+6- يجب على المربين حسن اختيار المدرسة التى فيها حسن تربية وتعليم ومزايا طيبة وضوابط شرعية وإن كلف هذا الآباء دفع المال الكثير فلابد من التضحية بالمال فى سبيل تحقيق الهدف والغاية المنشودة من التعليم.<br />
+7- الصداقة مهمة فى حياة الإنسان لذلك لابد من حسن اختيار الطالب لصديقه والطالبة لصديقتها لأن المقصود من الصداقة التذكير بالله تعالى والتعاون على الخير قال تعالى { وَتَعَاوَنُواْ عَلَى الْبرِّ وَالتَّقْوَى وَلاَ تَعَاوَنُواْ عَلَى الإِثْمِ وَالْعُدْوَانِ وَاتَّقُواْ اللّهَ إِنَّ اللّهَ شَدِيدُ الْعِقَابِ }المائدة2 وقال تعالى فى سورة الزخرف {الأخِلاء يَوْمَئِذٍ بَعْضُهُمْ لِبَعْضٍ عَدُوٌّ إِلا الْمُتَّقِينَ }الزخرف67 وصديق السوء وصديقة السوء شعارهم الفساد والإفساد والصداقة بين الشباب والفتيات حرام ولا تجوز.<br />
+8- الإختلاط فى التعليم حرام. فلا يجوز الاختلاط بين الطلبة والطالبات فى الفصول المدرسية أو المجموعات المدرسية أو الجامعات أو الرحلات ولا يجوز للمدرس أن يقوم بالتدريس للبنات سواءً فى فصل مدرسى أو درس خصوصى لأنه ليس مَحرَمَاً لهن ومنعاً للفتنة ولا يجوز للمدرسة أن تقوم بالتدريس للطلبة أيضاً. قال الشيخ ابن بازِ رحمه الله قال تعالى : { وَإِذَا سَأَلْتُمُوهُنّ  َ مَتَاعاً فَاسْأَلُوهُنَّ مِن وَرَاء حِجَابٍ ذَالِكُمْ أَطْهَرُ لِقُلُوبِكُمْ وَقُلُوبِهِنَّ وَمَا كَانَ لَكُمْ أَن تُؤْذُوا رَسُولَ اللَّهِ وَلا أَن تَنكِحُوا أَزْوَاجَهُ مِن بَعْدِهِ أَبَداً إِنَّ ذَالِكُمْ كَانَ عِندَ اللَّهِ عَظِيماً }الأحزاب53 ، وقد صح عن رسول الله صلى الله عليه وآله وسلم أنه قال [ ما تركت بعدى فتنة أضر على الرجال من النساء] متفق عليه وفى صحيح مسلم عن أبى سعيد الخدرى رضى الله عنه عن النبى صلى الله عليه وآله وسلم أنه قال [إن الدنيا حلوة خضرة وإن الله مستخلفكم فيها فناظر كيف تعملون فاتقوا الدنيا واتقوا النساء فإن أول فتنة بنى إسرائيل كانت فى النساء]. ولقد صدق رسول الله صلى الله عليه وآله وسلم فإن الفتنة بهن عظيمة ولاسيما فى هذا العصر الذى خلع فيه أكثرهن الحجاب وتبرجن فيه تبرج الجاهلية وكثرت بسببه الفواحش والمنكرات وعزوف الكثير من الشباب والفتيات عما شرع الله من الزواج فى كثير من البلاد وقد بين الله سبحانه أن الحجاب أطهر لقلوب الجميع فدل ذلك على أن زواله أقرب إلى نجاسة قلوب الجميع وانحرافهم عن طريق الحق ومعلوم أن جلوس الطالبة مع الطالب فى كرسى الدراسة من أعظم أسباب الفتنة ومن أسباب ترك الحجاب الذى شرعه الله للمؤمنات ونهاهن عن أن يبدين زينتهن لغيرمن بينهم الله سبحانه وتعالى فى الآيه رقم 31 من سورة النور..وكان النساء فى عهد النبى صلى الله عليه وآله وسلم لا يختلطن بالرجال لا فى المساجد ولا فى الأسواق الاختلاط الذى ينهى عنه المصلحون اليوم ويرشد القرآن والسنة وعلماء الأمة إلى التحذير منه حذراً من الفتنة بل كان النساء فى مسجده صلى الله عليه وآله وسلم يصلين خلف الرجال فى صفوف متأخرة عن الرجال وكان يقول صلى الله عليه وآله وسلم [خير صفوف الرجال أولها وشرها آخرها وخير صفوف النساء آخرها وشرها أولها] رواه مسلم. حذراً من افتتان آخر صفوف الرجال بأول صفوف النساء وكان الرجال فى عهده صلى الله عليه وآله وسلم يؤمرون بالتريث فى الإنصراف حتى يمضى النساء ويخرجن من المسجد لئلا يختلط بهن الرجال فى أبواب المساجد مع ما هم عليه جميعا رجالا ً ونساءً من الإيمان والتقوى فكيف بحال من بعدهم وكانت النساء ينهين أن يتوسطن الطريق ويؤمرن بلزوم حافات الطريق حذراً من الاحتكاك بالرجال والفتنة بمماسة بعضهم بعضا عند السير فى الطريق وكيف يجوز لمؤمن أن يقول إن جلوس الطالبة بحذاء الطالب فى كرسى الدراسة مثل جلوسها مع أخواتها فى صفوفهن خلف الرجال هذا لا يقوله من له أدنى مسكة من إيمان وبصيرة يعقل ما يقول هذا لو سلمنا وجود الحجاب الشرعى فكيف إذا كان جلوسها مع الطالب فى كرسى الدراسة مع التبرج وإظهار المحاسن والنظرات الفاتنة والأحاديث التى تجر إلى فتنة والله المستعان ولا حول ولا قوة إلا بالله قال عز وجل: { فَإِنَّهَا لا تَعْمَى الأَبْصَارُ وَلَكِن تَعْمَى الْقُلُوبُ الَّتِي فِي الصُّدُورِ }الحج46 ولهذا دعا المصلحون إلى إفراد النساء عن الرجال فى دور التعليم وأن يكن على حدة والشباب على حدة حتى يتمكن من تلقى العلم من المدرسات بكل راحة من غير حجاب ولا مشقة لأن زمن التعليم يطول بخلاف زمن الصلاة ولأن تلقى العلوم من المدرسات فى محل خاص أصون للجميع وأبعد لهن من أسباب الفتنة وأسلم للشباب من الفتنة ولأن انفراد الشباب فى دور التعليم عن الفتيات مع كونه أسلم لهم من الفتنة فهو أقرب إلى عنايتهم بدروسهم وشغلهم بها وحسن الإستماع إلى الأساتذة وتلقى العلوم عنهم بعيدين عن ملاحظة الفتيات والانشغال بهن وتبادل النظرات المسمومة والكلمات الداعية إلى الفجور. وهناك أمر آخر وهو أن تعليم النساء للصبيان فى المرحلة الإبتدائية يفضى إلى الإختلاط ثم يمتد ذلك إلى المراحل الأخرى فهو فتح لباب الإختلاط فى جميع المراحل بلا شك ومعلوم ما يترتب على اختلاط التعليم من المفاسد الكثيرة والعواقب الوخيمة التى أدركها من فعل هذا النوع من التعليم فى البلاد الأخرى. فكل من له أدنى علم بالأدلة الشرعية وبواقع الأمة فى هذا العصر من ذوى البصيرة الإسلامية على بنينا وبناتنا يدرك ذلك بلا شك. [الرسائل والفتاوى النسائية للشيخ ابن باز صـ 54:40 – مجلة البحوث الإسلامية عدد 15 صـ11:6] <br />
+9- البعد عن مشاهدة التلفاز لأنه ضياع للوقت والعمر وفيه فساد الدين والخُلُق والسلوك ويسبب بلادة الذهن ويؤدى إلى الفشل ويبعد عن التفوق والنجاح فى الدنيا والآخرة.<br />
+10-       يجب توافر القدوة الصالحة من المدرسين والمدرسات والمربين والمربيات لأن الطفل مقلد لما يراه خيراً أو شراً وقد يحصل التناقض إذا رأى الطالب المدرس يدخن السجائر ووالده لا يدخن أو أن الطالبة ترى مدرستها متبرجة ووالدتها مرتدية للحجاب الشرعى ففى هذه الحالة لا تكون المدارس عوناً للبيوت فى التربية فكيف إذا كان المربون والمدرسون لا يؤدون الصلاة وكما قال أحد السلف [لا تأتمن عاصياً فقد خان أول مُنعم عليه] والله المستعان.<br />
+11-       يجب على المدرسين أن يبعدوا عن الجشع وأن يرفقوا بالآباء والأمهات فى المقابل الذى يأخذونه فى إعطاء مجموعة أو درس. عن عائشة زوج النبى صلى الله عليه وآله وسلم أن رسول الله صلى الله عليه وآله وسلم قال [يا عائشة إن الله رفيق يحب الرفق ويعطى على الرفق مالا يعطى على العنف ومالا يعطى على ما سواه] رواه مسلم وعلى المدرس أن يراعى صغيره.<br />
+12-       بعض الآباء يمنع أولاده من الاستمرار فى حفظ القرآن الكريم بحجة دخول الموسم الدراسى وأن الطالب لا يستطيع التوفيق بين مذاكرة المواد الدراسية وحفظ القرآن الكريم. والصحيح أن حفظ القرآن الكريم أصل العلم وأهم من المواد الدراسية والقرآن خير مربى لأن فيه بيان للعقيدة الصحيحة والعبادات والأخلاق والسلوك والمعاملات، ومن الممكن الإستمرار فى حفظ القرآن الكريم فى فترة الدراسة حتى ولو آية فقط يومياً لما ثبت فى الصحيحين من حديث عائشة رضى الله عنها قالت قال النبى صلى الله عليه وآله وسلم [أحب الأعمال إلى الله أدومها وإن قلّ].<br />
+13-       البعد عن شراء الأدوات المدرسية التى عليها تماثيل وصور وكل شىء عليه صور كالملابس وحلى النساء والأوانى وغير ذلك لأن النبى صلى الله عليه وآله وسلم قال [لا تدخل الملائكة بيتاً فيه كلب ولا صورة] رواه البخارى. وفى صحيح البخارى باب عذاب المصورين يوم القيامة: قال النبى صلى الله عليه وآله وسلم [إن أشد الناس عذاباً عند الله يوم القيامة المصورون] وقال أيضاً [ إن الذين يصنعون هذه الصور يعذبون يوم القيامة يقال لهم أحيوا ما خلقتم] فتح البارى 10/ 396. ونقل الحافظ ابن حجر رحمه الله فى الفتح كلام الإمام النووى رحمه الله وهذا نصه [قال النووى قال العلماء: تصوير صورة الحيوان حرام شديد التحريم وهو من الكبائر لأنه متوعد عليه بهذا الوعيد الشديد وسواء صنعه لما يمتهن أم لغيره فصنعه حرام بكل حال وسواء كان فى ثوب أو بساط أو درهم أو دينار أو فلس أو إناء أو حائط أو غيرها فأما تصوير ما ليس فيه صورة حيوان فليس بحرام. قلت أى الحافظ: ويؤيد التعميم فيما له ظل وفيما لا ظل له ما أخرجه أحمد من حديث على أن النبى صلى الله عليه وآله وسلم قال: أيكم ينطلق إلى المدينة فلا يدع بها وثناً إلا كَسَرَهُ ولا صُورةً إلا لطَّخََهَا أى طَمَسَها] فتح البارى 10/ 397 والطمس يكون للرأس فإذا طمست الرأس فلا صورة كما قال عبد الله بن عباس رضى الله عنهما فإذا كانت الصورة التى على الكشكول مثلا صورة ممثل أو ممثلة وبقيت هذه الصورة مع الطالب فترة الدراسة كاملة فهذا يؤدى إلى القدوة السيئة وإلى الفتنة وترويج بضاعة أهل الفساد والفجور من هؤلاء الساقطين والساقطات وبعض هذه الأدوات عليها عبارات الحب والغرام مما يؤدى إلى فساد أخلاق الأطفال والشباب.     <br />
+البديل الجائز: شراء أدوات مدرسية عليها صوراً طبيعية كالشجر والمياه وغروب الشمس أو صورة سيارة أو مبنى كما قال عبد الله بن عباس رضى الله عنهما [فاصنع الشجر ومالا روح فيه] رواه مسلم. المهم الإبتعاد عن صورة الطير والإنسان والحيوان. ويجوز التصوير للضرورة من أجل عمل بطاقة شخصية أو جواز سفر فالضرورات مقدرة بقدرها والواجب على التلاميذ فى حصة الرسم أو التربية الفنية أن يرسموا صورا طبيعية فقط ويجوز تصوير المجرمين.<br />
+14-       لابد للمربين والمدرسين من متابعة المناهج الدراسية لأنه قد يكون فيها أخطاء فيجب تصحيحها ولابد من الرقابة على ما يقرأونه من مجلات أو قصص فقد تكون قصصاً غرامية تؤدى إلى الإنحراف أو مجلات تدعو إلى الفتنة فلابد من الحذر والإحتياط وأن يكون استخدامه قاصراًُ على الإستفادة من الناحية الدينية ومن الناحية العلمية فى المجالات المختلفة كالطب والهندسة والمعلومات الثقافية.<br />
+15-       بعض الطالبات تكون كلياتهن بعيدة تحتاج إلى سفر فلا يجوز أن تسافر بدون محرم لحديث ابن عباس رضى الله عنهما أنه سمع النبى صلى الله عليه وآله وسلم يقول [لا يخلون رجل بامرأة ولا تسافر امرأة إلا ومعها محرم فقال رجل يا رسول الله صلى الله عليه وآله وسلم اكتتبت فى غزوة كذا وكذا وخرجت امرأتى حاجة. قال اذهب فحج مع امرأتك] اللؤلؤ والمرجان فيما اتفق عليه الشيخان 2/ 59.<br />
+16-       يجب على المربين والمدرسين أن يبعدوا عن السب والشتم لأن النبى صلى الله عليه وآله وسلم قال [سباب المسلم فسوق وقتاله كفر] متفق عليه من حديث ابن مسعود رضى الله عنه.<br />
+17-       الغش فى الإمتحانات حرام لعموم قول نبينا صلى الله عليه وآله وسلم [ليس منا من غش] صحيح سنن/ ابن ماجة- الإرواء 1319 ولا يجوز الإفطار فى أيام الإمتحانات فى شهر رمضان لأن الإمتحانات ليست سبباً شرعياً للإفطار. ودعوة الصائم أقرب للإجابة من غيره والله موفقه لأن الصيام طاعة وعبادة لله.<br />
+18-       يجب أن يكون داخل الأسرة ضوابط شرعية فلابد من تعليم الأطفال الإستئذان على الأبوين كما فى الآيتين 58، 59 من سورة النور. وعدم ظهور الآباء والأبناء بسراويل قصيرة فوق الركبة فهذا لا يجوز لأن الفخد عورة. ولا يجوز للرجل أن يرى من محارمه كالأم والأخت وأم زوجته وسائر المحارم أكثر من مواضع الوضوء كالوجه واليدين والرقبة وشعر الرأس والقدمين، فالإسلام يحمى الأسرة من نفسها ولما فقدت البيوت التدين والتمسك بالكتاب والسنة الصحيحة سمعنا عن أمور عظيمة وخطيرة فى هذه الأسر البعيدة عن الشرع. وصدق الله إذ يقول { ----------- ذَلِكَ الدِّينُ الْقَيِّمُ وَلَـكِنَّ أَكْثَرَ النَّاسِ لاَ يَعْلَمُونَ }يوسف40.<br />
+19-        تربية الطفل على مكارم الأخلاق والبعد عن السباب والتنابز بالألقاب والبعد عن سماع الموسيقى والغناء والفحش من القول.<br />
+ <br />
+20-       الإقتداء برسول الله صلى الله عليه وآله وسلم قال تعالى {لَقَدْ كَانَ لَكُمْ فِي رَسُولِ اللَّهِ أُسْوَةٌ حَسَنَةٌ لِّمَن كَانَ يَرْجُو اللَّهَ وَالْيَوْمَ الآخِرَ وَذَكَرَ اللَّهَ كَثِيراً }الأحزاب21 وقال تعالى {وَإِنَّكَ لَعَلى خُلُقٍ عَظِيمٍ }القلم4 فنسأل الله تعالى أن يرزقنا محبته واتباعه صلى الله عليه وآله وسلم.<br />
+<b><u>التحذير من التقصير فى تربية الأولاد:</u></b><br />
+1) قال الله تعالى [{إِنَّ اللّهَ يَأْمُرُكُمْ أَن تُؤدُّواْ الأَمَانَاتِ إِلَى أَهْلِهَا وَإِذَا حَكَمْتُم بَيْنَ النَّاسِ أَن تَحْكُمُواْ بِالْعَدْلِ إِنَّ اللّهَ نِعِمَّا يَعِظُكُم بِهِ إِنَّ اللّهَ كَانَ سَمِيعاً بَصِيراً }النساء58<br />
+{يَا أَيُّهَا الَّذِينَ آمَنُواْ لاَ تَخُونُواْ اللّهَ وَالرَّسُولَ وَتَخُونُواْ أَمَانَاتِكُمْ وَأَنتُمْ تَعْلَمُونَ }الأنفال27<br />
+{يَا أَيُّهَا الَّذِينَ آمَنُوا قُوا أَنفُسَكُمْ وَأَهْلِيكُمْ نَاراً وَقُودُهَا النَّاسُ وَالْحِجَارَةُ عَلَيْهَا مَلائِكَةٌ غِلاظٌ شِدَادٌ لا يَعْصُونَ اللَّهَ مَا أَمَرَهُمْ وَيَفْعَلُونَ مَا يُؤْمَرُونَ }التحريم6.<br />
+2)   قال النبى صلى الله عليه وآله وسلم:<br />
+[كلكم راع ٍ ومسئول عن رعيته فالإمام راع ومسئول عن رعيته والرجل راع ٍ فى أهله ومسئول عن رعيته] رواه البخارى ومسلم.<br />
+<b><u>من مظاهر التقصير فى تربية الأولاد: </u></b><br />
+1) تنشئة الأولاد على الجبن والخوف والهلع والفزع (من العِفريت، الحرامى، الطبيب، المدرسة، رؤية الدم)<br />
+2)   تربيتهم على التهور وسلاطة اللسان والتطاول على الآخرين.<br />
+3)   تربيتهم على الميوعة والفوضى وتعويدهم على الترف (إفساد الفطرة)<br />
+4) بَسْط اليد للأولاد وإعطاؤهم كل مايريدون قال تعالى   {وَلاَ تَجْعَلْ يَدَكَ مَغْلُولَةً إِلَى عُنُقِكَ وَلاَ تَبْسُطْهَا كُلَّ الْبَسْطِ فَتَقْعُدَ مَلُوماً مَّحْسُوراً }الإسراء29 ،ومن ذلك اعطاؤهم ما يريدون إذا بكوا بحضرة الوالد خصوصا الصغار.<br />
+5)   الشدة والقسوة عليهم أكثر من اللازم [تأنيبهم عند كل صغيرة وكبيرة].<br />
+6)   شدة التقتير والبخل عليهم يؤدى إلى [السرقة - سؤال الناس - الارتماء فى أحضان رفقة السوء].<br />
+7)   حرمانهم من العطف و الشفقة و الحنان.<br />
+8)   الاهتمام بالمظاهر فحسب [الدنيا فقط].<br />
+9)   المبالغة في إحسان الظن بالأولاد [لا يسأل عنهم ولا يتفقد أحوالهم].<br />
+10)                    المبالغة في اساءة الظن بهم.<br />
+11)                    التفريق بينهم في [العطايا والهدايا – حرمان الورثة الآخرين].<br />
+12)                    ترك المبادرة في تزويج الأبناء مع الحاجة والقدرة.[و تزويجهم واجب مع القدرة]<br />
+13)                    تأخير تزويج البنات والمتاجرة بهن.<br />
+14)                    تزويج البنات بغير الأكفاء.<br />
+15)       التسخط بالبنات قال تعالي:{وَإِذَا بُشِّرَ أَحَدُهُمْ بِالأُنثَى ظَلَّ وَجْهُهُ مُسْوَدّاً وَهُوَ كَظِيمٌ }النحل58<br />
+16)       تسميتهم بأسماء فيها تعبيد لغير الله [عبدالنبي،عبدالم  قصود،عبدالموجود  ،عبد الستار] أو تدعو للشهوة والفتنة [فاتن،ناهد،نشوي]<br />
+17)                    المكث كثيرا خارج المنزل.<br />
+18)       الدعاء علي الأولاد قال النبي صلي الله عليه وآله وسلم:[لاتدعوا علي أنفسكم ولاتدعوا علي أولادكم ولاتدعوا علي خدمكم ولاتدعوا علي أموالكم لاتوافقوا من الله ساعةً يُسأل فيها عطاء فيستجاب لكم ] مختصر صحيح مسلم حديث رقم 1537 ، وابن حبان رقم 2411 ، صحيح الجامع حديث رقم 7267.<br />
+19)       تربيتهم علي الأمور التافهة و مرذول الأخلاق [تشجيع الأندية – ارتداء القصير من الثياب ].<br />
+20)       فعل المنكرات أمام الأولاد [التدخين ، سماع الغناء ، مشاهدة الأفلام والمسلسلات في التلفاز].<br />
+21)       جلب المنكرات الي المنزل [مجلات خليعة ، تشغيل الفضائيات علي الأفلام والفساد ، التليفزيون وشره يغلب خيره والحكم للغالب].<br />
+22)                    كثرة المشكلات بين الوالدين [المشاجرة والضرب أمام الأولاد].<br />
+23)                    التناقض[ الأمر بالصدق ويفعل خلافه،يأمر ببر الوالدين وهو عاق لوالديه ].<br />
+24)                    العهد للخادمات والمربيات بتربية الأولاد .<br />
+25)                    اهمال الهاتف وعدم مراقبته في المنزل .<br />
+26)       الغفلة عما يقرؤه الأولاد .احتقار الأولاد وقلة تشجيعهم ومن مظاهر ذلك [اسكاتهم إذا تكلموا-التشنيع عليهم إذا أخطأوا-ازدراؤهم إذا استقاموا]<br />
+27)                    تربيتهم على عدم تحمل المسئولية.<br />
+28)                    عدم اعطائهم فرصة للتصحيح والتغيير للأفضل [كقولهم يا سارق،...،...]<br />
+29)                    سوء الفهم لنفسية الأولاد وطبائعهم.<br />
+30)                    عدم تقدير المراحل التى يمر بها الولد حتى يصبح رجلا ً.<br />
+31)                    الشماته بالمبتلين بدلا من أن يسأل الله العافية.<br />
+32)                    قلة الاهتمام باختيار مدارس الأولاد وإرسالهم للمدارس الأجنبية.<br />
+33)                    الدفاع عن الولد بحضرته خصوصا فى المدرسة بدلا من الحوار مع المدرس.<br />
+34)                    ترك البنات يخرجن ويذهبن إلي السوق بلا محرم وهن في أكمل زينة.<br />
+<b>السُبُل المُعينَة على تربية الأولاد</b><br /><br />1) العناية باختيار الزوجة الصالحة.<br />
+قال رسول الله صلى الله عليه وآله وسلم [فاظفر بذاتِ الدين تَرِبَت يداك] متفق عليه.<br />
+2) التسمية عند الجماع [قال رسول الله صلى الله عليه وآله وسلم لو أن أحدكم إذا أتى أهله قال بسم الله اللهم جنبنا الشيطان وجنب الشيطان ما رزقتنا فقدر له ولد لم يضره شيطان] متفق عليه.<br />
+3) تعليم الطفل النطق بـ [لا إله إلا الله محمد رسول الله] وإفهامه معناها. ولذلك أم سليم والدة أنس بن مالك كانت تقول له أثناء إرضاعه قل لا إله إلا الله فكانت أول كلمة نطق بها هي لا إله إلا الله . <br />
+4) حِفظ القرآن الكريم قال تعالى {إِنَّ هَـذَا الْقُرْآنَ يِهْدِي لِلَّتِي هِيَ أَقْوَمُ وَيُبَشِّرُ الْمُؤْمِنِينَ الَّذِينَ يَعْمَلُونَ الصَّالِحَاتِ أَنَّ لَهُمْ أَجْراً كَبِيراً }الإسراء9. <br />
+5) تطهير البيت من وسائل الإعلام وما تبثه من انحراف وفساد والبديل استخدام جهاز الكمبيوتر وسماع الإسطوانات الإسلامية والعلمية والدخول على المواقع الإسلامية و تشغيل الفضائيات علي قناة المجد مثلا بقنواتها المختلفة فجزي الله القائمين عليها خير الجزاء بالإضافة إلي قناة الفجر وقناة الناس.<br />
+6) سؤال الله الذرية الصالحة كما قال زكريا - عليه السلام- [قال رب هب لى من لدنك ذرية طيبة إنك سميع الدعاء] سورة آل عمران:38<br />
+وكما فى صفات عباد الرحمن  {وَالَّذِينَ يَقُولُونَ رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَ  ا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَاماً }الفرقان74<br />
+7) الاستعانة بالله على تربيتهم.<br />
+كما قيل:    إذا لم يكن عون من الله للفتى                   فأول ما يجنى عليه اجتهاده<br />
+8) تعليمهم الأمور المستحسنة وتدريبهم عليها: كتشميت العاطس وكتمان التثاؤب والأكل باليمين وآداب قضاء الحاجة وآداب السلام ورده وآداب الرد على الهاتف واستقبال الضيوف والتكلم بالعربية وغير ذلك.<br />
+9) تجنيبهم الأخلاق الرذيلة وتقبيحها فى نفوسهم كالغيبة والنميمة والكذب والحسد والطمع وعقوق الوالدين وقطع الرحم.<br />
+10) رقية الأولاد وتحصينهم بالأذكار الشرعية ضد العين والحسد وشياطين الإنس و الجن.<br />
+11) مراقبة ميول الولد وتنمية مواهبه وتوجيهه لما يناسبه.<br />
+12) اكرام الصحبة الصالحة للولد وابعاده عن رفقة السوء قال الله تعالى  {الأَخِلاء يَوْمَئِذٍ بَعْضُهُمْ لِبَعْضٍ عَدُوٌّ إِلا الْمُتَّقِينَ }الزخرف67<br />
+13) إقامة الحلقات العلمية داخل البيوت وتكوين مكتبة اسلامية فى البيت واصطحاب الأولاد لمجالس الذكر والمحاضرات والندوات التى تعقد فى المساجد وغيرها وتعويدهم الصلاة فى جماعة فى المسجد منذ الصغر.<br />
+14) الرحلة مع الأولاد إلى مكة المكرمة أو المدينة النبوية أو غيرها من الأماكن المباحة بعيداً عن المصايف وما فيها من مصائب ومعاصى والله المستعان.<br />
+15) تجنيبهم أسباب الانحراف الجنسى وذلك بابعاد أجهزة الفساد عنهم وتجنيبهم مطالعة القصص الغرامية والمجلات الخليعة التى يروج لها تجار الغرائز والأعراض وعدم السماح لهم بسماع الأغانى أو الاطلاع على الكتب الجنسية التى تبحث فى التناسليات صراحة وتشعل مخازن البارود الكامنة فيهم.<br />
+16) العناية بتعليم البنات ما يحتجن إليه من أمور دينهن ودنياهن.<br />
+17) قراءة الكتب المفيدة فى التربية.<br />
+18) استحضار فضائل وثمرة التربية فى الدنيا والآخرة واستحضار عواقب الإهمال والتفريط فى تربية الأولاد فى الدنيا والآخرة.<br />
+قال رسول الله - صلـى الله عليه وآله وسلم - [إذا مات الإنسان انقطع عمله إلا من ثلاث صدقة جارية أو علم ينتفع به أو ولدٍ صالح ٍ يدعو له] مختصر صحيح الإمام مسلم حديث رقم 1001<br />
+19) التربية بالعقوبة كالعقاب النفسى أو اشعار الولد بعدم الرضا والعقاب البدنى الذى لا يؤلمه ولا يضره.<br />
+20) الإحسان إلى الأولاد ومكافأتهم بالخيرقال الله تعالى  {هَلْ جَزَاء الإِحْسَانِ إِلا الإحْسَانُ }الرحمن60<br />
+<b>(**) للاستزادة راجع كتاب [التقصير في تربية الأولاد (المظاهر- سبل الوقاية-العلاج) محمد بن إبراهيم الحمد]</b><br />
+<b>والحمد لله على ما ألهم وعلم وصلى الله على نبينا محمد وآله وصحبه وسلم </b><br />
+<b>وكتبه / عبد القادر فاروق – باحث بالدكتوراه – كلية الشريعة</b>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_829941" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_829941" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=829941" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_829941" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=155061&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=155061#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">لوحة التحكم</a></li>
+		<li><a href="private.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الاشتراكات</a></li>
+		<li><a href="online.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=155045&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">موعظة بليغة</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=155062&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">داء الزنا وعلاجه</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D9%86">المبين</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A7%D9%84%D9%86%D8%B5%D8%AD">النصح</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D9%84%D9%84%D9%85%D8%B1%D8%A8%D9%8A%D9%86">للمربين</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D9%88%D8%A7%D9%84%D9%85%D8%AF%D8%B1%D8%B3%D9%8A%D9%86">والمدرسين</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=155061#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=155061#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">01:38 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

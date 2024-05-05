@@ -1,0 +1,1416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=696d1a7d9adaea36633b28fa7c3827c1&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=194433";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="الدلائل, العقلية, الله, النبي, صدق, صلى, على, عليه, وسلم, الكذب, كان, النبوة, ذلك, ولا, إلى, قبل, هذه, الصدق, هذا, الذي, التي, محمد, إلا, أنه, يكون, ادعاء, الناس, عند, أخلاقه, الأخلاقية, فيه, دعواه, بين, بعد, النبوة،, الأخلاق, لما, كما, الأخلاقي, كانت, تكون, عنه, إذا, حتى, معه, وما, سفيان, الإنسان, الشخصية, قومه" />
+	<meta name="description" content="من الدلائل العقلية على صدق النبي صلى الله عليه وسلم 
+د. علي حسن الروبي 
+ 
+ نُحاول في هذه المقالات إلقاء الضوء على بعض  البراهين والدلائل العقلية على صدق نبوة محمد صلى الله عليه وسلم في دعوى  النبوة والرسالة. 
+  
+ذلك أننا نزعم أن الإنسان الذي يعيش في عصرنا الحاضر ولم يعاصر النبي  صلى الله عليه وسلم - لهو قادرٌ على أن يتحقق من صدق نبوته، وإنْ لم يكن  قد عاين الخوارق التي رآها المعاصرون له، التي كانت برهانًا على صدق دعواه  النبوة والرسالة. 
+  
+وأول  ما نبدأ به من تلكم البراهين والدلائل هو تقليب" />
+
+	<title> من الدلائل العقلية على صدق النبي صلى الله عليه وسلم</title>
+	<link rel="canonical" href="showthread.php?t=194433&s=696d1a7d9adaea36633b28fa7c3827c1" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=696d1a7d9adaea36633b28fa7c3827c1 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=696d1a7d9adaea36633b28fa7c3827c1">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> من الدلائل العقلية على صدق النبي صلى الله عليه وسلم</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=696d1a7d9adaea36633b28fa7c3827c1&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 1 من 1
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=194433&s=696d1a7d9adaea36633b28fa7c3827c1" title="تحديث الصفحة">من الدلائل العقلية على صدق النبي صلى الله عليه وسلم</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=194433" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;t=194433&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=addsubscription&amp;t=194433" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;search_type=1&amp;searchthreadid=194433&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="194433" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_968773">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2022-02-14,&nbsp;<span class="time">10:40 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post968773" href="showthread.php?t=194433&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=968773#post968773" class="postcounter">#1</a><a id="postcount968773" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,746</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> من الدلائل العقلية على صدق النبي صلى الله عليه وسلم
+		</h2>
+		
+				
+					
+					
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_968773">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><div style="text-align: center;"><div style="text-align: center;"><b><font color="#ff0000"><font size="6"><span style="font-family: arabic typesetting">من الدلائل العقلية على صدق النبي صلى الله عليه وسلم<br />
+</span></font></font></b><br /><br /><b><font color="#008000"><font size="6"><span style="font-family: arabic typesetting">د. علي حسن الروبي</span></font></font></b><br />
+<b><font color="#008000"><font size="6"><span style="font-family: arabic typesetting"><br />
+</span></font></font></b><span style="font-family: arabic typesetting"><font size="5">نُحاول في هذه المقالات إلقاء الضوء على بعض  البراهين والدلائل العقلية على صدق نبوة محمد صلى الله عليه وسلم في دعوى  النبوة والرسالة.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">ذلك أننا نزعم أن الإنسان الذي يعيش في عصرنا الحاضر ولم يعاصر النبي  صلى الله عليه وسلم - لهو قادرٌ على أن يتحقق من صدق نبوته، وإنْ لم يكن  قد عاين الخوارق التي رآها المعاصرون له، التي كانت برهانًا على صدق دعواه  النبوة والرسالة.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وأول  ما نبدأ به من تلكم البراهين والدلائل هو تقليب النظر في سيرة النبي - صلى  الله عليه وسلم - وأخلاقه وأحواله قبل دعوى النبوة وبعدها، وسنرى إلامَ  سيقودنا التفحص والتأمل في هذا الجانب، محاولين قدر الجهد أن نلتزم التفكير  العقلاني ونبتعد عن العواطف والمصادرات والإطلاقات، فإننا وإنْ كنا من  المسلمين المؤمنين بهذا النبي الكريم - صلوات الله عليه - والمذعنين لدينه  والمستسلمين لشريعته ومنهاجه، إلا أننا على ثقة كبيرة بأن نبوته - شأنها  شأن الركائز الإيمانية في الإسلام - يمكن البرهنة العقلية عليها، وليس فيها  ما يتعارض مع العقل الصحيح المتجرد من الهوى والغيِّ، ولعل في سرد تلكم  الدلائل العقلية ما يزداد به المؤمن إيمانًا، وما يستقين ويطمئن به المتشكك  المتحير.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وإنما اخترنا جانب الأخلاق  والسيرة الذاتية؛ ليكون معيارًا يُعتبر به في الحكم على صدق ادعاء النبوة  من عدمه؛ للتعلق والتلازم بين الأمرين، فإن النبوة ليست اختراعًا علميًّا  تقنيًّا أو موهبةً فنيةً أو أدبيةً أو مُنجزًا اقتصاديًّا، أو نحو ذلك من  الأمور المقطوعة الصلة بأخلاق الإنسان وتكوينه القيمي، فإننا نجد الموهبة  الأدبية والفنية في أشخاص عارين عن الفضيلة والخُلق كما نجدها عند أصحاب  الفضيلة والخلق، ونجد الذكاء المعرفي والعلمي عند الأخيار الأبرار كما نجده  عند الأشرار الفجار.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وأما في حالة البنوة، فالأمر مختلف تمامًا، فالنبوة دعوى من صاحبها إما أنه صادق فيها وإما أنه كاذبٌ، ولا ثالث لهما.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وإذا  كان كاذبًا فالكذب متنافٍ مع الفضيلة والخُلق عند عامة البشر، فادعاء  النبوة كذبًا مثله مثل القبائح الأخلاقية، لا يتأتى إلا من شخصٍ لا حظ له  في الأخلاق والفضيلة، ولا سيما فضيلة الصدق والأمانة، بل هو - أي ادعاء النبوة كذبًا - أقبح من سائر القبائح الأخلاقية، لما فيه من الخداع العام للبشر، ولجمعه بين الكذب على البشر والكذب على الله، ولاستعماله الكذب والخداع فيما ينبغي أن يكون داعية للأخلاق الحميدة والفضائل والمحاسن، ألا وهو النبوة.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وبالجملة  فهذا معيارٌ ناهضٌ للحكم على مدعي النبوة بالصدق أو الكذب في دعواه؛ لما  فيه من إنباءٍ عن حاله وما يتوقع منه؛ إذْ الناس يجرون مع ما اطرد وترسَّخ  من أخلاقهم وطبائعهم، ولا يخالفون ذلك إلا على جهة الندرة، وآية ذلك أنك  تجد من نفسك القدرة على تصديق أو تكذيب ما يُنسب من فعلٍ ما لشخصٍ ما إذا  كنتَ على دراية حقيقية بأخلاق هذا الشخص وطبيعة تصرفاته، فمثلًا لو حدثك  الناس عن شيء ينسبونه لصديقٍ تَخْبُره أو لشخصٍ عاملتَه وداخلتَه، فإنك لا  تلبث أن تسارع إلى قبول ما ينسبه الناس إلى ذلك الشخص أو إلى ردِّه ورفضه،  ويكون معوِّلك في القبول أو الردِّ، هو ما تَخْبُره من أخلاقه وما تعرفه من  حاله، وهل تنسجم الصفة أو الفعل الذي نسبوه إليه مع المستقر المعروف  المتحقق من أخلاقه وأفعاله أم يتعارض معها؟ فإذا كنتَ قد خَبَرْته  بالمعاشرة والمعاملة الطويلة وعلمتَ أنه جبانٌ خوَّارٌ، فستستيقن ساعتها  كذبَ نسبةِ الشجاعة والإقدام إليه، وأنَّ واسمه بالشجاعة والإقدام إما  منتفعٌ من صاحبك أو جاهلٌ بحاله، وإنْ كنتَ قد خَبْرته عفيفًا زاهدًا  متحريًا للحلال في مطعمه ومشربه، علمت أن الشائعة التي انتشرت بأنه حاول  سرقة حافظة نقود أحد الأشخاص محض كذبٍ وافتراءٍ، وهكذا.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">ذلك  أنَّا نعلم أنَّ مَن اصطبغ بخلقٍ ما من الأخلاق مذمومًا كان أو محمودًا،  فإنه لا يصدر منه خلافه إلا على جهة الهفوة والفلتة، فقد يجبن الشجاع  المِقدام في مرةٍ، وقد يقع الكذب من الصدوق هفوةً، وقد يجود الشحيح على  سبيل المنفعة، لكن يبقى الخُلق الراسخ المعلوم من حال المرء هو المسيطر  عليه، ولا يتحول الإنسان إلى ضده تحولًا كليًّا، إلا إذا حدث له من الهزات  النفسية الإيجابية أو السلبية ما يوجب هذا التغيير الكامل في الشخصية  وأخلاقها، فنرى المجرم قد صار إنسانًا صالحًا ونرى إنسانًا عاديًّا قد تحول  لمجرمٍ.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">والشاهد  الذي أردناه من سَوْق ما قد سلفَ أنَّ أخلاق الشخص وسيرته تصلح أن تكون  شاهدةً معه أو ضده إذا عنَّ من أمرِه ما يُحتاج فيه إلى الاستشهاد بأخلاقه  وسيرته كدليلٍ معه أو عليه.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وفي  حالتنا هذه - أعني قضية دعوى النبوة والرسالة - علينا أن ننظر في حال  صاحبها وما كان عليه من أخلاقٍ حميدةً كانت أو ذميمةً، وهل ما كان عليه من  أخلاقٍ يرجِّح صدقه أم يرجِّح كذبه في دعواه؟ وبأي أخلاقٍ كان صاحب هذه  الدعوى يُعرف بين قومه الذين كانوا يعاشرونه ويتعاملون معه قبل دعواه تلك؟</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وهل  دعواه النبوة مرحلةٌ في سجل أخلاقه الذميمة الجارية على الكذب والخديعة  والمراوغة؟ أم مرحلةٌ في سجل أخلاقه الحميدة الجارية على الصدق والأمانة  والفضيلة؟</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وإذا  نظرنا في سيرة النبي صلى الله عليه وسلم قبل البعثة وجدنا أنه كان يعمل مع  عمه أبي طالب في التجارة، وأنه قد اشتَهر عنه الصدق والأمانة، ومن آيات هذه  الشهرة - أن خديجة رضي الله عنه وهي امرأة عاقلة متمرسة بحال الناس، كان  قد مات عنها زوجها، ولها مالٌ وتجارةٌ، قد اختارته ليقوم على أمر تجارتها،  وحملها ما ظهر لها من أخلاقه وأمانته أن تعرض عليه الزواج  منها، مع أنَّ حالها ومكانتها الاجتماعية والمالية تؤهلها لأنْ تكون  مرغوبة للزواج من سادات قريش وأهل الوجاهة فيها، وكان النبي - صلى الله  عليه وسلم - في ذلك الوقت  شابًّا في الخامسة والعشرين من عمره، ولم يكن له من المال والرياسة في  قريش ما يجعله مقدمًا في التزويج على سادات قريش وأعيانها، إلا أن تكون هذه  المرأة  الناضجة العاقلة قد لمست في أخلاق هذا الشاب ما دعاها إلى الإعجاب به  واختياره زوجًا وقرينًا، وإنْ لم يكن من أهل الغنى والزعامة والسيادة في  قومه.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وتنقل لنا  كتب السيرة أن النبي - صلى الله عليه وسلم - كان معروفًا بين قومه بالصدق  والأمانة ومشتهرًا بينهم بذلك؛ حتى إنهم كانوا يلقبونه بـ&quot; الصادق الأمين&quot;،  ودليل صحة هذه الشهرة وثبوتها وأنها ليست من مجاملات المؤرخين المسلمين -  أن النبي - صلى الله عليه وسلم - عندما أُمِر أن يصارح قومه بنبوته ويجهر  فيهم برسالته ودعوته لأول مرةٍ، طرح عليهم سؤالًا يستخرج منه حاله عندهم من  جهة الصدق والموثوقية والنزاهة ومجانبة الكذب والافتراء والادعاء، فقال  لهم: &quot;... أرأيتم إن أخبرتكم أن خيلا تخرج من سفح هذا الجبل، أكنتم  مصدقي؟&quot;، قالوا: نعم، ما جربنا عليك كذبًا قط، قال: &quot;فإني نذير لكم بين يدي  عذاب شديد&quot;.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><br />
+ولا ريب أن هذا صنيع العقلاء،  فإن استخراج شهادتهم له بالصدق واستمراره عليه، حتى إنه لو أخبرهم بأمرٍ  مدلهمٍ كهجوم الأعداء لما تشككوا في صدقه؛ لديمومته على الصدق ومجانبته  للكذب طوال حياته بينهم وتعامله معهم، فجديرٌ به أن يكون صادقًا أيضًا في  دعواه النبوة وانتحاله الرسالة.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">ومما  يدلنا كذلك على صحة هذه الشهرة بالصدق والأمانة أنه بعد ادعاء محمد صلى  الله عليه وسلم النبوة، كانت تهمته عند القرشيين أنه مجنونٌ وأنه شاعرٌ،  وأنه كاذبٌ في ادعاء النبوة، لكن أحدًا منهم لم يوجه له اتهامًا أخلاقيًّا  بالكذب فيما سبق في الأمور الحياتية، ولم يُعيِّره بقباحة خديعة من الخدائع  ولا احتيالٍ من الاحتيالات الماضية ارتكبها معه أو مع غيره من الناس، ولم  يُذِّكره أحدهم بموقف من المواقف الذي كذب فيها ولا بمرةٍ من المرات التي  استعمل فيها المراوغة والاحتيال.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">كما  أننا يمكننا الوقوف على الطبيعة الأخلاقية لشخصية النبي صلى الله عليه  وسلم بشاهد آخر، وذلك مما ذكرته له خديجة رضي الله عنها عندما حاولت  التهدئة من روعه والتخفيف من توتره بعد ما أصابه من النزع بعد لقائه الأول  بجبريل في غار حراء، وأنه قد خشي على نفسه، فذكرت له أنه جدير بإكرام الله  تعالى له لما عنده من الصفات الحميدة ومكارم الأخلاق التي يحبها الله تعالى  ويحب المتحققين بها، فقالت: &quot;إِنَّكَ لَتَصِلُ الرَّحِمَ، وَتَصْدُقُ  الْحَدِيثَ، وَتَحْمِلُ الْكَلَّ، وَتَكْسِبُ الْمَعْدُومَ، وَتَقْرِي  الضَّيْفَ، وَتُعِينُ عَلَى نَوَائِبِ الْحَقِّ&quot;.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">إن  هذه الكلمات ليست مجرد مجاملة زوجة لزوجها، بل هي واقعٌ ثابتٌ، قد دلَّنا  على ثبوته استمرارُ النبي صلى الله عليه وسلم عليه بعد البعثة وحتى وفاته،  وأن تلكم الصفات هي أخلاقٌ راسخةٌ لديه متمكنةٌ فيه.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">إن  كل القرائن تفيد أن السجل الأخلاقي للنبي صلى الله عليه وسلم قبل دعواه  النبوة كان ناصع البياض جدًّا؛ إذْ لم تقدر الدعاية القرشية وآلتها  الإعلامية الجبارة حينذاك، والتي نجحت في بث الدعاية المكثفة في العرب قبل  موسم الحج  بأن فتى مكة الذي يزعم أنه نبيٌّ هو شخصٌ ساحرٌ يملك بيانًا خلابًا وقدرة  مذهلة على خداع السامعين، بحيث إنه يملك التأثير في السامعين بإفساد الابن  على أبيه والزوجة على زوجها ...إلخ.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>أقول: </b>إن  الآلة الإعلامية القرشية التي نجحت في نقل صورة منفرة عن محمد صلى الله  عليه وسلم بين العرب، جعلت الناس يخافون من الحديث معه والاستماع منه؛ خشية  أن يصيبهم هذا السحر  الذي جاء به محمد... هذه الآلة الإعلامية لم تجد في السجل الأخلاقي من  ماضي محمد - صلى الله عليه وسلم - ما تتمكن به من تشويهه والتنفير عنه، ولم  تحد من الهنات الأخلاقية ما تستطيع الاستثمار فيه واستغلاله في الدعاية،  فاتجهت إلى تشويه ما يدعو إليه وبيان عاقبته وأثره السيئ في زعمهم.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وهذا  في حد ذاته كافٍ لوقوفنا على المنزلة الأخلاقية التي كان يتمتع بها محمد  صلى الله عليه وسلم قبل ادعاء النبوة، فإن التشهير بهفوات الخصوم ومحاولة  تضخيمها - مسلك لم يزل متبعًا في الخصومات الشخصية والعامة في كل العصور  وإلى يومنا هذا.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وإذْ  قد عرفتَ ذلك ووقفتَ على المنزلة الأخلاقية لشخصية محمدٍ - صلى الله عليه  وسلم - والتي عجز الخصوم عن إيجاد أيِّ زلةٍ مرتكَبة في حياته قبل ادعاء  النبوة، بُغيةَ أن يقوموا باستثمارها في خصومتهم معه - فاعلمْ أن هذه  المنزلة الأخلاقية ليست تدُلنا على النزاهة الأخلاقية عند النبي صلى الله  عليه وسلم فقط، بل تقودنا إلى دليلٍ جوهريٍّ على صدقه في دعواه.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">ذلك  أنَّنا نجد التكوين الأخلاقي والفكري لكل واحدٍ منا حائلٌ دونَه ودونَ  الوقوع فيما يُعاكس تكوينه ويضاده، فلكل شخصيةٍ حاجزٌ أخلاقيٌّ يحول بينها  وبين ومُقارفة ما ينافي وينافر قواعدها القِيمية الداخلية، والناس في ذلك  متفاوتون تفاوتًا عظيمًا بقدر قوة إيمانهم بقِيَهم ومبادئهم الأخلاقية،  وبقدر تفاضل قوة شخصياتهم في التغلب على إغواء ما يعارض ويناقض ما يؤمنون  به ويعتقدون أنه الحق والأفضل.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">فالشخص  المتصف بخلق الرحمة الذي تمكَّن منه هذا الخلق حتى صار راسخًا فيه، لن  تجده يومًا يمارس تعذيب إنسانٍ بريءٍ أو حيوانٍ مُستلِذًّا بذلك فرحًا به،  فضلًا أن يكون مفاخرًا بذلك مُبتهجًا؛ لأن ممارسة التعذيب والاستلذاذ به  مناهضٌ لخلق الرحمة الذي في طبعه، وكذلك الشخص المتطبع بخُلق الأنَفة  والعزة لن تجده يمارس خُلق الخضوع والخنوع للناس، فضلًا عن المُعالنة بذلك  والمفاخرة به، والشخص الذي خُلقه الصدق والمصارحة لن تجده يمارس الكذب  فرحًا به مجاهرًا مُنتشيًا؛ لأن ذلك مضاد لخُلق الصدق الراسخ لديه...<br />
+وبالجملة،  فلكلٍّ منا قِيَمه ومُثُله الذاتية التي تمنعه من ممارسة ما يضاد تلك  القيم ويعارضها، ولا تسمح نفس الواحد له أن يمارس خلاف ما يرتضيه ضميره  الداخلي ووازعه الأخلاقي؛ لئلا يفقد الإنسان احترامه لنفسه واحترام الآخرين  له.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وإذا رجعنا  إلى شخصية محمد - صلى الله عليه وسلم - وتكوينها الأخلاقي قبل ادعاء  النبوة، فسنعلم يقينًا أن أخلاقيات هذه الشخصية لن تسمح لها مطلقًا بارتكاب  جريمة الكذب في شأن النبوة، ولن تطاوعها على ذلك، سواء كان ذلك احترامًا  للذات أو للسمعة بين الناس، ولن تسمح منظومةٌ أخلاقية كالتي كان يتمتع بها  محمد - صلى الله عليه وسلم - له بأن يمارس الكذب ويختلق دعوى إرسال الله  له، ولن يُفلت من تأنيب الضمير الداخلي لديه على هذه الجريمة المنافية  لمنظومة أخلاقه، كما لن تسمح له شخصيته بأن تكون نظرة الناس إليه نظرتهم  إلى الشخص الكاذب المنتحل الجدير بكل تحقيرٍ وازدراءٍ وإهانةٍ.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وأنا  وأنت أيها القارئ على تواضع المنزلة الأخلاقية عندنا، إلا أن لنا سقفًا لا  نرضى لأنفسنا أنْ تنزل عنه، سواء في صورتنا أمام أنفسنا، أو في صورتنا  أمام الناس، فلا أجرؤ أنا ولا تجرؤ أنت - ما دمنا نملك الحد الأدنى من  احترام الذات وتقديرها - على أن نُقدِم على اختلاق ادعاءٍ ما؛ تكون نتيجته  تأنيب الضمير الداخلي لنا على الكذب، وتشهير المجتمع من حولنا بسُمعتنا  وسيرتنا.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">فإذا  كان آحاد الناس مثلي ومثلك بهذه المنزلة من احترام أنفسهم، والاستنكاف عن  الكذب وعدم استجازة الإفك والبهتان الذي لن يُقرَّه الضمير الداخلي لنا،  ولن يصمد أمام التشهير المجتمعي بسُمعتنا، فكيف بشخصيةٍ أخلاقيةٍ كشخصية  محمد صلى الله عليه وسلم؟!</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">هل  من السهل على شخصيةٍ فذَّةٍ كهذه، لا تتمتع بأخلاقٍ عليا فحسب، بل بتفردٍ  أخلاقيٍّ في مجتمعها - أن تُقدم على أمرٍ منافرٍ للأخلاق ومباينٍ لها وهو  افتراء ادعاء الرسالة والنبوة؟!</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">ثم  هبْ أن الضمير الأخلاقي عند تلك الشخصية الأخلاقية الصارمة قد تعطل، فهل  تعطل عندها العقل والفِطنة حتى تُقدمِ على تشويه سمعتها الناصعة البياض بين  قومها والعرب في عشيةٍ أو ضحاها؟!</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">لقد  كانت العرب تستقبح الكذب وتتحاشى كل المحاشاة أن توصم به، وتعد الكذب من  النقائص والقبائح التي تقضي على سُمعة صاحبها ومكانته وشرفه إن كان له  مكانةٌ وشرفٌ، فهذا أبو سفيان - رضي الله عنه - قبل إسلامه عندما كان في  حديثه مع قيصر بشأن أمر النبي - صلى الله عليه وسلم - في حضور مجموعةٍ من  قريش، وكان أبو سفيان وقتها أحوج ما يكون إلى استنقاص منزلة النبي صلى الله  عليه وسلم عند قيصر، إلا أنه قد منعه من اختلاق الكذب على النبي - صلى  الله عليه وسلم - في جواباته لأسئلة قيصر عنه - أن تخبر المجموعة القريشة  الحاضرة في ذلك المجلس أن أبا سفيان وهو الزعيم القرشي قد اقترف رذيلة  الكذب.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">إن أبا  سفيان لم يشأْ أن يضحي بسُمعته بين العرب، وأن تلحق به وصمة الكذب، حتى وإن  كان ذلك في سبيل تشويه صورة خصمه اللدود عند ملك الروم، وما ذاك إلا  لأصالة استهجان العرب للكذب وشُنعة التهمة عندهم.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">أفيُعقل  بعد هذا كله أن تُقدم شخصيةٌ متمتعةٌ بالكمال الأخلاقي والعقلي كشخصية  محمد - صلى الله عليه وسلم - على الاستعلان بفريةٍ يُضرب لها الطبل دون أن  اعتبار منها لسمعتها ومنزلتها ومكانتها في قومها والعرب جميعًا؟!</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">هل  من السهل على رجلٍ عاقلٍ متزنٍ أن يُقامر بسُمعته وشرفه ومكانته لأجل  كذبةٍ وفريةٍ يختلقها وهو لا يدري هل سيصدق الناس فريته وينخدعون بها أم  يكذبونها ويردونها عليه؟! فكيف إذا كانت القرائن والمعطيات تقول: إن هذه  الفرية ستقابل حتمًا بالإنكار وعدم القبول؟!</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">أين  كان ضميره؟! وأين كان عقله حين أقدم على ما أقدم عليه من ادعاء النبوة إنْ  لم يكن صادقًا في ذلك بالفعل، ومحقًّا فيما ادعاه في نفس الأمر؟!</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">بل  ثمت أمرٌ أخلاقيٌّ آخر في هذه القضية، وهو أن العقل والعادة قاضيان بأن  أخلاق المرء إذا كانت تنهاه على ترك استعمال الكذب استقباحًا واستهجانًا،  فهاته الأخلاق قاضيةٌ كذلك بمنعه من الكذب على الله الخالق من باب أولى،  فمنطقي أن مَن يخجل من الكذب على الناس في الأمور الدنيوية التافهة، للؤم  خُلق الكذب ومهانة فاعله - أن يكون خجله من الكذب على الله تعالى أشد  وأكبر، وأن يكون منه أبعدَ وعنه أنْأى.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">ولهذا لم يكن غريبًا من أمر قيصر في سؤالاته لأبي سفيان حول أمر النبي صلى الله عليه وسلم لما قدم عليه الشام،  قد جاء في مقدمتها: هل جربتم عليه كذبًا قبل أن يقول ما قال؟&quot;؛ أي: هل كان  الكذب في الأمور الحياتية من شأنه قبل دعواه النبوة؟ ولما أجابه أبو سفيان  رضي الله عنه بأنهم ما جربوا عليه الكذب - توصل قيصر إلى نتيجة منطقية  جدًّا، وهي استبعاد أن يكون خُلْق الإنسان هو الصدق مع الناس وترك الكذب  عليهم، ثم يكون أول افتتاحه لأمر الكذب بكذبةٍ كبرى على الله نفسه!</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">إذًا  السيرة الشخصية والتكوين الأخلاقي لمحمدٍ صلى الله عليه وسلم - لا يسمح له  بارتكاب جريمة افتراء النبوة وادعائها بالباطل، ومجابهة الناس بالكذب  الصريح والامتحال القَراح، ولا تطاوعه نفسه ولا تساعده أخلاقه على ارتكاب  جريمة الكذب على الله وادعاء النبوة افتراءً، فكيف وكذبة كهذه ستكون  توابعها شديدة الكلفة جدًّا، ولا بد فيها من تضحيات باهظة، فكيف يجرؤ شخصٌ  متزنٌ عقلًا، صادقٌ لهجةً، أمينٌ نفسًا على المقامرة بسُمعته ومخالفة شمائل  أخلاقه وطبائع شخصيته بالإقدام على كذبٍ أصلع ليس تعلقه مع قومه وعشيرته  فحسب، ولا حتى عموم الناس فقط، بل كذبٌ له تعلق بالله تعالى، وإنَّ قريشًا  والعرب لم يكونوا ملاحدةً ينكرون وجود الله وهيمنته وبطشه بمن استحقَّ  عقابه، بل كانوا يعرفون الله ويعبدونه ويحجون بيته ويعظمون كعبته، ويتحاشون  المال الحرام في تعميرها، وإنْ وقعوا في الشرك وتلوثوا به، وأضعف الإيمان  وأقل الأحوال أن يكون عند محمد - صلى الله عليه وسلم - من تعظيم الله  والخوف منه ما عند قومه من ذلك، فكيف تسوِّغ له نفسه افتتاح الكذب بكذبة  كبرى على الله تعالى؟!</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>ثم لا بد من القول:</b>  إنه يتعيَّن النظر كذلك في حال محمد - صلى الله عليه وسلم - وأخلاقه بعد  دعواه النبوة فيما يتعلق بأمر الكذب، فإننا قد ذكرنا في مطلع هذه الكلمة أن  الإنسان يمضي على خُلقه الثابت له ولا يتحول عنه إلا على سبيل الهفوة  والندرة، لكن قد أشرنا أيضًا إلى إنه قد يطرأ على النفس  البشرية من التحولات الفكرية أو الهزات النفسيَّة ما يُحدِث لها التغير  والتبدل الكامل أو الكثير في أخلاقها، وضربنا له مثلًا بالمجرم العتيد في  الإجرام الذي يتوب ويتحول إلى شخص طيبٍ مسالمٍ، وكالشخص الملتزم أخلاقيًا  ودينيًا الذي ينحرف ويكاد أن يصير شيطانًا رجيمًا.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وعلى هذا، فإذا قال قائل: لعل الاستقامة  الأخلاقية لمحمد - صلى الله عليه وسلم - ومجانبته العظيمة للكذب والخداع،  كانت مرحلةً من مراحل حياته وهي قبل النبوة، لكن لما ادعى النبوة كان هذا  بمثابة مرحلةٍ جديدةٍ في حياته، فلا يلزم أن تكون الاستقامة الأخلاقية  السابقة دليلًا على صدق ادعاء النبوة لاحتمال وجود تحوُّل طارئٍ في الشخصية  كان ادعاء النبوة نتيجةً له أو سببًا فيه.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وافتراض  هذا القائل قد يكون له حظ من الاحتمالية من جهة الافتراض، لكن الواقع ينسف  هذا الافتراض من أصله ولا يبقي له أي نصيب من الاحتمالية، ذلك أنَّا إذا  نظرنا في حال محمد - صلى الله عليه وسلم - بعد النبوة والرسالة من جهة  الأخلاق لا سيما خلق الصدق - وجدناه سائرًا على السيرة التي كان معروفًا  بها قبل النبوة، ومُنتهِجًا ذات السبيل الذي كان يسلكها، بل إنه يترقى في  ذلك الخُلق وليس ينقلب عليه ولا يتنكر له، وله في ذلك الأقوال الكثيرة التي  تذم الكذب وتحمد الصدق، فيخبر أن الكذب من علامات النفاق، وسيما المنافقين، كما الصدق من سيما من المؤمنين، وأن الكذب يقود أصحابه إلى النار كما أن الصدق يقود أصحابه إلى الجنة،  بل إننا نجد محمدًا - صلى الله عليه وسلم - يبالغ في المباعدة عن الكذب  مبالغةً عظيمةً على المستوى الشخصي، فنجده يحترز من الكذب حتى في المزاح  الدعابة ويخبر أصحابه أنه مهما مازحهم وداعبهم - فلن يقول في مزاحه ودعابته  إلا صدقًا وحقًّا، بل إن ليستعمل المعاريض البعيدة التي توهم السامع خلاف  مراد المتكلم؛ تلافيًا للكذب الصريح إذا وُضِع في موقفٍ يترتب على الصدق  فيه ضررٌ يلحق بالمسلمين، وذلك كما في قوله: &quot;نحن من ماء&quot; تعمية على الرجل  الذي سأله ...</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">بل أظهر من الوفاء  بالعهد مع الأعداء وفي أحلك الظروف - ما لا يكون إلا ممن تمكنت منهم فضائل  الأخلاق واستحوذت عليهم كلَّ الاستحواذ، فإن الصحابي حذيفة بن اليمان  ووالده -رضي الله عنه - قد خرجا يريدان شهود معركة بدر مع النبي صلى الله  عليه وسلم، فصادف التقاؤهما بالجيش القرشي، ولما أراد القرشيون أسرهما حلف  حذيفة وأبوه أنهما يقصدان المدينة وليس اللحاق بالنبي صلى الله عليه وسلم  وأصحابه، فتركهم القرشيون بعد أخذ العهود والمواثيق عليهما بعدم القتال مع  المسلمين، ولما حضر الرجلان إلى النبي - صلى الله عليه وسلم - وأخبراه بتلك  العهود المواثيق، طلب منهما الرجوع وعدم القتال معه، وقال كلمته المشهورة:  &quot;نفي لهم بعهدهم ونستعين الله عليهم&quot;، وفي فتح مكة لما تأخر في إجابة طلب  الأمان لرجلٍ مهدور الدم بُغية أن يقتله أحدهم قبل ذلك، ولما لم يفعلوا  وأعطاه الأمان وحقن دمه، أخبرهم أن تأخره كان رجاء أن يقتلوه قبل منحه  الأمان، فسألوه لِمَ لَمْ يغمز لهم بعينه، ليفهموا أنه يريد قتله ولا يريد  الموافقة على إعطائه الأمان؟ قال لهم:  «ما كان لنبيٍّ أن تكون له خائنة الأعين»، وكان في مطلع وصاياه لأمراء الجيوش التي كان يرسلها في الغزو &quot;لا تغدِروا&quot;.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">والشاهد  أننا نُلفي محمدًا - صلى الله عليه وسلم - على سيرته الأولى وطريقته  المعهودة في ديمومة الأخلاق الحميدة وعلى رأسها الصدق والأمانة والوفاء  بالعهد، وكل هذا يعني تأكيد الحقيقة الساطعة من أن محمدًا - صلى الله عليه  وسلم - لم يكن قبل دعواه النبوة على حالٍ تسمح له أخلاقه وقيمه ومبادئه  باختلاق دعوى النبوة من تلقاء نفسه، والوقوع في دنس خطيئة الكذب المنافرة  كل المنافرة لمعهود أخلاقه ومُستقِر شمائله، وكذلك لم يحدث له تحولٌ  أخلاقيٌّ يغير ذلكم الثابت المستقر من خُلقه وشمائله بحيث يقول القائل: قد  كان صادقًا خلوقًا ثم ادعى النبوة وانتكست أخلاقه وترك الصدق، بل لم يزل  صلى الله عليه وسلم ملازمًا للصدق والوضوح مجانبًا للكذب والخديعة حياته  كلها ودهره أجمع، وليس هذا من شأن المتقوِّلين الكاذبين ولا هو من طريقة  المخادعين الماكرين؛ فثبت أن ما ادعاه من النبوة وما زعمه من إرسال الله له  - هو جارٍ على معهود حاله من الصدق والأمانة والشفافية والوضوح، فهو صادقٌ  فيه كل الصدق أمينٌ فيه كل الأمانة.</font></span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">يُتبع...</font></span><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><br />
+</span><br />
+</div><span style="font-family: arabic typesetting"><font size="5"><br />
+<br />
+</font></span></div><br />
+<br />
+<br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_968773" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_968773" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=968773" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_968773" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=194433&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=194433#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=696d1a7d9adaea36633b28fa7c3827c1">لوحة التحكم</a></li>
+		<li><a href="private.php?s=696d1a7d9adaea36633b28fa7c3827c1">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1">الاشتراكات</a></li>
+		<li><a href="online.php?s=696d1a7d9adaea36633b28fa7c3827c1">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=194422&amp;s=696d1a7d9adaea36633b28fa7c3827c1">رجب وشعبان والاستعداد لرمضان</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=194434&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الحياء خلق الإسلام</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%AF%D9%84%D8%A7%D8%A6%D9%84">الدلائل</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%B9%D9%82%D9%84%D9%8A%D8%A9">العقلية</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D9%84%D9%87">الله</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D9%86%D8%A8%D9%8A">النبي</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%B5%D8%AF%D9%82">صدق</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%B5%D9%84%D9%89">صلى</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%B9%D9%84%D9%89">على</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%B9%D9%84%D9%8A%D9%87">عليه</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%85%D9%86">من</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%88%D8%B3%D9%84%D9%85">وسلم</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=194433#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=194433#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">04:57 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

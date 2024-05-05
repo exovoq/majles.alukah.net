@@ -1,0 +1,1376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=696d1a7d9adaea36633b28fa7c3827c1&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=193384";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="أعيادهم, التشبه, بالكفار, وحكم" />
+	<meta name="description" content="التشبه بالكفار وحكم أعيادهم 
+  إبراهيم بن محمد الحقيل  
+ أيها الإخوة المؤمنون: عندما  تضعفُ أمةٌ من الأمم، يكثر تفرقها واختلافها، وتعظم أدواؤها، ويتنوعُ  انحرافها حتى يأتي على الأصول من دينها وعقيدتها فيزعزعها، كما يأتي على  المتفق عليه من أخلاقها فيغيره بأخلاقٍ ليست لها، فالضعف يقود إلى التقليد.  والأمةُ القاهرةُ تتبعها الأمة المقهورة، وأفرادُ المجتمع المغلوب مولعون  بتقليد أفراد المجتمع الغالب ومحاكاتهم في شعائرهم وعاداتهم. ذلك أن النفس أبدًا تعتقد الكمال فيمن غلبها وانقادت إليه، وتلك سنةٌ" />
+
+	<title> التشبه بالكفار وحكم أعيادهم</title>
+	<link rel="canonical" href="showthread.php?t=193384&s=696d1a7d9adaea36633b28fa7c3827c1" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=696d1a7d9adaea36633b28fa7c3827c1 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=696d1a7d9adaea36633b28fa7c3827c1">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> التشبه بالكفار وحكم أعيادهم</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=696d1a7d9adaea36633b28fa7c3827c1&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 1 من 1
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=193384&s=696d1a7d9adaea36633b28fa7c3827c1" title="تحديث الصفحة">التشبه بالكفار وحكم أعيادهم</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=193384" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;t=193384&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=addsubscription&amp;t=193384" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;search_type=1&amp;searchthreadid=193384&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="193384" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_966193">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2021-12-22,&nbsp;<span class="time">11:57 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post966193" href="showthread.php?t=193384&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=966193#post966193" class="postcounter">#1</a><a id="postcount966193" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,746</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> التشبه بالكفار وحكم أعيادهم
+		</h2>
+		
+				
+					
+					
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_966193">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><b><font color="#ff0000"><font size="6"><span style="font-family: arabic typesetting">التشبه بالكفار وحكم أعيادهم<br />
+</span></font></font></b><br /><br /><b><font color="#008000"><font size="6"><span style="font-family: arabic typesetting"> إبراهيم بن محمد الحقيل </span></font></font></b><br /><br /><span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span><span style="font-family: arabic typesetting"><font size="5"><b>أيها الإخوة المؤمنون:</b> عندما  تضعفُ أمةٌ من الأمم، يكثر تفرقها واختلافها، وتعظم أدواؤها، ويتنوعُ  انحرافها حتى يأتي على الأصول من دينها وعقيدتها فيزعزعها، كما يأتي على  المتفق عليه من أخلاقها فيغيره بأخلاقٍ ليست لها، فالضعف يقود إلى التقليد.  والأمةُ القاهرةُ تتبعها الأمة المقهورة، وأفرادُ المجتمع المغلوب مولعون  بتقليد أفراد المجتمع الغالب ومحاكاتهم في شعائرهم وعاداتهم. ذلك أن النفس أبدًا تعتقد الكمال فيمن غلبها وانقادت إليه، وتلك سنةٌ كونية تظهر لمن قرأ التاريخ، وتأمل أحوال الشعوب.<br />
+ </font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>أيها الإخوة: </b>وقدر  الله تعالى على هذه الأمة أنها تحيد عن صراط ربها المستقيم فترات من  حياتها، وتسلُك صراط الضالين، ويتبعُ أبناؤها أعداءهم في كل جليل وحقير،  وكبير وصغير إلا من رحم الله، وقليل ما هم. وهذا القدر الكوني أخبر عنه النبي صلى الله عليه وسلم بقوله: «لتتبعن سَنَن من قبلكم شبرًا بشبر وذراعًا بذراع حتى لو سلكوا جحر ضب لسلكتموه» . قلنا: &quot;يا رسول الله، اليهود والنصارى&quot;؟ قال النبي صلى الله عليه وسلم: «فمن» ؟؛ متفق عليه من حديث أبي سعيد الخدري رضي الله عنه[1].</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>وفي حديث آخر عن أبي واقدٍ الليثي: </b>&quot;أن  رسول الله صلى الله عليه وسلم لما خرج إلى خيبر مرّ بشجرة للمشركين يقال  لها: ذاتُ أنواط يعلقون عليها أسلحتهم فقالوا: يا رسول الله، اجعل لنا ذاتَ  أنواط كما لهم ذاتُ أنواط&quot;. فقال النبي صلى الله عليه وسلم: «سبحان الله! هذا كما قال قوم موسى: اجعل لنا إلهًا كما لهم آلهة، والذي نفسي بيده لتركبن سُنة من كان قبلكم»؛  أخرجه أحمد والترمذي وقال: حسن صحيح[2]، قال ابن مسعود رضي الله عنه:  &quot;أنتم أشبه الأمم ببني إسرائيل سمتًا وهديًا، تتبعون عملهم حذو القذة  بالقذة، غير أني لا أدري أتعبدون العجل أم لا&quot;[3]؟!</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وبالرغم  من أن ما وقعت فيه الأمة، وما ستقع فيه من التشبه بالأمم الأخرى، إنما هو  قدرٌ من أقدار الله وقضائه الذي لا يرد، فإن هذا لا يعني أن المسلم يستسلم  لهذا القدر؛ بل إنه مطالبٌ بفعل الأسباب الواقية؛ فإن الله تعالى حذرنا من  سبيل الكافرين، وأمرنا بالاستمساك بالعروة الوثقى، وبالإصلاح والأمر  بالمعروف والنهي عن المنكر، كما أن وقوع فئة من المسلمين أو حتى أكثرهم لا  قـدر الله ذلك في التشبه بالكافرين فإن هذا لا يعني أن الأمة هلكت  كلُّها[4]؛ لأن النصوص تثبت أنه: لا تزال طائفة من أمته ظاهرةً على الحق  حتى تقوم الساعة[5]. وقد أخبر النبي صلى الله عليه وسلم: «أن الله لا يزال يغرس في هذا الدين غرسًا يستعملهم في طاعته» [6].</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>قال شيخ الإسلام ابن تيمية:</b> &quot;فعلم بخبره الصدق  أنه في أمته قومٌ مستمسكون بهديه الذي هو دين الإسلام محضًا، وقومٌ  منحرفون إلى شعبة من شعب اليهود، أو إلى شعبة من شعب النصارى، وإن كان  الرجل لا يكفر بكل انحراف؛ بل وقد لا يفسق أيضًا؛ بل قد يكون الانحراف  كفرًا، وقد يكون فسقًا، وقد يكون معصية، وقد يكون خطأ. وهذا الانحراف أمر  تتقاضاه الطباع ويزينه الشيطان؛ فلذلك أُمر العبد بدوام دعاء الله سبحانه بالهداية إلى الاستقامة التي لا يهودية فيها ولا نصرانية أصلاً&quot;[7] اهـ. <br />
+ </font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>أيها الإخوة:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">جاءت  شريعة الإسلام بالنهي القاطع عن التشبه بالكافرين في أي شيء: في العبادات  والمعاملات، والأخلاق والعادات، واللباس والهيئات. ونصوص الشرع في ذلك أكثر  من أن تحصر. فمخالفة المشركين، والبراءةُ منهم أصل من أصول الدين، الإخلال  به إخلال بالدين؛ لذا كان النبي صلى الله عليه وسلم يقصد مخالفتهم دائمًا  وأبدًا.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">لما قدم  المدينة مهاجرًا، ورأى اليهود يصومون عاشوراء، أمر المسلمين بصيام يوم قبله  أو بعده مخالفة لهم[8]؛ بل حتى تحول القبلة من بيت المقدس إلى الكعبة هو  مخالفة لهم في قبلتهم{وَمِنْ حَيْثُ خَرَجْتَ فَوَلِّ  وَجْهَكَ شَطْرَ المَسْجِدِ الحَرَامِ وَحَيْثُ مَا كُنْتُمْ فَوَلُّوا  وُجُوهَكُمْ شَطْرَهُ لِئَلَّا يَكُونَ لِلنَّاسِ عَلَيْكُمْ حُجَّةٌ  إِلَّا الَّذِينَ ظَلَمُوا مِنْهُمْ} [البقرة: 150].  قال جمع من  السلف: &quot;معناه: لئلا يحتج اليهودُ عليكم بالموافقة في القبلة فيقولون: قد  وافقونا في قبلتنا فيوشك أن يوافقونا في ديننا، فقطع الله بمخالفتهم في  القبلة هذه الحجة&quot;[9]. </font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>ومن الدقائق في هذا المجال:</b> ما استنبطه العلماء  من أن صيامَ المسلمين وإفطارهم وأعيادَهم إنما مبناها على رؤية الهلال،  وذلك مخالف لما عليه الكفار؛ إذ يثبتون ذلك بالحساب[10]، وجاءت السنة  بتعجيل الفطور وتأخير السحور مخالفة لهم[11]، وجاء النهي عن الجلوس كما  يجلسون، ورد عن ابن عمر رضي الله عنهما أنه رأى رجلاً يتكئ على يده اليسرى  وهو قاعد في الصلاة فقال له: &quot;لا تجلس هكذا، فإن هكذا يجلس الذين يعذبون&quot;  وفي رواية &quot;تلك صلاةُ المغضوب عليهم&quot;؛ أخرجه أبو داود[12].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>وجاء الخبر عن رسول الله صلى الله عليه وسلم أن: </b> «من تشبه بقوم فهو منهم»؛  أخرجه أبو داود[13]، قال شيخ الإسلام: &quot;وهذا الحديثُ أقل أحواله أن يقتضي  تحريم التشبه بهم، وإن كان ظاهره يقتضي كفر المتشبه بهم كما في قوله:{وَمَنْ يَتَوَلَّهُمْ مِنْكُمْ فَإِنَّهُ مِنْهُمْ} [المائدة: 51]&quot;[14] اهـ.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">ومن اطلع على نصوص النهي عن التشبه بالكافرين اشتد عجبه من كثرتها في الكتاب والسنة، ومن التشديد في ذلك، فلماذا كل هذا؟!<br />
+ </font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">إن  السبب في ذلك أن موافقتهم في العوائد تقود إلى موافقتهم في الشعائر،  والتساهل في عدم مخالفتهم في الصغائر يؤدي إلى متابعتهم في الكبائر؛ حتى  ينسلخ المسلمُ من دينه وهو لا يشعر، خاصة مع الإعجاب بهم وبمنجزاتهم  وحضارتهم. قال شيخ الإسلام: &quot;إن المشاركة في الهدي الظاهر تورث تناسبًا  وتشاكلاً بين المتشابهين، يقود إلى موافقة ما في الأخلاق والأعمال وهذا أمر محسوس، فإن اللابس لثياب أهل العلم  مثلاً يجد في نفسه نوع انضمامٍ إليهم، واللابسُ لثياب الجند المقاتلة يجد  في نفسه نوع تخلق بأخلاقهم، ويصير طبعه مقتضيًا لذلك&quot;. اهـ[15].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>وقال أيضًا: </b>&quot;لو  اجتمع رجلان في سفر أو بلد غريب، وكانت بينهما مشابهة في العمامة أو  الثياب أو الشعر أو المركوب ونحو ذلك لكان بينهما من الائتلاف أكثر مما بين  غيرهما، وكذلك تجد أرباب الصناعات الدنيوية، يألف بعضهم بعضًا، ما لا  يألفون غيرهم حتى إن ذلك يكون مع المعاداة والمحاربة.. فإذا كانت المشابهة  في أمور دنيوية تورث المحبة والموالاة فكيف بالمشابهة في أمور دينية؟! فإن  إفضاءها إلى نوع من الموالاة أكثرُ وأشد، والمحبة والموالاة لهم تنافي الإيمان&quot;[16] اهـ.<br />
+ </font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">أسأل  الله تعالى أن يهدينا صراطه المستقيم، وأن يعصمنا من التشبه بالكافرين،  وأن يهدي ضال المسلمين إنه سميع مجيب، وأقول قولي هذا وأستغفر الله لي ولكم  فاستغفروه إنه هو الغفور الرحيم.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>أيها الإخوة المؤمنون: </b>من  نعمة الله تعالى على بلادنا عدمُ ظهور الاحتفالات بأعياد الكفار فيها،  نحمد الله تعالى أن وقانا، ونسأله أن يحفظنا ما بقينا؛ لكن تلك الأعياد  يصلنا خبرها ووقائعها وطقوسها على التفصيل عبر الصحف والفضائيات، وهذا من  البلاء الذي فجرته تقنيات هذا العصر.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">ويظهر  في تلك الاحتفالات شعائر من الكفر والبدعة، ومشاهد من الفسوق والانحلال،  وأنواع من الشبهات والشهوات، يشاهدها أولادُ المسلمين وجهالُهم فلربما  تأثروا بذلك، ولا سيما أن ما ينقل فيه من الإثارة ومداعبة الغرائز والشهوات  ما يحرك إعجابَ ضعاف العقل والدين.<br />
+ </font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وكان  من الأثر القبيح لذلك أن يتبادل بعض المسلمين التهاني بأعياد الكفار على  مرأى ومسمع من الناس! ويزداد الأمر قبحًا حينما يشذ بعض المسلمين فيشدون  رحالهم إلى ديار الذين كفروا ابتهاجًا بعيدهم؛ حتى ينالوا شيئًا من اللذائذ  والشهوات، التي تطفح بها أعيادهم.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وكل ذلك خطره على الدين والعقيدة ظاهر، فيه من المنكرات والبدعة مافيه، وقد يصل بصاحبه إلى الكفر والنفاق.<br />
+ </font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وقد مدح الله تعالى المؤمنين بعدم شهودهم أعياد الكفار التي هي من الزور {وَالَّذِينَ لَا يَشْهَدُونَ الزُّورَ وَإِذَا مَرُّوا بِاللَّغْوِ مَرُّوا كِرَامًا} [الفرقان: 72].  قال جماعة من المفسرين: &quot;هو أعياد المشركين&quot;[17]، وقال عمر بن الخطاب  رضي الله عنه: &quot;إياكم ورطانةَ الأعاجم، وأن تدخلوا على المشركين يوم عيدهم  في كنائسهم؛ فإن السخطة تنزل عليهم&quot;[18]. وقال أيضًا: &quot;اجتنبوا أعداء الله  في عيدهم&quot;[19]، وقال عبدالله بن عمرو بن العاص رضي الله عنهما: &quot;من بنى  بأرض المشركين، وصنع نيروزهم ومهرجانهم، وتشبه بهم حتى يموت؛ حشر معهم يوم القيامة&quot;[20]. وقال أبو الحسن الآمدي: &quot;لا يجوز شهود أعياد النصارى واليهود، نص عليه أحمد في رواية مهنا&quot;[21].</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">والذين  يحضرونها من المسلمين، ويتمتعون بما فيها من الشهوات؛ فذلك عاقبته ندامة  وخسران، قال شيخ الإسلام: &quot;وأما أعياد المشركين فجمعت الشبهة والشهوة، وهي  باطل؛ إذ لا منفعة فيها في الدين، وما فيها من اللذة العاجلة فعاقبتها إلى  ألم، فصارت زورًا وحضروها وشهودها، وإذا كان الله قد مدح ترك شهودها الذي  هو مجرد الحضور برؤية أو سماع، فكيف بالموافقة بما يزيد على ذلك من العمل  الذي هو عملُ الزور لا مجرد شهوده&quot;[22]؟!</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وقال أيضًا: &quot;إن الأعياد من جملة الشرع والمناهج والمناسك التي قال الله سبحانه:{لِكُلِّ أُمَّةٍ جَعَلْنَا مَنْسَكًا هُمْ نَاسِكُوهُ} [الحج:  67] كالقبلة والصلاة والصيام فلا فرق بين مشاركتهم في العيد، وبين  مشاركتهم في سائر المناهج. فإن الموافقة في جميع العيد موافقةٌ في الكفر،  والموافقة في بعض فروعه موافقة في بعض شعب الكفر؛ بل الأعياد هي من أخص ما  تتميز به الشرائع ومِنْ أظهرِ ما لها من الشعائر، فالموافقة فيها موافقة في  أخص شرائع الكفر وأظهرِ شعائره. ولاريب أن الموافقة في هذا قد تنتهي إلى  الكفر في الجملة بشروطه&quot;[23] اهـ.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">بل إن مجرد  الركوب مع الكفار الذين يذهبون لحضور أعيادهم، يخشى على صاحبه أن يمسه  العذاب معهم. سُئل ابن القاسم المالكي عن الركوب في السفن، التي تركب فيها  النصارى إلى أعيادهم فكره ذلك؛ مخافة نزول السخطة عليهم بشركهم الذي  اجتمعوا عليه[24].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">إذا تقرر هذا أيها الإخوة فإن التهنئة بأعياد الكفار لا تجوز سواء هنأ به المسلمين أم هنأ به الكفار. قال العلامة ابن القيم  رحمه الله تعالى: &quot;وأما التهنئة بشعائر الكفر المختصة به فحرام بالاتفاق؛  مثل أن يهنئهم بأعيادهم وصومهم فيقول: عيد مبارك عليك، أو تهنأ بهذا العيد  ونحوه، فهذا إن سلم قائله من الكفر فهو من المحرمات، وهو بمنزلة أن تهنئه  بسجوده للصليب، بل ذلك أعظم إثمًا عند الله، وأشد مقتًا من التهنئة بشرب  الخمر، وقتل النفس، وارتكاب الفرج المحرم ونحوه، وكثير ممن لا قدر للدين  عنده يقع في ذلك ولا يدري قبح ما فعل، فمن هنأ عبدًا بمعصية أو بدعة أو كفر  فقد تعرض لمقت الله وسخطه&quot; اهـ[25].<br />
+ </font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">فالمسألة  خطيرة ولو وقع فيها الكثير من المسلمين، ولا يقلل خطورتها كثرة الواقعين  فيها. وهذا من البلاء الذي ابتلي به المسلمون في زمن الانحطاط والتبعية  والتقليد الأعمى، الذي يقود إلى دار السعير.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">نسأل الله تعالى أن يحفظنا من البدعة والشرك، وأن يعصمنا من الكفر والضلال، وأن يحسن عواقبنا في الأمور كلها، وأن يجيرنا من خزي الدنيا وعذاب الآخرة، ثم صلوا وسلموا على محمد بن عبدالله كما أمركم بذلك ربكم.</font></span><br />
+<br />
+<hr /><span style="font-family: arabic typesetting"><font size="5">[1] أخرجه البخاري في أحاديث الأنبياء باب ما ذكر عن بني إسرائيل (3456)، ومسلم في العلم باب اتباع سنن اليهود والنصارى (2669) وأحمد (3/ 84).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[2] أخرجه أحمد (5/ 218) والترمذي في الفتن؛ باب ما جاء لتركبن سنن من كان قبلكم (2180) وصححه الألباني في &quot;صحيح الترمذي&quot; (1771) وفي &quot;المشكاة&quot; (5369).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[3] &quot;اقتضاء الصراط المستقيم لمخالفة أصحاب الجحيم&quot; لابن تيمية (1/ 110).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[4] &quot;مقدمة اقتضاء الصراط المستقيم&quot; د. ناصر العقل (1/ 34).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[5] كما  في حديث المغيرة بن شعبة - رضي الله عنه - عند البخاري في المناقب (3640)  ومسلم في الإمارة باب قوله صلى الله عليه وسلم: لا تزال طائفة... (1921)  وفيه عن ثوبان وسمرة وجابر ومعاوية رضي الله عنهم.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[6] أخرجه  ابن ماجه في المقدمة باب اتباع سنة رسول الله (1/ 5) برقم (8) عن أبي عنبة  الخولاني، وأخرجه بنحوه أحمد (4/ 200)، وحسنه الألباني في &quot;صحيح ابن ماجه&quot;  (80)، وذكره في الصحيحه (2442).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[7] &quot;اقتضاء الصراط المستقيم&quot; (1/ 71).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[8] أحاديث صيام عاشوراء انظرها في &quot;جامع الأصول&quot; (6/ 313) وحديث صيام يوم قبله أخرجه مسلم في الصيام  باب أي يوم يصام في عاشوراء (1133) وأبو داود في الصيام باب ما روي أن  عاشوراء اليوم التاسع (2445) عن ابن عباس - رضي الله عنهما - وأحمد ونص فيه  على مخالفة اليهود قال: وخالفوا فيه اليهود وصوموا قبله يومًا أو بعده  يومًا. انظر: المسند (1/ 241).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[9] قاله مجاهد وعطاء والضحاك والربيع بن أنس وقتادة والسدي كما ذكره ابن كثير عن ابن أبي حاتم. انظر: تفسير ابن كثير (1/ 290) الآية (150) من سورة البقرة، و&quot;اقتضاء الصراط المستقيم&quot; (1/ 88).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[10] ذكر معناه شيخ الإسلام في &quot;اقتضاء الصراط المستقيم&quot; (1/ 255).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[11] في  تأخير السحور حديث أبي عبدالرحمن الصنابحي مرسلاً عند الإمام أحمد في  المسند (4/ 349) وابن أبي حاتم في المراسيل (121) وفي تعجيل الفطور مخالفة  لهم حديث أبي هريرة عند أبي داود في الصيام باب ما يستحب من تعجيل الفطر  (2353) وابن ماجه في الصوم باب ماجاء في تعجيل الإفطار (1698) والحاكم  وقال: صحيح على شرط مسلم (1/ 431) وكذلك حديث عمرو بن العاص في مخالفتهم في  أكلة السحر فصل ما بين صيامنا... عند مسلم في الصيام باب فضل السحور (1096).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[12] أخرجه  أبو داود في الصلاة باب كراهة الاعتماد على اليد في الصلاة (993) (994)  وحسن الألباني الرواية الأولى في صحيح أبي داود، وصحح الرواية الثانية  (876).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[13] أخرجه أحمد (2/ 50) وأبو داود في اللباس باب لبس الشهرة (4031) وجوّد إسناده شيخ الإسلام في &quot;مجموع الفتاوى&quot;  (25/ 331) وفي &quot;اقتضاء الصراط المستقيم&quot; (1/ 241)، وذكر له الحافظ ابن حجر  شاهدًا مرسلاً بسند حسن كما في &quot;الفتح&quot; (6/ 98) وحسنه السيوطي في &quot;الجامع  الصغير&quot; (8593)، وصححه الألباني في &quot;صحيح الجامع&quot; (6025).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[14] &quot;اقتضاء الصراط المستقيم&quot; (1/ 241).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[15] &quot;اقتضاء الصراط المستقيم&quot; (1/ 80).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[16] &quot;اقتضاء الصراط المستقيم&quot; (1/ 489).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[17] ممن قاله: أبو العالية وطاوس وابن سيرين والضحاك والربيع بن أنس وغيرهم، انظر: &quot;تفسير ابن كثير&quot; (3/ 525).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[18] أخرجه عبدالرزاق (1608) والبيهقي في &quot;الكبرى&quot; (9/ 234)، وصححه شيخ الإسلام ابن تيمية في &quot;اقتضاء الصراط المستقيم&quot; (1/ 457).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[19] أخرجه البيهقي في &quot;الكبرى&quot; (9/ 234).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[20] أخرجه البيهقي في &quot;الكبرى&quot; (9/ 234) وصححه ابن تيمية في &quot;اقتضاء الصراط المستقيم&quot; (1/ 457).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[21] &quot;اقتضاء الصراط المستقيم&quot; (1/ 460).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[22] &quot;اقتضاء الصراط المستقيم&quot; (1/ 430).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[23] &quot;اقتضاء الصراط المستقيم&quot; (1/ 470).</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[24] &quot;اقتضاء الصراط المستقيم&quot; (2/ 526).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[25] &quot;أحكام أهل الذمة&quot; (1/ 441 - 442).</font></span><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><br />
+</span><br />
+</div><span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_966193" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_966193" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=966193" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_966193" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=193384&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=193384#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=696d1a7d9adaea36633b28fa7c3827c1">لوحة التحكم</a></li>
+		<li><a href="private.php?s=696d1a7d9adaea36633b28fa7c3827c1">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1">الاشتراكات</a></li>
+		<li><a href="online.php?s=696d1a7d9adaea36633b28fa7c3827c1">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=193379&amp;s=696d1a7d9adaea36633b28fa7c3827c1">لماذا الاحتفال بميلاد السيد المسيح؟!</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=193392&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الإيمان: فطرة وعراقة</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A3%D8%B9%D9%8A%D8%A7%D8%AF%D9%87%D9%85">أعيادهم</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%AA%D8%B4%D8%A8%D9%87">التشبه</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A8%D8%A7%D9%84%D9%83%D9%81%D8%A7%D8%B1">بالكفار</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%88%D8%AD%D9%83%D9%85">وحكم</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=193384#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=193384#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">04:57 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

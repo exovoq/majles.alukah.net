@@ -1,0 +1,1382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=696d1a7d9adaea36633b28fa7c3827c1&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=195682";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="الْقَدْرِ, تساؤلاتٌ, للنقاشِ., لَيْلَةُ, مطروحةٌ" />
+	<meta name="description" content="لَيْلَةُ الْقَدْرِ تساؤلاتٌ مطروحةٌ للنقاشِ.  
+ 
+ 
+ فهمي أحمد عبد الرَّحمن القزّاز 
+ 
+ 
+ 
+ 
+ 
+الحمد لله والصلاة والسلام على رسول الله، وعلى آلهِ وصحبهِ ومن والاه، وبعد:" />
+
+	<title> لَيْلَةُ الْقَدْرِ تساؤلاتٌ مطروحةٌ للنقاشِ.</title>
+	<link rel="canonical" href="showthread.php?t=195682&s=696d1a7d9adaea36633b28fa7c3827c1" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=696d1a7d9adaea36633b28fa7c3827c1 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=696d1a7d9adaea36633b28fa7c3827c1">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> لَيْلَةُ الْقَدْرِ تساؤلاتٌ مطروحةٌ للنقاشِ.</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=696d1a7d9adaea36633b28fa7c3827c1&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 1 من 1
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=195682&s=696d1a7d9adaea36633b28fa7c3827c1" title="تحديث الصفحة">لَيْلَةُ الْقَدْرِ تساؤلاتٌ مطروحةٌ للنقاشِ.</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=195682" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;t=195682&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=addsubscription&amp;t=195682" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;search_type=1&amp;searchthreadid=195682&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="195682" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_972543">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2022-04-19,&nbsp;<span class="time">12:15 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post972543" href="showthread.php?t=195682&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=972543#post972543" class="postcounter">#1</a><a id="postcount972543" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,746</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> لَيْلَةُ الْقَدْرِ تساؤلاتٌ مطروحةٌ للنقاشِ.
+		</h2>
+		
+				
+					
+					
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_972543">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><b><font color="#800000"><font size="6"><span style="font-family: arabic typesetting">لَيْلَةُ الْقَدْرِ تساؤلاتٌ مطروحةٌ للنقاشِ. <br />
+</span></font></font></b><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b><font color="#ff8c00"><font size="6"> فهمي أحمد عبد الرَّحمن القزّاز</font></font></b><br />
+</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">الحمد لله والصلاة والسلام على رسول الله، وعلى آلهِ وصحبهِ ومن والاه، وبعد:<br />
+ففي زحمة الدخول في  التفاصيل، ومعرفة دقائق الأمور قد تغيب الأساسيات، ومنها ما نرى أن مواقع  التواصل الاجتماعي والمنتديات العلمية تعج في معرفة أدق الأمور المتعلقة  بليلة القدر وعلاماتها وتحريها واستقراء أحاديثها شرحاً ودراسة وتحقيقاً  للوصول إلى الصواب وفي كل ذلك خير عظيم وجهد مبارك لا يخفى على ذي لبٍّ،  ولكن قد تغيب بعض الأساسيات على القارئ والمطلع الذي يريد أن يتلذذ  بالمعاني الإيمانية لهذه الليلة المباركة. </font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">ومن هذه الأساسيات التي وددت أن أطرحها بشكل تساؤلات لاستنهاض الهمم في البحث عن جوابها...ومنها:</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">1-هذه الليلة وصفت بأنها خيرٌ من ألف شهر فقال الله تعالى: <font color="#008000">{لَيْلَةُ الْقَدْرِ خَيْرٌ مِنْ أَلْفِ شَهْرٍ}</font>  [القدر: 3]. والسبب في اختصاص هذه الأمة بالخيرية في هذه الليلة كما جاء  عن مَالِكٍ أَنَّهُ سمع من يَثِقُ بِـهِ من أَهْلِ الْعِلْمِ يقول: &quot; إِنَّ  رَسُولَ الله صلى الله عليه وآله وسلم أُري أَعْمَارَ الناس قَبْلَهُ أو  ما شَاءَ الله من ذلك فَكَأَنَّهُ تَقَاصَرَ أَعْمَارَ أُمَّتِهِ أَنْ لاَ  يَبْلُغُوا مِنَ الْعَمَلِ مِثْلَ الـذي بَلَغَ غَيْرُهُمْ في طُولِ  الْعُمْرِ فَأَعْطَاهُ الله لَيْلَةَ الْقَدْرِ خَيْرٌ من أَلْفِ  شهر&quot;(1)...ومما يُروى في نزول هذه الآيـة أيضاً عن مجـاهد: &quot; أن النبيصلى  الله عليه وآله وسلمذكر رجلاً من بني إسرائيل لبس السلاح في سبيل الله ألف  شهر، قال: فعجب المسلمون من ذلك، قال فـأنزل الله عزَّ وجل: <font color="#008000">(إنا أنزلناه في ليلة القدر ومـا أدراك ما ليـلة القدر ليلة القدر خير من ألف شهر)</font>؛ التي لبس فيها ذلك الرجل السلاح في سبيل الله ألف شهر&quot;(2). </font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">قال النووي: وقد خص الله تعالى هذه الأمة بها، فلم تكن لمن قبلهم على الصحيح المشهور(3).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">ومن التفاصيل التي انهمك  الناس فيها حساب السنوات والاشهر التي تعادلها وأنها بمثابة (83) سنة أو  تزيد بثلاثة أشهر وَنَسَوا أو تناسَوا أن النص القرآني ذكر &quot;خير&quot; ولم يذكر  أعظم أو أفضل أو أكثر...الخ.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">والسؤال المهم: لمـاذا  وصفت هذه الليلة بالخيرية ولم توصف بأنها أفضل أو أعظم أو أكثر... الخ من  ألف شهر؟ وهناك فرق وأضح للمطلع بين المصطلحات سالفة الذكر.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">مما ينبغي أن يعلم قبل الجواب على السؤال أن هذه الليلة خير من ألف شهر ليس فيها هذه الليلة.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">قال العلماء: (وَقَوله تَعَالَى: <font color="#008000">{لَيْلَة الْقدر خير من ألف شهر}</font>.  فَإِن لَيْلَة الْقدر تُوجد فِي كل اثْنَي عشر شهرا فَيُؤَدِّي إِلَى  تَفْضِيل الشَّيْء على نَفسه بِثَلَاث وَثَمَانِينَ مرّة فَكَانَ مُشكلا.  فَبعد التَّأَمُّل عرف أَن المُرَاد ألف شهر لَيْسَ فِيهَا لَيْلَة الْقدر  لَا ألف شهر على الْوَلَاء وَلِهَذَا لم يقل خير من أَرْبَعَة أشهر  وَثَلَاث وَثَمَانِينَ سنة لِأَنَّهَا تُوجد فِي كل سنة لَا محَالة  فَيُؤَدِّي إِلَى مَا ذكرنَا)(4). </font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">ولا يمكن الوصول إلى جواب  السؤال إلا بمعرفة منظومة الخيريات في الإسلام وأن أمة سيدنا محمد صلى  الله عليه وآله وسلم قد أختصَّت بذلك دون غيرها من الأمم كقوله تعالى:<font color="#008000">  {كُنْتُمْ خَيْرَ أُمَّةٍ أُخْرِجَتْ لِلنَّاسِ تَأْمُرُونَ  بِالْمَعْرُوفِ وَتَنْهَوْنَ عَنِ الْمُنْكَرِ وَتُؤْمِنُونَ بِاللهِ  وَلَوْ آمَنَ أَهْلُ الْكِتَابِ لَكَانَ خَيْرًا لَهُمْ مِنْهُمُ  الْمُؤْمِنُونَ وَأَكْثَرُهُمُ الْفَاسِقُونَ</font>}[آل عمران: 110] ، وقال تعالى :<font color="#008000">{مَنْ  جَاءَ بِالْحَسَنَةِ فَلَهُ خَيْرٌ مِنْهَا وَمَنْ جَاءَ بِالسَّيِّئَةِ  فَلَا يُجْزَى الَّذِينَ عَمِلُوا السَّيِّئَاتِ إِلَّا مَا كَانُوا  يَعْمَلُونَ }</font>[القصص: 84] وقال تعالى:<font color="#008000">{مَنْ جَاءَ بِالْحَسَنَةِ فَلَهُ خَيْرٌ مِنْهَا وَهُمْ مِنْ فَزَعٍ يَوْمَئِذٍ آمِنُونَ }</font>[النمل: 89] ، وقوله صلى الله عليه وآله وسلم: <font color="#0000ff">«خَيْرُكُمْ قَرْنِي، ثُمَّ الَّذِينَ يَلُونَهُمْ، ثُمَّ الَّذِينَ يَلُونَهُمْ»</font> (5)، وقوله:<font color="#0000ff"> «خَيْرُكُمْ مَنْ تَعَلَّمَ القُرْآنَ وَعَلَّمَهُ»</font>(6)، وقوله في الآذان:<font color="#0000ff"> «الصَّلاَةُ خَيْرٌ مِنَ النَّوْمِ »</font>(7)، وقوله: <font color="#0000ff">«خَيْرُ  الدُّعَاءِ دُعَاءُ يَوْمِ عَرَفَةَ، وَخَيْرُ مَا قُلْتُ أَنَا  وَالنَّبِيُّونَ مِنْ قَبْلِي: لاَ إِلَهَ إِلاَّ اللهَ وَحْدَهُ لاَ  شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ  قَدِيرٌ»</font>(8)، وقوله: <font color="#0000ff">«خَيْرُكُمْ خَيْرُكُمْ لِأَهْلِهِ وَأَنَا خَيْرُكُمْ لِأَهْلِي»</font>(9)، وغير ذلك عشرات النصوص في الكتاب والسنة التي تثبت الخيرية للأمة ولأعمالها وحسناتها(10).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">ولا يغيب عن ذهننا أن  النبي صلى الله عليه وآله وسلم أستخدم مصطلح &quot;أفضل&quot; في نصوص أخرى؛ فعن أبي  الدَّرْدَاءِ قال: قال رسول اللهِ صلى الله عليه وآله وسلم: <font color="#0000ff">&quot;ألا  أُخْبِرُكُمْ بِأَفْضَلَ من دَرَجَةِ الصِّيَامِ وَالصَّلَاةِ  وَالصَّدَقَةِ قالوا بَلَى قال صَلَاحُ ذَاتِ الْبَيْنِ فإن فَسَادَ ذَاتِ  الْبَيْنِ هِيَ الْحَالِقَةُ. وَيُرْوَى عن النبي صلى الله عليه وآله  وسلمأَنَّهُ قال هِيَ الْحَالِقَةُ لَا أَقُولُ تَحْلِقُ الشَّعَرَ  وَلَكِنْ تَحْلِقُ الدِّينَ&quot;</font>(11)، قوله صلى الله عليه وآله وسلم: <font color="#0000ff">&quot;  مَنْ قَالَ: لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ  الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، فِي يَوْمٍ  مِائَةَ مَرَّةٍ، كَانَتْ لَهُ عَدْلَ عَشْرِ رِقَابٍ، وَكُتِبَتْ لَهُ  مِائَةُ حَسَنَةٍ وَمُحِيَتْ عَنْهُ مِائَةُ سَيِّئَةٍ، وَكَانَتْ لَهُ  حِرْزًا مِنَ الشَّيْطَانِ، يَوْمَهُ ذَلِكَ، حَتَّى يُمْسِيَ وَلَمْ  يَأْتِ أَحَدٌ أَفْضَلَ مِمَّا جَاءَ بِهِ إِلَّا أَحَدٌ عَمِلَ أَكْثَرَ  مِنْ ذَلِكَ، وَمَنْ قَالَ: سُبْحَانَ اللهِ وَبِحَمْدِهِ، فِي يَوْمٍ  مِائَةَ مَرَّةٍ حُطَّتْ خَطَايَاهُ وَلَوْ كَانَتْ مِثْلَ زَبَدِ  الْبَحْرِ&quot;</font>(12)، وغيرها من النصوص المتكاثرة . </font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وكذلك استخدم النبي صلى الله عليه وآله وسلم مصطلح &quot;أعظم&quot;، فعَنْ أَبِي هُرَيْرَةَ قَالَ: <font color="#0000ff">مَنْ  أَذِنَ بِجِنَازَةٍ فَانْصَرَفَ عَنْهَا إِلَى أَهْلِهِ كَانَ لَهُ  قِيرَاطٌ، فَإِذَا شَيَّعَهَا كَانَ لَهُ قِيرَاطٌ، فَإِذَا صَلَّى  عَلَيْهَا كَانَ لَهُ قِيرَاطٌ، فَإِذَا جَلَسَ حَتَّى يُقْضَى قَضَاؤُهَا  كَانَ لَهُ قِيرَاطٌ، فَقَالَ رَسُولُ اللهِ صلى الله عليه وآله وسلم:  «الْقِيرَاطُ عِنْدَ اللهِ مِثْلُ جَبَلِ أُحُدٍ أَوْ أَعْظَمُ مِنْ جَبَلِ  أُحُدٍ»</font>(13)، والمتتبع للسنة النبوية سيجد غير ذلك من النصوص في هذا الباب، وكذلك في الكتاب العزيز قال الله تعالى:<font color="#008000">  {وَمَا لَكُمْ أَلَّا تُنْفِقُوا فِي سَبِيلِ اللهِ وَلِله مِيرَاثُ  السَّمَاوَاتِ وَالْأَرْضِ لَا يَسْتَوِي مِنْكُمْ مَنْ أَنْفَقَ مِنْ  قَبْلِ الْفَتْحِ وَقَاتَلَ أُولَئِكَ أَعْظَمُ دَرَجَةً مِنَ الَّذِينَ  أَنْفَقُوا مِنْ بَعْدُ وَقَاتَلُوا وَكُلًّا وَعَدَ اللهَ الْحُسْنَى  وَاللهُ بِمَا تَعْمَلُونَ خَبِيرٌ }</font> [الحديد: 10].</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">أقول: إذا علمنا هذه  المنظومة المتكاملة والفرق بين المصطلحات تم لنا الجواب؛ فالأفضلية هي  مشاركة المتشابهين في الأصل والفاضل يفوق المفضول بأمر معين، والعظم يكون  في المنازل عند الله ويستخدم في المحسوس وغيره، والأكثر فهما من جنس واحد  أحدهما يزيد على الاخر.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">ولكن ليلة القدر لا  يشابهها بفضلها ورفعتها ومقامها ومنزلتها عند الله ليلة أخرى فناسب أن توصف  بالخيرية وليس بغيرها من المصطلحات السابقة، فليس لهذه الليلة حد ولا سقف  تحد به فهي ميدان ومضمار وأسع لا يعلم حدوده الا الله فناسب أن تقترن بها  الخيرية دون غيرها والله أعلم بالصواب(14).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وإذا أتممنا جواب ذلك فكيف نجمع بين كونها <font color="#0000ff">(خير من ألف شهر)</font> في سورة القدر، وبين كونها ( ليلة مباركة ) في سورة الدخان بقوله تعالى: <font color="#008000">{إِنَّا أَنْزَلْنَاهُ فِي لَيْلَةٍ مُبَارَكَةٍ إِنَّا كُنَّا مُنْذِرِينَ}</font>؟ </font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">والجواب على ذلك أنه لا  تضاد بين المباركة والخيرية فكلٌ له ميدانه، فالمباركة مأخوذة من  الْبَرَكَةُ وهي: الزِّيَادَةُ وَالنَّمَاءُ، والخيرية تعني المضاعفة  والزيادة وكثرة الفضل وكلاهما متحقق في هذه الليلة ولا تضاد بينهما(15).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">2-النص القرآني أثبت  الخيرية لليلة القدر عموماً، وهي عامة ولم تحدد بعمل معين، نعم ورد النص في  السُنَّة بأفضلية تخصيصها بالقيام لقوله:<font color="#0000ff">  «مَنْ قَامَ لَيْلَةَ القَدْرِ إِيمَانًا وَاحْتِسَابًا، غُفِرَ لَهُ مَا  تَقَدَّمَ مِنْ ذَنْبِهِ، وَمَنْ صَامَ رَمَضَانَ إِيمَانًا وَاحْتِسَابًا  غُفِرَ لَهُ مَا تَقَدَّمَ مِنْ ذَنْبِهِ»</font> (16)، ولكن ينبغي  الانتباه أن النبيصلى الله عليه وآله وسلم لم يذكر أنها تكتب له كقيام ألف  شهر ولكن رتب على ذلك مغفرة الذنب. فهل هناك فرق بين الاثنين؟</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#ff0000"><b>والجواب:</b></font>  نعم فأعمال الخير في هذه الليلة لا تنحصر بالصلاة والدعاء والذكر فقط نعم  هي من أفضلها ولكن هذا لا يعني نفي باقي الاعمال الصالحة لتتناول جميعها  بلا استثناء ولو حصرت بالصلاة دون غيرها لفات هذا الفضل الحائض والنفساء  وغيرهم ممن لا يقدرون على القيام لعارض سماوي أو غيره.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">3-الخيرية لليلة واحدة ولكن ما ترتب عليها ليس ألف ليلة وليس ألف يوم وإنما ألف شهر، فلماذا ذكر الشهر ولم تذكر الليالي أو الأيام؟</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b><font color="#ff0000">الجواب:</font></b>  ان سقف الخيرية لا يحد بحد، وما ذكر من الشهر للمبالغة في حصول الأجر  والثواب وهو أمر غير متناه عند الله فالتعبير بألف شهر هذا مقصده وهذا  مغزاه، هذا من جهة ومن جهة أخرى فإن شهر رمضان فضل لليلة القدر فيه فكرم  الشهر لهذه الليلة، وهذا مانفهمه من قوله تعالى:<font color="#008000"> {شَهْرُ رَمَضَانَ الَّذِي أُنْزِلَ فِيهِ الْقُرْآنُ هُدًى لِلنَّاسِ وَبَيِّنَاتٍ مِنَ الْهُدَى وَالْفُرْقَانِ..  ..}</font>، فلذلك عبر بالشهر لهذه المشاكلة والله أعلم بالصواب. </font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#800080"><b>قال علماء التفسير: </b></font></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وَتَفْضِيلُهَا  بِالْخَيْرِ عَلَى أَلْفِ شَهْرٍ. إِنَّمَا هُوَ بِتَضْعِيفِ فَضْلِ مَا  يَحْصُلُ فِيهَا مِنَ الْأَعْمَالِ الصَّالِحَةِ وَاسْتِجَابَةِ الدُّعَاءِ  وَوَفْرَةِ ثَوَابِ الصَّدَقَاتِ وَالْبَرَكَةِ لِلْأُمَّةِ فِيهَا،  لِأَنَّ تَفَاضُلَ الْأَيَّامِ لَا يَكُونُ بِمَقَادِيرِ أَزْمِنَتِهَا  وَلَا بِمَا يَحْدُثُ فِيهَا مِنْ حَرٍّ أَوْ بَرْدٍ، أَوْ مَطَرٍ، وَلَا  بِطُولِهَا أَوْ بِقِصَرِهَا، فَإِنَّ تِلْكَ الْأَحْوَالَ غَيْرُ  مُعْتَدٍّ بِهَا عِنْدَ اللَّهِ تَعَالَى وَلَكِنَّ اللَّهَ يَعْبَأُ بِمَا  يَحْصُلُ مِنَ الصَّلَاحِ لِلنَّاسِ أَفْرَادًا وَجَمَاعَاتٍ وَمَا  يُعِينُ عَلَى الْحَقِّ وَالْخَيْرِ وَنَشْرِ الدِّينِ. وَقَدْ قَالَ فِي  فَضْلِ النَّاسِ: إِنَّ أَكْرَمَكُمْ عِنْدَ اللَّهِ أَتْقاكُمْ [الحجرات:  13] فَكَذَلِكَ فَضْلُ الْأَزْمَانِ إِنَّمَا يُقَاسُ بِمَا يَحْصُلُ  فِيهَا لِأَنَّهَا ظُرُوفٌ لِلْأَعْمَالِ وَلَيْسَتْ لَهَا صِفَاتٌ  ذَاتِيَّةٌ يُمْكِنُ أَنْ تَتَفَاضَلَ بِهَا كَتَفَاضُلِ النَّاسِ  فَفَضْلُهَا بِمَا أَعَدَّهُ اللَّهُ لَهَا مِنَ التَّفْضِيلِ كَتَفْضِيلِ  ثُلُثِ اللَّيْلِ الْأَخِيرِ لِلْقُرُبَاتِ وَعَدَدُ الْأَلْفِ يَظْهَرُ  أَنَّهُ مُسْتَعْمَلٌ فِي وَفْرَةِ التكثير كَقَوْلِه: «وَاحِد كَأَلْفٍ»  وَعَلَيْهِ جَاءَ قَوْلُهُ تَعَالَى: (يَوَدُّ أَحَدُهُمْ لَوْ يُعَمَّرُ  أَلْفَ سَنَةٍ(17).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">4-سبب خيرية هذه الليلة  كما يُعلم وهو نزول القرآن فيها وليس لتنزله وبينهما فرق معلوم لدى أهل  الاختصاص ...فلماذا يهتم الناس بتعظيم هذه الليلة وتحريها وفي ذلك من الخير  العظيم ولا يهتمون لسبب تعظيمها وهو نزول القرآن الكريم فيها؟</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#ff0000"><b>والجواب:</b> </font>أن  هذا مفهوم ينبغي تصحيحه والتنبيه عليه، فالأفضلية لهذه الليلة لنزول  القرآن فيها فينبغي الاهتمام بالقرآن شريعة ومنهاجاً وتطبيقاً وسلوكاً  ويكون الاحتفاء به بالشكر والعرفان لله تعالى بقيام هذه الليلة وتخصيصها  بالطاعة فهي بمثابة الشكر لله تعالى على ما نزل على قلب نبينا صلى الله  عليه وسلم...والأهم من ذلك كله أننا أمة نعبد رب هذه الليلة ولا نعبد هذه  الليلة فالعبادة في هذه الليلة المخصوصة لا لذاتها وإنما للوصول إلى رب هذه  الليلة والله أعلم بالصواب.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">5-العنوان البارز لهذه الليلة هو &quot;السلام&quot; وليس كما يزعم بعضهم بأنه الهدوء...فما هو الفرق بينهما؟ </font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#ff0000"><b>والجواب :</b> </font>العنوان  البارز لهذه الليلة كما ورد في سورة القدر هو &quot;السلام&quot; وليس كما يقول بعض  هو بأنه الهدوء، والسلام منظومة متكاملة في الإسلام وصورها عديدة ومنها  قوله صلى الله عليه وآله وسلم : وهو ينتهي من أعظم عبادة في الإسلام وهي  الصلاة يختمها بالسلام فعلا وقولا ثم يتبعها بقوله : <font color="#0000ff">«اللهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ، تَبَارَكْتَ ذَا الْجَلَالِ وَالْإِكْرَامِ»</font> (18)، ولذلك عندما أرد ان يبتدئ في بناء دولته في المدينة المنورة كان أول بيان منه للبشرية عامة هو السلام فقال: <font color="#0000ff">«يَا  أَيُّهَا النَّاسُ، أَفْشُوا السَّلَامَ، وَأَطْعِمُوا الطَّعَامَ،  وَصَلُّوا وَالنَّاسُ نِيَامٌ تَدْخُلُونَ الجَنَّةَ بِسَلَامٍ»</font>  (19)، فهذه الليلة هي عنوان للسلام فعلا وقولا وينبغي أن تكون شعارا للمسلم  في الاطار العام لدعوته الا ما يضطر اليه من مقارعة الأعداء لنشر السلام  والإسلام في بقاع المعمورة. فحق لهذه الليلة أن تسمى ليلة السلام العالمي  والله أعلم بالصواب.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">6-نهاية هذه الليلة حددت بغاية وهي مطلع الفجر قال الله تعالى: <font color="#008000">{سَلَامٌ هِيَ حَتَّى مَطْلَعِ الْفَجْرِ}</font> [القدر: 5]، ولم يقل إلى الفجر. فهل هناك فرق بين مطلع الفجر والى الفجر فما هو؟ </font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">والجواب عن ذلك: لا بد ان نستحضر قوله تعالى: <font color="#008000">{...ثُمَّ أَتِمُّوا الصِّيَامَ إِلَى اللَّيْلِ...}</font>  [البقرة: من الآية: 187]، فغاية الصوم تنتهي بدخول الليل وهو أذان المغرب  ولكن غاية ليلة القدر لا تنتهي بدخول أذان الفجر وإنما صلاة الفجر من ضمن  هذه الليلة وهذه من بركة هذه الليلة وخـيرها بانها تشمل اللــيل ونهار هذه  الليلة إلى مطلع الفجر وليس إلى اذان الفجر وهذا ما نطق به الأفذاذ من أهل  التفسير والتأويل.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">قال الرازي: الْمَطْلَعُ  الطُّلُوعُ يُقَالُ: طَلَعَ الْفَجْرُ طُلُوعًا وَمَطْلَعًا، وَالْمَعْنَى  أَنَّهُ يَدُومُ ذَلِكَ السَّلَامُ إِلَى طُلُوعِ الْفَجْرِ، وَمَنْ قَرَأَ  بِكَسْرِ اللَّامِ فَهُوَ اسْمٌ لِوَقْتِ الطُّلُوعِ وَكَذَا مَكَانُ  الطُّلُوعِ مَطْلَعٌ قَالَهُ الزَّجَّاجُ: أَمَّا أَبُو عُبَيْدَةَ  وَالْفَرَّاءُ وَغَيْرُهُمَا فَإِنَّهُمُ اخْتَارُوا فَتْحَ اللَّامِ  لِأَنَّهُ بِمَعْنَى الْمَصْدَرِ، وَقَالُوا: الْكَسْرُ اسْمٌ نَحْوَ  الْمَشْرِقِ وَلَا مَعْنَى لِاسْمِ مَوْضِعِ الطُّلُوعِ هاهنا بَلْ إِنْ  حُمِلَ عَلَى مَا ذَكَرَهُ الزَّجَّاجُ مِنَ اسْمِ وَقْتِ الطُّلُوعِ  صَحَّ، قَالَ أَبُو عَلِيٍّ: وَيُمْكِنُ حَمْلُهُ عَلَى الْمَصْدَرِ  أَيْضًا، لِأَنَّ مِنَ الْمَصَادِرِ الَّتِي يَنْبَغِي أَنْ تَكُونَ عَلَى  الْمَفْعِلِ مَا قَدْ كُسِرَ كَقَوْلِهِمْ عَلَاءُ الْمَكْبِرِ والمعجز  ...فَكَذَلِكَ كَسْرُ الْمَطْلِعِ جَاءَ شَاذًّا عَمًّا عَلَيْهِ بَابُهُ  وَاللَّهُ سُبْحَانَهُ وَتَعَالَى أَعْلَمُ(20)</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وقال ابن عاشور: وَجِيءَ  بِحَرْفِ حَتَّى لِإِدْخَالِ الْغَايَةِ لِبَيَانِ أَنَّ لَيْلَةَ  الْقَدْرِ تَمْتَدُّ بَعْدَ مَطْلَعِ الْفَجْرِ بِحَيْثُ إِنَّ صَلَاةَ  الْفَجْرِ تُعْتَبَرُ وَاقِعَةً فِي تِلْكَ اللَّيْلَةِ لِئَلَّا  يُتَوَهَّمَ أَنَّ نِهَايَتَهَا كَنِهَايَةِ الْفِطْرِ بِآخِرِ جُزْءٍ مِنَ  اللَّيْلِ، وَهَذَا تَوْسِعَةٌ مِنَ اللَّهِ فِي امْتِدَادِ اللَّيْلَةِ  إِلَى مَا بَعْدَ طُلُوعِ الْفَجْرِ وَقَرَأَ الْجُمْهُورُ: مَطْلَعِ  بِفَتْحِ اللَّامِ عَلَى أَنَّهُ مَصْدَرٌ مِيمِيٌّ، أَيْ طُلُوعُ  الْفَجْرِ، أَيْ ظُهُورُهُ. وَقَرَأَهُ الْكِسَائِيُّ وَخَلَفٌ بِكَسْرِ  اللَّامِ عَلَى مَعْنَى زَمَانِ طُلُوعِ الْفَجْرِ(21).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وهذا يشبه ما يذكره  الفقهاء في فضل يوم عرفة، فيمتد فضل اليوم إلى ليلة العيد فمن شهد عرفة  ليلاً كتب له شهود ركن عرفة وصح حجه لهذا المعنى والمغزى(22).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وأضاف ابن عاشور في هذا الباب ملحظاً آخر في هذا الباب فقال:</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وَالْمَقْصُودُ مِنَ  الْغَايَةِ إِفَادَةُ أَنَّ جَمِيعَ أَحْيَانِ تِلْكَ اللَّيْلَةِ  مَعْمُورَةٌ بِنُزُولِ الْمَلَائِكَةِ وَالسَّلَامَةِ، فَالْغَايَةُ هُنَا  مُؤَكِّدَةٌ لِمَدْلُولِ لَيْلَةِ [الْقدر: 1]؛ لِأَنَّ اللَّيْلَةَ قَدْ  تُطْلَقُ عَلَى بَعْضِ أَجْزَائِهَا كَمَا فِي قَوْلِ النَّبِيءِ صلى الله  عليه وآله وسلم: <font color="#0000ff">«مَنْ قَامَ لَيْلَةَ الْقَدْرِ إِيمَانًا وَاحْتِسَابًا غُفِرَ لَهُ مَا تَقَدَّمَ مِنْ ذَنْبِهِ»</font>،  أَيْ مَنْ قَامَ بَعْضَهَا، فَقَدْ قَالَ سَعِيدُ بْنُ الْمُسَيَّبِ: مَنْ  شَهِدَ الْعِشَاءَ مِنْ لَيْلَةِ الْقَدْرِ فَقَدْ أَخَذَ بِحَظِّهِ  مِنْهَا. يُرِيدُ شَهِدَهَا فِي جَمَاعَةٍ كَمَا يَقْتَضِيهِ فِعْلُ  شَهِدَ، فَإِنَّ شُهُودَ الْجَمَاعَةِ مِنْ أَفْضَلِ الْأَعْمَالِ  الصَّالِحَةِ(23).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">7-الخيرية لهذه الليلة  لنزول القرآن فيها ولكنه لم يذكر صريحاً في هذه السورة وإنما عوض عنه  بالضمير المتصل &quot; الهاء&quot; قال الله تعالى: <font color="#008000">{إِنَّا أَنْزَلْنَاهُ فِي لَيْلَةِ}</font>  [القدر: 1] ...فلماذا لم يقل: أنا أنزلنا القرآن...؟ وكذا لفظ الجلالة لم  يذكر صريحا &quot; الله&quot; وإنما عوض عنه بالضمير المنفصل &quot;إنا&quot; في هذا الموضع؟</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">والاجابة عن ذلك أن  التعبير بالضمير أقوى في هذا الموضع من التصريح به، وذلك لأن القرآن حاضر  في ذهن المسلم ومخيلته وهو سبب الخيرية في هذه الليلة فعبر عنه بالضمير  لأنه معلوم ومقطوع به، ومنه قوله تعالى: <font color="#008000">{إِنَّا أَنْزَلْنَاهُ فِي لَيْلَةٍ مُبَارَكَةٍ إِنَّا كُنَّا مُنْذِرِينَ}</font>  [الدخان: 3]، وكذا التعظيم في الضمير المنفصل &quot;إنا&quot; فهو أقوى في الدلالة  من التصريح بلفظ الجلالة الصريح كما يعلم عند أهل هذا الشأن والله أعلم  بالصواب.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وفي الختام هذه بعض  التساؤلات وهي من الأساسيات التي ينبغي الوقوف عليها في هذه الليلة؛ لأنها  ليلةٌ يختصُّ فيها السالك بتجلٍّ خاصّ يعرف به قدرَه ورُتبتَه بالنسبة إلى  محبوبه، وهو وقتُ ابتداء وصول السالك إلى عين الجمع ومقام البالغين(24).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وصَلَّى اللهُ وسَلَّمَ على سيّدنا مُحمّدٍ وعلى آلهِ وصحبهِ أجمعين.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(1) موطأ مـالك: ج1/ص321.  قـال ابن عبد البر: لا أعلم هذا الحديث يروى مسندا من وجه من الوجوه ولا  أعرفه في غير الموطأ مرسلاً ولا مسنداً وهذا أحد الأحاديث التي انفرد بها  مالك ولكنها رغائب وفضائل وليست أحكاما ولا بنى عليها في كتابه ولا في  موطئه حكما. ينظر: التمهيد لابن عبد البر: ج24/ص373.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(2) سنن البيهقي الكبرى: ج4/ص306، رقم: (8305)، وقال: وهذا مرسل.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(3) ينظر حاشية الطحطاوي على مراقي الفلاح: ج1/ص264.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(4) ينظر دستور العلماء = جامع العلوم في اصطلاحات الفنون (3/ 187).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(5) ينظر صحيح البخاري (3/ 171) (2651).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(6) ينظر صحيح البخاري (6/ 192) (5027).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(7) ينظر سنن الترمذي ت بشار (1/ 271).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(8) ينظر سنن الترمذي ت بشار (5/ 464) (3585).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(9) ينظر سنن الترمذي ت بشار (6/ 192) (3895).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(10) وهو ما جمعته بمؤلف خاص سميته: &quot;خيريات نبوية&quot; وهو في طريقه للنشر ان شاء الله.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(11) سنن الترمذي  ج4/ص663، رقم: (2509)، وقال: هذا حَدِيثٌ صَحِيحٌ، وسنن أبي داود: ج4/ص280،  رقم: (4919)، ومسند أحمد بن حنبل ج6/ص444، رقم: (27548)، وصحيح ابن حبان:  ج11/ص489، رقم: (5092). قال المنذري: رواه البزار بإسناد جيد والبيهقي  وغيرهما. ينظر الترغيب والترهيب: 3/347، ورمز السيوطي لصحته. ينظر التيسير  بشرح الجامع الصغير: ج2/ص562.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(12) صحيح مسلم (4/ 2071) (2691)، مسند أحمد ط الرسالة (13/ 384) (8008)، موطأ مالك ت الأعظمي (2/ 293) (712/ 229).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(13) مسند أبي يعلى الموصلي (11/ 336) (6453).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(14) ينظر الفروق للقرافي = أنوار البروق في أنواء الفروق (2/ 55)، ولسان العرب (5/ 74)، مقاييس اللغة (4/ 508).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(15) ينظر مقاييس اللغة (1/ 230)</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(16) صحيح البخاري (3/ 26) (1901).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(17) ينظر تفسير الرازي = مفاتيح الغيب أو التفسير الكبير (32/ 231)، والتحرير والتنوير (30/ 459).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(18) صحيح مسلم (1/ 414) (591)، ومن لطائف هذا الحديث أن راوية عبد الله بن سلام رضي الله عنه.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(19) سنن الترمذي ت شاكر (4/ 652) (2485).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(20) تفسير الرازي = مفاتيح الغيب أو التفسير الكبير (32/ 236).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(21) التحرير والتنوير (30/ 466).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(22) ينظر فتح القدير 2 /  373 دار إحياء التراث العربي، الفتاوى الهندية 1 / 229 المطبعة الأميرية  ببولاق الطبعة الثانية، حاشية الدسوقي 2 / 36 دار الفكر، مغني المحتاج 1 /  498 دار إحياء التراث العربي، كشاف القناع 2 / 494 عالم الكتب، وينظر  التفصيل في الموسوعة الفقهية الكويتية (23/ 116).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(23) التحرير والتنوير (30/ 466).<br />
+</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">(24) التعريفات الفقهية (ص: 189).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span><br />
+<br />
+</div><span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_972543" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_972543" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=972543" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_972543" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=195682&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=195682#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=696d1a7d9adaea36633b28fa7c3827c1">لوحة التحكم</a></li>
+		<li><a href="private.php?s=696d1a7d9adaea36633b28fa7c3827c1">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1">الاشتراكات</a></li>
+		<li><a href="online.php?s=696d1a7d9adaea36633b28fa7c3827c1">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=195681&amp;s=696d1a7d9adaea36633b28fa7c3827c1">العَفُوُّ .... عنوانٌ لليلةِ القدرِ دونَ غيرهِ</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=195692&amp;s=696d1a7d9adaea36633b28fa7c3827c1">من القربات في رمضان: الدعاء</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D9%92%D9%82%D9%8E%D8%AF%D9%92%D8%B1%D9%90">الْقَدْرِ</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%AA%D8%B3%D8%A7%D8%A4%D9%84%D8%A7%D8%AA%D9%8C">تساؤلاتٌ</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%84%D9%84%D9%86%D9%82%D8%A7%D8%B4%D9%90.">للنقاشِ.</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%84%D9%8E%D9%8A%D9%92%D9%84%D9%8E%D8%A9%D9%8F">لَيْلَةُ</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%85%D8%B7%D8%B1%D9%88%D8%AD%D8%A9%D9%8C">مطروحةٌ</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=195682#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=195682#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">04:58 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,1821 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=696d1a7d9adaea36633b28fa7c3827c1&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=169369";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="الصلاة, الكرسي, على" />
+	<meta name="description" content="الصلاة على الكرسي       	   
+     الصلاة على الكرسي من المسائل المستجدة في المساجد، والنوازل الأخذة  في الانتشار بشكل واسع غريب، ولو رجع القارئ الكريم إلى عهد قريب لا يزيد  عن عشرين سنة تقريبا لما وجد لهذه الظاهرة أثرا في مساجد المسلمين شرقا  وغربا، ولما عمت البلوى بهذه المسألة تباحثها أهل العلم المعاصرون في بعض  رسائلهم، ومن خلال فتاواهم وربما في وسط تفاريعهم الفقهية. 
+     كنا نشرنا في &quot;الوعي الإسلامي&quot; (عدد 531) مقالا بعنوان &quot;إرشاد  الغافل وتنبيه الناسي إلى حكم الصلاة على الكراسي، لكاتبه د." />
+
+	<title> الصلاة على الكرسي</title>
+	<link rel="canonical" href="showthread.php?t=169369&s=696d1a7d9adaea36633b28fa7c3827c1" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=696d1a7d9adaea36633b28fa7c3827c1 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=696d1a7d9adaea36633b28fa7c3827c1">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> الصلاة على الكرسي</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=696d1a7d9adaea36633b28fa7c3827c1&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 3 من 3
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=169369&s=696d1a7d9adaea36633b28fa7c3827c1" title="تحديث الصفحة">الصلاة على الكرسي</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=169369" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;t=169369&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=addsubscription&amp;t=169369" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;search_type=1&amp;searchthreadid=169369&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="169369" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_891474">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2018-10-31,&nbsp;<span class="time">09:38 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post891474" href="showthread.php?t=169369&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=891474#post891474" class="postcounter">#1</a><a id="postcount891474" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,746</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> الصلاة على الكرسي
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_891474">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><b><font color="#ff0000"><b><span style="font-family: traditional arabic"><font size="5"> الصلاة على الكرسي</font></span></b></font></b><br /><br /><br />
+<b><span style="font-family: traditional arabic"><font size="5">الصلاة على الكرسي من المسائل المستجدة في المساجد، والنوازل الأخذة  في الانتشار بشكل واسع غريب، ولو رجع القارئ الكريم إلى عهد قريب لا يزيد  عن عشرين سنة تقريبا لما وجد لهذه الظاهرة أثرا في مساجد المسلمين شرقا  وغربا، ولما عمت البلوى بهذه المسألة تباحثها أهل العلم المعاصرون في بعض  رسائلهم، ومن خلال فتاواهم وربما في وسط تفاريعهم الفقهية.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">كنا نشرنا في &quot;الوعي الإسلامي&quot; (عدد 531) مقالا بعنوان &quot;إرشاد  الغافل وتنبيه الناسي إلى حكم الصلاة على الكراسي، لكاتبه د. ياسر إبراهيم  المزروعي، خلص فيه إلى أن المعذور له أن يصلي قاعدا سواء كان على كرسي أو  على الأرض، وذكر في ثنايا مقاله ضوابط وآدابا ينبغي مراعاتها لمن صلى على  كرسي، سواء كان ذلك في النافلة أو الفريضة.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">وقد وردت إلينا تعقيبات من داخل الكويت وخارجها على المقال السالف،  وكلها تدل على أن المقال المشار إليه أتى بثمراته، ومنها هذه التعقيبات  المتتالية التي من شأنها زيادة توضيح المسألة من زوايا أخرى، ربما لم يتطرق  إليها المقال الأصل، وفي هذه التعقيبات أحسن العلاج لمشكلة زيادة تساهل  الناس، وعدم انضباطهم بالشروط الشرعية الواجبة في الصلاة، مما يخل بأعظم  ركن من أركان دينهم بعد التوحيد.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">وقبل أن نذكر مستدركات التعقيبات على المقال نقول ابتداء:</font></span></b><br />
+<br />
+<b><span style="font-family: traditional arabic"><font size="5">صدر صاحب المقال د. المزروعي مقالته بقوله: وفي شرح الغاية: &quot;وكيف  قعد جاز&quot; وهي من الرخص في هذا الدين للذي لا يستطيع أن يصلي قائما، بأن  يصلي جالسا على أي هيئة كانت، سواء كان على كرسي أو على الأرض أو نحوهما.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">وهذا النقل عليه ملاحظتان:</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5"><font color="#800000">الأولى:</font> أن الجملة المقوسة فقط من شرح الغاية، وأما الباقي فهو فهم خاص بصاحب المقال.</font></span></b><br />
+<br />
+<b><span style="font-family: traditional arabic"><font size="5"><font color="#800000">الثانية:</font> أن المقصود بـ &quot;وكيف قعد جاز&quot; القعود المعروف في الزمن  الأول وهو ما كان على الأرض بدليل أننا نجد شراح المذهب الحنبلي وغيرهم إذا  تعرضوا للأعذار المانعة من القيام في الصلاة قالوا… كما في حاشية الروض  المربع لابن قاسم (3/349):- &quot;فإن لم يستطع، بأن عجز عن القيام أو شق عليه،  لضرر أو زيادة مرض &quot;فقاعدا&quot; متربعا نديا ويثني رجليه في ركوع وسجود: &quot;فإن  عجز&quot; أو شق عليه القعود كما تقدم &quot;فعلى جنبه&quot;…. وهذا هو عين المذكور في  كشاف القناع، وكشف المخدرات للبعلي، ومطالب أولي النهي في باب صلاة أهل  الأعذار.</font></span></b><br />
+<br />
+<b><span style="font-family: traditional arabic"><font size="5">ففي جميع الشروح التفصيل حول كيفية القعدة على الأرض، أهي التربع أم  الافتراش أم التورك أم الاستلقاء أم غير ذلك؟ وليس فيها أبدا حديث عن  الصلاة على الكراسي.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">ولم يذكر أحدهم التسوية بين القعود على الأرض والقعود على الكرسي، فضلا عن الجزم بها، كما فعل صاحب المقال!.</font></span></b><br />
+<br />
+<font color="#800000"><b><span style="font-family: traditional arabic"><font size="5">وأما التعقيبات فيرجع حاصلها إلى التنبيهات الآتية:</font></span></b></font><br />
+<br />
+<b><font color="#008080"><b><span style="font-family: traditional arabic"><font size="5"> التنبيه الأول</font></span></b></font></b><br /><br /><b><span style="font-family: traditional arabic"><font size="5">أجمع العلماء على أن للصلاة أركانا لا تصح إلا بها: مثل القيام  والركوع والسجود وغيرها من الأركان، فمن ترك منها ركنا قادرا عليه عالما به  مختارا لفعله: فصلاته باطلة بالإجماع، وقد دل على ذلك قول الله تعالى: (وَارْكَعُوا مَعَ الرَّاكِعِينَ) (البقرة: 43)، وقوله تعالى (وَقُومُوا لِلَّهِ قَانِتِينَ) (البقرة: 238)، وقوله تعالى: (يَا أَيُّهَا الَّذِينَ آَمَنُوا ارْكَعُوا وَاسْجُدُوا وَاعْبُدُوا رَبَّكُمْ)  (الحج: 77)، وقوله صلى الله عليه وسلم: &quot;صلوا كما رأيتموني أصلي&quot;، وقوله  صلى الله عليه وسلم: &quot;صل قائما&quot; (أخرجهما البخاري)، وهذا في صلاة الفريضة.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">أما إذا صلى المتطوع صلاة النافلة جالسا وهو عاجز عن القيام فإن  أجره تام، لأنه معذور في ترك القيام، أما إذا ترك القيام وهو قادر عليه:  فإن أجره يكون على النصف من أجر القائم، قال رسول الله صلى الله عليه وسلم:  &quot;من صلى قائما فهو أفضل، ومن صلى قاعدا فله نصف أجر القائم&quot; (رواه  البخاري)، وقال صلى الله عليه وسلم: &quot;صلاة الرجل قاعدا نصف الصلاة، (رواه  مسلم 735) من حديث عبد الله بن عمرو – رضي الله عنهما، هذا مع لزوم مراعاة  هيئات الصلاة وشروطها.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">كما أجمع العلماء أيضا على أن تحقيق أركان الصلاة متوقف على  الاستطاعة والقدرة، فكل مسلم عاجز عن القيام بأحد أركان الصلاة، فهو معذور  شرعا وعقلا، لقوله تعالى: (لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا  وُسْعَهَا) (البقرة: 286)، وقوله تعالى: (فَاتَّقُوا اللَّهَ مَا  اسْتَطَعْتُمْ) (التغابن: 16)، وقوله صلى الله عليه وسلم: &quot;إذا أمرتكم بأمر  فأتوا منه ما استطعتم&quot; (متفق عليه)، وقوله صلى الله عليه وسلم: &quot;صل قائما،  فإن لم تستطع فقاعدا، فإن لم تستطع فعلى جنب&quot; (رواه البخاري).</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">وتحقيقا أيضا للقاعدة الفقهية: المشقة تجلب التيسير، وقاعدة: لا واجب مع العجز.</font></span></b><br />
+<b><b><span style="font-family: traditional arabic"><font size="5"> نقل الثقات عن بعض الفقهاء المعاصرين حرصهم وهم عجزة على الصلاة على الأرض لا على الكرسي</font></span></b></b><br /><br /><b><span style="font-family: traditional arabic"><font size="5">يوضحه: أن من عجز عن القيام في الصلاة صلى جالسا، ومن عجز عن الركوع  أومأ برأسه حال قيامه، ومن عجز عن السجود أومأ برأسه حال جلوسه، ويكون  سجوده أخفض من ركوعه وجوبا، ويكون في جلوسه مفترشا أو متوركا وقيل: يجلس  متربعا، لقول عائشة رضي الله عنها: &quot;رأيت رسول الله صلى الله عليه وسلم  يصلي متربعا&quot; (رواه النسائي).</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">ومن عجز أيضا عن القيام والركوع والسجود: صلى على جنبه، وقيل: مستلقيا على ظهره، ووجه ورجلاه إلى القبلة ليكون إيماؤه إليها.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">وأما إن عجز المسلم أن يصلي على جنبه: صلى على أي حال تيسرت له.</font></span></b><br />
+<b><font color="#008080"><b><span style="font-family: traditional arabic"><font size="5"> التنبيه الثاني</font></span></b></font></b><br /><br /><b><span style="font-family: traditional arabic"><font size="5">حديث الباب، وهو حديث عمران بن حصين رضي الله عنه، حيث قال: كانت بي  بواسير فسألت النبي صلى الله عليه وسلم عن الصلاة: فقال: &quot;صل قائما فإن لم  تستطع فقاعدا فإن لم تستطع فعلى جنب، (رواه البخاري). منطوقه دال على أن  للمصلي في صلاته ثلاث حالات:</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">أداء المكتوبة قائما.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">فإن عجز عن القيام فقاعدا.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">فإن عجز فعلى جنب.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">هذا هو منطوق الحديث، وليس منه الصلاة على الكرسي، وهنا يسأل  المجيز للمعذور الصلاة على الكرسي مطلقا، ترى هل كان رسول الله صلى الله  عليه وسلم ناسيا أو غافلا عن النطق بالصلاة على الكرسي إذا لم يستطع المصلي  أداءها قائما؟</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">هل ورد عن رسول الله صلى الله عليه وسلم أنه صلى على الكرسي مرة  واحدة؟ مع العلم أنه أسن وثقل صلى الله عليه وسلم في آخر عمره الشريف، حتى  كان كثير من صلاته وهو جالس، كما صح من غير وجه من حديث عائشة رضي الله  عنها: أن النبي صلى الله عليه وسلم لم يمت حتى كان أكثر صلاته وهو جالس، أي  سوى المكتوبة، كما ثبت ذلك من حديث أم سلمة رضي الله عنها، قالت: والذي  توفى نفسه، ما توفي حتى كان كثير من صلاته قاعدا إلا المكتوبة.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">هل ورد عن الصحابة الكرام أو التابعين ومن بعدهم، مرورا بالأعلام  الأربعة وغيرهم، وإلى ما قبل بدو هذه الظاهرة الغريبة نص أو فعل يفيد جواز  &quot;الصلاة على الكراسي&quot;؟.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">مع أن الثابت عند أهل العلم شيء آخر، حيث ما كانوا يذكروا سوى  التفصيل في هيئات القعود على الأرض، ودونك مصنف عبد الرزاق – رحمه الله –  (2/466)، حيث عقد بابا كاملا لهذا الأمر، وهو &quot;باب كيف يكون جلوسة إذا صلى  قاعدا&quot;، وساق تحته من الأحاديث والآثار التالية كثيرا، وهذه أهمها:</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">4101... عن عطاء قال: يصلي الرجل وهو جالس في التطوع إن شاء متربعا  وإن شاء محتبيا. قال: وأبسط رجلك إن شئت بعد ما تتشهد، قال قلت: فمتكئا؟  قال: لا.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">4102... عن ابن المسيب أنه كان يجتبي في آخر صلاته في التطوع.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">4103... عن ابن المسيب قال: إذا أراد أن يسجد ثني رجله وسجد.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">4104... عن إبراهيم قال: إذا أراد الرجل أن يصلي جالسا متربعا فإذا  أراد أن يركع ثنى فخذه كما يجلس في الصلاة ثم ركع وسجد وقول: ابن المسيب  أحب إلى سفيان.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">4105... عن مجاهد أنه كان يصلي جالسا متربعا.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">4107... عن الثوري عن شيخ من الأنصار قال: رأيت أنسا يصلي متربعا.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">وهذا الإمام النسائي عقد هو الآخر في سننه &quot;باب الجلوس على الكراسي، ذكر فيه حديث أبي رفاعة الآتي، فقط.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">فلم لم يذكروا الصلاة على الكرسي لو كان الأمر فيه واسعا؟.</font></span></b><br />
+<b><font color="#008080"><b><span style="font-family: traditional arabic"><font size="5"> التنبيه الثالث</font></span></b></font></b><br /><br /><b><span style="font-family: traditional arabic"><font size="5"><font color="#4b0082">ردا على من يقول:</font> إن اعتماد الصحابة على العصي دليل على جواز اتخاذ الكرسي.</font></span></b><br />
+<br />
+<b><span style="font-family: traditional arabic"><font size="5">يقال: إن اعتمادهم على العصي إنما كان في صلاة التراويح، وقد كانت  غاية في الطول، لا في صلاة الفريضة، كما في الموطأ من رواية السائب بن يزيد  قال: أمر عمر بن الخطاب أبي بن كعب وتميما الداري أن يقوما للناس بإحدى  عشرة ركعة، قال: وقد كان القارئ يقرأ بالمئين حتى كنا نعتمد على العصي من  طول القيام، وما كنا ننصرف إلا في فروع الفجر!.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">ثم إن التعبديات لا مدخل للقياس فيها، بل الأصل فيها الامتثال دون  التفات إلى العلل والحكم، والصلاة من أعظم ما يتعبد به الناس لربهم، فلا  يجري فيها القياس، فقياس البعض جواز الصلاة على الكرسي بصلاة الصحابة  للتراويح قياس مع الفارق، فهو فاسد الاعتبار لما مر من الفرق بين الفريضة  والنافلة.</font></span></b><br />
+<b><font color="#008080"><b><span style="font-family: traditional arabic"><font size="5"> التنبيه الرابع</font></span></b></font></b><br /><br /><b><span style="font-family: traditional arabic"><font size="5">ترى هل كان الفقهاء المجتهدون خلال عهودهم التي تنوعت بتنوع أماكنهم  وأزمانهم غافلين عن هذا الحكم أو &quot;الكيفية&quot; للصلاة على الكراسي، ولم يخطر  على بال واحد منهم، حتى ظهرت الحاجة اليوم إلى تبيين الحكم الذي تركوه  وغفلوا عنه؟ أم كان أئتمنا المرضيون ملتزمين نص الحديث؟ والكراسي موجودة في  أيامهم (في دورهم ومجالسهم وأماكن محلاتهم)، بل هي موجودة زمن النبي صلى  الله عليه وسلم وما قبله منذ أيام نبي الله سليمان بن داود عليهما الصلاة  والسلام، وربما وجدت قبل ذلك أيضا.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">ومن الدليل على ما ذكرنا:</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">في صحيح مسلم قال أبو رفاعة رضي الله عنه: انتهيت  إلى النبي صلى الله عليه وسلم وهو يخطب: قال فقلت: يا رسول الله رجل غريب  جاء يسأل عن دينه لا يدري ما دينه، قال: فأقبل على رسول الله صلى الله عليه  وسلم وترك خطبته حتى انتهى إلى فأتى بكرسي حسبت قوائمه حديدا، قال: فقعد  عليه رسول الله صلى الله عليه وسلم، وجعل يعلمني مما علمه الله، ثم أتى  خطبته فأتم آخرها.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">في مسند الإمام أحمد عن عبد خير قال: رأيت عليا رضي الله عنه أتى  بكرسي فقعد عليه ثم أتى بكوز، قال حجاج: بتور من ماء، قال فغسل يديه ثلاث  ومضمض ثلاثا.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">وفي مصنف ابن أبي شيبة عن أبي عون عن شريح أن رجلا لقي رجلا بكرسي فصدمه فقتله، فقال شريح، ضمن الصادم للمصدوم.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">فعلى هذا لا يبعد القول بأن إحداث الصلاة على الكراسي في  المساجد أمر غريب يحتاج إلى وقفة جادة، لأنها هيئة جديدة لا تتفق ونص  الحديث وفعل المصطفى وعمل الراشدين وسنة الصحابة أجمعين والتابعين ومن  بعدهم.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">كما لا تندرج تحت قوله تعالى: (فَاتَّقُوا اللَّهَ مَا اسْتَطَعْتُمْ)،  لأن النبي صلى الله عليه وسلم بين لأمته ما باستطاعة المصلي أن يفعله أن  عجز عن أداء الصلاة قائما بقوله الآنف الذكر، وبقوله الآخر كما في الصحيح:  &quot;صلوا كما رأيتموني أصلي&quot;، وقد صلى صلى الله عليه وسلم قائما، ثم لما عجز  عن القيام صلى قاعدا على الأرض (لا على الكرسي)، وإذا كانت الآية مجملة فقد  بينتها سنة النبي صلى الله عليه وسلم القولية والفعلية.</font></span></b><br />
+<b><font color="#008080"><b><span style="font-family: traditional arabic"><font size="5"> التنبيه الخامس</font></span></b></font></b><br /><br /><b><span style="font-family: traditional arabic"><font size="5">إن انتشار هذه الظاهرة يسهم في تثبت الشبه بين مساجدنا ومعابد غيرنا  الذين يصلون على الكراسي، وقد عشنا حتى رأينا كثيرا من المساجد تصف فيها  الكراسي وترص من كثرتها! بعد أن كانت مساجدنا في زمن قريب على الفطرة خالية  من هذه المظاهر الحادثة، حتى إن سنة النبي صلى الله عليه وسلم في الصلاة  قاعدا على الأرض تركت، فلا تكاد ترى أحدا من هؤلاء المعذورين يصلي على تلك  الهيئة المباركة المبرورة!.</font></span></b><br />
+<b><font color="#008080"><b><span style="font-family: traditional arabic"><font size="5"> التنبيه السادس</font></span></b></font></b><br /><br /><b><span style="font-family: traditional arabic"><font size="5">غالبية المصلين على الكراسي، من العوام الذين يقلد بعضهم بعضا،  وربما استطاب بعضهم الجلوس على الكرسي، لأنه أكثر راحة، لا أنه عاجز عن  القيام أو الوقوف، وهو مبطل لصلاته، لأنه ترك ما هو قادر عليه، وأن ناله  شيء من المشقة، واختار ما يريحه لا ما يستطيعه، والفرق بين الحالين واضح،  والحديث نص على الجواز عند عدم الاستطاعة.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">هذا فضلا عن كونه يضيق على المصلين ويجعل صفوفهم غير منتظمة ولا مستوية، ومعلوم أن استواء الصفوف من تمام الصلاة ذاتها.</font></span></b><br />
+<b><font color="#008080"><b><span style="font-family: traditional arabic"><font size="5"> التنبيه السابع</font></span></b></font></b><br /><br /><b><span style="font-family: traditional arabic"><font size="5">نقل الثقات عن بعض الفقهاء المعاصرين حرصهم وهم عجزة على الصلاة على  الأرض لا على الكرسي، ومنهم الشيخ العلامة محمد بن سليمان الجراح رحمه  الله، وقد نقل ذلك عنه تلميذه أ.د. وليد بن عبد الله المنيس، قال: وقد  شاهدنا شيخنا العلامة محمد بن جراح رحمه الله (1322-1417هـ) يصلي جالسا لما  اشتد عليه المرض، ولم يجلس على الكرسي.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">وهذا من الفقه المستنبط من المنقول الصحيح عن الصحابة رضي الله  عنهم، حيث كانوا يجتهدون ويبذلون الغاية من جهدهم للقيام في الصلاة، فإن  عجزوا قعدوا على الأرض، وقد روى مسلم في صحيحه عن ابن مسعود رضي الله عنه  قال: &quot;ولقد كان الرجل يؤتي به يهادي بين الرجلين حتى يقام في الصف&quot;. أي  يحملانه بينهما ويمسكانه بعضديه عونا له على المشي، لضعفه ومرضه، ولم يقل  حتى يجلس في الصف.</font></span></b><br />
+<b><font color="#008080"><b><span style="font-family: traditional arabic"><font size="5"> التنبيه الثامن</font></span></b></font></b><br /><br /><b><span style="font-family: traditional arabic"><font size="5">كثير من المصلين على الكراسي يفعلون ذلك بعذر السمنة، وقد لا تكون  سمنتهم بالقدر الذي يجعلهم معذورين، ومع ذلك الأولى أن ينصحوا بمعالجة  أنفسهم بالحمية وغيرها مما ينصحهم به الأطباء، حتى تصح أبدانهم، ويستطيعوا  تأدية وظائفهم الشرعية على الوجه المطلوب شرعا، لأن القاعدة: أن ما لا يتم  الواجب إلا به فهو واجب، وما لا يتم ترك الحرام إلا به فتركه واجب.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">أما أن يفتح لهذا المبتلى بالسمن باب الشراهة فلا يعرف للمأكولات  حدا، ثم يقال هو معذور، فذلك من الغبن الذي يأباه العقلاء، ويتنزه عن  الأسوياء.</font></span></b><br />
+<b><font color="#008080"><b><span style="font-family: traditional arabic"><font size="5"> التنبيه التاسع</font></span></b></font></b><br /><br /><font color="#800000"><b><span style="font-family: traditional arabic"><font size="5">خلاصة ما مر أن صلاة الفريضة على الكراسي لا تخلو من صور:</font></span></b></font><br />
+<br />
+<b><span style="font-family: traditional arabic"><font size="5"><font color="#0000ff">الصورة الأولى:</font> من يصلي الفريضة  على الكراسي، وهو قادر على السجود، بحجة أنه إذا صلى جالسا على الأرض لن  يستطيع القيام سواء في أول صلاته أو في اثنائها فصلاته باطلة بالإجماع،  لأنه ترك ركنا قادرا عليه شرعا وطبعا، وتكلف ركنا ومعذور فيه شرعا! وذلك  لكونه قد ترك كثيرا من أركان الصلاة مع قدرته عليها، وهي: السجود، والجلسة  بين السجدتين، والجلوس للتشهد وغيرها، وقد صح عنه صلى الله عليه وسلم – كما  في الصحيحين – أنه صلى جالسا حينما سقط عن فرسه، ولم يتكلف حينها الصلاة  على الكرسي!.</font></span></b><br />
+<br />
+<b><span style="font-family: traditional arabic"><font size="5">كما أنه بصلاته على الكرسي قد خالف تسوية الصفوف، وذلك من خلال  تقدمه أو تأخره على أهل الصف، سواء بصدره أو برجله، وكلاهما فيه مخالفة  شرعية: لقوله صلى الله عليه وسلم: &quot;لتسون صفوفكم أو ليخالفن الله بين  وجوهكم&quot; (متفق عليه).</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">لذاك كان واجبا على من هذه حالة أن يصلى بحسب الاستطاعة والقدرة، فكل ركن يستطيعه أتى به، وما لا يستطيعه فهو معذور فيه شرعا!.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5"><font color="#0000ff">الصورة الثانية: </font>من يعجز عن  السجود فقط، بحجة أن في سجوده ضررا يشق عليه، فمن هذه حاله، فصلاته باطلة  اتفاقا، لأنه ترك ركن القيام والركوع والجلوس بين السجدتين والجلوس  للتشهد!.</font></span></b><br />
+<br />
+<b><span style="font-family: traditional arabic"><font size="5">لذا كان عليه شرعا أن يصلى قائما: حتى إذا أراد السجود جلس على الأرض، ثم أومأ للسجود برأسه، وهكذا يفعل في جميع صلاته.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5"><font color="#0000ff">الصورة الثالثة:</font> من يعجز عن  الجلوس على الأرض أصلا، بحجة أن في جلوسه عليها ضررا يشق عليه، فهذا أيضا  صلاته باطلة اتفاقا، لأنه ترك ركن القيام والركوع، لذا كان عليه شرعا أن  يصلي قائما، حتى إذا أراد السجود جلس على الكرسي، إذا أشار بذلك الطبيب  الثقة، لقوله تعالى: (فَاسْأَلُوا أَهْلَ الذِّكْرِ إِنْ كُنْتُمْ لَا تَعْلَمُونَ) (الأنبياء: 7). وأومأ عند السجود برأسه، وهكذا في جميع صلاته.</font></span></b><br />
+<br />
+<b><span style="font-family: traditional arabic"><font size="5"><font color="#0000ff">الصورة الرابعة:</font> من يصلي متوكئا  على العصا، حتى إذا أراد الركوع أو السجود صلى على الكرسي مع قدرته عليهما!  فمن هذه حاله، فصلاته غير صحيحة: لأنه ترك ركن الركوع والسجود والجلوس  عمدا.</font></span></b><br />
+<br />
+<b><span style="font-family: traditional arabic"><font size="5">لذا كان عليه شرعا: أن يصلي متوكئا على العصا حال قيامه وركوعه  وجوبا، دون الجلوس على الكرسي، حتى إذا أراد السجود جلس على الأرض وسجد،  وهكذا يفعل في صلاته.</font></span></b><br />
+<b><span style="font-family: traditional arabic"><font size="5">وأما بطلان صلاة أهل الكراسي ممن جاء ذكرهم في الصور الأربع ، فهو  متوقف على كون المصلي منهم: عالما ذاكرا مختارا في صلاته، وإلا فصلاتهم  صحيحة بعذر الجهل أو النسيان أو الإكراه.</font></span></b><br />
+<b><font color="#800000"><b><span style="font-family: traditional arabic"><font size="5"> الصور التي تصح فيها الصلاة على الكرسي</font></span></b></font></b><br /><br /><b><span style="font-family: traditional arabic"><font size="5"><font color="#0000ff">الأولى:</font> من ضعفت قواه عن حمله  قائما وجالسا على حد سواء، وهو أشبه اليوم بحال مرضى العظام، أو بالمصابين  بالشلل، أو غيرهم ممن يعجزون عن القيام والجلوس على الأرض، فمن هذه حالهم،  فعليهم شرعا أن يصلوا على الكراسي ابتداء، ويؤمئون برؤوسهم عند الركوع  والسجود.</font></span></b><br />
+<br />
+<b><span style="font-family: traditional arabic"><font size="5"><font color="#0000ff">الثانية:</font> من كان يعجز فقط عن  الجلوس على الأرض، لخوف مرض، أو لرجاء برء بعد استشارة طبيب ثقة، فمثل هذا  عليه شرعا أن يصلي قائما وراكعا، حتى إذا أراد السجود جلس على الكرسي،  وأومأ برأسه بنية السجود، ثم ينوي الجلوس بين السجدتين، وهكذا يفعل في  صلاته كلها.</font></span></b><br />
+<br />
+<b><span style="font-family: traditional arabic"><font size="5">وفي الختام فإن المقصود من هذه المسألة ليس هو التضييق على الناس،  ولا التشديد عليهم، ولكنه بيان حكم الله تعالى في أعظم أركان الدين بعد  شهادة التوحيد، لئلا يترك الناس ما وجب عليهم بيقين، ويتساهلوا فيما لا تصح  صلاتهم إلا به، وليعرفوا مقدار العذر الذي نزل بهم، فيقدروه قدره، ولا  يتمادون في مسايرة أهواء النفس فإن النفوس طماعة لا تشبع، ومن أحب الله  بصدق تقرب إليه كما شرع، ولنحافظ على مساجدنا ونصونها عن مشابهة أماكن  عبادة غيرنا، فإن مساجدنا مضت سنتها على الفطرة والتواضع في النزول إلى  الأرض، وغير المسلمين تُصف الكراسي في معابدهم صفا.</font></span></b><br />
+<br />
+<b><span style="font-family: traditional arabic"><font size="5">والله تعالى أعلم<br />
+منقول<br />
+</font></span></b><br />
+<br />
+<b><span style="font-family: traditional arabic"><br />
+</span></b><br />
+</div><b><span style="font-family: traditional arabic"><font size="5"><br />
+</font></span></b>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_891474" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_891474" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=891474" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_891474" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_952367">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2021-03-03,&nbsp;<span class="time">02:38 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post952367" href="showthread.php?t=169369&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=952367#post952367" class="postcounter">#2</a><a id="postcount952367" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=86352&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="سيد صادق بندق غير متواجد حالياً"><strong>سيد صادق بندق</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=86352&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=86352&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="سيد صادق بندق غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>8</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: الصلاة على الكرسي
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_952367">
+				<blockquote class="postcontent restore">
+					جزاكم الله خيراً ، هل المقال المشار إليه نستطيع تحميله؟
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_952367" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_952367" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=952367" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_952367" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_952371">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2021-03-03,&nbsp;<span class="time">05:32 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post952371" href="showthread.php?t=169369&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=952371#post952371" class="postcounter">#3</a><a id="postcount952371" name="3"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,746</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: الصلاة على الكرسي
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_952371">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><font color="#ff6600">وإياكم تفضل هذا هو المقال</font><br />
+</font></span><hr /><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#cc3333">إرشاد الغافل وتنبيه الناسي الى حكم الصلاة على الكرسي</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#33cc66">بقلم الكاتب:  </font></b></font></span><br />
+<span style="font-family: book antiqua"><font size="5"><b><font color="#33cc66">د. ياسر ابراهيم المزروعي.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">كثر  في مساجدنا هذه الأيام المصلون على الكراسي لعذر ولغير عذر، في الفرائض  والنوافل، فاضطرب الأمر على البعض وأصبح مما يحتاج إلى بيان.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">وقد أجاز الشارع الحكيم لمن لا يستطيع الصلاة قائما أن يصلي قاعدا.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">لما  روي بالسند إلى ابن بريدة قال حدثني عمران بن حصين رضي الله عنه، وكان  مبسوراً قال: &quot;سألت رسول الله (صلى الله عليه وسلم) عن صلاة الرجل قاعداً،  فقال: إن صلى قائماً فهو أفضل، ومن صلى قاعداً فله نصف أجر القائم، ومن صلى  نائماً فله نصف أجر القاعد&quot; (رواه البخاري).</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">وفي  شرح الغاية: &quot;وكيف قعد جاز&quot; وهي من الرخص في هذا الدين للذي لا يستطيع أن  يصلي قائما، بأن يصلي جالسا على أي هيئة كانت، سواء كان على كرسي أو على  الأرض أو نحوهما.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">لكن هناك بعض الأحكام لصلاة الفرض، ينبغي مراعاتها ومعرفتها لمن يصلي على هذه الكيفية من ناحية المصلي، إن كان منفردا أو مع الجماعة،</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#ff3333"> فنذكرها لعموم الفائدة، وبالله التوفيق:</font></b></font></span><br />
+<span style="font-family: book antiqua"><font size="5"><b><font color="#333333"><img src="https://majles.alukah.net/imgcache/2021/03/13.jpg" border="0" alt="" /><br />
+</font></b></font></span><br />
+<span style="font-family: book antiqua"><font size="5"><b><font color="#33cc33">أولا: الأحكام التي يجب معرفتها ومراعاتها للمصلين على الكراسي:</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#ff3333">هناك بعض الملحوظات والأخطاء يفعلها بعض من يصلي على كرسي منها:</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">1- 	يجب على المصلي أن يأتي بتكبيرة الإحرام وهو واقف، إن كان عذره في عدم  القدرة على السجود أو الركوع أو طول القيام، أما إن كان العذر في عدم  مقدرته على القيام أصلا فيجوز له أن يكبر جالسا ونحوه، لأن من المعلوم أن  القيام في الفرض ركن من أركان الصلاة، ولا يسقط إلا لعلة أو عذر.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">2- 	ومن أركان الفريضة القيام في حال القراءة ويسقط للعذر، فمن صلى الفرض  جالسا لغير عذر بطلت صلاته، ومن المعروف في النافلة أن أجر القاعد غير  المعذور نصف أجر القائم كما تقدم في الحديث- على خلاف عند بعضهم- سواء كان  القاعد على الأرض أو على كرسي أو كيفما قعد، ويأتي قريبا.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">3-	على المصلي على كرسي ألا يراوح برجليه أو أحدهما على الأخرى، وليعتمد في جلوسه عليهما لا على ظهره كما يأتي.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">4- 	ألا يحرك الكرسي الذي هو جالس عليه في حالة الإيماء للركوع أو السجود،  وهذا لا يحدث إلا ممن يبالغ في طريقة الإيماء، وهي غير صحيحة.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">5- 	ألا يستند على ظهر الكرسي استنادا قويا، بحيث لو أزيل ما استند إليه وقع،  لأنه أجيز له القعود لعذر، لا الاستناد لغير حاجة، أما لو استند استنادا  شديدا لغير حاجة أو عذر بحيث يقع لو أزيل ما استند إليه بطلت صلاته، لأنه  خالف هيئة من هيئات الصلاة.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">6-	أن يفرق بين الركوع والسجود بطريقة الإيماء، بحيث يكون إيماء السجود أخفض من الركوع.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">7- 	ألا يسجد على شيء يوضع له، أو يرفع له، كأن يكون متصلا بالكرسي أو غيره،  أو يضع له مخدة ونحوها، كما يفعل بعض المسافرين بالطائرات، بحيث يجعل طاولة  الطعام الملحقة بالكرسي الأمامي، أو في كرسيه موضعاً لسجوده ويسجد عليها،  بل يكفيه الإيماء، لأنه إذا عدم السجود والركوع على أصلها- وهي الأرض- فلا  يقوم مقامها شيء، وعليه أن يسجد ويركع في محله إيماء، لكن يجعل السجود أخفض  إيماء من الركوع.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">8- 	إن كانت علته عدم المقدرة على الجلوس في السجود والركوع أن يصلي قائما،  ويركع ويعتدل بعد الركوع، ثم إذا أراد أن يهوي للسجود جلس، والذي يقدر هذا  هو المصلي نفسه، لأنه أعلم بنفسه.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">9- 	إن كان جالسا فعليه أن يضع يديه على ركبتيه في حال الركوع، وأما في حال  السجود فعليه أن يغاير مكان وضعهما بحيث لا تكون على ركبتيه فيشتبه الركوع  بالسجود، فعليه إما أن تكون بجانبي فخذيه على الهواء أو حذاءهما يمينا أو  شمالا، وإن كان جالسا على كرسي له أن يمسك بطرف مقعد الكرسي (1)، وذلك لكي  يفرق بين الركوع والسجود وهي أبعد من السهو واختلاط الأفعال عليه بين  الركوع والسجود لمن يضع يديه على ركبتيه في حال الركوع والسجود.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">10- 	ألا يكون إماما(2)، لمأمومين قائمين من غير كراسي أو معذورين، أما إن  كانوا كلهم أصحاب أعذار يصلون على كراسي أو على الأرض، جاز أن يكون إمامهم  جالسا مثلهم، وألا يأتم بهم غيرهم.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">11- 	إن كانت علته مؤقتة غير دائمة- أي ممن يرجى زوالها- فمتى أحس بمقدرة على  أن يصلي كالصحيح صلى، إي: إن كان جالسا وأحس بذهاب علته قام ، وإن كان  قائما وأحس بزوالها قعد، وكذا العكس إن كان صحيحا وأحس بعلة جلس.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">هذا بالنسبة لصلاة المنفرد وقد يشترك بها المأموم مع الجماعة.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#ff3333">ثانيا: الأمور التي يجب له أن يراعيها في الجماعة، منها:</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">1- 	أن يكون موضع الكرسي في جوانب الصفوف من ناحية اليمين أو الشمال، وألا  يكون في منتصف الصف أو خلف الإمام مباشرة، لئلا يقطع استقامة الصف من خلفه  أو الصف الذي يليه، وقد يحدث للإمام شيء وهو خلفه فلا يستطيع أن يتقدم،  ولأنه مخالف لما أمر به النبي (صلى الله عليه وسلم) مما روي عن أبي مسعود  بالسند إليه، قال: &quot;كان رسول الله (صلى الله عليه وسلم) يمسح مناكبنا في  الصلاة، ويقول: استووا ولا تختلفوا فتختلف قلوبكم، ليليني منكم أولو  الأحلام والنهى، ثم الذين يلونهم، ثم الذين يلونهم&quot; (رواه مسلم) يعني أصحاب  العقول والبالغين من غير أصحاب الأعذار أو المعذورين.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">2-  إن كانت علته عدم المقدرة على الجلوس بالأرض والسجود والركوع، ويقدر على  القيام، أن يكون واقفا بمحاذاة الصف الذي يقف به، ولا يتقدم على من بجواره،  وأما إن كانت علته عدم القيام بحيث تكون صلاته كلها وهو جالس، كأنه جالس  على الأرض في حال التشهد- أي يعتد في قيامه مكان جلوسه- فلا يضر لو تقدم عن  صفه بتقدم رجليه عن أصل صفه، لأنه يراعي عدم تقدمه في حال جلوسه معهم، ولا  يضر لو تقدم عليهم بمقدار نصف ذراع ونحوه، لأنه على كل الأحوال معذور فلا  يؤاخذ كالصحيح، والله أعلم.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#ff3366">بيان كيفية صلاة القاعد المعذور في الفريضة</font></b></font></span><br />
+<span style="font-family: book antiqua"><font size="5"><b><font color="#ff3366">وأذكر هنا حكم صلاة النافلة للقاعد غير المعذور:</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">قال  الإمام البخاري في صحيحه وبسنده إلى الصحابي الجليل عمران بن الحصين قال:  &quot;سألت النبي (صلى الله عليه وسلم) عن صلاة الرجل وهو قاعد فقال: من صلى  قاعدا فله نصف أجر القائم، ومن صلى نائما فله نصف أجر القاعد&quot; قال أبو  عبدالله- يعني البخاري: نائما عندي مضطجعا هاهنا.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">وفي فتح الباري: &quot;قال ابن رشيد: مطابقة الحديث للترجمة من جهة أن من صلى على جنب فقد احتاج إلى الإيماء. انتهى. </font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">وليس  ذلك بلازم، نعم يمكن أن يكون الإمام البخاري يختار جواز ذلك، ومستنده ترك  التفصيل فيه من الشارع، وهو أحد الوجهين للشافعية وعليه شرح الكرماني&quot;.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">حكاه  ابن رشيد ووجهه بأن معناه من صلى قاعدا أومأ للركوع وللسجود، وهذا موافق  للمشهور عند السادة المالكية من أنه يجوز له الإيماء إذا صلى نفلا قاعدا مع  القدرة على الركوع والسجود وهو الذي يتبين من اختيار الإمام البخاري.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">وفي  صحيح الإمام مسلم: فبالسند إليه: عن عبدالله بن عمرو قال: حدثت أن رسول  الله (صلى الله عليه وسلم) قال: &quot;صلاة الرجل قاعدا نصف الصلاة&quot;.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">وقد  بوب الإمام الترمذي باباً فيمن يتطوع جالسا، وذكر حديث حفصة رضي الله عنها  زوج النبي (صلى الله عليه وسلم) أنها قالت: &quot;ما رأيت رسول الله (صلى الله  عليه وسلم) صلى في سبحة قاعدا حتى كان قبل وفاته (صلى الله عليه وسلم)  بعام، فإنه كان يصلي في سبحته قاعدا، ويقرأ بالسورة ويرتلها حتى تكون أطول  من أطول منها&quot;.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">وقد  نقل الترمذي بإسناده إلى الحسن البصري، قال: &quot; إن شاء الرجل صلى صلاة  التطوع قائما وجالسا ومضطجعا&quot; وقال به جماعة من أهل العلم، وهو أحد الوجهين  للشافعية، وصححه المتأخرون، وحكاه القاضي عياض وجها عند المالكية أيضا.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">وذهب  أبو حنيفة وأبو يوسف ومحمد بن الحسن إلى أن من يتطوع جاز له أن يجلس كما  شاء متربعا وغيره إلا في القعدة فإنه يجلس فيها كهيئة القعدة، وما تعامل به  أهل العصر من الجلوس على هيئة القعدة في القيام فهو مذهب زفر رحمه الله.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">وفي  المنتقى لشرح الموطأ: &quot;فأما من كان في الأرض فتنفل فيجوز أن يومئ في  النافلة لغير عذر ، وروى عيسى عن ابن القاسم: لا يومئ الجالس من غير عذر،  قال عيسى في النوافل وغيرها، قال ابن حبيب: له أن يوميء في النوافل من غير  عذر، كما له أن يدع القيام في النوافل من غير علة، وقد روى عيسى عن ابن  القاسم أنه إن أومأ في النوافل أجزأه وكأنه ذهب إلى الكراهية، وظاهر قول  عيسى المنع، ووجهه أن الإيماء ليس بهيئة من هيئات الصلاة، فجاز أن يكون  بدلا من القيام في النافلة&quot;.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">وفي  مجموع فتاوى ومقالات متنوعة للشيخ ابن باز قال: الواجب على من صلى جالسا  على الأرض، أو على الكرسي أن يجعل سجوده أخفض من ركوعه، والسنة له أن يجعل  يديه على ركبتيه في حال الركوع، أما في حال السجود فالواجب أن يجعلهما على  الأرض إن استطاع، فإن لم يستطع جعلهما على ركبتيه، لما ثبت عن النبي صلى  الله عليه وسلم أنه قال: أمرت أن أسجد على سبعة أعظم &quot;الجبهة، وأشار إلى  أنفه، واليدين، والركبتين، وأطراف القدمين&quot;.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#ff3333">قال في الجامع لأحكام الصلاة: </font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">وحيث  إن الجلوس على ظهر الدابة والجلوس على الكرسي شيء واحد وفعل واحد، لأن كلا  الفعلين جلوس للمرء على مقعدته وترك رجليه تتدليان إلى أسفل، فإن هذين  الفعلين يشتركان في حكم شرعي واحد، وأن ما ينطبق على أحدهما ينطبق على  الآخر، وهذا الحكم الشرعي هو الجواز والإباحة في صلاة التطوع فحسب، فمن  أراد أن يصلي تطوعا ونافلة جاز له ذلك، وهو جالس على الكرسي، كما جاز له  ذلك وهو جالس على ظهر دابة سواء بسواء، وتكون صلاته صحيحة متقبلة.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#ff3333">وعند السادة المالكية قال في كتاب النوادر والزيادات:</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">قال  ابن حبيب: ومعنى ما جاء من أن صلاة الجالس على النصف من صلاة القائم، فيمن  يقدر أن يقوم في النوافل، فأما من أقعده مرض أو ضعف عن أن يقوم، فهو في  ثوابه كالقائم في الفرض والنافلة، ومن شاء في تنفله قام في ركعة وقعد في  ثانية، أو قام بعد قعود، أو قعد بعد قيام فقرأ، ثم عاد للقيام، تداول ذلك  كيف شاء، وإن شاء سجد، وإن شاء أومأ به من غير علة، وله أن يمد إحدى رجليه  إذا عيي، وكذلك في المحمل، وله أن يقعد بين التربع والاحتباء...</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">قال  ابن القاسم عن مالك في تنفل المتربع: إنه يثني رجليه في السجود، ويرفع  يديه عن ركبتيه إذا رفع من الركوع والسجود، وإذا تم تشهده الأول كبر ينوي  القيام- يريد أنه يتربع- وجلوسه في موضع الجلوس كجلوس القيام.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">وقال  ابن القاسم: لا يومئ الجالس للسجود إلا من علة، وإن أومأ من غير علة في  النوافل أجزأه... وقال أيضا: والمصلي في المحمل متربعا إن لم يشق عليه أن  يثني رجليه عند سجوده فليفعل ذلك.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">وقال  السادة الشافعية كما في حاشيتي القليوبي وعميرة: &quot;وللقادر&quot; على القيام  &quot;التنفل قاعدا وكذا مضطجعا في الأصح&quot; لحديث البخاري: &quot;من صلى قائما فهو  أفضل، ومن صلى قاعدا فله نصف أجر القائم، ومن صلى نائما فله نصف أجر  القاعد&quot; والمراد بالنائم المضطجع، واليمين أفضل من اليسار كما قال في شرح  مسلم، ويقعد للركوع والسجود، وقيل يوميء بهما.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#ff3333">مما تقدم يتلخص ما يلي:</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">أن  صلاة النافلة للقاعد جائزة على أي حالة كانت، سواء على كرسي أو على الأرض،  وتكون في النوافل لا الرواتب، لأن الرواتب تأتي بعد الفرائض فالأفضل لمن  يصليها أن يصليها عن قيام مع القدرة، وإن صلى عن جلوس فله نصف أجر القائم  إن كان صحيحا كما تقدم.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">أما  النوافل مثل صلاة التراويح والتهجد ونحوها من النوافل، فللمصلي أن يصليها  جالسا على كرسي أو على الأرض، وله أن يبدأ الصلاة قائما ثم يجلس أو العكس،  وله أن يصلي ركعة جالسا وركعة قائما، وله أن يوميء بالركوع والسجود أو يركع  ويسجد على الأرض، ونحوها من صور الصلاة.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">لكن عليه إن صلى على أي هيئة كانت أن يراعي صفتها المعروفة، وذلك في صورة الصلاة.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#cc3333">وفي الختام، هذه عبارات أسوقها لمن يصلي على الكرسي ليراعي منها ما يستطيع:</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">1-	أن يعود نفسه ألا يدوم في الصلاة على كرسي بعد تحسن أحواله الصحية.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">2-	ألا يتحرى الكراسي الفارهة التي تحدث انتباها وتباينا بين المصلين.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">3-	يحرص على ألا يصلي خلف الإمام مباشرة، مهما قل المصلون في المسجد.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">4-	ألا يحجز مكانا دائما له يمنع الناس منه، إلا إذا كان المسجد فيه سعة.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">5-	ألا يستشعر مهما طال الأمر معه أنه أقل حظا من المصلين، لكونه يصلي على كرسي، بل هذا مما لا يأباه الشرع.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">6- مراعاة الآداب العامة حين الجلوس.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#ff3333">الهوامش</font></b></font></span><br />
+<span style="font-family: book antiqua"><font size="5"><b><font color="#333333">(1) 	وبأحد هذه الصور يتجنب مشاركة الركوع والسجود في وضع اليدين، أو التصاق  بطنه بفخذيه فيما لو جعلها في الهواء وجعل مرفقيه على ركبتيه كحالة السجود،  وبه يقع في المحظور وهو افتراش يديه المنهي عنه في حال السجود، كذا أفاد  به شيخنا العلامة عبداللّه العقيل أمد اللّه بعمره في طاعته.</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#333333">(2)  إلا الإمام الراتب ذا علة يرجى زوالها، فإنه يصلي جالسا وهم مخيرون بين  الجلوس والقيام، والجلوس أولى لمتابعته، مطالب أولى النهي (455/1).</font></b></font></span></div><span style="font-family: book antiqua"><font size="5"><br />
+<br />
+</font></span><div style="text-align: center;"><span style="font-family: book antiqua"><font size="5"><b><font color="#ff3366">بقلم الكاتب:  </font></b></font></span><br />
+<span style="font-family: book antiqua"><font size="5"><b><font color="#339933">د. ياسر ابراهيم المزروعي.</font></b><br />
+</font></span></div><br />
+<span style="font-family: book antiqua"><br />
+</span></div><span style="font-family: book antiqua"><font size="5"><br />
+</font></span>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_952371" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_952371" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=952371" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_952371" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=169369&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=169369#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=696d1a7d9adaea36633b28fa7c3827c1">لوحة التحكم</a></li>
+		<li><a href="private.php?s=696d1a7d9adaea36633b28fa7c3827c1">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1">الاشتراكات</a></li>
+		<li><a href="online.php?s=696d1a7d9adaea36633b28fa7c3827c1">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=188568&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المثقف الحق</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=188583&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أعني على نفسك بكثرة السجود</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9">الصلاة</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D9%83%D8%B1%D8%B3%D9%8A">الكرسي</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%B9%D9%84%D9%89">على</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=169369#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=169369#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">04:55 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

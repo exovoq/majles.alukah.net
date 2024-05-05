@@ -1,0 +1,4613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=696d1a7d9adaea36633b28fa7c3827c1&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=131752&amp;page=2";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس تراجم العلماء وطلبة العلم المعاصرين - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=34" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="أئمة, الحديث, الحرمين, العصر, الشيخ, الله, عبد, محمد, إلى, بالقاهرة, على, كتاب, الباعث, المكرمة, الحثيث, رسالة, مطبعة, الإمام, رحمه, المطبعة, عليه, الرزاق, حمزة, فيه, وقد, الذي, 1370هـ, بمكة, الحرام, المسجد, السلفية, الدين, ابن, أبي, صفحة, الكتاب, باسم, بعد, العلم, سنة, عنده،, والشيخ, اسم, رية, وفي, السبب, قال, مقدمته, عبدالرزاق, الكوثري" />
+	<meta name="description" content="عبد الله عبد الغني خياط 
+(1326 - 1415 هـ) (1908 - 1995 م) 
+إمام وخطيب الحرم المكي الشريف لمدة تزيد على ثلاثين عاماً، من كبار العلماء. 
+انتقلت أسرته في أواخر القرن الثاني عشر الهجري من مدينة حماة بالشام إلى مكة المكرمة. وحرص والده على تنشئته تنشئة دينية، فانخرط - وهو صبي - في حلقة من حلقات المسجد الحرام برغم أنه كان منتظماً في الدراسة النظامية بمدرسة الخياط بالمسعى. 
+تولَّى تدريس أنجال الملك عبد العزيز، وربَّى أجيالاً كثيرة، منهم الحاكم والمحكوم، والطالب الإداري، والعالم وأستاذ الجامعة، وكما كان" />
+
+	<title> أئمة الحرمين في العصر الحديث - الصفحة 2</title>
+	<link rel="canonical" href="showthread.php?t=131752&page=2&s=696d1a7d9adaea36633b28fa7c3827c1" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=696d1a7d9adaea36633b28fa7c3827c1 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=696d1a7d9adaea36633b28fa7c3827c1">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> أئمة الحرمين في العصر الحديث</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=696d1a7d9adaea36633b28fa7c3827c1&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<form action="showthread.php?t=131752&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" method="get" class="pagination popupmenu nohovermenu">
+<input type="hidden" name="t" value="131752" /><input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+	
+		<span><a href="javascript://" class="popupctrl">صفحة 2 من 3</a></span>
+		
+		<span class="first_last"><a rel="start" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة الأولى - النتائج 1 إلى 20 من 55"><img src="images/metro/purple/pagination/first-left.png" alt="الأولى" />الأولى</a></span>
+		
+		
+		<span class="prev_next"><a rel="prev" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة السابقة - النتائج 1 إلى 20 من 55"><img src="images/metro/purple/pagination/previous-left.png" alt="السابق" /></a></span>
+		
+		
+		<span><a href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مشاهدة النتائج 1 إلى 20 من 55">1</a></span><span class="selected"><a href="javascript://" title="النتائج 21 إلى 40 من 55">2</a></span><span><a href="showthread.php?t=131752&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مشاهدة النتائج 41 إلى 55 من 55">3</a></span>
+		
+		
+		<span class="prev_next"><a rel="next" href="showthread.php?t=131752&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة التالية - النتائج 41 إلى 55 من 55"><img src="images/metro/purple/pagination/next-left.png" alt="التالي" /></a></span>
+		
+		
+		<span class="first_last"><a href="showthread.php?t=131752&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة الأخيرة - النتائج 41 إلى 55 من 55">الأخيرة<img src="images/metro/purple/pagination/last-left.png" alt="الأخيرة" /></a></span>
+		
+	
+	<ul class="popupbody popuphover">
+		<li class="formsubmit jumptopage"><label>إذهب إلى الصفحة: <input type="text" name="page" size="4" /></label> <input type="submit" class="button" value="إذهب" /></li>
+	</ul>
+</form>
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 21 إلى 40 من 55
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=131752&page=2&s=696d1a7d9adaea36633b28fa7c3827c1" title="تحديث الصفحة">أئمة الحرمين في العصر الحديث</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=131752" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;t=131752&amp;pp=20&amp;page=2" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=addsubscription&amp;t=131752" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;search_type=1&amp;searchthreadid=131752&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="131752" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_725161">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-07-10,&nbsp;<span class="time">12:37 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post725161" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=725161#post725161" class="postcounter">#21</a><a id="postcount725161" name="21"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_725161">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="#0000cd">توجيه الملك خالد له بالإمامة في المسجد الحرام:</font><br />
+ولما حلت العشر الأواخر من رمضان نزل الملك خالد من قصره بالطائف إلى قصر الصفا بمكة المكرمة ليجاور البيت الحرام كعادته في العشر الأواخر من رمضان، لكنه افتقد تلك القراءة الشجية التي ملكت فؤاده طيلة أيامه ولياليه السابقة، وما أن مضت ليلتان للملك بمكة حتى طلب قبل ساعة من صلاة مغرب ليلة الثالث والعشرين إحضار الشيخ علي جابر من قصره بالطائف ، وكانت مفاجأة للشيخ حيث لم يعلم سبب استدعائه المفاجئ والعاجل إلى مكة قبيل صلاة المغرب، ووصل الشيخ علي جابر إلى قصر الصفا بمكة المكرمة وأفطر مع الملك خالد في قصره ليلة الثالث والعشرين وكانت هناك وفود لدى الملك في ضيافته وكان من بينهم الرئيس الباكستاني الراحل ضياء الحق رئيس باكستان في ذلك الوقت الذي قام وعانق الشيخ علي جابر ، وعندها أمر الملك خالد الشيخ علي أن يتهيأ ليؤم بالمصلين هذه الليلة في المسجد الحرام، فوقعت المفاجأة فعلاً التي لم يكن يعلم بها أحد سوى أنه أمر مفاجئ مباشر من الملك خالد رحمه الله.<br />
+أشجيت يا مزمار داود الملك  ***  وملكت قلباً خالداً فمن الملك<br />
+وغدوت بالقرآن تشرح قصره  ***  حتى إذا ما غاب إلا الشوق لك<br />
+يرجو جوار البيت إلا أنه   ***  يهوى سماع الآي طراً من فمك<br />
+فقضى بجمع عم كلاً حسنه ***  وغدا المطاف بنجمه مثل الفلك<br />
+وبعد أن تناول الجميع طعام الإفطار وقرب وقت صلاة العشاء توجه الملك خالد والوفود التي معه إلى المسجد الحرام وأدوا صلاة العشاء ثم تقدم الشيخ علي الحذيفي وصلى العشر ركعات الأولى من التراويح، وبعدها أمر الملك خالد الشيخ علي جابر أن يتم الثلاث عشرة ركعة الباقية ، فتقدم الشيخ علي وبدأ بصوت جهوري ونغمة مميزة فريدة تأخذ بالألباب قرأ بها آخر سورة الصافات إلى منتصف سورة الزمر حتى رفع صوته وصدح في آخرها بقوة وهيبة عند قوله تعالى : ( الحمد لله بل أكثرهم لا يعلمون . إنك ميت وإنهم ميتون) وكأن الناس تسمعها لأول مرة .. نعم .. طلبه الملك ليسمع منه ذلك عند البيت الحرام ولعل في ذلك حكمة إليهة وإشارة تنبؤه أنه لن يلبث إلا قليلاً، وأن الملك لن يدرك رمضان من العام القادم، حيث وافته المنية بعد أحد عشر شهراً ، في آخر شعبان عام 1402هـ.<br />
+<font color="#000000"><span style="font-family: Times New Roman"><a href="http://www.alijaber.net/ppt/AliJaber_PPT_CD_full/alijaber_azzumar_1401.mp3" target="_blank" rel="nofollow"><span style="font-family: Traditional Arabic, serif"><b>تلاوة نادرة للشيخ في أول ليلة يؤم فيها في المسجد الحرام </b></span></a></span></font><span style="font-family: Times New Roman, serif"><font color="#000000"><a href="http://www.alijaber.net/ppt/AliJaber_PPT_CD_full/alijaber_azzumar_1401.mp3" target="_blank" rel="nofollow"><span style="font-family: Traditional Arabic, serif"><b>23-9-1401</b></span></a></font></span><font color="#000000"><span style="font-family: Times New Roman"><a href="http://www.alijaber.net/ppt/AliJaber_PPT_CD_full/alijaber_azzumar_1401.mp3" target="_blank" rel="nofollow"><span style="font-family: Traditional Arabic, serif"><b>هـ</b></span></a></span></font><br />
+انتهت صلاة التراويح تلك الليلة .. لكن ابتدأت هناك أحداث كثيرة .. صوت جديد مميز يصدح في أرجاء المسجد الحرام بصورة مفاجئة ..<br />
+وبعد التسليمة الأولى لهذا الصوت قام الناس فوراً ووجوههم صوب الإمام يتحرون ويتساءلون .. من هذا المبدع ؟!..<br />
+وبعد الصلاة اجتمعوا عليه ليسلموا ويصافحوه ويعانقوه ، حتى أحاط به رجال الأمن وأخرجوه من بينهم .. <br />
+وقد أشفق عليه الشيخ عبدالله خياط -رحمه الله- وأخذ يذب الناس الذين تدافعوا على الشيخ علي ويقول لهم : &quot;ما هو إلا آدمي مثلكم&quot; <br />
+والناس يتساءلون عنه فقيل لهم إنه (إمام الملك) فصار هذا أول لقب أطلق على الشيخ وتناقله الناس في كل مكان.<br />
+ثم انصرف الشيخ مع وفود الملك وأعيان مكة الذين أثنوا على الملك اختياره للشيخ علي وطلبوا منه أن يبقيه إماماً لهم في المسجد الحرام ، فوافق على ذلك، وسرت البشرى والفرحة في أهل مكة المكرمة وزوار بيت الله الحرام.<br />
+<font color="#000000"><span style="font-family: Times New Roman">
+<iframe class="restrain" title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/YyfQkbdfyYU?wmode=opaque" frameborder="0"></iframe>
+ </b></span></span></font><br />
+ومع ذلك فهناك في الجانب الآخر من لم يفرح بتولي هذا القارئ الفريد الإمامة<br />
+
+<iframe class="restrain" title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/15uXTdb4WI0?wmode=opaque" frameborder="0"></iframe>
+<br />
+ يقول الشيخ علي جابر : &quot; جاءت سنة 1401هـ في عهد الملك الراحل خالد بن عبدالعزيز -رحمه الله رحمة الأبرار- فكنت إماما له في المسجد الخاص به بقصره في الطائف وعندما نزل مكة المكرمة, وبالضبط في ليلة الثالث والعشرين من رمضان, طلب -رحمه الله- أن انزل إلى مكة المكرمة ، وما كنت قد أعلمت مسبقاً بأني سأكون إماما للحرم المكي الشريف أو سأتولى الإمامة ليلة ثم يأتي  بعدها تعيين رسمي بالإمامة, فنزلت تلك الليلة وبعد الإفطار طلب مني التوجه إلى المسجد الحرام للصلاة بالناس في تلك الليلة, وكان المقرر هو تلك الليلة فقط ولكن بعض من الشخصيات والأعيان الموجودين في مكة طلبوا منه -رحمه الله- أن أبقى في الليالي التالية حتى بعد رحيله -يرحمه الله- إلى الطائف مرة أخرى وبقيت إلى ليلة التاسع والعشرين ثم صدر أمره -رحمه الله- بتعييني إماما في المسجد الحرام&quot; .<br />
+ورغم أن الشيخ علي جابر فوجئ بإمامة المصلين في صلاة التراويح إلا أن المصلين لم يشعروا ولم يلاحظوا تلك الرهبة المعهودة على الأئمة عندما يقف لأول مرة على المحراب للإمامة فما بالك بمحراب المسجد الحرام الذي يمر أمامه الطائفون ويصلي خلفه الملايين في ليالي العشر الأخيرة من رمضان, فلم ينتب الشيخ علي جابر رهبة الموقف حيث يقول عن ذلك الموقف : &quot; من حيث الرهبة فلم تأتني، وذلك بحكم أنني سبق أن تعودت الإمامة سابقاً, لكن ما من شك أن الشعور عظيم والإنسان يؤم المصلين بذلك العدد الكثيف في بيت الله الحرام في أول بيت وضع للناس الذي جعله الله مثابة للناس وأمناً, وهذه السعادة لا يمكن أن تعبر عنها كلمات أو عبارات إنما أقول إنه لم يكن تكليفاً بقدر ما هو تشريف &quot; .</font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_725161" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_725161" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=725161" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_725161" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_725488">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-07-12,&nbsp;<span class="time">05:48 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post725488" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=725488#post725488" class="postcounter">#22</a><a id="postcount725488" name="22"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_725488">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="#0000cd">صدور الأمر الملكي بتعيين الشيخ علي جابر إماماً للمسجد الحرام:</font></font><br />
+<font size="6">في شوال من عام 1401هـ أصدر الملك خالد أمراً بتعيين الشيخ علي جابر إماماً رسمياً بالمسجد الحرام، كأول شاب يعين إماماً رسمياً للمسجد الحرام في هذا القرن الهجري وهو في السابعة والعشرين من عمره ، متميزاً بقوة حفظه وجمال صوته وروعة قراءته وثباته في الإمامة مع كونه إماماً خاصاً للملك وحاصل على درجة التعليم الجامعي العالي في الفقه بالامتياز ومعين رسمياً في القضاء ، ولرغبة خاصة من الملك أن يسمعه إماماً في المسجد الحرام ، وطلب وجهاء وأعيان مكة من الملك خالد أن يبقيه لهم إماماُ في المسجد الحرام، وكان ذلك كله مفاجأة للناس ولرئاسة شؤون الحرمين التي تلقت الأمر الملكي المباشر بتعيين الشيخ علي إماماً رسمياً في المسجد الحرام.</font><br />
+<font size="6"><font color="#0000cd">بأمر الملك .. إخلاء طرفه من وزارة العدل وتعيينه محاضراً بالمدينة:</font></font><br />
+<font size="6">وبطلب من الشيخ علي جابر -رحمه الله- صدَر أمرٌ كريم من جلالة الملك خالد - طيَّب الله ثراه - يقضي بإخلاء طَرَفِ الشيخ علي جابر من وزارة العدل، وتعيينه محاضراً في كلية التربية فرع جامعة الملك عبدالعزيز بالمدينة المنورة في قسم اللغة العربية والدراسات الإسلامية, وقد باشر العمل فيها في شهر شوال من العام الجامعي 1401هـ .</font><br />
+<font size="6"><font color="#0000cd">توجيه الملك خالد بتمكين الشيخ علي جابر من الصلاة الجهرية في فريضة الفجر:</font></font><br />
+<font size="6">وبعد صدور قرار تعيين الشيخ إماماً رسمياً في المسجد الحرام وجهته رئاسة شؤون الحرمين بإمامة المصلين لصلاة العصر في المسجد الحرام، وقد استغرب الناس ذلك وافتقد المصلون صوت قراءة الشيخ الذي هز أفئدتهم في صلاة القيام في رمضان 1401هـ وعرفوا جمال صوته وعذوبة قراءته وجودة حفظه ، ولما طال انتظارهم ألا يسمعوا صوت (إمام الملك) في صلاة جهرية ؛ طلبوا ذلك من الملك خالد الذي عينه إماماً بالحرم وأوصلوا صوتهم إليه، ويذكر أن رئاسة شؤون الحرمين عللت تعيين الشيخ لصلاة العصر دون الصلوات الجهرية بسبب التزام أئمة كبار لفرضي المغرب والعشاء منذ سنوات طويلة ووجود الحرج من تغيير ذلك، فجاء توجيه الملك خالد بتمكين الشيخ علي جابر من إمامة صلاة الفجر بالمسجد الحرام.</font><br />
+<font size="6"> كما وجه جلالته الرئاسة بشراء سكن مناسب للشيخ قرب المسجد الحرام،  إلا أن ذلك لم يتم حيث طال أمده من قبل الرئاسة إلى تقدم الشيخ لظروفه بطلب إعفائه من الإمامة الرسمية بالمسجد الحرام، وكان الشيخ يستأجر للسكن في مكة طيلة فترة إمامته الرسمية بالمسجد الحرام.</font><br />
+<b><a href="http://www.alijaber.net/audio/ali_jaber_alnahl1402.mp3" target="_blank" rel="nofollow">مقطع قديم من البث الإذاعي لأذان وصلاة الفجر من المسجد الحرام بإمامة الشيخ علي جابر رحمه الله</a> </b>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_725488" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_725488" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=725488" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_725488" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_725490">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-07-12,&nbsp;<span class="time">05:59 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post725490" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=725490#post725490" class="postcounter">#23</a><a id="postcount725490" name="23"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_725490">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="#0000cd">خطبة الخسوف في الحرم المكي:</font></font><br />
+<font size="6">في منتصف شهر ربيع الأول عام 1402هـ صلى الشيخ علي جابر &quot;رحمه الله&quot; بالناس صلاة الخسوف في المسجد الحرام وخطب خطبة الخسوف ارتجالاً في الحرم المكي ، حيث لم يكن يعلم الناس سابقاً بالخسوف أو الكسوف إلا حين يروه، فقرأ الشيخ سورتي الكهف ويس وخطبة خطبة موجزة بين فيها عظمة الله في تصريف هذا الكون وحث فيها الناس على التوبة والعودة إلى الله.</font><br />
+<font size="6"><font color="#000000"><span style="font-family: Times New Roman"><a href="http://www.alijaber.net/ppt/AliJaber_PPT_CD_full/khosoof1402.mp3" target="_blank" rel="nofollow"><span style="font-family: Traditional Arabic, serif"><b>استمع لمقطع من خطبة الخسوف بالحرم المكي للشيخ علي جابر </b></span></a></span></font><span style="font-family: Times New Roman, serif"><font color="#000000"><a href="http://www.alijaber.net/ppt/AliJaber_PPT_CD_full/khosoof1402.mp3" target="_blank" rel="nofollow"><span style="font-family: Traditional Arabic, serif"><b>1402</b></span></a></font></span><font color="#000000"><span style="font-family: Times New Roman"><a href="http://www.alijaber.net/ppt/AliJaber_PPT_CD_full/khosoof1402.mp3" target="_blank" rel="nofollow"><span style="font-family: Traditional Arabic, serif"><b>هـ</b></span></a></span></font></font><br />
+<font size="6"><font color="#0000cd">مرض الشيخ في منتصف عام 1402هـ:</font></font><br />
+<font size="6">وكان الشيخ يصدح بصوته الجهوري في أرجاء المسجد الحرام في صلوات الفجر منذ أواخر عام 1401هـ إلا أنه أصيب بالعين وقيل بالسحر وفقد فجأة صوته والقدرة على التكلم في منتصف عام 1402هـ مدة تقارب الثلاثة أشهر مكث خلالها في المدينة المنورة ثم في مدينة جدة للعلاج والرقية حتى عاد له صوته بفضل الله تعالى، ثم رجع الشيخ مجدداً إلى إمامة صلاة الفجر في المسجد الحرام.</font><br />
+<font size="6"><font color="#0000cd">وفاة الملك خالد: </font></font><br />
+<font size="6">وفي آخر شعبان من عام 1402هـ توفي الملك خالد بن عبدالعزيز - رحمه الله - ، فحزن الناس عليه كثيراً ، إذ كان رحمه الله معروفاً بطيب النفس والرفق وحب الخير وحافظاً للقرآن الكريم، وشهدت البلاد في عهده طفرة ورخاء لم يكن له مثيل في تاريخها في سبع سنين سمان، وكانت علاقته بالشيخ علاقة قوية جداً حتى كأنها بين أب وابنه ، وأراد أن يصطفيه لنفسه إماماً إلا أن الناس طلبوه منه وأرادوه عند البيت الحرام ولم يكن يكره الخير لإمامه ولا للناس ، وكان يشفق على الشيخ وقال له ذات مرة بعد تعيينه في الحرم : &quot;أنت محسود يا شيخ&quot; وقد حزن الشيخ عليه كثيراً وبكاه ، وكثيراً ما كان يذكره بخير حتى سمى ابنه الأول باسم ابيه (عبدالله) وابنه الثاني باسم الملك (خالد) وفاءً لذلك الملك الصالح رحمه الله .</font><br />
+<font size="6">رمضان 1402هـ </font><br />
+<font size="6">بدأت صلاة التراويح في المسجد الحرام هذا العام من الليلة الثانية لتأخر إعلان دخول الشهر الكريم، وصلى بالناس ثلاثة أئمة هم : الشيخ عبدالله الخليفي والشيخ محمد السبيل والشيخ علي جابر.</font><br />
+<font size="6">وعرف عن الشيخ علي جابر &quot;رحمه الله&quot; قوة حفظه وثباته في الإمامة ، وفي العشر الأواخر من رمضان عرض على الشيخ علي جابر أن ينفرد بإمامة صلاة التهجد كاملة دون المشاركة في التراويح ،في تلك الليالي العشر فوافق على ذلك ، وكانت صلاة التراويح يؤمها  الشيخان الخليفي والسبيل بقراءة حدر سريعة بإتمام جزء كل ليلة ، وفي المقابل كانت صلاة التهجد للشيخ علي جابر وكان يقرأ جزءاً وربع الجزء كل ليلة - عدا ليلة السابع والعشرين قرأ جزءاً كاملاً فقط - بقراءة معتدلة مجودة من أجمل ما سجل له  .</font><br />
+<font size="6"> وفي الليلة الرابعة والعشرين بعد انتهاء الركعات الأولى التي قرأ فيها الشيخ النصف الأول من سورة النساء بقراءة <b>
+<iframe class="restrain" title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/PTlO7ydywUo?wmode=opaque" frameborder="0"></iframe>
+</b> وغيرها.<br />
+يقول الشيخ الدكتور سعد بن عبدالله البريك : &quot;وأذكر أنني صليت خلفه في العام 1402هـ وكيف أنه قرأ قول الله تعالى : &quot;<b>
+<iframe class="restrain" title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/PTlO7ydywUo?wmode=opaque" frameborder="0"></iframe>
+</b> ..&quot; إلى آخر الآيات فكادت قلوب المصلين تتفطر من خشية الله ، وتساءلنا عن أعمدة المسجد الحرام كيف استطاعت الصمود مع تلك القراءة التي حركت كل ساكن وعلقت القلوب في السماء!!&quot; .</font><br />
+<br />
+<br />
+<font size="6"><font color="#000000"><span style="font-family: Times New Roman">
+<iframe class="restrain" title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/15uXTdb4WI0?wmode=opaque" frameborder="0"></iframe>
+<br />
+</b></span></font></span></font><font size="6">وفي آخر فجر من رمضان ذلك العام أم الشيخ الناس لصلاة الفجر وقرأ فيها <b><a href="http://www.alijaber.net/s_mp3/salat_alfajr_1-10-1402.mp3" target="_blank" rel="nofollow">النصف الأول من سورة الرحمن بقراءة مجودة هادئة جداً بترتيل ندي مميز قل أن يقرأ مثله</a></b> - وإن كان التسجيل ضعيف الجودة حرمنا بتشويشه من نقلها بكامل نداوتها وجمالها - ، وكأنما أراد أن يكون ختام آخر فرض لصلاة الفجر وآخر صلاة جهرية في رمضان ذلك العام بأجمل إبداع وأروع نغمة وأجود ضبط وأهدأ نفس ، ليحبرها في نسمات الفجر تحبيراً في أرجاء المسجد الحرام ونفحات رمضان الأخيرة وقرآن الفجر ... إن قرآن الفجر كان مشهوداً.</font><br />
+<font size="6">ثم مرض الشيخ مجدداً بعد رمضان 1402هـ وانقطع عن الإمامة في المسجد الحرام فترة من الزمن.</font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_725490" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_725490" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=725490" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_725490" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_725492">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-07-12,&nbsp;<span class="time">06:01 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post725492" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=725492#post725492" class="postcounter">#24</a><a id="postcount725492" name="24"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_725492">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="#0000cd">استقالته من الإمامة الرسمية بالمسجد الحرام وعودته إلى المدينة 1403هـ:</font></font><br />
+<font size="6"> في عام 1403هـ تقدم الشيخ بطلب الإعفاء من الإمامة بالمسجد الحرام ووافق عليه مسئولو رئاسة شؤون الحرمين وذلك لظروف عديدة منها كثرة طلب المسؤول في رئاسة شؤون الحرمين من الشيخ تغيير نمط تلاوته التي يصدح بها برفع الصوت في مواضع عديدة والاقتصار على رتيبة واحدة بالحدر مع تمسك الشيخ بطريقته في التلاوة التي يجد فيها التأثر والتأثير وحسن الترتيل والتدبر والتي أثرت في عموم المصلين خلفه حتى اختاره الملك خالد إماماً خاصاً له في قصره ثم إماماً للمسلمين في المسجد الحرام ، مع رحيل الملك خالد الذي عينه بنفسه ، ولكون عمل الشيخ ومقر وظيفته الرسمية في المدينة المنورة محاضراً في كلية التربية ، ولسكن والدته وأهله في المدينة المنورة كان متعلقاً ببرها مع حبه للمدينة المنورة والقرار فيها. ولمرضه مرات عديدة مما يضطره للسفر إلى أهله ولم يكن للشيخ سكن يملكه في مكة المكرمة كغيره من الأئمة الرسميين،  ولتعرضه لابتلاءات عديدة بسبب الإمامة في المسجد الحرام والشهرة الحاصلة له في أرجاء العالم الإسلامي ومحبة الناس له كونه أبرز من شد الناس بتلاوته في الحرم المكي مما أثر كثيراً على صحته وإصابته بالعين وفقدان صوته حتى طلبت والدته منه أن يترك الإمامة حفاظاً على صحته،كما أنه رحمه الله كان يحب البساطة وعدم التكلف والتعايش مع الناس بدون حرج من منصب ونحوه ، وقد تضايق كثيراً من الشهرة التي حصلت له بسبب الإمامة في الحرم المكي وما تبعها من تهافت الناس ومتابعتهم له، وقد جلبت له الشهرة مع كثرة المحبين حساداً على ما من الله به عليه مع أن الشيخ لم تكن لديه رغبة في الإمامة لكنها قدرت له وطلب إليها وكان يقول : &quot;إن الإمامة ولاية ومسؤولية عظيمة خاصة إمامة المسجد الحرام&quot;، وإنما كان هم الشيخ هو حبه الضلوع في العلم الشرعي والاستزادة منه وتدارسه ومواصلة مسيرته في طلب العلم وتدريسه من خلال عمله الوظيفي وهو التدريس الجامعي بالمدينة النبوية التي نشأ وطلب العلم فيها وعاصر فيها نخبة من كبار العلماء.</font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_725492" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_725492" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=725492" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_725492" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_726362">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-07-17,&nbsp;<span class="time">02:21 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post726362" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=726362#post726362" class="postcounter">#25</a><a id="postcount726362" name="25"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_726362">
+				<blockquote class="postcontent restore">
+					مقال من صحيفة الأهرام المصرية بتاريخ 3-10-1403هـ<br />
+<img src="http://majles.alukah.net/imgcache/2014/07/244.jpg" border="0" alt="" />
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_726362" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_726362" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=726362" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_726362" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_726363">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-07-17,&nbsp;<span class="time">02:22 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post726363" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=726363#post726363" class="postcounter">#26</a><a id="postcount726363" name="26"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_726363">
+				<blockquote class="postcontent restore">
+					مقطع مرئي : الحاج أشرف السعد يتحدث عن الشيخ علي جابر<br />
+
+<iframe class="restrain" title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/TcjTvgCho6Y?wmode=opaque" frameborder="0"></iframe>
+
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_726363" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_726363" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=726363" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_726363" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_726364">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-07-17,&nbsp;<span class="time">02:25 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post726364" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=726364#post726364" class="postcounter">#27</a><a id="postcount726364" name="27"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_726364">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="#0000cd">رجوعه للمدينة وتدريسه الفقه وتأثر صحته 1403هـ :</font></font><br />
+<font size="6">رجع الشيخ إلى المدينة المنورة التي نشأ فيها وحفظ فيها القرآن وتلقى فيها علومه الشرعية والتي فيها سكن والدته ومقر عمله الوظيفي، <b> <a href="http://www.alijaber.net/catplay.php?catsmktba=463" target="_blank" rel="nofollow"><font color="#0000cd">وسجلت له حلقات تلفزيونية لتلاوة القرآن الكريم بطلب من التلفزيون السعودي كانت تعرض في افتتاح البث وختامه</font></a>،</b>حيث كان الشيخ يرى جواز التصوير المرئي خلافاً للرأي السائد آنذاك،<b><a href="http://www.alijaber.net/pict/img029.jpg" target="_blank" rel="nofollow"><font color="#0000cd">بل كان يحث في بعض لقاءاته الصحفية على إثراء وسائل الإعلام المختلفة بالأمور الشرعية والدعوية النافعة للمجتمع</font></a></b>متغاضياً عن النقد الذي يتعرض له بسبب ذلك، وتأثرت صحته فابتعث في رحلة علمية إلى كندا وعلاجية في نفس الوقت .</font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_726364" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_726364" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=726364" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_726364" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_726365">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-07-17,&nbsp;<span class="time">02:28 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post726365" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=726365#post726365" class="postcounter">#28</a><a id="postcount726365" name="28"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_726365">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="#0000cd">سفره إلى كندا وتسجيل المصحف المرتل:</font><br />
+سافر الشيخ إلى العاصمة الكندية أوتاوا في رحلة علمية ولبث فيها ثمانية أشهر وقضى فيها شهر رمضان هناك، ومع مرضه فقد <b><a href="http://www.alijaber.net/q1.html" target="_blank" rel="nofollow"><font color="#0000cd">سجل القرآن الكريم كاملاً بصوته في أحد المعامل الصوتية في كندا</font></a></b> بطلب من الملحق الثقافي السعودي في كندا آنذاك الدكتور عصام عابد شيخ الذي أولى الشيخ رعايته هناك ، وسلمت النسخة الأصلية لذلك التسجيل إلى جامعة الملك سعود بالرياض ، وأهدت الجامعة نسخة منه إلى إذاعة القرآن الكريم بالرياض .<br />
+ومع أن هذه التسجيل هو الذي تنشره الإذعات والقنوات للشيخ إلا أنه يختلف كثيراً عن جمال تلاوة الشيخ في المسجد الحرام وغيره من المساجد ،  ربما لكون هذا التسجيل سجل في مرض الشيخ وتأثر صحته وسفره وعلاجه هناك فاختلفت عن قراءة الصلاة وإمامة المسلمين في المسجد الحرام.<br />
+<font color="#0000cd">عودته من كندا إلى المدينة المنورة 1404هـ :</font><br />
+ عاد الشيخ إلى المدينة المنورة في شهر ربيع الأول من عام 1404هـ محاضراً في كلية التربية التابعة لجامعة الملك عبدالعزيز وقد كتب رسالة خطية في الثالث والعشرين من ذي الحجة عام 1404هـ جواباً لأحد محبيه ومما جاء فيها : ”وأما عن الحرم والإمامة فيه فقد طلبت الإعفاء من الإمامة ، ووافق المسئولون على ذلك ، لأنه ليس لدي رغبة في الانتقال من المدينة إلى غيرها&quot;.</font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_726365" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_726365" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=726365" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_726365" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_728038">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-07-29,&nbsp;<span class="time">12:29 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post728038" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=728038#post728038" class="postcounter">#29</a><a id="postcount728038" name="29"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_728038">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="#0000cd">التقدم للدكتوراه 1405هـ:</font></font><br />
+<font size="6">في عام 1405هـ تقدم إلى المعهد العالي للقضاء بالرياض لتسجيل موضوع رسالته لنيل درجة الدكتوراه في الفقه المقارن فتمت الموافقة وبدأ الشيخ تحضيره لرسالة الدكتوراه بعنوان : ( فقه القاسم بن محمد بن أبي بكر الصديق موازناً بفقه أشهر المجتهدين ).</font><br />
+<font size="6">ويذكر أنه في ليلة غير محددة من هذا العام أو قبله أم الشيخ علي جابر المصلين في المسجد النبوي الشريف مرة واحدة فقط لصلاة المغرب مما أبهج أهل طيبة الطيبة وانتشرت حينها شائعات بتعيينه إماماً للمسجد النبوي الشريف ،</font><b> <font size="6"><a href="http://www.alijaber.net/catplay.php?catsmktba=463" target="_blank" rel="nofollow"><font color="#0000cd">وسجل أيضاً عدة حلقات مرئية من تلاوته للتلفزيون السعودي</font></a></font> </b>.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_728038" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_728038" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=728038" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_728038" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_728040">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-07-29,&nbsp;<span class="time">12:36 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post728040" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=728040#post728040" class="postcounter">#30</a><a id="postcount728040" name="30"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_728040">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="#0000cd">رمضان 1407هـ :</font></font><br />
+<font size="6">قبيل شهر رمضان هذا العام وصل خطاب من رئاسة شؤون الحرمين إلى مقر عمل الشيخ في كلية التربية بالمدينة المنورة - حيث كان محاضراً فيها - يفيد برغبة المقام السامي بتكليف الشيخ علي جابر للمشاركة في إمامة صلاة التراويح والقيام مع الشيخ عبدالرحمن السديس في المسجد الحرام، فتوجه الشيخ إلى مكة المكرمة.</font><br />
+<font size="6">وبدأت صلاة التراويح في المسجد الحرام من الليلة الثانية لتأخر إعلان رؤية هلال رمضان في آخر الليلة الأولى ، فبدأت الصلاة ليلة الثلاثاء الثاني من رمضان حسب الرؤية والأول حسب تقويم أم القرى، وكانت الركعات الأولى للشيخ عبدالرحمن السديس والركعات الأخيرة والشفع والوتر للشيخ علي جابر ، واستمر هذا الترتيب إلى منتصف الشهر ثم تم التغيير بالبدأ بالشيخ علي جابر والتكملة للشيخ عبدالرحمن السديس وذلك ليلة الثلاثاء الخامس عشر حيث ابتدأ الشيخ علي جابر بالصلاة بإكمال ما توقف عنده في الليلة السابقة من منتصف سورة مريم إلى أواخر سورة طه.</font><br />
+<font size="6">ولما دخلت العشر الأواخر بقي هذا الترتيب في صلاة التراويح ، ولكن تم عكسه في صلاة التجد آخر الليل، وأرسل للشيخين خطاب في الثامن عشر من رمضان يوضح ترتيب تكليفهم بصلاة التهجد.</font><br />
+<font size="6">ولما جاءت ليلة الثالث والعشرين ابتدأ الشيخ علي جابر صلاة التراويح ثم استأذن للسفر إلى مدينة الرياض حيث كان على موعد لمناقشة أطروحته لدرجة الدكتوراه في جامعة الإمام محمد بن سعود الإسلامية صبيحة الثالث والعشرين، ولذا فقد أتم الشيخ عبدالرحمن السديس صلاة التهجد كاملة تلك الليلة.</font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_728040" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_728040" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=728040" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_728040" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_729345">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-04,&nbsp;<span class="time">12:21 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post729345" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=729345#post729345" class="postcounter">#31</a><a id="postcount729345" name="31"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_729345">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="#0000cd">حصول الشيخ علي جابر على درجة الدكتوراه في الفقه</font><br />
+وفي صبيحةِ يوم الأربعاء الثالث والعشرين من رمضان عام 1407هـ حسب رؤية هلال الشهر - الثاني والعشرين حسب تقويم أم القرى ، كان الشيخ علي جابر - رحمه الله - على مَوْعد لمناقشة أطروحتِه لنَيْل درجة الدكتوراه من المعهد العالي للقضاء بجامعة الإمام محمد بن سعود الإسلامية بالرياض، وكان موضوعها: &quot;فقه القاسم بن محمد بن أبي بكر الصديق، موازنًا بفقه أشهر المجتهدين&quot;، وكان المشرِف على الرِّسالة فضيلة الدكتور عمر بن عبدالعزيز بن محمد، الأستاذ المشارِك بقسم الدِّراسات العليا، (شعبة أصول الفقه)، بالجامعة الإسلامية، بالمدينة المنورة، وبذلك حقَّق رغبة طالَمَا تمناها منذُ أن كان طالبًا بالمرحلة الجامعية.</font><br />
+<img src="http://majles.alukah.net/imgcache/2014/08/389.jpg" border="0" alt="" />
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_729345" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_729345" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=729345" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_729345" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_729351">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-04,&nbsp;<span class="time">12:24 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post729351" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=729351#post729351" class="postcounter">#32</a><a id="postcount729351" name="32"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_729351">
+				<blockquote class="postcontent restore">
+					<font size="6">ومن اللطائِف: أنَّ الثالث والعشرين من رمضان وَقَع فيه حَدَثانِ مُهمَّان في حياة الشيخ؛ ففي ليلة الثالث والعشرين من رمضان عام واحد وأربعمائة وألف من الهجرة، كان قد صلَّى بالناس إمامًا للمرَّة الأولى في رِحاب البيت العتيق، وفي اليوم نفسِه من العام السابع بعدَ الأربعمائة والألف من الهجرة، نال درجةَ الدكتوراه مع مرتبة الشرف الأولى، فتوَّجَ بها جهودَه في طلب العلم.</font><br />
+<font size="6">وعاد الشيخ من سفره إلى مكة المكرمة ليلة الرابع والعشرين من رمضان إلا أنه لم يدرك صلاة العشاء مع الأئمة في الصف الأول - وكان يتوقع ألا يحضر تلك الليلة بسبب السفر - لكن الشيخ حضر وأدرك صلاة العشاء في أطراف المسجد الحرام ، ثم أخذ يشق الصفوف إلى المحراب بعد الصلاة ، فلما رآه المؤذنون في مكبرية المسجد الحرام يشق طريقه في صحن المسجد الحرام  والناس يؤدون راتبة العشاء نودي بصلاة القيام ، ووقف الشيخ في محرابه وكبر للصلاة - وما زال بعض من خلفه يؤدون راتبة العشاء - وقرأ من آخر سورة فصلت إلى آخر سورة الشورى بقراءة عذبة فريدة من هذا الإمام القارئ الذي يقف إماماً للمسلمين في المسجد الحرام وقد أسبغ عليه هذه المرة لقب (الدكتور) . </font><br />
+<font size="6"><font color="#000000"><span style="font-family: Times New Roman"><a href="http://www.alijaber.net/play.php?catsmktba=137" target="_blank" rel="nofollow"><span style="font-family: Traditional Arabic, serif"><b>مقطع مرئي لبداية صلاة التراويح ليلة الرابع والعشرين من رمضان عام </b></span></a></span></font><span style="font-family: Times New Roman, serif"><font color="#000000"><a href="http://www.alijaber.net/play.php?catsmktba=137" target="_blank" rel="nofollow"><span style="font-family: Traditional Arabic, serif"><b>1407</b></span></a></font></span><font color="#000000"><span style="font-family: Times New Roman"><a href="http://www.alijaber.net/play.php?catsmktba=137" target="_blank" rel="nofollow"><span style="font-family: Traditional Arabic, serif"><b>هـ</b></span></a></span></font></font><br />
+<font size="6">وبعد تلك الليلة وفي العشر الأواخر دعي الأئمة لتناول الإفطار في قصر الصفا ، وعندما سلم الشيخ علي جابر على الملك فهد بن عبدالعزيز رحمهم الله مازحه الملك فهد قائلاً : &quot; الآن نقول لك يا شيخ أم يا دكتور ؟&quot; فأجابه الشيخ مبتسماً : &quot;المشيخة لقب يعطى للجميع دون ضبط، وأما الدكتوراه فتلزم البذل والجهد&quot;.</font><br />
+<font size="6">وكانت تلاوة الشيخ الدكتور علي جابر في التراويح آخر ليالي رمضان تلك السنة أكثر سرعة ، وفي صلاة التهجد يسدل يديه أحياناً فلعله بدا عليه أثر الإرهاق والتعب . </font><br />
+<font size="6">لكن تلاوات الشيخ كانت رائعة ومميزة في تلك السنة ، وسجل فيها الكثير من روائع قراءته من سورة التوبة والحج ومريم وطه والنور والفرقان والنمل والأحزاب ويس والصافات والشورى وغيرها.</font><br />
+<font size="6">وكان الشهر تاماً ثلاثين ليلة، وعاد بعده الشيخ إلى المدينة المنورة.</font><br />
+<font size="6"><font color="#000000"><span style="font-family: Times New Roman">
+<iframe class="restrain" title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/rA4coDgzPPo?wmode=opaque" frameborder="0"></iframe>
+</span></font><span style="font-family: Times New Roman, serif"><font color="#000000"><a href="http://www.youtube.com/watch?v=rA4coDgzPPo" target="_blank" rel="nofollow"><span style="font-family: Traditional Arabic, serif"><br />
+</span><span style="font-family: Traditional Arabic, serif"><b>
+<iframe class="restrain" title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/rA4coDgzPPo?wmode=opaque" frameborder="0"></iframe>
+</font></span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_729351" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_729351" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=729351" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_729351" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_729355">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-04,&nbsp;<span class="time">12:29 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post729355" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=729355#post729355" class="postcounter">#33</a><a id="postcount729355" name="33"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_729355">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="#0000cd">عام 1408هـ</font></font><br />
+<font size="6">في الثاني والعشرين من شعبان 1408هـ وجه خطاب من رئيس شؤون الحرمين إلى نائبه لشؤون المسجد النبوي يفيده برغبة المقام السامي تكليف الشيخ علي عبدالله جابر للمشاركة في الإمامة بالمسجد الحرام لصلاة التراويح والقيام في رمضان ذلك العام ، وعليه أرسل في الخامس والعشرين من شعبان خطاب عاجل من نائب رئيس شؤون الحرمين لشؤون المسجد النبوي إلى الشيخ علي جابر بتكليفه إماماً مشاركاً في رمضان ، وطلب توجهه إلى مكة المكرمة قبيل حلول الشهر الكريم.</font><br />
+<font size="6">وكانت الطريقة المتبعة لإمامة صلاة القيام في هذا العام مختلفة ونادرة جدا،ً وهي مشاركة ثلاثة أئمة في صلاة القيام ، بحيث ينفرد كل إمام في ليلة يؤم فيها صلاة التراويح كاملة ويقرأ فيها جزءاً كاملاً من القرآن الكريم ويزيد أحياناً ، وفي الليلة التالية يؤم الإمام صاحب النوبة  التالية تراويح الليلة كاملة، وهكذا.</font><br />
+<font size="6">وكان أئمة التراويح والقيام لهذا العام هم الشيخ علي الحذيفي والشيخ علي جابر والشيخ عبدالرحمن السديس، وكان يشاركهم الشيخ عبدالله الخليفي في الشفع والوتر .</font><br />
+<font size="6">وظهر في هذا العام كثرة محبي قراءة الشيخ علي جابر  بصورة واضحة حيث كانت الليالي التي يؤم فيها تشهد ازدحاماً كبيراً لا يحصل في الليالي الأخرى ، بل كانت تغلق محال تجارية كثيرة بجوار الحرم أثناء إمامته وتتصل الصفوف خارج الحرم  بصورة أكبر وبشكل ملحوظ أثناء الليالي التي يؤمها الشيخ كاملة.</font><br />
+<font size="6">وقد أبدع الشيخ في تلك السنة بقراءات جميلة منها سور : يونس <b><font color="#0000cd">و</font><a href="http://www.alijaber.net/s_mp3/alijaber_alnahl1408.mp3" target="_blank" rel="nofollow"><font color="#0000cd">النحل</font></a><a href="http://www.alijaber.net/1408/Night_16-9-1408H.mp3" target="_blank" rel="nofollow"><font color="#0000cd">والحج والمؤمنون</font></a><a href="http://www.alijaber.net/1408/Night_19-9-1408H.mp3" target="_blank" rel="nofollow"><font color="#0000cd">والأحزاب</font></a><font color="#0000cd">.</font></b></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_729355" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_729355" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=729355" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_729355" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_729357">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-04,&nbsp;<span class="time">12:31 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post729357" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=729357#post729357" class="postcounter">#34</a><a id="postcount729357" name="34"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_729357">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="#0000cd">رمضان 1409هـ </font></font><br />
+<font size="6">في هذا العام أرسلت الرئاسة العامة لشؤون الحرمين خطاباً إلى عميد كلية التربية بالمدينة المنورة بتاريخ 25-8-1409هـ بشأن رغبة المقام السامي تكليف الشيخ علي جابر للمشاركة مع الإئمة في صلاة التراويح والقيام ، وكلف أربعة أئمة للتراويح والقيام وأعيد ترتيب الإمامة لصلاة التراويح والقيام بأن يشارك الشيخان عبدالرحمن السديس وصالح بن حميد في ليلة ، والشيخان علي الحذيفي وعلي جابر في ليلة، وقد أم الليلة الأولى الشيخ عبدالرحمن السديس بمفرده، ثم شاركه الشيخ صالح بن حميد من الليلة الثالثة.</font><br />
+<font size="6">وسجلت في هذا العام أشهر تلاوات الشيخ علي جابر التي ذاع صيتها ، كتلاوته المؤثرة <span style="font-family: Times New Roman"><span style="font-family: Traditional Arabic"><b><a href="http://www.alijaber.net/s_mp3/annesa1409_141-147.mp3" target="_blank" rel="nofollow"><font color="#0000cd">سورة النساء عند ذكر المنافقين</font></a></b></span></span>وتلاوته في<span style="font-family: Times New Roman"><span style="font-family: Traditional Arabic"><b><a href="http://www.alijaber.net/s_mp3/yusuf1409_82-98.mp3" target="_blank" rel="nofollow"><font color="#0000cd">آخر سورة يوسف</font></a></b></span></span><span style="font-family: Times New Roman"><font color="#000000"><span style="font-family: Traditional Arabic"><b>.</b></span></font></span></font><br />
+<font size="6">وكان الشهر تاماً ثلاثين ليلة، وعاد بعدها الشيخ إلى المدينة المنورة.</font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_729357" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_729357" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=729357" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_729357" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_729359">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-04,&nbsp;<span class="time">12:34 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post729359" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=729359#post729359" class="postcounter">#35</a><a id="postcount729359" name="35"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_729359">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="#0000cd">انتقال الشيخ علي جابر من المدينة المنورة إلى جدة</font></font><br />
+<font size="6">أمضى الشيخ ما يزيد على ثلاثين عامًا من عُمره بالمدينة المنورة، ليَلْتقيَ بعدد من العلماء الأجلاَّء، الذين كانتْ تَزخر بهم طَيْبةُ الطَّيِّبة كما سافر إلى الرياض والتقى بنخبة من العلماء الأفاضل ونال درجةَ الدكتوراه عام 1407هـ ، وكان متعلقاً بسكنى المدينة المنورة وحب والدته وبقائه بجوارها وبدأ ببناء مسكن له فيها ، إلا أنه لظروف عمله وبمشورة والدته انتقل   من فَرْع جامعة الملك عبدالعزيز بالمدينة المنورة إلى مقرِّها الرئيس في جدة عام 1410هـ، عضوًا في هيئة التدريس في قِسْم الدِّراسات الإسلاميَّة، بكلية الآداب والعلوم الإنسانيَّة، على أمل الرجوع إلى المدينة المنورة وسكنى بيته الذي كان في طور البناء بالمدينة النبوية.</font><br />
+<font size="6"><font color="#0000cd">ندوة النادي الأدبي بمكة المكرمة 1410هـ </font></font><br />
+<font size="6">أقيمت ندوة بالنادي الأدبي بمكة المكرمة عام 1410هـ في شهر رجب تقريباً عن الإمامة وشروطها ، وطلب من الشيخ علي جابر المشاركة فيها إلا أنه اعتذر عن المشاركة فيها ، غير أن إدارة النادي الأدبي بمكة ألحت عليه بشدة للمشاركة حتى وافق وقدم إليها من جدة. وكان الضيوف المشاركون فيها هم : الشيخ الدكتور علي عبدالله جابر والشيخ عبدالرحمن السديس ومسؤول الأوقاف بالمملكة ، والندوة كانت مسجلة بالصوت والصورة وكان المفترض أن تعرض بعد تسجيلها في قناة التلفزيون السعودي الأولى، ويذكر أن الشيخ تحدث بكلام صريح وجريء وأبدى ملاحظاته على الندوة وانتقد بعض الأنظمة المتعلقة بموضوعها وبعض القضايا الشرعية، ويذكر أنها منعت من العرض في قناة التلفزيون كما كان مقرراً بالأصل وأنه يمنع حتى الآن الحصول على نسخة منها مع أنها مصورة وموثقة وكانت محل إشادة ممن حضرها.</font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_729359" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_729359" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=729359" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_729359" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_730314">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-09,&nbsp;<span class="time">05:47 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post730314" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=730314#post730314" class="postcounter">#36</a><a id="postcount730314" name="36"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_730314">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="#0000cd">رمضان 1410هـ :</font></font><br />
+<font size="6">حل شهر رمضان هذا العام 1410هـ وفي ظل الإدارة الجديدة لرئاسة شؤون الحرمين لم توجه دعوة تكليف الشيخ للإمامة في الحرم المكي كما كان في السنوات السابقة، وكان الشيخ يسكن في مدينة جدة فقدمه الناس ليؤمهم في صلاة التراويح في أقرب مسجد إلى منزله وهو مسجد بقشان بجدة ، ولم يلتزم إمامة ذلك المسجد ولا غيره ، وإنما يؤم فيه صلاة التراويح غالباً بطلب من محبيه وأهل المسجد ويغيب عنه في العشر الأواخر أو بعض الليالي ليصلي في أطراف المسجد الحرام مؤموماً، وكان يصلي بعض الصلوات في مسجد الهدى القريب أيضاً إلى بيته ، وفي غير رمضان كان يمكث في مكتبة مسجد الهدى بين المغرب والعشاء، وكان طلابه يعلمون أن هذا الوقت هو المناسب للشيخ فيأتونه فيه للاستفتاء والسؤال أو السلام عليه ، واستمر على ذلك أكثر من سبعة أعوام  ثم مرض ، ولم يعد للإمامة إلا ما ندر، حتى زاد مرضه ولزم بيته فترة طويلة.</font><br />
+<font size="6">يقول عبدالله ابن الشيخ علي جابر عن والده : &quot;رفض كل العروض المقدمة له للإمامة خارج المملكة ، وذكر أن عرضاً جاءه من أمير الشارقة والكويت ، ولكنه آثر البقاء في المملكة بجوار بيت الله الحرام ، وقد صلى لفترة في مسجد بقشان بعد إلحاح شديد من محبيه &quot; .</font><br />
+<font size="6"><span style="font-family: Times New Roman"><a href="http://www.alijaber.net/audio/Ali_Jaber--waqeah-Jeddah.mp3" target="_blank" rel="nofollow"><font color="#0000cd"><span style="font-family: Traditional Arabic, serif"><b>استمع لتسجيل نادر من صلاة العشاء للشيخ علي جابر بمسجد بقشان بجدة في أواخر حياة الشيخ</b></span></font></a></span><span style="font-family: Times New Roman, serif"><font color="#000000"><font color="#0000cd"><span style="font-family: Traditional Arabic, serif"><br />
+</span></font><font color="#0000cd"><span style="font-family: Traditional Arabic, serif"><b><a href="http://www.alijaber.net/audio/Ali_Jaber--waqeah-Jeddah.mp3" target="_blank" rel="nofollow">http://www.alijaber.net/audio/Ali_Ja...eah-Jeddah.mp3</a></b></span></font></font></span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_730314" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_730314" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=730314" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_730314" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_730315">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-09,&nbsp;<span class="time">05:59 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post730315" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=730315#post730315" class="postcounter">#37</a><a id="postcount730315" name="37"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_730315">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><font size="6"><font color="#0000cd">أثر تلاوته على جيل الثمانينات عدها القراء مدرسة في التلاوة</font></font><br />
+<font size="6"><font color="#0000cd">وقالوا عن الشيخ علي جابر :</font></font></div><font size="6">&quot;كان رائداً من رواد القراء، كوَّن مدرسة سار عليها واقتفى أثرها الكثير من الأئمة على مستوى العالم ... لم أكن أشعر بلذة القرآن كما أسمعه منه رحمه الله .. وقد بدأتُ حياتي مع القرآن مقلِّداً للشيخ علي جابر .. الحقيقة أن الشيخ علي جابر أسس مدرسة ومرحلة .. وتأثر كثير من الشباب من بعده، كانت الإمامة أصلاً يعزف عنها كثير من الشباب، ما كان أحد يقبل عليها، كان الإئمة المتقنين في جدة - فيما أذكر - يعدون على الأصابع ، وأكثر المساجد يصلون بقصار السور، وكان هناك إمام أو إمامين أو ثلاثة الذين يختمون القرآن الكريم، فلما بدأت مرحلة الشيخ علي جابر بدأ كثير من الشباب يحفظون القرآن ويتأثرون بقراءته ، وكنت أنا أحد هؤلاء الذين حقيقة حفظت وكنت أراجع القرآن على قراءة الشيخ علي جابر&quot;.</font><br />
+<font size="6">الشيخ الدكتور<b>
+<iframe class="restrain" title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/5t_ghecuGUw?wmode=opaque" frameborder="0"></iframe>
+</b> أستاذ الدراسات الإسلامية بجامعة الملك عبد العزيز، وإمام وخطيب مسجد الشعيبي بجدة</font><br />
+<div style="text-align: center;"><font size="6">*   *   *</font></div><font size="6">&quot;كان صاحب صوت جميل وتغنى به في أرجاء الحرم وتأثر به جمع غفير من المصلين، وله رونق خاص وأداء متميز ، وإتقان جيد، وهو من الأشخاص الذين فقدهم يؤثر في نفوس المسلمين قاطبة&quot;</font><br />
+<font size="6">الشيخ الدكتور <b><a href="http://www.alijaber.net/pict/P1000033.jpg" target="_blank" rel="nofollow"><font color="#0000cd">الشيخ الدكتور عبدالباري الثبيتي</font></a></b> إمام وخطيب المسجد النبوي </font><br />
+<div style="text-align: center;"><font size="6">*   *   *</font></div><font size="6">&quot;كان له الدور الأكبر في حبي لترتيل للقرآن الكريم&quot;</font><br />
+<font size="6"><b>
+<iframe class="restrain" title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/_K-I8-qmOMk?wmode=opaque" frameborder="0"></iframe>
+</b></font><br />
+<div style="text-align: center;"><font size="6">*   *   *</font></div><font size="6">&quot;ترك بصمة واضحة في نفوس كثير ممن صلى خلفه فكان بحق مدرسة متميزة لها معالمها وجاذبيتها وتأثيرها في القلوب بل في الأسماع فقد أتعب الشيخ من جاء بعده، وخصوصاً أنه رحمه الله صاحب تمكن في الحفظ قوي وثابت في الإمامة قلما يوجد له نظير وذلك فضل الله يؤتيه من يشاء ، وتأثر به كثير من المشايخ والقراء المعروفين سواءً كان في هذه البلاد أو في غيرها &quot; .</font><br />
+<font size="6"><a href="http://www.alijaber.net/ppt/AliJaber_PPT_CD_full/shatri.mp3" target="_blank" rel="nofollow"><font color="#0000cd"><span style="font-family: Traditional Arabic, serif"><b>القارئ الشيخ شيخ أبوبكر الشاطري</b></span></font></a></font><br />
+<div style="text-align: center;"><font size="6">*   *   *</font></div><font size="6">&quot; الشيخ علي عبدالله جابر هو مدرسة قائمة بذاته &quot;</font><br />
+<font size="6">&quot;.. ثم حفظت جزءاً من القرآن على الشيخ من حُسن تلاوته ، ولا تزال بعض الآيات ترن في أذني منه ، وأذكر أني حفظت بداية سورة هود منه .. كانت ليلة من أعجب التلاوات وكانت قراءة أكثر من رائعة &quot; </font><br />
+<font size="6">
+<iframe class="restrain" title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/15uXTdb4WI0?wmode=opaque" frameborder="0"></iframe>
+</font><br />
+<div style="text-align: center;"><font size="6">*   *   *</font></div><font size="6">&quot;هو مدرسة تجديدية في التلاوة ، حيث نجد أن كثيراً من القراء يكونون قد تأثروا بمن سبقهم ، إلا أن شيخنا كان له أسلوبه المتفرد في طريقة التلاوة ... لقراءته ميزة عظيمة حيث تعتبر قراءة تفسيرية توضيحية&quot;</font><br />
+<font size="6"><b><a href="http://www.alijaber.net/pict/005.jpg" target="_blank" rel="nofollow"><font color="#0000cd">الشيخ الدكتور سعد بن عبدالله البريك</font></a></b></font><br />
+<div style="text-align: center;"><font size="6">*   *   *</font></div><font size="6"> &quot; ارتبط اسمه بسماع القرآن وحق له أن يشرف بذلك،  الشيخ علي جابر كان مدرسة مستقلة ، لا يمكن أن تقول أن أحداً سبقه في هذا الأداء ،  كان يتميز بقوة الحفظ ، ومتانة القراءة ، وجمال الصوت ، وحسن الأداء ، وتمام الثقة في القراءة ، وكان يتميز أيضاً بالقراءة التصويرية&quot;</font><br />
+<font size="6"><b>
+<iframe class="restrain" title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/zrMg3TxD684?wmode=opaque" frameborder="0"></iframe>
+</b></font><br />
+<div style="text-align: center;"><font size="6">*   *   *</font></div><font size="6"> &quot; أحدث الشيخ – رحمه الله – نقلة نوعية في الإمامة بالمسجد الحرام حيث بدأت الأصوات الشابة تغزو أرجاء الحرم – إن صح التعبير – في اللحظات الأولى لإمامة الشيخ &quot;</font><br />
+<font size="6"><b><a href="http://www.alijaber.net/pict/P1000029.jpg" target="_blank" rel="nofollow"><font color="#0000cd">الشيخ حميد بن محمد الحميد</font></a></b> إمام مسجد العمري ببريدة </font><br />
+<div style="text-align: center;"><font size="6">*   *   *</font></div><font size="6">&quot; تميز رحمه الله بجهورة الصوت ، والأداء ، وله قبول في أوساط المجتمع ومحبة في النفوس &quot; .</font><br />
+<font size="6"><a href="http://www.alijaber.net/pict/P1000034.jpg" target="_blank" rel="nofollow"><font color="#0000cd"><span style="font-family: Traditional Arabic, serif"><b>القارئ الشيخ محمد مكي هداية الله </b></span></font></a></font><br />
+<div style="text-align: center;"><font size="6">*   *   *</font></div><font size="6"> &quot; آتاه الله حسن التلاوة وجمال الصوت وقوة الحفظ ... الدور الذي قام به في استقطاب الناس لسماع التلاوة، حتى كنا نسمع الكثير من الناس صغاراً وكباراً يقلدونه في طريقته المتميزة بالترنم بالقرآن الكريم فقد كان – رحمه الله – مدرسة لجيل من الحفاظ&quot; .</font><br />
+<font size="6"><span style="font-family: Times New Roman"><a href="http://www.alijaber.net/pict/P1000037.jpg" target="_blank" rel="nofollow"><font color="#0000cd"><span style="font-family: Traditional Arabic, serif"><b>م</b></span></font></a></span><span style="font-family: Times New Roman, serif"><font color="#000000"><a href="http://www.alijaber.net/pict/P1000037.jpg" target="_blank" rel="nofollow"><font color="#0000cd"><span style="font-family: Traditional Arabic, serif"><b>. </b></span></font></a></font></span><span style="font-family: Times New Roman"><span style="font-family: Traditional Arabic, serif"><b><a href="http://www.alijaber.net/pict/P1000037.jpg" target="_blank" rel="nofollow"><font color="#0000cd">عبدالعزيز بن عبدالله حنفي </font></a></b></span></span> رئيس الجمعية الخيرية لتحفيظ القرآن الكريم بمحافظة جدة</font><br />
+<div style="text-align: center;"><font size="6">*   *   *</font></div><font size="6"> &quot;امتاز فضيلته بجودة حفظه ، وقوة أدائه ، وجمال صوته , مما كان له أبلغ الأثر في نفوس مستمعيه &quot; .</font><br />
+<font size="6"><b><a href="http://www.alijaber.net/pict/P1000034.jpg" target="_blank" rel="nofollow"><font color="#0000cd">الشيخ القارئ سجاد بن مصطفى الحسن</font></a></b>الأمين العام لجمعية القرآن الكريم بمكة المكرمة </font><br />
+<div style="text-align: center;"><font size="6">*   *   *</font></div><font size="6">&quot; الشيخ علي جابر من القراء الذين يشدون الانتباه ويجذبك بجمال صوته&quot; </font><br />
+<font size="6"><span style="font-family: Times New Roman"><a href="http://www.alijaber.net/pict/005.jpg" target="_blank" rel="nofollow"><font color="#0000cd"><span style="font-family: Traditional Arabic, serif"><b>د</b></span></font></a></span><span style="font-family: Times New Roman, serif"><font color="#000000"><a href="http://www.alijaber.net/pict/005.jpg" target="_blank" rel="nofollow"><font color="#0000cd"><span style="font-family: Traditional Arabic, serif"><b>. </b></span></font></a></font></span><span style="font-family: Times New Roman"><a href="http://www.alijaber.net/pict/005.jpg" target="_blank" rel="nofollow"><font color="#0000cd"><span style="font-family: Traditional Arabic, serif"><b>محمود حسن زيني</b></span></font></a></span> أستاذ الأدب بجامعة أم القرى </font><br />
+<div style="text-align: center;"><font size="6">*   *   *</font></div><font size="6">&quot;في سني أعمارنا تلك، كنا نحرص، ونحن بعيدون نوعاً ما عن أجواء القرآن وحلقات العلم والعلماء، على اقتناء أشرطة الشيخ علي جابر والاستماع إلى تلاوته العذبة للقرآن ... هذه التلاوة التي كانت خاصة بالشيخ بلغت درجة أثرت فيها على جيل القرّاء الشباب الذين تسابقوا ذياك الزمن إلى تقليد صوته وطريقته في التلاوة، كان عندما يحين دوره في الإمامة يرحمه الله، ترانا وقد هببنا جماعات ونشطنا وسرت في أوصالنا كهرباء نفسية عجيبة، ولكأننا نترقب مجيئه، فتتهيأ أنفسنا لصوت ملائكي أخاذ&quot; .</font><br />
+<div style="text-align: center;"><font size="6"><font color="#0000CD">الكاتب والإعلامي </font><b><a href="http://www.alijaber.net/pict/aqasim.jpg" target="_blank" rel="nofollow"><font color="#0000cd">عبدالعزيز محمد قاسم</font></a></b></font></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_730315" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_730315" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=730315" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_730315" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_730316">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-09,&nbsp;<span class="time">06:02 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post730316" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=730316#post730316" class="postcounter">#38</a><a id="postcount730316" name="38"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_730316">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="#0000cd"> الشيخ علي جابر .. والقرآن الكريم:</font></font><br />
+<font size="6">لمس الشيخ علي جابر أثر حفظه القرآن الكريم في حياته, وكان فضيلته مدركاً أن الإنسان إذا ركز على تعقل القرآن ومعانيه وتفهمه فإن ذلك يزيده حفظاً وقوة على ما هو عليه, يقول عن ذلك الأثر في نفسه: ( القرآن ليس المقصود منه التغني وتزيين الصوت به وإنما يجب أن يكون واقعاً عملياً سلوكياً يقوم الإنسان بتطبيقه في واقع حياته كلها).</font><br />
+<font size="6">ويزداد هذا التأثر بكتاب الله الكريم عندما تحدث بقوله: القرآن الكريم أنزله الله تعالى هداية للعالمين, وأحد مصادر هذه الشريعة الإسلامية, وهو أيضاً شفاء ورحمة للمؤمنين, والذي يقرأ القرآن بتعقل وتدبر وتفهم لمعانيه فلا شك أن ذلك يوصله إلى طريق السعادة والنجاة في الدارين, وقد ورد عن الرسول صلى الله عليه وسلم قوله: (القرآن حجة لك أو عليك), فهذا الكتاب الكريم إما أن يكون حجة للإنسان من حيث التطبيق العملي لما فيه من أوامر ونواه وإما أن يكون حجة عليه عندما يخالف ما ذكر فيه, ولهذا لا يمكن أن نكتفي بحفظه بل لابد من تدبره فقد أنزله الله عز وجل للتدبر كما قال سبحانه: {كتاب أنزلناه إليك مبارك ليدبروا آياته وليتذكر أولو الألباب}.</font><br />
+<font size="6">ورغم ذلك التواضع من الشيخ علي جابر الذي لمسه منه جميع المقربين منه وتأكيده على أن ليس للتغني وتزيين الصوت به إلا أن حلاوة صوته بالقرآن جعلت العديد من الشباب يتأثرون به ويعودون ويتوبون إلى الله بعد سماعهم له سواء من خلال إمامته في المسجد الحرام أو من الأشرطة السمعية لكن الشيخ لا يدعي ذلك لنفسه بقوله: (لا أدعي لنفسي التأثير ولكني أقول إن الصوت الحسن وقراءة القرآن محبرّة له أثر عظيم في نفس الإنسان المسلم, وهذا يتضح من فعل الرسول صلى الله عليه وسلم مع ابن مسعود رضي الله عنه عندما قال له: (اقرأ عليّ) قال: كيف اقرأ وعليك أنزل, قال: (إني أحب أن اسمعه من غيري) فقرأ عليه صدراً من سورة النساء حتى وصل إلى قول الله تعالى: {فكيف إذا جئنا من كل أمة بشهيد وجئنا بك على هؤلاء شهيداً}, بكى رسول الله صلى الله عليه وسلم وقال في ابن مسعود: من أراد أن يقرأ القرآن غضاً طرياً كما أنزل فليقرأ على قراءة ابن أم عبد, فلا شك أن الصوت الحسن والقراءة المحبّرة لها أثر عظيم على السامعين).</font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_730316" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_730316" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=730316" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_730316" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_731951">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-16,&nbsp;<span class="time">11:34 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post731951" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=731951#post731951" class="postcounter">#39</a><a id="postcount731951" name="39"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_731951">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="#0000cd"> التسجيلات الصوتية والمرئية للشيخ:</font></font><br />
+<font size="6">أنشأ بعض المهتمين بعد وفاة الشيخ <span style="font-family: Times New Roman"><span style="font-family: Traditional Arabic, serif"><b><a href="http://www.alijaber.net/" target="_blank" rel="nofollow"><font color="#0000cd">موقعاً له على الإنترنت </font></a></b></span></span><span style="font-family: Traditional Arabic, serif"><font color="#000000"><b><a href="http://www.alijaber.net/" target="_blank" rel="nofollow"><font color="#0000cd">www.alijaber.net</font></a></b></font></span>حاولوا جمع ما يمكن من تلاواته وقد واجهتهم صعوبة كبيرة جداً في تحصيل الأصول النقية لتلاوات الشيخ الصوتية والمرئية من أراشيف إذاعة القرآن الكريم ومن أرشيف القناة السعودية الأولى حتى أن ورثة الشيخ تقدموا بخطاب رسمي إلى وزارة الثقافة والإعلام للحصول على نسخة نقية من تلاوات الشيخ الصوتية والمرئية التي كانت تبث عبر الإذاعة وفي التلفاز ولكن دون فائدة ، وأشيع أن تلاواته المسجلة من المسجد الحرام فقدت أصولها النقية من أراشيف الإذاعة والتلفاز ، والتي تعد من النفائس النادرة المفقودة حتى الآن.</font><br />
+<font size="6">واعتمد موقع الشيخ كما هو مبين فيه على جهود المتطوعين واستجداء محبي الشيخ لجمع ما يمكن من التلاوات المتفرقة بجودات متوسطة وضعيفة من التسجيلات والأشرطة القديمة ضعيفة الجودة في الغالب والتي أثرت فيها أجهزة النسخ القديمة بالتسريع وإضعاف جودتها ورونقها إلا قليلاً من التسجيلات النقية الرائعة علها تسهم في تخفيف شيء من الحزن على فقدان الشيخ رحمه الله وأن تكون وقفاً للشيخ ونفعاً للناس في أنحاء العالم الإسلامي.</font><br />
+<font size="6"><b><font color="#0000cd">و</font>
+<iframe class="restrain" title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/d1wpm8Af10Y?wmode=opaque" frameborder="0"></iframe>
+</b>، ولا زال المسلمون يأملون منها أن تبث شيئاً من تلاوات الشيخ المسجلة في صلاة القيام بالمسجد الحرام والتي تعلقت بها قلوب المسلمين في مشارق الأرض ومغاربها حيث من المفترض أن أصولها النقية الصافية تقبع في أراشيف التلفزيون السعودي والإذاعة.</font><br />
+<font size="6">وإذاعة القرآن الكريم بالرياض تبث أيضاً <b><a href="http://www.alijaber.net/q1.html" target="_blank" rel="nofollow"><font color="#0000cd">نسخة نقية من تسجيل المصحف المرتل</font></a></b>من تسجيل المصحف المرتل المسجل في كندا عام 1403هـ وقد أهدتها إليها جامعة الملك سعود بالرياض ، وهو وإن تميز بنقاء التسجيل ووضوحه العالي فإنه يختلف بطبيعته عن <b><a href="http://www.alijaber.net/catplay.php?catsmktba=493" target="_blank" rel="nofollow"><font color="#0000cd">تلاوة الشيخ المميزة في جنبات المسجد الحرام</font></a></b>ذات الأداء المميز والتي تبث الإذاعة بضعة تلاوات منها بجودة مقبولة من تسجيلات عام 1408هـ فقط دون غيرها من تلاواته المشهودة في فترة إمامته للمسجد الحرام بين الأعوام 1401 -1409هـ.</font><br />
+<font size="6">يقول <b><a href="http://www.alijaber.net/pict/005.jpg" target="_blank" rel="nofollow"><font color="#0000cd">الشيخ الدكتور سعد بن عبدالله البريك</font></a></b> عن تلاوات الشيخ المميزة  في المسجد الحرام : &quot;أقترح أن نحفظ هذه القراءات ونوثقها عبر الأشرطة والاسطوانات ونشرها وتوزيعها على المسلمين بالمجان ، وأتمنى أن تتبنى شؤون الحرمين الشريفين ذلك أو إحدى المؤسسات القرآنية &quot; .</font><br />
+<font size="6">وكان يؤمل من رئاسة شؤون الحرمين أن تعير هذا الكلام - الذي هو أمنية لكثير من العلماء والدعاة وجماهير المسلمين - اعتباره ، وحتى أن موقعها على الإنترنت -حتى كتابة هذه الأسطر-لم يعرض أياً من <b><a href="http://www.alijaber.net/catplay.php?catsmktba=354" target="_blank" rel="nofollow"><font color="#0000cd">تلاوات الشيخ علي جابر في المسجد الحرام</font></a></b>مع انتشار العديد منها في كثير <b><a href="http://www.google.com/#hl=en&amp;source=hp&amp;q=%CA%E1%C7%E6%C9+%C7%E1%D4%ED%CE+%DA%E1%ED+%CC%C7%C8%D1&amp;aq=f&amp;aqi=g5&amp;aql=&amp;oq=&amp;gs_rfai=&amp;pbx=1&amp;fp=8631cdd35a4d476d" target="_blank" rel="nofollow"><font color="#0000cd">مواقع الإنترنت</font></a><font color="#0000cd"> و</font><a href="http://www.youtube.com/ALIJABERCHANNEL" target="_blank" rel="nofollow"><font color="#0000cd">اليوتوب </font></a><font color="#0000cd">وفي </font><a href="http://www.alijaber.net/" target="_blank" rel="nofollow"><font color="#0000cd">موقع الشيخ على </font></a></b><span style="font-family: Times New Roman"><span style="font-family: Traditional Arabic, serif"><b><a href="http://www.alijaber.net/" target="_blank" rel="nofollow"><font color="#0000cd">الإنترنت</font></a></b></span></span><font color="#0000cd">.</font></font><br />
+<font size="6">ومع صعوبة الحصول على نسخ من الأصول النقية للتلاوات <b><a href="http://www.alijaber.net/catplay.php?catsmktba=354" target="_blank" rel="nofollow"><font color="#0000cd">الصوتية</font></a><a href="http://www.alijaber.net/catplay.php?catsmktba=6" target="_blank" rel="nofollow"><font color="#0000cd">والمرئية</font></a></b> للشيخ علي جابر من المسجد الحرام - التي كانت تبث تلك الأعوام - من أراشيف التلفزيون السعودي والإذاعة؛ إلا أن الناس والعلماء والدعاة والقراء لا يزالون يذكرون أثر هذه التلاوات المميزة في تاريخ المسجد الحرام ويروحون الأنفس بذكرها ويجدون في الإنترنت ما ينفس عنهم شيئاً من فقدها !!</font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_731951" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_731951" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=731951" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_731951" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_735409">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-09-04,&nbsp;<span class="time">02:10 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post735409" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=735409#post735409" class="postcounter">#40</a><a id="postcount735409" name="40"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أئمة الحرمين في العصر الحديث
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_735409">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="#0000ff">ومما سطر عن أثر تلاواته رحمه الله :</font></font><br />
+<font size="6">يقول الحاج أشرف السعد في لقاء على قناة المستقلة الفضائية : &quot; الناس مقصرون في حق هذا الرجل وأناشدهم أن يدعوا له خاصة في المسجد الحرام ، هذا الرجل ذو صوت ملائكي ومن أطهر القلوب التي قابلتها في حياتي، وله فضل على جيل الثمانينات - الميلادية - حيث أثر في هذا الجيل تأثيراً شديداً، وقد حُسِد رحمه الله&quot;.</font><br />
+<font size="6">وقال الشيخ الدكتور عبدالله الصبيح الأستاذ بجامعة الإمام محمد بن سعود الإسلامية: &quot; كنا نتسابق للصلاة خلفه والتأثر بقراءته التي كانت تزيد خشوعنا وتقرِّبنا من الله لفرط عذوبتها وتميُّزها &quot; .</font><br />
+<font size="6">وكتب الشيخ خالد آل ثاني في جريدة الشرق القطرية مقالاً عن الشيخ قال فيه : &quot; طالما اشتقنا لسماع القرآن بصوته الذي طالما أبكانا عندما نستمع لنبرات صوته وهي تتعالى عند ذكر آيات العذاب وآيات الوعيد تأثراً وخوفاً وخشية ، فقد كان للشيخ رحمه الله أسلوب بديع في التلاوة ، يجعل المستمع ينصت إليه في هدوء وسكينة &quot; .</font><br />
+<font size="6">ووصفه الكاتب بجريدة الأهرام المصرية أحمد بهجت بقوله : &quot; كان صوته وأسلوبه في القراءة يبرزان معاني الآيات ويصلان إلى كل قلب ويشعلان الروح بخشوع حقيقي . إن الصلاة التي كان يقيمها كانت عظيمة حقاً ، وهو يهز أوتار القلوب هزّاً ، بل إن المصلين يحسون وهم يسمعون القرآن منه في الصلاة أنهم يخشعون ويتصدعون هيبة وخشية&quot;</font><br />
+<font size="6">ويقول الدكتور عائض الردادي عضو مجلس الشورى ومدير عام إذاعة الرياض سابقاً : &quot;كان لصوته الحسن وقراءته المحبرة وأدائه المؤثر وضبطه لأحكام القراءة أثر في استماع الناس لقراءته وتقليدهم لأدائه الذي صار نهجاً مميزاً عرف باسمه &quot; .</font><br />
+<font size="6">ويصفه الأستاذ عبدالعزيز محمد قاسم الكاتب والإعلامي المعروف بقوله : &quot; أوتي الصوت الندي والطريقة البديعة في تلاوة القرآن التي لم نألفها أبداً قبله . وقد بلغ درجةً أثّر فيها يرحمه الله على جيل القرّاء الشباب الذين تسابقوا إلى تقليد صوته وطريقته في التلاوة ... ينطلق في تلاوته سرداً وقد أحكم التجويد ومخارج الحروف .. وإذا ما سرح بك الخيال أو تشتت ذهنك إذ بك تُؤخذ على حين غِرة وتفيق على صوت الشيخ وقد انتقل إلى تلاوة عالية النبرة، وقد شد النفوس معه ، وحبس الأرواح التي استوفزت ، ويكاد قلبك أن ينخلع وأنت تتابعه في تلك التلاوة الآسرة &quot; .</font><br />
+<font size="6">أما  الأستاذ الدكتور سالم بن أحمد سحاب  الأستاذ بجامعة الملك عبدالعزيز بجدة ، والكاتب الصحفي المعروف فقد سطر مشاعر فياضة كان منها قوله : &quot;رحمك الله يا شيخنا العزيز ، فلقد كنت أول الكاسرين لحاجز القراءة الرتيبة ، والتلاوة التقليدية التي كنا نحسب أن لا غيرها طريقة يمكن أن يتلى بها القرآن . لقد علمتنا – رحمك الله – أن جزءاً من حلاوة هذا القرآن العظيم كامن في طريقة تلاوته وفي فن إخراجه من الحناجر ليبلغ القلوب &quot; ويضيف قائلاً : &quot; أتمنى أن ينشأ كرسي علمي لدعم باحثين يدرسون تلاوة الشيخ من كل جوانبها على أسس علمية حديثة ويشارك فيها خبراء مختصون في أنواع المعرفة ذات العلاقة ، ومنهم خبراء في الصوتيات وفي علم النفس والاجتماع واللغة والقرآن ... للتأصيل لعلم راسخ يسهم في بناء أجيال ناشئة تحسن تلاوة القرآن على طريقة الشيخ علي جابر رحمه الله . ما أحوجنا إلى مدرسة من هذا الطراز !! &quot; .</font><br />
+<font size="6">وفي صحيفة البلاد وصفه الكاتب خالد الحسيني بقوله : &quot;صوته ندي ، أداؤه من مقام لم يعرف من قبل ذلك في المسجد الحرام حتى ذهب طريقة قلدها كثير من الأئمة ، جمع بين التواضع وسهولة الحياة والبعد عن الغرور .. نظيف اللسان ونظيف اليدين ، بسيطً بمعنى الكلمة &quot; .</font><br />
+<font size="6">وزاد الكاتب بجريدة عكاظ محمد أحمد الحساني  بقوله: &quot; كان الشيخ علي جابر صاحب صوت رخيم ، عذب مؤثر ، يصافح القلوب قبل الآذان بلا تكلف ، وكان ذا طبقة صوتية قوية وعالية ، ولكنه يستطيع السيطرة على طبقته الصوتية بما يضمن عدم تحويل القراءة إلى صياح ، وكان بكاءً بلا تكلف ، ولذلك لم ينسه الناس ، وظلوا على الرغم من بعده يتغنون باسمه كلما جاء ذكره ، وهم الآن يترحمون عليه بلسان واحد &quot; .</font><br />
+<font size="6">وقال الدكتور حسن بن محمد سفر الأستاذ بجامعة الملك عبدالعزيز : &quot;ملَك ناصية الحفظ تجويداً وتلاوة .. منّ الله - عز وجل - عليه بعذب التلاوة ، وجمال الصوت ، وجهورية الأداء بنغمات وآداءات متعددة منسجمة تشنف الأسماع وتفتح الأذهان&quot; .</font><br />
+<font size="6">ووافقه الشيخ الدكتور محمد بشير حداد بقوله : &quot;بصوته العذب أخذ معه عموم المصلين في المسجد الحرام يتذوقون المعاني الجليلة في آيات القرآن الكريم مما أحدث نقلة مشهودة فتوجه كثير من المتساهلين في سنة التراويح إلى المسابقة إليها بأفواج كبيرة من كل حدب وصوب بجموع لم تعهد من قبل ... وكذلك حفز الكثيرين من الصغار والكبار على الإقبال على حفظ القرآن وتجويده بأصوات ندية لم تعهد من قبل &quot; .</font><br />
+<font size="6">ويقول معالي الدكتور محمد عبده يماني : &quot; الشيخ علي جابر قارئ حافظ ورع .. كنت أشعر بسعادة كبيرة وأنا أرى الشباب يتسابقون إلى الصلاة خلفه ويستمتعون بجمال تلاوته للقرآن &quot; .</font><br />
+<font size="6">وقال الدكتور عبدالله نصيف  : &quot;كان من الأصوات الجميلة التي يترقبها ملايين الناس ، واستمعوا إليها من خلال قراءته في الحرم &quot; .</font><br />
+<font size="6">ويقول الإعلامي الدكتور فهد بن عبدالعزيز السنيدي : &quot;ذلك العام الذي دخلت فيه الحرم وأنا في أواخر الطفولة وأوائل الشباب لأستمع إلى صوت أسطوري يجلجل في جنبات الحرم ويشعر كل سامع أنه يعيش في ملكوت آخر وأنه يهدهد القلب ليملأه إيمانا ًينسكب مع عظمة كل آية يقرؤها...</font><br />
+<font size="6">لم أصدق أنه سيأتي اليوم الذي أتذكره وأنا أخصص له حلقة إعلامية لأبكي .... هل هو نفس البكاء الذي انتابني عندما دخلت الحرم في صباي ليحمل صاحب الصوت مشاعري معه عند كل آية ؟؟ أم هو بكاء الشوق لذلك الصوت الذي انقطع عن الحرم ؟؟ فانهالت الاتصالات من كل أطياف العالم الاسلامي!! ذهلت جداً !!!</font><br />
+<font size="6">أيعقل أن الرجل مازالت له هذه الحظوة عند الأمة؟؟ إن الصدى العجيب لهذا الرجل قلب عندي موازين الرؤية لبعض الشخصيات ..</font><br />
+<font size="6">أيها الأحباب أمتنا بخير لكنها مختطفة في إعلامها وسياستها ومناهجها التربوية وإلا فإن السبيل الأعظم ( خلوا بيني وبين الناس) كما قال صلى الله عليه وسلم</font><br />
+<font size="6">اللهم اغفر للشيخ العالم الفقيه علي جابر وارفع ذكره واخلفه في عقبه آمين&quot; .</font><br />
+<font size="6">أما الكاتب في جريدة الحياة مصطفى الأنصاري  فقد سطر مشاعر الأمم التي صلت خلف الشيخ رحمه الله  بقوله : &quot; إمام الحرم الذي لم يشهد القرن الماضي له مثيلاً بإجماع كل الذين كتب لهم أن يقفوا خلفه خاشعين لله في البيت الحرام ... إن أئمة في بقاع شتى من الأرض كان الناس أحرص على الفراغ من الصلاة خلفهم منه على الاستمرار .. لكن علي جابر كان الاستثناء بلا جدل &quot; .</font><br />
+<font size="6">وسطر الكاتب منصور النقيدان درة رائعة عن الشيخ منها قوله : &quot;هكذا كانت قصة ذلك الصوت الأسطوري الذي اكتمل رونقه في طيبة على خطوات من مثوى الرسول عليه السلام، وتنسمت الطائف شذاه ووادي الأراك هواه، حتى حطت به أشواقه وآماله ومنتهى أحلامه دانياً من البيت العتيق، صادحاً في أروقة المسجد الحرام ... كانت نفحة من رحمة السماء، ومودة الرحمن، ونعي سورة يس للبشر الخاطئين، وجلال آية المشكاة في سورة النور. كان الجمال ليلتها حناناً من لدن الخالق وهبة منه حين أم المصلين فيها علي عبدالله جابر، فتضوعت الألطاف ولانت القلوب وهام العاشقون بملكوت السماء، وهمهمت الشفاه بتسبيح الودود وبديع صنعه.</font><br />
+<font size="6">كانت إمامته ليالي رمضان سنواتٍ ثمانيَ متقطعة نبعاً لا ينضب من الطمأنينة والجلال وألق السماء، والصبا تهدهد كل من لاذ بالبيت وعانق الملتزم، أو تسمر أمام التلفزيون أو أصاخ بسمعه إلى الراديو، ولأن الصوت الحسن يزيد القرآن حُسْناً، فقد كان علي جابر ليلتها ضرباً من البهاء لا يتكرر. لقد كان جوهرة أتت إلى هذا العالم ثم مضت، فلا مثال على منوالها، ولا حنجرة تدانيها.</font><br />
+<font size="6">كانت تهاويل ذلك الجمال تتجلى في تلك اللحظات التي تسبق الركوع بآية أو آيتين، حين يهيؤ الشيخُ مَنْ وراءه لنقلة هي كالبرزخ بين عالمين، أتذكرونها؟ إنها تلك الأجزاء من الثانية التي تستلُّكَ من عالم المادة في حالة أشبه بالنعاس كالأمَنَة من ألطاف الرحمن، أو كمرتحل على خوافق طير خضر نحو السماء، بعيداً بعيداً عن دنس النفوس ووطأة الأرض، ورياء القلوب وزيفها. في تلك الفجوة بين عالمي المادة والحس كانت تتبدى عبقرية علي جابر .... كان هبة مقصورة عليه، لأنه كان عاشقاً للقرآن، مدنفاً حتى الثمالة بتلك الآي التي يرفل بقراءتها بخيلاء ... </font><br />
+<font size="6">شاهدوا على يوتيوب مقاطع له في المسجد الحرام وهو يقرأ خواتيم سورة الحج، وفاتحة سورة الإنسان، ومواضع من سورة الشورى، وبضع آيات من سورة النور، تقص للعباد نزول الغيث وتراكم السحب وعن جبال فيها من برد، وإن كنتم ممن فقد حبيباً فأصغوا إليه وهو يقرأ خواتيم سورة يوسف فلا أحلى ولا أرق ولا أعذب، ذلك أن من يتأمل كيف يغدو المشهد ليالي رمضان والطائفون يحيطون بالكعبة في حركة دائبة تخلب الألباب، والتائبون يسحون دموعهم بين الحطيم وزمزمِ، ومئات الألوف شخوص في سكينة وإخبات، والنسمات الندية تهفهف بالمصلين وزقزقات العصافير كزجل التسبيح، كل ذلك بأجمعه هو ما ينسج الجمال ويظفره بأريج صوت الشيخ الراحل الأسيف.</font><br />
+<font size="6">كان قرار الملك خالد بن عبدالعزيز بتعيين علي جابر إماماً في ليالي رمضان منعطفاً في تاريخ الإمامة بالمسجد الحرام، فقد كانت مرحلة جديدة انبلجت بها آمال من طمح من الحفاظ اليافعين لذلك المقام الأرفع، فازدهر جيل من القراء يندر أن توافرت أعدادهم في أي مرحلة تاريخية سبقت&quot; .</font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_735409" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_735409" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=735409" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_735409" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<form action="showthread.php?t=131752&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" method="get" class="pagination popupmenu nohovermenu">
+<input type="hidden" name="t" value="131752" /><input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+	
+		<span><a href="javascript://" class="popupctrl">صفحة 2 من 3</a></span>
+		
+		<span class="first_last"><a rel="start" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة الأولى - النتائج 1 إلى 20 من 55"><img src="images/metro/purple/pagination/first-left.png" alt="الأولى" />الأولى</a></span>
+		
+		
+		<span class="prev_next"><a rel="prev" href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة السابقة - النتائج 1 إلى 20 من 55"><img src="images/metro/purple/pagination/previous-left.png" alt="السابق" /></a></span>
+		
+		
+		<span><a href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مشاهدة النتائج 1 إلى 20 من 55">1</a></span><span class="selected"><a href="javascript://" title="النتائج 21 إلى 40 من 55">2</a></span><span><a href="showthread.php?t=131752&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مشاهدة النتائج 41 إلى 55 من 55">3</a></span>
+		
+		
+		<span class="prev_next"><a rel="next" href="showthread.php?t=131752&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة التالية - النتائج 41 إلى 55 من 55"><img src="images/metro/purple/pagination/next-left.png" alt="التالي" /></a></span>
+		
+		
+		<span class="first_last"><a href="showthread.php?t=131752&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة الأخيرة - النتائج 41 إلى 55 من 55">الأخيرة<img src="images/metro/purple/pagination/last-left.png" alt="الأخيرة" /></a></span>
+		
+	
+	<ul class="popupbody popuphover">
+		<li class="formsubmit jumptopage"><label>إذهب إلى الصفحة: <input type="text" name="page" size="4" /></label> <input type="submit" class="button" value="إذهب" /></li>
+	</ul>
+</form>
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=131752&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="popupctrl"><span class="ctrlcontainer">مجلس تراجم العلماء وطلبة العلم المعاصرين</span></a>
+		<a href="showthread.php?t=131752&amp;page=2#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=696d1a7d9adaea36633b28fa7c3827c1">لوحة التحكم</a></li>
+		<li><a href="private.php?s=696d1a7d9adaea36633b28fa7c3827c1">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1">الاشتراكات</a></li>
+		<li><a href="online.php?s=696d1a7d9adaea36633b28fa7c3827c1">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=144359&amp;s=696d1a7d9adaea36633b28fa7c3827c1">صفحة من حياة شيخ الحنابلة عبدالله بن عبدالعزيز ابن عقيل| عمر المقبل</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=97873&amp;s=696d1a7d9adaea36633b28fa7c3827c1">ما هي  الكتب التي ترجمت للألباني رحمه الله</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A3%D8%A6%D9%85%D8%A9">أئمة</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AB">الحديث</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%AD%D8%B1%D9%85%D9%8A%D9%86">الحرمين</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%B9%D8%B5%D8%B1">العصر</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%81%D9%8A">في</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=131752&amp;page=2#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=131752&amp;page=2#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">04:09 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

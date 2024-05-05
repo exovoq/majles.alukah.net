@@ -1,0 +1,1581 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=40a3dbf8dad57f073fe7698bbce8648b&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=163074";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس اللغة العربية وعلومها - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=10" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1713958091" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1713958091" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="الحروف, تعليقات, على, كتاب, للفارابي" />
+	<meta name="description" content="بسم الله الرحمن الرحيم 
+  كتاب الحروف لابي نصر الفارابي 
+  - يقول محقق الكتاب مؤكدا على ان كتاب الحروف هذا هو شرح كتاب (ما بعد الطبيعة) لارسطوطاليس ، و يقول : ان هذا لا يعني أن الكتابين يتفقان في جميع في الموضوعات التي ينظران فيها ، بل هناك فروق يرجع بعضها الى أن الفارابي ينظر في الألفاظ و المعاني المشهورة في لغات و عصور و ملل غير لغة أرسطوطاليس و عصره و ملته ، و بعضها الى ما يرى الفارابي في فحوى كتاب (ما بعد الطبيعة) و مضمونه و أغراض أرسطوطاليس من هذا الكتاب .  
+  - &quot; و يمكن شرح لفظة الحروف في" />
+
+	<title> تعليقات على كتاب الحروف للفارابي ج1</title>
+	<link rel="canonical" href="showthread.php?t=163074&s=40a3dbf8dad57f073fe7698bbce8648b" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1713958091" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1713958091" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1713958091" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1713958091&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=40a3dbf8dad57f073fe7698bbce8648b" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="40a3dbf8dad57f073fe7698bbce8648b" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=40a3dbf8dad57f073fe7698bbce8648b" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=40a3dbf8dad57f073fe7698bbce8648b -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=40a3dbf8dad57f073fe7698bbce8648b"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=40a3dbf8dad57f073fe7698bbce8648b">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=40a3dbf8dad57f073fe7698bbce8648b">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=40a3dbf8dad57f073fe7698bbce8648b">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=40a3dbf8dad57f073fe7698bbce8648b" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=40a3dbf8dad57f073fe7698bbce8648b">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=10&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس اللغة العربية وعلومها</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> تعليقات على كتاب الحروف للفارابي ج1</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=40a3dbf8dad57f073fe7698bbce8648b&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 1 من 1
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=163074&s=40a3dbf8dad57f073fe7698bbce8648b" title="تحديث الصفحة">تعليقات على كتاب الحروف للفارابي ج1</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=163074" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;t=163074&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=addsubscription&amp;t=163074" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;search_type=1&amp;searchthreadid=163074&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="40a3dbf8dad57f073fe7698bbce8648b" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="163074" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_866577">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2017-09-25,&nbsp;<span class="time">07:39 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post866577" href="showthread.php?t=163074&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=866577#post866577" class="postcounter">#1</a><a id="postcount866577" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=144704&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="محمد ابو سليمان الحسيني غير متواجد حالياً"><strong>محمد ابو سليمان الحسيني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=144704&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=144704&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد ابو سليمان الحسيني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Sep 2017</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>24</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> تعليقات على كتاب الحروف للفارابي ج1
+		</h2>
+		
+				
+					
+					
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_866577">
+				<blockquote class="postcontent restore">
+					  <span style="font-family: &amp;quot">بسم الله الرحمن الرحيم</span><br />
+  <span style="font-family: &amp;quot">كتاب الحروف لابي نصر الفارابي</span><br />
+  <span style="font-family: &amp;quot">- يقول محقق الكتاب مؤكدا على ان كتاب الحروف هذا هو شرح كتاب (ما بعد الطبيعة) لارسطوطاليس ، و يقول : ان هذا لا يعني أن الكتابين يتفقان في جميع في الموضوعات التي ينظران فيها ، بل هناك فروق يرجع بعضها الى أن الفارابي ينظر في الألفاظ و المعاني المشهورة في لغات و عصور و ملل غير لغة أرسطوطاليس و عصره و ملته ، و بعضها الى ما يرى الفارابي في فحوى كتاب (ما بعد الطبيعة) و مضمونه و أغراض أرسطوطاليس من هذا الكتاب . <a href="http://majles.alukah.net/#_ftn1" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[1]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">- &quot; و يمكن شرح لفظة الحروف في عنوان الكتاب على أنها تعني حروف المعاني التي قلنا إن الفارابي يبحث فيها أكثر ما يبحث في كتابه ، كما فعل أرسطوطاليس قبله في كتاب (ما بعد الطبيعة) . و هذا هو المعنى الذي يغلب على لفظة الحروف التي يكثر ذكرها في نص الكتاب .<a href="http://majles.alukah.net/#_ftn2" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[2]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">- و ابن أبي أصيبعة ينقل خبرا يدل على ان الفارابي استمر في دراسة النحو العربي &quot;أقول : و في التأريخ أن الفارابي كان يجتمع بأبي بكر ابن السراج فيقرأ عليه صناعة النحو و ابن السراج يقرأ عليه صناعة المنطق&quot;.</span><a href="http://majles.alukah.net/#_ftn3" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[3]</span></font></span></a><br />
+  <span style="font-family: &amp;quot">- يقول أبي عبد الله المرزباني &quot;صنف - يعني ابن السراج – كتابا في النحو سماه الأصول انتزعه من أبواب كتاب سيبويه ، و جعل أصنافه بالتقاسيم على لفظ المنطقيين ، فأعجب بهذا اللفظ الفلسفيون ، و إنما أدخل فيه لفظ التقاسيم ، فأما المعنى فهو كله من كتاب سيبويه على ما قسمه و رتبه&quot;.<a href="http://majles.alukah.net/#_ftn4" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[4]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">و هنا يظهر بجلاء التأثر بالمنطق و صبغ النحو به في التقعيد و التقاسيم ، و ان كنا نخالف القفطي فيما أشار إليه من هذا التأثر هو فقط في التقاسيم بما يشعر ان المعاني كما هي من سيبويه ، و هذا سيتضح حيدته عن الصحة بالكشف على ان التأثر بالمنطق ليس شكلي فقط بل يتعدى الأمر الى اعمق من هذا فيدخل في صلب المعاني و تصورها و كيفية نقلها مرة أخرى للغير ، في شكل قواعد و قوانين هي من صنع المنطق و العقل المحدود بأطر معينة لا تتجاوز الواقع المادي و بعض ملابساته بالمعنوي ، و لا ترتقي و لا تقوى على وصف او تصور المعاني الدينية الشرعية فضلا على ان تستوعب او تسير بالمستمع الى تصور حقيقي صائب عن الخالق و صفاته و أسمائه و أفعاله ، على قدر الوسع البشري و كما ينبغي ان يكون على السلامة من التحريف و التأويل أو التشبيه و التمثيل ، و على العلاقات التي تنشأ من هذه الثنائية ، أي الخالق و المخلوق ، و سيتضح بعد ذلك إن شاء الله في جنبات البحث الكثير من هذا العوار و القصور و الذي أدى الى تخطئة القراءات و الاحاديث و كثير من العرب و اللغات .</span><br />
+  <span style="font-family: &amp;quot">و كما اصطبغ النحو بالمنطق عند ابن السراج ، كذلك اصطبغ المنطق بالنحو عند الفارابي ، فأوجد الوشائج بينهما في المنبع ، و هذا لا غبار عليه ، لانهما أي المنطق و النحو هما وسيلتي إيصال معاني و تصورات ذهنية في قوالب ذات أشكال و محددات معينة ، و في الحقيقة فإن المنطق هو جزء من النحو بمفهومه العام و ليس المقصود الاصطلاحي القاصر على العلامة الاعرابية و الاساليب و التراكيب المحدودة ، فنقصد هنا النحو كلغة او لسان فهو يحوي بين جنبيه كل المعاني العقلية بأنواعها و غير العقلية بأنواعها ، و ما أستقل منها و ما اختلط منها بغيرها على درجات و مستويات ، فيكون المنطق العقلي هو أحد هذه التصورات و ليس كلها ، و على ذلك فليس هناك أي غرابة من التشابه بين المنطق و النحو ، سواء على المستوى التصور الذهني و على مستوى الكلام بالألفاظ على نحو المعهود الخطابي ، و أن لكل لغة او لسان نحو خاص بها ، فإنهما يؤدوا بنفس الألفاظ و جل التراكيب و العلاقات فيهما واحدة ، لأن اللغة في النهاية إنعكاس لتصور العلائق بين الموجودات في الواقع الحسي ؛ والمعنوي من حين الميلاد و حتى أخر لحظة قبل ان يطمسها بمحيطه الإجتماعي ، لانه و هو في حالة فطرته يقبل التصورات الصحيحة عن مخلوقيته لخالقه و ان هذه العلاقة تستوجب بعض التكاليف تصدر منه له و لا يشركها مع احد غيره ؛ و هذا القدر كل البشرية متفقة عليه ، لأن مبناه على الخلقة و الغريزة ، و الخالق واحد لكل شيئ ، فجعل هذا التوازن هو مناط التكليف ، و هو القدر العقلي المدرك لما حوله على نسق الطبع البشري ، لما اودعه الله فيه من البيان مع خلقه (خلق الإنسان – علمه البيان) ، فكل ما يصدق عليه &quot;إنسان&quot; فله بيان ، قدرة كامنة به هي اللغة ، واخصها بهذا المعنى لأميزها عن لفظة &quot;اللسان&quot; ، لأن الألسنة تختلف فيما بين البشر و هي من آيات الله ، و لكن اللغة لا تختلف بين البشر ، و هي التي نشير إليها بالغريزة او القوة او الفطرة ، و على حسب كل منطلق تصوري يتبناه صاحب علم عن غيره ، لأنك ستجد الفسيولوجي مغاير عن الفيلسوف في هذا ، و مغاير عن الاجتماعي ، و عن الوراثي ..... الخ .</span><br />
+  <span style="font-family: &amp;quot">و سيكون لنا وقفة متأنية عن اللغة و اللسان ، و الفرق بينهما ، و أن اللغة البشرية واحدة و الألسنة تختلف ، و قد نبعد عن هذا لإثبات أن اللغة هي لكل مخلوق كائن ، و لكن لا نفقه لهم لسان لوجود المانع ، فإذا زال حصل الفهم عنهم ، و بذلك يكون هناك وسائل اتصال مغايرة عن المعهود البشري من الاصوات و الرموز ، فقد تكون وحي او الهام او رؤية او لمة ملك او وسوسة شيطان . فهذه أدلة قوية لإثبات أن اللغة واحدة لتحقق التفاهم و التواصل بين المخلوقات بدون لسان صوتي او رموز كتابية للاصوات ، و هذا فيه مغايرة كينونة اللغة عن اللسان . فيصبح اللسان احد مظاهرها التواصلية فقط و ليس الوحيد فضلا على ان يكون هو اللغة نفسها .</span><br />
+  <span style="font-family: &amp;quot">- يشرع الفارابي كتابه بمعنى حرف (إنّ – أنّ) قائلا تصوره عن هذا الحرف و استعماله عند كمال التصور و الوكادة منه انه يتمثل الشيء فعلا قائما بالنفس كما هو في الخارج ، اي انه وصل به الأمر من الإنسجام و التطابق بين الحس و بين الذهن ما جعله يقين ، فلم يترك شاردة و لا واردة لها اسهام في ايضاح الصورة و تعينها الا أن احاط بها و تملك زمام أمرها و تم إخضاعها لتشكل الصورة المطبوعة في الذهن كما هي في الخارج ؛ و إن كانت هذه العملية نسبية بما هو مقدور للحواس و جودة الذهن و كمال التصور المبني عليهما ، لأن إدراك الأمور على حقائقها متوقف على هذه العوامل مجتمعة و على كيفية توظيفها التوظيف الأمثل باستهلاك كل المستطاع في ذلك مع خلو اي مانع يعوق ذلك او يشوهه ، ثم و من يمعن النظر و يمهل التدبر في كلامه يجده يشق المعنى على اساس تعلقه بالشيء المراد تصوره الى شقين ، اما الاول فهو شق العلم و هو خاص بالذهن ، و الثاني هو شق الوجود و هو خاص بالخارج العيني ، او ما يشار إليه بـ ما صدق ، و نص كلامه &quot;إنّ معنى انّ الثبات و الدوام و الكمال و الوثاقة في الوجود و في العلم بالشيء&quot;<a href="http://majles.alukah.net/#_ftn5" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[5]</span></font></span></a>.</span><br />
+  <span style="font-family: &amp;quot">و من ادل ما يكون على الفرق بين دلالة اللفظ و الدلالة باللفظ أنه يستخدم معنى أنّ في شرح نفسها ، كتوقف الأمر على نفسه ، فيقول :&quot;إنّ معنى أنّ&quot; ؛ فالأولى هي دلالة اللفظ و الثانية الدلالة باللفظ ، و ربما هذا ما دعى القرافي للتفريق بينهما ، ... ينظر في كلامه للربط .... ، و ما يناسب هذا القول ان الاولى موضعها موضع الاستدعاء لمعناها المغروز في النفس ، و هذا يكون في التجرد من العلائق بغيرها من الالفاظ التي تحدد معناها بجوار اختها ، فكأنها جاهزة للعمل فور استدعائها منفردة و لهذا كانت موقعها في الكلام هو الأول منه ، و لو كان توقف ذلك على شيء أخر لما أمكن الإفادة منها في هذا الموضع ، و توقف الشيء على نفسه فيكون دورا و لا يمكن ان يفيد معنى ابدا .</span><br />
+  <span style="font-family: &amp;quot">و هذا بدوره يتضمن معنى الغريزة اللغوية التي لا تتوقف على الشخص في تحصيلها او ايجادها فهي مخلوقة معه ، و هي المنطلق لإدراك نفسها و غيرها بها ، فهي لا تحتاج الى تفعيلها من القوة الى الفعل الا التنبيه على سبل اخراجها من الصورة الوجدانية الى الواقع بأصوات عرفية اجتماعية يتم اكتسابها من المحيط بالمران و المحاكاة بالتعاون مع الحواس الاخرى مجتمعة ، و هذا الانعكاس الآني للصورة الذهنية الى ظاهرة صوتية تؤكد غريزية هذه القدرة اللغوية و غريزية هذه اللغة ، و تماثل هذه الوحدات الصوتية للمعاني العقلية في تشكيل و خلق التصور الكامل و المؤدي لمعنى يمكن الوقف عليه سواء للنفس او للغير في عملية التواصل ، هو ما يفسر كيفية اكتساب اللسان للطفل من محيطه الإجتماعي البشري ، فالطفل تصوراته مباشرة حسية بسيطة و قوية في فرض نفسها عليه ، ربما لإرتباطها باللذة و الألم المباشرة و دوافعه الغريزية المتطلبة للوجود مع الراحة و السعادة و الامن ، و هو بعد ذلك يبني من هذه الوحدات البسيطة و المباشرة ؛ سواء الصوتية او الذهنية ؛ كل ما يجول و يصول على العقل و الوجدان و العلائق بينهما ، فيصور صور ذهنية معقدة و مركبة و يدركها من الأخر عن طريق الوحدات الصوتية المركبة بأسلوب معين و نظم محدد متعارف عليه بينهم ، فإذا ابدع هو او غيره معنى جديد سهل عليه ايصاله لغيره كما يسهل عليه فهمه عن غيره ، و اذا ادرك معنى مركب و معقد لظاهرة ما استطاع ان يفككه الى عناصره الاولى و اعادة صياغته بطريقة يسهل على غيره فهمها .</span><br />
+  <span style="font-family: &amp;quot">و هذه العلاقة بين الوحدات الصوتية و الذهنية ، متوقفة على الذهنية اي العقل ، و لذلك هو مناط التكليف و التشريف ، و لا يمكن تصور او حتى تخيل هذه العلاقة على انها مكتسبة او من وضع البشر ، لأنه لو كان كذلك لما استطاع احد ان يتعلم لسان احد لتوقف هذه العلاقة في مبدأها على نفسها ، فكيف يتسنى لي ان انقلها لغيري مع غيابها عنده ، و كيف يتم التوافق فيما بيننا و منطلقنا ليس بواحد ، لا يجمعنا نقطة متفق عليها ، هذا كمن يريد تحديد جهة اليمين لشخصين متقابلين ، فهي يمين لأحدهما و يسرى للأخر و العكس صحيح ، و لتحديد و التعيين يجب ان يوحد نقطة ما تكون هي محل الإتفاق كمعيارية للمقارنة ، و هذا التحديد يحتاج لتحديد في نفسه اولا و لذلك لا بد من توفره متماثلا في كل البشر اي العلاقة بين الوحدات الرمزية سواء كانت صوتية او اشارية او كتابية ، و الصور الذهنية المعنوية ، هذه العلاقة هي اللغة .</span><br />
+  <span style="font-family: &amp;quot">و كمثال على ذلك رمزية &quot;أحمر&quot;  الصوتية او الكتابية او الاشارية : هو موضوع للدلالة على انطباع تصوري حسي بالعين مع المخ ، جل البشر متفق عليه ، لأن له صورة ذهنية معينة متميزة عن باقي الصور التي تنتمي الى هذه الفئة التصورية ، و مع هذا لا يوجد يقين على ان ما اراه هو عينه ما تراه مما قلنا عليه &quot;أحمر&quot; فلا سبيل للوقوف على انطباعك التصوري الذهني ، و مما يؤكد ذلك ظاهرة &quot;عمى الالوان&quot; فقد يوجد من يتفق معك على عرفية لون معين باسم معين كـ &quot;أحمر&quot; مثلا ، و في الحقيقة هو لا يراه كما تراه انت ، لخلل يعتريه لا يجعله يفرق بينه و بين الاخضر مثلا ، و لكن لوجود العلاقة بين الوحدات الرمزية و بين الصور الذهنية استطعتم التواصل و الاصطلاح على هذا الاسم لهذه الصورة المعينة المنطبعة في الذهن ، بغض النظر عن تماثلها في الحقيقة بينكما ، فنجاح هذه العلاقة معتمد على التمايز الذهني لشتى الصور المختلفة ، و هذا التميز هو عين المقصود بالعلاقة السابق الاشارة اليها ، و هي لب اللغة ، و هكذا باقي المعاني كلها بدون استثناء فلا احد يستطيع الوقوف على الصورة الذهنية عند الاخر الا عن طريق الاستدعاء لما هو موجود قبلا و متفق عليه مسبقا بين جميع البشر بقدر كاف لتحقيق التواصل بينهما و بقدر كاف لفهم كلام الله و تصوره في النفس .</span><br />
+  <span style="font-family: &amp;quot">فالمسألة لا تتجاوز الحق اذا قلنا انني عند تحدثي مع الاخر كأنني اتحدث مع نفسي ، لان علائق الوحدات الرمزية بالصور الذهنية عندي هي القاعدة المشتركة بيننا ، سواء في الفهم او الافهام ، فلن افهم الاخر الا اذا كنت افهم نفسي اولا ، وفهم النفس هو الاتساق بين الوحدات و الصور لتأدية معنى كامل يمكن الوقوف عليه ، و كذلك فلن افهم كلامه الا اذا كان يمكن فهمه عندي مسبقا و كأنه حديث نفس ، و الحاصل ان كمال الفردية اللغوية ، اي القائمة بكل فرد ، هي الأصل ، و يعزز ذلك التصور ان من حرم نعمة الكلام و السمع و أحيانا الرؤية ايضا ، يستطيع ان يتصور المعاني من خلال حواسه الاخرى او من خلال ما تبقى منها قبل زوالها ، و كحالة متجسدة لمثل هذا هي هيلين كيلر ، ففي سن 18 شهرا فقدت حاسة السمع و البصر و بالتالي القدرة على الكلام ، و مع ذلك تصف و تنقل كل المعاني و التصورات الذهنية المتسقة مع حواسها و المحيط كما تتسق معنا تماما ، فبعد ان عُلِّمت طريقة التواصل عن طريق التلامس بالأصابع ثم طريقة برايل ، استطاعت أن تكتب و تقرأ و تنقل لنا عالمها الذي لا يختلف عنا في اي شيء .</span><br />
+  <span style="font-family: &amp;quot">و الشاهد هنا ان اللغة مخلوقة مع الانسان و طريق للبيان ، و أن الذهن هو أصل لها و معتمد ، حتى و لو لم يتصل مع غيره ، ففهم هيلين لغيرها و افهامها هو تجسيد لمفهوم اللغة الذي نريده ، خاصة و انها في فترة غياب التواصل تنقل لنا تصوراتها و انطباعتها في هذه الفترة بطريقة مفهومة متسقة تماما مع باقي البشر و لا اثر اطلاقا لغياب التواصل اللساني او الرمزي على كمال و صحة التصورات الذهنية و وصف العلائق فيما بين الموجودات في محيطها ، و على هذا المستوى الذهني في هذه الحال ما يؤكد معنى اللغة الحقيقي و أن اللسان مظهر لها على مستوياته المختلفة من صوت او اشارة او كتابة او حتى اتصال موجي كهرومغناطيسي بالمخ او ما نجهله من اتصال روحاني بصوره المتعددة من وحي و الهام و لمة الملك و وسوسة الشيطان .</span><br />
+  <span style="font-family: &amp;quot">فتمام الادراك و التصور الذهني اللغوي غير متوقف على الأخر ، و غير متوقف على اللسان بصوره المختلفة ، فهو يؤدي وظيفته المنوطة به كما ارادها الله من الخلق ، اما ادراك المستمع او القارئ او المشاهد لما في ذهن المصوت او الكاتب او المشير ، لا يكون الا عن طريق اللسان بصوره المتعددة ، و لا يحسن هذا الادراك الا بتوفر وجود مثله عنده ، و المثلية هنا لا تعني عين الشيء و لكن تعني ماهيته و تتحقق بالقدر الكاف المؤدي للوظيفة المنوط بها. و لهذا فقد ارسل الله سبحانه و تعالى كل الرسل و الانبياء صلوات الله عليهم اجمعين ، بلسان اقوامهم ليحقق سهولة الذكر و التذكر و فقه قولهم ، و هذا يشير بقوة ان اللغة واحدة عند كل البشر و ان هذه اللغة مهيئة للتواصل الرباني الالهي من خلال كلام الله المرسل مع الرسل و الانبياء ، و هي المنوط بها التكليف و تمام الاهلية و تحمل المسؤلية في تحقيق التوحيد و العبادة (وما خلقت الجن و الانس الا ليعبدون) فتعلق التصور و تمامه في تمام الخلق و وقوعه لتحقق العبادة ، فالعبادة منوطة بالخلق ، (خلق الانسان علمه البيان) فخلق الانسان و تعليمه البيان (اللغة) هو للعبادة المستحقة لله عليهم . و هذه هي دعائم العبادة هي الخلق و البيان .</span><br />
+  <span style="font-family: &amp;quot">و هذا المعنى من باب : عدم العلم ليس علما بالعدم ، فعدم وقوفك علما بالتصور الذهني للأخر ليس معناه انه لا يوجد له تصور ذهني و قدرة لغوية ، و أن العدمية هنا لم تطل الا اللسان و صوره المتعددة فقط ، و هذا من الوضوح بمكان لأن يخفى على اي عاقل و بهذا يتضح انه لا علاقة بين اللغة و اللسان في نطاق الوجود و الكينونة ، اما العلاقة الاشارية فهي موجودة بالطبع و مناط التواصل و الفقه لكلام الناس مع بعضهم .</span><br />
+  <span style="font-family: &amp;quot">- ثم انتقل الفارابي الى حرف (متى) و تعلقه بـ &quot;الحادث&quot; من خلال السؤال عن نسبته الى الزمان المحدود المعلوم المنطبق عليه ، و عن نهايتي ذلك الزمان المنطبقتين على نهايتي وجود ذلك الحادث – جسما كان ذلك أو غير جسم – بعد أن يكون متحركا أو ساكنا ، أو في ساكن أو في متحرك . و ليس بشيء من الموجدات يحتاج الى زمان يلتئم به وجوده أو ليكون سببا لوجود موجود أصلا . فإن الزمان متى ما عارض باضطرار عن الحركة ، و إنما هو عدة عدها العقل حتى يحصي به و يقدر وجود ما هو متحرك أو ساكن . و ليس الحال فيه مثل الحال في المكان ، فإن أنواع الأجسام محتاجة الى الأمكنة ضرورة في الأشياء التي أحصاها من قبل . <a href="http://majles.alukah.net/#_ftn6" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[6]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">نحن نتفق معه أن الزمان هو عملية عقلية بحتة في حقيقة أمره و لذلك في الأحلام يمر الزمان الكثير و هو في حقيقة امره الواقعي بالنسبة لأمارته من ضوء الشمس يكون مقداره قصير جدا ، و كذلك المواقف الحزينة و المقلقة تكون طويلة جدا على النفس و العقل و هي بالنسبة لضوء الشمس تكون قصيرة جدا ، و العكس صحيح ، و نضيف هنا معنى أخر و هو سرعة الادراك المعيرة بالوقت الشمسي اي دوران الأرض حول الشمس ، فملاحظة الأرقام على شاشة ساعة رقمية تتوالى بسرعة معينة ، اي عدد المرات الذي يظهر بها الرقم بالنسبة للزمن الشمسي المحدد ، فمثلا عشرة ارقام لكل ثانية ، خمسة ارقام لكل ثانية و هكذا ، و هذه الساعة تكون مع الشخص عند سقوطه من ارتفاع معين على شبكة أمان بالأسفل ، فقد تم رصد ادراكه لتحديد الرقم و هو على الأرض ، و رصد ادراكه للرقم و هو اثناء السقوط ، فكانت مخالفة لما كان على الأرض ، فقد زادت قدرته في مط الزمن الادراكي و لذلك استطاع ان يدرك الرقم المسرع على الشاشة بالنسبة لما كان على الأرض ، فالذي لم يدركه على الأرض ادركه و هو يسقط ، و هذا لأجل احساسه بالسقوط و الخوف ، و في هذا دلالة على أن الزمن هو عقلي و نفسي و بمعزل عن الخارج . و مما يدعم هذا ايضا هو الساعة البيولوجية داخل كل انسان فهي ذاتية العمل بمعزل عن الخارج و هي قد تتوافق و تنسجم مع الخارج او لا حسب الظروف المحيطة بالانسان .</span><br />
+  <span style="font-family: &amp;quot">اما ما لا نتفق معه فيه هو ما أشار اليه أن العقل هو من صنعها لنفسه كي يدرك الحوادث من حوله ، و لكن كله مخلوق سواء الزمن الخارجي و علامته الشمس و القمر ، او الزمن الداخلي و هو الذي يترجم و يضمِّن و يتسق مع العلامات و الامارات الخارجية من شمس و قمر ، و هذه العلاقة هي غريزة خِلقية كاللغة تماما لما بين الوحدات الصوتية و الصور الذهنية ، كذلك علاقة الشمس و منازل القمر بالنسبة للزمن الداخلي فينتج الوقت .</span><br />
+  <span style="font-family: &amp;quot">فاللغة تقابل الوقت ، و اللسان و صوره يقابل علامات الشمس و منازل القمر ، فهناك دائما جانبان على محور الانسان ، جانب الخارج و الداخل ، الباطن و الظاهر ، و العلاقة بينهما هي الادراك و التصور و هي الروح التي تحل في الجسد ، فالروح هي جانب و الجسد جانب مقابل ، و العلاقة بينهما هي الانسان .</span><br />
+  <span style="font-family: &amp;quot">و بتحليل علاقة الزمان بالمكان نجد انها علاقة كينونة ، اي أن الكيان واحد ، و المظهر مختلف ، فأحدهما تميز بما سمي بالزمان و الأخر تميز بما سمي بالمكان ، فنتج منهما &quot;الدنيا&quot; اي هي ترجمة هذه العلاقة ، فمكان الشمس و القمر بالنسبة للأرض هو الذي يحدد و يميز الزمن ، فأصبح المكان المعين هو زمان معين ، و هذه العلاقة الكينونية التي دعت بعض المفكرين بتسمية هذه العلاقة بـ &quot;الزمنكان&quot; ، و هي التي أدت الى قول أينشتين بالبعد الرابع و هو الزمن بالإضافة للابعاد الثلاثة الخاصة بالمكان ، و كلما ازداد الادراك و العمق التحليلي يزداد عدد الأبعاد الممثلة لماهية الشيء ، و الزمن كالمكان تماما فهما مخلوقان من خلائق الله ، و لذلك سيأتى بالزمن على هيئة كبش فيذبح يوم القيامة و بموته يعلن الخلود لأهل النار و لأهل الجنة .</span><br />
+  <span style="font-family: &amp;quot">و على ذلك لا يستطيع الإنسان الانفكاك عن تضمين الزمن في تفكيره و تصوره الذهني ، و لا عن ادراكه المباشر للأشياء من حوله ، او حتى استجراره في العملية الذهنية و العقلية لشيء ما . بهذا يتبين توهم الفصل إبتداءا لكي يتسنى وضعه للاحصاء او التقدير كما ذكر الفارابي ذلك ، و لكن غلب عليه القوة الحسية و الغالب الوجودي للأشياء و فرض نفسها على التصور ، و بالمقابل خفاء الزمن في التمايز الحسي مع المكان ، فكان وقعه و سبقه في التفكير و الادراك اغلب و لذلك قال ما قال من وصفه المكان بالضروري في الوجود و انه بخلاف الزمان الذي هو ليس له سبب لوجود موجود أصلا ، و هذا بناء على تمام و عمق التصور ، فعلى مستوى الخلق فهما سواء في ذلك ، و على مستوى الادراك لهما هما كذلك ايضا سواء ، و على مستوى الفعل الانساني يظهر قوة التمثيل لكليهما في الحس و الوعي ، فيكون الغلبة و القوة من نصيب المكان ، لأنه محل لتصرف الإنسان في صوره و اشكاله و تنقلاته و معاشه ، فوجوده مستمر و مستغرق للحس و مستولي على قدر كبير منه ، و لذلك حضوره قوي و ظهوره بائن .</span><br />
+  <span style="font-family: &amp;quot">اما الزمن فليس للإنسان فيه تصرف و لا دخل ، و ليس للإنسان الا ادراكه فقط ، فهو ظرف مستغرق مستمر الحركة و التوالي ، و ليس له صور يستطيع الإنسان ان يتصرف فيها بشيء من التغيير ، بخلاف المكان الذي من صوره ما هو متاح للإنسان بالتصرف فيه ، بالتنقل و بالتحريك لما هو ساكن ، او تسكين ما هو متحرك ، و الاقتطاع منه على معيار محدد و مقياس محدد فيسهل تصوره و التعامل معه ، كما في مساحات الأراضي و قياس الأعماق و الأطوال و التكعيبات و خلافه ، اما الزمن فهو صورة واحدة ممتدة مستمرة التنقل على رتيبة واحدة بوحدات معينة ، على حسب حساسية الادارك لها بالنسبة للانسان.</span><br />
+  <span style="font-family: &amp;quot">- ثم يقول الفارابي في نهاية عرضه لعدة مفاهيم عن المقولات أن مفهوم المقولات الفاظ لها دلالة على شيء ما معقولة ، هذا الشيء يتضح من امثلته المضروبه بالحد و الرسم و القول المركوز في النفس : &quot;وبهذه سميت المقولات مقولات ، لأن كل واحد منها اجتمع فيه أن كان مدلولا عليه بلفظ ، و كان محمولا على شيء ما مشار إليه محسوس – و كان أول معقول يحصل إنما يحصل معقول محسوس ، و إن كانت توجد معقولات معقولات حاصلة لا عن محسوسات فذلك ليس بينا لنا منذ أول الأمر - ، و كانت أيضا مفردة و المفردة تتقدم المركبات .&quot; <a href="http://majles.alukah.net/#_ftn7" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[7]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot"> و على الإختصار فالمقولات هي الالفاظ المقابلة للصور الذهنية ذات المعاني المحددة ، و لكن خصها الفارابي بشيئين هما : الإفراد و الحس ، فجعلها مقابلة للمحسوس المفرد ، فالمقول هو لفظ دال على محسوس مفرد ، ثم يتطور التصور الى المجردات المركبة ، و بذلك تؤول في نهاية الامر ، فكأن المقولات هي وحدات بناء التصور الذهني التام المعنى ؛ الكاف في الدلالة التي تفيد إفادة يحسن السكوت عليها ، و ما يعنينا هنا هو قوله أن هذه المقولات هي : محمولات لشيء محسوس مشار إليه ، فجعل المعرفة (نظرية المعرفة)  مبدأها حسي و هيئة مبناها حسي ، و ربما هذا يكون فيه مشوبة مخالفة للفطرة التي يولد عليها الإنسان من قبول الحق ، و الحق هو معرفة الخالق و حقوقه ، و هذه ليست حسية و لا يتصور الإشارة إليها ، و لكن يجوز بناء المعقولات الغير حسية على الحسية بالمثال و الإعتبار و التنبيه ، و كل هذا يشير الى المعاني الغريزية المشار إليها و المعتبر بها و المنبه عليها .</span><br />
+  <span style="font-family: &amp;quot"> و هذا فيه لفتة الى قصور المعاني المنطقية المحدودة بالحسيات و ما يتعلق بها عن الأداء للمعاني الشرعية الدينية ، و إن كان هناك علاقة وشيجة بين المنطق و النحو فقد اتضح عواره لمعاني النحو أن تؤدي معاني الشرع ، و ان كانت لا تقصر عنها كلها ، لان هناك قدر مشترك بينهما ، و لكن يفترقا في معاني شرعية ، نجدها موظفة عند العلماء الذين تصدوا الى تفسير النص الشرعي القرآن و السنة ، من المذاهب العقلية و الدينية المختلفة عن مذهب أهل السنة و الجماعة ، فتجدها موؤلة للنص لخدمة المعنى المقصود من وراء الاستشهاد به ، ثم يأتي مستوى أخر من التأويل (الهرمونطيقيا) للنص المعرب من قبلهم و هو يتناول القرآن و السنة و النص الأدبي العربي فيما لا يختص بالمعاني الشرعية الدينية ، فتجدهم يختلفون في الإعراب لنفس النص و استخراج المعني منها ، و يختلفون في الاحتجاج و التقعيد و الشاهد و القاعدة و الأصول ، و إن كان هناك قدر متفق عليه من الكل فهو من القوة و الوضوح في المنطق اللغوي بحيث لا يخرج عليه و نجده هو الجزء المنوط بالمنطق العقلي في التصورات و بناء التراكيب و الأساليب و المفردات و معناها الإفرادي و التركيبي .</span><br />
+  <span style="font-family: &amp;quot">- ثم يتناول توليد المعقولات من بعضها البعض بنوع من التجريد من الدلالة على المحسوس المشار إليه ، فيصدق على كثير في الخارج فيكون الجنس ، و الذي دونها هو النوع  ، و قد يتولد معاني معقولة أخرى من إضافة بعضها لبعض ، او تعريف بعضها ببعض ، او تخصيص بعضها ببعض ، او تعميم بعضها ببعض ، و هكذا تتولد المعقولات الثواني .و هذه العلاقات هي في الحقيقة علاقات نسبية في التجريد و التعميم ، على تدرج يكون فيه الشيء محصور بين درجتين ، يكون بالنسبة للأعلى نوع ، و للاسفل جنس ، و الذي هو اعلاه يكون جنسا له ، و الذي هو اسفله يكون نوعا له ، و هكذا الى مالا نهاية من الإدراكات النسبية  .<a href="http://majles.alukah.net/#_ftn8" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[8]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">و قد تمثل لي هذا المعنى من قبل في مقتبل شبابي و ظلت مشكلة فكرية تحتاج لبرهان لوقفها ، فكيف يعقل العقل نفسه ، و أن هذه العلاقة الثلاثية ما بين العقل كمُدرِك و بين العقل كمُدرَك و بين العقل كمادة للتناول ، و بعد الفراغ من هذه العلاقة و علمها ، أدركت أن هناك عقلا يتعالى على هذه العلاقة الثلاثية و كأنه عقلا رابعا ، عقل هذه العلاقة الثلاثية ، و هكذا الى ما لا نهاية من الإدراكات المتعالية ، فكلما تدرك مُدرَك يمكن إدراكه الا أن يكون مدروك لك بالقوة ، فتخرجه من القوة الى الفعل بإدراك أخر ، و هذا حاله كحال من سبقه ، و تتوالى هذه الإدراكات أو المعقولات النسبية من دون توقف .</span><br />
+  <span style="font-family: &amp;quot">فكل معنى معقول يتم إدراكه بنفسه ، اي انه هو الحاكم و المحكوم عليه و المحكوم به ، يتلون على نفسه و يتمايز في نفسه دون الخروج عن ماهيته ، فهو مدرك لنفسه و تمايزاته الداخلية بإنتقال آني ، لا يسمح بالإستقلال التام و لا يسمح بالتوحد التام ، كأن سرعة هذا الإنتقال تتم بسرعة لا يمكن إدراكها  .</span><br />
+  <span style="font-family: &amp;quot">- قوله : &quot;و ذلك على مثال ما توجد عليه الألفاظ التي توضع في الوضع الثاني ، فإنها أيضا يلحقها ما يلحق الألفاظ التي في الوضع الأول من الإعراب . فيكون (الرفع) مثلا أيضا مرفوعا برفع ، و (النصب) يكون أيضا منصوبا بنصب ، ثم هكذا إلى غير النهاية .&quot; <a href="http://majles.alukah.net/#_ftn9" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[9]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">فهنا ينص الفارابي على مدى الترابط بين المقولات المُعْرَبة (الإعراب) و بين المعقولات (التصورات العقلية) ، فكأن التصورات العقلية محكومة هي أيضا في مستوياتها المختلفة بنفس قوانين الإعراب التي تمثَّلَها فعليا بالنصب و الرفع ، فعلامة النصب و علامة الرفع هما علامتان يشيران إلى تصور العلاقة العقلية ما بين الأشياء و الأحداث ، و ما بين التصورات العقلية نفسها التي تُكوِّن وحدات لتكوين مستويات أعلى أو أعمق من الفكر أو العقل ، و بالتالي تختزل هذه العلاقات في حالتين فقط : النصب و الرفع .</span><br />
+  <span style="font-family: &amp;quot">هذا من ناحية ، و من ناحية أخرى أرى أنه تمثل بالرفع المرفوع ، و بالنصب المنصوب ، و هذا كقولنا العقل المعقول ، و معنى المعنى ، و الإدراك المدروك ، و تعريف التعريف ، و حد الحد ، و هذا كعدم إدراكك لشيء ما هو إدراك لعدم إدراكك ، و كوجود الوجود ، فكان الغرض إبراز معنى غير المعنى المباشر للحركة الإعرابية ، فهو يقصد معنى التراكيب النسبية ، اي المعقولات الثواني ، فالرفع له معنى مقول أولي متمثل في لفظ ضمن تركيب معين تتحكم فيه قرائن أخرى و النظرة المعرفية المتبناة أولا ، و هي هنا و كما أشار هو صراحة أنها حسية مشار إليها ، على الأقل في البداية ، ثم يأتي بعد ذلك المعقولات الغير محسوسة ، و لكن هي في نهاية الأمر مبتناة من المحسوسات ، و العلائق التي من المحسوسات ، و هذا البناء المعرفي لا يتمشى مع النظرة الإسلامية بإقرار الميثاق الأول و نحن في الذر و الإشهاد على أنفسنا ، ثم الفطرة التي نولد عليها ، فكلها في مستوى غير محسوس و غير مرتبط بالمحسوس ، على الأقل في وعينا الحاضر في هذه الدنيا ، فنحن لم نعلمها على صورتها هذه الا بالإبلاغ عنها ، و لكن قوتها حاضرة فعلا في الوجدان و الاستعداد لقبول الحق و الإطمئنان له ، و الراحة به .</span><br />
+  <span style="font-family: &amp;quot">و من المؤكد انه ليس هناك ما يعرف برفع المرفوع ، و لا نصب المنصوب ، و يمكن بعد تخيل هذا ان نضيف ايضا ، رفع المنصوب ، و نصب المرفوع ، لأنه من السهولة تصور فاعل هو في الحقيقة مفعول ، فتصور المفعولية لمن اتصف بالفاعلية على أساس مستويين هما الأول و الثاني ، اي المعقولات الأول و المعقولات الثواني ، و هذا موجود في المذهب الجبري و بعض المتصوفة و غيرهم ، فليس هناك فاعل على الحقيقة إلا الله ، و أن انتساب الفاعلية على المستوى الأول (الإعرابي) لشخص ما مثلا ، هو في المستوى الثاني يكون مفعول به ، و بالتالي من حقه أن يكون منصوب بالمفعولية ، و هذا المستوى ليس له تمثيل في الإعراب بحركة أو علامة عند النحاة .</span><br />
+  <span style="font-family: &amp;quot">و لكن هذه مستويات عقلية مركبة اكثر عمقا من المستويات الاولى الخاصة بالإعراب النحوي ، و لكن من يتتبع مثل هذه المستويات الثواني عند العلماء يجدها تؤثر على مذاهبهم النحوية و تقعيديهم النحوي و على حجية الشاهد و غير ذلك . فتجد العالم ذو المذهب العقلي يتبنى القياس و يعلو به على مستوى النقل في كل علم يحترفه ، فإن كان نحوي يميل إلى المذهب البصري على الكوفي ، و يميل للمذهب المعتزلي في العقيدة على مذهب السلف ، ، ويميل للمذهب الحنفي في الفقه على المذهب الحنبلي ، و يميل لنظرية المجاز و الحقيقة في تقسيمه لدلالات الألفاظ ، و يميل الى تبني نظرية اصطلاح و وضع اللغة على توقيفها ، و هكذا تجده على مسار طبعي يميل لكل ما ينجذب له من المعقولات و المقولات ، و يسهل في الغالب التنبأ بترجيحه عند التعارض ، و لكن ليس هذا حتمي الترابط فقد يختل احيانا لأسباب او موانع يمكن الوقوف عليها بالتمعن و التدبر .</span><br />
+  <span style="font-family: &amp;quot">فالرفع و النصب لم يقصد منهما المعنى الاصطلاحي عند النحاة ، و لكن يقصد المعنى المعقول من المقولات ، اي الالفاظ الدالة على معنى معقول ، و في هذا شبه بين الإعراب و بين المنطق ، و لكن يفترقا في غياب إعراب لهذه المعاني في المقولات ، اي الالفاظ الدالة على معنى معقول ، فلا تتمثل على الالفاظ بحركة او علامة الا الفتحة و الضمة فقط للمعاني الأُول ، و اذا وقعت المعاني الأولى في موضع يجوز عليها معاني ثواني مركبة منها لا يُتَمَثَّل لها بعلامات او حركات إعرابية .</span><br />
+  <span style="font-family: &amp;quot">- &quot; غير أن التي تمر إلى غير النهاية لما كانت كلها من نوع واحد صار حال الواحد منها هو حال الجميع و صار أي واحد منها أُخذ هو بالحال التي يوجد عليها الآخر. فإذا كان ذلك كذلك فلا فرق بين الحال التي توجد للمعقول الأول و بين التي توجد للمعقول الثاني ، كما لا فرق بين الرفع الذي يُعرَب به (زيد) و (الإنسان) الذي هو لفظ في الوضع الأول و بين الرفع الذي يُعرَب به لفظ الرفع الذي هو في الوضع الثاني ، فالحال التي يكون عليها إعراب ما في الوضع من الألفاظ ، بتلك الحال يكون إعراب ما في الوضع الثاني منها . &quot;<a href="http://majles.alukah.net/#_ftn10" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[10]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">- &quot;و ذلك على مثال ما توجد عليه الألفاظ التي توضع في الوضع الثاني ، فإنها أيضا يلحقها ما يلحق الألفاظ التي في الوضع الأول من الإعراب .&quot; . الوضع الاول هو الألفاظ الموضوعة للدلالة المعقولة و المشار إليها كمحسوس ، هذه الألفاظ لها إعراب بما احتوته من معنى ، فيكون مرفوع و منصوب . ثم الألفاظ الموضوعة للدلالة العقلية المتكونة من الدلالات الأولى و هي مثلا (الرفع) ، لأن الرفع معنى عقلي لا يشير لمحسوس و له وضع لفظي يشير الى معناه و هو (الرفع) و كونه لا يخرج عن كينونة الألفاظ الموضوعة لمعاني فيجوز عليه الإعراب ايضا ، فيقال (رفع مرفوع) و (نصب منصوب) ، و بمعرفة معنى و دلالة لفظ (الرفع) كمعقول ثان ، فهذا المعنى هو ما يتكرر اذا ما أجرينا عليه نفس العملية الإجرائية التي تمارس على الألفاظ ذات الدلالات لنكون معنى ثان ، يكون موضوعه الأول (معقول ثان) و موضوعه الثاني (معقول ثان) ايضا ، و ما جرى على هذا يجري على التالي ايضا ، فيكون الموضوع الأول هو معقول ثان نتج عن علاقة دلالية دخل فيها معقولان ثانيان ، و ينتج معقول ثان ايضا ، و هكذا الى ما لا نهاية . فهو يقول أن هذه العملية العقلية الدلالية التي ينتج منها كل مرة معقول ثان من معقولات ثوان ، هي واحدة ، و من علم كيفية الأولى يعلم الثانية و الثالثة و هكذا ، فيكفيه معرفة الأولى فقط لإدراك باقي العمليات لأنها في جوهرها و حقيقتها متماثلة ، و لذلك مثل لهذه العلاقة في الإعراب بقوله : رفع (زيد) فعملية رفع زيد لا تختلف عن عملية رفع (الرفع) الذي هو في الوضع الثاني ، و هو وضع ثان لأنه لفظ موضوع بإزاء معنى عقلي ذو دلالة محددة و إن كان مركب من موضوعين أحدهما أول و الأخر أول او ثان او .... الخ ، و هكذا فلو قلنا : رفع مرفوع برفع ، هذه في الثلاثية الأركان ، و كلما تزيد فيها لا يخرج عن كونها مثل الأولى (الرفع المرفوع) ، و لكن المواضع هي فقط ما تتغير بمدخلات جديدة و تبقي العملية الإجرائية كما هي .</span><br />
+  <span style="font-family: &amp;quot">و يشير إلى أن عدم توقفنا عن ملاحقة هذه العملية المعرفية الى نهاية معلومة يمكن الوقوف عليها ، أنها ليست ضرورية للإكتفاء من المعرفة العلمية التي يحسن الوقوف عليها و لا تخل بكمال العلم و المعرفة ، فيكفي معرفة الأولى فقط (الرفع) لتعرف كل معنى مركب من معقولات ثوان تالية على ذلك ، فرفع الرفع هو رفع ، و رفع الرفع المرفوع هو رفع ، و رفع الرفع المرفوع بالرفع هو رفع ايضا ، و هكذا الى ما لا نهاية ، و مثل ذلك بـ(زيد) و (الإنسان) فبمعرفتك للإنسان فقد عرفت كل ما يصدق عليه إنسان ، و بالتالي كل إنسان على الأرض داخل في هذا ، و حتى و لم تنتهي افراد الإنسان ، فهي كإنتهاء افراد الإنسان ، لأن العدد أو الكمية هو في الحقيقة خارج عن مفهوم الوضع اللفظي للمعقولات الأول و الثوان . فماثل بينهما، أحدهما عقلي و هو معنى الإنسانية و ما يجرى عليه في عقله و تطبيقه على كل ما يصدق عليه الى ما لا نهاية ، و الثاني لفظي و هو الإعراب : فإعراب اللفظ الأول لأجل وضعه بلفظ معقول له دلالة على هذا المعنى ، لا يمنع من إعراب الثاني الذي أعربنا به اللفظ الأول لأنه وضع في نفس الموضع الذي من أجله أعرب بالرفع كما حدث للأول و هكذا ، فكما جاز على الأول يجوز على الثاني و هكذا الى ما لا نهاية . فمن قدر على إعراب اللفظ الأول بأنه مرفوع لأجل وضعه فهو قادر على إعراب لفظ (الرفع) ايضا لو كان وضعه هو الرفع و هكذا يدور الأمر ، فيصبح رفع للرفع .<a href="http://majles.alukah.net/#_ftn11" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[11]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">و هذا كقولنا : جاء زيدٌ ، فزيد مرفوع ، ثم قولنا : رفعٌ زيد كان لأجل كذا ، فجاءت لفظة (رفع) مرفوعة أيضا ، ثم مجيء جملة رفع الرفع في موضع رفع ايضا و هكذا ،، و لكن ما أراه انا هنا لا يعدو أكثر من تمثيل لفكرة التعقل لمعنى ما ، فهو تعقل مجرد عن أي شيء ، اي ليس له علاقة بمدخلاته المعقولة في نوعيتها او كميتها او اي من هذه الأوصاف ، فهو وصف مجرد لعملية تعقل تضع لها لفظ يدل عليها يسمى مقول ، و هذا المقول له دلالة يشير إليها هي التي تسمى معقولة ، و لا يتجاوز ضرب أمثلة الفارابي الخاصة باللغة عامة هنا و الإعراب خاصة أكثر من أن الألفاظ هي موضع للتعقل من خلال ما تشير اليه من دلالات معقولة فقط ، و لم يتعرض لمعنى رفع زيد في الأساس كي يوضح معنى رفع الرفع و هكذا الى ما لا نهاية ، فهو استخدم أمثلة منها ما صادف مصطلحات عند النحاة هي الرفع و النصب فقط ليس الا ، فيمكن أن نقول أن خلاصة كلامه ، و لا نظن أننا جاوزنا الحقيقة في ذلك ، ان تعقل معنى بين شيئين ، لكل شيئ منهما لفظ يشير اليه ، ثم وضع لفظ ليشير لهذا المعنى الناتج ، لا يختلف في كل التصورات الذهنية و لا تنتهي هذه العملية عند حد ، فهو وصف عقلي بحت في مغزاه و جوهره ، ثم تأتي الألفاظ فقط للإشارة الى ذلك لا أكثر و لا أقل ، من ضمن هذه الألفاظ (الرفع – النصب) ، و لا دخل لدلالة الرفع و النصب النحوي المتعارف عليه بين النحاة ، و لذلك لم يتعرض لذلك ، فهو ذكر ذلك كمثال تطبيقي عملي لوضع لفظ ما (رفع - نصب) لعملية عقلية ما ، ثم وضع هذا اللفظ الناتج في عملية أخرى و هكذا الى ما لا نهاية . فهو شرح لمجريات الأمور العقلية على المستوى العقلي المعنوي اي المنطقي في تصوره و استنتاجاته ، و هذا تصور مجرد عن المعاني و الدلالات النحوية الإعرابية ، و لهذا سيشيد بدور المنطق في تسديد العقل مقابل نظرة النحاة كما سنذكره في حينه ان شاء الله ، و مما يؤكد ما ذهبنا إليه ختام كلامه على هذه التراكيب المتوالية من المعاني كما في حد الإنسان ، و حد الحد ، و حد حد الحد ، و هكذا باقي الأمثلة التي ذكرها في هذا الصدد ، فقوله : &quot;فهذه السؤلات كلها من جنس واحد ، و إنما هي كلها في المعقولات الثواني . و الجواب عنها كلها جواب واحد ، و هو على مثال ما لخصناه في تلك الأخر .&quot;<a href="http://majles.alukah.net/#_ftn12" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[12]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">- &quot;وهذه المعقولات هي الاول بالإضافة إلى هذه الثانية كلها . و الألفاظ الأول إنما توضع أولا للدلالة على هذه و على المركبات من هذه . و هذه هي الموضوعات الأول لصناعة المنطق و العلم الطبيعي و العلم المدني و التعاليم و لعلم ما بعد الطبيعة .&quot;<a href="http://majles.alukah.net/#_ftn13" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[13]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot"> أولا يصف مبادئ هذه العلوم بالمعقولات ، و هذا فيه الدلالة على أن المعقولات و تراكيبها و تداخلتها هي الأساس ، و هذا مستوى من الفكر مستقل له أسسه و أصوله و هيئته و عملياته الخاصة به ، فهو يُحْتِج إليه و لا يحتاج هو لأحد ، ثم تأتي المرحلة التالية أو المستوى الثاني من الدلالة على هذه المعاني الكاملة و التصورات المستقلة الدلالة التامة ، فيشار إليها بألفاظ ، أي أن الألفاظ هي إنعكاس لما في العقل من كمالات تصورية و معاني كاملة ، هذه المعاني و التصورات هي موضوعات علوم شتى قد ذكرها في كلامه .</span><br />
+  <span style="font-family: &amp;quot">الملاحظ أنه لم يذكر علوم اللغة و النحو و الإعراب ضمن هذه العلوم ، و كأن المنطق قد غاير النحو في موضوعاته ، و اختلفا في معانيه و دلالاته ، و تغايرا في التعلق بموضوع المعاني ، و كأنه ليس قواعد و ضوابط تعصم الذهن من الخطأ في التصورات و الأحكام حتى و لو تتعلق بالألفظ فقط ، فبعد تقرير أن الألفاظ هي التي تشير الى المعاني المعقولة و هي الاساس لهذه العلوم التي منها المنطق ، كان لا يجب اهمال دور النحو الذي يضبط مجاري هذه التراكيب اللفظية حتى تقع على الوجه الصحيح ، فصحة وقوع اللفظ مع اللفظ الذان يشكلام المعاني المعقولة المشار اليها هو من تمام صحة وقوع المعاني مع بعضها لتمام المعنى المعقول ، و عدم تصريحه بهذا و تعمد إغفاله له يثير الشك و الريبة من ادعاءات على أن النحو و المنطق صنوان . و كان حري به ان يظهر العلاقة بينهما ، و ان يظهر مدى التقارب في القواعد و الاسس التي تجرى على كليهما ، من اي وجه كان ، حتى و لو من وجهة ان الالفاظ دلائل على المعاني و المعقولات ، فيجب ان تكون تراكيبها محكومة بقواعد تماثل نفس الدقة و الاحكام و المسايرة مع قواعد المنطق ، لان الامر في النهاية يصبح مجهول و في سبيل المعدوم ما دام حبيس نفس العقل ، اذا كان لا يستطيع ان يبلغه غيره عن طريق وسيلة اتصال ، و لا وسيلة ابلغ و اقدر و احكم على ذلك من الالفاظ . </span><br />
+  <span style="font-family: &amp;quot">ثم يستطرد قائلا و مؤكدا على أن المعقولات في حالتها المختلفة من التراكيب و الاضافات و الى غير ذلك من عمليات تؤدي الى معاني و تصورات كاملة هي منطقية ، وانها في صورها النهائية تسدد العقل نحو الصواب في المعقولات بشرط أن هذه الوحدات المعنوية نتجت من عمليات عقلية مشابهة لها في أحوالها ، وان كانت لنا ملحوظات على هذا الكلام لأن الوحدات المعنوية التي تمثل وحدات البناء نتجت من عملية فطرية غريزية في الأصل ، ثم تشوبها بعض الاختلافات في التدليل بكل لفظ على معنى عقلي مصور ، لأن ذلك يتوقف على عدة عوامل تتفاوت فيها البشر ، بل نفس الشخص في مراحل عمره المختلفة ، فكيف يكون هذه العمليات العقلية التي تكتسب لكل شخص على حدة متوقفة على عقله و ادراكه ، تكون هي معيار لغيره في الصحة و الخطأ العقلي ، فإن كان لنفسه فلا يحتاج اليها لأنه انتجها هو بنفسه فهو يماثل غيره فيها ، و ان كان لم يقف عليها من قبل و لم يكتسبها فلن يقدر على استيعابها من الغير فلا ينتفع بها ، لعدم وجود اتصال و قنوات تجري فيها الافكار المعقولة بالتبادل مع الغير ، و هذا ما لخصه شيخ الاسلام في قوله عن المنطق انه لا يحتاجه الذكي و لا ينتفع به الغبي ، و لذلك فما يجري على المعقولات الاولى هو ما يجرى على الثانية ، و ما جرى من المفردات يجري على المركبات ، فلا معنى لشرطه في تحقيق الصواب و العصمة من الذلل ان تجرى المركبات في احول ما جرت فيه المفردات . لأنه اشترط فعل ما لا يُفعَل بقصد واع ، فكما جرى هناك يجري هنا بنفس الكيفية و الأحوال ، و هذا موضع لم يستطع احد أن يتجاوزه بتعليل او سببية ، بل اقصى ما يقال عنه هو العلل الأولى التي يجدها الانسان من نفسه من دون قصد او فعل ، و هي التي يعلل بها اي شيئ بعد ذلك . </span><br />
+  <span style="font-family: &amp;quot">و لكي لا نطيل في مسائل منطقية اكثر من ذلك نعود لتقرير الفارابي على ان هذه المعاني التي عددها هي منطقية ، و وجه الربط بينها و بين الالفاظ يأتي في جزئية الدلالة بالالفاظ فقط ، اي ان الالفاظ مستعملة و ليست عاملة ، دوال و ليست مدلولات ، و ان كانت في حقيقة الامر هي كذلك و لكن لم يبين العلاقة بين الالفاظ و تراكيبها و خاصة مواقعها الاعرابية و بين المعقولات التي تشير اليها هذه الالفاظ ، في حالة الافراد و التركيب و ما يختلطها من احوال و لواحق لها دور في التعريف و التمييز و التحديد بين المعقولات .</span><br />
+  <span style="font-family: &amp;quot">فهو بفصل بين عالمين ؛ الالفاظ و المعقولات ، فالأصل المنطلق منه و الغاية المرجوة هي المعقولات ، لأن غايته هو عصمة الذهن من الخطأ و تسديد العقل نحو الصواب  ، و لم يتعرض لعصمة الالفاظ و محاولة تسديدها الى الصواب لكي تتلائم مع عصمة المعقولات و تسديدها نحو الصواب .</span><br />
+  <span style="font-family: &amp;quot">- و نذكر لفظه : &quot; فإنها (اي المعقولات) من حيث هي مدلول عليها <u>بألفاظ</u> ، و من حيث هي <u>كلية</u> ، و من حيث هي <u>محمولة و موضوعة</u> ، و من حيث هي <u>معرفة</u> بعضها ببعض ، و من حيث هي <u>مسؤول عنها</u> ، و من حيث تؤخذ <u>أجوبة</u> في السؤال عنها ، هي <u>منطقية</u> . فيأخذها و ينظر في أصناف تركيب بعضها إلى بعض من حيث تلحقها هذه التي ذكرت و في أحوال المركبات منها بعد أن تركبت . فإن المركبات منها إنما تصير آلات <u>تسدد العقل نحو الصواب في المعقولات و تحرزه عن الخطأ في ما لا يؤمن أن يغلط فيه من المعقولات</u> ، إذا كانت المفردات التي منها ركبت مأخوذة بهذه الأحوال . &quot; <a href="http://majles.alukah.net/#_ftn14" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[14]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">فكثير من المعاني التي ذكرها على انها منطقية هي ايضا معاني نحوية يتداولها علماء النحو و الإعراب في تعليلهم النحوي الإعرابي ، و من حيث هي ايضا مدلول عليها بألفاظ فهي عند علماء النحو لها مقابل لفظي اصطلاحي و لكن لها نفس المعنى ، فمثلا (الموضوع و المحمول) فهذا لفظ و مدلول منطقي كما قال الفاراربي ، يقابله عند علماء النحو (المبتدأ و الخبر) و لنفس المعنى الدلالي واحد ، و عند علماء البلاغة يقابله (المسند اليه و المسند) لنفس المعنى الدلالي ايضا . و كذلك معاني الاضافة و التعريف و الاستفهام و السؤال ، و اسم الجنس و علم الجنس و العموم و الاطلاق و الكلية ، فكلها اصطلاحات لمعاني و تصورات واحدة .</span><br />
+  <span style="font-family: &amp;quot">و للفارابي نص أخر نفس هذا النص و لكن صرح فيه اختلاف منهجية النحاة و المناطقة لتناولهم المعاني العقلية نورده هنا للأهمية : &quot; و لكن النحوي ينظر إليها (يقصد المقولات و المعقولات الأُوَل و الثواني) و يستعملها على أنها أسماء مدلول عليها بألفاظ ، و المنطقي ينظر إليها على أنها كلية و محمولة و موضوعة و معرفة بعضها ببعض ، و مسؤول عنها ، و تؤخذ أجوبة في السؤال عنها فينظر في تركيب بعضها الى بعض مما يسدد العقل نحو الصواب و يبعده عن الخطأ .  &quot; <a href="http://majles.alukah.net/#_ftn15" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[15]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">ففي هذا النص تقرير هام ، أن نظرة النحوي للمقولات مختلفة عن نظرة المنطقي ، و المهم هنا اشارته الصريحة أن غاية نظرة المنطقي هي تسديد العقل نحو الصواب و الابتعاد عن الخطأ ، و كأن الكلام  به غمز بمنحى النحاة و انهم لا يتولون المعاني العقلية إلا في نطاق و حدود صناعة الالفاظ ، اما استقلالا فلا ، و ربما يكون ذلك كما اشرنا من قبل لتخندقهم في خندق لا يتجاوز ابعاده ابعاد الرفع و النصب و الجر و الجزم ، و ان هذه الابعاد تضيق بهم عن شمول جميع المعاني العقلية التي تصف العلاقات بين الاشياء و الأحداث ، فيلجأون الى تبريرات غير عقلية و تأويلات تعسفية ، و خلق قواعد مبتدعة ، و التجرأ على العرب و لغاتهم بالتخطئة و الرد ، و كذلك طال بهم الأمر للتطاول احيانا على القراء و القراءات القرآنية فيرموهم بالوهم و الخطأ و اللحن و الشذوذ ، و عدم الاستشهاد بالحديث الشريف.</span><br />
+  <span style="font-family: &amp;quot">- &quot; و ينبغي أن تعلم أيضا الأسماء المتفقة أشكال ألفاظها و المتواطئة أشكال ألفاظها و ترتاض في هذه أيضا ، فإنها من المغلطات العظيمة التغليط . فمن ذلك ما شكله شكل مشتق و معناه معنى مثال أول غير مشتق . و منه ما شكله شكل مثال أول و معناه معنى مشتق ، كقولنا (الرجل كَرْم) أي كريم . و منه ما شكله <u>شكل فَعْل و مصدر</u> ، و معناه <u>معنى مَفْعُول</u> ، كقولنا (خَلْقُ الله) أي مخلوقه . و منه ما شكله <u>شكل ما يَفْعَلُ</u> و معناه <u>معنى ما يَنْفَعِلُ</u> . و منه ما شكله <u>شكل مَفْعُول</u> و معناه <u>معنى فاعِل</u> ، مثل (سميع عليم) أي عالم  و سامع أو مستمع . &quot; <a href="http://majles.alukah.net/#_ftn16" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[16]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">و في هذا النص ازدواجية معرفية تتمثل في طرفاها ، الشكل و المعنى ، فهناك ما شكله شكل ما يؤدي معنى معين و بينهما تلازم يجري على مقتضى القاعدة العامة ، و هناك اشكال لا تجرى معانيها طبقا لأشكالها لمجرد التماثل في الشكل مع غيرها التي تكون عادة أصل الباب و مقتضى القاعدة ، فالفيصل اذن هو المعنى المعقول الذي يجب ان يكون من هذين اللفظين بغض النظر عن موافقته للشكل او مخالفة الشكل المعروف بذلك المعنى ، المهم ان يكون حاصل المعنى مقبول عقليا ، شرعيا ، و اذا كان كذلك فهو يقبل عرفيا و اصطلاحيا و بذلك يكون هو الأصل الذي يلتف حوله الاصطلاح ، فلا عبرة باصطلاح يخالف الشرع و العقل ، لأنه سيكون قاصرا و منقوصا لأن مبناه على استقراء ناقص فلم يدخل فيه هذه المواد التي خالفته في المعنى المنوط بالشكل الاستنباطي .</span><br />
+  <span style="font-family: &amp;quot">و الفائدة الأخرى المستفادة من هذا النص هو الوقوف على مفهوم و دلالة المفعول و الفاعل ، و دلالة الذي ينفعل و الذي يفعل ، و دلالة المصدر . و لحسن الحظ ان المثل الذي ضربه لبيان مفهوم المفعول جاء كلي عام ، فكل ما يصدق عليه انه مخلوق فهو مفعول لله الفاعل ، و هذا ينطبق على كل ما هو دون الله سبحانه تعالى و أسمائه و أفعاله و صفاته .</span><br />
+  <span style="font-family: &amp;quot">و من ذلك نفهم ان كل معانيه المستفادة من الفاظ الفاعل و المفعول هي المعاني العقلية و ليست المعاني المصطلحية الخاصة بالنحو و الإعراب ، و حتى الأن لم يعلل هذه المعاني بتعليل لفظي بحت او اجرائي اسلوبي ناتج عن وضع و نظم الالفاظ بمواضع معينة ، و توصيف ذلك بالمواقع الإعرابية بما يقتضي سمت الكلام الصحيح لاجراء توقيع المعاني العقلية على مواضع الالفاظ المتجاورة بالاسلوب و التركيب المحدد مسبقا ، ليكون معيار للصحة و الخطأ اللغوي ، ثم تعليل ذلك بالصحة العقلية المنطقية .</span><br />
+  <span style="font-family: &amp;quot">فإلى الأن لا يتجاوز الأمر استخدام الالفاظ في المنطق و العقليات ، و ليس منطق اللغة نفسه ، فهذا فارق بين المنطق باللغة و منطق اللغة . فكل ما سبق كان منطق باللغة ، و هذا لأن عرض التصورات العقلية و محاولة ايصالها للغير لا تكون الا عن طريق اللغة ، و هذا ما يجري حتى الأن في كلامه المتعلق بالألفاظ و اللغة .</span><br />
+  <span style="font-family: &amp;quot">و على ذلك فإن نجاح و كفاية اللغة في عرض المنطق ، لا يجعل هذا العرض هو منطق اللغة ، و بالتالي فالاعراب و هو احد صور منطق اللغة كما تصوره النحاه ، يكون قاصرا على استيفاء المنطق و عن عرض المنطق باللغة ، لتخلف كثير من المعاني العقلية في التمثيل لها في التراكيب الاعرابية و علامات الاعراب ، لأن دلالات الاعراب لا تقوى على استيعاب هذه المعاني المعقدة و المركبة في التصور الذهني و العقلي ، فضلا على المعاني الشرعية الخاصة بذات الله و صفاته و افعاله و اسمائه ، و توصيف العلاقات التي بين الله و بين خلقه في الشرع و التكاليف و الحساب و الجزاء . فمثلا قد ذكر الفارابي معاني الفعل و الانفعال ، و هذه المعاني لا تمثيل لها في المعاني الإعرابية ، لانها تتجاوز نطاق الاعراب المنوط بصنعة الالفاظ و التراكيب بناء على تصور محدود و قاصر ليشمل هذه المعاني .</span><br />
+  <span style="font-family: &amp;quot">فالأجدر إبعاد العلامات الإعرابية عن هذه الساحة خاصة و هي في حقيقة الأمر عبارة عن أصوات حركية قصيرة تكون بعد نطق أخر حرف من اصل الكلمة ، هذه الحركات المدية هي اصوات تكون فواصل صوتية للتنقل بين الكلمات بسهولة و نغم و ليست مرتبطة بأي معنى يجيء من وراءها ، و هذا قول قطرب و تفسيره للحركة المدية ، فإنه رفض أن تكون معللة تعليل معنوي له علاقة بالمعنى المراد من اللفظ ، او تكون حسب موضعها في التركيب الجملي ، و له اسبابه و مبرراته يمكن ذكرها فيما بعد من هذا البحث ان شاء الله .</span><br />
+  <span style="font-family: &amp;quot">اما محاولة العلماء لتعليل هذه الحركة و ربطها بمعاني استخلصوها استنباطا من بعض كلام العرب المنتقى بمنهجية لا تخلو من الجفاء و التحيز الذي ينافي الاصول العلمية ، و ما يعتري هذه المنهجية من قصور و ملاحظات سنتعرض لها لاحقا في البحث ان شاء الله .</span><br />
+  <span style="font-family: &amp;quot">- ثم تناول المقولات العشر و أنها هي نتيجة ترتيب الانواع و الأجناس من الاخص للأعم حتى ينتهي الى جنس عال يقابله مقولة ، و هكذا يكون عشرة مقابل عشرة ، و مدار معرفة هذه الأجناس و المقولات هو مرجعها الأساسي و هو المشار إليه المحسوس بـ هو ، فإذا كان ممن نعرفه بالكمية في إجابة سؤال عنه : كم هو ؟ يكون مقولته مسماها (الكمية) و هكذا في (الكيفية) و (الأين) و (متى) و (الإضافة) و (الوضع) و (أن يكون له) و (أن يفعل) و (أن ينفعل) .</span><br />
+  <span style="font-family: &amp;quot">&quot;المقولات هي ابنية من المفاهيم التزمت بشروط المنطق للتعبير عن خصائص الأشياء ، الأحداث ، العلاقات ، فهي على هذا الأساس أطر نظرية قادرة على التعبير ، و يثير معنى في الذهن ، و يدل بها على شيء – حدث – علاقة .&quot; <a href="http://majles.alukah.net/#_ftn17" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[17]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">و على ذلك يقرر الفارابي أن المقولات العشر و هي أسماء الأجناس العوالي العشر و التي تمثل وحدات البناء الفكري العقلي لكل ما يمكن إدراكه ، سواء على المستوى المادي أو المعنوي ، و لكن ربما ينجح هذا و يصبح حقيقي و من الصواب إذا كان بعيدا عن تناول (أسماء الله و صفاته و أسمائه) لأن الله ليس له تعلق بمعاني (الكم – الكيف – متى – أن ينفعل – الوضع ) و ان كان يجوز عليه معاني (الأين – أن يكون له – الإضافة – أن يفعل) و لكن بغير ما ذهب اليه من أصل ذلك ان هذه المعاني تدور على ما هو مشار إليه محسوس ، فلو كان بهذا المنحى و الوجهة فهو باطل و من أبطل الباطل ، فالله منزه عن ذلك و لا مثيل له و لا كفوا له ، فلا يتعلق به اي معنى من هذه المعاني على هذا النحو ، اما على الإطلاق فيجوز عليه (الأين) كما قال الرسول صلى الله عليه و سلم (أين الله؟) للجارية ، و يجوز عليه (أن يكون له) من صفات الجلال و التنزيه و الأسماء الحسنى و الصفات العلى كما ينبغي له ، و عليه يجوز معنى (الإضافة) ، فنحن نعرف الله من صفاته و اسمائه و افعاله ، و مخلوقاته المضافة اليه بما يناسب المقام ، و كذلك (أن يفعل) و انبه ان هذه المعاني و التصورات المجازة بما يناسب مقام الألوهية و التنزه .</span><br />
+  <span style="font-family: &amp;quot">و على قول من يقول أن الفارابي يضع اسس النحو و المنطق و العلاقة بينهما ، و ان كنا نخالف ذلك بما سبق من اشارات و ما سيأتي ان شاء الله ، نخرج على هذا القول أن الفارابي يحدد الأطر العامة لمعاني النحو و الإعراب التي هي بمثابة قوانين لمن أراد أن يعبر عن المعاني العقلية بطريقة صحيحة سديدة ، و بهذا نضع ايدينا على موضع القصور و الخطأ في تناول ذات الله سبحانه و تعالى و اسماؤه و افعاله و صفاته ، او حتى العلاقات بين البشر و خالقهم ، و كيفية تلقي الأحكام و التصورات الصحيحة الدينية ، فمن ضَمَّنَ هذه المعاني العقلية في المعاني النحوية و جعلها حاكمة عليها فقد هوى في البقعة المظلمة الخاطئة الكاذبة ، و ان كانت تصلح لمعالجة كلام و تصورات البشر مع بعضهم او مع كثير من المخلوقات ، و لكن ليست كافية او تامة مع كل التصورات و كل الكلام . </span><br />
+  <span style="font-family: &amp;quot">- &quot;و أسبق هذه كلها علما هو علم المشار إليه الذي حاله الحال التي وصفنا دون الباقية . فإنه هو الذي يُدرَك أولا بالحس . ثم هو بعينه يوجد موصوفا ببعض هذه التي ذكرت ، مثل أنه هو (هذا الإنسان) و أنه هو (هذا الأبيض) و أنه هو (هذا الطويل) .&quot; <a href="http://majles.alukah.net/#_ftn18" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[18]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">و فكرة الأسبقية تتضمن فكرة الزمن و الموضع ، و تتضمن ايضا شيئين يجوز عليهما الأسبقية ، ثم وصف هذه الاسبقية بالعلم ، و أن هذه المعاني المعقولة بالطبع منوطة بما يشار اليه من المحسوسات بـ هذا ، هذا هو تفكيك لمفردات القضية المنظور اليها هنا ، يبقى تصور العلاقات بينها بما ينتج عن العمل العقلي الذي يتناولها بالتدبر و التمحيص .</span><br />
+  <span style="font-family: &amp;quot">و من وجهة نظر عقلية اسلامية ، نقول ان العقل مسلم أن الأسبق في هذا التصور هو القوة العلمية التي خلقت مع الانسان و هي ما علمه الله اياها كما في حال سيدنا آدم (علم آدم الأسماء كلها) و بالنسبة الى البشر من بنيه هو (خلق الإنسان علمه البيان) ، ففي الحاتين هو تعليم إلهي ، منسوب الى الله مباشرة في تعليمه ، وان كنا لا نقف على تصور لهذا لانه يفوقنا ادراكا و قدرة عقلية كما هو مشار اليه ( و ما أشهدتهم خلق السموات و الأرض و لا خلق أنفسهم  ) و على ذلك فيكون اي تصور هو محض اجتهاد ظني ، و لكن ما تطمئن اليه النفس و يسلم له العقل هو أسبقية هذه القوة العلمية التي غرزت غرزا في الانسان ، قد تكون هي الفطرة او لها علاقة بها ، المهم انها أسبق وجودا من المحسوسات الخارجية التي يشار اليها و التي يمكن ادراكها ، فبمجرد ادراك المحسوس ينطبع في الذهن صورته بما غرز فيه مسبقا ، اما ان يكون بعينه معلوم ، او هذه القدرة العلمية قابلة لأن تعلم كل ما هو مدروك بما اودعها الله من قدرة . </span><br />
+  <span style="font-family: &amp;quot">و هذا مستفاد من سياق قصة آدم عليه السلام مع الله و الملائكة و المسميات ، فقد ذكر الله انه علمه الأسماء كلها ، ثم ، اي هناك فاصل زمني بين التعليم و بين العرض عليه ، و هو ما ذهبنا اليه باسبقية التعليم عن الإدراك المحسوس للمخلوقات ، و  مما يؤكد أن التعليم هنا المقصود منه هو القدرة العلمية اللغوية ، أن الملائكة لم تستطع أن تنبأ عن هذه المعروضات عليهم ، و هذا يلزم منه انها مدروكة لهم بالحس ، و لكن هذا الغدراك لا يقابله أسماء لها ، لأن الله لم يعلمها هذه الأسماء و هو كما صرحوا بذلك له عند سؤالهم عن أسماء المعروضات فقالوا ( لا علم لنا إلا ما علمتنا) ، فالعلم هنا يؤكد انه هو القدرة اللغوية بربط الأسماء بالمدروكات ، و ليس بإدراك المحسوسات فقط ، فيجب أن يكون إدراكهم مماثل لإدراك آدم لكي يُحَجوا على عدم علمهم بحكمة الله في شؤون خلقه (إني أعلم ما لا تعلمون) ، فلو لم يكن الإدراك واحد لآدم و للملائكة لنفس المعروض لما جاز سؤالهم عن أسمائهم ، و هذا لكي يظهر الفرق بين آدم و بينهم ، و لهذا قال لآدم أنبئهم بأسمائهم فأنبأهم بأسمائهم ، و بهذا بان الفرق لهم بما تميز به آدم عنهم ، و هو تعليمه الأسماء و النبأ بها بما يقابل كل معروض عن الأخر .</span><br />
+  <span style="font-family: &amp;quot">فكل معروض ممايز عن الأخر استدعى ان يكون له اسم ممايز عن الاخر ، و لكن كيفية ذلك و سببه بأن يختص هذا بهذا الاسم ، و هذا بهذا الاسم ، فاختلفوا في الاسماء كما اختلفوا في المدروك ، و لكن هل هناك تناسب بين الاسماء و مسمياتها او حكمة او تعليل ؟ ، فهذه حكمة الهية لأنه هو الذي علمها آدم بعلم لدني ، و هو الذي علم الانسان البيان و المنطق ، فالوقوف على العلة الاولى ضرب من الاستحالة ، و لكن الوقوف على قدر من مظاهرها فممكن ، اي بما يساوي العلل الثواني التي من الممكن ادراك مظاهرها الماثلة فيها ، اما ان يقف على العلة الاولى فهذا لا يمكن ابدا تجاوزه او الوقوف عليه ، فهذا نهاية القدرة البشرية و الطاقة و الوسع .</span><br />
+  <span style="font-family: &amp;quot">فكل علة او سبب او حكمة يمكن ادراكها فهي من جهة التتبع و التلمس لمظهر او علامة تشير الى معين (علة أولى) ، و لا دخل للانسان في هذا المعين في خلقه او ابداعه او التصرف فيه ، و من الجرأة و التهور بل من السفه أن يدعي الإنسان اكثر من هذا ، و هو يعلم علم اليقين على المستوى الجسدي و الروحي انه ضعيف مقهور ، دائما ما يتلمس القوة في شيء ما ، فيركن اليها ، فمن اعترف بالله و بحقوقه و التزم و عبده كما ينبغي فهو الناجي ، و من وضعها فيما دون ذلك و توجه اليها بالضعف و الذل و القهر فعبدها و تلمس رضاها بالقرابين و الحاكمية على اختلاف اشكالها و صورها و الوانها فهو الخاسر الهالك ، فلا فرق ان يقال هو الدهر ، او الطبيعة ، او العلم او غير ذلك ، فكل ما دون الله فهو هالك لا محالة .</span><br />
+  <span style="font-family: &amp;quot">عودة لما سبق ، يقرر الفارابي ان هذا المدرك الحسي المشار اليه ، يوصف بصفات ، هذه الصفات هي : أولها الإدراك المباشر الحسي بالإسم ، و هو كا سبق و اوضحنا ، فيقول (هذا الإنسان) ، ثم تتوالي باقي الصفات التي هي من انواع المقولات الباقية ، فيقول (هذا الأبيض) و (هذا الطويل) و هكذا . و يوضح أن هذا المشار اليه لو وصف بالمقولات ، فيدل عليه بأسم مشتق ، و اذا جردت هذه الاوصاف عن المشار اليه ، كقولنا (الإنسان) و (الأبيض) و (الطويل) يكون المشار اليه متضمن فيها بالقوة و ليس بالفعل ، لأنه لا يوجد صفة بدون موصوف يحملها و تقوم به ، فهذه اللازمة العقلية الضرورية كامنة بالقوة في اللفظ (الصفة) لانه لا انفكاك عقلي و لا حسي عنهما البتة .</span><br />
+  <span style="font-family: &amp;quot">و يقرر الفارابي مفهوم (أول المعقولات) بأنه هو الإسم المشتق المجرد عن هذا المشار اليه المحسوس (الطويل) المتضمن بالقوة معنى الوحدة و الفردية من حيث العدد للمشار إليه ، فيصير بذلك (الطويل) واحدا بعينه .</span><br />
+  <span style="font-family: &amp;quot">و أن الذهن له قدرة ينفرد بها عن الحس و هي تجريده لمعنى الطول و البياض عن الطويل و الأبيض ، فينفرد بكل معنى على حده بدون ان يتضمن مشار اليه .  </span><br />
+  <span style="font-family: &amp;quot">و هذه القدرة الذهنية هي في حقيقة الأمر ليست الا ارتجاع لما هو موضوع وضعا في الذهن من قبل ، فهذه المعرفة سابقة عن تضمن المشار اليه ، فالبياض سابق عن الأبيض ، و عملية تجريده لمعنى البياض ليست قدرة مستقلة بل استدعاء لمركوز في النفس من قبل ، و كل هذا يتوافق مع أن الأسماء هي أصل المعرفة و مبدأ كل معنى و تصور ، و أن هذه القدرة هي المقصودة من تعليم آدم و تعليم بنيه من بعده ، و لذلك يقر الفارابي بأنها &quot;اسبق الى المعرفة من أن تكون منتزعة &quot; <a href="http://majles.alukah.net/#_ftn19" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[19]</span></font></span></a> ، اي ان عملية انتزاعها ليست هي التي اوجدتها بل معرفتها سابقة عن هذه العملية الذهنية ، &quot;و لكل واحد منها تقدم على الآخر بوجه ما&quot;<a href="http://majles.alukah.net/#_ftn20" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[20]</span></font></span></a> ، يقصد تضمن التشخيص و انتزاعه ، قد يكون احدهما اسبق من الاخر من وجه معين دون الاخر و العكس صحيح ، اي ان الاسبقية منوطة بوجه الاعتبار المنظور من خلاله ، و لكنا نخالفه في هذا بما قررننا من قبل أن تعليم الله الأسماء لآدم و تعليمه البيان لبنيه يؤكد أسبقية المعاني المنتزعة او المجردة عن التشخيص و المشار اليه ، عن تشخيصها بمشار اليه اولا ، فهو علم اولا ثم ادرك ثانيا فأنبأ ثالثا ، فهذا هو التسلسل الزمني العقلي الواقعي للعملية الكاملة ، و قد يذكر على سبيل الاستئناس هنا نظرية أن الاصل هو المصادر ثم تشتق منها باقي الكلام ، و ذكر حججها معها قد يفيد مدى اهمية هذه المسألة و أصليتها في الفكر اللغوي العربي و الاسلامي و أن مواضيع العلوم تتلاقي مع بعضها في المنبع و الأصول .</span><br />
+  <span style="font-family: &amp;quot">و هو يشرح نسبية السبق ما بين الانتزاع (التجريد) و عدمه (تضمن الاشارة الى المحسوس)  ، فالحكم هنا يعتمد على البساطة مقابل التركيب مع غيرها ، و التقدم في العقل ، فالمعاني المعقولة المجردة عن المشار اليه المحسوس المتقدمة في العقل ؛ تكون أقدم من ناتج عملية الانتزاع ، و دور الألفاظ هنا هو الإشارة الدلالية الى المعاني ،  اما اذا كان المناط هو هذه المعاني مع زيادة عليها بتركيب مع غيرها ، او ان تكون محسوسة ، فهي اذا متأخرة عن ؛ الاولى و مأخوذة منها .</span><br />
+  <span style="font-family: &amp;quot">اما اذا كانت الالفاظ هي السابقة عليها اي قبل ان تجرى عملية الانتزاع ، و المقصود أن دلالة الألفاظ تكون على معنى يقتضي الوصف للمشار اليه بأشكال لفظية تلائم كل وصف لمحسوس مشار اليه ، فيكون الوصف للمشار اليه المحسوس هو الأصل و عين له لفظ ذو شكل معين يشير الى هذه المعاني ، ثم يأتي دور الانتزاع و التجريد لاحقا ، فيكون الأسبق هو عدم الانتزاع ثم يأتي بعد ذلك عملية الانتزاع و التجريد للمعاني غير المشخصة لمشار اليه محسوس .</span><br />
+  <span style="font-family: &amp;quot">و نجد هنا تغليب لصنعة الالفاظ على المعاني ، او بالاحرى سبق التشكل اللفظي في دلالته على المعاني المعقولة خاصة اذا كان المعنى مركب ، فهو ربط جيد للعلاقة بين الالفاظ و المعاني المعقولة لنظرية الاشتقاق و المثالات الأُوَل ، او بمعنى اخر تناول مستوى واحد اما لفظي ذو دلالة على معاني عقلية ، او مستوى معنوي عقلاني نشير اليه بألفاظ ، فأيهما هو الأصل و أيهما هو الفرع ، و من هو الجسد و من هو الصورة المنعكسة ، من هو القابل و من هو المقبل ، من هو الفاعل و من هو المنفعل ، و في النهاية من هو الأسبق الذي بناء عليه سيحدد مفهوم الاشتقاق و جواز الانتزاع من عدمه ، فإن سبق وضع اللفظ لمعنى مركب ، جاز عليه الانتزاع ، و إن كان وضع اللفظ لمعنى بسيط جاز عليه التركيب و هنا يتشكل اللفظ ليناسب التركيب في المعنى او المحسوسية للمشار اليه ، و هنا يتولد الاشتقاق من اللفظ الاول ، و ليس لأنه اللفظ الاول في حد ذاته و لكن لتواضعه على المعنى البسيط ليس الا ، فيركب عليه معاني أخر و اوصاف و قد ينزل للمحسوس المشار اليه فيجب أن يكون متشكلا اي اللفظ لكي يناسب كل معنى معقول من هذه المعاني التي ستتشكل من التراكيب و الاضافات و الاوصاف فيشتق منه على حسب ذلك . </span><br />
+  <span style="font-family: &amp;quot">فهو يتناول المستوى اللفظي من منظور الدلالة الاشارية على المعنى المعقول المدرك ، فهو يصنع معيار لتحديد الاسبقية ، يستخدم فيه الالفاظ للتوصيف فقط و ليس للتعليل ، او التفسير ، فهو يقول ان الادراك المعين القائم بنفسه في كفايته الدلالية اما ان يكون بسيط و مفرد او مركب ، فإدراك الانسان لمعنى ما في وهلته الأولى و وضع لفظ له ، فتكافآ في التقابل كل في مستواه الدلالي الوظيفي ، فلو كان <u>مركبا</u> في اسبقيته الادراكية جاز عليه التبسيط و الافراد ، فالتبسيط يكون من حظ التركيب للمعنى الاساسي و المضاف اليه ، اي معنيان مستقلان بالدلالة على الانفراد او اكثر من ذلك ، و الانفراد يكون من حظ التعدد اي تجريد المشار اليه و المشخص الى المعنى المعقول المجرد و هو ناتج عملية الانتزاع . </span><br />
+  <span style="font-family: &amp;quot">فالحاصل في فكرة الاسبقية المشار اليها سابقا ، انه يريد ان يؤصل للاشتقاق على معيار عقلي ، و هو ان البسيط اقدم من المركب ، و ذلك لان ادراك المركب لا يكون الا بادراك كل معنى بسيط اولا ثم ركب بعد ذلك ، فتكون الالفاظ الموضوعة للتركيب بعد تغير شكلها ليناسب هذا التركيب هي متأخرة عن اللفظ الموضوع بشكله الدال على المعنى البسيط .</span><br />
+  <span style="font-family: &amp;quot">فالتركيب الذي يدرك فيه جزئي تركيبه ، و اذا انحل لمعانية البسيطة يؤدي كل معنى مستقل دلالة كافية في وظيفته ، اراه ليس تركيبا بالمعنى المتبادر للذهن منه ، و لكنه مجرد تراص معاني بسيطة لا تستقل بذاتها ، لتكوين وحدة معنوية اكبر ، و كلٌ يؤدي دوره الدلالي منه كما يجب أن يكون ، و على هذا المستوى لا فرق بينهما اطلاقا .</span><br />
+  <span style="font-family: &amp;quot">فالماهية المدركة على ما هي عليه ، و لها لفظ يدل عليها ، لا يجوز عليها مفهوم البساطة او التركيب ، فهي مدركة على حالها كما هي ، و لها لفظ يشير اليها ، فهي تتساوى في ذلك مع كل الماهيات ، اما استخراج معاني مختلفة منها لا يخرجها عن كونها ماهية واحدة ، لان لو كل معنى من ذلك استقل لأن يكون ماهية لما جاز دخوله في ماهية اخرى و ان يكون جزء منها ، فالماهية اذا نقص منها شيء تحولت الى اخرى لها معنى اخر و لفظ اخر ، قد يكون اللفظ مستقل بالدلالة على الماهية الجديدة او باضافة لفظ اخر لتقييد او تخصيص المعنى الاول ليحدد معالم الماهية الجديدة ، و هذا يؤيده عدم الترادف في اللغة ، فإذا نقص من معالم الماهية اشياء و بقيت الماهية كما هي محتفظة بكيانها الذي من اجله كان لها لفظ يدل عليها ، تكون هذه الاشياء من العوارض و ليست من الذات ، فهي اصلا لم تدخل في حد الماهية كي تؤثر عليه اذا غابت عنه ، فالكفاية المعنوية التصورية لأن تستقل بلفظ يشير اليها ، و تصبح محلا لأن يتعلق به معنى أخر على ضروب من المعاني ، تعطي القدرة على التعبير عن ما يدور في الذهن من ادراكات لتصل للغير عن طريق الالفاظ ، هذه الكفاية تمثل وحدات بناء للفكر و أدوات رسم التصورات و وسائل نقل الادراكات .</span><br />
+  <span style="font-family: &amp;quot">- فاللفظ الذي يدل على معقول بسيط هو المثال الأول ، و من يأتي منه على تشكل مغاير ليدل على معاني مركبة هو المشتق من الأول ، و هو يقول أن هذا هو قول العلماء ، &quot;لأنهم إنما يرون أن الألفاظ إنما أُحدثت بعد أن عُقلت الأشياء ، و أن الألفاظ إنما تدل أولا على ما عليه الأمور في العقل من حيث هي معقولة و متى حدث للعقل فيها فعل خاص ، و أنه لا يُنكر أن تكون الأشياء من قبل أن يحدث فيها للعقل فعل خاص و من حيث كانت هي أقرب إلى المحسوس قد كان يُدل عليها إما بإشارات و إما بحروف و إما بأصوات و زعقات ، أو بألفاظ غير متأمل أمرها و لا مدبَّرة من أنحاء دلالاتها – فحينئذ إما أن لا تكون تلك ألفاظ و إما أن تكون غير كاملة ، فإن الكاملة منها هي التي حصلت دالة عليها بعد أن صارت معقولة بفعل العقل فيها خاص . فلذلك يجب أن تجعل الدالة عليها و هي مفردة مثالات أول ، و باقيها مشتقة منها ، مثل (الضرب) فإنه مثال أول ، و (الضارب) و (يضرب) و (ضَرَب) و (سيضرب) و (مضروب) و أشباه ذلك مشتقة ، و كذلك في غيرها . &quot; <a href="http://majles.alukah.net/#_ftn21" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[21]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">هذا تلميح قوي بإصطلاح اللغة و التواضع في جزء منها على الأقل الذي لم تكتمل له الألفاظ ، و بالفصل الزمني بين الالفاظ و بين تعقل الأشياء المدلول عليها بالألفاظ لاحقا ، ويتضمن نظرية نشأة اللغة الغربية لمن يرى أن الإنسان لم يأتي كاملا بخلق مستقل ، بل أتى على مراحل تطورية متدرجة من الأدنى الى الاعلى في إتجاة تطور و رقي ، فكان من أصوله أشبه بالحيوان الذكي كالقرود مثلا ، ثم في هذه المرحلة بدأت تنشأ الحاجة للغة و التواصل حيث التجمع و الاستقرار ، فكانت بوادر اللغة الأولى بدائية هي ايضا تعتمد على المحاكاة بالمحيط ، في اصواتها و حركاتها ، فكانت اصوات مقلدة اشبه بالصراخ و اشارات مرتبطة بالمحسوس و اقرب ما يكون اليه ، لان الحاجات وقتها منصبة على الغرائز الجسدية و المتطلبات الحياتية من مأكل و مشرب و مأمن و ملبس ، و هذا قبل أن تنشأ المجتمعات و الحضارات و تتطور اللغة معها لتلبي الاحتياجات العلمية و الفكرية و المادية .</span><br />
+  <span style="font-family: &amp;quot">و هذا تصور ساذج و مخالف لديننا ، فالله قد خلق آدم بيديه ، و علمه بنفسه ، و أنزله على الأرض و زوجه ، فتناسلوا ، فلا يمكن تصور هذا المجتمع بدون لغة تصور كل المعاني العقلية و الوجدانية ، فهو الذي كلم الله و كلمه الله ، و اطلعه على ما لم تعلمه الملائكة من علمه اللدني ، و سكن الجنة بما فيها من مخلوقات تند على وصف البشر ، و رأي الملائكة و غير ذلك من مخلوقات تستدعي كل المعاني العقلية ، و بالاضافة الى المعاني الدينية و الانسانية مع زوجه ، و مع من حوله على اختلافات ، فقد تكلف من الله بأمر و علق عليه عقاب الخروج ، بأن لا يسمع لابليس ، و لا يقدم على عصيان أمر الله من الأكل من الشجرة ، و اعتراف بالحق الذي عليه لله بعد خلقه و تعليمه و تكريمه فلا يجب أن يعصى ، و رأي عصيان ابليس و تكبره و تحججه بحجج عقلية لا تمت للحق بصلة ، فتعلم الاستفهام و الجدال و اقامة الحجج و الثواب و العقاب و التكليف و العصيان ، فوقف على حقيقة العلاقة ما بين الخالق و المخلوق و التكليف و الجزاء .</span><br />
+  <span style="font-family: &amp;quot">ثم بنزوله الى الارض و زوجه حواء ، فأنجب أولاد و تزاوجوا هم بدورهم ، فهذا المجتمع البشري الذي به نبي الله آدم ، معلما التوحيد و محذرا من طاعة ابليس ، و مذكرا لاولاده انه سبب خروجه من الجنة فلا ينبغي اتخاذه الا عدوا ، و ما حكاه الله لنا من تحاوراتهم مع ابليس و مع انفسهم و منها الحوار الذي دار بين ابني آدم قابيل و هابيل ، يجد كل مقومات اللغة الدينية و العقلية الاعتبارية ماثلة فيها ، و كيف يتصور مع مثل هؤلاء ان يكون فيهم قصور لغوي لعدم اكتمال الفاظ لما تشير اليه من معاني ، و هم الذين احاطوا بكل المعاني العقلية و الوجدانية ، لقرب العهد بالله و بالجنة و بالملائكة و بملكوت الله و السموات و الارض .</span><br />
+  <span style="font-family: &amp;quot">و من يتتبع كل الالفاظ المقولة من آدم و حواء قبل الخروج يجدها كاملة الاسماء و الافعال و الحروف ، و التراكيب ، فكل المعاني مؤداه على وفق علم الله فيه ، فأول قول له هو الحمد لله بعد العطس ، فكيف دل على هذا الحدث بهذا القول ، من اين له العلم به الا لتعليمه اللدني من الله له ، فكيف سبيل من علمه الله الأسماء كلها ، و تعجز عنها الملائكة ، و تصور بقاء هذه اللغة بقوتها في الابناء حاضر كما نقل لنا عن قابيل و هابيل ، فلا يتصور انتكاسه لغوية بعد هذا ما دام التوالد مستمر ، لأن اللغة تكتسب من المحيط الاجتماعي ، فهذا تصور لا محيد عنه و لا حيدة ، اما نشأة اختلاف الالسنة فهذا امر اخر لا يخل بما نشير اليه ، لاننا نقول ان اللغة هي القدرة على ربط الرموز بالدلائل و المعاني ايان كانت و على اي صورة ، صوتية او رسومية او اشارية ، و قد يكون المنعطف لفهم هذا الاختلاف مرتبط بفهم و تصور طوفان نوح عليه السلام ، و تقارن اختلاف الالسنة بالالوان قد يسهم في فهم العلاقة بينهما او لكل منهما على حدة . </span><br />
+  <span style="font-family: &amp;quot">فتوصيف اي حدث او شيء او العلاقة بينهما هو موجود في اي لسان ، و ينجز بمفرداته و تراكيبه ، و لكن تختلف في الطول و القصر ، في العمق او السطحية ، اما المعاني الجديدة و الفاظها الدالة عليها هي التي تستعير من لسان لاخر ، و لكن في بداية نشأة هذا اللفظ كيف نشأ ؟ فنشأته في أول امره دليل على كفاية هذا اللسان للدلالة على هذا المعنى الجديد ، و هذه القدرة و الكفاية اللغوية لسد هذا العجز مقدرة يتمتع بها اي لسان و لكن التفاضل و السبق يأتي من السبق الزمني لاحداث هذا اللفظ لهذا المعنى ، تقتضيه ظروف المجتمع من حضارة او علوم او مكتشفات لم تكن معروفة من قبل بألفاظ او لم تكن معروفة من قبل من حيث التعقل لها لانه لم تمر على العقل من قبل في تصوره .</span><br />
+  <span style="font-family: &amp;quot">لانه لا يتصور أداء لفظ ما او صوت ما او اشارة ما ، لمعنى ما الا ان يكون كاف الدلالة لهذا المعنى ، لان اللسان و اللغة ماهيتها الفهم و الافهام ، و لا يجوز عليها اللبس او الغموض لان هذا مخالف لماهيتها و غرضها ، فلا يمكن تصور التواضع على لفظ ما لا يؤدي وظيفته على التمام ، لانه لن ينجح و لن يبقى ما دام لا يؤدي الغرض منه ، فلا يمكن تصور مثل هذا في وضعه الأول فضلا على ان يوضع ، و عن ان يوضع لمدة من الزمن ثم يكمل و يتم له تمام الدلالة على معناه ، فهذا تصور مرفوض عقلا و واقعا .</span><br />
+  <span style="font-family: &amp;quot">و قد ينغص على هذا المنحى و التفسير وجود التضاد و الاشتراك اللفظي في اللغة ، و لكن الاشتراك اللفظي يزول غموضه و لبسه بالسياق و القرائن و مقتضى الحال ، اما الأضداد فهي ظاهرة تستحق الدراسة المتأنية لفهم المراد منها و حقيقة وقوعها ......</span><br />
+  <span style="font-family: &amp;quot">ثم نتكلم على الفصل الزمني بين اللفظ و المعنى في السبق الزمني ، فهو يقول &quot;أن الألفاظ إنما أحدثت بعد أن عُقلت الأشياء&quot; ، فلو كان مراده من عقل الأشياء هو إدراكها بالحواس أولا فينطبع في الذهن تصور خاص بالمدروك كاف في تميزه لان يستقل بالكفاية الدلالية المعنوية ، ثم يأتي مرحلة وضع لفظ لها بإحداث هذا اللفظ ، فهذا فيه مناقضة ظاهرة لما كان من شأن آدم عليه السلام مع الله ، فآدم عليه السلام علم الأسماء اولا و قبل أن يعرض عليه اي شيء ، و الدليل على ذلك قوله الحمد لله بعد عطسه ، فهذا الربط المباشر بين إدراك الحدث و بين اللفظ الدال عليه او المنوط به لهو أكبر دليل على أن العلم بالعلاقة هذه مفطور عليه آدم ، و أن الأصل هو اللغة المغروزة فيه قبلا ، فإذا انطبع في الذهن اي تصور عن طريق الحواس فله ما يشير اليه من اللسان المكتسب فهو لآدم اكتساب لدني من الله ، ولنا نحن بنيه في الدنيا اكتساب اجتماعي من الأهل و القوم ، و يبقى الجزء المشترك بيننا و هو اللغة و هي من الخلقة المحققة لماهية الانسان .</span><br />
+  <span style="font-family: &amp;quot">فالمفردات المستعارة او الدخيلة او المفروضة من لسان على أخر ما هي الا اختصار لفظي لمعنى مركب او وصف مركب ، فهو لفظ ما يشير الى معنى ما ، يمكن تأديته باللسان المدخول عليه و لكن لحداثة المعنى عليهم يدخل عليهم اللفظ بمعناه ، و يسهل هذه العملية أمور كثيرة منها عوامل نفسية و ثقافية و علمية و حضارية و لسانية ايضا فقد تكون صوتية او دلالية و هكذا تتعدد العوامل و تتقوى مع بعضها البعض لفرض اللفظ الجديد بصوته الاصلي ، او بتغيير بسيط في الاداء الصوتي على وفق القوانين الصوتية للسان الاخر ، فيؤدى على صوتياتهم ، او ان يترجم اللفظ لوجود مقابل له يؤدي معناه بشكل جديد وفقا لوزن صرفي معين يحمل معنى معين لم يكن حاضرا وقتها في حضاراتهم و لذلك لم يوجد ، و لكن معنى الوزن الصرفي يؤدي المعنى المطلوب بتمامه .</span><br />
+  <span style="font-family: &amp;quot">و عملية التأثير و التأثر بين الألسنة فيما يسمونه صراع اللغات ، مرتبط بالحضارة و القوة و التجاور و الاستعمار و النشاط التجاري و التزاوج و المصاهرة ، فهو موضوع يمكن احضار طرف منه هنا ، لبيان أن الالسنة و هي الصوتيات العرفية الخاصة لكل أمة عندما تتأثر و تؤثر فهي في نطاق الصوتيات فقط ، و لا علاقة لها باللغة ، فكل أمة معانيها و تصوراتها مؤداه بصوتياتها ، فهي كافية لها و ملبية متطلباتها الوقتية ، لأن ذلك يتغير مع الوقت مع الرقي و التحضر او التخلف ، و مرتبط بالقوة و السلطة او القهر و الاستعمار و باقي العوامل المؤثرة في ذلك .</span><br />
+  <span style="font-family: &amp;quot">صوتيات اي لسان ما هي كافية لتأدية اي تصور عقلي و معنى ، و لكن الاختلاف في تحقق الوجازة و الفصاحة و البلاغة ، فهي فروق كمية و نوعية ، و لكن ليست فروق جوهرية تخل بالأداء المنوط بها من تصوير الانطباعات الذهنية و الادراكات المختلفة و المعاني المتولدة ، و ليس أدل على ذلك من بعث الرسل صلوات الله عليهم اجمعين بألسنة اقوامهم مبلغين عن الله كلامه ، فهو يحمل كل المعاني العقلية و الفطرية و الشرعية ، التي تتناول الحجاج و الجدال و الاقناع و الكون و المخلوقات و العلائق بينهما ، و الواجبات التي عليهم و الحقوق التي لهم و غير ذلك من معاني و تصورات دينية شرعية ، فكلام الله محمول لهم على وفق لسانهم فلا بد أن يكون كاف من الناحية الدلالية لهم في نقل هذه المعاني و التصورات .</span><br />
+  <span style="font-family: &amp;quot">فكل لسان قائم بذاته بين متكلميه فهو كاف دلاليا لأن يؤدي الدور المنوط به ، و يظهر بذلك حقيقة الالفاظ الدخيلة و المستعارة في ضوء ما سبق ، انها تدور حول الوجازة و البلاغة و الفصاحة فقط ، لأنه لو غاب المدروك و المشار اليه او المعنى المنوط باللفظ عن اذهان المتكلمين و هو في حكم العدم بالنسبة لهم يصبح الصوت الجديد المنتظر دخوله عليهم و غزوهم من قبيل اللغو ، لانه ليس له دلالة او معنى عندهم فإلى ماذا يشير اذن ، و لذلك لن يتواجد و لن يبقى ، لان الاهمال في الاصوات و الالفاظ يميت اللفظ او الصوت كما هو معروف في علم اللغات المقارن و التاريخي .</span><br />
+  <span style="font-family: &amp;quot">و بهذا يتبين استحالة وجود مُدرَك او معنى او دلالة مستعملة بين قوم بدون ان يكون لها لفظ قائم بها بدون لبس او غموض ، و بهذا لا يمكن تصور لفظ كامل و لفظ غير كامل ، و لكن يمكن تصور اشارة او صوت او رسم يؤدي معنى متعارف عليه فيما بينهم ، و ما دام يؤدي المعنى و الدلالة فهو كامل و لا بد ، و القول بغير هذا يشير الى غياب مدروك ممن يشار اليه من المحسوسات و هو من المثل الأُول ، وبالتاي يمكننا تفسير قصور عملية الاشتقاق للمعنى الجديد المركب منه و من غيره ، فجاء شكل اللفظ الجديد و هو التصريف الجذري لأصل اللفظ ، على وفق خاطئ منقوص غير كامل ، فكيف اذن اشتق منه ليؤدي معنى جديد قد تم ادراكه و تعقله بالتمام ، و الجذر او المثال الاول صحيح و كامل ، فلا يمكن تصور تخلف الاشتقاق عن مجاراة المعنى المراد الاشتقاق له ، ما دام سيتعارف عليه من الجميع ، و هذا على منحاهم في تفسير الالفاظ و المعقولات غير سديد ايضا ، و غير مقنع ، لفطرية هذه العملية من الاساس فكل بشري يعرف من نفسه معنى الفعلية ، و الفاعلية ،    و المفعولية ، و الاضافة ، و الصفة ، و الحال و الى غير ذلك من تصورات مبتناة من المقولات العشر ، فكل جوهر مشار اليه محسوس لا ينفك ابدا ادراكه او تصوره من باقي المقولات مجتمعة كلها او بعضها ، فلا يمكن ادراك شيء ما بدون تضمن الزمن و الكم و الكيف و الوضع و الوصف و الفعل و الانفعال عليه ، فقد يسبق للحس مقول عن اخر في تمايز المدروك و ليس في الادراك نفسه ، لأن عملية الاستقبال من الحواس و الانطباع الذهني برسم صورة للمدرك تتم بدون تدخل من الانسان ، و ما يوافق ما ذهبنا اليه من تصور من كلام الفارابي قوله : &quot;وكل ما يدل على ما هو المشار إليه منطو فيه بالقوة . و كذلك الأسماء المشتقة الدالة على سائر المقولات فإن المشار إليه منطو فيه بالقوة . و ذلك أن المثالات الأول الدالة على سائر المقولات المنتزعة تنطوي فيها أجناسها بالقوة مدلولا عليها بالمثالات الأول . و إذا أخذت مدلولا عليها بألفاظها المشتقة انطوت فيها أنواعها بالقوة مدلول عليها بألفاظها المشتقة و انطوى فيها مع ذلك المشار إليه بالقوة أيضا . إلا أن تلك تنطوي فيها على مثال ما ينطوي المشار إليه تحت كل ما يعرف منه ما هو .&quot; <a href="http://majles.alukah.net/#_ftn22" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[22]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">و لكن قد يعترض هذه الاحاسيس او المدخلات الحسية عارض ما ، فيؤدي الى انطباع ذهني مغاير لو ازيل هذا العارض او المانع الجزئي لنفس الشخص ، و لكن في نهاية الأمر هو الانطباع المرسوم في الذهن ، و نفس الشخص لا يشعر باختلاف في الحالتين التي احدهما افتراضية اي لم تحدث له .</span><br />
+  <span style="font-family: &amp;quot">اما لو مر بالتجربتين من قبل فيدرك الاختلاف من حيث هو اختلاف مجرد ، و لكن تصرفه سيكون على مقتضى الانطباع الذهني الذي ينحاز له بدون وعي ، كالجاهل الجهل المركب ، فهو لا يدري انه لا يدري ، و لذلك يكون سلوكه على مقتضى تصوره للامر و لا يشعر بشيء مخالف عما يجب عليه من العلم لهذا الامر ، فيبقى كما هو . اما لو زال هذا الجهل لينقلب علما فسيجد من نفسه الاختلاف بين الحالتين ، و يكون سلوكه لما انطبع عليه ذهنه من تصور على مقتضى العلم الحادث . فالانسان هو حصيلة تصوره الآني ، كالذي يفسد و هو يحسن انه يصلح و هو لا يشعر ، لأن له ادراك و تصور لمعنى الافساد و معنى الاصلاح على العموم ، اما الذي يصف شيء عما لا يجوز عليه و يتعامل على ذلك التصور في السلوك و التصرف يقال عليه لا يعلم ، بخلاف الذي لا يشعر ، لأن الذي لا يعلم يركب الامر على ضد ما يريد هو منه ، فيبتعد عن ما يجب عليه اقترافه ؛ لكي يتصف بما يربوا اليه و يبتعد عما يشينه .</span><br />
+  <span style="font-family: &amp;quot">- ثم يتناول الفارابي التصريف الاشتقاقي للألفاظ على حالات ، تبدأ من عدمه اصلا في حالة دلالة اللفظ على ما هو مشار إليه و ليست في موضوع ، و حالة وجود الاشتقاق للألفاظ الدالة على سائر المقولات الاخر بشرط أخذها منطوية على المشار اليه بالقوة . وحالة تصريف اشتقاقي و لكن بأشكال تصريفية أخر و هذا عندما تكون الالفاظ دالة على المعنى المجرد اي بدون المشار اليه الذي في موضوع . <a href="http://majles.alukah.net/#_ftn23" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[23]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">و خلاصة الأمر و مفاده أن الغنى التصرفي بكثرة أشكاله و تنوعها على ضروب كثيرة متمشية مع المعنى الجديد المراد التمثيل له بكل شكل تصريفي على حدة ، متوقفة على المشار إليه ، فحضروه القوي في التصور و المقول يغني و يكثر المعاني المتولدة منه و من حالاته ، لأنه هو مدار المعاني ، فكل علاقة ذهنية تصورية تجمعه مع تصور مدروك تعطي ضربا من الدلالة الجديدة التي تستحق شكلا خاصا تصريفيا مشتق من المثال الأول ، لأنه افاد معنى مستقل يتوقف عليه معنى أخر فيعطي معنى مركبا جديدا ، فالمشار اليه قد يكون فاعلا او مفعولا به او له او عليه او مطلق او لأجله ، او يكون وسيلة او اداة لتنجيز الافعال ، او يكون صفة ، او موصوف ، او ظرف او .... الخ .</span><br />
+  <span style="font-family: &amp;quot">اما اذا غاب المشار اليه من المشهد فلن يبقى الا معنى مجردا ، يضيق به المقام و الحال الى ان يشتق منه اي تصاريف جديدة ، لانه لا يتصور عليه تشكلات جديدة تقابل معاني جديدة ، لان محل تعلق المعاني بالعلاقات بينه و بين الاخر قد غابت ، نقصد المشار اليه بما هو ، و في حالة غيابه مع مقول لا يقوم بنفسه ، و لا يوجد الا في المشار اليه ، فيستحيل الاشتقاق في هذه الحالة ، لانه سيكون ضربا من المستحيلات العقلية .</span><br />
+  <span style="font-family: &amp;quot">- و ما زال الفارابي يكرر و يقرر على فكرة تطور الألفاظ و المعاني المعقولة ، من المستوى المحسوس للمشار إليه الدالة على أوصافه و على عينه ، الى مستوى تجريدي فيه يتم انتزاع المعاني و إفرادها بمعزل عن المشار إليه ، و المستويان يختلفان في غناء الاشتقاق من عدمه على حسب مثول المشار اليه في المعنى المتناول او الذي نحن بصدده ، و هو على ذلك مؤمن بفكرة تكامل الألفاظ في تمام الدلالة على المعنى المنوط بها و أن هذا الكمال مرتبط بالزمن و الصناعة العلمية ، التي يتفرغ لها أناس معينون بحثا و نقدا و تقعيدا و تحليلا ، فعند هؤلاء يتم وصول الى غاية الكمال في الألفاظ ، ثم مستوى وسط بينهما و لكن هو أقرب للمسوس منه الى المنتزع التجريدي ، و بالطبع يكون محدود الاشتقاق اللفظي و تعدد المعاني المرتبطة به .</span><br />
+  <span style="font-family: &amp;quot">و هذا نص كلامه لأهميته : &quot; </span><span style="font-family: &amp;quot">و ظاهر أن التسمية إذا حصلت بالألفاظ  أُصلِحَت على مر الدهور إلى آن أن تحصل صناعة ، وجد فيها ما هو مشتق و ما هو غير مشتق ، و وجد فيها ما يدل على معان منتزعة عن المشار إليه و على ما يدل على هذه المعاني بأعيانها من حيث المشار إليه موصوف بها – و هذا بعضه يدل على ما هو المشار إليه و بعضه يدل على غيره من المعقولات . و المعاني المنتزعة هي متأخرة بالزمان عنها من حيث يوصف بها المشار إليه و من حيث ينطوي فيها بالقوة المشار إليه . و الألفاظ الدالة عليها ، فإنه ينبغي أن تكون هناك ألفاظ مشَّكلة بأشكال تدل عليها من حيث هي منتزعة مفردة عن المشار إليه ، و ألفاظ أخر تدل عليها من حيث المشار إليه منطوٍ فيها بالقوة</span><span style="font-family: &amp;quot"> . &quot; <a href="http://majles.alukah.net/#_ftn24" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[24]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">و قد ناقشنا هذه الفكرة سابقا بما يغني عن الاعادة ، و لكن مزيد فائدة نقول : اللغة عامة متفشية في كل متحدثيها ، تحمل الافكار و التصورات و الخبرات و التجارب و التاريخ و كل التراث الخاص بهذه الامة خاصة و بغيرها عامة ، لا تتوقف هذه اللغة على أشخاص ذوي تصورات معدودة خاصة بأصحابها لا تخرج عن نطاقهم الى العامة فهي متداولة فقط في المجالس و المناظرات و المؤلفات و محاضر الخلفاء و الامراء ، و هذه ليست اللغة ، هذه احدى صورها الخاصة التي تبين من خلالها القدرة على استيعاب كل وارد و كل صادر من العقول و التجارب و الخبرات ، فالألفاظ الخاصة و بمعنى أنها أُنيط بها تصور خاص مناسب للإطار العام في علم معين ، هي اصطلاحات و ليست مفردات ، فالمفردة اللغوية هي من صلب اللغة و اللسان ، و لها استعمال خاص متعارف عليه فيما بين الأمة المتحدثة بها ، و لا يخرج عنه الا لظروف خاصة تتفق ايضا عليها ، و الاتفاق هنا ليس معناه القصد العمدي للتغيير ، و لكن هي عوامل تتضافر لتغير المزاج العام اللغوي من دون وعي قاصد لهذا التغيير ، تمليه الظروف قد تكون دينية او ثقافية او حضارية و هكذا ، اما ان يظل المصطلح حبيس التخصص المنوط بأهل الصناعة فهو إرث لهم فقط ، تدوال محدود بهم ، لا يعدو أكثر من ذلك ، و على ذلك فكرة نشوء ألفاظ او تنقيح أوزان صرفية و إبداعها من أهل صناعة علمية او فكرية ما ، لا يدخل الى اللغة و اللسان الا في نطاق محدود خاص بهم ، و اذا جاز لأحد هذه المصطلحات أن يكتب له الإندماج في الحياة العامة لمتحدثي اللغة ، فلا بد أن تجده من الأصول او منحوت من أصول او مركب من أصلين ، او منوط بأصل بينهما علاقة وشيجة تتفاوت في الوضوح و الظهور على حسب الاستدعاءات التي تملى عليه مستوحاة من الظروف المحيطة ، فلا تعدو أن تكون أكثر من تنشيط لكسل معنوي او إحياء موات لغوي او معنوي و هكذا ، فلا يمكن تصور فكرة أن هناك الفاظ مستحدثة لمعاني مركبة من فئة معينة ، اهتماماتها مختلفة ، خاصة و أن هذه الإهتمامات قد تتبدل و تتغير بظروف المجتمع و الحاجة ، فقد يحضر علم ما في وقت ما ثم يندثر و يختفي ، ثم يعاود الظهور على اشكال متباينة و اغراض مختلفة ، و قد يتطور في اصوله النظرية او التطبيقية ، بما يستدعي تعديل نظري و تقعيد من جديد ، و هذا دائما سبيل المعارف الفكرية و العقلية و الخبراتية .</span><br />
+  <span style="font-family: &amp;quot">فلفظ كمبيوتر الدخيل على العربية ، هو لفظ ليس عربي ، و ليس له أصل عربي و بالتالي فهو ليس مشتق ، و ليس له شكل او تصريف عربي ، و لكن تصور المشار إليه بهذا اللفظ ، من ماهية و أوصاف و باقي المقولات ، هي واحدة عند كل البشر على اختلاف السنتها ، و لكن التوصيف الحقيقي لمثل هذا اللفظ هو انه صوت اشاري لمشار اليه محسوس لا يجري على قواعد اللسان و اصواتها ، و بالتالي فهو من فئة الاشارات الصوتية ، او الرموز الصوتية ، و بالتالي فاللسان لفظه و لم يسمح له بالأندماج مع باقي مفرداته ، لانه غريب و اجنبي على النظام اللساني ، و على ذلك فهو ليس دخيل و لا له محل من الاعراب كما يقال .</span><br />
+  <span style="font-family: &amp;quot">اما اذا قلنا حاسوب ، فهو له في العربية جذر اي اصل ، و قد أخذ شكل تصريفي اشتقاقي ليدل على تصور محدد لهذا المشار اليه ، على انه هو الذي يفعل ، فهو فاعل ، و لزيادة التصور على معنى انه حاسب ، فهو مبالغ في وصفه بالحساب ، و هكذا يتم التعامل مع هذه المشارات الجديدة المستحدثة ، فهو في الاساس مشتق من معنى و لفظ اصلي عند العامة و في اللسان ، يفهمه اي متحدث على جميع المستويات .</span><br />
+  <span style="font-family: &amp;quot">ام هل تمثيل المعنى و كمال التصور لهذا المحسوس المشار اليه في اللفظ المنوط به الدلالة على هذا ، فانه مشابه لمن اشتقه اول مرة ، فهو عند الانجليز مشتق من الحساب ايضا ، كما عربناه نحن عندنا ، فهل الحساب و تصوره و معناه عندنا كعندهم ، بمعنى ان هذا المحسوس يقوم بالحساب العددي المعروف بالاحصاء و العد و يقوم بجميع هذه العمليات ، و لكن مع ذلك يقوم بأشياء أخر فهل هذه المعاني الاخريات ممثلة في دلالة هذا اللفظ ام لا ؟ و هل هي مختلفة عندهم عن عندنا ؟ </span><br />
+  <span style="font-family: &amp;quot">فهذا مثال على محسوس مستحدث كامل الابتداع ليس على مثال سابق في الحضارات المؤرخة المعروفة ، فعند تسميته اي وضع له لفظ لغوي لساني ، كان من نفس الأصول اللغوية اللسانية ، لم يخترع له لفظ ، لأنه في هذه الحالة ليس له مردود لغوي لساني ، له بيان و وصف لـ ما هو ، و هذا لأن اللغة مفطورة في الانسان ، لسانها (صوتياتها) موروث مجتمعي للفرد الجديد ، فليس له الا ان يشتق من الجذور ، لأنها فعلا جذور لها تشعبات فرعية ذات اشكال مختلفة و لكن لا تخرج عن أصلها الجذري ، فهي امتداد يحمل معه الاصل و يزيد عليه تصاريف فقط ، اي تحورات مع بقاء المادة الخام كما هي ، فالمادة الخام هنا يقابلها مقولة العلم بما هو ، و التحورات و التصاريف يقابلها باقي المقولات التسع ، فلا تنهض مقولة منهم ان تستقل بمفردها لتؤدي دور المقولة الاولى ، فلن تستطيع ان تعطي مادة خام لتتشكل و تتحور لان فاقد الشيء لا يعطيه .</span><br />
+  <span style="font-family: &amp;quot">و الحاصل ان اداء اي معنى يظن انه جديد مخترع هو في الحقيقة مؤصل في القدم و الجذرية في اللغة و ممثل صوتيا في اللسان ، فالكمبيوتر مثلا ، هو أداة سريعة الحساب جدا ، بسرعة كذا ، أداة عارضة لصور ، للصوت ، و هكذا ، فكل تصوراته يمكن الدلالة عليها بألفاظ من اي لسان ما دام تم تصوره العقلي و الوقوف عليه ، لانه يستحيل ان يشتق لفظ او وضع لفظ لمعنى لم يكن في العقل ،  فالرابط بينهما كينوني غير متوقف على فعل الانسان ، و يمكن التعبير عن الكمبيوتر على مستوى اخر تصوري : انه أداة تحول النبضات الكهربية الى صوت و صورة ، و هذا تصور أخر نستطيع أن نعبر عنه بألفاظ تجدها في اي لسان ، لأن تصور الصوت ، الصورة ، التحول من الاحالة و هو تغير الشيء من صورة الى اخرى ، و هكذا باقي المعاني و التصورات .</span><br />
+  <span style="font-family: &amp;quot">اما مطابقة دلالة اللفظ لتمام المعنى و التصور ، فهو يتوقف على مستوى البساطة و التعقيد في المعاني ، هل هي مفردة ام مركبة ، هل هي منطوية على المشار اليه صراحة ام تضمناً ، و ارى انه اذا لم نجد لفظ يؤدي كل المعاني و التصورات ، اخذنا من حوى الاقل ، و هكذا حتى نصل الى لفظ ما دام تعذرنا في ايجاد غيره ، و الحل الاخر ان يكون هذا اللفظ الذي تم الوصول اليه سابقا يكون دوره اشاري اكثر منه دلالي (اي تمام اللفظ لتمام المعنى) ، فيقوم بالاشارة الى المحسوس مع ما يؤديه من معاني متصورة متحققة في المشار اليه ، فقد يكون هذه المقولات الباقية هي من التضمنات اللازمة لاي عقل مجرب ، فتحضر للذهن تلقائية حتى و لو لم تكن ممثلة في اللفظ من الناحية اللسانية الدلالية ، فهناك دائما علاقة بين اللفظ و اداءه للمعنى المنوط به ابلاغه للاخر ، و هذا ما يميز افضلية لفظ عن لفظ إزاء معنى معين محدد .</span><br />
+  <span style="font-family: &amp;quot">فهذه الافضلية معللة بشيء ما ، وراءها سببية او حكمة ، و لا يفسر ذلك الا مقولة ان اللغة فطرية و ان اللسان ايضا فطري كما نزل مع آدم علي هالسلام ، و ان اصل الالسنة هي اللغة العربية من وجه بقاء لسان يقوم بكل الاداءات المنوطة به في تصور كل المعاني في الفاظ معبرة عنها ، و ان هذه الاناطة او العلاقة ما بين هذا اللفظ او الصوت و هذا التصور العقلي لها علة لا يستطيع العق الوقوف عليها ، و لا يستطيع التاريخ الطبيعي و الانساني الوقوف عليها ، و لن يبقى الا ان يستعان على ذلك بالنقل الموثوق و هو النص الديني .</span><br />
+  <span style="font-family: &amp;quot">و يكون تفسير تعدد الالسنة هو نشؤها من لسان واحد ، لان تفسير ما بعد ذلك يسهل على العقل و الحس و العلم تصوره ، و وضع له مناهج علمية تعتمد على مقدمات حسية و واقعية و نظرية ، خاصة اننا في ديننا الاسلامي عندنا النص المقدس الذي لا يأتيه الباطل و لا التحريف ، و هو كلام الله الخالق ، علم الغيب و الشهادة ، فيكون كلامه هو الحق في اي تصور ، و هو المعيار في اي حكم ، و في اي صدق ، و لذلك يكون المنطلق منه ، و التفسير من الحس و الواقع .</span><br />
+  <span style="font-family: &amp;quot">فتفسير تعدد و اختلاف الألسنة اقرب للصحة و الواقع و الحس من محاولة تفسير نشوء اللسان او انه وضعي من البشر و اصطلاح عليه ، و تهافت النظريات التي تحاول التفسير لذلك من اعتمادها على بدائية الانسان و تطوره على مراحل ، و على المحاكاة لصوتيات الطبيعة و الانفعالات و الجسد و ما الى ذلك من نظريات ساذجة من الناحية العقلية و المنطقية و من الناحية العلمية الممنهجة و المتجربة ، علاوة على مخالفتها لكل الاديان المحرفة منها و الصحيحة منها و هي ديننا الحنيف ، خاصة و انه جرب عليه كثير من الوقائع و الحسيات و النظريات و الغيبيات التي تتكشف اليوم و كلها صحيحة نصا او تفسيرا او لا تصدم النص او احتماليته ، فكل هذه الشواهد تجعل القرآن مصدر علمي و تاريخي للبشرية كلها ، و هذا ما جعل كثير ممن يشتغلوا بالعلوم يعترفوا بالاله الواحد و بالخالق لهذا الكون و الانسان حتى و لو لم يسلموا .</span><br />
+  <span style="font-family: &amp;quot">خاصة و هذا التفسير في نشأة اللغة و اللسان منسجم و متصل الحقائق و قوي في منهجة و صائب و صادق في واقعه و ملتئم بالاديان السماوية ، فأول خلق للبشر كان آدم ، ثم تم عليمه اللغة و اللسان ، ثم نزل للأرض ، ثم تكاثر هو و أولاده يتحدثون لسان واحد ، او حتى على فرض عدة ألسنة ، فالأصل ان اللسان توقيفي ، ثم منعطف سيدنا نوح عليه الصلاة و السلام و علاقته بتعدد الألسنة ، فالأصل هو بقاء اللسان الاول او تعدد الألسنة ، ثم اختلافات لهجية لنفس اللسان ، تزيد مع الوقت بعوامل مناخية و غيرها ، حتى تغترب اللهجة فيعسر التواصل بينها و بين الأم فتنفصل لسان مستقل ، و هكذا يكون التأثير و التأثر بين الألسنة كما بين الأمم في الصراعات و التواصل ، و من هنا يضع يده المنهج التاريخي للألسنة لأنه يعتمد على برديات و حفريات لسانية ، تكون هي المادة في المنهج المقارن للألسنة ، و بالتحليل و المقارنة يظهر مدى التشابه و الاختلاف بين الألسنة ، ومن خلال ذلك يستنبط أسبقية لسان على أخر في الوجود ، و يظهر تأثير صوتيات لسان على أخر ، و اختفاء لسان بالكامل او بقدر متدرج على مر الزمن ، او بتغير صوتيات في أدائها الأصلي او ادائها الحادث و هكذا يتم بناء تصور معين على تاريخ الألسنة و مدى تأثرها او بقاؤها من اصله .</span><br />
+  <span style="font-family: &amp;quot">و ان كانت نتائجه غير يقينية لأنها تعتمد على مصادفة العثور على الحفريات اللسانية ، فلا استقراء و لا تمثيل حقيقي للسان و متحدثيه باعدادهم الحقيقية و لا أماكن معائشهم ، و علاقاتهم بالأمم و الألسنة المجاورة  لها ، ثم تحديد تواريخ كثير من الحفريات يكون اجتهادي و على أمور ظنية او على أمور يجب أن تكون هي الناتجة من الدراسة و ليست هي الحاكمة على الدراسة ، فقد يعتقد تشابه لسانين على اصل هو في الحقيقة موهوم او مظنون او لم يثبت بعد ، و كثيرا ما يحدث مثل هذه الامور خاصة عند نقد و مناقشة أصحابها مع بعضهم البعض على حجج كل منهم ، و لكنه هو حب المعرفة و الفضول المعرفي للانسان .</span><br />
+  <span style="font-family: &amp;quot">- و قد تعرض الفارابي لأراء القائلين بأصول اللغة و اللسان ، بمعناه اي ما هي المثالات الاول ، هل هي المتضمنة للمشار إليه بالقوة ام هي المجردة عن المشار اليه ؟ ، و ذكر أن هناك من قال بهذا او بهذا . و قوله : &quot; و قوم زعموا ان الألفاظ التي تدل عليها من حيث ينطوي فيها بالقوة المشار إليه و من حيث المشار إليه موصوف بها بالقوة هي مشتقة من ألفاظها الدالة عليها من حيث هي منتزعة عن المشار إليه ، و أن ألفاظها تلك هي المثالات الاول . و آخرون رأوا عكس ذلك . و لكل واحد من الفريقين موضع مقال . &quot; <a href="http://majles.alukah.net/#_ftn25" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[25]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">و هو يضع المصادر موضع وسط بين طرفي عدمية الاشتقاق و كمال الاشتقاق ، هذا من جهة الالفاظ ، اما من جهة المدلول بها و تصواراتها في العقول ، يجعل المصادر اقرب صلة و نسبا الى المحسوس الخارج عن الذهن ، و ذلك لان المصدر يتضمن بالقوة و ليس بالفعل على المشار اليه المحسوس الذي هو خارج عن النفس ، و يعلل ذلك بأنها صفات يتصف بها المحسوس و المحسوس يتصف بها . فيقول : &quot; فإنها من حيث هي صفات المشار إليه و المشار إليه موصوف بها أحرى بأن تكون موجودة خارج النفس منه كَلِم – و هذه تسمى عند نحويي العرب (مصادر) و هي تصرف في الازمان الثلاثة . &quot; <a href="http://majles.alukah.net/#_ftn26" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[26]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">فهناك اذن قضية مكونة من ثلاثة اركان ، اي علاقة ثلاثية ، المحسوس المتحقق بالخارج – الصورة الذهنية المدركة لهذا المتعين بالخارج و هي عملية فطرية بحتة لانها تعتمد على سلامة الحواس المادية و خلو الموانع المادية – و العلاقة بينهما خارج مجال الحس السابق الاشارة اليه ، بل هي علاقة واعية من جهة و غير واعية من جهة أخرى ، فالجزء الواعي فيها منوط بعملية التلفظ الصوتي بقصد ايصال الافكار المكتملة الى الاخر ، و هي عملية إجرائية فقط يستخدم فيها المتكلم الألفاظ  محملة بالعلاقة الفطرية التلقائية و هو الجزء الغير واعي ، و عند المتلقي في الجانب الأخر يتماثل معه الجزء الغير واعي و هي العلاقة الفطرية الغريزية لان مصدر خلقتهم واحد ، ثم يأتي دور الجزء الواعي و هو متماثل ايضا في معظمه بحيث لا يأتيه لبس أو غموض في تلقي الرسالة الفكرية المعنوية ذات الدلالة المحددة ، و عماده آتي من العرف الصوتي الذي يكتسبه من المحيط اللساني عند متكلميه .</span><br />
+  <span style="font-family: &amp;quot">و بما انه عرفي إجتماعي فلا يشذ عنه أحد بإختراع علاقة دلالية بين لفظ و تصور عقلي ، محجوزين لمشار إليه قائم بالفعل ، فإنه يُقَوَّم على الفور و يجبر على إعادته على الجادة العرفية الإجتماعية ، و لإحداث مثل ذلك يجب أن يكون ذو سلطة روحية متقبلة و مقدسة ، فتعرف هذه الألفاظ بمعاني عرفية و لكن لا تخرج بالكلية عن الأصل اللساني ، و دائما ما تكون على صلة اشتقاقية و متحدة في المعنى الجملي اي في اصل المعنى ، و لكن اما أن تقصر على معنى محدد او زيادة معنى محدد له صلة بالمعنى الأصلي .</span><br />
+  <span style="font-family: &amp;quot">و بهذا يتبين أنه لا إختراع في احداث علاقة دلالية بين لفظ ما و معنى ما  ، من العدم ، او متجاوزة للادراك البشري ، و هنا يأتي دور المثال المضروب لتقريب المعاني المنشود تصورها ، فَيُقِفَهُ على أقصى بلوغ تصوري وصل إليه ثم يطلي عليه صبغة القصور على الحد المطلوب فيكمله بالنفي لأي تصور سبق و أن حصل له ، و هذا يأتي في الغيبيات ، لأنه لا مثيل لها أدرك من قبل ، او له تصور سابق في الذهن فيستدعى بلفظ ما ، فيجب أن يكون في منطقة اللاتحديد و اللاتعيين ، و هنا النفي يكون بسلب ما هو موجود ، اي أن بناء التصور المطلوب لا يتشكل الا من سلب ما هو موجود مدرك ، كتصور العدم : فهو تصور مبني على سلب الوجود ، اي لولا الوجود و أدراكه لما أمكن تصور العدم ، و بذلك يمكن أن يقال أن لا حقيقة لمعنى العدم لأنه لا يدرك بذاته ، بل بنفي ذات أخرى ، هذا بالنسبة للإنسان و ادراكه المحدود .</span><br />
+  <span style="font-family: &amp;quot">و بذلك تستطيع أن تفسر (ليس كمثله شيء) و ( لم يلد و لم يولد ، و لم يكن له كفوا أحد) .</span><br />
+  <span style="font-family: &amp;quot">- و يتلمس من كلامه نصرته لرأي ان المصادر ليست هي المثالات الاول ، لأنه يجد ألفاظ (مقولات) دلالتها تنطوي على المشار إليه الذي لا في موضوع و ليس مشتق من مصدر . و قد أوضحنا سابقا المقصود من هذه الألفاظ التي تتضمن المشار اليه بالقوة ؛ اي بالتلازم العقلي ؛ أنها اقرب للمقول الأول و هو العلم ، من المعاني المجردة عن المحسوس و المنتزعة منه ، و أن الاشتقاق فيها ليس بثراء الأول ، و أكثر من المنتزع من المحسوس ، و قد وجد أن من هذه الاشكال التصريفية غير مأخوذ من (مصدر) و بالتالي لا يكون (المصدر) هو المثال الأول ، و سيضرب أمثلة على هذا ، أن هناك ألفاظ تقوم مقام المصدر و ليست مصادر ، والاحرى لإشتقاقها (جعل له شكلا)  أن يكون مأخوذا من اللفظ الذي ليس بمشتق من المصدر .</span><br />
+  <span style="font-family: &amp;quot">فمعيارية المصدر عند الفارابي أن يكون شكل اللفظ له دلالة على انطواء المشار اليه و لكن لا في موضوع ، و أن يوصف بها المشار إليه أو تصلح للوصف له ، و أنها أقرب الى أن تكون بالخارج عن أن تكون كلم ، بالإضافة الى تصرفه في الأزمان الثلاثة .</span><br />
+  <span style="font-family: &amp;quot">و كل من يأتي من المصدر فهو مشتق ، و قد توجد سائر المقولات فيها دلالة المصدر كمعنى معقول متصور في الذهن و ليس كلفظ له شكل اشتقاقي ، و هذه الدلالة منطوية على المشار إليه ليس في موضوع ، و لكن هذا اللفظ او الشكل ليس مشتق من مصدر . هكذا على اطلاق لفظ مصدر ، فهو يتضمن المصدر كاللفظ الذي يدور حوله الكلام أو يتضمن أي مصدر أخر يصلح لأن يكون مصدرا . فالمقول او المقولات التي بها تضمن او انطواء للمشار اليه في غير موضوع ، و ليست مشتقة من مصدر ، فعند وضع شكل لها لأن يكون مصدرا لها أو يقوم مقام المصدر لها ، فالأولى أن يكون من اللفظ الغير مشتق من المصدر - لأنه في الاساس ليس هناك مصدرا له ، فهي ليست عملية إختيارية بين المصدر او غيره - و هذا لأنه ليست هناك علاقة لفظية شكلية بين المصدر- كإفتراض وجوده فقط للتوضيح فهو ليس موجود حقيقة -  و بين اللفظ المقول المنطوي على المشار اليه في غير موضوع ، و الذي فهمته أنه يقول : هناك الفاظ موضوعة على مقول العلم مثلا الذي هو مقول ما هو ؟ فهذه الألفاظ غير مشتقة من مصدر مثل (الإنسان) فهو غير مشتق من مصدر ، بل هو من أسماء الأشياء التي تعرَّف في المشار إليه – من التي لا في موضوع – ما هو ، فإذا اردنا ان نجعل له شكلا يقوم مقام المصدر فالأولى أن يكون من اللفظ الذي ليس مشتق من المصدر (الإنسان) . فيقال (إنه إنسان ظاهر <u>الإنسانية</u>) و (رجل بين <u>الرجولية</u>) و يكون ذلك شبيه بقولنا (هو أبيض بين <u>البياض</u>) و (هو عالم تام <u>العلم</u>)  . فتكون (الإنسانية) مصدرا و (الرجولية) مصدرا أو قائما مقام المصدر .<a href="http://majles.alukah.net/#_ftn27" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[27]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">- ثم قام بتحليل معنى نائب المصدر اي الذي يقوم مقامه او الذي شكله شكل مصدر ، الى معانية البسيطة الأولى لكي تتضح معالمه ، و يتحدد الموقف من تصوره ، فأتى على أول حل ، تفكيك المعنى ، الى : الموضوع ، المحمول ، فتجريد او انتزاع المحاميل او الصفات من على الموضوع يجعلها معاني معقولة ، مفردة عن الموضوع ، ثم يكشف عن الحل الثاني ، و هو مستوى اعمق من السابق ، فيختبر هل بعد التجريد يبقى معنى موضوع اخر ؟ و ان كان كذلك فما هو ؟  هل معناه معنى الانطواء بالقوة ام بالاشارة المحسوسة (موضوع) .</span><br />
+  <br />
+  <span style="font-family: &amp;quot">فلو كانت (الانسانية) منتزعة عن موضوع ، فما هو موضوعها ؟ ، فلو كان هو (الإنسان) فإن (الإنسان) منطوي بالقوة على موضوع ، و يكون معنى (الإنسان) مركب من الموضوع و معنى منتزع منه لا يدل على ذاته ، يكون مجموعهما هو جملة معنى (الإنسان) – حال (البياض) مع (الابيض) - و هكذا حال كل ما يعرِّف من المشار إليه – الذي لا في موضوع – ما هو .</span><br />
+  <span style="font-family: &amp;quot">و كما تم تحليل (الانسانية) يكون (الرجولية) و (البنائية) و أشباه ذلك مما يجري مجرى المصادر .<a href="http://majles.alukah.net/#_ftn28" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[28]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">الأبيض = البياض (المعنى المنتزع) + الذي فيه البياض (الموضوع) . كأن الأبيض منطوي على محسوس بالقوة هو موضوع البياض ، اي هو الذي يتحقق من خلاله معنى البياض ، فهو الذي يجسد معنى البياض ، و البياض منتزع منه بحيث لا يخل بذات الموضوع ، فتعقل الموضوع بدون معنى البياض متحقق ، و لكن في الذهن فقط ، و لا يوجد خارج الذهن متعين ، فلا يوجد في الخارج الا الابيض ، و لا يوجد بياض .</span><br />
+  <span style="font-family: &amp;quot">و مثل ما كان مع (الأبيض) يكون مع (الإنسان) . ولكن يتسائل الفارابي هل (الإنسان) ينطوي فيه موضوعه بالقوة أيضا ؟</span><br />
+  <span style="font-family: &amp;quot">يستهل كلامه لمغايرة دلالة (الموضوع) عن (المشار إليه) الذي ينطوي في ((الإنسان)) بالقوة ، و ذلك لأن (الإنسان) هو معقول للمشار إليه ، و يعرّف من المشار إليه ما هو ، و ريما هذه الخصوصية المعرفية لـ (الإنسان) تأتي من كونه مخلوق فريد في حد ذاته ، بالإضافة الى انه هو من يدرك نفسه و يمارس عليها معارفه عن نفسه و عن غيره ، فهو ذاتي الادراك لنفسه و لغيره ، و هذا ما يجعل تناوله بالتحليل فيه مغايره عن غيره ، فهو واحد اثناء الحكم و التصور و إثنان أثناء التحليل و النقد ، و ثلاثة أثناء التفاعل فيما سبق و ادراكه لثلاثية الاركان ، و هكذا ، و هذا ما يبرر المغايرة ما بين (الإنسان) كموضوع ، و (الإنسان) كمشار اليه ، فمفهوم المشار إليه فيه يقرب جدا من مفهوم المادة و الخلقة اي التشخيص و التجسيد  ، اي كجسد من لحم و عظم و عصب و غير ذلك مما يمكن الوقوف عليه ماديا بالمقارنة بينه و بين غيره ، اما مفهوم الموضوع فهو اقرب ما يكون من مادة محمول عليها معاني اخر تحقق معنى الإنسانية ، اي خاص بالمجال العقلي المعنوي .</span><br />
+  <span style="font-family: &amp;quot">و لذلك تكون إجابة : ما هو ؟ هي معقولية (الإنسان) التي في الذهن و العقل اي معاني و تصورات ، و لذلك تصور الفارابي المغايرة بمثل الفارق الذي يكون بين (الأبيض) و بين المشار اليه الذي لا في موضوع ، و هذه النسبة هي كنسبة الموضوع من (الإنسان) ، و نسبة المشار اليه من (الإنسان) كنسبة المشار اليه الذي تحت (الابيض) – و هو شخص (الأبيض) – مما هو أبيض ، و هو الذي يعرّف (الأبيض) منه ما هو بالفعل ، إذ نقول إن (الإنسان) ينطوي في ذلك الموضوع بالفعل . <a href="http://majles.alukah.net/#_ftn29" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[29]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">قوام الإنسان = حده = جنسه + فصله ، أو ، قوام الإنسان = شيء (كالمادة) + شيء (كالصورة و الخِلقة) ، و هذا مثل تحليل (الأبيض) = البياض (الصورة و الفصل) + الموضوع المشار اليه أو بعض أنواعه أو أجناسه (كالمادة أو الجنس) .</span><br />
+  <span style="font-family: &amp;quot">و على تقرير المغايرة فإن (الأبيض) دلالته على (الأبيض) <u>بالفعل</u> ، و دلالته على الموضوع <u>بالقوة</u> . فهل : (الإنسان) يدل على ‘الذي هو له‘ كـ (الصورة أو الفصل) <u>بالفعل</u> ، و يدل على ‘الذي هو‘ كـ (المادة أو الجنس) <u>بالقوة</u> ،، أو <u>دلالته عليهما بالفعل</u> .</span><br />
+  <span style="font-family: &amp;quot">فإن كانت دلالة (الإنسان) على الصورة و المادة بالفعل ؛أو؛ على الفصل و الجنس بالفعل ، فـ(الإنسانية) = الصورة و المادة –أو- الفصل و الجنس ،، هذا لأنها إشتملت على القوة و الفعل معا ، وتمام الدلالة من (الإنسانية) = دلالة على الإنسان بالقوة + دلالة على الإنسان بالفعل ، و بمعنى أخر فـ (الإنسانية)= الموضوع + المشار إليه . </span><br />
+  <span style="font-family: &amp;quot">و لكن هناك منظور أخر للـ(الإنسانية) نسبي ، فإذا نظرنا لها كنظرة (البياض) من (الأبيض) ، يتضح لها معنى مغاير عن المعنى السابق ذكره ، فهنا و بالنظرة الجديدة التي استفدناها من نسبية المقارنة بين البياض و الابيض ، تكون (الإنسانية) إما المادة –أو- الصورة ، أو هي الجنس –أو- الفصل . و هذا لأننا فصلنا بين مفهومي التجريد و التعيين ، فالبياض هنا هو مقابل التجريد ، و الأبيض هنا مقابل التعيين ، فبالتالي تكون (الإنسانية) مقابل (البياض) و على هذا فهي : الصورة أو الفصل ، اي ماهية (الإنسان) = الصورة أو الفصل مجردا عن المادة أو الجنس .</span><br />
+  <span style="font-family: &amp;quot">و للوقوف على معنى (الإنسانية) بعد ما سبق من بيان ، نرى احتمالية المعنى بين أن تكون (الإنسانية) مثل (الناطق) وحده ، و إما مثل (النطق) . فإذا كانت (الإنسانية) هي (النطق) مجردا عن (الناطق) ، و بالتالي يكون (الإنسان) هو (الناطق) ، فـ (الناطق) ينطوي فيه (الحيوان) بالقوة لا بالفعل ! . فـ (الناطق) إذن لا يدل على ما هو (الإنسان) أكثر من أنه (حيوان) . <a href="http://majles.alukah.net/#_ftn30" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[30]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">و بهذا يخلص الفارابي الى أن هذه النوعية من المصادر - (نائب المصدر) أو التي تقوم مقام المصدر - فيما تعرّف ’ما هو‘ (ماهية)  ’المشار إليه‘ (بالقوة) إنما تصح دلالتها (اي هذه المصادر) في كل ما كان منها مركبَّا (من أكثر من معنى) إذا أُفرد (اي انتزع منه)  ’ما هو‘ (اي ماهيته) منه ، مثل الصورة أو الفصل (وهي الماهية)  الذي لا يُدَل عليه باسم مشتق . و ما لم يكن منقسما (اي لا يجوز عليه الانقسام الى معاني) ، و كان إما كالصورة لا في مادة أو مادة بلا صورة ، فليس يمكن أن يُجعَل له مصدر (لأنه في هذه الحالة لا يجوز عليه الإشتقاق ، فليس له شكل لفظي يجوز عليه تعدد المعاني المتصرفة منه لعدمية تولد المعاني) . فإن جعل له مصدر كان ما يدل عليه المصدر و المشتق منه معنى واحدا لا غير (لأن في هذه الحالة هي مجرد تغيرات فارغة من الاشكال و التصاريف ليس فيها اي دلالة على معاني ، بل هو معنى واحد فقط و له صور تصريفية متعددة ، لأنه فاقد القدرة على توليد معاني منه ) . فقد تبين أيضا أن فصول ما يدل على ’ما هو‘ هذا المشار إليه هي أيضا تعرّف ما هو هذا الشيء .(اي أن فصول ماهية المشار إليه هي تعريف ماهية الشيء) .<a href="http://majles.alukah.net/#_ftn31" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[31]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">- ثم أخذ الفارابي في مقارنة لسانية بين العربية و غيرها في معنى المصدر و نائب المصدر (ما يقوم مقامه) ، و ما يهمنا هنا انه اوضح معنى مهم بين المصدر و نائبه ، أن نائب المصدر يتضمن معنى الموضوعية و الارتباط الحتمي الى الموضوع المنوط به ، فهو يقول : &quot; فلذلك ينبغي أن نفهم من (الإنسانية) أنها تدل على شيء غير مفارق لموضوع ما . &quot; <a href="http://majles.alukah.net/#_ftn32" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[32]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">ثم يستطرد شارحا : أن هناك فرق ما بين هذه المصادر و بين الأسماء التي لم يُتَصَرَّف فيها بعد (الإنسان) ، فالأسماء (الإنسان) تتضمن معنى الوجود الذي هو الرابط الذي به يصير المحمول محمولا على موضوع . و لذلك نقول (زيد إنسان) و لا نقول (هو إنسانية) ، و (زيد عالم) و لا نقول (هو عالمية) .</span><br />
+  <span style="font-family: &amp;quot">- و قد تناول أشكال الألفاظ الدالة على الوجود و فيما تعّرف ، فتعرّف : ما هو ، و تعرف أشياء أخر مثل كم و كيف و غير ذلك . و المنوط بتعريف ما هو ؛ شكل ما ، و الذي يعرف أنحاء أخر من التعريف يكون شكلا آخر . و نتيجة لذلك يكون ما يستعمل لتعريف هذا لا يستعمل في تعريف ذلك ، &quot; و لكن لما كانت الألفاظ إنما هي بالشريعة و الوضع أمكن أن يُخل بهذا القانون .&quot; <a href="http://majles.alukah.net/#_ftn33" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[33]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">و نحن نتسائل بعد هذا الاقرار بأن الألفاظ بالوضع ، من  أين يأتي الخلل ؟!  هل من الواضع ؟ أم من المستخدمين ، إذا كان هناك واضع ؟ أم أصبح المستخدمون وضاع بتغييرهم ؟ و بالتالي فالوضع وضع لا ينتهي ! و ما ينسب من خلل للواضع الأول يجوز على من وضع بالوضع الثاني ، و ما دام الواضع الأول مصيبا دائما فكذلك يجوز على الواضع الاحق ، لأن أسبقية الوضع ليست مقدسة و ليست معيارية للتصويب و التخطئة ، ما دام الواضع لا يريد الا صلاحا ، لأنه لا يتصور واضع يتعمد الإخلال ، الا أن يكون وضعا مخترعا لم يسبق اليه أحد و بالتالي فليس له وجه جواز الخطأ عليه و لا الخلل لأنه ليس له وضع يُلْزِمُه الخطأ و الخلل سابق عليه ، لأن تصور الواضع لا يكون الا لربط لفظ مخترع بدلالة ما قائمة في نفسه و في أنفس الأخرين ، و لا يمكن تصور اختراع معنى لا وجود له في النفس و التصور مشترك بين الجمع البشري لأن في هذه الحالة لا يمكن تصور نقله للغير ، لأنه لا يوجد له لفظ يشير إليه ، و لكن يمكن تقريب ذلك او تصويره للغير إذا استخدم ألفاظ مقرة في الوجدان و الاستعمال تجاه معاني معلومة و متصورة في الذهن من قبل ، فيركب منها تراكيب للتقريب في تصوره للمعنى ، اي لا بد من استخدام ألفاظ لها دلالات محددة معلومة من قبل للكل ، و ما يقال عن هذه الالفاظ يقال عن ما بعد ذلك ، اي لا بد من ابلاغ معنى للغير من استخدام ألفاظ لها دلالة مسبقة عند الغير لكي استعملها في نقل المعنى المراد ، و بدوره كيف دلت هذه الألفاظ ذات الدلالة المعلومة عند الغير و عندي ، الا ان استعمل فيها ألفاظ سابقة عليها ذات دلالة مسبقة عندي و عند الغير كي استطيع استعمالها في توصيل التصور الذهني المراد ، و هكذا يتوقف الأمر على نفسه كل مرة ، حتى تصل الى كيفية ربط لفظ ما بمعنى ما بدون استخدام لفظ ؟</span><br />
+  <span style="font-family: &amp;quot">فلا تفسير لتعليل هذا التصور الا بقول : أن هناك مراحل قبلها ، كان فيها استخدام الإشارات و الإيماءات و الحركات الجسدية ، و الصريخ و الاصوات التي تحاكي ما هو موجود في الخارج و ما الى ذلك ، ثم التطور على مر الدهور و الازمان حتى تركبت الأصوات بجانب بعضها في مقاطع محددة ذات دلالة معينة تكون في البداية حسية مباشرة ، لان في هذه المراحل لا يوجد متطلبات الا الغرائز و الحاجات المادية و المتطلبات المعيشية ، و هكذا تدور الدوائر حتى اكتملت الأصوات و الحروف المقطعة و المقاطع ، و نشأت المفردات اللسانية ، و من ثم تركبت في تراكيب لتؤدي معاني مركبة لسد الحاجة المعرفية و العلمية الاستكشافية ، لأن الأمر لم يعد مقتصرا على الصيد و الرعي و التزاوج و الأمان فقط ، فأصبحت هناك جماعات و صناعات و علوم ، و تبدأ قصة الحضارة .</span><br />
+  <span style="font-family: &amp;quot">و هذا بغض النظر على أنه تصور ساذج غير منطقي و لا عقلاني و لا علمي ، فهو صادم بل ناف للحقائق الشرعية الدينية ، فقد أبلغنا الله سبحانه و تعالى بأنه خلق بشرا من طين ، فنفخ فيه من روحه ، و علمه الأسماء كلها ، و خلق له زوجه ، و أسكنه الأرض بعد خروجه من الجنة ، فتزاوج و تكاثرت ذريته ، و كل هذه المراحل يحكي لنا الله سبحانه و تعالى أنه يتكلم مع آدم و آدم يكلمه ، و أن آدم يكلم زوجه و زوجه يكلمه ، في الجنة و في الأرض ، و يحكي لنا الله محاورة و مجادلة قابيل لهابيل و ما بها من معاني دينية و عقلية و شرعية ، ثم تتوالى الذرية في التكاثر و آدم لها نبي الله ، يعلمهم التوحيد و يحذرهم الشرك و طاعة ابليس ، حتى زمن ظهور الشرك و ارسال نوح عليه السلام لقومه لإرجاعهم الى جناب التوحيد و نبذ الشرك و تخويفهم عقاب الله ، ثم الطوفان و نجاة المؤمنين ، و تتوالى على البشرية رسل و أنبياء يرسلون لأقوامهم بكلام الله و أن كل رسول يرسل بلسان قومه ليفقهوا قوله ، و كذلك ينزل كلام الله بلسان القوم لكي يفقهوا كلام الله ، و لم تخلوا أمة من البشر من إرسال رسول بكلام الله لها ، منذ نوح عليه السلام حتى آخر أمة دعوية و هي أمة سيدنا محمد رسول الله صلى الله عليه و سلم .</span><br />
+  <span style="font-family: &amp;quot">فأي مرحلة تقع هذه المسرحية الهذلية التي تصور البشر يلوحون و يصرخون و يزعقون ، و لا يعرفون إلا الأكل و النوم و الجماع ، و هل نعتبر هذه أمة يرسل لها رسول بلسانهم يفقهوا كلام الرسول و كلام الله ، فإذا كانت كل أمة لها لسان فأين هذه الأمة التي بدون لسان ؟ فحتى أصحاب الفترات لهم لسان و لكن لم يبلغهم معرفة رسول ، و أصحاب الفترات يكونون ما بين ارسال الرسل ، فهم بين لسان واحد او لسانين على اقصى تقدير ، فلا يمكن تصور بشر بدون لسان ، لمقتضى كلام الله سبحانه و تعالى أنه لم يترك الإنسان هملا اي لا يأمر و لا ينهى ، فكيف يمكن تصوير أنسان يُأمر و يُنهى بدون لسان يبلغه الأوامر و النواهي عن طريق نبي او رسول .</span><br />
+  <span style="font-family: &amp;quot">و كيف نفهم إنسان مخلوق مُعلَّم من قِبل الله البيان بدون لسان يبين به ، فكل ألفاظ الإنسان التي جاءت في القرآن تحمل معها معنى قابلية فهم الكتاب و الرسول ، وأن علة وجوده على الأرض هي العبادة ، و أن العبادة منوط معرفتها من الكتب و الرسل ، فكيف يمكن تصور إنسان بدون لسان ؟  و الكلام هنا يدور على الجمع و الجماعة بإطلاق ، و ليس على أفراد متحقق فيهم عدمية اللسان ، لأن هذه الحالات نتجت عن وجود موانع و عاهات و أمراض و ليست هي نفس الخلقة الجبلية العامة ، و هذا معنى واضح لا يحتاج لتنبيه عليه .</span><br />
+  <span style="font-family: &amp;quot">- و على هذا يمكن تفسير الخلل المقصود من كلام الفارابي من أنه مخالفة قانون مبني على استقراء ناقص لأنه لم يدخل فيه مثل هذه الكلمات المختلفة عليه و على وضعها في قالب واحد معلل بعلة واحدة ، ثم هناك تفسير أخر أكثر عمقا من هذا ، و هو أن السبب في الخلل هو تصور أن هناك تعليل أصلا يمكن إرجاع صور و أشكال الألفاظ إليه ، اي أن فكرة التعليل نفسها قاصرة على تمثيل الحقيقة المطلقة ، هذا راجع الى أصل فكرة التعليل نفسها حيث لا تعليل يمكن الوقوف عليه ، او ان التعليل معتمده على نمط لا ينتج منه تعليل مستقيم يمكن اطراده على الصور كلها ، و هذا يرجع الى واحدية المسلك المتبع في بناء التعليل عليه ، و هو في حقيقة الأمر ثنائي التعليل في مسلك الظاهرة المتتبعة ، اي ان العلة تنتج من اشتراك شيئين لا يمكن فكهما اذا اريد تعليل صحيح ، و فكهما يمكن رجوعه الى الجهل بأحد طرفيها ، فلا يلاحظ اصلا أن له دور في التعليل لسبب ما قد يكون عدم ظهوره في مظهر معين ، او لقلة وروده و تمثيله في مظهر ، او غيابه لأثر أخر غائب عن الملاحظة لدقة و وعورة ارتباطه بالتعليل ، لانه ثانوي او ثالثوي المستوى في ترابطه مع المظهر الأولي الظاهر الملاحظ ، و هكذا من الممكن ان تتداخل أشياء لتكوين العلة الحقيقية فلا تظهر لنطاق الادراك المتاح و الممكن فلا تنعكس في تعيين العلة .</span><br />
+  <span style="font-family: &amp;quot">فالإقتراب من الحقيقة و الوقوف على الامر في الواقع منوط بدقة الوسيلة المستخدمة ، فمن غير الوسيلة لا يمكن ادراك شيء ، ثم كلما زادت دقة الوسيلة و احكامها زاد معها التعيين و التحديد للشيء المراد الوقوف عليه ، و كلما كانت الوسيلة ملائمة للشيء المدروس في طبيعته كلما اقتربا من الحقيقة ، فنظريا في كل مستوى دقة من دقة الوسيلة نقف على شيء نربطه مع الظاهرة ، لارتباط بينهما في الظهور و الخفاء او في الوجود و العدم ، ثم على المستوى الادق من السابق استطعنا بدقة و حساسية الوسيلة ان نحلل هذا الشيء الى أكثر من مركب او جزئية ، و نكتشف أن حقيقة الارتباط ما بين الظاهرة و سببها كان أحد أجزاء الشيء و ليس الشيء كله ، هذا احتمال و نوعية من التفسيرات ، فيكون الربط بين هذا الجزء و الاخر ليس له تأثير في احداث الظاهرة ، بل هو تجاور مكاني لا اكثر و لا اقل ، و هذا اسبابه متنوعة تتوقف على ما يحيط الظاهرة من عناصر كثيرة لا يمكن الاحاطة بها كلها .</span><br />
+  <span style="font-family: &amp;quot">او ان يكون التفسير أن هناك علاقة اخرى ما بين الجزئين المكونين للشيء ، فقد يكون محصلة التأثير النهائي الذي هو السبب في احداث الظاهرة من تكامل هذين الشيئين في الفعل ، او من تراكم هذين الشيئين في الفعل ، او من تفاعل هذين الشيئين لانتاج ثالث لايمكن ملاحظته او قياسه بوسيلة متاحة ، و تتعدد العلاقات و التعقيدات على انواع كثيرة .</span><br />
+  <span style="font-family: &amp;quot">فالحاصل أن التعليل نوع من أنواع الاجتهادات و الظنيات في حقيقته ، و ان كان يلبي التفسير في الظاهر ، و تتوالى نجاحاته ، اما اذا كان هناك ظواهر او ظاهرة لم ينجح في تفسيرها رغم انها داخلة في نطاق تعليله ، فهذا يشير الى خلل ما في التعليل و ليس خللا في الظاهرة ، فالظاهرة تبقى ظاهرة لا ينالها الا الوصف و الرصد و الملاحظة ، و لا يجوز عليها وصف الخلل ، لأنها هي الأصل و هي الواقع ، حتى لو عُدِمْنَا تعليلها او تفسيرها .</span><br />
+  <span style="font-family: &amp;quot">- و ضر مثالا للخروج عن القانون بما يمثل الخلل في ذلك ، الا و هو (الحي) فهو شكله شكل المشتق و لكن يستخدم كالجنس للإنسان ، فهو يقوم مقام (الحيوان) الذي هو جنس الإنسان . و قد تكون أحيانا ألفاظ أشكالها أشكال مصادر و معانيها معاني المشتق ، مثل (رجل كَرْم) .<a href="http://majles.alukah.net/#_ftn34" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[34]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">- ثم وضح مفهوم او دلالة (النسبة) عند كل أهل إختصاص ما ، في الهندسة و الحساب العددي و المنطق و النحويون ، و هو ما يعنينا هنا ، و إن كان هناك علاقة توضح مفهوم النسبة عند النحاة مرتبط بعلم أخر ذكرناه إن كان هناك فائدة مرجوة من ذلك :</span><br />
+  <span style="font-family: &amp;quot">&quot; على أن اسم الإضافة و اسم النسبة يستعملها النحويون في الدلالة على ما هو أخص من هذه كلها . و ذلك أن المنسوب إلى بلد أو جنس أو عشيرة أو قبيلة يُدَل عليه عند أهل كل طائفة بألفاظ مشكلة بأشكال متشابهة ينتهي آخرها إما إلى حرف واحد – مثل ما في العربية و الفارسية – أو إلى حروف بأعيانها ، مثل ما في اليونانية . &quot; <a href="http://majles.alukah.net/#_ftn35" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[35]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">&quot; قيل في <u>معاني تلك الألفاظ</u> من حيث هي <u>مدلول عليها بتلك الألفاظ</u> <u>مشَّلكة بتلك الأشكال</u> أو <u>مقرونة بتلك الحروف</u> <u>إنها (مضافة)</u> . و الإضافة عندهم هي أن يُدَل على المعاني بألفاظها مشَّكلة بتلك الأشكال أو مقرونة بتلك الحروف ، و ما عدا ذلك يسمونها (مضافة) لا (إضافة) . و إذا تأملت معنى معنى من التي يدلون عليها بتلك الألفاظ وجدت بعضها تحت مقولة الإضافة و بعضها في سائر المقولات أنسب . فهذه معاني النسب ، و لا معنى لها غير هذه الإضافة . &quot; <a href="http://majles.alukah.net/#_ftn36" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[36]</span></font></span></a></span><br />
+  <br />
+  <span style="font-family: &amp;quot">- المضاف (العلم) يعتبر جنس للمتضايفين (مثال : علم المعلوم) ، و هو اسم لكل واحد منهما (فالأول : علم ، و هو المضاف اليه ، و المعلوم : و هو المضاف ) من حيث يوجد لهما جنس الاضافة (العلم) الذي لهما ، و لا يوجد لهما (المضاف و المضاف اليه= المتضايفين ) اسم من حيث لهما نوع ( اي المتضايفين ليس لهما اسما خاص بالنوع ) لذلك الجنس (العلم) من الإضافة . <a href="http://majles.alukah.net/#_ftn37" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[37]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">المعلوم للعلم ، كالنوع للجنس ، و هذا كلما تجردت من المتعلقات التي تميز و تخصص و تقيد ، كلما تقترب من أجناس ليس لأنواعها أسماء تستقل عن هذه الأجناس ، لأنها في حقيقة الأمر لا تند عن معناها ، فأين توجهت بها لا تتنصل عن مدلول مسميات أجناسها ، فالعلاقة بينهما علاقة كينونة حتمية الوجود بايجاد احد طرفيها ، فهي علاقات وجودية ذات معنى و دلالة مزدوجة ارتباطية المعنى ، احد طرفيها تكون ممثلة في علاقة اللفظ الظاهر بالمعنى الظاهر ، و لكن هذا الظاهر له باطن حاضر و لكنه ليس معني بالمبادرة الظاهرية لعلاقة اللفظ بالمعنى ، فمثل هذه الأجناس مثل العلم ، الإدراك ، الوجود ، العقل .</span><br />
+  <span style="font-family: &amp;quot">فالعلم كلفظ ظاهر فيه معنى باطن وجودي بتحقق العلم ، و هو المعلوم ، فليس هناك تصور للعلم بدون معلوم ، و لا معلوم بدون علم ، و حتى تصور العلم نفسه يمكن تصور علمه بعلم ايضا و هكذا ، عقل المعقول بعقل ، و إدراك المدروك بإدراك مدرك ، و إدراك عدم الإدراك إدراك . فكل أنواع هذه الاجناس ليس لها أسماء تكافيء دلالة نوعيتها أي بكونها أنواع . </span><br />
+  <span style="font-family: &amp;quot">- و عند تعرض الفارابي للفظ النحو صراحة لم يكن لمعناه الاصطلاحي و لكن من معنى منطقي دلالي ، فهو يذكر النحو كجنس ، انواعه هي معلومات بالنحو ، و يمثل لانواع الإضافة التي للنحو ، فإذا اردنا ان نضيف النحو (الجنس) الى شيء ما  مما له إليه إضافة من المعلومات بالنحو (الأنواع) أخذناه موصوفا بجنسه فقلنا ((<u>النحو</u> علم للشيء الذي <u>هو معلوم بالنحو</u>)) و لا يقال ((<u>النحو</u> نحو لشيء <u>هو معلوم بالنحو</u>)) .<a href="http://majles.alukah.net/#_ftn38" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[38]</span></font></span></a></span><br />
+  <br />
+  <span style="font-family: &amp;quot">- غلَّبَ الفارابي الجانب العقلي و الدلالي على الجانب الصناعي اللفظي ، و هذا كما نوَّهنا على هذا من قبل أن الصناعة النحوية : لم تراعي الاستقراء الكامل - و لذلك جاء التعليل غير شامل لكل الأشكال التي تقع تحته و في نطاق عمله - و لم تراعي المعاني العقلية و التصورات الذهنية المنطقية ، فلم تكن لها أساس و لم تكن لها علة للتعليل ،  و بالطبع لم يكن هذا نتيجة قصور اللغة و النحو في مجاراة المنطق لأن يجسد كل معانية في أشكال لفظية و تراكيب نحوية و أسلوبية ، و هذا التنافر بين الإعراب النحوي و بين المنطق العقلي يشير و بقوة الى انه لم يكن محط عناية النحاة ، و لم يكن لهم معيار للتخطئة و التصويب في صناعتهم ، و لأنه يصب استعمال ألفاظ لها دلالة معينة او مجال دلالي معين في دلالة أخرى بمجرد أنه تشابه معها في بعض الحقول الدلالية او في بعض معانية التي يؤديها .</span><br />
+  <span style="font-family: &amp;quot">و هذا كـ (الفاعل) في الإعراب ليس هو مفهوم و دلالة الفاعل في المنطق العقلي و لا حتى الشرعي ، و لكن قد يتلاقا في مناطق و مواقف معينة عندما يكون فاعلا منطقيا و فاعلا نحويا إعرابيا ، و لكن ليس هذا التلاقي في الدلالة على الفاعلية مطردا على طول الاستعمال الإعرابي النحوي ، و قد يكون العلامة الإعرابية التي تشير الى الفاعل متحققة في غير الفاعل الحقيقي ، و قد يكون هو المفعول في الحقيقة ، فيعرب مثلا نائب فاعل ، لأن العلامة الإعرابية يلزمها إشارة على شيء ما فإن تعذر الفاعل الحقيقي في تمثيله لفظيا كان نصيب العلامة للمفعول حقيقة ، و هذا كما في الفعل الذي لم يسمى فاعله او الفعل المبني للمجهول ، فيعرب المفعول نائب فاعل .</span><br />
+  <span style="font-family: &amp;quot">و على هذا المثال الذي يصور التناقضات سواء في دلالة الالفاظ المستعملة في الصناعة و بين دلالتها الحقيقية ، قد نجد اختلافات كثيرة و متنوعة على ابواب النحو تشير الى الخلل الترابطي بين العلامة الإعرابية و بين المعرب بها التي ظهرت عليه ، فتظهر على الفاظ او مواقع في الجمل معينة تأتي بعد حرف معين او كلمة معينة فتكون مخالفة للقاعدة ، فيضطرهم الى التأويل او المسامحة او التخطئة ، و سنفصل ذلك من جميع جوانبه ان شاء الله ، و لكن ما أثار هذه القضية مرة أخرى قول الفارابي الأتي ذكره بنصه لأهميته :-</span><br />
+  <span style="font-family: &amp;quot">&quot; فشريطة المضافين أن يكون كل واحد منهما أخذ مدلولا عليه باسمه الدال عليه من حيث له ذلك النوع من الإضافة . فلذلك قال أرسطوطاليس (إن المضافين هما اللذان الوجود لهما أنهما مضافان بنوع من أنواع الإضافة) . فلذلك إذا وجدنا شيئا منسوبا إلى شيء بحرف من حروف النسبة ، أو كان شكلهما أو شكل أحدهما شكل مضاف في ذلك اللسان ، فليس ينبغي أن يقال إنهما مضافان حتى يكون اسماهما دالين عليهما من حيث لهما ذلك النوع من الإضافة . فحينئذ ينبغي أن يقال إنهما مضافان . &quot; <a href="http://majles.alukah.net/#_ftn39" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[39]</span></font></span></a> </span><br />
+  <span style="font-family: &amp;quot">فهو يشترط شرطا منطقيا دلاليا و ليس شكليا صرفيا او حتى نحويا ، حتى يقال إضافة . ثم يستشهد بكلام أرسطو لتقرير معنى الإضافة و متى يكونا الإسمين متضايفين ليحققوا الإضافة ، و أن تكامل الصورة الشكلية أو النحوية التي تقتضي من خلالها القول بالإضافة ليست هي الحكم في القضية ، بل القول الفصل هنا هو دلالة الاسمين من حيثية تحقيق هذا النوع من الإضافة ، كما سبق شرحه .</span><br />
+  <span style="font-family: &amp;quot">و أن هذه المخالفة بين الشكل الصناعي و الدلالة متحققه عند &quot;الجمهور و الخطباء و الشعراء فيتسامحون في العبارة و يجوزون فيها .&quot; <a href="http://majles.alukah.net/#_ftn40" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[40]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">ثم قال بعد ذلك : &quot; فهذه هي المضافات و هذه هي الإضافة و هذه هي الأسماء التي ينبغي أن يحتفظ بها في المضاف و الإضافة . و جميع ما تسمع نحويي العرب يقولون فيها إنها مضافة فإنها داخلة تحت المضاف الذي ذكرناه على الجهات التي عند الخطباء و الشعراء و على الرسم الأول الذي رسم به أرسطوطاليس المضاف في كتابه في (المقولات) . غير أنها مضافات فرّط المضيف أو تجوز أن يجعل إضافات بعضها إلى بعض إضافة معادَلة ، و ليست هي على الرسم الأخير الذي رسم به أرسطوطاليس المضاف في ذلك الكتاب . و أنت فينبغي أن لا تسمي المضاف إلا ما كان داخلا تحت الرسم الأخير ، و هي ما كانت إضافة أحدهما إلى الأخر إضافة معادَلة .  &quot; <a href="http://majles.alukah.net/#_ftn41" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[41]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">فهو يرتضي قول أرسطو الأخير بعد تأمل أرسطو لمعاني المضاف ، و يجعل تعريف أرسطو الأول هو مضمون قول النحاة و الخطباء و الشعراء ، و هو ما يحذر منه الطالب او القارئ أن يصف به المضاف إلا أن يكون على جهة المعادلة ، و ليس على نحو اي نسبة كانت كما كان أرسطو يقول أولا . و نحن نتسائل هل مراعاة ذلك الشرط سيؤثر على العلامة الإعرابية التي هي للمضاف عند النحاة ، فتزول لغيرها ام تبقى كما هي ، ام تقتصر على توفر هذا الشرط فقط لتكون مع المنطق و شروطه على شروط الصنعة اللفظية .</span><br />
+  <span style="font-family: &amp;quot">- &quot; إن كل ارتباط و كل وصلة بين شيئين اثنين محسوسين أو معقولين إنما تكون بإضافة أو نسبة ما .&quot; الحروف ص 92 .</span><br />
+  <span style="font-family: &amp;quot">- &quot; وليس في العربية منذ أول وضعها لفظة تقوم مقام (هست) في الفارسية و لا مقام (استين) في اليونانية و لا مقام نظائر هاتين اللفظتين في سائر الألسنة . و هذه يحتاج إليها ضرورة في العلوم النظرية و في صناعة المنطق . فلما انتقلت الفلسفة إلى العرب و احتاجت الفلاسفة الذين يتكلمون بالعربية و يجعلون عبارتهم عن المعاني التي في الفلسفة و في المنطق بلسان العرب ، و لم يجدوا في لغة العرب منذ أول ما وضعت لفظة ينقلوا بها الأمكنة التي تستعمل فيها (استين) في اليونانية ، و (هست) بالفارسية فيجعلوها تقوم مقام هذه الألفاظ في الأمكنة التي يستعملها فيها سائر الأمم ، فبعضهم رأى أن يستعمل لفظة (هو) مكان (هست) بالفارسية و (استين) باليونانية . &quot; <a href="http://majles.alukah.net/#_ftn42" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[42]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">و نذكر قوله على هذا المعنى الغير موجود في اللسان العربي و موجود عند &quot;سائر الألسنة – مثل الفارسية و السريانية و السغدية – <u>لفظة يستعملونها في الدلالة على الأشياء كلها ، لا يخصون بها شيئا دون شيء . و يستعملونها في الدلالة على رباط الخبر بالمخبَر عنه ، و هو الذي يربط المحمول بالموضوع متى كان المحمول اسما أو أرادوا أن يكون المحمول مرتبطا بالموضوع ارتباطا بالإطلاق من غير ذكر زمان</u> . و إذا أرادوا أن يجعلوه مرتبطا في زمان محصل ماض أو مستقبل استعملوا الكَلِم الوجودية ، و هي كان أو يكون أو سيكون أو الآن . <u>و إذا أرادوا أن يجعلوه مرتبطا به من غير تصريح بزمان أصلا</u> نطقوا بتلك اللفظة ، و هي بالفارسية (هست) و في اليونانية (استين) و في السغدية (استي) و في سائر الألسنة ألفاظ أخر مكان هذه . و هذه الألفاظ كما قلنا تستعمل في مكانين كما قلنا . و هذه كلها غير مشتقة في شيء من هذه الألسنة ، بل هي مثالات أول و ليست لها مصادر و لا تصاريف . و لكن إذا أرادوا أن يعملوها مصادر اشتقوا منها ألفاظ أخر مكان هذه ، و هذه الألفاظ يستعملونها مصادر ، مثل (الإنسان) الذي هو مثال أول في العربية و لا مصدر له و لا تصريف ، و لكن إذا أرادوا أن يعملوا منها مصدرا قالوا (الإنسانية) مشتقا من (الإنسان) . &quot; <a href="http://majles.alukah.net/#_ftn43" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[43]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">و في هذين النصين دليل مباشر على ما ذهبنا إليه من أنه لا يوجد لسان قائم متداول بين متحدثيه لا يفي بأي معنى مستجد عليهم ، و لا تستطيع أصول معانية و قوائم دلالته و مجموع ألفاظه أن تصور أي معنى متصور من غيرهم أو منهم ، و لكن الفارق هو في جانبين ، الأول : خاص بتداول هذا المعنى او وروده عليهم او جدته في حياتهم طبقا لظروف خاصة أو عامة أو اي سبب أخر معروف من اسباب تداخل الألسنة بين الأمم و عوامل نجاح ذلك ، و الثاني : لغوي لفظي و هو ربط لفظ بهذا المعنى مناسب لهذه الدلالة مشتق من مصدر سابق الوجود أو مصدر صناعي بمعنى تشكيل لفظي يقوم مقام المصدر ، و لكن من الناحية الدلالية و المعنوية هذه المصادر لها وضع خاص في دلالتها على معنى و مفهوم المصدر الحقيقي ، فهما اكثر نسبا من ناحية الشكل اللفظي منهما من الناحية الدلالية .</span><br />
+  <span style="font-family: &amp;quot">و محصل هذين الجانبين أي اللفظي و المعنوي ما يخلق فكرة البلاغة و الفصاحة ، لأن تخصيص لفظ موجز سهل النطق ، قريب الإشتقاق ، هو العامل المؤثر في تمايز الألسنة عن بعضها البعض في حمل المعاني و التصورات المركبة بأخصر و أوجز لفظ قريب النسب من المصدر او من الاسم الأول ، فينحصر التفاضل بين الألسنة في المعاني الملفوظة ، أي بوجود ألفاظ منوطة بأداء مثل هذه المعاني ، و ليس إبداع مثل هذه المعاني ، و ليس احتكار تصوراتها ، بل هي من المدروكات البشرية (اللغة) ، و من الإتاحات العقلية ، و من الوسع الذهني لكل أمة من الأمم ، و لكل نفس من هذه الأمم .</span><br />
+  <span style="font-family: &amp;quot">و من أدل الأدلة على ذلك هو هذا المثال الذي نحن بصدده مع الفارابي حول هذا المعنى و التصور ، فهو وصَفه و صَوره للعقل العربي و باللسان العربي ، بأدق ما يكون و أحد ما يمكن ، و لكن الفارق هو في غياب اللفظ المنوط لمثل هذا المعنى في اللسان العربي ، على فرض غياب مثل هذا اللفظ ، لأن عدم العلم ليس علما بالعدم ، خاصة و أن مفردات اللسان العربي تعرضت لمجارف أخذت الأعظم منها كما و نوعا و هوت به في سحيق الظن و الوهم على معيارية ظنية وهمية لا تمت للعلم بشيء ، فخلق ما هو فصيح و ما هو بشاذ و ما هو برديء ، و تتعدد الأحكام على الثروة اللغوية ، فتحكم فيها و عليها قبل الوصول الى الادلة التي تدينها ، أدلة علمية تنتج من الرصد و الجمع و الملاحظة ، و الجمع و التحليل و النقد و المقارنة ، مع مراعاة الأصول العلمية و المنطقية ، و على أقل الأحوال كان من الأسلم جمع و حفظ و تصنيف هذه المفردات و الأساليب و الظواهر بدلا من عدمها و إفنائها من الحياة اللغوية كمادة علمية يستفاد منها في الدرس اللغوي ، و الشرعي ، و التاريخي .</span><br />
+  <span style="font-family: &amp;quot">فكل مفردة استخدمها الفارابي لنقل هذا المعنى من سائر الألسنة باللسان العربي ، قد أدت مجتمعة هذا المعنى ، و هذا المعنى بعينه قد أداه لفظ واحد في سائر الألسنة ، فبالمقارنة بين اللسان العربي و بين الألسنة الأخرى في أداء نفس المعنى نجد الفارق في عدد الألفاظ المستخدمة لأداء نفس المعنى ، فقد أُختزل فيها و لم يختزل في اللسان العربي أو جعل لهذا المعنى لفظ يشير إليه و لم يجعل في اللسان العربي لفظ خاص بذلك ، و غياب هذا اللفظ قد يرجع الى : عدم العلم باللفظ ، او ان هذا المعنى متضمن في لفظ اخر او اسلوب بحيث لا ينفكوا عن بعضهما البعض في التصور و ان هذه الوجهة مختصة بالصنعة اللفظية أكثر من المعنوية ، او ان هذا المعنى مما لا يستقل تصوره بمفرده لأسباب منطقية او دينية فلم يكن له لفظ مستقل الدلالة عليه به ، فمذهب الدهرية يمنع من مثل هذا المعنى لان تصور الكون كله بما فيه هو (الدهر) فكيف يتصور علاقة ما بين شيئين لم يكن الدهر فيهما خلقا و اماتة و هو مذهب لكثير من العرب في الجاهلية ، و الدلالة المنبثقة من الأسماء و المصادر هي بعيدة عن فكرة التقيد او التخصيص بالزمن ، ففكرة الزمن و تصوره في نفسه و في علاقته بالأشياء تتكثر على صور تعتمد على المنحى العقلي و الديني و الإدراكي المرتبط بالحس .</span><br />
+  <span style="font-family: &amp;quot">فكل الألسنة تتساوى في قدرتها على تلبية أي تصور أو إدراك للتعبير عنه لفظيا ، و تتمايز بوجود مفردة لفظية تقوم بالمعنى و تكتفي به ، و لسان أخر لا يكفي فيه الا تركيب لفظي لأداء نفس المعنى ، فتختزل القضية في (الإيجاز) و مفهوم البلاغة و هي توقيف المتلقي على المعنى بأقل ألفاظ ممكنة ، فما باللك لو لفظ واحد .</span><br />
+  <span style="font-family: &amp;quot">أما في اللسان العربي فمعلوم قدر بلاغته و وجازته ، فلا يتصور قصوره عن أداء معنى موجود عند سائر الألسة ، و لذلك فالمعنى الذي صوره الفارابي هو ضمني في اللسان العربي سواء كان في الأسماء و المصادر المضافة لإسم أخر ، فالعلاقة التي بين الإسمين لا تحتاج في اللسان العربي للفظ خاص بها يستقل بالمعنى ، و هذا هو قمة الوجازة التي تتسم بها العربية ، فقول ( زيد عالم ) و قوله ( زيد هو عالم) لم يضف معنى جديدا لفظ (هو) الذي استعيض به عن لفظ (هست) او (استين) او غير ذلك من الفاظ في الألسنة الأخرى ، فمعنى التجرد الزمنى في وصف العلاقة ما بين الموضوع و المحمول ، او المخبر عنه و الخبر ، قائمة في قولنا ( زيد عالم) بدون اي اضافات لفظية ، نتوهم ان معناها ليس له لفظ في اللسان العربي ، فأصل اللغة المعبر عنها باللسان هي الإقتصاد في الألفاظ مقابل كثرة المعاني ، و ما دام المعنى قائما مكتفيا في اسلوب او مفردة ضمنا أو تلازما أو اقتضاءا فقد كفي مؤنة ايجاد لفظ له و هذا قمة الابداع الإيجازي و البلاغة .</span><br />
+  <span style="font-family: &amp;quot">- نصوص فارابية تقرر وضع اللغة أو ابتداء وضع لفظ لمعنى ، كأولية زمنية وضعية تقوم بالقصد البشري و هو الواضع الأول :-</span><br />
+  <span style="font-family: &amp;quot">&quot;ولأن لفظة الموجود و هي أول ما وضعت في العربية مشتقة&quot; <a href="http://majles.alukah.net/#_ftn44" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[44]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">&quot;و هو ما كان هذا المصدر يدل عليه عند جمهور العرب من أول ما وضع&quot; <a href="http://majles.alukah.net/#_ftn45" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[45]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">&quot;التي يستعملها فيها جمهور العرب و على وضعها الأول&quot;<a href="http://majles.alukah.net/#_ftn46" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[46]</span></font></span></a></span><br />
+  <span style="font-family: &amp;quot">-==============================  ================-</span><br />
+  <b><span style="font-family: &amp;quot">&lt;الباب الثاني&gt;</span></b><span style="font-family: &amp;quot"> - <b>&lt;حدوث الألفاظ و الفلسفة و الملة&gt;</b> :-</span><br />
+  <span style="font-family: &amp;quot">-----------------------------------</span><br />
+  <span style="font-family: &amp;quot">- ما زال الفارابي تسيطر عليه فكرة التطور: من البسيط الى المركب ، سواء في كفاية الألفاظ أو في المعاني ، فهو دائما يبدأ من البسيط المباشر المحسوس ، لأن ذلك يناسب المتطلبات و الحاجات في التواصل و في ادراك المحيط و علاقاته بعضها ببعض ، ففي بداية الأمر يكفي قليل من الألفاظ التي تشير الى المحسوسات ، و ربما كانت هذه الألفاظ في بدايتها عبارة عن صرخة او زعقة او اشارة ما ، و هي كافية للاشارة الى المعنى المنوط بها في التعبير عنه ، و هذا بالضرورة يرسم لنا صورة الأمر فقوم هذا حالهم من اللسان و من التصور للكون و التعبير عنه فلا يصلحوا أن يكونوا مكلفين بفهم رسالة سماوية تحوي كلام الله ، و التي تحدد لهم التصور الصحيح لما في الكون من مخلوقات و علاقة ذلك بالخالق و بالتكليف لهم ، و الكثير من المعاني المركبة و بالضرورة بالألفاظ المؤدية ذلك على اتم و اكمل وجه ممكن تخيله .</span><br />
+  <span style="font-family: &amp;quot">و على هذا يقرر أن الفكر في بدايته بسيط و مباشر في تعامله مع دلالات الألفاظ و معانيها التي هي بدورها بسيطة و مباشرة ايضا ، و لذلك يكون هذا تفسيرا لبعض الظواهر اللسانية و العقلية التي يعتقد غيابها من الفكر الإنساني في مراحله الأولى ، فبساطة التصور و بساطة الألفاظ تؤدي الى بساطة الفكر بالضرورة ، و على هذا قد فسر خطأ بعض الفلاسفة في تصوره عن الموجود و الوجود ، و أن تصوره كان مبني على دلالة الألفاظ المباشرة و التناول البسيط لدلالة اللفظ مما أدى الى نتيجة خاطئة في تفسير الحوادث و أزلية الكون .</span><br />
+  <span style="font-family: &amp;quot">بغض النظر عن عدم تلائم تحليل الفارابي لموقف هذا الفيلسوف و فكرته عن الموجودات و الوجود مع كفاية اللسان اليوناني لاداء و فهم المعاني المركبة لأنه هو الذي عنه نقلت الفلسفة و المنطق ، و لا مع حقيقة وجود فكرة و تصور الأنسان عن الكون و ما تؤدي اليه من رأي بأزليته أو حدوثه ، و علاقة ذلك بوجود خالق له ، هي فكرة متأصلة في التاريخ البشري ، و حتى يومنا هذا على تغير صورها من فلسفة او كلام او علم طبيعي او فيزياء حتى وصولا الى يومنا هذا من نظريات نشأة الكون المبنية من عدة فروع و روافد فكرية و تجريبية . فكان يجب عليه في تخطأة الفيلسوف أن يستند على نظرية المعرفة و ليس على فكرة مدلول الألفاظ و بساطة التناول لما يتبادر الى الذهن من ورود اللفظ عليه ، لأن الألفاظ للأداء و ليست للإنشاء .</span><br />
+  <span style="font-family: &amp;quot">و هذا لا علاقة له باللسان فهو تصور عقلي فطري (لغة) و ليس نظام صوتي عرفي يستخدم في التواصل ، فهو لنقل الأفكار و التصورات و ليس لخلقها او ابداعها ، فهو وسيلة و أداة ، و تصور الوسيلة و الأداة لاحق عن المتصور ، فالتصور الذهني سابق في وجوده على وسيلة نقله بالألفاظ ، فتتعدد الألسنة و تتغير و لكن اصل الفكرة و تصور المعنى واحد . و هذا ما نوهنا عليه مرارا بالتجربة الواقعية و بالنظرية و كانت مستمدة من كلام الفارابي نفسه عند تعرضه لمعنى الربط بين شيئين بدون التقيد بالزمن ، و أن هذا المعنى غير موجود له لفظ في اللسان العربي ، و مع ذلك أدى هذا المعنى بألفاظ عربية .</span><br />
+  <span style="font-family: &amp;quot">و هو هنا يقرر أن الفكر له وحدات يبتنى منها و أنه يتطور مع الوقت و الإعتناء بالمعاني بالنقد و التدبر على هيئة صناعة خاصة بذلك و أناس مشتغلون بذلك ، و لكن حقيقة الأمر ليست كما تصور الفارابي ، ففكرة تقسيم او تجريد المعاني الى أصغر شكل ممكن أن يؤدي معنى مستقل كاف ، ليست معناها أن الفكر بناء ، كبناء الحائط من وحداته و هي الطوب ، فيتشكل الحائط على أشكال عدة و صور شتى و مواصفات معينة ، و لكن نقول أن التجريد للوصول الى اللبنات الأولى هي بمعنى الرسم فقط ، او الشرح ، أو التحليل ليس أكثر من ذلك و لا أقل ، كقولنا أن زيد يتكون من يدين و رجلين و قلب و كبد و ......الخ ، و ليس معنى ذلك وجود هذه الأعضاء منفردة في التصور ثم تتجمع مكونة ما يسمى بزيد ، فتصور زيد هو كل مجموع كوحدة واحدة لا تتجزأ و لا تتبعض في تصور ماهيته ، أما تصور التجزأ و التبعض فهو عوارض قهرية سواء من الحوادث او من خلق الله ، و هي غير مطردة و لا تدخل في تصور الماهية و بناء التصور الكامل على الإنسان .</span><br />
+  <span style="font-family: &amp;quot">كذلك المعاني الأُول فهي ليست منفردة في التصور الحقيقي الكامل و الذي يقع دفعة واحدة ، و المقصود هو العلاقة ما بين الواقع المحسوس و المعقول المنطبع على الذهن من ذلك ، الذي يجوز عليه الصدق و الكذب لما وقع من تصور ، مفسرا اللذة و الألم التي تمثل المحرك لسعي الإنسان لتحصيل هذه الإدراكات الصادقة و البعد عن الكاذبة .</span><br />
+  <span style="font-family: &amp;quot"> فلا يمكن تصور وجودها كمرحلة زمنية أولى مكتفيا بها الإنسان في تصوره عن الكون و المخلوقات و علاقته بها ، فهذا كما بينا من قبل مخالفة صريحة للدين و للعقل و للحس ايضا ، فلا يُدرَك شيئا ما الا كامل الإدراك مكون من جميع هذه المعاني التي جردت المتعلقة بالمحسوس أو الذي يشار اليه ، فحتى مبدأ التجريد نفسه يتضمن أسبقية الإدراك الكامل المحتوي على كل هذه المعاني جملة واحدة و على الفور و من دون تدخل مباشر و واعي مقصود من الإنسان ، و على هذا ففكرة التجريد متأخرة عن التصور للمحسوس الذي يجوز عليه الصدق و الكذب ، و هو المفسر لللذة و الألم التي هي المحرك الأساسي للإنسان في هذا الكون .</span><br />
+  <span style="font-family: &amp;quot">و نحن لم نتجنى عليه في هذا بعد ذكره الكثير من التقريرات و التفسيرات و أحيانا النص على ذلك ، فمثلا لو كانت فكرة الأسبقية الزمنية مطلقة في كلامه ، لجاز حملها على التصوير لحدوث عملية التصور و الإدراك في العقل ، أي أن حقيقة الأمر تبقي زمنية الحدوث في الإطار العقلي للتصور المشار إليه ، و بالتالي لم نخرج عن آنية الحدوث الجملي و الكلي للتصور الكامل المشتمل على تركيب هذه اللبنات الفكرية التي لا توجد منفردة و لكن مركبة ، أما أن يتجاوز الأمر في تصويره الزمني إلى فترات زمنية تتجاوز أعمار بعض البشر فهذا الذي لا يمكن تصوره ، و لا الموافقة عليه .</span><br />
+  <span style="font-family: &amp;quot">فهو يصور تتطور مراحل التفكير و الإدراك من طرفين ممتدين على طول خط الزمن ، و تجوزا نصور ذلك على انه نفس الشخص أو تعاقب أشخاص ، فالطرف الأول و كما سبق و أشار هو إليه : المعاني البسيطة المقتصرة في تصوراتها على المحسوسات التي يشار إليها ، و ألفاظ غير كاملة و غير نهائية الوضع ، و الطرف الأخر : البراهين اليقينية ، و بالطبع تتوسط هذه المراحل : الجدل و السفسطة و الفلسفة المظنونة و المموهة .</span><br />
+  <span style="font-family: &amp;quot">و ننقل الآن نصه بتمامه : &quot; و لما كان سبيل البراهين أن يشعر بها بعد هذه لزم أن تكون القوى الجدلية و السوفسطائية و الفلسفة المظنونة أو الفلسفة المموهة تقدمت بالزمان عن الفلسفة اليقينية ، و هي البرهانية . &quot; <a href="http://majles.alukah.net/#_ftn47" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[47]</span></font></span></a> </span><br />
+  <span style="font-family: &amp;quot">فلا يمكن تصور تعلق الطول الزمني بتكامل علم من العلوم او صناعة من الصنائع ، الا أن يكون زمن يطول بطول أعمار صانعيه ، فليس هو متعلق بنفس التصور لنفس الشخص على امتداد فترة حياته ، لأن الفلسفة كعلم كما هو معروف مرتبط بالإنسان منذ القدم ، فهو موروث فكري يتوارثه الأجيال المتفلسفة جيلا بعد جيل ، يزهو حينا و يخبو حينا ، و ليس انتاج فكري لشخص بعينه .</span><br />
+  <span style="font-family: &amp;quot">ثم إن طبيعة الإنسان مشتملة على الظن و اليقين كوجهين لنفس العملة ، و لكن لا يتعلق النظر الا بوجه واحد ، فلا يخلوا أمرا من تعلق إلا بأحدهما ، فهو ظن أو يقين ، و بإنتفاء أحدهما يثبت الأخر ، فليس هما إثنين مدروكين لنفس الأمر حتى يتسنى الإختيار بينهم ، فطبيعة تعلق الظن و اليقين ، أحادية الوجه فقط في إدراكها ، إما ظن أو يقين اذا تعلق الأمر بشيء واحد ، و لا يمكن تصور حياة الإنسان مع الغير ، ايا كان هذا الغير ، على أساس الظن ، فالأساس هو اليقين ، و لكن اذا تخلخل او انتفي او كان الشك ، وجد الظن و لا بد ، فهو محل واحد فقط متروك لبناء تصور عن الشيء ، و التلقائي أن يكون من نصيب اليقين على الدوام ، لكثرته و عمومه و قوة مدركاته و توافر وسائله و أدواته ، فلا يخلو إنسان من غلبة اليقين عليه لكل مدروكاته ، لأن هذا هو سبب و علة وجوده ، و هذا هو المحرك الأساسي لسعيه في الدنيا ، هذا المستوى اليقيني هو ما يتم وصفه من الغير و ليس من النفس ، أنه ظن و وهم ، بالمقارنة بما هو أيقن و أثبت ، و هذا التفاضل في اليقين يرجع الى الخبرات و سعة الإدراك و الى الأخبار الغيبية التي تأتي من مصدر متيقن ثبوته و حقيقته .</span><br />
+  <span style="font-family: &amp;quot">فالمقارنة قد تأتي من الغير على شخص ما ، او قد تأتي من نفس الشخص في مرحلتين فكريتين مر بهما ، فأدرك الفرق بأن اليقين أصبح ظنا ، و الظن أصبح يقينا ، قد يزدوجا في الوجود او ينفردا ، بمتعلق واحد ، او بتعلقين .</span><br />
+  <span style="font-family: &amp;quot">و الحاصل أن هذا الشخص في اي مرحلة من هذه المراحل فهو على يقين من أمره و لا بد من ذلك ، و على هذا قلنا أنه لا يمكن تصور شخص يحيا بالظنون الا أن تكون عنده يقين ، و بهذا يستحيل تصور إنسان يخلو من هذا فمثلا كل إنسان يدرك من نفسه عجزه و ضعفه مقابل قوة ما هو يدركها بعجزه و ضعفه و قهره ، و لكن هناك من يضعها في الدهر ، و هناك من يضعها في خالقين يتعاونا على ذلك ، و هناك من يجعلها في خالق واحد و له شركاء آلهة كثيرة و متنوعة ، و تتعدد التصورات و الحقيقة واحدة ، أنه مخلوق ضعيف عاجز مقهور له خط سير لا يخرج عنه يبدأ بمولده و ينتهي بموته ، مرورا بضعف ثم قوة ثم ضعف ، و أن هذا الكون بما هو فيه مسير بقوانين حتمية الترابط و التوازن من قبل قوة ما .</span><br />
+  <span style="font-family: &amp;quot">- أنا لا اتصور أن يكون مقصوده من لفظ (الملّة) هو الأديان السماوية و أن الدين الإسلامي الحنيف يدخل فيها ، فيكون كل كلامه و تصوره عن علاقة الملة مع الفلسفة و الفلاسفة ، يدخل فيها الاسلام ، لأنه يقرر أن الملة مأخوذة من الفلسفة البرهانية ، و أن غرض الملة هو تعليم الجمهور و العوام الأشياء النظرية و العملية التي استنبطت في الفلسفة بالوجوه التي يتأتى لهم فهم ذلك ، بإقناع أو تخييل أو بهما جميعا . و أن صناعة الكلام و الفقه متأخرتان بالزمان عنها و تابعتان لها ..... الخ . <a href="http://majles.alukah.net/#_ftn48" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[48]</span></font></span></a></span><br />
+  <br />
+  <hr />      <a href="http://majles.alukah.net/#_ftnref1" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[1]</span></font></span></a><span style="font-family: &amp;quot">انظر صـ 33 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref2" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[2]</span></font></span></a><span style="font-family: &amp;quot">انظر صـ 36 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref3" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[3]</span></font></span></a><span style="font-family: &amp;quot">(عيون جـ2 ، ص 136) .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref4" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[4]</span></font></span></a><span style="font-family: &amp;quot">(القفطي – إنباه – جـ3 ، ص 149) .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref5" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[5]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 61 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref6" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[6]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 62 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref7" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[7]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 64 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref8" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[8]</span></font></span></a><span style="font-family: &amp;quot">انظر ص 64 – 65 بتصرف .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref9" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[9]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 65 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref10" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[10]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 65 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref11" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[11]</span></font></span></a><span style="font-family: &amp;quot">ينظر ص65-66 بتصرف .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref12" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[12]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 66 . </span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref13" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[13]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 66 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref14" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[14]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 67 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref15" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[15]</span></font></span></a><span style="font-family: &amp;quot">الألفاظ المستعملة في المنطق ص 43 . و الحروف ص 66-67 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref16" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[16]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 71 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref17" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[17]</span></font></span></a><span style="font-family: &amp;quot">دراسات في المنطق عند العرب – محمد حلوب فرحان ص 52-53 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref18" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[18]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 72 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref19" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[19]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 73 . </span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref20" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[20]</span></font></span></a><span style="font-family: &amp;quot">نفس الموضع .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref21" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[21]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 73 – 74 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref22" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[22]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 74 – 75 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref23" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[23]</span></font></span></a><span style="font-family: &amp;quot">ينظر الحروف ص 75 بتصرف .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref24" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[24]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 77 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref25" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[25]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 77 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref26" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[26]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 78 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref27" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[27]</span></font></span></a><span style="font-family: &amp;quot">انظر الحروف ص 77 – 78 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref28" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[28]</span></font></span></a><span style="font-family: &amp;quot">انظر الحروف ص 78 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref29" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[29]</span></font></span></a><span style="font-family: &amp;quot">انظر الحروف ص 79 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref30" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[30]</span></font></span></a><span style="font-family: &amp;quot">انظر الحروف ص 78 – 79 بتصرف .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref31" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[31]</span></font></span></a><span style="font-family: &amp;quot">انظر الحروف ص 80 بتصرف .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref32" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[32]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 81 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref33" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[33]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 81 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref34" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[34]</span></font></span></a><span style="font-family: &amp;quot">انظر الحروف ص 81 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref35" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[35]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 84 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref36" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[36]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 85 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref37" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[37]</span></font></span></a><span style="font-family: &amp;quot">انظر الحروف ص 86 . بتصرف</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref38" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[38]</span></font></span></a><span style="font-family: &amp;quot">انظر الحروف ص 87 . بتصرف</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref39" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[39]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 87 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref40" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[40]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 87 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref41" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[41]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 88 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref42" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[42]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 116 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref43" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[43]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 111 . </span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref44" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[44]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 113 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref45" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[45]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 114 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref46" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[46]</span></font></span></a><span style="font-family: &amp;quot">الحروف 115 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref47" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[47]</span></font></span></a><span style="font-family: &amp;quot">الحروف ص 131 .</span><br />
+  <br />
+    <a href="http://majles.alukah.net/#_ftnref48" target="_blank"><span style="font-family: &amp;quot"><font color="black"><span style="font-family: &amp;quot">[48]</span></font></span></a><span style="font-family: &amp;quot">الحروف صـ 131-132-133-134 .</span><br />
+  
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_866577" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_866577" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=866577" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_866577" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=163074&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="popupctrl"><span class="ctrlcontainer">مجلس اللغة العربية وعلومها</span></a>
+		<a href="showthread.php?t=163074#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=40a3dbf8dad57f073fe7698bbce8648b">لوحة التحكم</a></li>
+		<li><a href="private.php?s=40a3dbf8dad57f073fe7698bbce8648b">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=40a3dbf8dad57f073fe7698bbce8648b">الاشتراكات</a></li>
+		<li><a href="online.php?s=40a3dbf8dad57f073fe7698bbce8648b">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=40a3dbf8dad57f073fe7698bbce8648b">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=40a3dbf8dad57f073fe7698bbce8648b">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=40a3dbf8dad57f073fe7698bbce8648b">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=40a3dbf8dad57f073fe7698bbce8648b">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=40a3dbf8dad57f073fe7698bbce8648b">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=40a3dbf8dad57f073fe7698bbce8648b">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=40a3dbf8dad57f073fe7698bbce8648b">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=40a3dbf8dad57f073fe7698bbce8648b">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=163001&amp;s=40a3dbf8dad57f073fe7698bbce8648b">لا يجوز لغة</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=162911&amp;s=40a3dbf8dad57f073fe7698bbce8648b">ما إعراب: «ذَكَرًا»؟</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D9%81">الحروف</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D8%AA%D8%B9%D9%84%D9%8A%D9%82%D8%A7%D8%AA">تعليقات</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D8%AC1">ج1</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D8%B9%D9%84%D9%89">على</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D9%83%D8%AA%D8%A7%D8%A8">كتاب</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D9%84%D9%84%D9%81%D8%A7%D8%B1%D8%A7%D8%A8%D9%8A">للفارابي</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=163074#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=40a3dbf8dad57f073fe7698bbce8648b" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=40a3dbf8dad57f073fe7698bbce8648b">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=163074#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">08:14 AM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

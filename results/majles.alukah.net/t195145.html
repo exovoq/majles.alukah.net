@@ -1,0 +1,1470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=ec1b4717d08f17a417a70c4e8f25f7a8&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=195145";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="أخطار, الربا, وأضراره" />
+	<meta name="description" content="أخطار الربا وأضراره 
+  عبد الله بن صالح القصير  
+ الربا كسبٌ  خبيث محرَّم مشؤوم، وسُحْتٌ لا خيرَ فيه، ولا بركة منه، بل يجلب الضَّرر  والنقيصة في الدِّين والدنيا، والحاضر والمستقبل، على كلِّ مَن شارك فيه  وأعان عليه ورضيه بأيِّ وجه من وُجوه المشاركة والإعانة؛ من أَخْذٍ أو  عَطاء، أو كِتابة أو شَهادة، أو إعانة بمال، أو إجارةٍ لأهله أو تأييدٍ  لهم، أو شَفاعة أو دِعاية لهم، أو دِفاع عنهم، أو حماية لهم، أو رضًا بما  هم عليه، أو غير ذلك من وُجوه التأييد والإعانة لأهْل هذه المعاملة الباطلة  الجائرة" />
+
+	<title> أخطار الربا وأضراره</title>
+	<link rel="canonical" href="showthread.php?t=195145&s=ec1b4717d08f17a417a70c4e8f25f7a8" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> أخطار الربا وأضراره</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 1 من 1
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=195145&s=ec1b4717d08f17a417a70c4e8f25f7a8" title="تحديث الصفحة">أخطار الربا وأضراره</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=195145" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;t=195145&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=addsubscription&amp;t=195145" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;search_type=1&amp;searchthreadid=195145&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="195145" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_970903">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2022-03-23,&nbsp;<span class="time">11:47 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post970903" href="showthread.php?t=195145&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=970903#post970903" class="postcounter">#1</a><a id="postcount970903" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,743</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> أخطار الربا وأضراره
+		</h2>
+		
+				
+					
+					
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_970903">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><b><font color="#800000"><font size="6"><span style="font-family: arabic typesetting">أخطار الربا وأضراره<br />
+</span></font></font></b><br /><br /><b><font color="#ff8c00"><font size="6"><span style="font-family: arabic typesetting"> عبد الله بن صالح القصير </span></font></font></b><br /><br /><span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span><span style="font-family: arabic typesetting"><font size="5">الربا كسبٌ  خبيث محرَّم مشؤوم، وسُحْتٌ لا خيرَ فيه، ولا بركة منه، بل يجلب الضَّرر  والنقيصة في الدِّين والدنيا، والحاضر والمستقبل، على كلِّ مَن شارك فيه  وأعان عليه ورضيه بأيِّ وجه من وُجوه المشاركة والإعانة؛ من أَخْذٍ أو  عَطاء، أو كِتابة أو شَهادة، أو إعانة بمال، أو إجارةٍ لأهله أو تأييدٍ  لهم، أو شَفاعة أو دِعاية لهم، أو دِفاع عنهم، أو حماية لهم، أو رضًا بما  هم عليه، أو غير ذلك من وُجوه التأييد والإعانة لأهْل هذه المعاملة الباطلة  الجائرة التي حقيقتها المحادة والمحارَبة لله ورسوله، والظُّلم الشديد  للعِباد؛ فهي معاملةٌ تعتَمِد على الإثم والعُدوان؛ قال تعالى: {وَتَعَاوَنُوا  عَلَى الْبِرِّ وَالتَّقْوَى وَلَا تَعَاوَنُوا عَلَى الْإِثْمِ  وَالْعُدْوَانِ وَاتَّقُوا اللَّهَ إِنَّ اللَّهَ شَدِيدُ الْعِقَابِ} [المائدة: 2].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">فمعاملةٌ  هذه حقيقتُها لا شكَّ أنَّ أضْرارها كثيرةٌ وعظيمةٌ، وأنَّ عواقبها وخيمةٌ  وأليمةٌ، على الفرد والجماعة الذين يشتَرِكون فيها، وعلى المجتمع الذي  يستَطِيع تغييرَ ذلك المنكر وإنكاره فلا يُنكِره، ولا يسعى في تغييره أو  تخفيفه، وهي أضرارٌ محقَّقة معجَّلة ومؤجَّلة، ورَد التنبيه على كليَّاتها  وغاياتها في القُرآن الكريم، وفصَّل كثيرًا منها النبيُّ صلى الله عليه وسلم ، تبليغًا لما أُنزِل إليه من ربه، ورأى الناس شواهدها وآثارها واقعةً محسوسة في الأنفُس والآفاق، <b>فمن ذلك:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">1- <b>أنَّه معصيةٌ لله ورسوله:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">لأنَّ الذي يبيع بالربا أو يُعِين عليه يُخالِف ما جاء عن الله ورسوله بخصوصه، وقد قال تعالى {فَلْيَحْذَرِ الَّذِينَ يُخَالِفُونَ عَنْ أَمْرِهِ أَنْ تُصِيبَهُمْ فِتْنَةٌ أَوْ يُصِيبَهُمْ عَذَابٌ أَلِيمٌ} [النور: 63]، وفي الصحيح عنه صلى الله عليه وسلم قال: «كلُّ أمَّتي يدخُل الجنة إلا مَن أبى» ، قيل: ومَن يأبى يا رسول الله؟ قال: «مَن أطاعني دخَل الحنَّة، ومَن عَصاني فقد أبى» [1].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وقد بيَّن سبحانه مَصِيرَ العُصاة ومآلَهم بقوله: {وَمَنْ يَعْصِ اللَّهَ وَرَسُولَهُ وَيَتَعَدَّ حُدُودَهُ يُدْخِلْهُ نَارًا خَالِدًا فِيهَا وَلَهُ عَذَابٌ مُهِينٌ}<b> [النساء: 14].</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>عدم قبول الصدقة منه:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">لأنَّه كسبٌ خبيثٌ، وقد قال سبحانه: {وَلَا تَيَمَّمُوا الْخَبِيثَ مِنْهُ تُنْفِقُونَ} [البقرة: 267] وفي الصحيح عنه صلى الله عليه وسلم قال: «إن الله طيب لا يَقبَل إلا طيبًا» [2].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">ورُوِي عنه صلى الله عليه وسلم أنَّه قال: «ولا يكسب عبدٌ مالاً من حرامٍ فينفق منه فيُبارَك له فيه» [3].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">2- <b>ردُّ الدعاء، فلا يستجيب الله دعاء آكل الربا:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">فقد رُوِي عنه صلى الله عليه وسلم أنَّه قال لسعدٍ - وقد سأَلَه أنْ يدعو الله له أنْ يكون مستجاب الدعاء -: «أطِبْ مَطعَمك، تكنْ مُستَجاب الدعاء» ، أو قال: «تُستَجب دعوَتُك» [4]، وفي الحديث الصحيح أنَّه صلى الله عليه وسلم : «ذكَر  الرجل أشعث أغبر، يُطِيل السفر، يمدُّ يدَيْه إلى السماء، يا رب يا رب،  ومَطعَمه حرامٌ، ومَشرَبه حَرام، ومَلبَسه حَرامٌ، وغُذِيَ بالحرام، فأنَّى  يُستَجاب لذلك» [5].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">3- <b>نزْع البركة من العُمر والكَسب:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وحجَّة ذلك قوله سبحانه: {يَمْحَقُ اللَّهُ الرِّبَا}  [البقرة: 276] ، فهذا نصٌّ كريم يُنذِر بشُؤم عاقبة الربا على صاحِبه من  كلِّ وجه، فقد يُسلِّط الله عليه أسباب النقص والتَّلف، من غرقٍ، أو حرقٍ،  أو لصوصٍ، أو أنظِمة الجور التي تأخُذ منه ما تَشاء قهرًا وهَوانًا، وقد  يُذهِبه سبحانه من يد صاحبه بالكليَّة، فلا يَبقَى منه شيءٌ.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وكم  رأى الناسُ من الأثرياء المُرابِين، أو الذين تأسَّست تجارَتُهم من  الربا وعليه، لم تمضِِ عليهم بضعُ سنواتٍ حتى مُحِق ما بأيديهم؛ حيث  علقَتْهم الديون، وغلقت منهم الرهون، وأخذَهُم الله بالعذاب الهُون،  فصارُوا عالةً يتكفَّفون الناس؟!</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وكم كان مثلُ هذا المال سببًا في هَلاك صاحِبِه، أو تعرُّضه للمخاطر في أحوال غامضة، وظُروف قاهرة؟!</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وصدَق أحد أئمة السلف إذ يقول: <b>سمعنا أنَّه لا يأتي على صاحب الربا أربعون سنة إلا مُحِقَ</b>.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>قلت: </b>ولقد رأينا مَن مُحِق في بِضع سنين!</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وفي الحديث عن ابن مسعودٍ رضي الله عنه عن النبي صلى الله عليه وسلم أنَّه قال: «الربا وإنْ كَثُرَ، فعاقبَتُه تصيرُ إلى قُلٍّ» [6]، وعنه رضي الله عنه عن النبي صلى الله عليه وسلم قال: «ما أحد أكثر من الربا إلا كان عاقبة أمره إلى قلَّة» [7].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">4- <b>قسوة القلب وإعراضه عن الخير:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">فقد نبَّه النبي صلى الله عليه وسلم على ذلك في معرض التحذير من الحرام؛ حيث قال: «إن  الحلال بيِّن، وإن الحرام بيِّن، وبينهما مشتبهاتٌ لا يعلمهن كثير من  الناس، فمَن اتَّقى الشُّبهات فقد استَبرَأ لدينه وعِرضه، ومَن وقَع في  الشُّبهات وقَع في الحرام، كالراعي يرعى حول الحِمَى يوشك أن يقَع فيه،  ألاَ وإنَّ لكلِّ ملكٍ حمى، ألا وإنَّ حمى الله محارِمُه» .</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">ثم نبَّه على أنَّ القلب يَصلُح بالحلال ويَفسُد بالحرام، فقال: «ألا وإنَّ في الجسد مضغة، إذا صلَحت صلَح الجسد كلُّه، وإذا فسَدت فسَد الجسد كلُّه، ألاَ وهي القلب» [8].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وفَساد  القلب يكونُ بقسوته وإعراضه عن ذِكر الله وهُداه، وأكْل الربا من أعظم  أسباب ذلك؛ لأنَّه يقومُ على أساس الظُّلم والتجبُّر في الأرض والمحادة لله  ورسوله، والواقع يشهَدُ أنَّ غالب أكَلَة الربا يتَّصِفون بقَسوة القلب،  وغلظ الطِّباع، والإعراض عن الخير والبُغض لأهله، والصد عن سبيل الله، وفي  الصحيح عنه صلى الله عليه وسلم أنَّه قال: «مَن لا يَرحَم الناس، لا يرحَمه الله» [9].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وفي الصحيح أيضًا عنه صلى الله عليه وسلم قال: «ألاَ أخبركم بأهل النار: كل عتلٍّ»  - يعني: الغليظ الجافي - «جوَّاظ» - وهو الجَمُوع المَنُوع -  «مستكبر» [10].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">5- <b>الحرمان من الطيِّبات:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">قال سبحانه: {فَبِظُلْمٍ  مِنَ الَّذِينَ هَادُوا حَرَّمْنَا عَلَيْهِمْ طَيِّبَاتٍ أُحِلَّتْ  لَهُمْ وَبِصَدِّهِمْ عَنْ سَبِيلِ اللَّهِ كَثِيرًا * وَأَخْذِهِمُ  الرِّبَا وَقَدْ نُهُوا عَنْهُ وَأَكْلِهِمْ أَمْوَالَ النَّاسِ  بِالْبَاطِلِ وَأَعْتَدْنَا لِلْكَافِرِينَ مِنْهُمْ عَذَابًا أَلِيمًا} [النساء: 160، 161].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">ففي هذه الآية الكريمة التصريحُ بأنَّ أخْذ الربا وأكْل أموال الناس بالباطل، كان من أسباب تحريم الله الطيِّبات على اليهود،  وهو تحريمٌ قدَرِيٌّ وشرعيٌّ، ومَن تشبَّه بقومٍ فهو منهم[11]،  فالمتشبِّهون من هذه الأمَّة باليهود في أخْذ الربا وأكْل أموال الناس  بالباطل، قد عرَّضوا أنفسهم أنْ يُصِيبهم عقاب من جنس ما عاقَب الله به  اليهود.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>وكم عرف الناس في هذا الزمان</b> من  الأثرياء الكِبار الذين يَعِيشون في أنفُسهم عِيشةً تَعِسَة، في شظف من  العيش وسوء الحال؛ بسبب ما يعتَرِيهم من القلَق والخوف والشحِّ والهلع  والجزع!</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وبعضُهم  بما أنزل الله بهم من - بأسه الذي لا يُرَدُّ عن القوم المجرمين - الأمراض  الخطيرة المستعصية، التي يَحْتَمُون من أجْلها عن كثيرٍ من الطيبات؛ من  المآكل والمشارب والمناكح، وسائر أنواع المتع! وصار حظُّهم منها النظر  إليها فقط؛ لتزيد حسرتهم، وتعظم شقوتهم، حتى إنَّ بعضهم لا تستقرُّ حياته  إلا بتغطية عَقلِه بأنواع المخدِّرات والمسكرات: {وَمَا ظَلَمَهُمُ اللَّهُ وَلَكِنْ أَنْفُسَهُمْ يَظْلِمُونَ}<b> [آل عمران: 117].</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>ظُلم الناس والتعرُّض لسُوء عاقبته:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">فإنَّ  مُؤسَّسات الربا والمتعامِلين به يَظلِمون الناس ظُلمًا عظيمًا متكرِّرًا،  فإنهم يظلمونهم ابتداءً باشتراط الفائدة (الزيادة) عند البيع والقرض، ثم  يظلمونهم أخرى عندما يتعذَّر وَفاء القسط أو الأقساط حين حُلول الأجَل،  والأخطَرُ في ذلك أنَّ الزيادة تَتضاعَف تلقائيًّا كلَّما تأخَّر المال في  ذمَّة المَدِين حسب النظام الربوي الشائع اليوم، حتى يكون الربا أضعافًا  مُضاعَفة، وينتهي بمُصادَرة المرابين لممتلكات المحتاجين، وإذلالهم وقهْرهم  حتى يترُكوهم عظمًا بلا لحم، بل جسمًا بلا رُوح؛ بسبب الربا.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وإذا كان ذلك كذلك، فقد قال تعالى: {وَلَا تَحْسَبَنَّ اللَّهَ غَافِلًا عَمَّا يَعْمَلُ الظَّالِمُونَ إِنَّمَا يُؤَخِّرُهُمْ لِيَوْمٍ تَشْخَصُ فِيهِ الْأَبْصَارُ} [إبراهيم: 42] ، وقال سبحانه: {إِنَّهُ لَا يُفْلِحُ الظَّالِمُونَ}<b>.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وقال جلَّ ذكرُه: {إِنَّا  أَعْتَدْنَا لِلظَّالِمِينَ نَارًا أَحَاطَ بِهِمْ سُرَادِقُهَا وَإِنْ  يَسْتَغِيثُوا يُغَاثُوا بِمَاءٍ كَالْمُهْلِ يَشْوِي الْوُجُوهَ بِئْسَ  الشَّرَابُ وَسَاءَتْ مُرْتَفَقًا} [الكهف: 29] ، وقال جلَّ وعلا: {وَمَا لِلظَّالِمِينَ مِنْ نَصِيرٍ}.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">ولذلك صَحَّ عن النبيِّ صلى الله عليه وسلم أنَّه قال: «اتَّقوا الظُّلم؛ فإنَّ الظُّلم ظلماتٌ يوم القيامة» [12].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وقال لمعاذٍ رضي الله عنه: «اتَّقِ دعوةَ المظلوم؛ فإنَّه ليس بينها وبين الله حِجابٌ» <b>[13]</b>.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وبيَّن ذلك فيما رَواه الإمام أحمد في مسنده، أنَّ النبي صلى الله عليه وسلم قال: «دعوة المظلوم يرفَعُها الله فوق الغَمام، ويفتَحُ لها أبوابَ السماء، ويقول: وعزَّتي وجَلالي، لَأنصُرك ولو بعد حِينٍ» [14].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">فالعاملُ  في تلك المؤسَّسات الظالمة، ومَن يُعِين هؤلاء الظَّلَمة بماله مُعِينٌ  على الظُّلم، فله نصيبٌ من وِزرِهم، ولو كانت نيَّته طيِّبة؛ فإنَّه لا  يستطيع مراعاة أحوال الناس أو الإحسان إليهم؛ لأنَّه محكومٌ بنظام معيَّن  وُضِع أصلاً للربا، فمرجِعُه نظامٌ لا يرحم ولا يعطف؛ بل يستغلُّ الظُّروف  لظُلم الناس، فيُشارِك الموظَّف والعامل والمودع في هذا الظُّلم، وشرُّ  الناس مَن ظلَم الناس للناس، فإنَّه يَبِيع دينه بدنيا غيره!</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>وقد قال صلى الله عليه وسلم في الحديث الصحيح:</b> «اللهم مَن وَلي من أمْر أمَّتي شيئًا فشقَّ عليهم، فاشقُق عليه، ومَن وَلي من أمْر أمَّتي شيئًا فرفَق بهم، فارفُق به» [15].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">6- <b>الصد عن أبواب الخير وفُرَصه:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">ولذلك  يُلاحَظ انصِراف أكَلَة الربا - غالبًا - عن فِعل الخير والإحسان إلى  الناس بالقرض الحسن، وإنظار المعسر إلى يُسرِه، وتنفيس كُربته ابتِغاءَ  وجْه الله، فإنَّ مَن يُقرِض المال بالربا (الفائدة) يشقُّ عليه أنْ يبذله  لأحدٍ دُون فائدةٍ مشروطةٍ؛ لأنَّ أصحاب الربا يحسبون لأرباح المال خِلال  فترةٍ معيَّنة حِسابًا ينسيهم أرباح فعل الخير في الآخِرة، وقد لا  يُوَفَّقون لفِعل الخير، ولو ذكَرُوه وعَلِمُوا حُسنَ عاقبته، وصدَق الله  العظيم إذ يقول: {أُولَئِكَ الَّذِينَ اشْتَرَوُا الْحَيَاةَ الدُّنْيَا بِالْآخِرَةِ فَلَا يُخَفَّفُ عَنْهُمُ الْعَذَابُ وَلَا هُمْ يُنْصَرُونَ}<b> [البقرة: 86] .</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>الاعتماد على الربا يَمنَع أهلَه </b>-<b> غالبًا </b>-<b> عن الاشتِغال بالبَضائع التجاريَّة والمشروعات الإنتاجيَّة:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">التي  تنمي البلاد، وتَنفَع العِباد؛ لأنَّ هذه الأمور في نظَر أهل  الربا تتعرَّض للربح والخسارة، وهم لا يُرِيدون إلا أرباحًا مضمونة قدر  المستطاع - ولو على حِساب غيرهم - ولذلك يقصرون نشاطَهم الاقتصادي على  العملات والأثمان فقط بوجوهٍ من التعامُل كلها ربا؛ من الإقراض بفائدة، أو  أخْذ الفائدة على الديون، أو بيع هذه الأشياء بجِنسها مع تفضيل أحد  المبيعين على الآخَر، أو بيعها دون قبضٍ وحِيازة، أو تشغيلها في بنوكٍ  خارجيَّة بالربا ونحو ذلك، أمَّا المصانع والمزارع ونحوها، فيندر أنْ  يُشارِكوا فيها.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">7- <b>ولقد شَهِدَ الواقع أن الربا كان سببًا لإفلاس كثيرٍ من الدول والمجتمعات والمؤسسات الماليَّة:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">لأنَّ  الطمع في أرباحه دفَع المُتَعامِلين به إلى تحويل أرصدتهم وسحْب السيولة  النقديَّة من بِلادهم إلى بُلدان أخرى قويَّة وذات نفوذ، فتتمكَّن تلك  الدُّوَل الأخيرة من الهيمنة على هذه الأموال، ربما بشكلٍ يُعرِّضها للخطر  من عدَّة جِهات، بينما تتعرَّض بلدان ذوي الأموال للجَفاف من السيولة  النقديَّة، وتتعرَّض لكسادٍ اقتصادي غير متوقَّع.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وكم شهد الناس من مُؤسَّسات أفلسَتْ، ودول شُنَّت عليها الحروب المدمِّرة التي استَنزَفت ثرواتها!</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">8- <b>كما أنَّ التاريخ يشهد:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">أنَّ  الربا كان هو الوسيلة الفعليَّة والذَّريعة الواضحة للاستِعمار الذي  تعرَّضت له عدَّة دول إسلاميَّة وغير إسلاميَّة في القَرْنِ الماضي؛ حيث  اقترضت تلك الدول الفقيرة من دولٍ غنيَّة بالربا، ثم فتَحتْ أبوابها  للمُرابِين الأجانب، فلم تمضِ بضعُ سنوات حتى تسرَّبت الثروة التي بيد  سكَّان الدُّوَل الفقيرة إلى الأجانب، وحين أرادت تلك المجتمعات الضعيفة  الذود عن نفسها استَعدَى المرابون الأجانب دولهم، فتدخَّلت الدول الغنيَّة  تحت ستار حماية رَعاياهم، ثم تَغلغَلتْ حتى وضَعتْ يدها على سائر شُؤون تلك  المجتمعات والدُّوَل الفقيرة، فتحقَّق الاستِعمار بجميع أشكاله، (ومَن قرأ  تاريخ الاستعمار في شبه القارة الهندية وشمال إفريقيا، تبيَّن له ذلك).</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">ولعلَّ  مشكلة الديون الدوليَّة القائمة الآن تجدِّد التذكير بخطر الربا مستقبلاً؛  لأنَّها قد تستغلُّ فرصة لخططٍ تُجدِّد ما سبق، وهي من قواعد الاستعمار  وبنيانه في عدَّة جهاتٍ من العالم.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">9- <b>وحقيقة ينبغي ألاَّ تغرب عن البال:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وهي  أنَّ الربا زنزانةٌ يخنق بها المجتمع نفسَه من نواحٍ عدَّة؛ لأنَّه يعني  في النهاية اجتماعَ أرصدة ضَخمة من أموال الناس بأيدي فِئةٍ من الظَّلَمة  تُكسِبها تلك الأموال نُفوذًا كبيرًا، وتأثيرًا بليغًا في المجتمع؛ لما لها  من ديونٍ، وما بيدها من رهون وأموال، وما لها من جاهٍ وعلاقة، مع أنَّها  لا تعمَل - غالبًا - إلا لما يثبت أسُسَها، ويخدم مَصالِحها، ويوسع  أرباحها، دون رَحمةٍ بالناس أو لُطفٍ، أو تقدير لأخلاق أو قيم أو مبادئ،  كيف وقد استباحت الربا واستحلَّت حرمته، وأعطَتْ لنفسها حق تعدِّي حُدود  الله والوُقوع في حِماه؟!</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وقد  يكونُ العكس، فحين تُفلِس هذه الفئة أو طائفة منها لعُقوبةٍ يُرسِلها الله  عليها، فإنَّ الضَّرر يعمُّ الناس المتعامِلين معها، فتقَع الجهات  المسؤولة في حرجٍ من كلِّ جهةٍ.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">10- <b>الربا من الموبقات:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>أي: </b>المهلكات التي تَغمِس صاحبَها في الإثم ثم في النار؛ قال صلى الله عليه وسلم في الحديث الصحيح المتفق عليه: <b>اجتنبوا السبع الموبقات</b>، قالوا: يا رسول الله، وما هي؟ قال: «الشرك بالله، والسحر، وقتل النفس التي حرَّم الله إلا بالحق، وأكْل الربا...»  إلخ[16]، فذكره مقرونًا بالشرك والسحر اللَّذين هما أعظم الكُفر والظُّلم،  وتوعُّد الله عليهما بالنار دليلٌ على شؤم الربا وخطره وسُوء عاقبته على  أهله في الدنيا والآخرة؛ ولهذا قال سبحانه: {وَاللَّهُ لَا يُحِبُّ كُلَّ كَفَّارٍ أَثِيمٍ}<b> [البقرة: 276] .</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>أكل الربا سببٌ لحرب من الله ورسوله:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وكَفَى  بها خطرًا على الشخص والمال والمجتمع في كلِّ شأنٍ من شؤونه، ومَن ذا الذي  سيَثْبُتُ لحربٍ من الله ورسوله ببَدَنِه أو ماله وعشيرته وكلِّ ما أوتي  من قوَّة، يقول تعالى مُهدِّدًا أكَلَة الربا: {فَإِنْ لَمْ تَفْعَلُوا فَأْذَنُوا بِحَرْبٍ مِنَ اللَّهِ وَرَسُولِهِ} [البقرة: 279].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>أي: </b>عُقوبةً  لكم على أكْلِكم الربا، ولا شكَّ أنَّ آثار هذه الحرب مشهودةٌ في واقع  الناس ومعلومةٌ، ممَّا يأخُذ الله به أكَلَة الربا من النَّقص في الأنفُس  والأموال والثمرات، بالحرق والغرق ووُجوه ذَهاب المال وتلَفِه بالكليَّة أو  بعضه.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وكذلك ما  يُصِيبهم من أنواع الأوجاع المستَدِيمة التي تُكدِّر صفوَ الحياة، وتحرمهم  الطيِّبات وأنواع الملذَّات ومُتَع الحياة، مع ما يُصِيبهم من الهمِّ  والحزن، والعَجز والكسَل والشحّ، وأسباب القلَق، ومُوجِبات الأرَق، وتسلط  عِصابات الإجرام وأنظِمة الجور على أنفُسهم وممتَلكاتهم في جهاتٍ عدَّة من  العالم بفنون التسلُّط والقهْر: {وَكَذَلِكَ نُوَلِّي بَعْضَ الظَّالِمِينَ بَعْضًا بِمَا كَانُوا يَكْسِبُونَ} [الأنعام: 129] ، وربما ودَّ أحدُهم أنْ يبذل مالَه كله ويعيش عَيْشَ الفقراء وطمأنينتهم.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">11- <b>أكْل الربا مُوجِبٌ للَّعن من الله ورسوله:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>واللَّعن: </b>هو الطَّرد والإبعاد عن مَظانِّ الرحمة، والإبلاس منها - لكلِّ مَن اشتَرَك في الربا أكلاً أو إعانةً بأيِّ وجهٍ من الوجوه - كما في صحيح مسلم عن جابرٍ رضي الله عنه قال: «لعَن رسول الله صلى الله عليه وسلم آكِلَ الربا، ومُوكِله، وكاتبَه، وشاهدَيْه، وقال: هم سَواء» [17].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>والأكل: </b>يُرادُ  به الانتِفاع بالربا بأيِّ وجهٍ من الوُجوه، وإنما جاء التعبير بالأكْل؛  لأنَّه هو الأعمُّ الأغلب، أو لأنَّه أوَّل ما يُقصَد من الربا وأهمُّه.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>وأمَّا الكاتب والشُّهود؛ </b>فلِمَا  قاموا به من الإعانة عليه؛ سَواء كان ذلك تبرُّعًا أو بأجرة، وإذا كان هذا  جَزاء مَن اشتَرَك في عَقْدٍ واحدٍ من عُقود الربا، وهو أقلُّ ما يمكن،  فكيف بمَن أمضى سنوات طويلة من عُمره وهو يَأكُله<b>، </b>أو  يُوكِله، أو يكتُبه، أو يشهد عليه، أو يُعِين أهلَه بإجازةٍ أو خدمة أو  دَعوة وتحسين له ودِعاية لأهله، أو يُدافِع عنهم ويَنصُرهم؟! وقد قال صلى  الله عليه وسلم في الحديث الصحيح: «لعَن الله مَن آوَى مُحدِثًا»  [18]، فيمضي فترةً ثمينة من عمره وهو عاصٍ لله، محاربٌ له، متعرِّض  للَعنِه وسُوء عُقوبته، وصدَق الله العظيم في وَصْفِه الإنسانَ بقوله: {إِنَّهُ كَانَ ظَلُومًا جَهُولًا} [الأحزاب: 72]؛ أي: ظَلُومًا لنفسه يُحمِّلها ما لا تُطِيق من البَلاء، جَهُولاً بعاقِبة أمره.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">12- <b>حكمُ آكِل الربا مع عِلمِه بتحريم الله له القتلُ:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>قال العلماء: </b>مَن  أصرَّ على المعاملة بالربا ولم يترك الزائد - أي: الفوائد - للغرماء، فإنْ  قدر عليه الإمام - أي: ولي الأمر - عزَّره بما يَراه رادعًا من الحبْس،  أو الضَّرب، أو الصلب على خشَبة يربط عليها يومًا أو أيَّامًا في مواقع  متعدِّدة؛ ليخزيه بين الناس، وإنْ كان المصرُّون على التعامُل بالربا جماعة  محتَمِين قاتَلهُم الإمام - أي: بعد استتابَتِهم - إنْ لم يتوبوا، قال ابن  عباسٍ: <b>مَن عامَل بالربا يُستَتاب، فإنْ تاب وإلا ضُرِبت عُنقُه</b>.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>قلت: </b>وقد  كتَب النبيُّ صلى الله عليه وسلم إلى عَتَّاب بن أَسِيدٍ عامِلِه على  مكَّة، بشأن قومٍ من أهل مكَّة طلَبُوا مالَهم من ربا عند الناس بعد  الإسلام، كتب إليه النبيُّ صلى الله عليه وسلم بقوله تعالى: {يَاأَيُّهَا  الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَذَرُوا مَا بَقِيَ مِنَ الرِّبَا  إِنْ كُنْتُمْ مُؤْمِنِينَ * فَإِنْ لَمْ تَفْعَلُوا فَأْذَنُوا بِحَرْبٍ  مِنَ اللَّهِ وَرَسُولِهِ} [البقرة: 278، 279].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>وقال: </b>إنْ رضوا وإلاَّ فآذنهم بحربٍ، فقالوا: نتوبُ إلى الله ونذَرُ ما بَقِيَ من الربا، فترَكُوه كلهم[19].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">13- <b>أكْل الربا مجرَّبٌ أنَّه من أسباب سُوء الخاتمة لآكِله:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>أي: </b>يختم له بسُوء عمَلِه، ويُفتَن به صاحبه عند الموت، ولعل من ذلك أنه يموت مصرًّا  على أكْل الربا؛ فيَلقَى ربه مُرابيًا، عاصيًا لله ورسوله، محادًّا لله،  ظالمًا لعباده؛ فيفارق الدنيا على أسوَأ حالٍ، منقلبًا إلى أسوَأ مَآل،  بسبب ما جمَعَه من مالٍ حرام خلفه وراء ظهره، فحمل وزرَه وشرَّه، وتركه  لورثته.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>والمقصود: </b>أنَّ المرابي على خطر أنْ يُنزَع منه الإيمان عند موته؛ لأنَّ من الذنوب ما يستَوجِب به صاحبه نزْع الإيمان، ويُخاف عليه منه، ومن ذلك ذنْب أخْذ الربا؛ فقد ذكَر القرطبي في تفسيره[20] عند قوله تعالى: {لَا تَأْكُلُوا الرِّبَا أَضْعَافًا مُضَاعَفَةً} [آل عمران: 130]: <b>عن  أبي بكرٍ الورَّاق عن أبي حنيفة يرحمه الله قال: أكثَرُ ما يُنزَع  الإيمانُ من العبد عند الموت، ثم قال أبو بكرٍ: فنظرنا في الذنوب التي  تَنزِع الإيمان، فلم نجدْ شيئًا أسرع نزعًا للإيمان من ظُلم العباد</b> ا.هـ.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>قلت: </b>وأخْذ  الربا وفرضُه على الناس من أظلم الظُّلم، وأعظم العُدوان؛ لأنَّه قَرِينُ  القتل، فحُرمة مال المسلم كحُرمة دمه، وفي الصحيح المتفق عليه عنه صلى الله  عليه وسلم قال: «إنَّ دِماءَكم وأموالَكم وأعراضَكم عليكم حرامٌ» [21].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">فقرَن بين حُرمة الدم وحُرمة المال والعِرض.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">14- <b>آكِل الربا في شرِّ حالةٍ بعد موته:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">كما أخبَرَ النبيُّ صلى الله عليه وسلم عن ذلك بقوله: «رأيت الليلةَ رجلين أتَيَاني فأخرَجاني إلى أرضٍ مقدَّسة...» إلخ، وفيه قال صلى الله عليه وسلم : «فانطلقنا  حتى أتينا على نهر من دم، فيه رجل قائم، وعلى شطِّ النهر رجلٌ بين يدَيْه  حجارةٌ، فأقبَلَ الرجل الذي في النهر، فإذا أرادَ أنْ يخرج رمَى الرجل بحجر  في فيه فردَّه حيث كان، فجعَل كلما جاءَ ليخرج رمَى في فيه بحجر فيرجع حيث  كان» ، وفي آخِر الحديث فقيل للنبيِّ صلى الله عليه وسلم : «الرجل الذي رأيتَه في النهر آكِلُ الربا» [22].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">هكذا يُعذَّب آكِلُ الربا بعد موته بالسباحة في نهرٍٍ من دم، وتُقذَف في فيه الحِجارةُ، فتقذف به في وسط النهر.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">15- <b>يوم القيامة يقومُ أكَلَة الربا من قُبورهم كقِيام المجانين الذين مسَّهم الشيطان:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وكفى بذلك خِزيًا وفضيحة ونذيرًا بسوء المستقبل؛ قال تعالى: {الَّذِينَ يَأْكُلُونَ الرِّبَا لَا يَقُومُونَ إِلَّا كَمَا يَقُومُ الَّذِي يَتَخَبَّطُهُ الشَّيْطَانُ مِنَ الْمَسِّ}  [البقرة: 275] ؛ أي: يقومون من قبورهم في صُوَرِ المجانين، ولعلَّ ذلك من  سُوء حالهم، وما يعتَرِيهم من وَحشةٍ في قُبورهم، وما نالَهم من عذاب بعد  موتهم؛ وذلك من أجْل تَعامُلهم بالربا المحرَّم، واحتيالهم على الله بأنواع  الحِيَل وهو:  {يَعْلَمُ سِرَّهُمْ وَنَجْوَاهُمْ}  ، ليستحلُّوا محارِمَه، ويَمكُروا بعباده ليَأكُلوا أموالهم بالباطل بأنواع الظُّلم، ولافترائهم على الله بقولهم: {إِنَّمَا الْبَيْعُ مِثْلُ الرِّبَا}.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">فكثيرٌ منهم يقول ذلك بلسانه أو بحاله وعمله.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">فعن سعيد بن جُبَير قال: <b>آكِلُ الربا يُبعَث يوم القيامة مجنونًا يُخنَق</b>[23]، وعن الضحَّاك قال: <b>مَن مات وهو يَأكُل الربا يُبعَث يوم القيامة متخبطًا كالذي يتخبَّطه الشيطان من المسِّ</b>.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">16- <b>مَن مات وهو يَأكُل الربا:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">أي:  لم يَتُبْ منه، فإنَّه مُتوعَّد بالنار التي: أُعِدَّتْ لِلْكَافِرِينَ ،  فهي أصلاً عقوبةٌ للكافرين، لكن مَن عمل عملَهم - ومن ذلك أَكْلُ الربا -  فإنَّه يُعاقب مثل عِقابهم؛ لأنَّه أشبههم في ذلك، ومَن تشبَّه بقوم حُشِرَ  معهم؛ ولهذا قال سبحانه: {وَمَنْ عَادَ فَأُولَئِكَ أَصْحَابُ النَّارِ هُمْ فِيهَا خَالِدُونَ} [البقرة: 275].</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>أي:</b> مَن  عاد إلى أكْل الربا بعد عِلمِه بحُكمِه، فهو من أصحاب النار المُلازِمين  لها ملازمةَ الصاحب لصاحبه، ثم زادَ في الوعيد فحكَم عليهم بالخُلود في  النار، وهو تهديدٌ خطيرٌ يتصدَّع منه القلب، ويقشعرُّ لِهَولِه الجلد؛  ولهذا يُروَى عن الإمام أبي حنيفة رحمه الله أنَّه قال في قوله تعالى: {وَاتَّقُوا النَّارَ الَّتِي أُعِدَّتْ لِلْكَافِرِينَ} [آل عمران: 131]: هي أخوف آيةٍ على المؤمنين؛ لأنَّ الله حذَّرَهُم من النار التي أُعِدَّت للكافرين.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وإذا  كان أخف أهل النار عذابًا مَن يُوضَع في أخمص قدمَيْه جَمرتان من النار  يغلي منهما دماغه[24]، فكيف بمَن يَخلُد فيها، وقد أحاطَتْ به من كلِّ  جهة؟! اللهم زَحزِحنا عن النار برحمتك؛ فإنَّك أنت أرحَمُ الراحمين.</font></span><br />
+<br />
+<hr /><span style="font-family: arabic typesetting"><font size="5">[1] أخرجه البخاري برقم (7280).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[2] سبق تخريجه.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[3] جزءٌ  من حديثٍ أخرجه الإمام أحمد في مسنده (1/ 387)، وأورده الهيثمي في مجمع  الزوائد (1/ 53)، قال أحمد شاكر في تحقيق المسند (3672): إسناده ضعيف.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[4] أورده  الهيثمي في مجمع الزوائد (10/ 54)، وابن كثير في تفسيره (1/ 291)،  والمنذري في الترغيب والترهيب (2/ 547)، وقال: رواه الطبراني في الصغير.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[5] سبق تخريجه.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[6] أخرجه  الإمام أحمد في مسنده (1/ 395، 424)، والحاكم في مستدركه (2/ 37). عن  عبدالله بن مسعود رضي الله عنه، وصححه ووافقه الذهبي، قال أحمد شاكر في  تحقيق المسند (3754): إسناده صحيح.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[7] أخرجه  ابن ماجه (2279)، وأورده المنذري في الترغيب (3/ 10)، وقال: رواه ابن ماجه  والحاكم وقال: صحيح الإسناد، قال محمد فؤاد عبدالباقي في الزوائد: إسناده  صحيح، ورجاله موثوقون؛ لأنَّ العباس بن جعفر وثَّقه ابن أبي حاتم وابن  المديني، وذكَرَه ابن حبان في الثقات، وباقي رجال الإسناد على شرط مسلم،  وفي الفتح: إسناده حسن، وصحَّحه الألباني، انظر: صحيح ابن ماجه (2/ 28).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[8] أخرجه البخاري برقم (52) و(2051)، ومسلم برقم (1599)، عن النُّعمان بن بشير رضي الله عنه.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[9] أخرجه البخاري برقم (6013) و(7376)، ومسلم برقم (2319)، عن جرير بن عبدالله رضي الله عنه.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[10] أخرجه البخاري برقم (4918) و(6071) و(6657)، ومسلم برقم (2853)، عن حارثة بن وهب الخزاعي رضي الله عنه.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[11] لحديث ابن عمر رضي الله عنهما قال: قال رسول الله - صلى الله عليه وسلم -: <b>مَن تشبَّه بقوم فهو منهم</b>، أخرجه أبو داود برقم (4031)، وأحمد في مسنده (2/ 50)، قال أحمد شاكر في تحقيق المسند (5114، 5115): إسناده صحيح.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[12] أخرجه مسلم برقم (2578)، عن جابر بن عبدالله رضي الله عنه.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[13] أخرجه البخاري برقم (1496)، ومسلم برقم (19).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[14] أخرجه الإمام أحمد في مسنده (2/ 305)، عن أبي هريرة رضي الله عنه قال أحمد شاكر في تحقيق المسند (8030): إسناده صحيح.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[15] أخرجه مسلم برقم (1828)، عن عائشة - رضي الله عنها.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[16] أخرجه البخاري برقم (2615)، ومسلم برقم (89)، عن أبي هريرة رضي الله عنه.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[17] سبق تخريجه.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[18] أخرجه مسلم برقم (1978). عن علي بن أبي طالب رضي الله عنه.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[19] ذكر معنى ذلك ابن جرير في تفسيره لهذه الآية (3/ 107).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[20] انظر: الجامع لأحكام القرآن؛ للقرطبي (4/ 203).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[21] أخرجه البخاري برقم (67)، ومسلم برقم (1679)، عن أبي بكْرة رضي الله عنه وهو جزءٌ من حديث حجَّة الوداع.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[22] أخرجه البخاري (2085)، عن سَمرَة بن جُندب رضي الله عنه.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[23] ذكره ابن كثير رحمه الله في تفسيره وقال: رَواه ابن أبي حاتم، ورُوِي عن جمعٍ من التابعين نحو ذلك، وروى ابن جرير عن ابن عبَّاس، قال: <b>يُقال يوم القيامة لآكِل الربا: خُذ سلاحك للحرب</b>، انظر: مختصر تفسير ابن كثير؛ للرفاعي (1/ 235).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">[24] لحديث: <b>إنَّ أهون أهل النار عذابًا يوم القيامة، لَرجلٌ تُوضَع في أخمص قدمَيْه جَمرتان، يغلي منهما دِماغه</b>؛ أخرجه البخاري برقم (6561) و(6562)، ومسلم برقم (213)، عن النُّعمان بن بشير رضي الله عنه.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وقد  ورَد في رواية مسلم أنَّه أبو طالب عمُّ النبي - صلى الله عليه وسلم -؛  فعن ابن عباس رضي الله عنهما أنَّ رسول الله - صلى الله عليه وسلم -، قال: <b>أهوَنُ أهلِ النار عذابًا أبو طالب، وهو مُنتَعِلٌ بنعلين يَغلِي منهما دِماغه</b>؛ أخرجه مسلم برقم (212).</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وقد  بيَّن النبيُّ - صلى الله عليه وسلم - السبب في أنَّه أهون أهلِ النار  عذابًا؛ فعن العباس بن عبدالمطلب أنَّه قال: يا رسول الله، هل نفعتَ أبا  طالب بشيءٍ، فإنَّه كان يحوطُك ويغضَبُ لك؟ قال: <b>نعم، هو في ضَحضاح من النار، ولولا أنا لكان في الدَّرك الأسفل من النار</b>؛ أخرجه مسلم برقم (209).</font></span><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><br />
+</span><br />
+</div><span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_970903" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_970903" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=970903" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_970903" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=195145&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=195145#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">لوحة التحكم</a></li>
+		<li><a href="private.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الاشتراكات</a></li>
+		<li><a href="online.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=195143&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">القناعة: راحة وبركة وسعادة</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=195150&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">من محاسن الإسلام العدل في التصرفات</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A3%D8%AE%D8%B7%D8%A7%D8%B1">أخطار</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A7%D9%84%D8%B1%D8%A8%D8%A7">الربا</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D9%88%D8%A3%D8%B6%D8%B1%D8%A7%D8%B1%D9%87">وأضراره</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=195145#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=195145#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">01:39 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

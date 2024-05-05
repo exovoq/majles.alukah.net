@@ -1,0 +1,4826 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=00a94d84221870a45b532cb7ba24224b&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=25961&amp;page=3";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - المجلس الشرعي العام - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=3" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="الاسبال, الله, قال, على, ذلك, خيلاء, كان, ابن, عليه, الخيلاء, صلى, فقال, وسلم, إلى, الإزار, الإسبال, بكر, هذا, ثوبه, أنه, رسول, إزاره, فلا, فيه, الكعبين, إذا, لغير, ولا, الأحاديث, وقال, إلا, وقد, أبو, أبي, النبي, عبد, للخيلاء, الذي, وهو, ينظر, حديث, إنما, لست, غير, يوم, عنه, يكون, الأرض, ممن, القيامة" />
+	<meta name="description" content="السلام عليكم و رحمة الله  
+في هذا البحث سابين ان شاء الله صحة مذهب الجمهور في تحريم الاسبال للخيلاء فقط و قد انتشر في عصرنا الحال قول تحريم الاسبال مطلقا حتى ظن بعض الناس انها مسألة منتهية و لا نقاش فيها و انها لا يسوغ فيها الخلاف و هذا خطأ كبير و هو تعدي ايضا على خيرة السلف الذين قالوا بتقييد الاسبال بالخيلاء 
+ 
+ 
+انبه الاخوة ان اغلب الكلام منقول من رسالة الشيخ عبد الوهاب مهية  
+ 
+ورد في الاسبال عدة احاديث هي 
+قال رسول الله عليه الصلاة و السلام من جر ثوبه خيلاء لم ينظر الله اليه يوم القيامة" />
+
+	<title> نظرة جديدة في تحريم الاسبال للخيلاء - الصفحة 3</title>
+	<link rel="canonical" href="showthread.php?t=25961&page=3&s=00a94d84221870a45b532cb7ba24224b" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=00a94d84221870a45b532cb7ba24224b" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=00a94d84221870a45b532cb7ba24224b" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="00a94d84221870a45b532cb7ba24224b" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=00a94d84221870a45b532cb7ba24224b" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=00a94d84221870a45b532cb7ba24224b -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=00a94d84221870a45b532cb7ba24224b"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=00a94d84221870a45b532cb7ba24224b">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=00a94d84221870a45b532cb7ba24224b">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=00a94d84221870a45b532cb7ba24224b">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=00a94d84221870a45b532cb7ba24224b" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=00a94d84221870a45b532cb7ba24224b">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=00a94d84221870a45b532cb7ba24224b">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=3&amp;s=00a94d84221870a45b532cb7ba24224b">المجلس الشرعي العام</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> نظرة جديدة في تحريم الاسبال للخيلاء</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=00a94d84221870a45b532cb7ba24224b&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<form action="showthread.php?t=25961&amp;page=5&amp;s=00a94d84221870a45b532cb7ba24224b" method="get" class="pagination popupmenu nohovermenu">
+<input type="hidden" name="t" value="25961" /><input type="hidden" name="s" value="00a94d84221870a45b532cb7ba24224b" />
+	
+		<span><a href="javascript://" class="popupctrl">صفحة 3 من 5</a></span>
+		
+		<span class="first_last"><a rel="start" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b" title="الصفحة الأولى - النتائج 1 إلى 20 من 99"><img src="images/metro/purple/pagination/first-left.png" alt="الأولى" />الأولى</a></span>
+		
+		
+		<span class="prev_next"><a rel="prev" href="showthread.php?t=25961&amp;page=2&amp;s=00a94d84221870a45b532cb7ba24224b" title="الصفحة السابقة - النتائج 21 إلى 40 من 99"><img src="images/metro/purple/pagination/previous-left.png" alt="السابق" /></a></span>
+		
+		
+		<span><a href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b" title="مشاهدة النتائج 1 إلى 20 من 99">1</a></span><span><a href="showthread.php?t=25961&amp;page=2&amp;s=00a94d84221870a45b532cb7ba24224b" title="مشاهدة النتائج 21 إلى 40 من 99">2</a></span><span class="selected"><a href="javascript://" title="النتائج 41 إلى 60 من 99">3</a></span><span><a href="showthread.php?t=25961&amp;page=4&amp;s=00a94d84221870a45b532cb7ba24224b" title="مشاهدة النتائج 61 إلى 80 من 99">4</a></span><span><a href="showthread.php?t=25961&amp;page=5&amp;s=00a94d84221870a45b532cb7ba24224b" title="مشاهدة النتائج 81 إلى 99 من 99">5</a></span>
+		
+		
+		<span class="prev_next"><a rel="next" href="showthread.php?t=25961&amp;page=4&amp;s=00a94d84221870a45b532cb7ba24224b" title="الصفحة التالية - النتائج 61 إلى 80 من 99"><img src="images/metro/purple/pagination/next-left.png" alt="التالي" /></a></span>
+		
+		
+		<span class="first_last"><a href="showthread.php?t=25961&amp;page=5&amp;s=00a94d84221870a45b532cb7ba24224b" title="الصفحة الأخيرة - النتائج 81 إلى 99 من 99">الأخيرة<img src="images/metro/purple/pagination/last-left.png" alt="الأخيرة" /></a></span>
+		
+	
+	<ul class="popupbody popuphover">
+		<li class="formsubmit jumptopage"><label>إذهب إلى الصفحة: <input type="text" name="page" size="4" /></label> <input type="submit" class="button" value="إذهب" /></li>
+	</ul>
+</form>
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 41 إلى 60 من 99
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=25961&page=3&s=00a94d84221870a45b532cb7ba24224b" title="تحديث الصفحة">نظرة جديدة في تحريم الاسبال للخيلاء</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=25961" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=00a94d84221870a45b532cb7ba24224b&amp;t=25961&amp;pp=20&amp;page=3" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=addsubscription&amp;t=25961" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;search_type=1&amp;searchthreadid=25961&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="00a94d84221870a45b532cb7ba24224b" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="25961" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_185723">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-01-29,&nbsp;<span class="time">07:26 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post185723" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=185723#post185723" class="postcounter">#41</a><a id="postcount185723" name="41"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=22246&amp;s=00a94d84221870a45b532cb7ba24224b" title="القضاعي غير متواجد حالياً"><strong>القضاعي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=22246&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=22246&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="القضاعي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>287</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_185723">
+				<blockquote class="postcontent restore">
+					الأخ التقرتي زاده الله علماً وبصيرة .<br />
+ألا ترى أن تفريقك بين العصور من حيث دلالة النصوص خطأ في الاستدلال ؟<br />
+فأنت تقر بأن النبي صلى الله عليه وسلم واصحابه كانوا يعدون مجرد الإسبال مخيلة !<br />
+ثم تقول ولكنه لا يلزم هذا الفهم في هذا العصر ؟؟؟<br />
+فإن كان النبي بأبي هو وأمي واصحابه الكرام لم يتصوروا أن ثمة عصراً قادم - وهو عصرنا عصر الغثاء - يصبح الإسبال عند أهل هذا العصر ليس من المخيلة !<br />
+فهل ربنا ورب كل شيء جل وعز وهو المشرّع صاحب الحكم والأمر لم يعلم بهذا التصور ليبينه لنا وحاشاه سبحانه ؟؟؟<br />
+فاعلم إن اختلال الأفهام وانتكاس الفطر أمور غير معتبرة عند تطبيق النصوص والأحكام . <br />
+وهذا أولاً .<br />
+و تستدل بحديث في المسند يذكر أن عقوبة المختال النار , والمعلوم أن عقوبة المختال أن لا ينظر الله إليه , وتقول أن في ذلك دليل على اتحاد العقوبة المؤدي لاتحاد السبب الموجب للتحريم !!<br />
+وتغفل عن أن عقوبة عدم النظر من الجليل سبحانه تستلزم دخول النار , ولا عكس أي أن عقوبة من أسبل إزاره إلى تحت الكعبين هي الوعيد بالنار فقط وهي لا تستلزم عدم النظر من الكريم جل في علاه .<br />
+وبالاختصار : من جر ثوبه خيلاء لا ينظر الله إليه وهذا مستلزم للعذاب بالنار .<br />
+وأما مجرد الوعيد بالنار لمن أسبل لا يستلزم عدم النظر فافترقا ولم يتحدا كما تزعم .<br />
+وهذه الثانية .<br />
+والثالثة وأنت تقررها بنفسك وهي : أن الجر للخيلاء ليس هو هو جعل الثوب تحت الكعبين .<br />
+فاختلفت الأسباب والأحكام فمنع الحمل إجماعاً عند أهل الاصول .<br />
+<font color="red">########### </font>والله اعلم .
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_185723" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_185747">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-01-29,&nbsp;<span class="time">09:07 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post185747" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=185747#post185747" class="postcounter">#42</a><a id="postcount185747" name="42"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=23757&amp;s=00a94d84221870a45b532cb7ba24224b" title="السكران التميمي غير متواجد حالياً"><strong>السكران التميمي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=23757&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=23757&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="السكران التميمي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2008</dd>
+						<dt>الدولة</dt> <dd>بلاد الحرمين</dd>
+						
+						<dt>المشاركات</dt> <dd>3,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_185747">
+				<blockquote class="postcontent restore">
+					معذرة أحبتي أين أبحرتم؟ ألم ترسوا سفينتكم بعد؟<br />
+إخوتي إن كانت المسألة قد اختلفت فيها الأدلة فمن المسلم به بلا جدال؛ ستختلف فيها الآراء، فمن يقوى عنده دليل أو ترجيح سيأخذ به، ولكن يوجد هناك نقطة التقاء. فهلّا التقيتم فيها بروية وهدوء.<br />
+فقد تشعبت الأحداث، وتوسعت الاطروحات، وأخشى أن تقل الاستفادة. لتكون المسألة مفصلة مدققة، مرتبة موضحة.<br />
+فالمطلوب في المسألة بكل سهولة هو كالتالي: (أن يقول الشخص: مسألة [كذا]، أرى فيها [كذا]، بدليل [كذا]). وإن استشهد بأقوال أهل العلم التي تعضد قوله فلا بأس.<br />
+لعلكم غير مأمورين تعيدون ترتيب أوراقكم؛ فقد تبعثرت، وهذا كل ما في  الأمر. بعد ذلك صدقوني ستجدون نقطة الإلتقاء.<br />
+<br />
+ووفقكم الله إلى كل خير.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">حسدوا الفتى إذ لم ينالوا سعيه <img src="images/smilies/mid.gif" border="0" alt="" title="فاصل بين الآيات - باختصار=///" class="inlineimg" /> فالقوم أعداءٌ له وخصوم</div><div style="text-align: center;">كضرائر الحسناء قلن لوجهها <img src="images/smilies/mid.gif" border="0" alt="" title="فاصل بين الآيات - باختصار=///" class="inlineimg" /> حسداً وبغضاً إنه لذميم</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_185747" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_185801">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-01-29,&nbsp;<span class="time">12:46 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post185801" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=185801#post185801" class="postcounter">#43</a><a id="postcount185801" name="43"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" title="التقرتي غير متواجد حالياً"><strong>التقرتي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=27163&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="التقرتي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,592</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_185801">
+				<blockquote class="postcontent restore">
+					السلام عليكم اخ القضاعي و سامحك الله <br />
+<br />
+<br />
+اما قولك ان النبي لا يتصور هذا العصر ... فهذا قول باطل و لم اقل به <br />
+<br />
+الذي قلته ان مناط الحكم الخيلاء بادلة الاحاديث و ان نهي الرسول عليه الصلاة و السلام كان لعادة القوم في ذلك العصر فلا تقولني ما لم اقله العادة محكمة يا اخي و هذا مقرر في الشرع و ثانيا هذا ليس قولي فهذا أيوب السختياني و هو من أئمة المسلمين المقتدى بهم ، يقول : &quot; كانت الشهرة فيما مضى في تذييلها ، و الشهرة اليوم في تقصيرها &quot; !!<br />
+<br />
+اتظن ان الزاهد العابد ايوب السختياني يظن ان الرسول عليه الصلاة و السلام لم يتصور هذا العصر<br />
+<br />
+فليتقي الله بعض الاخوة قبل التشنيع و لينظروا على من يشنعوا !!!! فالامر ليس بالعصبية و القول بان الاسبال كان للخيلاء في ذلك العصر و ان العصور اختلفت ليس قولي هذا قول علماء كبار لا نظن بهم الا خيرا افتشنعوا على الشوكاني لانه اعتبر العصر !!! او السيوطي او بن عبد البر او الباجي ....<br />
+<br />
+اتقوا الله يا اخوة هؤلاء علماء اجلاء و ان قالوا ان العادة محكمة فهو عن علم و من نحن الا طويلبة علم و ربما لا نرتقي لذلك حتى نشنع بقول كهذا <br />
+<br />
+<br />
+يا اخي ان اردت الرد فلا تشنع هكذا انما خد الدليل و اثبت للاخوة ان قول رسول الله عليه الصلاة و السلام ليس من اجل الخيلاء في ذلك العصر اما ان ترميني بدون علم فاتقي الله في ذلك و انظر من ترمي هل هو انا ام من نقلت عنه مذهبه !!!<br />
+<br />
+<br />
+امر اخر اما قولك انتكاس الفطرة فمن قال لك ان الاسبال فطرة !!! هذا تقول لم اسمعه عن صاحب علم فاطلب منك ان تنقل لي من العلماء من قال انه فطرة و ليكن في علمك انه لو كان فطرة لما اختلف فيه الرجال و النساء و قد كان الحكم واحدا قبل ان يرخص الرسول عليه الصلاة و السلام ذلك للنساء لما سألته ام سلمة.<br />
+<br />
+<br />
+اما الحديث من وطئ ازاره خيلاء وطئه في النار <br />
+<br />
+<br />
+اولا انا ناقل للاستدلال و اعيد لك النقل <br />
+قال الحافظ ابن رجب الحنبلي في ( التخويف من النار 1/118) : وفي مسند الإمام أحمد عن هبيب بن المغفل عن النبي صلى الله عليه وآله وسلم قال :&quot; من وطئ إزاره خيلاء وطئه في النار&quot; وهو يبين معنى ما في صحيح البخاري عن أبي هريرة عن النبي صلى الله عليه وآله وسلم أنه قال : &quot; ما تحت الكعبين من الإزار ففي النار &quot; ، أن المراد ما تحت الكعب من البدن والثوب معا وأنه يسحب ثوبه في النار كما يسحبه في الدنيا خيلاء .اهـ<br />
+<br />
+فيا اخي تستدل بان النظر حكم اخر و تغفل ان الحكم في الحديث صريح و هو وطئة في النار فاين تفريقك للاحكام ان كنت تعتبر ما تحت الكعبين في النار حكما مختلفا فلماذا لا تعتبر وطئه في النار حكما مختلفا ايضا عن النظر !!!!!<br />
+<br />
+ام انك تربط ما تشاء و تترك ما تشاء فان وافق مذهبك تربط وطئه في النار بعدم النظر و ان لم يوافق لا تربط ما تحت الكعبين في النار بعدم النظر !!!<br />
+<br />
+اما قولك <font color="red">فاعلم إن اختلال الأفهام وانتكاس الفطر أمور غير معتبرة عند تطبيق النصوص والأحكام .</font> <br />
+<br />
+فاتقي الله و استغفره فهل تظن ان فهم الامام الشافعي و الامام احمد و البخاري و بن عبد البر و بن قدامة و الباجي و القاضي عياض و الهيثمي و السيوطي و بن تيمية و النووي انتكس !!!!<br />
+<br />
+اتظن انهم لا يطبقون الاحكام عند قولهم ان احاديث رسول الله عليه الصلاة و السلام كانت للخيلاء و عندما قرروا ان العرب في ذلك العصر كان لا يسبلون الا للخيلاء اتقوا الله يا اخوة و تريثوا قبل التشنيع و انظروا على من تشنعون !!!<br />
+<br />
+و اعيد لك هذا الدليل <br />
+<br />
+حديث ابن عباس ء حديث:‏7447‏ <br />
+أخبرنا الحسن بن يعقوب العدل ، ثنا محمد بن عبد الوهاب الفرا ، أنبأ جعفر بن عون ، أنبأ سعيد بن إياس الجريري ، عن أبي السليل ، عن أبي تميمة الهجيمي ، عن جابر بن سليم الهجيمي ، رضي الله عنه قال : لقيت رسول الله صلى الله عليه وسلم في بعض طرق المدينة وعليه إزار من قطن منتشر الحاشية قلت : عليك السلام يا محمد أو يا رسول الله فقال : &quot; عليك السلام ، تحية الميت عليك السلام ، تحية الميت عليك السلام ، تحية الميت سلام عليكم ، سلام عليكم ، سلام عليكم &quot; أي هكذا فقل قال : فسألته عن الإزار فأقنع ظهره وأخذ بمعظم ساقه فقال : &quot; <font color="red">هاهنا فإن أبيت فهاهنا فوق الكعبين ، فإن أبيت فإن الله لا يحب كل مختال فخور</font> &quot; &quot; هذا حديث صحيح الإسناد ولم يخرجاه.<br />
+<br />
+اقرأه جيدا <font color="red">فإن أبيت فهاهنا فوق الكعبين ، فإن أبيت فإن الله لا يحب كل مختال فخور </font><br />
+<br />
+فاستحلفك بالله انظر فان ابيت فإن الله لا يحب كل مختال فخور !!! الم يقرن الاسبال مباشرة بالخيلاء هنا فكيف تفرق انت بينهما !!!!!  التقييد جاء بمنطوق حديث رسول الله عليه الصلاة و السلام و لم نبتدعه نحن هذا كلام عربي يا اخي <br />
+<br />
+<br />
+خلاصة القول و انت من قررته بنفسك من لا ينظر الله اليه دخل النار و من دخل النار لا ينظر الله اليه الم تقل ان العاصي لا ينظر الله اليه فان كان المسبل عاص عندك فكيف تقرر ان عقوبته النار و ان الله ينظر اليه و انت تقول ان العاصي لا ينظر الله اليه !!!!!<br />
+<br />
+<br />
+اخي اريد منك نقاشا علميا و ليس رميا بالتهم ان كان عندك اعتراض عن نقطة فاستدل و انقضها اما كلام عام و قدح فاتق الله  و لا تؤول الكلام عن قلة علم كقولك اننا قلنا ان الرسول عليه الصلاة و السلام لم يتصور العصر بل الشرع اخد بالحسبان العرف و هذا ابسط ما يعرفه اي طالب علم و ان ما قد يكون مباحا في عصر يحرم في اخر فالمباح يمكن ان يصبح حراما كما يمكن ان يصبح فرضا و هذا ما قلناه <br />
+<br />
+لان الاصل في اللباس الاباحة و لا يحرم الا لسبب و السبب هو الخيلاء لذلك كان الاسبال في ذلك العصر ملزما للمخيلة و هذا ما قاله رسول الله عليه الصلاة و السلام في قوله<br />
+<br />
+ <font color="red">وإياك وإسبال الإزار فإنها من المخيلة  !!</font><br />
+<br />
+<font color="red">فكيف تقول ان الاسبال و المخيلة شيئان مفترقان و الحديث جمعهما !!</font><br />
+<br />
+فاما ان تجمعهما و ان جمعتهما اتحد الحكم فرضا!!!!  او ان تفرق بينهما و ان فرقت بينها فقد ناقضت الحديث الصريح فاختر مذهبك الجمع او التفريق  !!!! <br />
+<br />
+و الدليل ان العصر اختلف قول عبد الله بن عمر &quot;من جر إزاره <font color="red">لا يريد بذلك إلا المخيلة </font>فإن الله لا ينظر إليه يوم القيامة&quot;<br />
+<br />
+فلماذا زاد عبد الله بن عمر لا يريد بذلك الا المخيلة !!!!  اليس هذا قيد و هذا لا يعارض قول رسول الله عليه الصلاة و السلام  وإياك وإسبال الإزار فإنها من المخيلة  .<br />
+<br />
+<br />
+فكلام رسول الله عليه الصلاة و السلام اخباري و تقرير لحال ذلك الزمان و انت بنفسك تفرق بين الامرين فهل تجرء ان تقول ان الرسول عليه الصلاة و السلام قصد امرين اسبال بدون مخيلة و اسبال بمخيلة !! فالحديث يرد عليك لانه يقول  وإياك وإسبال الإزار فإنها من المخيلة  ....<br />
+<br />
+<br />
+فكيف تقرر امرا مخالفا للمنطوق في الحديث !!!!<br />
+<br />
+و ما زاد عبد الله بن عمر جملة &quot;لا يريد بذلك &quot; الا  لان العصر اختلف و هذا ما فهمه السلف <br />
+<br />
+وقوله عليه الصلاة و السلام في الحديث <font color="red">&quot;فإن أبيت فهاهنا فوق الكعبين ، فإن أبيت فإن الله لا يحب كل مختال &quot;</font> دليل انه قصد ان من اسبل تحت الكعبين فهو يريد الخيلاء في ذلك الزمن لذلك عقب فان الله لا يحب كل مختال فخور و الا فلماذا لم يفرق في الحديث و جمعه في حكم واحد !!!!!<br />
+<br />
+<br />
+ارجوا من الاخ ان يناقش منا قشة علميه و يرد بالادلة عن كل نقطة قلتها و لا تأخده العصبية فاننا لا نجني من ورائها شيئا و الله المستعان و السلام عليكم و رحمة الله
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_185801" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_185845">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-01-29,&nbsp;<span class="time">03:01 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post185845" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=185845#post185845" class="postcounter">#44</a><a id="postcount185845" name="44"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" title="التقرتي غير متواجد حالياً"><strong>التقرتي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=27163&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="التقرتي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,592</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_185845">
+				<blockquote class="postcontent restore">
+					شكرا اخي السكران التميمي<br />
+<br />
+لكن الغرض من المناقشة ان يطلع بعضنا البعض على ادلية خفيت عليهم و توجيهها فكلما ناقشنا دليلا اتسعت دائرة ادراكنا للامور <br />
+<br />
+و حتى و ان لم نتفق على رأي فان كل واحد منا ستتسع دائرة معرفته و المناقشة وسيلة لنبذ التعصب فالتعصب لرأي لا يأتي الا عن جهل فان اطلع الجميع على الادلة و اقوال العلماء ادركوا ان المسألة فيها الكثير من الامور التي خفيت عليهم<br />
+<br />
+و السلام عليكم و رحمة الله
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_185845" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_186085">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-01-30,&nbsp;<span class="time">02:22 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post186085" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=186085#post186085" class="postcounter">#45</a><a id="postcount186085" name="45"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" title="التقرتي غير متواجد حالياً"><strong>التقرتي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=27163&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="التقرتي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,592</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_186085">
+				<blockquote class="postcontent restore">
+					السلام عليكم و رحمة الله<br />
+<br />
+نواصل سرد الادلة و ها انا اقدم لكم بعض الاحاديث <br />
+<br />
+سنن أبي داود   كتاب اللباس<br />
+ باب ما جاء في إسبال الإزار ء حديث:‏3580‏ <br />
+ حدثنا مسدد ، حدثنا يحيى ، عن أبي غفار ، حدثنا أبو تميمة الهجيمي ء وأبو تميمة اسمه طريف بن مجالد ء عن أبي جري جابر بن سليم ، قال : رأيت رجلا يصدر الناس عن رأيه ، لا يقول شيئا إلا صدروا عنه ، قلت : من هذا ؟ قالوا : هذا رسول الله صلى الله عليه وسلم ، قلت : عليك السلام يا رسول الله ، مرتين ، قال : &quot; لا تقل : عليك السلام ، فإن عليك السلام تحية الميت ، قل : السلام عليك &quot; قال : قلت : أنت رسول الله ؟ قال : &quot; أنا رسول الله الذي إذا أصابك ضر فدعوته كشفه عنك ، وإن أصابك عام سنة فدعوته ، أنبتها لك ، وإذا كنت بأرض قفراء ء أو فلاة ء فضلت راحلتك فدعوته ، ردها عليك &quot; ، قال : قلت : اعهد إلي ، قال : &quot; لا تسبن أحدا &quot; قال : فما سببت بعده حرا ، ولا عبدا ، ولا بعيرا ، ولا شاة ، قال : &quot; ولا تحقرن شيئا من المعروف ، وأن تكلم أخاك وأنت منبسط إليه وجهك إن ذلك من المعروف ، <font color="red">وارفع إزارك إلى نصف الساق ، فإن أبيت <font color="blue">فإلى</font> الكعبين ، وإياك وإسبال الإزار ، فإنها من المخيلة ، وإن الله لا يحب المخيلة</font> ، وإن امرؤ شتمك وعيرك بما يعلم فيك ، فلا تعيره بما تعلم فيه ، فإنما وبال ذلك عليه <br />
+<br />
+صحيح الترغيب و الترهيب 2687<br />
+<br />
+<br />
+حدثنا عفان ، حدثنا شعبة ، عن أبي إسحاق قال : سمعت مسلم بن نذير ، عن حذيفة قال : أخذ رسول الله صلى الله عليه وسلم بعضلة ساقي  أو بعضلة ساقه  قال : فقال : &quot; الإزار هاهنا ، فإن أبيت فهاهنا ، فإن أبيت فهاهنا ، <font color="red">فإن أبيت فلا حق للإزار في الكعبين</font> ، أو لا حق للكعبين في الإزار &quot; *<br />
+موضع الإزار إلى أنصاف الساقين والعضلة فإن أبيت فأسفل فإن أبيت فمن وراء الساق ولا حق للكعبين في الإزار <br />
+ صحيح ( ن ) عن حذيفة الصحيحة 2366 : حم ، ت ، هـ<br />
+صحيح الجامع 6634<br />
+<br />
+<br />
+موطأ مالك ء كتاب اللباس<br />
+باب ما جاء في إسبال الرجل ثوبه ء حديث:‏1648‏ <br />
+وحدثني عن مالك ، عن العلاء بن عبد الرحمن ، عن أبيه ، أنه قال : سألت أبا سعيد الخدري عن الإزار ، فقال : أنا أخبرك بعلم ، سمعت رسول الله صلى الله عليه وسلم يقول : &quot; إزرة المؤمن إلى أنصاف ساقيه ، لا جناح عليه فيما بينه وبين الكعبين ، <font color="red">ما أسفل من ذلك ففي النار</font> ، ما أسفل من ذلك ففي النار ، <font color="red">لا ينظر الله يوم القيامة إلى من جر إزاره بطرا</font>.<br />
+<br />
+<br />
+<br />
+ما أسفل من الكعبين من الإزار ففي النار &quot;رواه البخاري و غيره . راجع الصحيحة : 2037<br />
+<br />
+<br />
+حديث ابن عمر رضي الله عنهما: &quot;<font color="red">الإسبال في الإزار والقميص والعمامة، من جر شيئاً خيلاء لم ينظر الله إليه يوم القيامة</font>&quot;. رواه ابن أبي شيبة في المصنف، وأبو داود (4094) والنسائي (8/208) وابن ماجة (3576) وغيرهم من طريق عبد العزيز بن أبي رواد. <br />
+<br />
+<br />
+حديث أبي أمامة الذي أخرجه الطبراني من حديث أبي أمامة قال : { بينما نحن مع رسول الله صلى الله عليه وسلم إذ لحقنا عمرو بن زرارة الأنصاري في حلة إزار ورداء قد أسبل , فجعل رسول الله صلى الله عليه وسلم <font color="red">يأخذ بناحية ثوبه ويتواضع لله عز وجل </font>ويقول : عبدك وابن عبدك وأمتك حتى سمعها عمرو فقال : يا رسول الله إني أحمش الساقين , فقال : يا عمرو إن الله تعالى قد أحسن كل شيء خلقه , يا عمرو إن الله لا يحب المسبل }.<br />
+<br />
+<br />
+أخرج ابن أبي شيبة في مصنفه (24816) بسند جيد عن ابن مسعود رضي الله عنه &quot; <font color="red">أنه كان يسبل إزاره </font>فقيل له في ذلك فقال: إني رجل حمش الساقين &quot; <br />
+<br />
+ روى البخاري في جامعه الصحيح في باب نوم الرجال في المسجد (442) ، عن أبي هريرة رضي الله عنه قال :&quot; رأيت سبعين من أصحاب الصفة ما منهم رجل عليه رداء ، إما إزار وإما كساء ، قد ربطوا في أعناقهم فمنها ما يبلغ نصف الساقين <font color="red">ومنها ما يبلغ الكعبين </font>، فيجمعه بيده كراهية أن ترى عورته &quot;<br />
+<br />
+ روى أبو داود (4096) و ابن أبي شيبة (24831) و البيهقي في الشعب (6147) عن عكرمة قال : رأيت ابن عباس إذا اتزر أرخى مقدم <font color="red">إزاره حتى يقع حاشيته على ظهر قدميه</font> ، ويرفع الإزار مما وراءه ، فقلت :لم تأتزر هكذا ؟ قال : رأيت رسول الله صلى الله عليه وسلم يتزر هذه الإزرة &quot; وصححه الألباني رحمه الله في الصحيحة (1238) .<br />
+<br />
+<br />
+من حديث جابر يتبين لنا من قوله عليه الصلاة و السلام  فإن أبيت فإلى الكعبين ، وإياك وإسبال الإزار ، فإنها من المخيلة<br />
+<br />
+ان الاسبال محرم للمخيلة و ان الكعبين ليستا داخلتين في التحريم اد ان الى تفيد الغاية و لو كانت داخلتين في التحريم لقال رسول الله عليه الصلاة و السلام فوق الكعبين كما هو مصرح في الاحاديث الاخرى<br />
+<br />
+فان قلنا هذا يعارض قوله عليه الصلاة و السلام  لا حق للكعبين في الإزار نقول بل يجب الجمع بين الاحاديث فقوله عليه الصلاه و السلام لحذيفية لا حق للكعبين في الإزار هو اختيار الافضل لاصحابه و كذلك قوله يا عمرو ! وضرب رسول الله صلى الله عليه وآله سلم بأربع أصابع بكفه اليمنى تحت ركبة عمرو ء فقال: يا عمرو ! هذا موضع الإزار، ثم فعل ذلك مرة ثانية أي: وضع أربع أصابع تحت الأربع أصابع الأولى ثم رفعها، ثم وضعها تحت الثانية فصارت اثنتي عشرة أصبعاًء فقال: يا عمرو ! هذا موضع الإزار<br />
+<br />
+فقد اختار الافضل لعمروا و هكذا كان اختياره لاصحابه رضوان الله عليهم الافضل دائما و من حديث عمرو بن زرارة من قوله فجعل رسول الله صلى الله عليه وسلم يأخذ بناحية ثوبه ويتواضع لله،  يستفاد ان الرسول عليه الصلاة و السلام كان يخشى الخيلاء على عمروا لذلك جعل يتواضع و هذا ما يؤكد ان الحديث ورد للخيلاء ايضا<br />
+<br />
+<br />
+ادن كما قلنا الكعبين ليستا داخلتين في الوعيد بدليل قوله عليه الصلاة و السلام ما أسفل من الكعبين من الإزار ففي النار<br />
+<br />
+فالوعيد لما تحت الكعبين و ليس للكعبين و هذا ما يؤكده فعل الصحابة رضوان الله عليهم<br />
+<br />
+كما قال ابو هريرة هريرة رضي الله عنه قال :&quot; رأيت سبعين من أصحاب الصفة ما منهم رجل عليه رداء ، إما إزار وإما كساء ، قد ربطوا في أعناقهم فمنها ما يبلغ نصف الساقين<font color="red"> ومنها ما يبلغ الكعبين</font>&quot;<br />
+<br />
+فبلوغ ازارهم الكعبين دليل ان الكعبين لا حرج فيهما و هذا ما يؤكده ايضا فعل عبد الله بن  مسعود و عبد الله بن العباس<br />
+<br />
+و من تأمل الاحاديث وجدها كلها تدور حول الخيلاء و جر الثياب  و هذا ما يؤكده حديث جابر:  هاهنا فإن أبيت فهاهنا فوق الكعبين ، فإن أبيت فإن الله لا يحب كل مختال فخور<br />
+<br />
+فقيد الخيلاء منطوق في اكثر من حديث كما ترون و ما يؤكد ذلك هذا الحديث <br />
+<br />
+صحيح ابن حبان  ء كتاب اللباس وآدابه<br />
+ ذكر الزجر عن إسبال المرء إزاره إذ الله جل وعلا لا ء حديث:‏5520‏ <br />
+ أخبرنا أبو يعلى ، حدثنا موسى بن محمد بن حيان ، قال : حدثنا محمد بن أبي الوزير أبو المطرف ، عن شريك ، عن عبد الملك بن عمير ، عن حصين بن عقبة ، عن المغيرة بن شعبة ، قال : رأيت رسول الله صلى الله عليه وسلم أخذ بحجزة سفيان بن أبي سهيل ، فقال : &quot; يا سفيان <font color="red">لا تسبل إزارك فإن الله لا ينظر إلى المسبلين </font><br />
+<br />
+صحيح الترهيب و الترغيب رقم  2039<br />
+<br />
+فقد حصر رسول الله عليه الصلاة و السلام الاسبال في المخيلة لذكره عقوبة عدم النظر و لم يفرقه لسفيان رضي الله عنه   و كذلك حديث ابن عمر رضي الله عنهما :&quot; الإسبال في الإزار والقميص والعمامة ، من جر شيئا خيلاء لم ينظر الله إليه يوم القيامة &quot; . رواه ابن أبي شيبة في المصنف ، و أبو داود (4094) والنسائي (8/208) وابن ماجة (3576) وغيرهم من طريق عبد العزيز بن أبي رواد .<br />
+<br />
+فهذا صريح ان الاسبال اريد به الخيلاء  و الا فاي كعبين في العمامة !!!!! فلا يوجد تفريق انما هو اطالة الثوب على المعتاد<br />
+<br />
+<br />
+ادن خلاصة القول ان الاسبال مقيد بالخيلاء بدليل صريح الاحاديث الكثيرة المتوافرة اما الكعبين فليستا داخلتين في الوعيد لصراحة الاحاديث ايضا  و الجر منهي عنده لانه يستلزم الخيلاء و ينجس به اما ما كان من اسبال ليس فيه جر و لا خروج عن عادة القوم فظاهر الاحاديث تجيزه و هذا فعل الصحابة شاهد على ذلك فازارهم  يبلغ الكعبين و ليس فوق الكعبين <br />
+<br />
+لم يذم الا جر الثوب و هذا ما هو موجود في اغلب الاحاديث فلو تتبعتم الاحاديث لوجدتم فيها جر و ما ذكر الاسبال الا قرن بجر او بخيلاء و هذا في كل الوقائع  المروية عن الصحابة  و منه نستنتج ان من ذهب الى التفريق  بين الخيلاء و الاسبال قد اخطأ و فرق بين  ما لم تفرقه احاديث رسول الله عليه الصلاة و السلام الصريحة بربط الاسبال بالمخيلة  و  من حرم الاسبال للكعبين فقد اخطأ ايضا لصراحة حديث البخاري ان الصحابة كانوا يسبلون الى الكعبين و عبد الله بن العباس كان يمس ازاره ظهر رجله و رفعه لرسول الله عليه الصلاة و السلام و هذا دليل قوي <br />
+<br />
+و منه يتبين قوة مذهب جمهور السلف و العلماء في المسألة بل هو راجح ظاهر و من فرق بين الاسبال والخيلاء قوله ضعيف جدا<br />
+<br />
+ادن لا حرج في الاسبال للكعبين مادام لم يخالف عادة القوم و هذا ما تدل عليه الاحاديث و لكن يتحرز الانسان فيرفعهما قليلا هو الافضل و الله اعلم و السلام عليكم و رحمة الله
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_186085" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_186091">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-01-30,&nbsp;<span class="time">02:51 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post186091" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=186091#post186091" class="postcounter">#46</a><a id="postcount186091" name="46"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=22246&amp;s=00a94d84221870a45b532cb7ba24224b" title="القضاعي غير متواجد حالياً"><strong>القضاعي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=22246&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=22246&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="القضاعي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>287</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_186091">
+				<blockquote class="postcontent restore">
+					وعليك السلام ورحمة الله وبركاته أيها الأخ التقرتي .<br />
+وسامحني الله وإياك ولا أدري إما أنك لم تفهم من لفظي مقصودي , أو فهمت ولم تستطع رده بعلم وحلم .<br />
+فأنا لم أتقول عليك شيئاً !<br />
+فأنت الذي تقول أن النهي عن مطلق الاسبال يفيد النهي عن الخيلاء أي أن مجرد الاسبال مخيلة ثم قيدته بأن هذا الفهم هو فهم تلك العصبة الناجية محمد وأصحابه صلوات ربي وسلامه عليه وعلى آله وصحبه .<br />
+ثم عطفت بقولك بأن هذا الفهم غير مراد لنا ؟!<br />
+ما الدليل ؟<br />
+عقلي بحت وليس لك سلف في ذلك من أهل العلم وإن زعمت .<br />
+فالشوكاني والنووي وابن تيمية - في قول - وغيرهم ممن قالوا أن علة النهي الخيلاء , لم يقولوا بأن العلة هي مجرد الاسبال بل هم ينفون هذا , وإلا لوجدتهم يلتزمون عدم الحمل وهذا واضح ولا أدري كيف تغفل عنه .<br />
+وأرجو أن تهدى ولا تنفعل وأن تحيطني بحلمك , فلعلنا نخرج معك بفائدة .<br />
+والآن هذه نقطتي الأولى المستدركة عليك في كلامي السابق ولتقريرها بوضوح من لفظك أسال هذا السؤال ولعلك تجيب بلفظ مختصر ثم تذكر دليك عليه ومن سبقك بهذا .<br />
+السؤال : أنت تقول أن مجرد الاسبال هو خيلاء كما هو فهم النبي صلى الله عليه وسلم واصحابه ولكنه ليس كذلك في عصرنا , هل فهمي هذا عنك صحيح ؟<br />
+=======================<br />
+النقط الثانية المستدركة عليك من كلامي السابق :<br />
+أنت تزعم بأن عقوبة جر اللباس للخيلاء وعقوبة من جعل لباسه تحت الكعبين واحدة ولا تفرق بين قوله (( لا ينظر الله إليه )) وقوله (( في النار )) ؟<br />
+وتستدل بحديث في المسند ينص على أن من جر ثوبه خيلاء وطئ به في النار , فتقول في هذا دليل بأن (( عدم النظر إليه من قبل الله جل شأنه )) و (( وطئه بثوبه النار )) لا اختلاف بينهما !!<br />
+فرددت عليك بأن الفرق موجود لأن العقوبة عندي وغيري من أهل العلم مختلفتين ولا يلزم من الوعيد بالنار عدن النظر من الجبار جل شأنه , والعكس هو الصحيح أنه يلزم من عدم النظر لصاحب هذا الجرم أن يدخل النار .<br />
+تنبيه : زعمت بأني أقول بأن كل عاصي لا ينظر الله إليه !<br />
+وهذا غير صحيح وإن وجدته في كلامي الرجاء بيان موضعه وإلا تنبه لهذا التقول منك عليّ سامحك الباري جل شأنه .<br />
+==========================<br />
+النقطة الثالثة المستدركة عليك في كلامي السابق :<br />
+أنك تقر بأن الاسبال غير الجر للخيلاء وهذا ما جاءت به النصوص , ولأجله مع اختلاف الحكم , منع المانعون من حمل المطلق على المقيد .<br />
+وأنت تقر بالأول وتخالف في الثاني وهذا تناقض وسببه أنك بنيت حكمك على اختلاف العصور بدون دليل على التفريق بين العصور !!<br />
+==================<br />
+وحتى تفهم عني مذهبي أقول : مجرد الاسبال ذريعة للخيلاء , ولا أختلف معك بأن علة النهي في المسألة ككل هي (( الخيلاء )) ولكن الشارع الحكيم لم يقصر التحريم على الغاية وهي الخيلاء ولكنه حرم كذلك الذريعة التي تؤدي إلى تلك الجريمة العظيمة وهذا مطّرد في أمثال هذا الحكم ففي النهي عن الزنا لم يقتصر الشارع الحكيم عن النهي عن فعل الزنا ولكنه قال جل شأنه { ولا تقربوا الزنا )) فنهى عن المقاربة لهذا الجرم كما نهى عن فعله , والمقاربة هي الذرائع الموقعة في الزنا مثل النظر والسمع وغير ذلك .<br />
+وكذلك في الاسبال لما علق العلة بالخيلاء , منع عن مظنتها وهو مطلق الاسبال , ولأن الحكم بالخيلاء صعب المنال فجعل مطلق الاسبال علامة عليه , فإن وجد الاسبال وجد الانكار .<br />
+ولا أقول بأن كل اسبال هو خيلاء , ليس لأن العقل يقول بذلك كما تفعل أنت وغيرك , ولكني أقول ذلك لأن الشريعة بينت لنا أن الاسبال للضرورة والحاجة ليس من الخيلاء كما جر النبي صلى الله عليه وسلم رداءه في حادثة الكسوف وكما قد يحتاجه من هو حمش الساقين وكما قد يقع فيه من لم يقصد ذلك كأبي بكر الصديق رضي الله عنه , والله الموفق .<br />
+وأرجو منك أخي الكريم مناقشتي بعيداً عن أسلوب اتهامي بمعاداة أهل العلم , فانتقادي لك ولكلامك لا يلزم منه انتقاد لأهل العلم , والرجاء عدم الاكثار من رص الكلام في غير المباحث المطروحة فإن احتاجت منك للتدليل سوف أطلب منك ذلك , فحاول أن تقتصر على إيراد مذهبك مع الاشارة للدليل دون نقله حتى لا نتشتت ولا نخرج بفائدة , وفقني الله وإياك .
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_186091" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_186094">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-01-30,&nbsp;<span class="time">03:02 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post186094" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=186094#post186094" class="postcounter">#47</a><a id="postcount186094" name="47"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" title="التقرتي غير متواجد حالياً"><strong>التقرتي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=27163&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="التقرتي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,592</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_186094">
+				<blockquote class="postcontent restore">
+					الى الاخ القضاعي اجابتك في المشاركات السابقة فاظنك لم تفهم مما قلته شيئا<br />
+<br />
+انظر المشاركة الاخيرة <br />
+<br />
+اما بالنسبة لي فقد تبين لي مذهب الجمهور و الخصه لك<br />
+<br />
+كل الاحاديث الواردة عن الرسول عليه الصلاة و السلام تدور على الخيلاء و لا اختلاف في العقوبة يعني ان عدم النظر يستلزم النار هذا ما قصدناه و لم نقل ان عدم النظر هو التعذيب بالنار انما قلنا ان العقوبة لنفس جنس العمل لانه اصلا الاسبال المذكور في الاحاديث هو للخيلاء و هذا ما فهمه كل الصحابة كما وضحنا و لا ادري من اين فهمت اني افرق بين الاسبال و الخيلاء في الاحاديث و انما اذكر التفريق حسب مذهب المعاصرين لتبيان خطأ تفريقهم و ان فهمت جيدا فانت توافقني الرأي ان العلة هي الخيلاء و ان الاسبال المذكور في الاحاديث و منها ما تحت الكعبين في النار هو الاسبال للخيلاء فارجع الى مشاركاتي <br />
+<br />
+اما استدلالي بحديث وطئه في النار لا استدل به كي اقول ان النظر هو التعذيب بالنار انما استدل به لنقض مذهب من فرق بين الحكمين و قال بعدم التقييد  و ذلك لتبيان ان قاعدة المطلق و المقيد غير مطردة فاختلاف الحكم لا يستلزم ان لا نقيد فكل حديث ذكر فيه جانب من العقوبة لا غير لان هنا المعصية واحدة و هي الخيلاء لكن كل حديث ذكر جزء ا من العقوبة و هذا ما اردت التنبيه اليه فلا يعني ان هناك حكمين اننا لا نقيد فذكر جزء من الحكم لا يعني اختلاف السبب هذا ما قصدته<br />
+  انما احاديث روت المآل النهائي و هو النار و الاخرى روت عدم النظر و الجمع يقول ان  كلتيهما عقوبتان للمسبل خيلاء<br />
+<br />
+ اما قولك ان الاسبال حرم للذريعة فقد وافقتك فيه  الا ان الذريعة انتفت في زماننا بل انتفت في زمن ايوب السختياني و هو سابق لي في القول بتغير العادة<br />
+<br />
+اما مظنة المخيلة فنحن نحرمها لكن لا نجزم ان الاسبال المعاصر منها  لانه من وافق عادة قومه فلا مخيلة في لباسه و هذا غير الزنا الذي هو فاحشة اصلا فاستدلالك بالزنا قياس مع الفارق لان الزنا محرم في ذاته اما الاسبال فمحرم منه ما هو للخيلاء ادن الاصل ان تحرم ما يؤدي للخيلاء و ليس الاسبال فكما لا تقرب الزنا لا تقرب الخيلاء هذا ما نستفيد من قولك و هذا لا يعني انه من اسبل فهو يريد الخيلاء لانه لو كان يلبس لباس قومه فكيف تستطيع ان تظن انه يختال !!!!<br />
+<br />
+هنا بيت القصيد  على كل حال الاحاديث الصحيحة ترد على هذا <br />
+<br />
+اما التفريق بين المسبل للخيلاء في الاحاديث فهذا خطأ و يرد عليه بهذا الحديث <br />
+<br />
+  <font color="red">هاهنا فإن أبيت فهاهنا فوق الكعبين ، فإن أبيت فإن الله لا يحب كل مختال فخور</font><br />
+<br />
+اما التحريم مطلقا فنرد عليه بهذا الحديث <br />
+<br />
+روى<font color="red"> البخاري </font>في جامعه الصحيح في باب نوم الرجال في المسجد (442) ، عن أبي هريرة رضي الله عنه قال :&quot; رأيت سبعين من أصحاب الصفة ما منهم رجل عليه رداء ، إما إزار وإما كساء ، قد ربطوا في أعناقهم فمنها ما يبلغ نصف الساقين<font color="red"> ومنها ما يبلغ الكعبين</font> ، فيجمعه بيده كراهية أن ترى عورته &quot;<br />
+<br />
+و هذا ما جعلنا نقول ان من قان ان الاسبال ذريعة فعمل الصحابة و اقرار ابي هريرة راوي حديث الاسبال يرد عليه فهاهم سبعون من الصحابة منهم من ازاره يبلغ الكعبين فكيف نحرم و نقول لا بد ان تكون فوق  الكعبين  و من اسبل للكعبين فهي من الكبائر !!! هل هؤلاء يأتون كبيرة  و هم سبعون بين مسبل للكعبين و اخر موافق له لا ينكر عليه <br />
+<br />
+و هذا الحديث روى أبو داود (4096) و ابن أبي شيبة (24831) و البيهقي في الشعب (6147) عن عكرمة قال : رأيت ابن عباس إذا اتزر أرخى مقدم إزاره<font color="red"> حتى يقع حاشيته على ظهر قدميه </font>، ويرفع الإزار مما وراءه ، فقلت :لم تأتزر هكذا ؟ قال : <font color="red">رأيت رسول الله صلى الله عليه وسلم يتزر هذه الإزرة </font>&quot; <font color="red">وصححه الألباني </font>رحمه الله في الصحيحة (1238)<br />
+<br />
+فاعد جمع اوراقك فقولك يناقض الاحاديث المذكورة و قبل ان تجيب حاول ان تنظر في هذه الاحاديث بالذات و ان توجهها حسب التحريم المطلق للاسبال ان استطعت<br />
+<br />
+<br />
+<br />
+و السلام عليكم و رحمة الله
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_186094" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_186214">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-01-30,&nbsp;<span class="time">02:02 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post186214" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=186214#post186214" class="postcounter">#48</a><a id="postcount186214" name="48"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" title="التقرتي غير متواجد حالياً"><strong>التقرتي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=27163&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="التقرتي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,592</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_186214">
+				<blockquote class="postcontent restore">
+					السلام عليكم و رحمة الله وبركاته <br />
+<br />
+اضيف هذا الدليل الجديد للاخوة و كل يوم يزداد يقيني بصحة مذهب الجمهور ان الاسبال الوارد في الاحاديث كله للخيلاء و ان اختيار الرسول عليه الصلاة و السلام للثياب فوق الكعبين هو اختيار الافضل لاصحابه كما تدل عليه الاحاديث لانه صح انه من الصحابة من كان ازاره يبلغ الكعبين و كل الصحابة كانوا ينكرون جر الثياب و لم يرد انكار على مسبل للكعبين او بين الكعبين و الشراك !!!!!!<br />
+<br />
+الدليل الجديد و الذي غفلنا عنه ما هو تعريف الاسبال !!!<br />
+<br />
+قال في لساب العرب: و أسبل ازاره ارخاه و امرأة مسبل اسبلت ذيلها يقال اسبل فلان ثيابه اذا طولها و أرسلها إلى الارض و في الحديث أن رسول الله صلى الله عليه و سلم قال ثلاثة لا يكلمهم الله يوم القيامة و لا ينظر إليهم و لا يزكيهم قال و قلت من هم خابوا و خسروا ? فأعادها رسول الله صلى الله عليه و سلم ثلاث مرات المسبل و المنان و المنفق سلعته بالحلف الكاذب .<br />
+<br />
+قال ابن الإعرابي و غيره المسبل الذي يطول ثوبه و يرسله إلى الارض إذا مشى  و إنما يفعل ذلك كبرا و إختيالا  اهــ<br />
+<br />
+<br />
+فانظروا اولا انه عرف الاسبال بارسال الثوب الى الارض و ليس الى الكعبين و من فهم انه الى الكعبين ربما فهما من بعض الاحاديث و غفل عن اخرى و لكن الظاهر انه ليس من كلام العرب كما هو في لسان العرب و انما العرب تذكره لمن ارسل ثوبه للارض اي يجره و هذا ما يدل عليه قول عمر بن الخطاب فانه انقى لثوبك و اتقى لربك و منه يفهم منه ان نهيه ان يمس الارض و لذلك قرن ذلك رسول الله عليه الصلاة و السلام بالنقاء<br />
+<br />
+<br />
+ و كما قلنا سابقا احاديث رسول الله عليه الصلاة و السلام في قوله للصحابة هو الاخد بالافضل و هو التشمير و هذا ما تمتدحه العرب و كلها فيها ذم للجر و كما ذكرنا ثبت عن بعض الصحابة اسبال لغاية الكعبين <br />
+<br />
+<br />
+و من كل هذا نستنتج ان المنهي عنه فعلا هو جر الثوب  اما  حد الثياب فوق الكعبين فهو الافضل و لا دخل للكعبين في التحريم و هذا ما نفهمه من قوله عليه الصلاة و السلام ما تحت الكعبين في النار اذ لم يذكر الكعبين في النار انما ما تحتهما و فعل الصحابة يؤكد ذلك من حديث ابي هريرة رضي الله عنه انه رأى سبعين من الصحابة و منهم من ازاره يبلغ الكعبين<br />
+<br />
+تبقى مسألة استيفاء الكعبين و هل يباح ما بين الكعب و الشراك  ?<br />
+<br />
+اما استيفاء الكعبين فالظاهر من حديث عبد الله بن عباس : أبو داود (4096) و ابن أبي شيبة (24831) و البيهقي في الشعب (6147) عن عكرمة قال : رأيت ابن عباس إذا اتزر أرخى مقدم إزاره حتى يقع حاشيته على ظهر قدميه ، ويرفع الإزار مما وراءه ، فقلت :لم تأتزر هكذا ؟ قال : رأيت رسول الله صلى الله عليه وسلم يتزر هذه الإزرة &quot; وصححه الألباني رحمه الله في الصحيحة (1238)<br />
+<br />
+انه  جائز فعمل عبد الله بن العباس يرفعه للرسول عليه الصلاة و السلام و كذلك من حديث ابي بكر ان ازاره يسترخي فاين حد هذا الازار الذي اذا استرخى جر في الارض !!! لو كان لنصف الساق لما مس الارض اذا استرخى.<br />
+<br />
+<br />
+لان الحديث عن ابن عمر رَضِيَ اللَّهُ عَنهُ أن النبي صَلَّى اللَّهُ عَلَيهِ وَسَلَّم قال:&quot; من جر ثوبه خيلاء لم ينظر اللَّه إليه يوم القيامة ، فقال أبو بكر: يا رسول اللَّهِ إن إزاري يسترخي إلا أن أتعاهده . فقال رَسُول اللَّهِ صَلَّى اللَّهُ عَلَيهِ وَسَلَّم: إنك لست ممن يفعله خيلاء.<br />
+<br />
+<br />
+فلا يسترخي ازار لهذا الحد الا اذا كان قريبا من الكعبين فاجابه رسول الله عليه الصلاة و السلام انك لست ممن يفعله خيلاء<br />
+<br />
+و من كل هذا يتبين لي ان المنهي عنه في الاحاديث هو لمس الازار الارض لان جره في الارض فيه خيلاء حتما اذ لا حاجة لجر ازار في الارض و هذا الظاهر من حديث زرارة <br />
+<br />
+فقد روى الامام احمد في مسنده عن عمرو بن الشريد ، عن أبيه ، أو عن يعقوب بن عاصم ، أنه سمع الشريد يقول : أبصر رسول الله صلى الله عليه وسلم رجلا يجر إزاره ، فأسرع إليه ، أو هرول ، فقال : &quot; ارفع إزارك واتق الله &quot; قال : إني أحنف تصطك ركبتاي ، فقال : &quot; ارفع إزارك ، فإن كل خلق الله عز وجل حسن &quot; فما رئي ذلك الرجل بعد إلا إزاره يصيب أنصاف ساقيه أو إلى أنصاف ساقيه<br />
+حديث الشريد بن سويد الثقفي  حديث:‏19066‏ <br />
+صحيح الجامع 902<br />
+<br />
+<br />
+و هذه الرواية تؤكد ان الاسبال عند العرب هو جر الازار و لذلك قرن بالخيلاء و هذا ظاهر <br />
+<br />
+فان انعدم الجر و رفع الثوب قليلا اتقاءا للنجاسة و كان بعادة القوم فقد خرجنا من كل هذا فلا نجاسة و لا خيلاء و لا جر للثوب <br />
+<br />
+<br />
+اذن الظاهر من كل الاحاديث التي فحصناها ان علة التحريم في الخيلاء و ان الاسبال ارسال الثوب للارض فان رفع عن الارض ذهبت العلة و هذا ما رواه بن هريرة عن الصحابة و كان رسول الله عليه الصلاة و السلام يختار الافضل لهم و هو رفعها عن الكعبين فمنهم من ضرب له اثنا عشرة اصابع تحت الركبة و هذا لعمروا بن زرارة و منهم من حدها له بفوق الكعبين و منهم من حدها له الى الكعبين كجابر بن سليم رضي الله  في رواية احمد و رخص لابي بكر لانه يتعاهد ثوبه فاختلاف التحديد من صحابي لاخر مع رواية بن عباس نفهم منها ان المحرم هو ما يلمس الارض او يقترب منها كثيرا اما ما لمس ظهر القدم و جاور الكعب فظاهره الجواز و فعل الصحابة يثبت ذلك و لو تأملتم انكارهم على المسبلين لوجدتم فيها جر للثياب <br />
+<br />
+و  من هنا جمعنا كل الاحاديث في الباب و لم نترك منها شيئا  على عكس من قال بالتحريم و التفريق في الاحاديث بين الخيلاء و الاسبال و فهم الاسبال بايصال الثياب للكعبين فهو لم يعمل بكثير من الاحاديث و ردها كحديث بن هريرة في ازار الصحابة و حديث جابر بن سليم رضي الله عنهما و كذلك حديث عبد الله بن عباس رضي الله عنهما و كثير من الاحاديث الاخرى  <br />
+<br />
+و يعضض ذلك انتشار اللباس للكعبين في هذا الزمان فقد قال رسول الله عليه الصلاة و السلام في حديث البخاري من حديث أبي موسى الأشعري أن النبي صلى الله عليه وسلم قال: &quot;ليكونن من أمتي أقوام يستحلون الحر والحرير والخمر والمعازف&quot;.<br />
+<br />
+فها هو النبي عليه الصلاة و السلام يتنبؤ بلبس الحرير و شرب الخمر و المعازف اما الاسبال المنهي عنه في الحديث فهو من اكبرالكبائر لان به خيلاء و لو كان ما نراه اليوم اسبالا منهي عنه لكنا نقلنا انتشاره عن رسول الله عليه الصلاة و السلام فهو اكبر من لبس الحرير و غيرها  و قد تنبأ بالكاسيات العاريات و غيرها من الامور التي نلاحظها اليوم.<br />
+<br />
+<br />
+و كلام جمهور العلماء و السلف يدل على كل هذا فهم جامعون للسنة و منهم الامام احمد فقد فهموها جيدا و لذلك ذهبوا هذا المذهب بين جواز و كراهة فلله ذرهم و كم نحن صغار امامهم و حقيقة ان كل محدث فقيه و لا اتصور فقيها ليس بمحدث و الله الموفق للصواب و السلام عليكم و رحمة الله وبركاته
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_186214" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_186222">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-01-30,&nbsp;<span class="time">02:25 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post186222" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=186222#post186222" class="postcounter">#49</a><a id="postcount186222" name="49"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" title="التقرتي غير متواجد حالياً"><strong>التقرتي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=27163&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="التقرتي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,592</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_186222">
+				<blockquote class="postcontent restore">
+					اضيف مشاركة لا علاقة لها بالموضوع لكن انا ابحث حاليا في قضاء الصلاة للعامد و عندي ادلة كثيرة تثبت صحة ما ذهب  اليه الجمهور من ان العامد يلزمه قضاء صلاته لكن تنقصني رسالة واحدة فان تفضل احد الاخوة و ارسلها الي و عنوان الرسالة<br />
+<br />
+النصوص الشرعية الثابتة في قضاء الصلوات الفائتة للشيخ نسيب الرفاعي رحمه لله<br />
+<br />
+<br />
+كذلك انوي فتح مواضيع لمناقشة اصول مذهب العلامة المجتهد المطلق المحدث الشيخ ناصر الدين الالباني  رحمه الله و خاصة التركيز على فتاوي الشيخ و نقضه للاجماعات بصحة الاحاديث فيا ريت اخ يساعدنا في هذه القضية ما هي مراتب الاجماع عند الشيخ و متى يكون الاجماع مقدوح عنده<br />
+<br />
+<br />
+و الشيخ العلامة اعتبره صاحب مذهب جديد قائم باصوله غير المذاهب الخمسة المتعارف عليها و السادسة ان زدنا الهادوية <br />
+<br />
+ارجوا ان تكون الردود على الخاص في هذا الموضوع كي لا نخلطه مع موضوعنا الاسبال<br />
+<br />
+انتظروا قريبا كل هذه المواضيع بارك الله فيكم و السلام عليكم و رحمة الله وبركاته
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_186222" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_186307">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-01-30,&nbsp;<span class="time">06:03 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post186307" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=186307#post186307" class="postcounter">#50</a><a id="postcount186307" name="50"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" title="التقرتي غير متواجد حالياً"><strong>التقرتي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=27163&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="التقرتي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,592</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_186307">
+				<blockquote class="postcontent restore">
+					ازيد هذا التعقيب لاني وقعت على شعر نقله بن عبد البر للعرب قديما نفهم منه معنى التشمير عندهم <br />
+<br />
+قال الحافظ ابن عبد البر رحمه الله في &quot;الاستذكار&quot;[52]، قال متمم بن نويرة في مدح ورثاء مالك أخيه: <br />
+<br />
+<br />
+     تراه كنصل السيف يهتز للندى            وليس على الكعبين من ثوبه فضل <br />
+<br />
+وقال العجير السلولي: <br />
+<br />
+<br />
+<br />
+     <br />
+وقال العجير السلولي: <br />
+<br />
+ و كنتُ إذا داعٍ دعا لمضـوفة            أشمر حتى يَنْصُفَ  السَّاقَ مئزري <br />
+<br />
+يا حبذا لو احد الاخوة نظر في شعر العرب الجاهلي ربما وقفنا على معنى الاسبال عندهم لان قول بن العربي  وَحَاصِلُهُ أَنَّ الْإِسْبَالَ يَسْتَلْزِمُ جَرَّ الثَّوْبِ وَجَرُّ الثَّوْبِ يَسْتَلْزِمُ الْخُيَلَاءَ وَلَوْ لَمْ يَقْصِدْهُ اللَّابِسُ !!!!<br />
+<br />
+فابن العربي يعرف الاسبال بجر الثوب
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_186307" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_186342">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-01-30,&nbsp;<span class="time">07:15 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post186342" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=186342#post186342" class="postcounter">#51</a><a id="postcount186342" name="51"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=22246&amp;s=00a94d84221870a45b532cb7ba24224b" title="القضاعي غير متواجد حالياً"><strong>القضاعي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=22246&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=22246&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="القضاعي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>287</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_186342">
+				<blockquote class="postcontent restore">
+					<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				<div class="bbcode_postedby">
+					<img src="images/metro/purple/misc/quote_icon.png" alt="اقتباس" /> المشاركة الأصلية كتبت بواسطة التقرتي
+					<a href="showthread.php?s=00a94d84221870a45b532cb7ba24224b&amp;p=186094#post186094" rel="nofollow"><img class="inlineimg" src="images/metro/purple/buttons/viewpost-left.png" alt="مشاهدة المشاركة" /></a>
+				</div>
+				<div class="message">اما قولك ان الاسبال حرم للذريعة فقد وافقتك فيه  الا ان الذريعة انتفت في زماننا بل انتفت في زمن ايوب السختياني و هو سابق لي في القول بتغير العادة</div>
+			
+		</div>
+	</div>
+</div>الأخ التقريتي فقه الله لهداه .<br />
+أولاً : هات الدليل على انتفاء الذريعة في هذا العصر فضلاً وتكرماً .<br />
+ثانياً : ليس كل الاحاديث مقيدة بالخيلاء فقوله (( ما تحت الكعبين من الإزار ففي النار )) ليس مقيداً بالخيلاء ولكن للذريعة ولا يحمل هذا الإطلاق على الخيلاء لأن الإطلاق هنا مراد بذاته وعقوبته أخف من الجر للخيلاء .<br />
+ثالثاً : لا تساوي بين من يجعل لباسه تحت الكعب إلى ما دون الأرض , وبين من يجعله يُجر ملامساً للأرض فانتبه ولا تجمع بين ما فرّق الشارع , فحديث أبي سعيد الخدري رضي الله عنه صريح في هذا التفريق وحاشاه صلى الله عليه وسلم أن يتكلم بما هو عبث , فلا تجد لفظ زائد في الخطاب النبوي إلا لفائدة .<br />
+رابعاً : حديث أهل الصفة خارج النزاع وفعلهم موافق للمشروع فلباسهم حسب الوصف إلى الكعبين وليس تحتهما .<br />
+خامساً : حديث ابن عباس رضي الله عنهما معارض بأحاديث غيره الصريحة في بيان لباس النبي صلى الله عليه وسلم , أو يحمل على أن الإرتخاء في الإمام وارتفاع الإزار من الخلف مانع لإسبال الثوب من باقي الجوانب فخرج فعله عن النهي , وقد يقال أن هذا فهمه وهو معارض بغيره من الصحابة الكرام .<br />
+سادساً : معنى الاسبال في اللغة : إرخاء الثوب فقط وليس فيه جره على الأرض , وإنما المسبل في اللغة : هو الذي يطول ثوبه ويرسله إلى الأرض إذا مشى ونص ابن الأعرابي على أنه يفعله خيلاء .<br />
+فيتبين لنا الفرق بين معنى الاسبال والمسبل الذي هو المختال وهو صاحب عقوبة عدم النظر من الجليل عز شأنه لذلك , والتغاير في الالفاظ دال على أن مقصود الشارع النهي عن الأمرين (( الجر , والإرخاء إلى تحت الكعبين )) وفي هذا دليل على أن الخطاب النبوي محكم وجامع , فهو نص على الإطلاق بلفظ لم يدخله التقييد وهو ( ما تحت الكعبين ) , ونص على الفعل الأخر وهو الجر واضافه إلى للخيلاء , فهذا يدل على أن اللفظين مرادين للشارع الحكيم .<br />
+سابعاً : تقول ## بأن الجر للخيلاء يكون محرماً , وأما ما تحت الكعبين لا يدخل في التحريم , وهذا يلزمك بأن جر اللباس على الأرض ليس محرماً إلا أن نتيقن أنه للخيلاء !<br />
+وهذا تكليف بما لا يطاق , ولن نستطيع بيان الصفات التي تكون للخيلاء والتي تكون لغير الخيلاء ويستطيع فهمها الخاصة والعامة .<br />
+وأما الشارع الحكيم كما أنه جعل الرخصة في قصر الصلاة لعلة المشقة ولكنه علق الحكم بالسفر لانضباطه للعامة والخاصة .<br />
+كذلك في الاسبال نص على أن العلة للتحريم هي الخيلاء , ولكنه علق الحكم بإرخاء الثوب إلى تحت الكعبين لانضباطه للعامة والخاصة .<br />
+والخيلاء في نفسها محرمة بالاستقلال , ولو كان ثوب صاحبها إلى ركبتيه , فما الفائدة من ذكر اللباس والكعبين والجر وغير ذلك فهل هذا من العبث ؟!!<br />
+حاشا الخطاب النبوي من ذلك ### .والله اعلم
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_186342" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_186364">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-01-30,&nbsp;<span class="time">08:01 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post186364" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=186364#post186364" class="postcounter">#52</a><a id="postcount186364" name="52"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" title="التقرتي غير متواجد حالياً"><strong>التقرتي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=27163&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="التقرتي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,592</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_186364">
+				<blockquote class="postcontent restore">
+					لم تأتي بما هو جديد <br />
+<br />
+انتفاء الذريعة ثابت فعندنا في المغرب العربي مئة مليون انسان و اكثر من ثلاث ارباعهم لا يقصرون الثياب ابا عن جد فان كنت تعتقد انهم سمعوا بالخيلاء اصلا في الثياب او انهم اسبلوا للخيلاء فليس عندي ما ازيده لك عن هذا فهذا قول من يقول للنهار هذا ليل و لا احتاج لمناقشتك في هذا اصلا <br />
+<br />
+<br />
+اما قو لك ان الاحاديث ليست مقيدة بالخيلاء فقد اجبناك بالمنطوق من الحديث الصحيح <br />
+<font color="red">هاهنا فإن أبيت فهاهنا فوق الكعبين ، فإن أبيت فإن الله لا يحب كل مختال فخور</font><br />
+<br />
+و لحد الان لم ترد كلما قلته كلام عام فالزمك باخد هذا الحديث و ان تبين لي الفرق فيه بين ما تحت القدم و الخيلاء ان استطعت <br />
+<br />
+<br />
+ثلاثا ما قلته لا تساوي بين من يجعل ثيابه تحت الكعب و بين من يجره فاظنك لم تفهمني فجر الثياب حرام لان اقل ما فيه عدم النقاء و ليس من عادة القوم فمن جره لا قصد له غير الخيلاء و ان ادعى غير ذلك لكن هذا عكس من يسبل للكعبين او بين الكعب و الشراك و هنا بيت القصيد لان عادة القوم هذا اللباس و ربما هي ليست العادة عندكم فربما هناك ذريعة عندكم لكن المسلمين ليسوا بلدك فقط هناك مليار مسلم و ما هو ذريعة عندك عندنا ليست كذلك <br />
+<br />
+رابعا  حديث اهل الصفة ليس خارجا عن النزاع فان هناك من يحرم الكعبين ايضا اما حديث عبد الله بن العباس فواضح و لن تخرج منه بتأويلاتك فما لمس حاشية ظهر القدم فهو تحت الكعبين لان حاشية القدم تحت الكعب مهما فعلت من تأويلاتك ولا تدعي انه من فهم عبد الله بن العباس فقد صرح برؤية رسول الله عليه الصلاة و السلام كذلك فكل ما قلته مجرد تأويل فيه و لا يصح منه شيئ<br />
+انما انت تريد نصر مذهبك بتأويلك فانظر للحق و ليس للمذهب <br />
+<br />
+سادسا ما فرقت به بين الحكمين فجوابه في اولا اما قولك وإنما المسبل في اللغة : هو الذي يطول ثوبه ويرسله إلى الأرض <font color="red">إذا مشى</font>!!   فهذه <font color="red">اذا مشى </font>من اين اتيت بها !!!!<br />
+<br />
+بل التعريف واضح من لسان العرب :<br />
+<br />
+يقال اسبل فلان ثيابه اذا طولها و أرسلها <font color="red">إلى الارض</font>.<br />
+<br />
+الى الارض و ليس الى الكعبين فاقل ما في هذا التعريف ان الثياب تصل للقدم <br />
+<br />
+<br />
+اما  قولك في الالفاظ دال على أن مقصود الشارع النهي عن الأمرين (( الجر , والإرخاء إلى تحت الكعبين )) وفي هذا دليل على أن الخطاب النبوي محكم وجامع , فهو نص على الإطلاق بلفظ لم يدخله التقييد وهو ( ما تحت الكعبين ).<br />
+<br />
+فانظر الى ما صرح به عبد الله بن العباس في قوله رأيت رسول الله صلى الله عليه وسلم يتزر هذه الإزرة.  و هذا كافي لتقييد ما تحت الكعبين بما يلمس الارض و كل الوقائع المروية فيها لمس الثياب للارض  اما قولك الفاظ الارخاء فارجع للروايات المختلفة لنفس الواقعة هناك من يرويها ارتخاء و هناك من يرويها جر و هذا يعني ان اللفظين متساويين عند العرب و يؤكد ذلك ما قاله المؤلف في لسان العرب فاللفظ المذكور من رسول الله عليه الصلاة و السلام هو الجر !!! لكن الارتخاء مروي من الرواة و هناك من يروي جرا ايضا و هذا ما يؤكد ما نقوله<br />
+<br />
+سابعا قولك: تقول هداك الله بأن الجر للخيلاء يكون محرماً , وأما ما تحت الكعبين لا يدخل في التحريم , وهذا يلزمك بأن جر اللباس على الأرض ليس محرماً إلا أن نتيقن أنه للخيلاء !<br />
+<br />
+<br />
+ما قلناه ان ما تحت الكعب و لم يلمس الارض فجائز لوضوح حديث عبد الله بن العباس اما جر اللباس فحرام قطعا لانه ليس من عادة القوم اولا و فيه خيلاء قطعا  فمن هاذا الذي يجر ذيله وراءه و ليس للخيلاء !!!!  تبذير للقماش و لم يفعله قومه و نجاسة و لكن هذا منتف في من اسبل تحت الكعبين و فوق شراك القدم فهذا مشهور بين الناس و لا خيلاء فيه و واضح من حديث عبد الله بن العباس و حديث عبد الله بن مسعود و كل الوقائع التي فيه رجل مسبل نجد انه من رواية او اخرى صرح الراوي انه يجر  ثوبه و هذا يؤكد مذهبنا <br />
+<br />
+و قولك وهذا يلزمك بأن جر اللباس على الأرض ليس محرماً إلا أن نتيقن أنه للخيلاء  !! لا ادري من اين جاءك هذا الالزام فالامر واضح لا نقبل قول من قال لا اجره للخيلاء لانه خرج عن عادة القوم و هذا زيادة فعل لا حاجة لها اما من لبس كقومه فاين الخيلاء في ذلك هو لم يطل ثوبه لبس ما لبسه قومه افيختال على قومه بلباسهم !!!!! هداك الله <br />
+<br />
+اما قولك وأما الشارع الحكيم كما أنه جعل الرخصة في قصر الصلاة لعلة المشقة ولكنه علق الحكم بالسفر لانضباطه للعامة والخاصة .<br />
+كذلك في الاسبال نص على أن العلة للتحريم هي الخيلاء , ولكنه <font color="red">علق الحكم بإرخاء الثوب </font>إلى تحت الكعبين لانضباطه للعامة والخاصة .!!! فمردود لان قيد الخيلاء منطوق و القيد المنطوق لا مجال من التخلص منه و تعليق الحكم بالارتخاء لم يرد باللفظ في الاحاديث اين وجدته في غير فعل ابي بكر الصديق و لم يقيد التحريم به !!!!  فلو كان كذلك هل يلبس عبد الله بن مسعود و عبد الله بن العباس ذلك اللباس و هما من اقرب الناس لرسول الله عليه الصلاة و السلام !!!!!  انت تخلط بين الحكمة و العلة و نحن قلنا ان الخيلاء علة و لم نقل حكمة و العلة منطوقة بدليل الاحاديث و الحكم يدور مع علته<br />
+<br />
+<br />
+اما قولك والخيلاء في نفسها محرمة بالاستقلال , ولو كان ثوب صاحبها إلى ركبتيه , فما الفائدة من ذكر اللباس والكعبين والجر وغير ذلك فهل هذا من العبث ؟!!<br />
+<br />
+الفائدة من ذكر اللباس لانه الظاهر امام الناس فهو من باب التشديد كقوله عليه الصلاة و السلام في ثوب الشهرة :بن عمر رضي الله عنهما قال في حديث شريك: يرفعه قال: (من لبس ثوب شهرة ألبسه الله يوم القيامة ثوباً مثله، زاد عن أبي عوانة: ثم تلهب فيه النار)<br />
+<br />
+فما الفائدة من ذكر ثوب الشهرة و الخيلاء محرمة بعينها !!!!! انما خصص اللباس لانه من زينة الناس و اصله الاباحة الشرعية فجاءت السنة كي تخصص ما يحرم منه <br />
+<br />
+<br />
+ادن خلاصة القول لم تأتي بجديد فالاحاديث ترد عن كل ما قلته و كل ما قلته ليس فيه دراسة للاحاديث الصحيحة التي اتينا بها و لا يمكن تأويلها و اعيد كتابتها لك<br />
+<br />
+حديث عبد الله بن عباس : أبو داود (4096) و ابن أبي شيبة (24831) و البيهقي في الشعب (6147) عن عكرمة قال : رأيت ابن عباس إذا اتزر أرخى مقدم إزاره حتى يقع حاشيته على ظهر قدميه ، ويرفع الإزار مما وراءه ، فقلت :لم تأتزر هكذا ؟ قال : رأيت رسول الله صلى الله عليه وسلم يتزر هذه الإزرة &quot; وصححه الألباني رحمه الله في الصحيحة (1238)<br />
+<br />
+الحديث عن ابن عمر رَضِيَ اللَّهُ عَنهُ أن النبي صَلَّى اللَّهُ عَلَيهِ وَسَلَّم قال:&quot; من جر ثوبه خيلاء لم ينظر اللَّه إليه يوم القيامة ، فقال أبو بكر: يا رسول اللَّهِ إن إزاري يسترخي إلا أن أتعاهده . فقال رَسُول اللَّهِ صَلَّى اللَّهُ عَلَيهِ وَسَلَّم: إنك لست ممن يفعله خيلاء<br />
+<br />
+جابر بن سليم الهجيمي ، رضي الله عنه قال : لقيت رسول الله صلى الله عليه وسلم في بعض طرق المدينة وعليه إزار من قطن منتشر الحاشية قلت : عليك السلام يا محمد أو يا رسول الله فقال : &quot; عليك السلام ، تحية الميت عليك السلام ، تحية الميت عليك السلام ، تحية الميت سلام عليكم ، سلام عليكم ، سلام عليكم &quot; أي هكذا فقل قال : فسألته عن الإزار فأقنع ظهره وأخذ بمعظم ساقه فقال : &quot; هاهنا فإن أبيت فهاهنا فوق الكعبين ، فإن أبيت فإن الله لا يحب كل مختال فخور &quot; &quot; هذا حديث صحيح الإسناد ولم يخرجاه<br />
+<br />
+روى البخاري في جامعه الصحيح في باب نوم الرجال في المسجد (442) ، عن أبي هريرة رضي الله عنه قال :&quot; رأيت سبعين من أصحاب الصفة ما منهم رجل عليه رداء ، إما إزار وإما كساء ، قد ربطوا في أعناقهم فمنها ما يبلغ نصف الساقين ومنها ما يبلغ الكعبين ، فيجمعه بيده كراهية أن ترى عورته &quot;<br />
+<br />
+<br />
+و اقل ما في هذه الاحاديث ان الصحابة كانوا يلبسون ثيابا تغطي الكعبين  ادن حتى من قال بتحريم اللباس عند الكعبين فقوله مخلاف لصريح الاحاديث فاقل ما في الامر الجواز و تغطية الكعبين و الله اعلم و السلام عليكم و رحمة الله و بركاته
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_186364" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_186398">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-01-30,&nbsp;<span class="time">08:55 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post186398" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=186398#post186398" class="postcounter">#53</a><a id="postcount186398" name="53"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=621&amp;s=00a94d84221870a45b532cb7ba24224b" title="أبو عبدالرحمن بن ناصر غير متواجد حالياً"><strong>أبو عبدالرحمن بن ناصر</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=621&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=621&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو عبدالرحمن بن ناصر غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Feb 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>327</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_186398">
+				<blockquote class="postcontent restore">
+					جزاكم الله خيرا . حديث ( إزرة المؤمن ..) الذي جمع فيه بين الأمرين  في  سنده اختلاف ، وقد رجح محقق (أطراف الموطأ ) أن الاضطراب  وقع فيه من جهة العلاء . والله أعلم
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_186398" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_186448">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-01-30,&nbsp;<span class="time">10:21 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post186448" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=186448#post186448" class="postcounter">#54</a><a id="postcount186448" name="54"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" title="التقرتي غير متواجد حالياً"><strong>التقرتي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=27163&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="التقرتي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,592</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_186448">
+				<blockquote class="postcontent restore">
+					<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				<div class="bbcode_postedby">
+					<img src="images/metro/purple/misc/quote_icon.png" alt="اقتباس" /> المشاركة الأصلية كتبت بواسطة أبو عبدالرحمن بن ناصر
+					<a href="showthread.php?s=00a94d84221870a45b532cb7ba24224b&amp;p=186398#post186398" rel="nofollow"><img class="inlineimg" src="images/metro/purple/buttons/viewpost-left.png" alt="مشاهدة المشاركة" /></a>
+				</div>
+				<div class="message">جزاكم الله خيرا . حديث ( إزرة المؤمن ..) الذي جمع فيه بين الأمرين  في  سنده اختلاف ، وقد رجح محقق (أطراف الموطأ ) أن الاضطراب  وقع فيه من جهة العلاء . والله أعلم</div>
+			
+		</div>
+	</div>
+</div>نعم اخي أبو عبدالرحمن بن ناصر فهذا ما وجدته في تخريج هذا الحديث ان الروايات مضطربة بين واو و بدون واو و الاصح عندك مالك بدون واو و الله اعلم
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_186448" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_186521">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-01-31,&nbsp;<span class="time">01:08 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post186521" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=186521#post186521" class="postcounter">#55</a><a id="postcount186521" name="55"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" title="التقرتي غير متواجد حالياً"><strong>التقرتي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=27163&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="التقرتي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,592</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_186521">
+				<blockquote class="postcontent restore">
+					السلام عليكم  رحمة الله و بركاته<br />
+<br />
+نواصل نقل ادلة الجمهور ان الاسبال محرم ان اريد به الخيلاء فقط<br />
+<br />
+<br />
+مسند أحمد بن حنبل  ء ومن مسند بني هاشم<br />
+ مسند أنس بن مالك رضي الله تعالى عنه ء حديث:‏13448‏ <br />
+ حدثنا علي بن إسحاق ، أخبرنا عبد الله يعني ابن المبارك ، حدثنا حميد ، عن أنس ، قال : قال : ء كأنه يعني النبي صلى الله عليه وسلم قال ء &quot; الإزار إلى نصف الساق &quot; ، فشق عليهم ، فقال : &quot; أو<font color="red"> إلى الكعبين </font>، ولا خير في أسفل من ذلك<br />
+<br />
+صحيح الجامع 2769<br />
+<br />
+شعب الإيمان للبيهقي  ء التاسع والثلاثون من شعب الإيمان<br />
+ فصل في موضع الإزار ء حديث:‏5855‏ <br />
+ أخبرنا أبو الحسن علي بن محمد المقرئ ، أنا الحسن بن محمد بن إسحاق ، ثنا يوسف بن يعقوب ، ثنا أبو الربيع ، ثنا أبو شهاب ، عن حميد الطويل ، عن أنس بن مالك قال : قال رسول الله صلى الله عليه وسلم : &quot; الإزار <font color="red">إلى</font> نصف الساق فشق ذلك على الناس<font color="red"> أو الكعبين </font>ولا خير فيما جاوز الكعبين<br />
+<br />
+صحيح الجامع 2769  <br />
+<br />
+<br />
+في كلتا الحديثين ذكر الى الكعبين و هذا دليل ان الكعبين لم يلحقهما التحريم<br />
+<br />
+المستدرك على الصحيحين للحاكم  ء كتاب البيوع<br />
+ وأما حديث إسماعيل بن جعفر بن أبي كثير ء حديث:‏2098‏ <br />
+ حدثنا أبو بكر بن إسماعيل بن محمد بن إسماعيل الفقيه ، بالري ، حدثنا محمد بن الفرج الأزرق ، حدثنا أبو النضر هاشم بن القاسم ، حدثنا أبو جعفر الرازي ، عن يزيد بن أبي مالك ، حدثنا أبو سباع ، قال : اشتريت ناقة من دار واثلة بن الأسقع فلما خرجت بها أدركني واثلة <font color="red">وهو يجر إزاره</font> ، فقال : يا عبد الله اشتريت ؟ قلت : نعم ، قال : بين لك ما فيها ؟ قلت : وما فيها ، إنها لسمينة ظاهرة الصحة ؟ قال : أردت بها سفرا أو أردت بها لحما ؟ قلت : أردت بها الحج . قال : فارتجعها . فقال صاحبها : ما أردت إلا هذا أصلحك الله تفسد علي . قال : فإني سمعت رسول الله صلى الله عليه وسلم يقول : &quot; لا يحل لأحد أن يبيع شيئا ، إلا بين ما فيه ، ولا يحل لمن علم ذلك إلا بينه &quot; &quot; هذا حديث صحيح الإسناد ولم يخرجاه<br />
+<br />
+ صحيح الترغيب و الترهيب حسن لغيره 1774 <br />
+<br />
+فهذا الصحابي واثلة بن الأسقع يجر ازاره   هذا الجر لم يكن به خيلاء و جه الاستدلال انه ل لم يطل ثوبه لما استطاع جره <br />
+<br />
+سنن الدارمي  ء كتاب الصلاة<br />
+ باب : في بدء الأذان ء حديث:‏1218‏ <br />
+ أخبرنا محمد بن حميد ، حدثنا سلمة ، حدثني محمد بن إسحاق ، قال : وقد كان رسول الله صلى الله عليه وسلم حين قدمها ء قال أبو محمد : يعني المدينة ء إنما يجتمع إليه بالصلاة لحين مواقيتها بغير دعوة . فهم رسول الله صلى الله عليه وسلم أن يجعل بوقا كبوق اليهود الذين يدعون به لصلاتهم ، ثم كرهه . ثم أمر بالناقوس فنحت ليضرب به للمسلمين إلى الصلاة ، فبينما هم على ذلك إذ رأى عبد الله بن زيد بن عبد ربه أخو الحارث بن الخزرج ، فأتى رسول الله صلى الله عليه وسلم فقال : يا رسول الله ، إنه طاف بي الليلة طائف : مر بي رجل عليه ثوبان أخضران يحمل ناقوسا في يده ، فقلت : يا عبد الله ، أتبيع هذا الناقوس ؟ فقال : وما تصنع به ؟ قلت : ندعو به إلى الصلاة . قال : أفلا أدلك على خير من ذلك ؟ قلت : وما هو ؟ قال : تقول : الله أكبر ، الله أكبر ، الله أكبر ، الله أكبر ، أشهد أن لا إله إلا الله ، أشهد أن لا إله إلا الله ، أشهد أن محمدا رسول الله ، أشهد أن محمدا رسول الله ، حي على الصلاة ، حي على الصلاة ، حي على الفلاح ، حي على الفلاح ، الله أكبر ، الله أكبر ، لا إله إلا الله . ثم استأخر غير كثير ، ثم قال : مثل ما قال ، وجعلها وترا ، إلا أنه قال : قد قامت الصلاة ، قد قامت الصلاة ، الله أكبر ، الله أكبر ، لا إله إلا الله . فلما أخبر بها رسول الله صلى الله عليه وسلم قال : &quot; إنها لرؤيا حق إن شاء الله ، فقم مع بلال فألقها عليه ، فإنه أندى صوتا منك &quot; . فلما أذن بلال ، سمعها عمر بن الخطاب ، وهو في بيته ، فخرج إلى رسول الله صلى الله عليه وسلم <font color="red">وهو يجر إزاره </font>وهو يقول : يا نبي الله ، والذي بعثك بالحق لقد رأيت مثل ما رأى . فقال رسول الله صلى الله عليه وسلم : &quot; فلله الحمد ، فذاك أثبت &quot; قال محمد بن حميد ، حدثنيه سلمة ، قال : حدثنيه محمد بن إسحاق ، قال : حدثني هذا الحديث محمد بن إبراهيم بن الحارث التيمي ، عن محمد بن عبد الله بن زيد بن عبد ربه ، عن أبيه بهذا الحديث . أخبرنا محمد بن يحيى ، حدثنا يعقوب بن إبراهيم بن سعد ، قال : حدثنا أبي ، عن ابن إسحاق ، قال : حدثني محمد بن إبراهيم بن الحارث التيمي ، عن محمد بن عبد الله بن زيد بن عبد ربه ، قال : حدثني أبي عبد الله بن زيد ، قال لما أمر رسول الله صلى الله عليه وسلم بالناقوس فذكر نحوه *<br />
+<br />
+مشكاة المصابيح 650 حسن<br />
+<br />
+<br />
+فها هو الصحابي يجر ثوبه و لم ينهه الرسول عليه الصلاة و السلام و ذلك لان الواقعة لم تكن فيها خيلاء و لو كان مجرد الجر محرم لنهاه رسول الله عليه الصلاة و السلام<br />
+<br />
+سنن أبي داود  ء كتاب الصلاة<br />
+ باب الإسبال في الصلاة ء حديث:‏547‏ <br />
+ حدثنا زيد بن أخزم ، حدثنا أبو داود ، عن أبي عوانة ، عن عاصم ، عن أبي عثمان ، عن ابن مسعود ، قال : سمعت رسول الله صلى الله عليه وسلم يقول : &quot; من أسبل إزاره في صلاته <font color="red">خيلاء </font>فليس من الله في حل ولا حرام &quot; ، قال أبو داود : روى هذا جماعة عن عاصم موقوفا على ابن مسعود ، منهم حماد بن سلمة ، وحماد بن زيد ، وأبو الأحوص ، وأبومعاوية *<br />
+<br />
+صحيح ابي داود 637<br />
+<br />
+<br />
+ذكر رسول الله عليه الصلاة و السلام الخيلاء و هذا يدل ان الاسبال من دون خيلاء لا يبطل الصلاة من دليل المخالفة و الا فلماذا قيد الرسول عليه الصلاة و السلام بالخيلاء هنا !<br />
+<br />
+سنن ابن ماجه  ء كتاب إقامة الصلاة <br />
+ باب فيمن سلم من ثنتين أو ثلاث ساهيا ء حديث:‏1211‏ <br />
+ حدثنا محمد بن المثنى ، وأحمد بن ثابت الجحدري قال : حدثنا عبد الوهاب قال : حدثنا خالد الحذاء ، عن أبي قلابة ، عن أبي المهلب ، عن عمران بن الحصين ، قال : &quot; سلم رسول الله صلى الله عليه وسلم في ثلاث ركعات من العصر ، ثم قام فدخل الحجرة &quot; فقام الخرباق ، رجل بسيط اليدين ، فنادى : يا رسول الله أقصرت الصلاة ؟ فخرج مغضبا<font color="red"> يجر إزاره </font>فسأل ، فأخبر ، &quot; فصلى تلك الركعة التي كان ترك ، ثم سلم ، ثم سجد سجدتين ثم سلم &quot;<br />
+<br />
+صحيح سنن بن ماجة  1228<br />
+<br />
+<br />
+و وجه الاستدلال ان رسول الله عليه الصلاة و السلام جر ثيابه فلو كان مجرد الجر محرم لما فعله رسول الله عليه الصلاة و السلام <br />
+<br />
+<br />
+السنن الكبرى للبيهقي  ء كتاب التفليس<br />
+ باب حلول الدين على الميت ء حديث:‏10538‏ <br />
+ أخبرنا أبو علي الروذباري ، ثنا أبو طاهر المحمدآباذي ، ثنا أحمد بن يوسف السلمي ، ح وأخبرنا أبو محمد عبد الله بن يحيى بن عبد الجبار ببغداد , ثنا إسماعيل بن محمد الصفار ، ثنا أحمد بن منصور ، قالا : ثنا عبد الرزاق ، أنبأ سفيان الثوري ، أخبرني أبي ، عن الشعبي ، حدثني سمعان بن مشنج ، عن سمرة ، أن النبي صلى الله عليه وسلم صلى على جنازة ، فلما انصرف قال : &quot; أها هنا من آل فلان أحد ؟ &quot; فقال ذاك مرارا ، قال : فقام<font color="red"> رجل يجر إزاره </font>من مؤخر الناس ، فقال له النبي صلى الله عليه وسلم : &quot; أما إني لم أنوه باسمك إلا لخير ؛ إن فلانا ، لرجل منهم ، مأسور بدينه ، فلو رأيت أهله ومن يتحرون أمره قاموا فقضوا عنه &quot; لفظ حديث البغدادي . وروي في حلول الدين على الميت عن ابن عمر مرفوعا ، وعن زيد بن ثابت موقوفا ، وكلاهما ضعيف *<br />
+<br />
+صححه الشيخ الالباني احكام الجنائز 16<br />
+<br />
+و وجه الاستدلال ان الرسول عليه الصلاة و السلام  اقره في جره للثياب و ذلك لانه لم يقصد الخيلاء <br />
+<br />
+مسند أحمد بن حنبل  ء ومن مسند بني هاشم<br />
+ مسند عبد الله بن عمر رضي الله عنهما ء حديث:‏4745‏ <br />
+ حدثنا عبد الرزاق ، أخبرنا داود يعني ابن قيس ، عن زيد بن أسلم ، قال : أرسلني أبي إلى ابن عمر فقلت : أأدخل ؟ فعرف صوتي ، فقال : أي بني ، إذا أتيت إلى قوم فقل : السلام عليكم ، فإن ردوا عليك فقل : أأدخل ؟ قال : ثم رأى ابنه واقدا <font color="red">يجر إزاره </font>فقال : ارفع إزارك ، فإني سمعت رسول الله صلى الله عليه وسلم يقول : &quot; من جر ثوبه من <font color="red">الخيلاء</font> ، لم ينظر الله إليه &quot; *<br />
+<br />
+صحيح غاية المرام 90<br />
+<br />
+و وجه الاستدلال ان عبد الله بن عمر ذكر الخيلاء بمجرد جره للثياب و هذا يدل انه لا فرق في احاديث رسول الله عليه الصلاة و السلام بين الاسبال و الخيلاء فيقد الاسبال بها <br />
+<br />
+الزهد لهناد بن السري  ء باب الكبر<br />
+ حديث:‏839‏ <br />
+ حدثنا أبو معاوية ، عن عاصم الأحول ، عن أبي عثمان قال : رأى ابن مسعود رجلا عليه عباءتان قد اتزر بإحداهما وهو <font color="red">يجرها</font> وارتدى بالأخرى , فقال : &quot; من جر إزاره<font color="red"> لا يجره إلا من الخيلاء </font>فليس من الله في حل ولا حرام &quot; *<br />
+<br />
+رجاله ثقات<br />
+<br />
+<br />
+و وجه الاستدلال انه حصر بالخيلاء و لو كان التحريم مطلقا لما قال لا يجره الا من خيلاء<br />
+<br />
+ادن كل هذه الاحاديث تدل ان مجرد الاسبال لا يلحقه التحريم انما التحريم عند مظنة الخيلاء او الخيلاء و مظنة الخيلاء منتفية في الاسبال بين الكعب و الشراك و الله اعلم و السلام عليكم
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_186521" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_186539">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-01-31,&nbsp;<span class="time">02:03 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post186539" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=186539#post186539" class="postcounter">#56</a><a id="postcount186539" name="56"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" title="التقرتي غير متواجد حالياً"><strong>التقرتي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=27163&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="التقرتي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,592</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_186539">
+				<blockquote class="postcontent restore">
+					السلام عليكم<br />
+<br />
+قال الشيخ الحويني روى ابن أبى شيبه فى كتاب المصنف عن خرشه بن الحر أن عمر بن الخطاب رضى الله عنه رأى رجلاً وقد أطال إزاره فقال: أحائض أنت، فقال يأمير المؤمنين وهل يحيض الرجل؟ قال: نعم لما أسبلت إزارك؟ ـ لأن إسبال الإزار لا يكون الا للنساء ـ قال فأتى عمر بمشبط ـ أى مقص ـ وقص ما زاد عن الكعبين قال خرشه بن الحر: فكأنى أنظر إلى خيوط الإزار على عقبيه .<br />
+<br />
+و لم نجد هذا الحديث في طبعات المصنف الحالية فربما طلع الشيخ على ما لم نطلع عليه<br />
+<br />
+ان صح هذا الحديث فمنه فوائد <br />
+<br />
+ان الكعبين غير داخلتين في التحريم لان عمر بن الخطاب قص الثياب بعدهما<br />
+<br />
+و قص الثياب بعد الكعبين دليل انه ترك بعض الثياب تستوفي الكعبين و هذا ما يدل عليه قول الراوي فكأنى أنظر إلى خيوط الإزار على عقبيه<br />
+<br />
+فسقوط الخيوط على عقبيه دليل ان عمر بن الخطاب ترك الثياب تستوفي الكعبين و هذا ما يؤكد ما ذهبنا اليه ان المنع انما هو للجر و لمس الثياب للارض و الله اعلم
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_186539" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_186741">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-01-31,&nbsp;<span class="time">06:26 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post186741" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=186741#post186741" class="postcounter">#57</a><a id="postcount186741" name="57"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" title="التقرتي غير متواجد حالياً"><strong>التقرتي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=27163&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="التقرتي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,592</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_186741">
+				<blockquote class="postcontent restore">
+					السلام عليكم و رحمة الله<br />
+<br />
+نواصل نقل الادلة ان المسبل عند العرب و المقصود من الاحاديث النبوية هو الذي يجر ثيابه <br />
+و ان الاسبال لغير الخيلاء قد انتفت منه العلة <br />
+<br />
+موطأ مالك   كتاب النكاح<br />
+ باب نكاح المتعة  حديث:‏1131‏ <br />
+ وحدثني عن مالك ، عن ابن شهاب ، عن عروة بن الزبير أن خولة بنت حكيم دخلت على عمر بن الخطاب فقالت : إن ربيعة بن أمية استمتع بامرأة فحملت منه ، فخرج عمر بن الخطاب فزعا يجر رداءه ، فقال : &quot; هذه المتعة . ولو كنت تقدمت فيها ، لرجمت &quot;<br />
+<br />
+<br />
+فها هو عمر بن الخطاب يجر ثيابه و قد يقول قائل كان في حالة غضب فنقول له  ما جر عمر بن الخطاب رضي الله عنه رداءه الا لان رداءه طويل فقد اطاله ادن و المعلوم ان عمر بن الخطاب طويل القامة<br />
+<br />
+<br />
+سنن ابن ماجه  ء كتاب اللباس<br />
+ باب من جر ثوبه من الخيلاء حديث:‏3569‏ <br />
+ حدثنا أبو بكر بن أبي شيبة قال : حدثنا محمد بن بشر ، عن محمد بن عمرو ، عن أبي سلمة ، عن أبي هريرة قال : مر بأبي هريرة فتى من قريش يجر سبله ، فقال : يا ابن أخي إني سمعت رسول الله صلى الله عليه وسلم يقول : &quot; من جر ثوبه من الخيلاء ، لم ينظر الله إليه يوم القيامة<br />
+<br />
+صحيح الترغيب 2037<br />
+<br />
+فوجه الاستدلال ان ابا هريرة رضي الله عنه ذكر للشاب جر الثياب خيلاء و هذا يدل ان الصحابة كانوا يعتبرون الاسبال جر الثياب و يستدلون بلفظ الخيلاء و هذا دليل انه لا فرق بين الاسبال و و جر الثياب للخيلاء في الاحاديث النبوية بل هو شيئ واحد و كل الاحاديث جاءت تنهى عن الاسبال للخيلاء<br />
+<br />
+مشكل الآثار للطحاوي   باب بيان مشكل ما روي عن رسول الله صلى الله عليه<br />
+ حديث:‏2968‏ <br />
+ كما قد حدثنا أبو أمية قال : حدثنا عبيد الله بن موسى العبسي قال : حدثنا شيبان ء يعني : النحوي عن الأعمش , عن سليمان بن مسهر , عن خرشة بن الحر , عن أبي ذر رضي الله عنه قال : قال رسول الله صلى الله عليه وسلم : &quot; ثلاثة لا يكلمهم الله يوم القيامة , ولا يزكيهم , ولهم عذاب أليم : الذي لا يعطي شيئا إلا منة , والمسبل إزاره الذي يجر إزاره , والمنفق سلعته بالحلف الفاجر &quot; قال : فذكر صلى الله عليه وسلم في هذا الحديث هؤلاء الثلاثة بما ذكرهم به فيه ثم وجدناه صلى الله عليه وسلم ذكر ثلاثة أخر بذلك المعنى في حديث آخر . *<br />
+<br />
+<br />
+و الحديث رجاله لا بأس بهم<br />
+<br />
+فقوله المسبل إزاره الذي يجر إزاره فسر الاسبال بجر الازار و هذا الظاهر من كل الاحاديث <br />
+<br />
+<br />
+مسند أحمد بن حنبل   ومن مسند بني هاشم<br />
+ مسند عبد الله بن عمر رضي الله عنهما ء حديث:‏4745‏ <br />
+ حدثنا عبد الرزاق ، أخبرنا داود يعني ابن قيس ، عن زيد بن أسلم ، قال : أرسلني أبي إلى ابن عمر فقلت : أأدخل ؟ فعرف صوتي ، فقال : أي بني ، إذا أتيت إلى قوم فقل : السلام عليكم ، فإن ردوا عليك فقل : أأدخل ؟ قال : ثم رأى ابنه واقدا يجر إزاره فقال : ارفع إزارك ، فإني سمعت رسول الله صلى الله عليه وسلم يقول : &quot; من جر ثوبه من الخيلاء ، لم ينظر الله إليه &quot; *<br />
+<br />
+صحيح غاية المرام 90<br />
+<br />
+فنهي بن عمر الشاب عن جر الازار و استدلاله بقوله عليه الصلاة و السلام في حديث الخيلاء دليل على ان المنهي عنه هو الخيلاء و ما نهي عن الاسبال الا نمن اجل الخيلاء <br />
+<br />
+<br />
+مسند أبي يعلى الموصلي  مسند عبد الله بن عمر<br />
+ حديث:‏5476‏ <br />
+ حدثنا محمد بن بشار ، حدثني أبو عامر العقدي ، حدثنا أيوب بن ثابت المدني ، قال : سمعت خالد بن كيسان ، قال : كنت مع ابن عمر قاعدا فمر فتى يجر سبله فقال لي : ادع هذا ، ادع هذا . قال : فدعوته . قال : فقال له : ارفع إزارك . قال : فرفعه إلى فوق عقبه . فقال ابن عمر : &quot; هكذا أزر رسول الله صلى الله عليه وسلم  أو قال : هكذا أمرنا رسول الله صلى الله عليه وسلم أن نأتزر  &quot; *<br />
+<br />
+و رجاله ثقات  و خالد بن كيسان ذكره ابن حبان في كتاب الثقاث<br />
+<br />
+<br />
+و قوله رفعه فوق عقبيه و قول بن عمر رضي الله عنه  هكذا أمرنا رسول الله صلى الله عليه وسلم أن نأتزر دليل على ان لبس الثياب الى فوق العقب لا بأس به<br />
+<br />
+سنن الترمذي  الجامع الصحيح  الذبائح<br />
+ أبواب اللباس  باب ما جاء في جر ذيول النساء<br />
+ حديث:‏1698‏ <br />
+ حدثنا الحسن بن علي الخلال قال : حدثنا عبد الرزاق قال : أخبرنا معمر ، عن أيوب ، عن نافع ، عن ابن عمر قال : قال رسول الله صلى الله عليه وسلم : &quot; &quot; من جر ثوبه خيلاء لم ينظر الله إليه يوم القيامة &quot; &quot; ، فقالت أم سلمة : فكيف يصنعن النساء بذيولهن ؟ قال : &quot; &quot; يرخين شبرا &quot; &quot; ، فقالت : إذا تنكشف أقدامهن ، قال : &quot; &quot; فيرخينه ذراعا ، لا يزدن عليه &quot; &quot; ، هذا حديث حسن صحيح *<br />
+صحيح الجامع 6188<br />
+<br />
+قال الحويني إن إسبال الإزار فيه تشبه بالنساء كما فى حديث عمر عند النسائى وأبى داود وغيرهما (قال صلى الله عليه وسلم &quot;من جر إزاره خيلا لا ينظر الله اليه يوم القيامة&quot; قالت أم سلمة يا رسول الله فماذا تفعل النساء بذيولهن ؟<font color="red"> قال &quot;يرخينه شبرا&quot;  أى فوق الأصل أى الكعبين والكعبين هما العظم الناتىء فى أسفل الرجل فوق القدم هذا الأصل </font>فالإرخاء الذى فى الحديث أى تطويل الإزار <font color="red">شبرا من بعد الكعبين</font> - فقالت أم سلمة اذا تنكشف أقدامهن – برغم انه شبرا , على أن الشبر من الكعب أى انه قليل للتغطية – قال &quot;يزدنه زراعا و لا يزدن &quot; ) فأصل الحكم أن يكون الإزار مشدودا فوق الكعبين ثم رخص للنساء حتى لا تنكشف أقدامهمن لأن المرأة كما قال النبى صلى الله عليه وسلم &quot;كلها عورة فإذا خرجت استشرفها الشيطان&quot; اذا الرجل الذى يرخى ذيله متشبه بالنساء و الأن نرى العكس تلبس المرأة لبس الرجل على السنة و يلبس الرجل لبس المرأة على السنة !!اهــ<br />
+<br />
+قلت هدا وهم سامح الله الشيخ كيف يظن ان اصل الازار فوق الكعبين و ان الرسول عليه الصلاة و السلام رخص للنساء الزيادة !!! ايظن ان رسول الله عليه الصلاة و السلام كان بآمر النساء رفع الثياب فوق الكعبين !!!!! ايأمر رسول الله عليه الصلاة و السلام النساء بكشف اقدامهم و الله يأمرهن بسترها !!!!<br />
+<br />
+<br />
+هذه زلة من الشيخ و انما الحديث فيه منع لجر الثياب و لذلك فهمت ام سلمة انه ان لم يكن للمرأة ذيل ستنكشف اقدامهن لذلك قالت  <font color="red">فكيف يصنعن النساء بذيولهن</font>  !!! فانظروا بذيولهن و لم تقل مباشرة تنكشف اقدامهم و الذيل هو ما لمس الارض و ليس ما تحت الكعبين و هذا يدل ان النهي هو النهي عن جر الازار لذلك لما رخص لها رسول الله عليه الصلاة و السلام بشبر قالت تنكشف اقدامهن اي اذا مشين فرخص لها في ذراع <br />
+<br />
+و الحديث دليل واضح ان النهي عن الاسبال انما هو النهي عن جر الثياب و لذك قال بن العربي  وَحَاصِلُهُ أَنَّ الْإِسْبَالَ يَسْتَلْزِمُ جَرَّ الثَّوْبِ وَجَرُّ الثَّوْبِ يَسْتَلْزِمُ الْخُيَلَاءَ وَلَوْ لَمْ يَقْصِدْهُ اللَّابِسُ اهــ<br />
+<br />
+فقد فهم ان الاسبال جر للثياب لا تحت القدمين فقط <br />
+<br />
+فائدة <br />
+هذا الحديث دليل ان قدم المرأة عورة بعكس ما ذهبت اليه الحنفية من قياس القدم باليد و قولهم انها ليست بعورة و لا قياس مع نص.<br />
+<br />
+<br />
+و قد بوب البيهقي في سننه الكبرى بابا بعنوان  جماع أبواب لبس المصلي   باب كراهية إسبال الإزار في الصلاة<br />
+<br />
+فهو يرى الكراهة في الاسبال ثم ساق هذا الحديث الضعيف <br />
+ حدثنا أبو بكر محمد بن الحسن بن فورك أنبأ عبد الله بن جعفر ، ثنا يونس بن حبيب ، ثنا أبو داود الطيالسي ، ثنا أبو عوانة ، وثابت أبو زيد ، عن عاصم الأحول ، عن أبي عثمان ، عن ابن مسعود رفعه أبو عوانة ولم يرفعه ثابت أنه رأى أعرابيا عليه شملة قد ذيلها وهو يصلي فقال : &quot; إن الذي يجر ثوبه من الخيلاء في الصلاة ليس من الله في حل ولا حرام &quot; أخبرنا أبو علي الروذباري ، أنبأ محمد بن بكر ، ثنا أبو داود السجستاني قال : روى هذا جماعة ، عن عاصم ، موقوفا على ابن مسعود منهم حماد بن سلمة وحماد بن زيد وأبو الأحوص وأبومعاوية قال الشيخ : وفي الأحاديث الثابتة المطلقة في النهي عن جر الإزار دليل على كراهيته في الصلاة وغيرها.<br />
+<br />
+<br />
+و كما ترون هذا جر للثياب و منه نستنتج ان الاسبال جر الثياب لا اطالتها للكعبين او تحتهما و فوق العقب و هذا الذي تدل عليه الاحاديث التي اوردناها سابقا و الله اعلم و السلام عليكم و رحمة الله
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_186741" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_186904">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-01-31,&nbsp;<span class="time">11:48 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post186904" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=186904#post186904" class="postcounter">#58</a><a id="postcount186904" name="58"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=22246&amp;s=00a94d84221870a45b532cb7ba24224b" title="القضاعي غير متواجد حالياً"><strong>القضاعي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=22246&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=22246&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="القضاعي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>287</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_186904">
+				<blockquote class="postcontent restore">
+					يا أخي هداك الله لا تستكثر بما لا يفيدك !<br />
+فأنت تقول أن النبي واصحابه جعلوا ارخاء اللباس إلى ما بين الكعب والعقب مثله مثل الجر للخيلاء وعلى هذا الاساس وجد الانكار منه صلى الله عليه وسلم على بعض الصحابة رضي الله عنهم .<br />
+وأنت للاسف إلى الأن لم تاتي بحجة تدل على التفريق بين العصور كما تزعم بانها اوضح من الواضحات ؟<br />
+فهل كل ما تعارف عليه أهل بلد من منكر يصبح سائغ الفعل وإن أتى النص بتحريمه وانكره النبي واصحابه ؟؟؟<br />
+هذا مودى كلامك وللأسف يجب عليك التزامه .<br />
+فالنبي صلى الله عليه وسلم قال : &quot; لا تسبوا اصحابي .... الحديث &quot;<br />
+وعلمنا أنه انكر على بعض الصحابة سبهم لبعض كحادثة أبي ذر مع بلال - إن صحت - وكحادثة خالد بن الوليد مع عبد الرحمن بن عوف وهي في الصحيح .<br />
+واليوم ترى وتشاهد ملايين الناس في البلاد الرافضية كإيران وغيرها أصبح سب الصحابة عندهم دين يتقربون بذلك إلى الله .<br />
+فهل ستقول قد أختلفت العصور , ولا يلزم رافضة إيران - قبحهم الله - حديث &quot; لا تسبوا اصحابي &quot; ولا فعل النبي صلى الله عليه وسلم في انكاره هذا الفعل ؟؟؟
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_186904" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_186914">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-02-01,&nbsp;<span class="time">12:10 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post186914" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=186914#post186914" class="postcounter">#59</a><a id="postcount186914" name="59"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=22246&amp;s=00a94d84221870a45b532cb7ba24224b" title="القضاعي غير متواجد حالياً"><strong>القضاعي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=22246&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=22246&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="القضاعي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>287</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_186914">
+				<blockquote class="postcontent restore">
+					للأسف أجدك تدندن على قول من قال بأن التحريم يشمل الكعبين وإن لم يتجاوزهما الثوب !<br />
+ولا أدري لماذا تلزمنا بما لم التزمه وقد قلت لك ليس لصاحب هذا القول دليل وهذا الوصف خارج النزاع فلا تعده عليّ بارك الله فيك .<br />
+<br />
+والآن انظر لهذا الحديث من صحيح مسلم :<br />
+5583 - حَدَّثَنِى أَبُو الطَّاهِرِ حَدَّثَنَا ابْنُ وَهْبٍ أَخْبَرَنِى عُمَرُ بْنُ مُحَمَّدٍ عَنْ عَبْدِ اللَّهِ بْنِ وَاقِدٍ عَنِ ابْنِ عُمَرَ قَالَ مَرَرْتُ عَلَى رَسُولِ اللَّهِ -صلى الله عليه وسلم- وَفِى إِزَارِى اسْتِرْخَاءٌ فَقَالَ « يَا عَبْدَ اللَّهِ ارْفَعْ إِزَارَكَ ». فَرَفَعْتُهُ ثُمَّ قَالَ « زِدْ ». فَزِدْتُ فَمَا زِلْتُ أَتَحَرَّاهَا بَعْدُ. فَقَالَ بَعْضُ الْقَوْمِ إِلَى أَيْنَ فَقَالَ أَنْصَافِ السَّاقَيْنِ.<br />
+<br />
+ففي هذا الحديث لم يُذكر الجر , وإنما ذُكر الارتخاء وهو ما يفيد أن ثوب ابن عمر رضي الله عنهما لم يصل الارض وإنما نزل عن الكعبين , فانكر عليه النبي صلى الله عليه وسلم هذا الوضع .<br />
+وأنا أسالك : هل تعتقد أن في هذه الصورة خيلاء ؟<br />
+بالتأكيد لا أظنك ستقول : بلا !<br />
+لأن ابن عمر رضي الله عنه بعيد جداً عن الخيلاء لما ورد في سيرته ولما هو معروف من والده .<br />
+ليس لك مخرج إلا أن تقول : إن النبي صلى الله عليه وسلم انكر عليه هذا الوضع لأجل الذريعة , وهو ما نقوله أيضاً ونلتزمه في هذا العصر وفي كل العصور حتى تقوم الساعة , لأن النسخ انتهى زمنه والشريعة كاملة ومحكمة .<br />
+فإن قلت لا ليست بكامله أو عندي دليل النسخ , أو دليل اختلاف العصور , فهاته عاجلاً بارك الله فيك لنرجع لقولك الله الموفق.<br />
+<br />
+قال الشاطبي في الموافقات : &quot; إن هذه الشريعة المباركة معصومة، كما أن صاحبها صلى الله عليه وسلم معصوم، ....وقد قال تعالى: {وَمَا أَرْسَلْنَا مِنْ قَبْلِكَ مِنْ رَسُولٍ وَلا نَبِيٍّ إِلَّا إِذَا تَمَنَّى أَلْقَى الشَّيْطَانُ فِي أُمْنِيَّتِهِ فَيَنْسَخُ اللَّهُ مَا يُلْقِي الشَّيْطَانُ ثُمَّ يُحْكِمُ اللَّهُ آيَاتِهِ} [الحج: 52]، فأخبر أنه يحفظ آياته ويحكمها حتى لا يخالطها غيرها ولا يداخلها التغيير ولا التبديل، والسنة وإن لم تذكر، فإنها مبينة له ودائرة حوله، فهي منه وإليه ترجع في معانيها، فكل واحد من الكتاب والسنة يعضد بعضه بعضا، ويشد بعضه بعضا، وقال تعالى: {الْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ وَأَتْمَمْتُ عَلَيْكُمْ نِعْمَتِي وَرَضِيتُ لَكُمُ الْأِسْلامَ دِينًا} [المائدة: 3]. انتهى
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_186914" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_186921">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-02-01,&nbsp;<span class="time">12:16 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post186921" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b&amp;p=186921#post186921" class="postcounter">#60</a><a id="postcount186921" name="60"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" title="التقرتي غير متواجد حالياً"><strong>التقرتي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=27163&amp;s=00a94d84221870a45b532cb7ba24224b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=finduser&amp;userid=27163&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="التقرتي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,592</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: نظرة جديدة في تحريم الاسبال للخيلاء
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_186921">
+				<blockquote class="postcontent restore">
+					اخي القضاعي لا ادري ما دخل سب الصحابة هنا فسب الصحابة كفر <br />
+<br />
+<br />
+اما الدليل فقد اتيتك به و هو واضح  و اعيد لك نص الحديث <br />
+<br />
+<br />
+مسند أبي يعلى الموصلي مسند عبد الله بن عمر<br />
+حديث:‏5476‏ <br />
+حدثنا محمد بن بشار ، حدثني أبو عامر العقدي ، حدثنا أيوب بن ثابت المدني ، قال : سمعت خالد بن كيسان ، قال : كنت مع ابن عمر قاعدا فمر فتى يجر سبله فقال لي : ادع هذا ، ادع هذا . قال : فدعوته . قال : فقال له : ارفع إزارك . قال : <font color="red">فرفعه إلى فوق عقبه </font>. فقال ابن عمر : &quot; هكذا أزر رسول الله صلى الله عليه وسلم أو قال : هكذا أمرنا رسول الله صلى الله عليه وسلم أن نأتزر &quot; *<br />
+<br />
+و رجاله ثقات و خالد بن كيسان ذكره ابن حبان في كتاب الثقاث<br />
+<br />
+<br />
+و هذا الحديث <br />
+<br />
+حديث إسماعيل بن جعفر بن أبي كثير ء حديث:‏2098‏ <br />
+حدثنا أبو بكر بن إسماعيل بن محمد بن إسماعيل الفقيه ، بالري ، حدثنا محمد بن الفرج الأزرق ، حدثنا أبو النضر هاشم بن القاسم ، حدثنا أبو جعفر الرازي ، عن يزيد بن أبي مالك ، حدثنا أبو سباع ، قال : اشتريت ناقة من دار واثلة بن الأسقع فلما خرجت بها أدركني واثلة<font color="red"> وهو يجر إزاره </font>، فقال : يا عبد الله اشتريت ؟ قلت : نعم ، قال : بين لك ما فيها ؟ قلت : وما فيها ، إنها لسمينة ظاهرة الصحة ؟ قال : أردت بها سفرا أو أردت بها لحما ؟ قلت : أردت بها الحج . قال : فارتجعها . فقال صاحبها : ما أردت إلا هذا أصلحك الله تفسد علي . قال : فإني سمعت رسول الله صلى الله عليه وسلم يقول : &quot; لا يحل لأحد أن يبيع شيئا ، إلا بين ما فيه ، ولا يحل لمن علم ذلك إلا بينه &quot; &quot; هذا حديث صحيح الإسناد ولم يخرجاه<br />
+<br />
+صحيح الترغيب و الترهيب حسن لغيره 1774 <br />
+ و هذا من فعل صحابي  <br />
+<br />
+<br />
+و هذا الحديث <br />
+<br />
+السنن الكبرى للبيهقي ء كتاب التفليس<br />
+باب حلول الدين على الميت ء حديث:‏10538‏ <br />
+أخبرنا أبو علي الروذباري ، ثنا أبو طاهر المحمدآباذي ، ثنا أحمد بن يوسف السلمي ، ح وأخبرنا أبو محمد عبد الله بن يحيى بن عبد الجبار ببغداد , ثنا إسماعيل بن محمد الصفار ، ثنا أحمد بن منصور ، قالا : ثنا عبد الرزاق ، أنبأ سفيان الثوري ، أخبرني أبي ، عن الشعبي ، حدثني سمعان بن مشنج ، عن سمرة ، أن النبي صلى الله عليه وسلم صلى على جنازة ، فلما انصرف قال : &quot; أها هنا من آل فلان أحد ؟ &quot; فقال ذاك مرارا ، قال : <font color="red">فقام رجل يجر إزاره من مؤخر الناس </font>، فقال له النبي صلى الله عليه وسلم : &quot; أما إني لم أنوه باسمك إلا لخير ؛ إن فلانا ، لرجل منهم ، مأسور بدينه ، فلو رأيت أهله ومن يتحرون أمره قاموا فقضوا عنه &quot; لفظ حديث البغدادي . وروي في حلول الدين على الميت عن ابن عمر مرفوعا ، وعن زيد بن ثابت موقوفا ، وكلاهما ضعيف *<br />
+<br />
+صححه الشيخ الالباني احكام الجنائز 16<br />
+<br />
+<br />
+فهذا صحابي يجر ازاره في مسجد رسول الله عليه الصلاة و السلام و امامه و لم يعنفه لانه لم يكن يجره للخيلاء <br />
+<br />
+و هذا فعل عبد الله بن العباس <br />
+<br />
+عن عكرمة قال : رأيت ابن عباس<font color="red"> إذا اتزر أرخى مقدم إزاره حتى يقع حاشيته على ظهر قدميه</font> ، ويرفع الإزار مما وراءه ، فقلت :لم تأتزر هكذا ؟ قال : رأيت رسول الله صلى الله عليه وسلم يتزر هذه الإزرة &quot; وصححه الألباني رحمه الله في الصحيحة (1238)<br />
+<br />
+و هذه رواية اخرى<br />
+<br />
+طبقات المحدثين بأصبهان لأبي الشيخ الأصبهاني  ء الطبقة الثالثة<br />
+ ومن الطبقة السابعة نافع بن أبي نعيم بن عبد الرحمن ء  محمد بن أبي يحيى الأسلمي<br />
+ حديث:‏125‏ <br />
+ ما أخبرنا عبد الله بن محمد بن سوار الهاشمي , قال : ثنا أبو بلال الأشعري , قال : ثنا يحيى بن العلاء , عن محمد بن أبي يحيى , عن عكرمة , عن ابن عباس , قال : &quot; رأيته اتزر فأرسل إزاره من مقدمه<font color="red"> حتى مست ظهر قدميه </font>, ويلقيه من خلفه , فقلت له : تأتزر هكذا ؟ فقال : &quot; هكذا رأيت رسول الله صلى الله عليه وسلم &quot; أخبرنا أبو يعلى , قال : ثنا أبو صالح محمد بن يحيى بن سعيد القطان قال : ثنا أبي قال : ثنا محمد , بإسناده مثله , قال : وربما رفعه وربما لم يرفعه *<br />
+<br />
+<br />
+ففعل الصحابة و رفعه لرسول الله عليه الصلاة و السلام يدل ان النهي كان للخيلاء و ان تعنيف رسول الله عليه الصلاة و السلام لبعض من اصحابه دون اخرين فهو لم يعنف الرجل الذي يجر ازاره في المسجد و قال لابي بكر لست تصنعه خيلاء يدل ان العصور تختلف و الا فلماذا يلبس عبد الله بن العباس هذا اللباس !!!!  و هذا الرجل كيف يجر ازاره في المسجد و لا يعنفه رسول الله عليه الصلاة و السلام<br />
+<br />
+<br />
+انما اخي هات ادلة واضحة فانت لحد الان لم تأتي بما يرد كل هذه الاحاديث الصحيحة و مشاركتك الاخيرة لا شيئ فيها مقابل هذه الادلة الصحيحة !!!!! فقد ثبت ان هناك من جر ازاره امام رسول الله عليه الصلاة و السلام و لم يعنفه و كل هذا يدل انه كان يعنف من يجره للخيلاء كما ثبتت الاحاديث <br />
+<br />
+فانت تتمسك ببعض الاحاديث و تترك الاخرى اما انا فجمعتها و اقول ان ما اتيت به هو من باب الافضل لاصحابه رضوان الله عليهم اما انت فاين تضع كل هذه الاحاديث التي نقلتها ?<br />
+<br />
+اما قولك بن عمر بعيد عن الخيلاء فارجع للحديث فهو يناقضك لان الرسول عليه الصلاة و السلام عقب بقوله لا ينظر الله لمن  جر ثوبه خيلاء و هذا يدل انه منعه من جر ثوبه لهذا لان ظاهر جره فيه خيلاء و ان لم يقصده هو و هذا ما قلناه لكنه لم يعنف غيره كما في حديث الرجل الذي يجر ازاره في المسجد فاين تضع كل هذه الاحاديث !!!!<br />
+<br />
+و ازيدك هذا الحديث اخي القضاعي <br />
+<br />
+مسند أحمد بن حنبل  ء ومن مسند بني هاشم<br />
+ مسند عبد الله بن عمر رضي الله عنهما ء حديث:‏5557‏ <br />
+ حدثنا زكريا بن عدي ، أخبرنا عبيد الله بن عمرو ، عن عبد الله بن محمد بن عقيل ، عن ابن عمر قال : كساني رسول الله صلى الله عليه وسلم حلة من حلل السيراء أهداها له فيروز ، فلبست الإزار فأغرقني طولا وعرضا ، فسحبته ولبست الرداء ، فتقنعت به ، فأخذ رسول الله صلى الله عليه وسلم بعاتقي فقال : &quot; يا عبد الله بن عمر ، ارفع الإزار ، فإن ما مست الأرض من الإزار إلى ما أسفل من الكعبين في النار &quot; قال عبد الله بن محمد : فلم أر إنسانا قط أشد تشميرا من عبد الله بن عمر.<br />
+<br />
+<br />
+و ان كان عبد الله بن محد بن عقيل في حديثه لين لكن هذا الحديث يتابع ما قلناه ان عبد الله بن عمر كان يجر ثوبه و لذلك عقب عليه رسول الله عليه الصلاة و السلام من جر ثوبه خيلاء و لذلك استفسرت ام سلمة ماذا تفعل النساء بذيلهن<br />
+<br />
+و كل الاحاديث تصب في مجرى واحد ان النهي هو للخيلاء و ان الرسول عليه الصلاة و السلام كان يختار الافضل لصحابته اد وردت احاديث فيها  تؤكد ذلك منهم من جر ازاره امام رسول الله عليه الصلاة و السلام و لم يعنفه و منها عمل عبد الله بن مسعود اما احاديث النهي فكلها فيها جر للثياب و الله اعلم<br />
+<br />
+<br />
+فهات ادلتك امام كل هذه الاحاديث الصحيحة و انا في الانتظار و السلام عليكم و رحمة الله و بركاته
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_186921" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<form action="showthread.php?t=25961&amp;page=5&amp;s=00a94d84221870a45b532cb7ba24224b" method="get" class="pagination popupmenu nohovermenu">
+<input type="hidden" name="t" value="25961" /><input type="hidden" name="s" value="00a94d84221870a45b532cb7ba24224b" />
+	
+		<span><a href="javascript://" class="popupctrl">صفحة 3 من 5</a></span>
+		
+		<span class="first_last"><a rel="start" href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b" title="الصفحة الأولى - النتائج 1 إلى 20 من 99"><img src="images/metro/purple/pagination/first-left.png" alt="الأولى" />الأولى</a></span>
+		
+		
+		<span class="prev_next"><a rel="prev" href="showthread.php?t=25961&amp;page=2&amp;s=00a94d84221870a45b532cb7ba24224b" title="الصفحة السابقة - النتائج 21 إلى 40 من 99"><img src="images/metro/purple/pagination/previous-left.png" alt="السابق" /></a></span>
+		
+		
+		<span><a href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b" title="مشاهدة النتائج 1 إلى 20 من 99">1</a></span><span><a href="showthread.php?t=25961&amp;page=2&amp;s=00a94d84221870a45b532cb7ba24224b" title="مشاهدة النتائج 21 إلى 40 من 99">2</a></span><span class="selected"><a href="javascript://" title="النتائج 41 إلى 60 من 99">3</a></span><span><a href="showthread.php?t=25961&amp;page=4&amp;s=00a94d84221870a45b532cb7ba24224b" title="مشاهدة النتائج 61 إلى 80 من 99">4</a></span><span><a href="showthread.php?t=25961&amp;page=5&amp;s=00a94d84221870a45b532cb7ba24224b" title="مشاهدة النتائج 81 إلى 99 من 99">5</a></span>
+		
+		
+		<span class="prev_next"><a rel="next" href="showthread.php?t=25961&amp;page=4&amp;s=00a94d84221870a45b532cb7ba24224b" title="الصفحة التالية - النتائج 61 إلى 80 من 99"><img src="images/metro/purple/pagination/next-left.png" alt="التالي" /></a></span>
+		
+		
+		<span class="first_last"><a href="showthread.php?t=25961&amp;page=5&amp;s=00a94d84221870a45b532cb7ba24224b" title="الصفحة الأخيرة - النتائج 81 إلى 99 من 99">الأخيرة<img src="images/metro/purple/pagination/last-left.png" alt="الأخيرة" /></a></span>
+		
+	
+	<ul class="popupbody popuphover">
+		<li class="formsubmit jumptopage"><label>إذهب إلى الصفحة: <input type="text" name="page" size="4" /></label> <input type="submit" class="button" value="إذهب" /></li>
+	</ul>
+</form>
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=25961&amp;s=00a94d84221870a45b532cb7ba24224b" class="popupctrl"><span class="ctrlcontainer">المجلس الشرعي العام</span></a>
+		<a href="showthread.php?t=25961&amp;page=3#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=00a94d84221870a45b532cb7ba24224b">لوحة التحكم</a></li>
+		<li><a href="private.php?s=00a94d84221870a45b532cb7ba24224b">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=00a94d84221870a45b532cb7ba24224b">الاشتراكات</a></li>
+		<li><a href="online.php?s=00a94d84221870a45b532cb7ba24224b">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=00a94d84221870a45b532cb7ba24224b">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=00a94d84221870a45b532cb7ba24224b">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=00a94d84221870a45b532cb7ba24224b">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=00a94d84221870a45b532cb7ba24224b">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=00a94d84221870a45b532cb7ba24224b">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=00a94d84221870a45b532cb7ba24224b">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=00a94d84221870a45b532cb7ba24224b">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=00a94d84221870a45b532cb7ba24224b">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=00a94d84221870a45b532cb7ba24224b">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=00a94d84221870a45b532cb7ba24224b">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=00a94d84221870a45b532cb7ba24224b">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=00a94d84221870a45b532cb7ba24224b">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=00a94d84221870a45b532cb7ba24224b">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=00a94d84221870a45b532cb7ba24224b">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=00a94d84221870a45b532cb7ba24224b">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=00a94d84221870a45b532cb7ba24224b">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=00a94d84221870a45b532cb7ba24224b">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=00a94d84221870a45b532cb7ba24224b">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=00a94d84221870a45b532cb7ba24224b">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=00a94d84221870a45b532cb7ba24224b">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=00a94d84221870a45b532cb7ba24224b">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=00a94d84221870a45b532cb7ba24224b">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=17282&amp;s=00a94d84221870a45b532cb7ba24224b">(::_الوصايا الجلية للإستفادة من الدروس العلمية _::) لمعالي الشيخ صالح آل شيخ</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=26556&amp;s=00a94d84221870a45b532cb7ba24224b">لطبلة العلم فقط ما حكم اختلاط الاقارب مع وجود النساء بينهم ..على فرض وجود المحرم؟؟؟</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=00a94d84221870a45b532cb7ba24224b&amp;tag=%D8%A7%D9%84%D8%A7%D8%B3%D8%A8%D8%A7%D9%84">الاسبال</a>، 
+		
+			<a href="tags.php?s=00a94d84221870a45b532cb7ba24224b&amp;tag=%D9%81%D9%8A">في</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=00a94d84221870a45b532cb7ba24224b">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=25961&amp;page=3#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=00a94d84221870a45b532cb7ba24224b&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=00a94d84221870a45b532cb7ba24224b" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=00a94d84221870a45b532cb7ba24224b">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=25961&amp;page=3#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">02:54 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

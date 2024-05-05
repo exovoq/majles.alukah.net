@@ -1,0 +1,4806 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=696d1a7d9adaea36633b28fa7c3827c1&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=133595&amp;page=2";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="بنفسه, ثقة, جبان, جداً, لديه, وليس" />
+	<meta name="description" content="ابني جبان جداً  
+وليس لديه ثقة بنفسه 
+ 
+  
+  
+اللقاء مع البروفيسور عبدالله السبيعي 
+استشاري وأستاذ الطب النفسي 
+  
+  
+س- لدي ابن عمره 12 سنة" />
+
+	<title> جبان جداً وليس لديه ثقة بنفسه - الصفحة 2</title>
+	<link rel="canonical" href="showthread.php?t=133595&page=2&s=696d1a7d9adaea36633b28fa7c3827c1" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=696d1a7d9adaea36633b28fa7c3827c1 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=696d1a7d9adaea36633b28fa7c3827c1">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> جبان جداً وليس لديه ثقة بنفسه</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=696d1a7d9adaea36633b28fa7c3827c1&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<form action="showthread.php?t=133595&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" method="get" class="pagination popupmenu nohovermenu">
+<input type="hidden" name="t" value="133595" /><input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+	
+		<span><a href="javascript://" class="popupctrl">صفحة 2 من 3</a></span>
+		
+		<span class="first_last"><a rel="start" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة الأولى - النتائج 1 إلى 20 من 53"><img src="images/metro/purple/pagination/first-left.png" alt="الأولى" />الأولى</a></span>
+		
+		
+		<span class="prev_next"><a rel="prev" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة السابقة - النتائج 1 إلى 20 من 53"><img src="images/metro/purple/pagination/previous-left.png" alt="السابق" /></a></span>
+		
+		
+		<span><a href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مشاهدة النتائج 1 إلى 20 من 53">1</a></span><span class="selected"><a href="javascript://" title="النتائج 21 إلى 40 من 53">2</a></span><span><a href="showthread.php?t=133595&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مشاهدة النتائج 41 إلى 53 من 53">3</a></span>
+		
+		
+		<span class="prev_next"><a rel="next" href="showthread.php?t=133595&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة التالية - النتائج 41 إلى 53 من 53"><img src="images/metro/purple/pagination/next-left.png" alt="التالي" /></a></span>
+		
+		
+		<span class="first_last"><a href="showthread.php?t=133595&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة الأخيرة - النتائج 41 إلى 53 من 53">الأخيرة<img src="images/metro/purple/pagination/last-left.png" alt="الأخيرة" /></a></span>
+		
+	
+	<ul class="popupbody popuphover">
+		<li class="formsubmit jumptopage"><label>إذهب إلى الصفحة: <input type="text" name="page" size="4" /></label> <input type="submit" class="button" value="إذهب" /></li>
+	</ul>
+</form>
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 21 إلى 40 من 53
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=133595&page=2&s=696d1a7d9adaea36633b28fa7c3827c1" title="تحديث الصفحة">جبان جداً وليس لديه ثقة بنفسه</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=133595" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;t=133595&amp;pp=20&amp;page=2" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=addsubscription&amp;t=133595" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;search_type=1&amp;searchthreadid=133595&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="133595" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_733715">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:34 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733715" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733715#post733715" class="postcounter">#21</a><a id="postcount733715" name="21"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_733715">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: Traditional Arabic"><font size="5"><span style="font-family: traditional arabic"><font size="6"><font color="purple">لا يُمكن أن يستجيبَ من يعاني من <font color="red">الخوف</font> </font></font></span><br />
+<span style="font-family: traditional arabic"><font size="6"><font color="purple">إذا تعرَّض <font color="red">لعقوبة</font>, </font></font></span></font></span></div><span style="font-family: Traditional Arabic"><font size="5"> <br />
+ <br />
+<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="6"><font color="purple">ولن تتحسَّن حالتُه في &quot;<font color="red">السيطرة على مخاوفه</font>&quot;.</font></font></span></div> <br />
+ <br />
+<div style="text-align: center;"><span style="font-family: microsoft sans serif"><font size="6"><font color="magenta">ولكن،</font></font></span></div> <br />
+<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="6"><font color="purple">يستجيب <font color="red">الأطفالُ</font> على وجه الخص</font></font></span><span style="font-family: traditional arabic"><font size="6"><font color="purple">وص بشكلٍ أفضل</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="6"><font color="purple">إذا تمَّت مُساعدتُهم على زيادة مهاراتهم وكفاءتهم،</font></font></span></div> <br />
+<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="6"><font color="purple">ثمَّ تشجيعهم على المشاركة في <font color="red">الأنشطة</font></font></font></span><br />
+<span style="font-family: traditional arabic"><font size="6"><font color="purple">التي تتضمَّن أموراً <font color="red">يخافون منها</font>.<br />
+<br />
+</font></font></span><div style="text-align: center;"><span style="font-family: Traditional Arabic"><font size="5"><span style="font-family: Traditional Arabic"><font size="6"><font color="darkred">بالنّسبة للأطفال الصغار،</font></font></span><br />
+<span style="font-family: Traditional Arabic"><font size="6"><font color="darkred"> يُمكن أن يُمارسَ الوالدان مع الطفل الأنشطةَ العمليَّة </font></font></span><br />
+<span style="font-family: Traditional Arabic"><font size="6"><font color="darkred">التي يخاف منها على شكل لعبة،</font></font></span><br />
+<span style="font-family: Traditional Arabic"><font size="6"><font color="red"> لأنَّ معظمَ الأطفال يستجيبون بشكلٍ أفضل عندما يلعبون.</font></font></span><br />
+ <br />
+<span style="font-family: Traditional Arabic"><font size="6"><font color="darkred">أمَّا في في حالات <font color="red">الخوف الشديد،</font> </font></font></span><br />
+<span style="font-family: Traditional Arabic"><font size="6"><font color="darkred">فقد يستخدم المُعالِج <font color="red">طرقَ الاسترخاء،</font></font></font></span><br />
+<span style="font-family: Traditional Arabic"><font size="6"><font color="darkred"> ويعرض على لطفل مقاطعَ فيديو، ويجعله</font></font></span><br />
+<span style="font-family: Traditional Arabic"><font size="6"><font color="darkred"><font color="red"> &quot;يواجه الموقفَ بشكلٍ خيالي&quot;,</font> </font></font></span><br />
+ <br />
+<span style="font-family: Traditional Arabic"><font size="6"><font color="darkred">أيّ يُساعد المعالِجُ الطفلَ على <font color="red">تخيُّل</font> مواجهة الموقف المخيف </font></font></span><br />
+<span style="font-family: Traditional Arabic"><font size="6"><font color="darkred">قبلَ محاولة تعريضه له في <font color="red">الواقع</font>.</font></font></span></font></span></div><span style="font-family: Traditional Arabic"><font size="5"> <br />
+ <br />
+<div style="text-align: center;"><a href="http://www.kaahe.org/health/ar/14640-%D8%A7%D9%84%D8%AE%D9%88%D9%81-%D8%B9%D9%86%D8%AF-%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84/all.html" target="_blank" rel="nofollow">http://www.kaahe.org/health/ar/14640...أطفال/all.html</a><br />
+ </div></font></span><br />
+</div></font></span>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733715" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733715" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733715" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733715" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733716">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:34 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733716" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733716#post733716" class="postcounter">#22</a><a id="postcount733716" name="22"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_733716">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><span style="font-family: simplified arabic"><font size="5"><font color="red">(50) وصيـة لغرس الثقة</font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="red"> والتغلب على <font color="black">الخـوف</font> والخجل</font></font></span></font></span></div><span style="font-family: traditional arabic"><font size="5"><br />
+ <br />
+<div style="text-align: center;"><span style="font-family: simplified arabic"><font size="5"><font color="navy">إن أكبر <font color="red">مشكلة</font> تواجه الإنسان سواء كان مدرباً أو محاضراً</font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy"> أو خطيباً مبتدئاً </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy">هو عدم الثقة بالنفس </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy">والتردد والخجل والحرج <font color="red">والخوف</font> </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy"><font color="red">والرهبة</font> أمام المستمعين، </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy">لذا فإنه يمكننا أن نوصي بالوصايا الخمسين التالية:</font></font></span><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkred"><b>•</b> استعن بالله تعالى، واخلص عملك له، واسأله التوفيق والتيسير .</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkred"><b>•</b> اقرأ شيئاً من كتاب الله تعالى قبل <font color="red">المثول</font> بين يدي المشاركين .</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkred"><b>•</b> صل ركعتين ثم ارفع يديك بالدعاء .</font></span></font></div></font></span>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733716" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733716" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733716" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733716" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733717">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:35 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733717" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733717#post733717" class="postcounter">#23</a><a id="postcount733717" name="23"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_733717">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: Traditional Arabic"><font size="5"><b><span style="font-family: simplified arabic"><font size="5"><font color="olive">•</font></font></span></b><font color="olive"><font size="5"><span style="font-family: simplified arabic"> اطلب الدعاء من <font color="red">والديك</font> أو من أهل بيتك .</span></font></font></font></span></div><span style="font-family: Traditional Arabic"><font size="5"> <br />
+<div style="text-align: center;"><font size="5"><span style="font-family: simplified arabic"><font color="olive"><b>•</b></font></span></font><span style="font-family: simplified arabic"><font size="5"><font color="olive"> تصدق قبل المحاضرة،</font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="olive">أو امسح على رأس اليتيم،</font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="olive">أو تقرب إلى الله بأي عمل صالح .</font></font></span></div> <br />
+<div style="text-align: center;"><font size="5"><span style="font-family: simplified arabic"><font color="olive"><b>•</b> استغفر الله من <font color="red">ذنوبك</font> ومعاصيك .</font></span></font></div><font color="olive"><br />
+</font></font></span><br />
+<div style="text-align: center;"><span style="font-family: Traditional Arabic"><font size="5"><span style="font-family: Simplified Arabic"><font size="5"><font color="darkred"><b>•</b> تبرأ من حولك وقوتك، </font></font></span><br />
+<span style="font-family: Simplified Arabic"><font size="5"><font color="darkred">والجأ إلى حول الله وقوته، وتوكل عليه وحده .</font></font></span><br />
+ <br />
+<span style="font-family: Simplified Arabic"><font size="5"><font color="darkred"><b>•</b> حضر تحضيراً جيداً،</font></font></span><br />
+<span style="font-family: Simplified Arabic"><font size="5"><font color="darkred"> واقرأ كثيراً كل ما يخص موضوع البرنامج .</font></font></span><br />
+ <br />
+<span style="font-family: Simplified Arabic"><font size="5"><font color="darkred"><b>•</b> يمكنك عمل خريطة ذهنية (<font color="blue">Mind Mapping</font>) .</font></font></span></font></span><br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733717" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733717" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733717" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733717" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733718">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:36 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733718" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733718#post733718" class="postcounter">#24</a><a id="postcount733718" name="24"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_733718">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;">                             <br />
+</div>              			<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><span style="font-family: simplified arabic"><font size="5"><font color="navy"><b>•</b> رتب الموضوع ترتيباً منطقياً ومتسلسلاً ليسهل تذكره .</font></font></span><br />
+ <br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy"><b>•</b> تفهم فكرتك جيداً قبل أن تتحدث بها .</font></font></span><br />
+ <br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy"><b>•</b> احفظ ما تريد قوله جيداً، واحرص على تكراره كثيراً .</font></font></span><br />
+<br />
+</font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font size="5"><span style="font-family: simplified arabic"><font color="blue"><b>•</b> <font color="red">تمرن</font> على ما تريد قوله، وجرب عرضك له في <font color="red">بيتك</font> ،</font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="blue"> ثم تعرف على <font color="red">أخطائك</font> وحاول تلافيها </font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="blue">(<font color="red">اعمل بروفة</font>) .</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="blue"><b>•</b> احرص على إعداد مقدمة مركزة وقوية ومحفوظة حفظاً جيداً .</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="blue"><b>•</b> خاطب نفسك <font color="red">وأقنعها</font> بالمقدرة والنجاح،</font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="blue"> ولسوف تنجح بإذن الله تعالى .</font></span></font><br />
+</font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733718" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733718" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733718" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733718" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733719">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:36 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733719" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733719#post733719" class="postcounter">#25</a><a id="postcount733719" name="25"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_733719">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><font size="5"><span style="font-family: simplified arabic"><font color="olive"><b>•</b> كن <font color="red">طبيعياً،</font> وأحذر التكليف والتنطع .</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="olive"><b>•</b> كن أنت، واستخدم كلماتك وعباراتك، </font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="olive"><font color="red">ولا تقلد</font> كثيراً،</font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="olive"> وإذا كان ولابد فقلد أفضل</font></span></font><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="olive">الموجود ثم طورهُ وحسنهُ .</font></font></span><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="olive"><b>•</b> حاول <font color="red">الارتجال،</font> </font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="olive">وتجنب القراءة الكثيرة من ورقة أو مذكرة .</font></span></font><br />
+</font></span></div> 		 		<br />
+<br />
+<span style="font-family: traditional arabic"><font size="5"><span style="font-family: simplified arabic"><font size="5"><font color="teal"><b>•</b> ضع أمامك <font color="red">رؤوس</font> أقلام الموضوع .</font></font></span><br />
+ <br />
+<span style="font-family: simplified arabic"><font size="5"><font color="teal"><b>•</b> أعط تركيزاً خاصاً للدقائق <font color="red">الخمس</font> الأولى .</font></font></span><br />
+ <br />
+<span style="font-family: simplified arabic"><font size="5"><font color="teal"><b>•</b> حسن <font color="red">مظهرك،</font> وطيب نفسك، ورتب <font color="red">هندامك</font> .</font></font></span></font></span><br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733719" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733719" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733719" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733719" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733720">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:37 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733720" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733720#post733720" class="postcounter">#26</a><a id="postcount733720" name="26"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_733720">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><font size="5"><span style="font-family: simplified arabic"><font color="darkgreen"><b>•</b> <font color="red">افحص</font> كافة المعدات والأجهزة والمساعدات المرئية، </font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkgreen">وتدرب على استعمالها .</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkgreen"><b>•</b> توقع <font color="red">المشكلات</font> الممكن حدوثها، واستعد لها .</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkgreen"><b>•</b> تدرب على التعامل مع الأسئلة <font color="red">الصعبة</font> والرد عليها .<br />
+<br />
+<br />
+</font></span></font></font></span><span style="font-family: traditional arabic"><font size="5"><font size="5"><span style="font-family: simplified arabic"><font color="sienna"><b>•</b> <font color="red">احرص</font> على المبادرة والإقدام، وكن <font color="red">شجاعاً</font> جريئاً .</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="sienna"><b>•</b> تحدَّ نفسك، وأرغمها على </font><font color="red">المجازفة،</font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="sienna"> وأقنعها أن المراتب <font color="red">العالية</font> لا تتأتي إلا بالمجازفة</font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="sienna"> والإقدام والهمة العالية وخوض <font color="red">الصعاب</font> .</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="sienna"><b>•</b> وافق على بعض <font color="red">الخوف</font> على أساس أنه طبيعي وجيد .<br />
+<br />
+</font></span></font></font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733720" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733720" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733720" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733720" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733721">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:37 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733721" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733721#post733721" class="postcounter">#27</a><a id="postcount733721" name="27"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_733721">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><font size="5"><font color="darkorchid"><span style="font-family: simplified arabic"><b>•</b> ذكِّر نفسك بأن كل رجل مشهور كان عرضة <font color="red">للخطأ،</font></span></font></font><br />
+<font size="5"><font color="darkorchid"><span style="font-family: simplified arabic"> فلا حرج من <font color="red">الإخفاق</font> في الأمر .</span></font></font><br />
+ <br />
+<font size="5"><font color="darkorchid"><span style="font-family: simplified arabic"><b>•</b> <font color="red">تصوَّر</font> نفسك متحدثاً جيداً .</span></font></font><br />
+ <br />
+<font size="5"><font color="darkorchid"><span style="font-family: simplified arabic"><b>•</b> اعتقد أن <font color="red">الجمهور</font> في صفك .<br />
+<br />
+</span></font></font></font></span><div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><font size="5"><span style="font-family: simplified arabic"><font color="seagreen"><b>•</b> تخيل أن الحضور</font><font color="red"> لا يفهمون شيئاً،</font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="seagreen"> أو افترض عدم معرفتهم تماماً بالموضوع</font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="seagreen"> أو <font color="red">ضآلة</font> معلوماتهم في هذا الشأن .</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="seagreen"><b>•</b> أقنع نفسك أن تبعات خوض هذا </font><font color="red">المضمار</font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="seagreen"> أخف وطأة من تبعات <font color="red">التراجع</font> والتردد </font></span></font><br />
+<span style="font-family: simplified arabic"><font size="6"><font color="red">والرضا بالدون .</font></font></span><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="seagreen"><b>•</b> استشر أولي الخبرة والاختصاص</font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="seagreen"> فلعلك تجد عند بعضهم </font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="seagreen">ما يثبت <font color="red">فؤادك</font> ويقوي جنانك ويثير <font color="red">همتك</font> .</font></span></font><br />
+ </font></span></div> 		 		<br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733721" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733721" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733721" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733721" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733722">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:38 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733722" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733722#post733722" class="postcounter">#28</a><a id="postcount733722" name="28"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_733722">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><font size="5"><font color="darkslateblue"><span style="font-family: simplified arabic"><b>•</b> تذكر دائماً أننا <font color="red">نخطئ</font> كثيراً </span></font></font><br />
+<font size="5"><font color="darkslateblue"><span style="font-family: simplified arabic">عندما نعتقد أن الحضور</span></font></font><br />
+<font size="5"><font color="darkslateblue"><span style="font-family: simplified arabic"> <font color="red">يحصون</font> حركاتنا إحصاءً دقيقاً .</span></font></font><br />
+ <br />
+<font size="5"><font color="darkslateblue"><span style="font-family: simplified arabic"><b>•</b> تدرج في التدريب والإلقاء والخطابة،</span></font></font><br />
+<font size="5"><font color="darkslateblue"><span style="font-family: simplified arabic"> وابدأ في منتديات <font color="red">صغيرة</font></span></font></font><br />
+<font size="5"><font color="darkslateblue"><span style="font-family: simplified arabic"> ومع فئات قليلة ذات المستويات <font color="red">المحدودة</font> .</span></font></font><br />
+ <br />
+<font size="5"><font color="darkslateblue"><span style="font-family: simplified arabic"><b>•</b> إن استطعت أن لا تبدأ التدريب والإلقاء والخطابة </span></font></font><br />
+<font size="5"><font color="darkslateblue"><span style="font-family: simplified arabic">أمام <font color="red">أناس</font> تربطك وإياهم صلات وثيقة</span></font></font><br />
+<font size="5"><font color="darkslateblue"><span style="font-family: simplified arabic"> <font color="red">فافعل</font> .</span></font></font></font></span><br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733722" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733722" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733722" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733722" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733723">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:39 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733723" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733723#post733723" class="postcounter">#29</a><a id="postcount733723" name="29"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_733723">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><font size="5"><span style="font-family: simplified arabic"><font color="darkred"><b>•</b> احضر دورة تدريب مدربين .</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkred"><b>•</b> <font color="red">أمسك</font> </font><font color="red">بجسم صلب</font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkred"> (<font color="darkred">عصا</font> أو خشبة المنبر أو أطراف المنصة أو غير ذلك)</font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkred"> إن تيسر لك ذلك .</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkred"><b>•</b> خذ نفساً عميقاً </font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkred">ثم أخرج الهواء إخراجاً هادئاً <font size="6"><font color="red">لتهدأ نفسك</font></font> .</font></span></font></font></span></div> 		 		<br />
+<br />
+<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><font size="5"><span style="font-family: simplified arabic"><font color="navy"><b>•</b> ابتسم ابتسامة <font color="red">خفيفة</font> .</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="navy"><b>•</b> ابدأ الكلام بحمد الله والثناء عليه .</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="navy"><b>•</b> <font color="red">إذا لم تستطع النظر</font> إلى عيون المشاركين</font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="navy"> فانظر <font color="red">أعلى</font> قليلاً من مستوى رؤوسهم</font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="navy"> أو انظر إلى <font size="6"><font color="red">جباههم</font></font> .</font></span></font></font></span></div></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733723" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733723" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733723" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733723" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733724">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:40 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733724" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733724#post733724" class="postcounter">#30</a><a id="postcount733724" name="30"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_733724">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><font size="5"><span style="font-family: simplified arabic"><font color="olive"><b>•</b> <font color="red">تصنَّع</font> التمكن والاستعداد <font color="red">والثقة</font> بالنفس</font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="olive">(من حيث <font color="red">النظرات</font> والالتفات والحركة وغيرها) .</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="olive"><b>•</b> تحدث بهدوء واضبط <font color="red">أعصابك</font> وإن تكلفت ذلك .</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="olive"><b>•</b> عرِّف نفسك <font color="red">للمشاركين،</font> وتعرَّف عليهم .<br />
+<br />
+</font></span></font></font></span></div> 		 		<br />
+<span style="font-family: traditional arabic"><font size="5"><font size="5"><span style="font-family: simplified arabic"><font color="royalblue"><b>•</b> أذب <font color="red">الجليد،</font> </font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="royalblue">وأوجد وضعاً غير رسمي (ودي وأخوي) أثناء البرنامج .</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="royalblue"><b>•</b> ابدأ بتناول الموضوعات <font color="red">السهلة</font> </font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="royalblue">والتي لا تثير جدلاً ولا اعتراضاً .</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="royalblue"><b>•</b> استخدم لغة <font color="red">الجسم</font> بإتقان مع تجنب التكلف .</font></span></font></font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733724" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733724" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733724" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733724" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733725">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:40 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733725" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733725#post733725" class="postcounter">#31</a><a id="postcount733725" name="31"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_733725">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: Traditional Arabic"><font size="5"><font size="5"><span style="font-family: simplified arabic"><font color="darkred"><b>•</b> تحرك <font color="red">بخطوات</font> ثابتة وهادئة داخل القاعة</font></span></font><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="darkred"> وفي <font size="6"><font color="red">أوساط</font></font> المشاركين، </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="darkred">وأحرص على حفظ أسماء المشاركين واستخدامها .<br />
+<br />
+</font></font></span></font></span><span style="font-family: Traditional Arabic"><font size="5"><font size="5"><span style="font-family: Simplified Arabic"><font color="red"><b><font color="navy">•</font></b> أشرك المتدربين في الحوار والنقاش، </font></span></font><br />
+<font size="5"><span style="font-family: Simplified Arabic"><font color="red">واحرص على الرد على الاستفسارات والأسئلة</font></span></font><br />
+<font size="5"><span style="font-family: Simplified Arabic"><font color="red"> وعدم <font size="6"><font color="black">التردد</font></font> في <font color="black">مجابهة</font> المواقف أو تمييعها .</font></span></font><br />
+ <br />
+<span style="font-family: Simplified Arabic"><font size="5"><font color="#ff0000">==========</font></font></span><br />
+ <br />
+<b><span style="font-family: Traditional Arabic"><font size="6"><font color="darkorchid">(<font color="red">50</font>) وصيـة لغرس الثقة </font></font></span></b><br />
+<b><span style="font-family: Traditional Arabic"><font size="6"><font color="darkorchid">والتغلب على <font color="red">الخـوف</font> و <font color="red">الخجل</font></font></font></span></b><br />
+ <br />
+ <br />
+<a href="http://www.saaid.net/aldawah/174.htm" target="_blank" rel="nofollow">http://www.saaid.net/aldawah/174.htm</a></font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733725" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733725" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733725" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733725" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733726">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:41 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733726" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733726#post733726" class="postcounter">#32</a><a id="postcount733726" name="32"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_733726">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><span style="font-family: traditional arabic"><font size="6"><font color="red">كيف تقوي ثقتك <span style="font-family: microsoft sans serif"><font color="magenta">بنفسك</font></span><span style="font-family: simplified arabic"><font color="blue">؟</font></span></font></font></span></font></span></div><span style="font-family: traditional arabic"><font size="5"> <br />
+<br />
+      <font size="4"><font color="#000000"><br />
+</font></font><div style="text-align: center;"><span style="font-family: simplified arabic"><font size="5"><font color="navy">من خلال هذا الدرس نتعرف على كيفية إكتساب الثقة بالنفس<br />
+ وهذا ما يجب        على كل مسلم ومسلمة تحقيقه<br />
+ لذا يجب عليك<font color="magenta"> أخي / أختي</font> <br />
+أن تنشر هذا الدرس على        أكبر قدر من المستخدمين<br />
+ كي يستفيد منه إخوانك في العقيدة.</font></font></span><span style="font-family: simplified arabic"><font size="5"><font color="navy"><br />
+      <br />
+      <font color="magenta">أولاً نبدأ بتعريف الثقة بالنفس ....       </font><br />
+      <br />
+      <font color="red">الثقة بالنفس</font> هي إحساس الشخص بقيمة نفسه بين من حوله<br />
+ فتترجم هذه الثقة كل        حركة من حركاته وسكناته <br />
+ويتصرف الإنسان بشكل طبيعي دون <font size="6"><font color="red">قلق </font></font>أو <font size="6"><font color="red">رهبة </font></font><br />
+فتصرفاته        هو من يحكمها وليس غيره .... <br />
+<br />
+هي نابعة من ذاته لا شأن لها بالأشخاص المحيطين        به<br />
+<br />
+ وبعكس ذلك هي<font color="red"> انعدام الثقة</font> التي تجعل الشخص<br />
+ يتصرف وكأنه <font color="red">مراقب </font>ممن حوله <br />
+<br />
+       فتصبح تحركاته وتصرفاته بل وآراءه في بعض الأحياء <br />
+مخالفة لطبيعته<br />
+ ويصبح <font size="6"><font color="red">القلق        </font></font>حليفه الأول <br />
+في كل اجتماع أو اتخاذ قرار .</font></font></span><br />
+</div></font></span>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733726" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733726" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733726" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733726" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733727">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:42 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733727" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733727#post733727" class="postcounter">#33</a><a id="postcount733727" name="33"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_733727">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><span style="font-family: simplified arabic"><font size="5"><font color="purple"><font size="6"><font color="red">والثـقة بالنفس</font></font> هي بالطبع شيء مكتسب<br />
+ من البيئة التي تحيط بنا <br />
+والتي <font color="red">نشأنا </font>بها<br />
+ ولا يمكن أن تولد مع أي شخص كان . </font></font></span><span style="font-family: simplified arabic"><font size="5"><font color="purple"><br />
+      <br />
+      ولا يخفى عليكم أننا نسمع من أناس كثيرين شكاوى<br />
+ من <font size="6"><font color="black">انعدام الثـقة بالنفس        </font></font><br />
+ويرددون هذه العبارة حتى أخذت نصيبها منهم !</font></font></span></font></span><br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733727" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733727" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733727" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733727" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733728">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:42 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733728" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733728#post733728" class="postcounter">#34</a><a id="postcount733728" name="34"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_733728">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><span style="font-family: simplified arabic"><font size="5"><font color="magenta">النقطة الأولى</font></font></span><span style="font-family: simplified arabic"><font size="5"><font color="#000000"><br />
+<br />
+والتي يجب أن نتعرف عليها هي <br />
+</font></font></span><span style="font-family: simplified arabic"><font size="6"><font color="red">أسباب        انعدام الثقة بالنفس</font></font></span><span style="font-family: simplified arabic"><font size="5"><font color="#000000"> ....<br />
+ فعلينا قبل        كل علاج أن نضع أيدينا على موضع الداء<br />
+ .... ثم نشرع بالعلاج المناسب له . </font></font></span><span style="font-family: simplified arabic"><font size="5"><br />
+<br />
+<br />
+<font color="blue">هناك أسباب كثيرة منها التالي : </font><br />
+<br />
+<font color="#ff0000">1-</font><font color="#000000">        تهويل الأمور والمواقف<br />
+ بحيث تشعر بأن من حولك يركزون على <font size="6"><font color="red">ضعفك </font></font><br />
+ويرقبون كل        حركة غير طبيعية تقوم بها .</font><br />
+<br />
+<br />
+<font color="#ff0000">2-</font><font color="#000000"> <font size="6"><font color="red">       الخوف والقلق</font></font> من أن يصدر منك تصرف مخالف للعادة<br />
+ حتى لا يواجهك الآخرون باللوم        أو <font size="6"><font color="red">الاحتـقار </font></font>.</font><br />
+<br />
+<br />
+<font color="#ff0000">3-</font><font color="#000000">        إحساسك بأنك <font size="6"><font color="red">إنسان ضعيف </font></font><br />
+<b><span style="font-family: traditional arabic"><font size="6"><font color="blue">ولا يمكن أن تقدم <span style="font-family: simplified arabic"><font color="darkred">شيء </font></span>أمام الآخرين</font></font></span></b><br />
+<br />
+ بل تشعر بأن ذاتك<font size="6"> <font color="red">       لا شيء يميزها</font></font><br />
+ وغالباً من يعاني من هذا التفكير الهدّام <br />
+يرى نفسه <font size="6"><font color="red">إنسان حقير </font></font><br />
+       ويسرف في هذا التفكير <br />
+حتى تستحكم هذه الفكرة في مخيلته<br />
+ وتصبح <font size="6"><font color="red">حقيقة </font></font>للأسف .<br />
+</font></font></span></font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733728" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733728" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733728" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733728" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733729">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:43 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733729" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733729#post733729" class="postcounter">#35</a><a id="postcount733729" name="35"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_733729">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><span style="font-family: simplified arabic"><font size="5"><font color="black"><font color="magenta">والنقطة الثالثة والأخيرة <br />
+<br />
+هي أخطر مشكلة </font><br />
+<br />
+لأنها تدمرك وتدمر كل طاقة إبداع        لديك <br />
+<br />
+فعليك أولاً أن تتوقف عن <font size="6"><font color="red">احتقار نفسك </font></font><br />
+<br />
+والتكرير عليها ببعض الألفاظ التي<font color="red">        تدمر شخصيتك</font> مثل <br />
+<br />
+<font size="6"><font color="red">&quot; أنا غبي &quot; <br />
+<br />
+<font color="darkorchid">أو</font> &quot; أنا فاشل &quot;<br />
+<br />
+ <font color="darkorchid">أو </font>&quot; أنا ضعيف &quot;</font></font><br />
+<br />
+ فهذه العبارات        تشكل <font color="red">خطراً </font>جسيماً على النفس<br />
+ <font color="red">وتحطمها </font>من حيث لا يشعر الشخص بها ..<br />
+<br />
+<br />
+<font color="magenta"> فعليك أن        تعلم أخي / أختي </font><br />
+بأن هذه العبارات ما هي إلا معاول هدم <br />
+وعليك من هذه اللحظة        التوقف عن استخدامها <br />
+لأنها<font size="6"><font color="red"> تهدم نفسيتك</font></font> وتحطمها من الداخل <br />
+وتشل قدراتها إن        استحكمت على تفكيرك. </font></font></span><font color="darkred"><font color="black"><br />
+<br />
+<br />
+<br />
+</font><span style="font-family: simplified arabic"><font size="5"><font color="black">       <font color="magenta">ولا تنسى أيضاً أخي / أختي</font><br />
+ أن تحدد مصدر هذه المشكلة<font size="6"><font color="red"> والإحساس بالنقص</font></font> ....</font><br />
+</font></span></font></font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733729" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733729" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733729" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733729" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733730">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:43 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733730" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733730#post733730" class="postcounter">#36</a><a id="postcount733730" name="36"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_733730">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><span style="font-family: simplified arabic"><font size="5"><font color="magenta">هناك أسباب كثيرة ومنها تستطيع <br />
+تحديد مصدر هذه <font color="black">المشكلة </font>تمهيداً للقضاء عليها:</font></font></span><span style="font-family: simplified arabic"><font size="5"><br />
+<br />
+<font color="#ff0000">1-</font><font color="#000000">        قد يكون هذا الإحساس هو بسبب <font size="6"><font color="red">فشل </font></font>في الدراسة أو العمل<br />
+ وتلقي بعض الانتقادات <font color="red">       <font size="6">الحادة</font></font><br />
+ من الوالدين أو المدير<br />
+ بشكل <font size="6"><font color="red">مؤذي أوجارح</font></font>.<br />
+<br />
+<br />
+</font><font color="#ff0000">2-</font><font color="#000000">        التعرض لحادث قديم<br />
+ <font color="red">كالإحراج </font>أو<font size="6"><font color="red"> التوبيخ الحاد</font></font> أمام الآخرين <br />
+أو المقارنة بينك        وبين أقرانك <br />
+<font size="6"><font color="red">والتهوين </font></font>من قدراتك ومواهبك.<br />
+<br />
+<br />
+</font><font color="#ff0000">3-</font><font color="#000000">        نظرة الأصدقاء أو الأهل <font size="6"><font color="red">السلبية لذاتك</font></font><br />
+ وعدم الاعتماد عليك في الأمور <font color="red">الهامة        </font>...<br />
+ أو عدم إعطائك الفرصة <font color="red">لإثبات ذاتك</font> .<br />
+</font></font></span></font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733730" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733730" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733730" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733730" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733731">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:44 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733731" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733731#post733731" class="postcounter">#37</a><a id="postcount733731" name="37"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_733731">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: Traditional Arabic"><font size="5"><span style="font-family: simplified arabic"><font size="5"><font color="navy">هذه باختصار هي بعض أسباب <font color="red">عدم الثقة بالنفس</font><br />
+ ولابد بعد مراجعتها وتحديد ما يخصك بينها ....<br />
+ عليك بعدها مصارحة نفسك <br />
+فليس كالصراحة مع النفس<br />
+<font color="red"> وعدم إغضاء الطرف<br />
+ أو تجاهل المشكلة </font><br />
+بإيهام النفس أنها لا تعاني من <font color="red">مشكلة </font>... <br />
+<br />
+<font size="6"><font color="red"><font color="black">فالتهرب </font>لا يحل المشاكل </font></font><br />
+ بل يزيد النار اشتعالاً ....<br />
+ ونفسك هي ذاتك .... <br />
+وأنت محاسب عليها أمام الله <br />
+<br />
+<font size="6"><font color="red">فلا تهملها</font></font></font></font></span></font></span><br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733731" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733731" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733731" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733731" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733732">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:45 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733732" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733732#post733732" class="postcounter">#38</a><a id="postcount733732" name="38"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_733732">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><font size="5"><span style="font-family: simplified arabic"><font color="magenta">الخطوة القادمة </font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="navy">بعد تحديد مصدر <font color="red">المشكلة</font> </font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="navy">ابدأ بالبحث عن حل وحاول أن تجده فلكل <font color="red">داء</font> دواء ...</font></span></font><br />
+ <br />
+ <br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy">اجلس مع نفسك <font color="red">وصارحها</font></font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy"> وثق بأنك قادر على <font color="red">التحسن</font> يوماً بعد يوم .... </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy">عليك أن توقف كل تفكير <font color="red">يقلل</font> من شأنك ...</font></font></span><br />
+ <br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy"> ويجب عليك أن تعلم بأنك إنسان منتج لم تخلق عبثاً ....</font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy"> فالله عندما خلقنا لم يخلقنا عبثاً .... </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy">أنت لك هدف وغاية يجب أن تؤديها في هذه الحياة</font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy"> ما دمت حياً على وجه الأرض ....</font></font></span><br />
+ <br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy"> <font size="6"><font color="green">الله سبحانه وتعالى</font></font> عندما خاطب المؤمنين </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy">في القرآن الكريم</font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy"> لم يخص مؤمن دون الآخر </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy"> ذلك لأن كل البشر سواسية </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy"> ولا فضل لأحد على أحد إلا بالتقوى ...</font></font></span><br />
+ <br />
+ <br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy"> ويكفي أن تعلم بأنك مسلم </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy">فهذا أكبر ما يميزك عن ملايين البشر</font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="navy"> <font color="red">الغارقين في ضلالاتهم وأهوائهم</font> .</font></font></span></font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733732" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733732" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733732" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733732" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733733">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:46 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733733" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733733#post733733" class="postcounter">#39</a><a id="postcount733733" name="39"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_733733">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><font color="magenta"><span style="font-family: simplified arabic"><font size="5">&quot; النقطة الأولى &quot;</font></span></font><br />
+ <br />
+<span style="font-family: simplified arabic"><font size="5"><font color="green"> والتي يجب أن تفخر بها هي كونك إنسان مسلم</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="6"><font color="red"> خالفت من اتبع <font color="black">الشيطان</font> </font></font></span><br />
+<span style="font-family: traditional arabic"><font size="6"><font color="red">وخالفت كل <font color="black">إمعة</font> خلف أعداء الإسلام</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="6"><font color="red"> يجري تاركاً <font color="black">عقله</font> وراء ظهره.</font></font></span><br />
+<br />
+ <br />
+<span style="font-family: simplified arabic"><font size="5"><font color="magenta">&quot; النقطة الثانية &quot;</font></font></span><br />
+ <br />
+<span style="font-family: simplified arabic"><font size="5"><font color="black"> والتي يجب أن تكون سبباً في <font color="green">تعزيز ثقتك بنفسك</font> </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="black">هو أن إحساسك <font color="red">بالظلم <font size="6">والاحتقار </font>من قِبل الآخرين</font> </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="black">سواء <font color="red">أهلك أو أقاربك أو زملائك</font> </font></font></span><br />
+ <br />
+<span style="font-family: simplified arabic"><font size="5"><font color="black">لن يغير في الوضع شيئاً </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="black">بل قد يزيد في <font size="6"><font color="red">هدم</font></font> ثقتك بنفسك </font></font></span><br />
+ <br />
+<span style="font-family: simplified arabic"><font size="5"><font color="black">فعليك الخلاص من هذا التفكير </font></font><font size="6"><font color="red">الساذج</font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="black"> واستبداله بخير منه،</font></font></span><br />
+ <br />
+<span style="font-family: simplified arabic"><font size="5"><font color="black"> فحاول استبدال الكلمات </font><font color="red">السيئة</font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="black"> التي <font color="red">اعتدت</font> اطلاقها على </font><font color="red">نفسك</font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="black"> بكلمات تشجيعية تزيد من قوتك </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="black">وتحسن من نفسيتك وتزيد من <font color="red">راحتها</font> ....</font></font></span><br />
+<br />
+ <br />
+<span style="font-family: simplified arabic"><font size="5"><font color="black">يجب أن تقنع نفسك مع الترديد </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="black">بأنك <font color="red">إنسان قوي</font></font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="black"> ويجب أن تتعرف على قدراتك الكامنة في نفسك ....</font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="black"> وأنك تملك ثقة عالية </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="black">وعليك من اليوم أن <font color="red">تخرجها</font>.</font></font></span><br />
+ </font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733733" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733733" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733733" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733733" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_733734">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2014-08-25,&nbsp;<span class="time">11:46 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post733734" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=733734#post733734" class="postcounter">#40</a><a id="postcount733734" name="40"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو فراس السليماني غير متواجد حالياً"><strong>أبو فراس السليماني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=83877&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=83877&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو فراس السليماني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>12,928</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: جبان جداً وليس لديه ثقة بنفسه
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_733734">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><font size="5"><span style="font-family: simplified arabic"><font color="magenta">&quot; الأمر الثالث &quot;</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkred"> هو اقتناعك واعتقادك الكامل</font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkred"> أنك حقاً <font color="red">إنسان</font> ذا ثقة عالية </font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkred">لأنها عندما تترسخ في عقلك</font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkred"> فإنها تتولد وتتجاوب مع أفعالك ...</font></span></font><br />
+ <br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkred"> فإن ربيت أفكار <font color="red">سلبية</font> في عقلك أصبحت إنسان <font color="red">سلبي</font> ....</font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkred"> وإن ربيت أفكار إيجابية فستصبح حتماً إنسان ايجابي</font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkred"> له كيانه المستقل القادر </font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkred">على تكوين شخصية مميزة </font></span></font><br />
+<font size="5"><span style="font-family: simplified arabic"><font color="darkred"><font color="red">يفتخر</font> بها بين الآخرين.</font></span></font><br />
+<br />
+ <br />
+<span style="font-family: simplified arabic"><font size="5"><font color="darkred">يجب أن تعمل على حب ذاتك وعدم <font color="red">كراهيتها</font></font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="darkred"> أو <font size="6"><font color="red">الانتقاص</font></font> منها .... </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="darkred">وعدم التفكير في الماضي</font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="darkred"> أو استرجاع أحداث <font size="6"><font color="red">مزعجة</font></font></font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="darkred"> قد انتهت وطواها الزمن </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="darkred">يجب عليك أن لا تحاول <font color="red">استرجاع</font> أي شيء مزعج</font></font></span><br />
+ <br />
+<span style="font-family: simplified arabic"><font size="5"><font color="darkred"> بل حاول أن <font color="red">تسعد</font> نفسك وتفرح بذاتك </font></font></span><br />
+<span style="font-family: simplified arabic"><font size="5"><font color="darkred">لأنك إنسان ناجح له مميزاته وقدراته الخاصة .</font></font></span></font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#008000">الحمد لله رب العالمين</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_733734" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_733734" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=733734" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_733734" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<form action="showthread.php?t=133595&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" method="get" class="pagination popupmenu nohovermenu">
+<input type="hidden" name="t" value="133595" /><input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+	
+		<span><a href="javascript://" class="popupctrl">صفحة 2 من 3</a></span>
+		
+		<span class="first_last"><a rel="start" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة الأولى - النتائج 1 إلى 20 من 53"><img src="images/metro/purple/pagination/first-left.png" alt="الأولى" />الأولى</a></span>
+		
+		
+		<span class="prev_next"><a rel="prev" href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة السابقة - النتائج 1 إلى 20 من 53"><img src="images/metro/purple/pagination/previous-left.png" alt="السابق" /></a></span>
+		
+		
+		<span><a href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مشاهدة النتائج 1 إلى 20 من 53">1</a></span><span class="selected"><a href="javascript://" title="النتائج 21 إلى 40 من 53">2</a></span><span><a href="showthread.php?t=133595&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مشاهدة النتائج 41 إلى 53 من 53">3</a></span>
+		
+		
+		<span class="prev_next"><a rel="next" href="showthread.php?t=133595&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة التالية - النتائج 41 إلى 53 من 53"><img src="images/metro/purple/pagination/next-left.png" alt="التالي" /></a></span>
+		
+		
+		<span class="first_last"><a href="showthread.php?t=133595&amp;page=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة الأخيرة - النتائج 41 إلى 53 من 53">الأخيرة<img src="images/metro/purple/pagination/last-left.png" alt="الأخيرة" /></a></span>
+		
+	
+	<ul class="popupbody popuphover">
+		<li class="formsubmit jumptopage"><label>إذهب إلى الصفحة: <input type="text" name="page" size="4" /></label> <input type="submit" class="button" value="إذهب" /></li>
+	</ul>
+</form>
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=133595&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=133595&amp;page=2#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=696d1a7d9adaea36633b28fa7c3827c1">لوحة التحكم</a></li>
+		<li><a href="private.php?s=696d1a7d9adaea36633b28fa7c3827c1">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1">الاشتراكات</a></li>
+		<li><a href="online.php?s=696d1a7d9adaea36633b28fa7c3827c1">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=134778&amp;s=696d1a7d9adaea36633b28fa7c3827c1">خواطر من الحج</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=134813&amp;s=696d1a7d9adaea36633b28fa7c3827c1">العزة الحقيقية هي عزة النفس عن التدني!!</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A8%D9%86%D9%81%D8%B3%D9%87">بنفسه</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%AB%D9%82%D8%A9">ثقة</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%AC%D8%A8%D8%A7%D9%86">جبان</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%AC%D8%AF%D8%A7%D9%8B">جداً</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%84%D8%AF%D9%8A%D9%87">لديه</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%88%D9%84%D9%8A%D8%B3">وليس</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=133595&amp;page=2#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=133595&amp;page=2#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">04:53 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

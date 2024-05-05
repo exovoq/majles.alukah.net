@@ -1,0 +1,1442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=ec1b4717d08f17a417a70c4e8f25f7a8&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=198874";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="أنت, حديث, قراءة, لأبيك, ومالك" />
+	<meta name="description" content="قراءة في حديث (أنت ومالك لأبيك) 
+                                  
+ 
+ 
+                                  
+                                      
+                                         د. أحمد عبدالمجيد  مكي" />
+
+	<title> قراءة في حديث (أنت ومالك لأبيك)</title>
+	<link rel="canonical" href="showthread.php?t=198874&s=ec1b4717d08f17a417a70c4e8f25f7a8" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> قراءة في حديث (أنت ومالك لأبيك)</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 1 من 1
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=198874&s=ec1b4717d08f17a417a70c4e8f25f7a8" title="تحديث الصفحة">قراءة في حديث (أنت ومالك لأبيك)</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=198874" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;t=198874&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=addsubscription&amp;t=198874" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;search_type=1&amp;searchthreadid=198874&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="198874" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_983168">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2022-10-06,&nbsp;<span class="time">11:03 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post983168" href="showthread.php?t=198874&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=983168#post983168" class="postcounter">#1</a><a id="postcount983168" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,742</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> قراءة في حديث (أنت ومالك لأبيك)
+		</h2>
+		
+				
+					
+					
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_983168">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><br />
+<br />
+<b><b><font color="#800000"><font size="6"><span style="font-family: arabic typesetting">قراءة في حديث (أنت ومالك لأبيك)<br />
+</span></font></font></b></b><br /><br /><b><font color="#800000"><font size="6"><span style="font-family: arabic typesetting">                                 <br />
+</span></font></font></b><br />
+<br />
+<br />
+<br />
+<b><font color="#800000"><font size="6"><span style="font-family: arabic typesetting">                                         د. أحمد عبدالمجيد  مكي </span></font></font></b><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"> <b> <font color="#C00000"> وردت آيات قرآنيـة وأحاديث نبـوية كثيرة تؤكـد وتذكِّر بحق الوالـدين على الأبنـاء،  ويكفي أن الله عز وجل قرن حقهما بحقه، فقال تعالى: </font> <font color="black"> {وَقَضَى رَبُّكَ أَلَّا تَعْبُدُوا إلَّا إيَّاهُ وَبِالْوَالِدَي  ْنِ إحْسَاناً}  [الإسراء: 23]</font></b><i><font color="#C00000">.</font></i></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> ولا خلاف بين الفقهاء على أن الوالدين إذا كانا معسرين فإن نفقتهما - من طَعام  وكِساء ومَسكن ودواء وما إلى ذلك من الضروريات - واجبة على ولدهما إذا كان ذلك في  وُسْعه.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <b> <font color="#C00000"> وهنا سؤال:</font></b><font color="black">  كيف نفهم قول النبي صلى الله عليه وسلم  </font><font color="black">«</font><font color="black">أَنْتَ  وَمَالُكَ لِأَبِيكَ</font><font color="black">»</font><font color="black">؟  وهل مطلق هذه الإضافة يدل على أَنَّ الوَلَدَ كالمملوك لوالده، وللوالد أن يأخذ من  مال ولده ما شاء؟</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> في السطور التالية عرض مقتضب لأقوال الأئمة في هذا الحديث سنداً ومتناً، مع بيان  الراجح من تلك الأقوال.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <b> <font color="#FBAD1D"> أولاً: لفظ الحديث</font></b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> قال الإمام أحمد: </font> <font color="black">«</font><font color="black">حَدَّثَنَا  نَصْرُ بْنُ بَابٍ، عَنْ حَجَّاجٍ ابن أرطاة، عَنْ عَمْرِو بْنِ شُعَيْبٍ، عَنْ  أَبِيهِ، عَنْ جَدِّهِ، أَنَّ رَجُلاً أَتَى النَّبِيَّ صلى الله عليه وسلم   يُخَاصِمُ أَبَاهُ، فَقَالَ: يَا رَسُولَ اللهِ! إِنَّ هَذَا قَدِ اجْتَاحَ  مَالِي؟ فَقَالَ رَسُولُ اللهِ صلى الله عليه وسلم : أَنْتَ، وَمَالُكَ لِأَبِيكَ</font><font color="black">»</font><font color="#0000CC">[1]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> ومعنى: اجتاح مالي؛ أي: استأصله، وأتى عليه أخذاً وإنفاقاً. وللحديث روايات متقاربة  المعنى عن عائشة، وجابر، وابن مسعود، وسمرة، وعبد الله بن عمر، وعمرو بن العاص.  وأخرجه الشافعي والبيهقي وابن أبي شيبة عن مُحَمَّدِ بْنِ المنْكَدِرِ مُرْسلاً.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <b> <font color="#FBAD1D"> ثانياً: هل الحديث صحيح أم ضعيف؟</font></b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> اختلف أهل العلم في تصحيح هذا الحديث وتضعيفه؛ فقد صححه جماعة من الأئمة كابن  القطان وابن الملقن والبوصيري والألباني وشعيب الأرنؤوط وعبد القادر الأرنؤوط، وقال  الحافظ ابن حجر: </font> <font color="black">«</font><font color="black">فمجموع  طُرُقِهِ لا تَحُطُّهُ عن القوة وجواز الاحتجاج به فَتَعَيَّنَ تَأْوِيلُهُ</font><font color="black">»</font><font color="#0000CC">[2]</font><font color="black">،  وقال الشوكاني: </font> <font color="black">«</font><font color="black">وبمجموع  هذه الطرق ينتهض للاحتجاج</font><font color="black">»</font><font color="#0000CC">[3]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> في حين ضعَّفه بعض أهل العلم، فقال الإمام الشافعي: </font>  <font color="black">«</font><font color="black">لا  يَثبت عن النبي. وقال البيهقي: قد روي من أوجه أُخَر موصولاً لا يثبت مثلها، وأخطأ  مَنْ وَصَلَهُ عَنْ جَابِرٍ. ومثل ذلك قاله ابن أبي حاتم عن أبيه، وقال  الدَّارَقُطْنِي  ُّ: رُوِيَ مَوْصُولاً ومُرْسَلاً والمرْسَلُ أَصَحُّ</font><font color="black">»</font><font color="#0000CC">[4]</font><font color="black">.  وقال الإمام القرطبي: </font> <font color="black">«</font><font color="black">حديث  واهٍ، ولو صَحَّ لَمْ تَكُنْ فيه حُجَّةٌ</font><font color="black">»</font><font color="#0000CC">[5]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <b> <font color="#FBAD1D"> ثالثاً: حكم أخذ الوالد من مال ولده</font></b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> اختلف أهل العلم في هذه المسألة على قولين:</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#C00000"> القول الأول:</font> <font color="black"> أن يد الوالد مبسوطة في مال ولده يأخذ ما شاء، وهو قول الحنابلة وجماعة من العلماء  منهم شيخ الإسلام ابن تيمية والصنعاني والشوكاني</font><font color="#0000CC">[6]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> قال ابن قدامة المقدسي: </font> <font color="black">«</font><font color="black">وللأب  أن يأخذ من مال ولده ما شاء، ويتملكه، مع حاجة الأب إلى ما يأخذه، ومع عدمها،  صغيراً كان الولد أو كبيراً، بشرطين: أحدهما: أن لا يجحف بالابن، ولا يضر به، ولا  يأخذ شيئاً تعلقت به حاجته. الثاني: أن لا يأخذ من مال ولده فيعطيه الآخر</font><font color="black">»</font><font color="#0000CC">[7]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وذكر العلَّامة الصنعاني أسماء سبعة من الصحابة، وثمانية من التابعين، قالوا بظاهر  الحديث، وأن مال الولد لأبيه، يتصرف فيه كيف شاء، كما يتصرف فيما يملكه، وكل ما جاز  له في مال نفسه من الإنفاق وغيره جاز له في مال ولده</font><font color="#0000CC">[8]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وأدلتهم في ذلك الحديث الذي معنا بالإضافة إلى أدلة أخرى، أهمها:</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> - أن الله جعل الولد موهوباً لأبيه، فقال: <b>{وَوَهَبْنَا لَهُ إسْحَاقَ  وَيَعْقُوبَ} [الأنعام: 84]</b>. وقال:<b> {وَوَهَبْنَا لَهُ يَحْيَى} [الأنبياء:  90]</b>. وقال زكريا: <b>{فَهَبْ لِي مِن لَّدُنكَ وَلِيًّا} [مريم: ٥]</b>. وقال  إبراهيم: <b>{الْـحَمْدُ لِلَّهِ الَّذِي وَهَبَ لِي عَلَى الْكِبَرِ إسْمَاعِيلَ  وَإسْحَاقَ} [إبراهيم: 39]</b>. وما كان موهوباً له، كان له أخذ ماله، كعبده.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> ويجاب عنه بأن النصوص المذكورة وما في معناها لا علاقة لها بالمسألة محلِّ البحث،  فهذه النصوص جاءت لبيان أن الله تعالى هو الوهَّاب، بمعنى أَنَّه يُعْطِي كُلّاً  على قدر اسـتحقاقِه، فهو سبحانه الـمُتفضِّل بالعطـاء بلا عِوَض، والمانح الفضل بلا  غَرَض.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> أما الهِبَة في الفقه فعقد يُمَلِّك به الواهبُ الموهُوبَ له مالاً مُعيَّناً بلا  عوض، ولها أحكامها المعروفة والمبثوثة في كتب الفقه الإسلامي.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> كما أن المسألة محلَّ البحث ليس لها علاقة مباشرة بأبواب الهبات، ومما يؤكد ذلك أن  كثيراً من العلماء ناقشوها في أبواب أخرى غير الهبات، فابن عبد البر ناقشها في باب  (ما لا حد فيه)، وناقشها الإمام السرخسي في باب (ادعاء الولد) وفي (كتاب الديات)،  أما ابن رشد الحفيد في كتابه بداية المجتهد ونهاية المقتصد، فلم يُشِر عند شرحه  لكتاب الهبات لا إلى المسألة ولا إلى الآيات المذكورة.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> - ما روته عائشة رضي الله عنها أن رسول الله صلى الله عليه وسلم  قال: </font>  <font color="black">«</font><font color="black">إن  أطيب ما أكلتم من كسبكم، وإن أولادكم من كسبكم</font><font color="black">»</font><font color="#0000CC">[9]</font><font color="black">.  وظاهر الحديث جواز الأكل من مال الولد مطلقاً، إلا أن جمهور العلماء حملوه على  الجواز عند الحاجة.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> - قوله تعالى: <b>{وَلا عَلَى أَنفُسِكُمْ أَن تَأْكُلُوا مِنْ بُيُوتِكُمْ أَوْ  بُيُوتِ آبَائِكُمْ} [النور: 61]</b>. قال الحافظ ابن كثير: </font>  <font color="black">«</font><font color="black">وتضمن  هذا بيوت الأبناء؛ لأنه لم ينص عليهم. ولهذا استدل بهذا من ذهب إلى أن مال الولد  بمنزلة مال أبيه</font><font color="black">»</font><font color="#0000CC">[10]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وقال السعدي: </font> <font color="black">«</font><b><font color="black">{أَن  تَأْكُلُوا مِنْ بُيُوتِكُمْ} [النور: 61] </font></b> <font color="black"> أي: بيوت أولادكم... وفيها دليل على أن الأب يجوز له أن يأخذ ويتملك من مال ولده ما  لا يضره، لأن الله سمى بيته بيتاً للإنسان</font><font color="black">»</font><font color="#0000CC">[11]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> ويُجاب عن هذا الاستدلال بما نقله الإمام القرطبي في تفسيره قال: </font>  <font color="black">«</font><font color="black">وعارض  بعضهم هذا القول فقال: هذا تَحَكُّمٌ على كتاب الله تعالى؛ بل الأولى في الظاهر ألا  يكون الابن مُخَالِفاً لهؤلاء، وليس الاحتجاج بما رُوِيَ عن النبي صلى الله عليه  وسلم  (أنت ومالك لأبيك) بِقَوِيٍّ لِوَهْي هذا الحديث، وأَنَّهُ لَوْ صَحَّ لَمْ  تَكُنْ فِيهِ حُجَّةٌ، إذ قد يكون النبي صلى الله عليه وسلم  عَلِمَ أَنَّ مَالَ  ذلك المخاطب لأبيه. وقد قيل: إن المعنى: أنت لأبيك، ومالك مبتدأ، أي ومالك لك.  والقاطع لهذا التوارث بين الأب والابن</font><font color="#0000CC">[12]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#C00000"> القول الثاني:</font><font color="black">  ذهب جمهور الفقهاء (أبو حنيفة، ومالك، والشافعي) إلى أنه ليس للوالد أن يأخذ من مال  ولده إلَّا بقدر حاجته، وذهب بعضهم إلى تضعيف الحديث، ومَن صححه منهم لم يأخذ  بظاهره، وادعى الإمام ابن حزم أنه منسوخ، وفيما يلي طائفة من أقوالهم:<br />
+ قال الإمام الشافعي: </font> <font color="black">«</font><font color="black">لا  يَثبت عن النبي، فإن الله لـمَّا فرض للأب ميراثه من ابنه فجعله كوارث غيره، وقد  يكون أنقص حظاً من كثير من الورثة: دلَّ ذلك على أن ابنه مالك للمال دونه</font><font color="black">»</font><font color="#0000CC">[13]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وقال الخطابي معنى الحديث: </font> <font color="black">«</font><font color="black">إذا  احتاج إلى مالك أخذ منك قدر الحاجة، كما يأخذ من مال نفسه، وإذا لم يكن لك مال وكان  لك كسْب لزمك أن تكتسب وتنفق عليه، فأما أن يكون أراد به إباحةَ ماله حتى يجتاحه  ويأتي عليه، لا على هذا الوجه، فلا أعلم أحداً ذهب إليه من الفقهاء</font><font color="#0000CC">[14]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وللإمام بن عبد البر كلام قريب من هذا ختمه بقوله: </font>  <font color="black">«</font><font color="black">هذا  ليس على التمليك ولكنه على البر به والإكرام له</font><font color="black">»</font><font color="#0000CC">[15]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black">  وقد ناقش أبو جعفر الطحاوي هذه المسألة تحت (بَابُ الْوَالِدِ هَلْ يَمْلِكُ مَالَ  وَلَدِهِ أَمْ لَا؟) فقال: </font> <font color="black">«</font><font color="black">ذهب  قوم إلى أن ما كسبه الابن من مال فهو لأبيه واحتجوا في ذلك بجملة من الآثار.  وخالفهم في ذلك آخرون فقالوا: ما كسب الابن من شيء فهو له خاصة دون أبيه</font><font color="black">»</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> - وقول النبي صلى الله عليه وسلم  هذا، لا يعني تمليك الأب كسب الابن، وإنما هو على  أنه لا ينبغي للابن أن يخالف الأب في شيء من ذلك، وأن يكون أمره فيه نافذاً كأمره  فيما يملك. ألا تراه يقول: </font> <font color="black">«</font><font color="black">أنت  ومالك لأبيك</font><font color="black">»</font><font color="black">  فلم يكن الابن مملوكا لأبيه بإضافة النبي صلى الله عليه وسلم  إيَّاه، فكذلك لا  يكون مالكاً لماله بإضافة النبي صلى الله عليه وسلم  إليه.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> - وقد ورد أن رسول الله صلى الله عليه وسلم  حَرَّم أموال المسلمين كما حَرَّم  دماءهم، ولم يستثن في ذلك والداً ولا غيره. فكما لا يحل أبدان الأبناء للآباء إلا  بالحقوق الواجبة فكذلك لا يحل لهم أموالهم إلا بالحقوق الواجبة</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> - قوله تعالى <b>{وَلأَبَوَيْهِ لِكُلِّ وَاحِدٍ مِّنْهُمَا السُّدُسُ} [النساء:  ١١]</b>، فورَّث الله عز وجل غير الوالد من مال الابن، فاستحال أن يكون المال للأب  في حياة الابن ثم يصير بعضه لغير الأب</font><font color="#0000CC">[16]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black">  وذهب ابن حزم الأندلسي إلى أن الحديث صحيح لكنه منسوخ بآيات المواريث وغيرها،  فقال: </font> <font color="black">«</font><font color="black">وهذا  الخبر منسوخ لا شك فيه؛ لأن الله عز وجل حكم بميراث الأبوين، والزوج، والزوجة،  والبنين، والبنات، من مال الولد إذا مات... فصحَّ أن مال الولد له بيقين، لا  لأبويه، ولا حق لهما فيه إلا ما جاء به النص مما ذكرنا: من الأكل، أو عند الحاجة  فقط. ولو كان مال الولد للوالد لما ورثت زوجة الولد، ولا زوج البنت، ولا أولادهما  من ذلك شيئاً، لأنه مال لإنسان حي</font><font color="#0000CC">[17]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> ولم يأتِ ابن حزم بدليل يدل على النسخ.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <b> <font color="#FBAD1D"> الترجيح:</font></b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> الذي يظهر لي - والله أعلم - أن الحديث ضعيف لا يثبت عن النبي صلى الله عليه وسلم ،  كما قال الشافعي وغيره، فقد ورد من طرق إما مرسلة لا تقوم بها حجة، وإما ضعيفة لا  تعتضد ببعضها.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> كما أن ظاهره يتعارض مع أصل ثابت من أصول الشريعة، وهو أن المالك البالغ العاقل  يتصرف بماله، وليس لأحد التصرف فيه بغير إذنه. وإذا ثبت ضعف الحديث ومخالفته لأصل  من أصول الشريعة فلا حاجة لتأويله.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> إن جمهور العلماء الذي قبلوا الحديث فسَّروه بما يتماشى مع مكارم الأخلاق ولا  يتعارض مع أصول الشريعة، وقد ذَكَرتُ كلام بعضهم، وأختِم بكلامٍ لابن حِبَّان  البُستي (المتوفى: 354هـ) قال رحمه الله: </font>  <font color="black">«</font><font color="black">ذِكْرُ  خَبَرٍ أَوْهَمَ مَنْ لَمْ يُحْكِمْ صِنَاعَةَ الْعِلْمِ أَنَّ مالَ الِابْنِ يكون  لِلْأَبِ</font><font color="black">»</font><font color="black">  وبعد أن ساق الحديث بسنده قال: </font> <font color="black">«</font><font color="black">معناه  أنه صلى الله عليه وسلم  زجر عن معاملته أباه بما يعاملُ به الأجنبيين، وأمره ببره  والرفق به في القول والفعل معاً، إلى أَنْ يَصِلَ إِلَيْهِ مَالُهُ، فقال له: </font> <font color="black">«</font><font color="black">أنت  ومالك لأبيك</font><font color="black">»</font><font color="black">  لا أن مال الابن يملكه الأبُ في حياته عن غير طيب نفس من الابن به</font><font color="black">»</font><font color="#0000CC">[18]</font><font color="black">.</font></font></span><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">  <br />
+  </font></span><br />
+<br />
+<br />
+<br />
+<div style="text-align: left;"><div style="text-align: right;"><span style="font-family: Droid Arabic Naskh"><hr /></span></div></div><br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [1] أخرجه أحمد في المسند (6902)، وابن ماجة (2292)، وابن حبان (410).</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [2] فتح الباري لابن حجر (5/ 211).</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [3] نيل الأوطار للشوكاني (6/ 17).</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [4] الرسالة للشافعي (1/ 469)، التلخيص الحبير (3/ 401).</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [5] تفسير القرطبي (12/ 314).</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [6] مجموع الفتاوى (34/ 102)، نيل الأوطار (6/ 17).</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [7] المغني لابن قدامة (6/ 61).</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [8] التحبير لإيضاح معاني التيسير (1/ 436).</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [9] أخرجه أبو داود (3528)، والترمذي (1408)، وابن ماجة (2290).</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [10] تفسير ابن كثير (6/ 85).</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [11] تفسير السعدي (ص575).</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [12] تفسير القرطبي (12/ 314).</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [13] الرسالة للشافعي (1/ 469).</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [14] معالم السنن (3/ 166) ونقله ابن الأثير في النهاية في غريب الحديث والأثر (1/  311).</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [15] الاستذكار (7/ 525).</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [16] شرح معاني الآثار (4/ 158).</font></font></span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [17] المحلى بالآثار (6/ 389).</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [18] صحيح ابن حبان (2/ 143).</font><br />
+</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_983168" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_983168" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=983168" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_983168" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=198874&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=198874#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">لوحة التحكم</a></li>
+		<li><a href="private.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الاشتراكات</a></li>
+		<li><a href="online.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=198865&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">لا إله إلا أنت سبحانك إني كنت من الظالمين</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=198881&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">توحيد الألوهية</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A3%D9%86%D8%AA">أنت</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%AD%D8%AF%D9%8A%D8%AB">حديث</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D9%81%D9%8A">في</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D9%82%D8%B1%D8%A7%D8%A1%D8%A9">قراءة</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D9%84%D8%A3%D8%A8%D9%8A%D9%83">لأبيك</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D9%88%D9%85%D8%A7%D9%84%D9%83">ومالك</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=198874#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=198874#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">01:39 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

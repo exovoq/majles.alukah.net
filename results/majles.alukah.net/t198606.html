@@ -1,0 +1,1755 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=696d1a7d9adaea36633b28fa7c3827c1&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=198606";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="الأول, العدو" />
+	<meta name="description" content="العدو الأول! (1-3) 
+ 
+ 
+                                          . فايز بن سعيد  الزهراني                                       
+ 
+ 
+ 
+ 
+ 
+في خضم التعقيبات القرآنية على غزوة أحد وما حملته تلك التعقيبات من توجيهات وتربية  وتحليل وتقويم، التفت القرآن إلى أمر قد يخفى على المسلمين؛ وهو الأثر السلبي  للشيطان في الصراع بين أهل الإسلام وعدوهم، وذلك حين قال تعالى: {إنَّ الَّذِينَ  تَوَلَّوْا مِنكُمْ يَوْمَ الْتَقَى الْـجَمْعَانِ إنَّمَا اسْتَزَلَّهُمُ  الشَّيْطَانُ بِبَعْضِ مَا كَسَبُوا وَلَقَدْ عَفَا" />
+
+	<title> العدو الأول!</title>
+	<link rel="canonical" href="showthread.php?t=198606&s=696d1a7d9adaea36633b28fa7c3827c1" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=696d1a7d9adaea36633b28fa7c3827c1 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=696d1a7d9adaea36633b28fa7c3827c1">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> العدو الأول!</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=696d1a7d9adaea36633b28fa7c3827c1&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 2 من 2
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=198606&s=696d1a7d9adaea36633b28fa7c3827c1" title="تحديث الصفحة">العدو الأول!</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=198606" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;t=198606&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=addsubscription&amp;t=198606" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;search_type=1&amp;searchthreadid=198606&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="198606" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_982345">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2022-09-25,&nbsp;<span class="time">01:47 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post982345" href="showthread.php?t=198606&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=982345#post982345" class="postcounter">#1</a><a id="postcount982345" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,746</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> العدو الأول!
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_982345">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><b><b><font size="6"><font color="#800000"><span style="font-family: arabic typesetting">العدو الأول! (1-3)</span><br />
+</font></font></b></b><br />
+<br />
+<b><font size="6"><font color="#800000"><span style="font-family: arabic typesetting">                                          . فايز بن سعيد  الزهراني                                      </span></font></font></b><br />
+<br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="black">في خضم التعقيبات القرآنية على غزوة أحد وما حملته تلك التعقيبات من توجيهات وتربية  وتحليل وتقويم، التفت القرآن إلى أمر قد يخفى على المسلمين؛ وهو الأثر السلبي  للشيطان في الصراع بين أهل الإسلام وعدوهم، وذلك حين قال تعالى: {إنَّ الَّذِينَ  تَوَلَّوْا مِنكُمْ يَوْمَ الْتَقَى الْـجَمْعَانِ إنَّمَا اسْتَزَلَّهُمُ  الشَّيْطَانُ بِبَعْضِ مَا كَسَبُوا وَلَقَدْ عَفَا اللَّهُ عَنْهُمْ إنَّ اللَّهَ  غَفُورٌ حَلِيمٌ} [آل عمران: </font> <font color="black"> 155</font><font color="black">]  قال ابن عاشور: </font> <font color="black">«</font><font color="black">استئنافٌ  لبيان سبب الهزيمة الخفي، وهي استزلال الشيطان إياهم، واستزلهم بمعنى أزلهم أي  جعلهم زالين، والمراد بالزلل الانهزام، وإطلاق الزلل عليه معلوم مشهور كإطلاق ثبات  القدم على ضده وهو النصر، والباء في {بِبَعْضِ مَا كَسَبُوا} للسببية، وأريد ببعض  ما كسبوا: مفارقة موقفهم، وعصيان أمر الرسول، والتنازع، والتعجيل إلى الغنيمة.  والمعنى: أنَّ ما أصابهم كان من آثار الشيطان، رماهم فيه ببعض ما كسبوا من صنيعهم</font><font color="black">»</font><font color="#0000CC">[1]</font><font color="black">. </font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> فتأمل حضور الشيطان في المواقف المهمة والأحداث الكبرى، وبذلَه كلَّ طاقته ووسعه في  استزلال المؤمنين وهزيمتهم وإيقاعهم، ووقوفه الدائم في صف المشركين وأعداء الله  تعالى؛ فهو حليفهم ووليهم ومرشدهم. هذا هو دأب الشيطان وبذلُه، وهذه عداوته للذين  آمنوا.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> ولذلك وجب على المؤمن - وهو مشتغل بتزكية نفسه - أنْ يعرف عدوه إبليس وأنْ يعلم  تاريخه ومسالكه وحبائله، قال أبو الدرداء رضي الله عنـه: </font>  <font color="black">«</font><font color="black">إنَّ  مِن فقه العبد أنْ يعلم نزغات الشيطان أنى تأتيه</font><font color="black">»</font><font color="#0000CC">[2]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وقد لاحظ ابن القيم رحمه الله اعتناء المتأخرين من فقهاء التربية بمعالجة مسائل  النفس أكثر من اعتنائهم بمعالجة مسائل الشيطان، وسجل هذه الملاحظة في كتابه الفريد  (إغاثة اللهفان) فقال في باب علاج مرض القلب بالشيطان: </font>  <font color="black">«</font><font color="black">هذا  الباب من أهم أبواب الكتاب وأعظمها نفعاً، والمتأخرون من أرباب السلوك لم يعتنوا به  اعتناءهم بذكر النفس وعيوبها وآفاتها، فإنهم توسعوا في ذلك، وقصروا في هذا الباب. </font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> ومَن تأمل القرآن والسنة وجدَ اعتناءهما بذكر الشيطان وكيده ومحاربته أكثر من ذكر  النفس، فإنَّ النفس المذمومة ذكرت في قوله: {وَمَا أُبَرِّئُ نَفْسِي إنَّ  النَّفْسَ لأَمَّارَةٌ بِالسُّوءِ إلَّا مَا رَحِمَ رَبِّي إنَّ رَبِّي غَفُورٌ  رَّحِيمٌ} [يوسف: </font> <font color="black">53</font><font color="black">]،  واللوامة في قوله: {وَلا أُقْسِمُ بِالنَّفْسِ اللَّوَّامَةِ} [القيامة: ٢]، وذكرت  النفس المذمومة في قوله: {وَنَهَى النَّفْسَ عَنِ الْهَوَى} [النازعات: </font>  <font color="black">40</font><font color="black">].</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وأما الشيطان فذُكر في عدة مواضع، وأفردت له سورة تامة. فتحذير الرب تعالى لعباده  منه جاء أكثر من تحذيره من النفس، وهذا هو الذي لا ينبغي غيره، فإنَّ شر النفس  وفسادها ينشأ من وسوسته، فهي مَرْكِبه وموضع شرِّه ومحل طاعته، وقد أمر الله سبحانه  بالاستعاذة منه عند قراءة القرآن وغير ذلك، وهذا لشدة الحاجة إلى التعوذ منه، ولم  يأمر بالاستعاذة من النفس في موضع واحد، وإنما جاءت الاستعاذة من شرِّها في خطبة  الحاجة</font><font color="black">»</font><font color="#0000CC">[3]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#776A2B"> إعلان الصراع:</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> لم تكن عداوة الشيطان بسبب مبعث النبي صلى الله عليه وسلم ، وليست مما أحدثه الزمان  في أواخر عمر الدنيا؛ وإنما هي قَدَر بدأ منذ بدء الخليقة، منذ خَلْق أبينا آدمَ  عليه السلام، وبعد أنْ قضى الله تعالى أنْ يكون هو وذريته خلفاء الأرض وبعد أنْ  علَّمه الله تعالى الأسماء كلها وأسجد له الملائكة تشريفاً وتكريماً.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> لقد كانت تلك الساعة موعداً لإطلاق أكبر حملة عداوة عرفها التاريخ؛ إذ أعلن إبليس  عداوته الحقيقية لآدم وذريته جميعاً إلى قيام الساعة، العداوة التي سيُسخِّر فيها  كلَّ أدواته وجنوده وذريته، فهو العدو الأول، قال تعالى: {وَإذْ قُلْنَا  لِلْمَلائِكَةِ اسْجُدُوا لآدَمَ فَسَجَدُوا إلَّا إبْلِيسَ قَالَ أَأَسْجُدُ  لِـمَنْ خَلَقْتَ طِينًا </font> <font color="black">61</font><font color="black">  قَالَ أَرَأَيْتَكَ هَذَا الَّذِي كَرَّمْتَ عَلَيَّ لَئِنْ أَخَّرْتَنِ إلَى  يَوْمِ الْقِيَامَةِ لأَحْتَنِكَنَّ ذُرِّيَّتَهُ إلَّا قَلِيلًا} [الإسراء: </font>  <font color="black">61</font><font color="black">  - </font> <font color="black">62</font><font color="black">].  ومعنى لأحتنكن: لأستوليَن عليهم، ولأستأصلنهم، ولأستميلنهم</font><font color="#0000CC">[4]</font><font color="black">.  وقد ثنَّى القرآن ذكر هذه الحادثة في عدد من السور وعدد من السياقات، للتأكيد على  أهمية العلم بعداوة الشيطان لبني آدم وأسبابها ونتائجها، وليكون الناس على بيِّنة  من الوظيفة التي اتخذها الشيطان لنفسه وذريته في هذه الدنيا، حتى لا ينخدعوا  بألاعيبه ولا ينقادوا لوسواسه ولا يتخذوه ولياً من دون الله تعالى، قال الله عز  وجل: {وَإذْ قُلْنَا لِلْمَلائِكَةِ اسْجُدُوا لآدَمَ فَسَجَدُوا إلَّا إبْلِيسَ  كَانَ مِنَ الْـجِنِّ فَفَسَقَ عَنْ أَمْرِ رَبِّهِ أَفَتَتَّخِذُون  َهُ  وَذُرِّيَّتَهُ أَوْلِيَاءَ مِن دُونِي وَهُمْ لَكُمْ عَدُوٌّ بِئْسَ  لِلظَّالِـمِينَ بَدَلًا} [الكهف: </font>  <font color="black">50</font><font color="black">].</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> قال ابن القيم: </font> <font color="black">«</font><font color="black">فتأمل  ما تحت هذا الخطاب الذي يسلب الأرواح حلاوة وعقاباً وجلالة وتهديداً، كيف صدَّره  بإخبارنا أنه أمر إبليس بالسجود لأبينا، فأبى ذلك، فطرده ولعنه وعاداه من أجل إبائه  عن السجود لأبينا، ثم أنتم توالونه من دوني وقد لعنته وطردته إذ لم يسجد لأبيكم،  وجعلته عدواً لكم ولأبيكم، فواليتموه وتركتموني؛ أفليس هذا من أعظم الغبن وأشد  الحسرة عليكم</font><font color="black">»</font><font color="#0000CC">[5]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> ثم إنَّ آدم عليه السلام بعد أنْ نزل إلى الأرض هو وزوجه حواء نشأت ذريته على توحيد  الله وعبادته واتقاء سخطه وحرماته، ولم يتمكن الشيطان من إيقاعهم في حبائل الشرك  بالله، لكنه استطاع أنْ يوقعهم في التحريش والقتل، فوقعت حادثة القربان بين ابنَي  آدم قابيل وهابيل، فأغرى الشيطان قابيل بقتل أخيه فقتله، فكانت أوَّلَ حادثة قتل في  بني آدم، قال الله تعالى: {فَطَوَّعَتْ لَهُ نَفْسُهُ قَتْلَ أَخِيهِ فَقَتَلَهُ  فَأَصْبَحَ مِنَ الْـخَاسِرِينَ} [المائدة: ٠٣]. قال ابن جريج: </font>  <font color="black">«</font><font color="black">ابن  آدم الذي قتل صاحبه لم يدرِ كيف يقتله، فتمثل إبليس له في هيئة طير، فأخذ طيراً  فقصع رأسه، ثم وضعه بين حجرين فشدخ رأسه، فعلَّمه القتل</font><font color="black">»</font><font color="#0000CC">[6]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وعاش الناس بعد آدم على توحيد الله بالعبادة عشرة قرون، حتى جاء الشيطان بحيلة  ليصرف الناس عن عبادة الله وحده إلى عبادة ما سواه، وقد ذكر لنا القرآن أسماء هذه  المعبودات، وهي تماثيل صورت على هيئة عدد من الصلحاء والعُباد، وذكر لنا تواصي  القوم بعبادتها والعكوف عليها والدفاع عنها وعدم تركها وذلك حين أرسل إليهم نوحاً  عليه السلام ليردهم عنها إلى عبادة الله وحده، فقال تعالى: {وَقَالُوا لا تَذَرُنَّ  آلِهَتَكُمْ وَلا تَذَرُنَّ وَدًّا وَلا سُوَاعًا وَلا يَغُوثَ وَيَعُوقَ  وَنَسْرًا} [نوح: </font> <font color="black">23</font><font color="black">].  قال محمد بن كعب: </font> <font color="black">«</font><font color="black">هذه  أسماء قوم صالحين كانوا بين آدم ونوح، فلما ماتوا كان لهـم أتباع يقتدون بهم  ويأخـذون بعدهم بأخذهم في العبادة، فجاءهم إبليس وقال لهم: لو صورتم صورهم كان أنشط  لكم وأشوق إلى العبادة. ففعلوا، ثم نشأ قوم بعدهم، فقال لهم إبليس: إنَّ الذين من  قبلكم كانوا يعبدونهم. فعبدوهم، فابتداء عبادة الأوثان كان من ذلك</font><font color="black">»</font><font color="#0000CC">[7]</font><font color="black">. </font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> هكذا بدأ الصراع بين الرسل والشيطان، بين ما جاءت به الرسل من الحق وما جاءت به  الشياطين من الباطل، واستمر هذا الصراع مخترقاً حُجُب التاريخ ومتخطياً حواجز  الزمان والمكان، ولن يقف هذا الصراع إلا حين يقضي الله بين الخلائق يوم القيامة،  وحينها تكون للشيطان آخر كلمة يقولها لأتباعه وجنده، كما أخبرنا المولى سبحانه في  قوله: {وَقَالَ الشَّيْطَانُ لَـمَّا قُضِيَ الأَمْرُ إنَّ اللَّهَ وَعَدَكُمْ  وَعْدَ الْـحَقِّ وَوَعَدتُّكُمْ فَأَخْلَفْتُكُم  ْ وَمَا كَانَ لِيَ عَلَيْكُم مِّن  سُلْطَانٍ إلَّا أَن دَعَوْتُكُمْ فَاسْتَجَبْتُمْ لِي فَلا تَلُومُونِي وَلُومُوا  أَنفُسَكُم مَّا أَنَا بِمُصْرِخِكُمْ وَمَا أَنتُم بِمُصْرِخِيَّ إنِّي كَفَرْتُ  بِمَا أَشْرَكْتُمُونِ  ي مِن قَبْلُ إنَّ الظَّالِـمِينَ لَهُمْ عَذَابٌ أَلِيمٌ}  [إبراهيم: ٢٢].</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> ثم إنَّ الله تعالى أذن - وهو الحكيم الخبير - أنْ يكون لكل إنسان شيطان يلازمه،  ليصده عن دين الله، في سياق العداوة والصراع بين الشيطان وبني آدم، ليتم قَدَر الله  كما أراد سبحانه، وليبتلي الله الناس جميعاً بعدوهم الحقيقي؛ فعن عبد الله بن مسعود  رضي الله عنه قال: قال رسول الله صلى الله عليه وسلم : </font>  <font color="black">«</font><font color="black">ما  منكم من أحد إلا وقد وكل به قرينه من الجن</font><font color="black">»</font><font color="black">  قالوا: وإياك يا رسول الله؟ قال: </font>  <font color="black">«</font><font color="black">وإياي،  إلا أنَّ الله أعانني عليه فأسلم، فلا يأمرني إلا بخير</font><font color="black">»</font><font color="#0000CC">[8]</font><font color="black">،  فالإنسان معرَّض لخطر الشيطان إنْ لم يتنبه ويكن على حذر من عدوه، قال ابن كثير في  الوسواس الخناس: </font> <font color="black">«</font><font color="black">هو  الشيطان الموكل بالإنسان، فإنه ما من أحد من بني آدم إلا وله قرين يزيِّن له  الفواحش، ولا يألوه جهداً في الخبال، والمعصوم من عصم الله</font><font color="black">»</font><font color="#0000CC">[9]</font><font color="black">.  فتأمل - أيها المبارك - كيف يسخِّر هذا العدو الملاصق لنا حياته وجهده وقوَّته  وذريته في تدمير الإنسان وإيمان هذا الإنسان وحياة هذا الإنسان.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#776A2B"> المسالك الشيطانية:</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> والقرآن الذي جعله الله تعالى هداية لنا في كل شيء بصَّرنا بالطرق والمسالك التي  يتخذها إبليس وذريته وجنوده في عداوة الناس، وبيَّنت السنة تفصيل ذلك، واجتهد  العلماء في شرح ذلك، ليكون الناس على حذر منه، فإنه عدوهم الأول والأبدي، ومن ذلك:</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> أولاً: </font> <font color="#D12229"> الوسوسة</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> والوسوسة حديثٌ يلقيه الشيطان في قلب الإنسان</font><font color="#0000CC">[10]</font><font color="black">.  قال ابن عطية: </font> <font color="black">«</font><font color="black">الوسوسة  الحديث في اختفاء همساً وسراراً من الصوت، والوسواس صوت الحلي فشبه الهمس به، وسمي  إلقاء الشيطان في نفس ابن آدم وسوسة إذ هي أبلغ السرار وأخفاه؛ هذا حال الشيطان  معنا الآن، وأما مع آدم فممكن أنْ تكون وسوسة بمجاورة خفية أو بإلقاء في نفس، ومن  ذلك قول رؤبة: وسوس يدعو جاهراً رب الفلق</font><font color="black">»</font><font color="#0000CC">[11]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وهذا الحديث الشيطاني يلقيه الشيطان في قلوب بني آدم على شكل خاطرة أو فكرة ثم  يتحول بعد معالجات نفسية إلى عمل لا يرضي الله تعالى، وقد رصد فقهاء التربية  الإسلامية تلك المعالجات ومراحل تطوُّرها، قال ابن القيم: </font>  <font color="black">«</font><font color="black">مبدأ  كل علم نظري وعمل اختياري هو الخواطر والأفكار فإنها توجب التصورات، والتصورات تدعو  إلى الإيرادات، والإيرادات تقتضي وقوع الفعـل، وكثرة تكراره تعطي العادة، فصلاح هذه  المراتب بصلاح الخواطر والأفكار، وفسادها بفسادها</font><font color="black">»</font><font color="#0000CC">[12]</font><font color="black">.  ولهذا أمرنا الله تعالى بالاستعاذة به من شر هذه الخواطر والأفكار التي يلقيها  الشيطان في قلوبنا ويحدِّث بها نفوسنا، قال تعالى: {قُلْ أَعُوذُ بِرَبِّ النَّاسِ </font> <font color="black">1</font><font color="black">  مَلِكِ النَّاسِ </font> <font color="black">2</font><font color="black">  إلَهِ النَّاسِ </font> <font color="black">3</font><font color="black">  مِن شَرِّ الْوَسْوَاسِ الْـخَنَّاسِ </font>  <font color="black">4 </font> <font color="black"> الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ </font>  <font color="black">5</font><font color="black">  مِنَ الْـجِنَّةِ وَالنَّاسِ} [الناس: ١ - ٦].</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> لكن الوسوسة الشيطانية ليست في اتجاهٍ واحد، بل تتعدد اتجاهاتها، وتتنوع أغراضها،  وإنَّ على المسلم أنْ يعلمها - كما نبه على ذلك أبو الدرداء رضي الله عنه - ليكون  على حذر منها، فمن تلك الوسوسة:</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#D12229"> إلقاء الشُّبَه المفضية إلى الكفر: </font> <font color="black"> عن ابن عباس رضي الله عنهما قال: جاء رجل إلى النبي صلى الله عليه وسلم  فقال: يا  رسول الله! إنَّ أحدنا يجد في نفسه، يُعرِّضُ بالشيء لأنْ يكون حُمَمَةً أحب إليه  من أنْ يتكلم به. فقال: </font> <font color="black">«</font><font color="black">الله  أكبر، الله أكبر، الحمد لله الذي رد كيده إلى الوسوسة</font><font color="black">»</font><font color="#0000CC">[13]</font><font color="black">.  بل يصل الشيطان في تسلسل هذه الأفكار إلى السؤال عن الخالق سبحانه، كما قال النبي  صلى الله عليه وسلم : </font> <font color="black">«</font><font color="black">يأتي  الشيطان أحدكم فيقول: من خلق كذا؟ من خلق كذا؟ حتى يقول: من خلق ربَك؟ فإذا بلغه  فليستعذ بالله ولينته</font><font color="black">»</font><font color="#0000CC">[14]</font><font color="black">.  قال ابن رجب: </font> <font color="black">«</font><font color="black">ومما  يدخل في النهي عن التعمق والبحث عنه: أمور الغيب الخبرية التي أمر بالإيمان بها ولم  يبين كيفيتها، وبعضها قد لا يكون له شاهد في هذا العالم المحسوس، فالبحث عن كيفية  ذلك هو مما لا يعني، وهو مما ينهى عنه، وقد يوجب الحيرة والشك، ويرتقي إلى التكذيب</font><font color="black">»</font><font color="#0000CC">[15]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#D12229"> إفساد عبادات الناس وأورادهم:</font><font color="black">  كإلهائهم عن الخشوع في الصلاة، فقد أتى عثمان بن أبي العاص إلى النبي صلى الله عليه  وسلم  فقال: يا رسول الله! إنَّ الشيطان قد حال بيني وبين صلاتي وقراءتي يلبسها  عليَّ، فقال رسول الله صلى الله عليه وسلم : </font>  <font color="black">«</font><font color="black">ذاك  شيطان يقال له خِنزَب، فإذا أحسسته فتعوذ بالله منه، واتفل على يسارك ثلاثاً</font><font color="black">»</font><font color="black">.  قال: ففعلت ذلك فأذهبه الله عني</font><font color="#0000CC">[16]</font><font color="black">.  قال النووي: </font> <font color="black">«</font><font color="black">ومعنى  يلبسها أي يخلطها ويشككني فيها، ومعنى حال بيني وبينها أي نكدني فيها ومنعني  لذَّتها والفراغ للخشوع فيها</font><font color="black">»</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وهذا ليس في الصلاة فقط، بل في جميع العبادات كقراءة القـرآن وذكـر الله تعالى في  مختلف مواضع الذكر والدعاء.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#D12229"> إلهاء العبد عن واجباته الشرعية: </font> <font color="black"> وذلك بالنسيان أو حثه على ما يشغله عنها أو بما هو أقلُّ منها أجراً، وذلك أنَّ  الشيطان يوسوس للإنسان حتى يوقعه في حبائل الدنيا حتى ينسى الله تعالى، قال ابن  رجب: </font> <font color="black">«</font><font color="black">اعلم  أنَّ الإنسان ما دام يأمل الحياة فإنه لا يقطع أمله من الدنيا، وقد لا تسمح نفسه  بالإقلاع عن لذَّاتها وشهواتها من المعاصي وغيرها، ويرجِّيه الشيطان بالتوبة في آخر  عمره، فإذا تيقن الموت وأيس من الحياة، أفاق من سكرته بشهوات الدنيا، فندم حينئذٍ  على تفريطه ندامة يكاد يقتل نفسه، وطلب الرجعة إلى الدنيا ليتوب ويعمل صالحاً، فلا  يجاب إلى شيء من ذلك، فيجتمع عليه سكرة الموت مع حسرة الفوت</font><font color="black">»</font><font color="#0000CC">[17]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> بل إنَّ الشيطان يحاول إفساد عبادة المرء بإشغال فِكره وتلهيته عن روحه، عن أبي  هريرة أنَّ رسول الله صلى الله عليه وسلم  قال: </font>  <font color="black">«</font><font color="black">إذا  نودي للصلاة أدبر الشيطان وله ضراط، حتى لا يسمع التأذين، فإذا قضى النداء أقبل،  حتى إذا ثُوِّب بالصلاة أدبر، حتى إذا قضى التثويب أقبل، حتى يخطر بين المرء ونفسه؛  يقول: اذكر كذا، اذكر كذا؛ لما لم يكن يذكر، حتى يظل الرجل لا يدري كم صلى</font><font color="black">»</font><font color="#0000CC">[18]</font><font color="black">.  فهو يعلم فضائل الأعمال وأجورها، فلذلك لا يريد للعبد أنْ يتحصل عليها ولا يريد له  رفعة في الدرجات، فيقوم بهذه الأدوار الخبيثة لأجل تفويت الأجر على العبد.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> فإنْ لم يفلح الشيطان في ذلك فإنه يسعى جاهداً ليصرف الإنسان عن فواضل الأعمال إلى  مفضولها، وقد قال ابن القيم: </font> <font color="black">«</font><font color="black">فإنْ  أعجزه العبد من هذه المرتبة وكان حافظاً لوقته شحيحاً به نقله إلى المرتبة السادسة،  وهو أنْ يشغله بالعمل المفضول عما هو أفضل منه، ليزيح عنه الفضيلة ويفوته ثواب  العمل الفاضل، فيأمره بفعل الخير المفضول ويحضه عليه ويحسِّنه له إذا تضمن ترك ما  هو أفضل وأعلى منه، وقلَّ من يتنبه لهذا من الناس! فإنه إذا رأى فيه داعياً قوياً  ومحركاً إلى نوع من الطاعة لا يشك أنه طاعة وقربة؛ فإنه لا يكاد يقول إنَّ هذا  الداعي من الشيطان فإنَّ الشيطان لا يأمر بخير، ويرى أنَّ هذا خير، فيقول: هذا  الداعي من الله. وهو معذور، ولم يصل علمه إلى أنَّ الشيطان يأمر بسبعين باباً من  أبواب الخير؛ إما ليتوصل بها إلى باب واحد من الشر؛ وإما ليفوت بها خيراً أعظم من  تلك السبعين باباً وأجلَّ وأفضل</font><font color="black">»</font><font color="#0000CC">[19]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#D12229"> دفعه إلى الغلو والتنطع في العبادات: </font> <font color="black"> ذكر ابن القيم في مكايد الشيطان ما يفعله كثير من الموسوسين في باب الطهارة والوضوء  بعد البول من السلت والفطر والنحنحة والمشي والقفز والحبل والتفقد والجور والحشو  والعصابة والدرجة باعتبارها أمثلة على التنطع في العبادات على سبيل التحوط  والاهتمام</font><font color="#0000CC">[20]</font><font color="black">  كما يعتقد الموسوسون، بينما هي من خديعة الشيطان، كما روي عن النبي صلى الله عليه  وسلم  أنه قال: </font> <font color="black">«</font><font color="black">إنَّ  أحدكم إذا كان في الصلاة جاء الشيطان، فأَبَسَ به كما يأْبِس الرجل بدابته، فإذا  سكن له أضرط بين أليتيه ليفتنه عن صلاته، فإذا وجد أحدكم شيئاً من ذلك، فلا ينصرف  حتى يسمع صوتاً، أو يجد ريحاً لا يشك فيه</font><font color="black">»</font><font color="#0000CC">[21]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> تزيين السيئ من الأعمال والأفكار في نظر العبد: وقد أشار القرآن إلى هذا مراراً،  قال تعالى: {فَلَوْلا إذْ جَاءَهُم بَأْسُنَا تَضَرَّعُوا وَلَكِن قَسَتْ  قُلُوبُهُمْ وَزَيَّنَ لَهُمُ الشَّيْطَانُ مَا كَانُوا يَعْمَلُونَ} [الأنعام: </font> <font color="black">43</font><font color="black">].  وقال تعالى: {تَاللَّهِ لَقَدْ أَرْسَلْنَا إلَى أُمَمٍ مِّن قَبْلِكَ فَزَيَّنَ  لَهُمُ الشَّيْطَانُ أَعْمَالَهُمْ فَهُوَ وَلِيُّهُمُ الْيَوْمَ وَلَهُمْ عَذَابٌ  أَلِيمٌ} [النحل: </font> <font color="black">63</font><font color="black">].</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> قال ابن القيم: </font> <font color="black">«</font><font color="black">فالبلاء  مركَّب من تزيين الشيطان وجهل النفس، فإنه يزين لها السيئات ويريها أنها في صور  المنافع واللذات والطيبات، ويُغفلها عن مطالعتها لمضرتها، فتولَد من بين هذا  التزيين وهذا الإغفال والإنساء لها إرادة وشهوة، ثم يمدها بأنواع التزيين، فلا يزال  يقوى حتى يصير عزماً جازماً يقترن به الفعل، كما زين للأبوين الأكل من الشجرة  وأغفلهما عن مطالعة مضرة المعصية</font><font color="black">»</font><font color="#0000CC">[22]</font><font color="black">. </font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#D12229"> التحريش بين الناس وزرع الفرقة بينهم: </font> <font color="black">  قال الله تعالى: {وَقُل لِّعِبَادِي يَقُولُوا الَّتِي هِيَ أَحْسَنُ إنَّ  الشَّيْطَانَ يَنزَغُ بَيْنَهُمْ إنَّ الشَّيْطَانَ كَانَ لِلإنسَانِ عَدُوًّا  مُّبيِنًا} [الإسراء: </font> <font color="black">53</font><font color="black">].  عن جابر بن عبد الله رضي الله عنهما قال: سمعت النبي صلى الله عليه وسلم  يقول: </font> <font color="black">«</font><font color="black">إنَّ  الشيطان قد أيس أنْ يعبده المصلُّون في جزيرة العرب، ولكن في التحريش بينهم</font><font color="black">»</font><font color="black">،  وفي الحديث الآخر عنه: </font> <font color="black">«</font><font color="black">إنَّ  عرش إبليس على البحر، فيبعث سراياه فيفتنون الناس، فأعظمهم عنده أعظمهم فتنة</font><font color="black">»</font><font color="#0000CC">[23]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وهذا التحريش يصنع العداوات والخصومات في الأمة المسلمة، فتضعف قوَّتها، ويطمع فيها  أعداؤها، وتكون أقرب إلى الضلالة والانحراف منها حين تكون مجتمعة متآلفة، ذلك أنَّ  قوة الأمة وتماسكها طريق إلى الاستقامة العامة، وهذا ما يسعى الشيطان إلى ضده.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وسواء كان هذا التحريش بين الدول أم المجتمعات أم العشائر أم بين طلبة العلم  والدعاة والمصلحين أم كان بين أهل الصنائع والتجارة أم كان بين أهل البيت من والدين  وأبناء وأزواج.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> ولذلك فإنَّ مِن أحبِّ أعمال جنود إبليس إليه: التفريق بين الزوجين، لِـمَا له من  أثر بالغ في ضعف الأمة، فإنَّ انهيار البيوت الزوجية يفضي إلى الضعف العام في  الأمة، إضافة إلى ما يورثه من انخفاض مستوى التدين في الناس، عن جابر بن عبد الله  قال: سمعت النبي صلى الله عليه وسلم  يقول: </font>  <font color="black">«</font><font color="black">إنَّ  إبليس يضع عرشه على الماء، ثم يبعث سراياه، فأدناهم منه منزلة أعظمهم فتنة، يجيء  أحدهم فيقول: فعلت كذا وكذا، فيقول: ما صنعت شيئاً، قال ثم يجيء أحدهم فيقول: ما  تركته حتى فرقت بينه وبين امرأته، قال: فيدنيه منه ويقول: نعم أنت. قال الأعمش:  أراه قال: فيلتزمه</font><font color="black">»</font><font color="#0000CC">[24]</font><font color="black">.  وكثير من المشكلات الزوجية تنشأ من صغائر الأمور، فيوقد الشيطان تحتها حتى تنضَج  وتتحول إلى فُرقة.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#D12229"> تخويف المؤمنين من تكاليف الإيمان:</font><font color="black">  ومن ذلك الإيعاد بالشرور كما قال الله تعالى: {الشَّيْطَانُ يَعِدُكُمُ الْفَقْرَ  وَيَأْمُرُكُم بِالْفَحْشَاءِ} [البقرة: </font>  <font color="black"> 268</font><font color="black">].  قال ابن عباس: </font> <font color="black">«</font><font color="black">يقول:  لا تنفق مالك، وأمسكه عليك، فإنك تحتاج إليه</font><font color="black">»</font><font color="#0000CC">[25]</font><font color="black">. </font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> إنَّ كثيراً من المبررات التي يوردها الناس في سبيل ترك الطاعات واقتراف المآثم هي  من إيعاد الشيطان وتخويفه، فتارة يخوف من الفقر وقلة المال فيكفُّ الناس عن البذل  والصدقة، وتارة يخوف من القتل فيكفون عن قول الحق وإنكار المنكرات ومجاهدة العدو،  وتارة يخوف من تعرض الذرية للمخاطر فيكفُّ الناس عن التفاؤل والإقدام، وغير ذلك من  دروب التخويف الشيطانية كالتخويف من فوات دنيا أو ضيـاع منصب أو تشويه سمعة. وقد  أخبرنا القرآن عن التخويف من العدو، قال الله تعالى: {إنَّمَا ذَلِكُمُ  الشَّيْطَانُ يُخَوِّفُ أَوْلِيَاءَهُ فَلا تَخَافُوهُمْ وَخَافُونِ إن كُنتُم  مُّؤْمِنِينَ} [آل عمران: </font> <font color="black"> 175</font><font color="black">].</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#D12229"> إعانة المرء على التحايل على أحكام الشريعة: </font> <font color="black"> قال ابن القيم: </font> <font color="black">«</font><font color="black">ومن  مكايده التي كاد بها الإسلام وأهله: الحيل والمكر والخداع الذي يتضمن تحليل ما حرم  الله، وإسقاط ما فرضه، ومضادته في أمره ونهيه، وهي من الرأي الباطل الذي اتفق السلف  على ذمه</font><font color="black">»</font><font color="#0000CC">[26]</font><font color="black">. </font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> فبالحيل تسقط المجتمعات في ارتكاب المحرمات والانحراف عن دين الله تعالى على إثر  فتوى تجيز ذلك، وبها يستسهل الفرد مقارفة الخطايا، وقد كان هذا مذهباً في بني  إسرائيل، وتبعهم في هذه الأمة من تبعهم، تحقيقاً لرغبات الشيطان.</font></font></span><br />
+<br />
+<br />
+<div style="text-align: left;"><div style="text-align: right;"><span style="font-family: Droid Arabic Naskh"><hr /></span></div></div><br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [1] التحرير والتنوير: 4/139 (بتصرف).</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [2] السنة لأبي بكر الخلال، حـ 1585.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [3] إغاثة اللهفان: 1/90.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [4] تفسير الطبري: 14/ 654.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [5] بدائع الفوائد: 2/ 213.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [6] تفسير الطبري: 8/ 338.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [7] معالم التنزيل: 8/ 232.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [8] أخرجه مسلم، حـ 2814.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [9] تفسير ابن كثير: 8/ 539.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [10] تفسير البغوي: 3/ 219.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [11] المحرر الوجيز: 2/384.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [12] الفوائد، ص173.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [13] أخرجه أبو داود، حـ 5112.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [14] أخرجه البخاري، حـ 3276.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [15] جامع العلوم والحكم: 2/172.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [16] أخرجه مسلم، حـ 2203.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC">  [17] لطائف المعارف، ص338.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [18] أخرجه البخاري، حـ 608.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [19] بدائع الفوائد: 2/261.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [20] إغاثة اللهفان: 1/143.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [21] أخرجه أحمد، حـ 8369، وأصله في الصحيحين.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [22] شفاء العليل: 1/171.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [23] أخرجهما مسلم، حـ 2812 -  2813.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [24] أخرجه مسلم، حـ 2814.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [25] تفسير الطبري: 5/ 5.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [26] إغاثة اللهفان: 1/338.</font></font></span><br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_982345" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_982345" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=982345" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_982345" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_982347">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2022-09-25,&nbsp;<span class="time">01:52 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post982347" href="showthread.php?t=198606&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=982347#post982347" class="postcounter">#2</a><a id="postcount982347" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,746</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: العدو الأول!
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_982347">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><b><b><font size="6"><font color="#800000"><span style="font-family: arabic typesetting">العدو الأول! (2-3)</span><br />
+ </font></font></b></b><br />
+ <br />
+ <b><font size="6"><font color="#800000"><span style="font-family: arabic typesetting">                                          . فايز بن سعيد  الزهراني                                      </span></font></font></b><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> ثانياً: </font> <font color="red"> السعي إلى تغيير خلْق الله</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وهذا ما أقسم عليه إبليس اللعين أمام الله عز وجل، كما أخبرنا بذلك كتاب الله، قال  تعالى:  وَلأُضِلَّنَّهُ  مْ وَلأُمَنِّيَنَّ  هُمْ وَلآمُرَنَّهُمْ فَلَيُبَتِّكُنّ  َ  آذَانَ الأَنْعَامِ وَلآمُرَنَّهُمْ فَلَيُغَيِّرُنّ  َ خَلْقَ اللَّهِ وَمَن  يَتَّخِذِ الشَّيْطَانَ وَلِيًّا مِّن دُونِ اللَّهِ فَقَدْ خَسِرَ خُسْرَانًا  مُّبِينًا} [النساء: 199]. فأقسم على أنه سيأمر بعض الناس بتبتيك آذان الأنعام  وتغيير خلق الله.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وللسلف في تغيير خلق الله عبارات مختلفة، تصب جميعها في مشْرع واحد، وهي كما يلي:</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <i> <font color="#D80000"> التغيير في الأجسام:</font></i><font color="black">  بوشمٍ أو خِصاء ونحو ذلك، وهو قول عكرمة وجماعة من المفسرين كابن عباس وأنس بن مالك  والربيع بن أنس</font><font color="#0000CC">[1]</font><font color="black">. </font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وسواء كان التغيير في الأجسام لغرض دنيوي كالزينة في الوشم وتفليج الأسنان والنمص  والوصل، أم كان لغرض تعبدي كتبتيك آذان الأنعام وَفَقْء أعين الحامين؛ فكل ذلك من  أمر الشيطان. وقد وردت في ذلك النصوصُ الواضحة، كقوله تعالى:  وَلآمُرَنَّهُمْ  فَلَيُبَتِّكُنّ  َ آذَانَ الأَنْعَامِ}، وكقوله تعالى: {مَا جَعَلَ اللَّهُ مِنْ  بَحِيرَةٍ وَلا سَائِبَةٍ وَلا وَصِيلَةٍ وَلا حَامٍ وَلَكِنَّ الَّذِينَ كَفَرُوا  يَفْتَرُونَ عَلَى اللَّهِ الْكَذِبَ وَأَكْثَرُهُمْ لا يَعْقِلُونَ} [المائدة:  103]. وكحديث ابن مسعود رضي الله عنه يرفعه، قال: </font>  <font color="black">«</font><font color="black">لعن  الله الواشمات والمستوشمات والمتنمصات والمتفلجات للحسن، المغيرات خلق الله. ما لي  لا ألعن من لعنه رسول الله صلى الله عليه وسلم  وهو في كتاب الله</font><font color="black">»</font><font color="#0000CC">[2]</font><font color="black">.  قال القرطبي: </font> <font color="black">«</font><font color="black">ولم  يختلفوا أنَّ خِصاء بني آدم لا يحل ولا يجوز، لأنه مُثْلةٌ وتغييرٌ لخلق الله  تعالى، وكذلك قطع سائر أعضائهم في غير حدٍّ ولا قَوَد</font><font color="black">»</font><font color="#0000CC">[3]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وتبتيك آذان الأنعام شقُّها وقطعها بقصد التقرب إلى الله تعالى، وهي عادة تعبدية  اخترعتها الجاهلية بوحي من الشيطان، قال الزجاج: </font>  <font color="black">«</font><font color="black">وهذا  في البَحيرة، كانت الجاهلية إذا ولدت الناقةُ خمسةَ أبطن؛ فكان الخامس ذكراً شقوا  أذن الناقة وامتنعوا من الانتفاع بها، ولم تُطرد عن ماء ولا مرعى، وإذا لقيها  المعيي لم يركبها... سوَّلَ لهم إبليس أنَّ في تركها لا يُنْتفَع بها قربة إلى الله</font><font color="black">»</font><font color="#0000CC">[4]</font><font color="black">.  وهذه البدعة المحدثة ابتدعها الخاصة من المشركين وهم الذين تزعموا القيادة الفكرية  والعقدية لعامة المشركين، وهم الذين يفترون على الله الكذب، قال الشوكاني: </font>  <font color="black">«</font><font color="black">وقد  فعل الكفار ذلك امتثالاً لأمر الشيطان واتباعاً لرسمه</font><font color="black">»</font><font color="#0000CC">[5]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> ويشير البيضاوي إلى أنَّ التغيير في الأجسام يشمل التغيير في الشكل والتغيير في  الصفة</font><font color="#0000CC">[6]</font><font color="black">،  فيدخل في المعنى عنده: اللواط والسحاق، وهو ما يصطلح على تسميته في الحضارة الغربية  بالمثلية الجنسية </font> <font color="black"> Homosexuality</font><font color="black">،  والذي تسعى اليوم الهيئات والمؤسسات العالمية إلى تطبيعه وتشــريعه بقــوانين  مدنيـة، والأعظـم من ذلك - والذي يدلك على مدى استجابة البشر للأمر الشيطاني بتغيير  خلق الله - أنْ يصل الإقرار بهذا الشذوذ الجنسي إلى أعلى الدوائر الدينية  الكاثوليكية، إذ تناقلت وكالات الأنباء العالمية في أكتوبر 2020م مقطعاً لبابا  الفاتيكان فرنسيس وهو يدعو إلى إدراج المثلية في القانون المدني للزواج والأسرة</font><font color="#0000CC">[7]</font><font color="black">،  وعلى حدِّ قوله فإنَّ: </font> <font color="black">«</font><font color="black">المثليين  أبناء الله ولا ينبغي نبذهم وطردهم من الدين! وفي وقت سابق من عام 2013م دعت الأمم  المتحدة الدول إلى إلغاء القوانين التي تميز ضد المثليين ومزدوجي الميل الجنسي  ومغايري الهوية الجنسية</font><font color="black">»</font><font color="#0000CC">[8]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وفي حقيقة الأمر فإنَّ خطوات الشيطان سارت بالبشر الذين اتبعوه عبر العصور والقرون  من تبتيك آذان الأنعام إلى تغيير الهوية الجنسية، وما يزال الطريق مفسوحاً لمزيد من  تغيير الخلقة وتشويه النفس الإنسانية.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <i> <font color="#D80000"> تغيير مراد الله من المخلوقات:</font></i> <font color="black"> أي أنَّ الله تعالى خلق الأنعام للركوب والأكل فحرَّموها، وخلق الشمس والقمر  والأحجار لمنفعة العباد فعبدوها من دون الله</font><font color="#0000CC">[9]</font><font color="black">.  ولذلك فإنَّ الشيطان يجعل من نفسه قِبلة للمشركين الذين يسجدون للشمس من دون الله،  وذلك بأنْ يكون في مطلعها ومغربها؛ فعن ابن عمر رضي الله عنهما قال: قال رسول الله  صلى الله عليه وسلم : </font> <font color="black">«</font><font color="black">لا  تحيَّنوا بصلاتكم طلوع الشمس ولا غروبها، فإنها تطلع بين قرني شيطان</font><font color="black">»</font><font color="#0000CC">[10]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <i> <font color="#D80000"> تغيير الدين:</font></i> <font color="black"> وهو قول ابن عباس والحسن ومجاهد وسعيد بن المسيب والضحاك</font><font color="#0000CC">[11]</font><font color="black">،  ومستندهم في ذلك قول الله تعالى: {فَأَقِمْ وَجْهَكَ لِلدِّينِ حَنِيفًا فِطْرَتَ  اللَّهِ الَّتِي فَطَرَ النَّاسَ عَلَيْهَا لا تَبْدِيلَ لِـخَلْقِ اللَّهِ ذَلِكَ  الدِّينُ الْقَيِّمُ وَلَكِنَّ أَكْثَرَ النَّاسِ لا يَعْلَمُونَ} [الروم: 30].</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> قال ابن عاشور: </font> <font color="black">«</font><font color="black">والدين  حقيقته في الأصل: الجزاء، ثم صار حقيقةً عرفية يطلق على مجموع عقائد وأعمال  يلقِّنها رسولٌ من عند الله، ويَعِدُ العاملين بها بالنعيم والمعرضين عنها بالعقاب.  ثم أُطلق على ما يشبه ذلك مما يضعه بعض زعماء الناس من تلقاء عقله فتلتزمه طائفة من  الناس</font><font color="black">»</font><font color="#0000CC">[12]</font><font color="black">.  فالشيطان وعد بتغيير دين الناس الحق وتحويله إلى دين ملفق يصنعه جنوده من أهل الفكر  والزعامات، وهذا معنى مختلف عن معنى الوسوسة، أو قل: هو معنى أشمل، لأنه يترتب عليه  تشريعات وضعية وتنظيمات حياتيه وقواعد أخلاقية يستبدل بها الناس شريعة الله ودينه.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> ثم هو دين لا يتسق مع الفطرة البشرية التي أودعها الله في الإنسان، والتي روعي في  الحفاظ عليها والانسجام معها وتنميتها تشريع الدين الحق، فتنتكس الفطر بالدين الذي  يضعه الشيطان على لسان أوليائه وبسلطة جنوده، أو تتلوث أو تتشوه، لذلك وصف الله  دينه الحق بالفطرة:  {فَأَقِمْ وَجْهَكَ لِلدِّينِ حَنِيفًا فِطْرَتَ اللَّهِ  الَّتِي فَطَرَ النَّاسَ عَلَيْهَا} [الروم: 30]، قال ابن عاشور: </font>  <font color="black">«</font><font color="black">ثم  جعل أُسس هذا الدين متباعدةً عن ذميم العوائد في الأمم، حتى الأمة التي ظهر بينها،  وموافقةً للحق ولو كان قد سبق إليه أعداؤها، وكانت أصولُه مبنيةً على الفطرة، بمعنى  ألا تكون ناظرة إلا إلى ما فيه الصلاح في حكم العقل السليم، غير مأسور للعوائد ولا  للمذاهب. ويدخل في الفطرة: الآداب العتيقة التي اصطلح عليها كافة عقلاء البشر  وارتاضت نفوسهم بها، إذا كانت تفيدهم كمالاً ولا تفضي إلى فساد</font><font color="black">»</font><font color="#0000CC">[13]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وإذا نظرت اليوم إلى ما أحدثته القوى العالمية والهيئات الأممية من تشريعات وأنظمة  وما أحدثته من أخلاق والتزامات يترتب عليها ثواب وعقاب بحسبه فإنك تجدها تصديقاً  لما أخبر الله به عن وعد الشيطان وقسَمه بتغيير الدين، ولا يزال يُحدِث لهذه القوى  والهيئات المزيد من البدع والمزيد من الضلال، حتى أوصل جنده إلى فكرة توحيد الأديان  في العالم عبر ما يعرف اليوم بـمبادرة الأديان المتحدة </font> <font color="black"> URI</font> <font color="#0000CC"> [14]</font><font color="black">.  وهي مبادرة تهدف إلى طمس صورة الإسلام المبنية على الولاء والبراء، والقبول  الوجداني والاعتقادي لكل دين ولكل مذهب ولكل فكرة. وهكذا يسير الشيطان بجنوده  وعساكره خطوة خطوة حتى يصلوا إلى الإلحاد والكفر ونبذ الأديان.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> واختار الطبري القول الثالث - أعني: تغيير الدين - وقال: </font>  <font color="black">«</font><font color="black">وإذا  كان ذلك معناه، دخل في ذلك فعل كلِّ ما نهى الله عنه: من خِصَاءِ ما لا يجوز خصاؤه،  ووشم ما نهى عن وشمه وَوشْرِه، وغير ذلك من المعاصي، ودخل فيه ترك كلِّ ما أمر الله  به</font><font color="black">»</font><font color="#0000CC">[15]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> والبيضاوي يرى الجمع بين هذه المعاني</font><font color="#0000CC">[16]</font><font color="black">،  وكذا البقاعي</font><font color="#0000CC">[17]</font><font color="black">  والسعدي</font><font color="#0000CC">[18]</font><font color="black">  وابن عاشور</font><font color="#0000CC">[19]</font><font color="black">  وغيرهم، قال الشوكاني: </font> <font color="black">«</font><font color="black">ولا  مانع من حمل الآية على جميع هذه الأمور حملاً شمولياً أو بدلياً</font><font color="black">»</font><font color="#0000CC">[20]</font><font color="black">.  وفي حديث عياض بن حمار المجاشعي يرفعه إلى النبي صلى الله عليه وسلم  قال: </font>  <font color="black">«</font><font color="black">ألا  إنَّ ربي أمرني أنْ أعلمكم ما جهلتم مما علمني يومي هذا: كل مال نحلته عبداً حلال،  وإني خلقت عبادي حنفاء كلهم، وإنهم أتتهم الشياطين فاجتالتهم عن دينهم، وحرمتْ  عليهم ما أحللتُ لهم، وأمرَتهم أنْ يشركوا بي ما لم أنزل به سلطاناً</font><font color="#0000CC">[21]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وخلاصة القول أنَّ تغيير خلق الله تعالى هو من مسالك الشيطان في عداوته للإنسان  وإيقاعه في دروب الشقاء والخطيئة، لذلك فإنك تجد كثيرين من البشر ممن أطاعوه  وغيَّروا في خلق الله تعالى ووقعوا في الخسران المبين لأنهم أطاعوه من دون الله،  {وَمَن يَتَّخِذِ الشَّيْطَانَ وَلِيًّا مِّن دُونِ اللَّهِ فَقَدْ خَسِرَ  خُسْرَانًا مُّبِينًا}، وقد ذكر ابن عاشور أنَّ التعقيب بهذه الجملة دال على أنَّ  ما دعاهم إليه الشيطان: </font> <font color="black">«</font><font color="black">من  تبتيك آذان الأنعام، وتغيير خلق الله، إنما دعاهم إليه لما يقتضيه من الدلالة على  استشعارهم بشعاره، والتدين بدعوته، وإلا فإنَّ الشيطان لا ينفعه أنْ يبتك أحد أذن  ناقته، أو أنْ يغير شيئاً من خلقته، إلا إذا كان ذلك للتأثر بدعوته</font><font color="black">»</font><font color="#0000CC">[22]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> ثالثاً: </font> <font color="#D80000"> إفساد المجتمعات بفتنة النساء</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> أدرك الشيطان منذ البداية أنَّ في الطباع البشرية والغرائز الإنسانية مدخلاً مهمّاً  في تحقيق وعده بإضلال بني آدم، فهو الداعية الأكبر للفاحشة وهو إمام الداعين لها،  قال الله تعالى: {يَا أَيُّهَا الَّذِينَ آمَنُوا لا تَتَّبِعُوا خُطُوَاتِ  الشَّيْطَانِ وَمَن يَتَّبِعْ خُطُوَاتِ الشَّيْطَانِ فَإنَّهُ يَأْمُرُ  بِالْفَحْشَاءِ وَالْـمُنكَرِ وَلَوْلا فَضْلُ اللَّهِ عَلَيْكُمْ وَرَحْمَتُهُ مَا  زَكَى مِنكُم مِّنْ أَحَدٍ أَبَدًا وَلَكِنَّ اللَّهَ يُزَكِّي مَن يَشَاءُ}  [النور: 21].</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وقد أخبر النبي صلى الله عليه وسلم  أنَّ الشيطان يصور المرأة في عين الناظر لها  على أحسن هيئة وبما يحرك شهوته تجاهها، حتى لو كانت محجبة محتشمة، لأنه لا يألوا  جهداً في إيقاع الناس في الفواحش؛ فعن جابر رضي الله عنه أنَّ رسول الله صلى الله  عليه وسلم  رأى امرأة، فأتى امرأته زينب فقضى حاجته، ثم خرج إلى أصحابه، فقال: </font> <font color="black">«</font><font color="black">إنَّ  المرأة تُقبل في صورة شيطان، وتدبر في صورة شيطان، فإذا أبصر أحدكم امرأةً فليأتِ  أهله؛ فإنَّ ذلك يردُّ ما في نفسه</font><font color="black">»</font><font color="#0000CC">[23]</font><font color="black">.  وهذا إخبار عن حالة الإبصار من الرجال، لا عن حقيقة المرأة، وفي غرائز الرجال من  الطبيعة ما يدفع نحو هذا التصور، قال ابن الجوزي: </font>  <font color="black">«</font><font color="black">أيْ  إنَّ الشيطان يزين أمرها ويحث عليها. وإنما يقوى ميل الناظر إليها على قدر قوة  شبقه، فإذا جامع أهله قلَّ المحرك وحصل البدل</font><font color="black">»</font><font color="#0000CC">[24]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> ويتجلى هذا المسلك الشيطاني في أمرين عظيمين، يلتقيان تارة ويفترقان تارة أخرى:</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <i> <font color="#D80000"> الإيقاع في الزنا:</font></i> <font color="black"> وقد أذن الله تعالى للشيطان إذناً قدرياً أنْ يظفر بذلك، قال تعالى: {وَشَارِكْهُمْ  فِي الأَمْوَالِ وَالأَوْلادِ} [الإسراء: 64] قال ابن عباس: </font>  <font color="black">«</font><font color="black">أولاد  الزنا</font><font color="black">»</font><font color="#0000CC">[25]</font><font color="black">.  والزنا من أعظم الفواحش، قال تعالى: {وَلا تَقْرَبُوا الزِّنَى إنَّهُ كَانَ  فَاحِشَةً وَسَاءَ سَبِيلًا} [الإسراء: ٢٣]، قال الرازي: </font>  <font color="black">«</font><font color="black">أما  كونه فاحشة فهو إشارة إلى اشتماله على فساد الأنساب الموجبة لخراب العالم، وإلى  اشتماله على التقاتل والتـواثب على الفروج، وهو أيضاً يوجب خراب العالم. وأما المقت  فقد ذكرنا أنَّ الزانية تصير ممقوتة مكروهة، وذلك يوجب عدم حصول السكن والازدواج  وأنْ لا يعتمد الإنسان عليها في شيء من مهماته ومصالحه. وأما أنه ساء سبيلاً فهو ما  ذكرنا أنه لا يبقى فرق بين الإنسان وبين البهائم في عدم اختصاص الذكران بالإناث،  وأيضاً يبقى ذل هذا العمل وعيبه وعاره على المرأة من غير أنْ يصير مجبوراً بشيء من  المنافع</font><font color="black">»</font><font color="#0000CC">[26]</font><font color="black">.  وهذا تلخيص من الرازي لما فصله بعبارات أكثر وضوحاً يحسن الرجوع إليها. والمقصود  أنَّ الشيطان يفسد المجتمعات بإيقاع أفرادها في فاحشة الزنا لِـمَا يترتب عليها من  المفاسد العظيمة؛ فكيف بشيوع الزنا وإباحته في النظم والقوانين تحت مسميات مختلفة  يلتبس فيها الحق بالباطل تارة كالحرية ومفهوم الأسرة العالمي، أو بأسماء بديلة عن  الأسماء الحقيقية تارة كالحمل خارج إطار الزوجية! وغير ذلك من التلاعب بالألفاظ  ونحت المصطلحات التي يضل بها كثير من الناس؛ فكيف بالدعوة إلى حرية الجسد وحرية  الجنس التي تتنادى إليها هيئات أممية ولجان عالمية في محافل كبيرة من مؤتمرات  وندوات؟ وما مؤتمر السكان المتكرر انعقاده إلا دليل على تسلط الشيطان على بعض بني  آدم واعتنائه بهذه المسألة؛ كونها مسلكاً مهمّاً في إفساد المجتمعات وإضلالها  وإبعادها عن صراط الله المستقيم.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <i> <font color="#D80000"> الإيقاع في العشق:</font></i><font color="black">  وهو الإفراط في الحب، وهو الذي دفع امرأة العزيز إلى مراودة نبي الله يوسف عليه  السلام، قال تعالى: {وَقَالَ نِسْوَةٌ فِي الْـمَدِينَةِ امْرَأَةُ الْعَزِيزِ  تُرَاوِدُ فَتَاهَا عَن نَّفْسِهِ قَدْ شَغَفَهَا حُبًّا} [يوسف: 30]. قال  البيضاوي: </font> <font color="black">«</font><font color="black">شقَّ  شغافَ قلبها، وهو حجابه، حتى وصل إلى فؤادها حباً</font><font color="black">»</font><font color="#0000CC">[27]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وبالرغم من أنَّ العاشق لا يكون بالضرورة فاحشاً أو منتهكاً للحرمات، إلا أنَّ  الشيطان قد ظفر منه بتعلُّق القلب بغير الله، وبغير ما أحل الله، لذلك فإنَّ العشق  نوعُ عبودية يصرفها العاشق للمعشوق، قال ابن القيم: </font>  <font color="black">«</font><font color="black">فإنَّ  عشق الصور المحرمة نوع تعبُّد لها، بل هو من أعلى أنواع التعبد، ولا سيما إذا  استولى على القلب وتمكن منه صار تتيماً، والتتيم التعبد، فيصير العاشق عابداً  لمعشوقه، وكثيراً ما يغلب حبه وذكره والشوق إليه والسعي في مرضاته وإيثار محابه على  حب الله وذكره والسعي في مرضاته، فيصير المعشوق هو إلهه من دون الله عز وجل يقدم  رضاه وحبه على رضا الله وحبه، ويتقرب إليه ما لا يتقرب إلى الله، فيصير آثر عنده من  ربه: حباً وخضوعاً وذلاً وسمعاً وطاعة. ولهذا كان العشق والشرك متلازمين؛ وإنما حكى  الله سبحانه العشق عن المشركين</font><font color="black">»</font><font color="#0000CC">[28]</font><font color="black">.  فكيف إذا تجاوز العشق إلى السلوكيات المحرمة كالمواعدة واللقاء والنظر ونحو ذلك مما  حرم الله، قال ابن تيمية: </font> <font color="black">«</font><font color="black">المشهور  من لفظ العشق هو محبة النكاح ومقدماته، فالعاشق يريد الاستمتاع بالنظر إلى المعشوق  وسماع كلامه، أو مباشرته بالقبلة والحس والمعانقة، أو الوطء</font><font color="black">»</font><font color="#0000CC">[29]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> ولفتنة النساء أبواب ونوافذ يلج منها الشيطان في إغواء الإنسان، غير أنَّ أعظمها  ثلاثة أبواب حذَّرت النصوص الكريمة من مآلاتها، وهي:</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#D80000"> ١ - باب اختلاط الرجال بالنساء:</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> فإنَّ الطبيعة الخَلقية والنوازع الفطرية فيهم تتأجج في حال الاختلاط، وهذا من أكبر  الأسباب التي دفعت امرأة العزيز لحب يوسف عليه السلام ومراودته عن نفسه والكيد له.  والخلطة تورث الأُلفة والمودة والاهتمام ورفع الحرج وزوال التحفظ بين الرجل  والمرأة، وهنا يجد الشيطان فرصته في الدلالة على المحظور فيزين صورة المرأة في عين  الرجل ويزين صورة الرجل في عين المرأة، ولهذا قال مجاهد في قوله تعالى: {وَقَرْنَ  فِي بُيُوتِكُنَّ وَلا تَبَرَّجْنَ تَبَرُّجَ الْـجَاهِلِيَّة  ِ الأُولَى} [الأحزاب:  ٣٣]: </font> <font color="black">«</font><font color="black">كانت  المرأة تخرج تمشي بين يدي الرجال، فذلك تبرج الجاهلية</font><font color="black">»</font><font color="#0000CC">[30]</font><font color="black">.  أما إذا اشتمل هذا الاختلاط على خلوة بينهما فإنَّ الشيطان يكون حينها أقرب إلى  كلِّ واحد منهما من الآخر، قال رسول الله صلى الله عليه وسلم : </font>  <font color="black">«</font><font color="black">لا  يخلون رجل بامرأة إلا كان ثالثهما الشيطان</font><font color="black">»</font><font color="#0000CC">[31]</font><font color="black">.  فيكون الشيطان حاضراً مؤججاً لشهوة كلٍّ منهما ليوقعهما في الفاحشة الكبرى أو  مقدماتها من كلام ونظر ومباشرة وملامسة وتقبيل.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#D80000"> ٢ - باب التعري والتبرج:</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> وقد حرص الشيطان منذ بداية الخليقة على الوصول إلى هذا الباب، لأنه لا يُشرع إلى  الخير مطلقاً؛ وإنما يشرع إلى أنواع من الفتن والشرور، فحينما حرض الشيطان آدم على  الأكل من الشجرة أراد بذلك إيقاعهما في معصية الله التي تتسبب في تعريهما، قال  تعالى: {فَوَسْوَسَ لَهُمَا الشَّيْطَانُ لِيُبْدِيَ لَهُمَا مَا وُورِيَ عَنْهُمَا  مِن سَوْءَاتِهِمَا} [الأعراف: 20]. وهذا على أحد القولين في حرف اللام في قوله:  {لِيُبْدِيَ}</font><font color="#0000CC">[32]</font><font color="black">،  وقال تعالى: {يَا بَنِي آدَمَ لا يَفْتِنَنَّكُمُ الشَّيْطَانُ كَمَا أَخْرَجَ  أَبَوَيْكُم مِّنَ الْـجَنَّةِ يَنزِعُ عَنْهُمَا لِبَاسَهُمَا لِيُرِيَهُمَا  سَوْءَاتِهِمَا} [الأعراف: 27]، وعلى كلٍّ فإنَّ التعري مقصد من مقاصد الشيطان، قال  ابن عاشور: </font> <font color="black">«</font><font color="black">وهذه  أول وسوسة صدرت عن الشيطان. وأول تضليل منه للإنسان</font><font color="black">»</font><font color="#0000CC">[33]</font><font color="black">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> والتبرج هو إظهار المرأة لزينتها وما تستدعي به شهوة الرجل</font><font color="#0000CC">[34]</font><font color="black">؛  سواء كان في مشيتها أم في ملابسها أم في إظهار حليها أو شيء من جسدها، فإنَّ  الشيطان - والحالة هذه - أشد استشرافاً لها وتزييناً في نظر الرجال ليزداد دافع  الشهوة وارتكاب المحظور وصرف الهمة عما ينفع في الدنيا والآخرة إلى اللذات العاجلة  والمحرمة. ألا ترى أنَّ الله تعالى أخبرنا أنَّ أهل الجاهلية الذين يطوفون بالكعبة  عراة من أولياء الشيطان كما في قوله تعالى: {إنَّهُمُ اتَّخَذُوا الشَّيَاطِينَ  أَوْلِيَاءَ مِن دُونِ اللَّهِ} [الأعراف: 30] وأنَّ تعريهم هذا فاحشة</font><font color="#0000CC">[35]</font><font color="black">  كما في قوله تعالى: {وَإذَا فَعَلُوا فَاحِشَةً قَالُوا وَجَدْنَا عَلَيْهَا  آبَاءَنَا وَاللَّهُ أَمَرَنَا بِهَا قُلْ إنَّ اللَّهَ لا يَأْمُرُ  بِالْفَحْشَاءِ} [الأعراف: 28].</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#D80000"> ٣ - باب الغناء والعزف بآلات الطرب والموسيقا:</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black">  قال تعالى: {وَاسْتَفْزِزْ مَنِ اسْتَطَعْتَ مِنْهُم بِصَوْتِكَ} [الإسراء: 64].  قال مجاهد: بالغناء والمزامير</font><font color="#0000CC">[36]</font><font color="black">.  ويوضح ابن تيمية كون الغناء باباً إلى الفواحش فيقول: </font>  <font color="black">«</font><font color="black">ومن  أقوى ما يهيِّج الفاحشة إنشادُ أشعار الذين في قلوبهم مرض من العشق ومحبة الفواحش  ومقدماتها بالأصوات المطربة، فإنَّ المغني إذا غنى بذلك حرك القلوب المريضة إلى  محبة الفواحش، فعندها يهيج مرضه ويقوى بلاؤه، وإنْ كان القلب في عافية من ذلك جعل  فيه مرضاً كما قال بعض السلف: الغناء رقية الزنا</font><font color="black">»</font><font color="#0000CC">[37]</font><font color="black">.     </font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="black"> فتأمل هذه الأبواب التي يلج منها الشيطان لإيقاع المجتمعات في فتنة النساء، وكيف  أطاعه جنوده وأولياؤه حتى استحدثوا لها العديد من المخترعات التي تسهل الولوج منها  إلى المعصية والولوغ في أوحالها، وانظر على سبيل المثال: البث الفضائي من خلال  القنوات التلفزيونية وشبكة الإنترنت ومواقع التواصل الاجتماعي التي سهلت الافتتان  بالنساء والنظر إلى مفاتنهن والحديث معهـن كما روجت للتعري والسفور وجعلت من الغناء  أمراً طبيعياً لا يكاد يُنكَر، بل أعلت من شأنه. فنعوذ بالله من الشيطان ونزغاته.</font></font></span><br />
+<br />
+<br />
+<div style="text-align: left;"><div style="text-align: right;"><span style="font-family: Droid Arabic Naskh"><hr /></span></div></div><br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [1]</font><font color="#0000CC">  تفسير الطبري: 9/ 215.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [2]</font><font color="#0000CC">  أخرجه البخاري، حـ 5943.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [3]</font><font color="#0000CC">  الجامع لأحكام القرآن: 5/ 391.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [4]</font><font color="#0000CC">  معاني القرآن وإعرابه: 2/ 109.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [5]</font><font color="#0000CC">  فتح القدير: 1/ 596.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [6]</font><font color="#0000CC">  انظر: أنوار التنزيل: 2/98.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [7]</font><font color="#0000CC">  موقع (إرم) الإخباري على الإنترنت:</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> <font color="#0563C1"><u> <a href="https://www.eremnews.com/entertainment/society/2289729" target="_blank" rel="nofollow">https://www.eremnews.com/entertainment/society/2289729</a></u></font> </font> <font color="#0000CC"> .</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [8]</font><font color="#0000CC">  موقع هيئة الأمم المتحدة على الإنترنت:</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> <font color="#0563C1"><u> <a href="https://news.un.org/ar/story/2013/05/178512" target="_blank" rel="nofollow">https://news.un.org/ar/story/2013/05/178512</a></u></font></font><font color="#0000CC">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [9]</font><font color="#0000CC">  معالم التنزيل: 2/289.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [10]</font><font color="#0000CC">  أخرجه البخاري، حـ 3273.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [11]</font><font color="#0000CC">  معالم التنزيل: 2/289.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [12]</font><font color="#0000CC">  التحرير والتنوير: 3/ 188.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [13]</font><font color="#0000CC">  التحرير والتنوير: 3/ 193.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [14]</font><font color="#0000CC">  انظر: موقع مبادرة الأديان المتحدة على الإنترنت</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> <font color="#0563C1"><u> <a href="http://www.uri.org" target="_blank" rel="nofollow">www.uri.org</a></u></font></font><font color="#0000CC">.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [15]</font><font color="#0000CC">  تفسير الطبري: 9/223.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [16]</font><font color="#0000CC">  أنوار التنزيل: 2/98.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [17]</font><font color="#0000CC">  نظم الدرر: 5/407.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [18]</font><font color="#0000CC">  تيسير الكريم الرحمن: 1/ 203.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [19]</font><font color="#0000CC">  التحرير والتنوير: 5/ 205.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [20]</font><font color="#0000CC">  فتح القدير: 1/ 596.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [21]</font><font color="#0000CC">  أخرجه مسلم، حـ 2865.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [22]</font><font color="#0000CC">  التحرير والتنوير: 5/206.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [23]</font><font color="#0000CC">  أخرجه مسلم، حـ 2151.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [24]</font><font color="#0000CC">  كشف المشكل: 3/ 103.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [25]</font><font color="#0000CC">  تفسير الطبري: 14/ 663.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [26]</font><font color="#0000CC">  تفسير الرازي: 20/ 332.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [27]</font><font color="#0000CC">  أنوار التنزيل 3/161.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [28]</font><font color="#0000CC">  إغاثة اللهفان 1/64.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [29]</font><font color="#0000CC">  جامع الرسائل 2/241.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [30]</font><font color="#0000CC">  تفسير ابن كثير 6/410.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [31]</font><font color="#0000CC">  أخرجه الترمذي ح2165.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [32]</font><font color="#0000CC">  انظر: تفسير القرطبي 7/178.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [33]</font><font color="#0000CC">  التحرير والتنوير: 8/62.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [34]</font><font color="#0000CC">  معاني القرآن وإعرابه: 4/225.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [35]</font><font color="#0000CC">  تفسير الطبري: 10/137.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [36]</font><font color="#0000CC">  تفسير البغوي: 5/105.</font></font></span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <font color="#0000CC"> [37]</font><font color="#0000CC">  مجموع الفتاوى: 15/313.</font></font></span><br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_982347" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_982347" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=982347" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_982347" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=198606&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=198606#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=696d1a7d9adaea36633b28fa7c3827c1">لوحة التحكم</a></li>
+		<li><a href="private.php?s=696d1a7d9adaea36633b28fa7c3827c1">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1">الاشتراكات</a></li>
+		<li><a href="online.php?s=696d1a7d9adaea36633b28fa7c3827c1">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=198599&amp;s=696d1a7d9adaea36633b28fa7c3827c1">إنما الغنى غنى القلب</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=198613&amp;s=696d1a7d9adaea36633b28fa7c3827c1">تقويمنا لا ينكسر</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%A3%D9%88%D9%84">الأول</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%B9%D8%AF%D9%88">العدو</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=198606#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=198606#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">04:57 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

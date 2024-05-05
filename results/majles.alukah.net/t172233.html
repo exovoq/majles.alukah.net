@@ -1,0 +1,2828 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=696d1a7d9adaea36633b28fa7c3827c1&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=172233";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الفقه وأصوله - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=15" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="أهل, اختلاف, الفقهاء, المدينة, حقيقته, عمل, وأثره, على, عليه, مالك, الله, الإمام, حجة, إجماع, ولا, قال, إلى, العمل, قوله, أنه, الذي, تعالى, هذا, فيه, الأمر, الصلاة, الأرحام, كان, يدل, خبر, الآحاد, ذوي, وهذا, إذا, النقل, إلا, العلم, يرى, الشافعي, حنيفة, رحمه, فيها, صلى, إجماعهم, يكون, بعض, ذلك, مذهب, بعمل, يقتل" />
+	<meta name="description" content="عمل أهل المدينة (حقيقته وأثره في اختلاف الفقهاء) 
+ 
+ 
+ 
+*رجاء بنت صالح باسودان   باحثة سعودية. 
+ 
+ 
+المقدمة  
+ 
+الحمد لله والصلاة والسلام على رسوله الأمين  ، خاتم الأنبياء والمرسلين سيدنا محمد وعلى آله وصحبه أجمعين ، والتابعين  ومن تبعهم بإحسان إلى يوم الدين ، وارحم اللهم أئمتنا الذين خاضوا ميادين  الاجتهاد ، فصالوا وجالوا فيها مستنيرين بكتاب الله وسنة رسوله يستنبطون  منهما ، فاتفقوا على أشياء واختلفوا في أخرى ." />
+
+	<title> عمل أهل المدينة (حقيقته وأثره في اختلاف الفقهاء)</title>
+	<link rel="canonical" href="showthread.php?t=172233&s=696d1a7d9adaea36633b28fa7c3827c1" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=696d1a7d9adaea36633b28fa7c3827c1 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=696d1a7d9adaea36633b28fa7c3827c1">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> عمل أهل المدينة (حقيقته وأثره في اختلاف الفقهاء)</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=696d1a7d9adaea36633b28fa7c3827c1&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 4 من 4
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=172233&s=696d1a7d9adaea36633b28fa7c3827c1" title="تحديث الصفحة">عمل أهل المدينة (حقيقته وأثره في اختلاف الفقهاء)</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=172233" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;t=172233&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=addsubscription&amp;t=172233" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;search_type=1&amp;searchthreadid=172233&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="172233" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_900972">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-02-19,&nbsp;<span class="time">01:38 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post900972" href="showthread.php?t=172233&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=900972#post900972" class="postcounter">#1</a><a id="postcount900972" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,746</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> عمل أهل المدينة (حقيقته وأثره في اختلاف الفقهاء)
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_900972">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><b><font size="6"><b><font color="red">عمل أهل المدينة (حقيقته وأثره في اختلاف الفقهاء)</font><br />
+</b></font></b><br />
+<br />
+<br />
+<b><font size="6"><b><font color="#0070c0">*</font><font color="#008000">رجاء بنت صالح باسودان   باحثة سعودية.</font></b></font></b><br />
+<br />
+<br />
+<b><font size="5"><font color="#0070c0">المقدمة </font></font></b><br />
+<br />
+<b><font size="5">الحمد لله والصلاة والسلام على رسوله الأمين  ، خاتم الأنبياء والمرسلين سيدنا محمد وعلى آله وصحبه أجمعين ، والتابعين  ومن تبعهم بإحسان إلى يوم الدين ، وارحم اللهم أئمتنا الذين خاضوا ميادين  الاجتهاد ، فصالوا وجالوا فيها مستنيرين بكتاب الله وسنة رسوله يستنبطون  منهما ، فاتفقوا على أشياء واختلفوا في أخرى .</font></b><br />
+<br />
+<b><font size="5">ومن  جملة ما اختلف فيه الفقهاء : العمل بعمل أهل المدينة وإجماعهم ، والذي  يعتبر من الأصول التي اعتمد عليها الإمام مالك رحمه الله في بناء مذهبه .</font></b><br />
+<br />
+<b><font size="5">وهذا الأصل المختلف فيه له تأثير في الفروع الفقهية ، وبعض الأحكام التي نشأ فيها الخلاف نتيجة للعمل بهذا الأصل .  </font></b><br />
+<br />
+<b><font size="5">ورغم  احتجاج الإمام مالك بهذا الأصل ، غير أن مدلوله والمقصود منه ليس واضحاً  وفيه بعض الغموض ، مما أدى إلى أن يكثر الجدل حول معناه .  فمن مشنّع على الإمام مالك بسبب تقديمه عمل أهل المدينة على خبر الواحد ، ومن مغالٍ  يرى  بلوغ هذا العمل لمرتبة الإجماع المتفق عليه . فاختلف علماء المذهب وغيرهم  في مقصود الإمام ، ومدلول هذا العمل وتباينت آراؤهم في حجيته .</font></b><br />
+<br />
+<b><font size="5">ولأهمية ما ذكر سابقاً ، اخترت البحث فيه : &quot; عمل أهل المدينة ، حقيقته ، وأثره في اختلاف الفقهاء &quot; .  </font></b><br />
+<br />
+<b><font size="5">وقد  سرت في منهجي لهذا البحث بعد التعريف لمعنى الإجماع وأنواعه ، بعرض رأي  الإمام مالك في عمل أهل المدينة ، ثم عرض لأقوال بعض العلماء المالكيين  فيه. وأتبعت هذه الآراء بأقوال لبعض الفقهاء والأصوليين من خارج المذهب  المالكي .  ونتيجة لعرض هذه الآراء ، كان لا بد من تحرير محل الخلاف بينهم .  وعرض لبعض المسائل التي اختلف فيها الإمام مالك عن باقي الأئمة ، وذلك بسبب أخذه بعمل أهل المدينة .</font></b><br />
+<br />
+<b><font size="5">وقد استفدت من المصادر الأصيلة لبعض أمهات الكتب ، بالإضافة إلى بعض المصادر الحديثة .  وقمت بتقسيم البحث إلى تمهيد ومقدمة وفصلين وخاتمة ، كالتالي :</font></b><br />
+<br />
+<b><font size="5">-    التمهيد : وذكرت فيه نبذة مختصرة عن الإمام مالك .  ثم المقدمة .</font></b><br />
+<br />
+<b><font size="5">-    <font color="#0070c0">الفصل الأول :</font> وفيه مبحثان : </font></b><br />
+<br />
+<b><font size="5">-    المبحث الأول : تعريف الإجماع لغة واصطلاحاً .</font></b><br />
+<br />
+<b><font size="5">-    المبحث الثاني : أنواع الإجماع .</font></b><br />
+<br />
+<b><font size="5">-    <font color="#0070c0">الفصل الثاني :</font> وفيه أربعة مباحث :</font></b><br />
+<br />
+<b><font size="5">-    المبحث الأول : عمل أهل المدينة عند الإمام مالك وبعض المالكيين .</font></b><br />
+<br />
+<b><font size="5">-    المبحث الثاني : رأي بعض الفقهاء والأصوليين في عمل أهل المدينة .</font></b><br />
+<br />
+<b><font size="5">-    المبحث الثالث : تحرير محل الخلاف .</font></b><br />
+<br />
+<b><font size="5">-    المبحث الرابع : أثر الاختلاف في عمل أهل المدينة في بعض المسائل .</font></b><br />
+<br />
+<b><font size="5">-    <font color="red">الخاتمة :</font> وفيها أهم ما توصل إليه البحث من نتائج .</font></b><br />
+<br />
+<b><font size="5">آمل أن أكون قد وفقت في إعداد هذا البحث ، والحمد لله من قبل ومن بعد . </font></b><br />
+<br />
+<b><font size="5">تمهيد</font></b><br />
+<br />
+<b><font size="5"><font color="#0070c0">نبذة عن إمام دار الهجرة &quot;مالك&quot;</font></font></b><br />
+<br />
+<b><font size="5"><font color="red">مولده و نسبه : </font></font></b><br />
+<br />
+<b><font size="5">هو مالك بن أنس بن مالك بن أبي عامر الأصبحي ، وبني أصبح من قحطان من اليمن .  ولد الإمام مالك في المدينة عام 93هـ على الصحيح ، وقيل غير ذلك .  وتوفي سنة 179هـ بالمدينة أيضاً .  ويقال أن الإمام مالك لم يخرج من المدينة إلا بالحج ، وتوفي بمرض سلس البول [1].</font></b><br />
+<br />
+<b><font size="5"><font color="red">نشأته وشيوخه :</font></font></b><br />
+<br />
+<b><font size="5">نشأ  في بيئة إسلامية علمية ، فقد كان عمه سهيل وأخوه النضر من العلماء  والأجلاء ، فلا غرو أن ينصرف إلى العلم والدراسة فحفظ القرآن وهو صغير ،  واتجه بعد حفظه إلى حفظ الحديث .   وأحب  أن يذهب إلى مجالس العلم فشجعته أسرته وخاصة أمه التي ألبسته أحسن الثياب  وعممته وقالت له : &quot; اذهب إلى ربيعة الرأي فتعلم علمه قبل أدبه &quot; .  وبهذا  يكون مالك أخذ الفقه بالرأي وهو صغير ثم لازم شيخه عبدالرحمن بن هرمز ،  فأخذ عنه علم اختلاف الناس وعلم الكلام والرد على الأهواء ، ولازمه أكثر من  ثلاثة عشر سنة .  كذلك أخذ العلم عن نافع مولى ابن عمر ، وأبو الزناد ، ويحي بن سعيد الأنصاري .  وأخذ علم الأثر عن الإمام الفقيه محمد بن شهاب الزهري ، فكان يلازمه ويسأله عن علم التابعين .  ثم تحول إلى علم الفقه ، ويذكر في سبب انصرافه إلى ذلك ، هو أن أباه سأله عن حكم مسألة فم يجب وأجاب أخوه ،  فانصرف إلى الفقه [2].</font></b><br />
+<br />
+<b><font size="5"><font color="red">فتياه :</font></font></b><br />
+<br />
+<b><font size="5">بعد  أن أخذ العلم من أهله وعلمائه وبعد أن شهد له سبعون من علماء المدينة  بالفتيا ، بعد ذلك جلس للفتيا ، وجعل له جلسة في مسجد النبي صلى الله عليه  وسلم ، يعلم فيها الحديث والفقه ، ولم يدرس علم العقائد والرد على أهل  الأهواء لأنه يقول &quot; ليس كل ما يعلم يقال &quot; .  وانتشرت سمعته في الآفاق فقصده الناس من كل مكان .</font></b><br />
+<br />
+<b><font size="5">وبعد  أن كبر ومرض انصرف عن المسجد وأخذ يدرس في منزله ، ولما اشتد عليه المرض  ترك صلاة الجماعة وصلاة الجنائز ، ولم يبح بمرضه إلا عند وفاته ، حيث قال :  كان بي سلس البول فلا أحب أن آتي مسجد رسول الله وأنا لست على طهارة ،  وكان إذا جاءه جماعة يسألونه ، قال لهم : أتريدون الفقه أم الحديث : فإن  أرادوا الفقه كان كما هو لا يغير من حاله شيئاً ، وإن أرادوا الحديث خرج ثم  اغتسل وتطيب وتعمم وجاءهم احتراماً لكلام الرسول صلى الله عليه وسلم [3].</font></b><br />
+<br />
+<b><font size="5"><font color="red">كتبه :</font></font></b><br />
+<br />
+<b><font size="5">له  كتب كثيرة بعضها اشتتهر وبعضها لم يشتهر .من الكتب التي لم تشتهر:&quot;  الأقضية &quot; و&quot;رسالة في القدر&quot; و&quot; كتاب النجوم &quot;. وما اشتهر منها هو :&quot;  الموطأ &quot; و &quot; المدونة &quot; في الفقه .  وسبب  تأليف الموطأ ، قيل : أن أبا جعفر قال لمالك : ضع للناس كتاباً أحملهم  عليه ، ويروون أنه قال له : &quot; يا أبا عبد الله ضم هذا العمل ، ودونه كتباً ،  وتجنب فيها شدائد عبد الله بن عمر ، ورخص ابن عباس ، وشواذ ابن مسعود ،  واقصد أواسط الأمور ، وما اجتمع عليه الصحابة &quot; . </font></b><br />
+<br />
+<b><font size="5">وقيل  أن سبب التسمية : أن العلماء وطؤوه ، أي : وافقوه ، وقيل : أنه وطأ في هذا  الكتاب أحاديث النبي صلى الله عليه وسلم ، وجمع فيه الأحاديث الفقهية  ورتبها على أبواب الفقه ، ثم تبعها بأقوال الصحابة ثم أقوال التابعين ، ثم  عمل أهل المدينة ، ثم يجتهد رأيه .  ولقد  سبق الإمام مالك في تأليف الموطأ عبد العزيز الماجشون وخصه بعمل أهل  المدينة . ولقد استمر مالك في تأليف الموطأ أربعين سنة ، وأراد الخليفتان  الرشيد والمهدي أن يفرضاه على الأمة الإسلامية كما جمع عثمان بن عفان الناس  على مصحف واحد ولكنه مانع وذكر بأن ذلك ليس في مصلحة المسلمين [4].</font></b><br />
+<br />
+<b><font size="5"><font color="red">تلاميذه :</font></font></b><br />
+<br />
+<b><font size="5">يبلغ  عدد تلاميذه من جميع بلاد المسلمين ، من خراسان ، ومن العراق ، ومن الشام ،  ومن المدينة ، ومصر ، وشمال أفريقيا ، وبلاد المغرب ، ألف وثلاثمائة شخص .  <u>من أشهرهم</u> : عبد الله بن وهب الذي لازم الإمام مالك نحو عشرين سنة ، وتوفي في سنة 197 هـ .  وعبد الرحمن بن القاسم الذي يعتبر بمنزلة محمد بن الحسن الشيباني في مذهب الحنفية ، وتوفي في سنة 191 هـ.  وأسد بن الفرات الذي كان مالكياً ثم أصبح حنفياً وهو من القيروان وتوفي سنة 213هـ.  وأشهب القيسي الذي توفي سنة 204هـ بعد الشافعي بأيام .  وعبد الملك بن الماجشون تلميذ الإمام مالك في المدينة والذي قيل أنه كتب موطأ قبل مالك [5]</font></b><br />
+<br />
+<b><font size="5"><font color="red">مصادر فقهه : </font></font></b><br />
+<br />
+<b><font size="5">الكتاب  - السنة – الإجماع – إجماع أهل المدينة – أقوال الصحابة – القياس –  المصلحة المرسلة – وقد أخذ بالاستحسان ، والاستصحاب ، وسد الذرائع .  والمقصود بعمل أهل المدينة : ما عليه أهل المدينة في زمن الإمام مالك ، ويقدمون عمل أهل المدينة على خبر الآحاد [6]</font></b><br />
+<br />
+<b><font size="5"><font color="red">انتشار مذهبه :</font></font></b><br />
+<br />
+<b><font size="5">انتشر مذهبه في الحجاز ، وخاصة المدينة في أول أمره ، ولكن مع مرور الأيام أصبح تارة يغلب ، وتارة يخمل .  وانتشر في أفريقيا ، وخاصة في المغرب – الجزائر – تونس – الأندلس – وموريتانيا [7]</font></b><br />
+<br />
+<b><font size="5"><font color="red">الفصل الأول</font></font></b><br />
+<br />
+<b><font size="5">المبحث الأول : تعريف الإجماع</font></b><br />
+<br />
+<b><font size="5">المبحث الثاني : أنواع الإجماع</font></b><br />
+<br />
+<b><font size="5">المبحث الأول : تعريف الإجماع</font></b><br />
+<br />
+<b><font size="5">الإجماع في اللغة يطلق بإطلاقين :</font></b><br />
+<br />
+<b><font size="5">1 -  العزم والتصميم على الشيء ، ومنه قوله تعالى : <font color="green">&quot; فأجمعوا أمركم &quot;</font> [8] أي أعزموا عليه .وقول الرسول عليه الصلاة والسلام :<font color="#0000cc">&quot; من لم يجمع الصيام قبل الفجر فلا صيام له &quot;</font> [9].أي يعزم عليه . </font></b><br />
+<br />
+<b><font size="5">2 -  الاتفاق : يقال : أجمع القوم على كذا ، إذا اتفقوا عليه [10].</font></b><br />
+<br />
+<b><font size="5"><font color="#0070c0">الإجماع في الاصطلاح :</font></font></b><br />
+<br />
+<b><font size="5">اختلف العلماء في تعريفه ، فقد عرّفه الغزالي بأنه : &quot; اتفاق أمة محمد صلى الله عليه وسلم على أمر من الأمور الدينية &quot; [11].</font></b><br />
+<br />
+<b><font size="5">وعرّفه الآمدي بأنه :&quot; اتفاق جملة من أهل الحل والعقد من أمة محمد صلى الله عليه وسلم في عصر من الأعصار على حكم واقعة من الوقائع &quot; [12].</font></b><br />
+<br />
+<b><font size="5">وعرّفه الشوكاني :&quot;اتفاق مجتهدي أمة محمد صلى الله عليه وسلم بعد وفاته في عصر من الأعصار على أمر من الأمور &quot;. </font></b><br />
+<br />
+<b><font size="5">والمراد بالاتفاق : الإشتراك في قول أو فعل أو اعتقاد .</font></b><br />
+<br />
+<b><font size="5">والتعريف الأخير يخرج اتفاق العوام إذ لا عبرة باتفاقهم ، ويخرج كذلك اتفاق الأمم السابقة .  ويشير التعريف إلى أن الاتفاق الواقع في زمن الرسول صلى الله عليه وسلم لا يسمى إجماعاً [13].</font></b><br />
+<br />
+<b><font size="5">المبحث الثاني : أنواع الإجماع</font></b><br />
+<br />
+<b><font size="5">القسم الأول : بالنظر إلى كيفية حدوثه ووقوعه ( الإجماع العام )</font></b><br />
+<br />
+<b><font size="5">القسم الثاني : بحسب المجمعين </font></b><br />
+<br />
+<b><font size="5">القسم الأول : الإجماع العام </font></b><br />
+<br />
+<b><font size="5">ومنه الإجماع الصريح القولي [14]. وهو حجة عند الجمهور ، ويعتبر المصدر الثالث من مصادر التشريع .</font></b><br />
+<br />
+<b><font size="5">ومن هذا القسم : الإجماع السكوتي :  وهو أن يبدي بعض المجتهدين رأيه في حكم شرعي أو مسألة ويسكت الباقون [15]. </font></b><br />
+<br />
+<b><font size="5">وقد اشترط القائلون بحجيته ( الحنفية والحنابلة ) شروطاً لا بد من توفرها فيه حتى يحقق معنى الإجماع [16]، بينما ذهب المالكية والشافعية إلى أنه ليس بحجة ولا إجماع [17].</font></b><br />
+<br />
+<b><font size="5">القسم الثاني : بحسب المجمعين </font></b><br />
+<br />
+<b><font size="5">أولاً : إجماع أهل المدينة </font></b><br />
+<br />
+<b><font size="5">بناءً على تعريف الإجماع ، يكون إجماع أهل المدينة هو : إتفاق مجتهدي المدينة في عصر من العصور على أمر من الأمور [18].وهو من الإجماعات المختلف فيها ، والذي يدور حوله هذا البحث .</font></b><br />
+<br />
+<b><font size="5">ثانياً : إجماع أهل البيت </font></b><br />
+<br />
+<b><font size="5">ويسمى أيضاً بإجماع العترة ، وهم : علي بن أبي طالب ، وفاطمة الزهراء ، والحسن والحسين أبناؤهما .  ومن جملة ما استدل القائلون بأن إجماعهم حجة ( وهم الزيدية والإمامية ) قوله تعالى : <font color="green">{ إنما يريد الله ليذهب عنكم الرجس أهل البيت ويطهركم تطهيراً } </font>[19].  ويجاب عن هذا الاستدلال : بأنه لا علاقة بين المودة والمحبة لقرابة الرسول  صلى الله عليه وسلم وبين الإجماع الذي هو نتيجة للاجتهاد والاستنباط .  فجمهور الأمة يرون أن إجماع البيت ليس بحجة والحجة في إجماع الأمة كلها وليس بعضها [20].</font></b><br />
+<br />
+<b><font size="5">ثالثاً : إجماع الخلفاء الراشدين </font></b><br />
+<br />
+<b><font size="5">اختلف في إجماعهم على حكم ، هل يكون حجة أم لا ؟  فذهب  الإمام أحمد في رواية إلى أن إجماعهم حجة ، وذهب جمهور الأصوليين ومنهم  الإمام أحمد في الرواية الثانية أن إجماع الخلفاء الراشدين ليس بحجة مع  مخالفة غيرهم ، أما إذا لم يخالفهم أحد فإن إجماعهم يكون حجة [21].</font></b><br />
+<br />
+<b><font size="5">وهناك إجماع الشيخين ( أبي بكر وعمر ) ، وإجماع أهل الحرمين ( المدينة ومكة ) ، وكذلك إجماع أهل المصرين ( البصرة والكوفة )  وهي ليست بحجة (4). </font></b><br />
+<br />
+<b><font size="5"><font color="red">الفصل الثاني</font></font></b><br />
+<br />
+<b><font size="5">المبحث الأول : عمل أهل المدينة عند الإمام مالك والمالكيين</font></b><br />
+<br />
+<b><font size="5">المبحث الثاني : رأي بعض الفقهاء والأصوليين في عمل أهل المدينة </font></b><br />
+<br />
+<b><font size="5">المبحث الثالث : تحرير محل الخلاف</font></b><br />
+<br />
+<b><font size="5">المبحث الرابع : أثر الاختلاف في عمل أهل المدينة في بعض المسائل  </font></b><br />
+<br />
+<b><b><font size="5"><font color="#0070c0"> المبحث الأول </font><font color="#0070c0">:</font><font color="#0070c0">عمل أهل المدينة عند الإمام مالك وبعض المالكيين </font></font></b></b><br />
+<br />
+<br />
+<b><font size="5">يرى  الإمام مالك رحمه الله أن عمل أهل المدينة حجة ، ويتضح هذا الاتجاه في  رسالته التي أرسلها إلى الليث بن سعد في مصر ، والتي جاء فيها : &quot; اعلم  رحمك الله أنه بلغني أنك تفتي الناس بأشياء مخالفة لما عليه جماعة الناس  عندنا وببلدنا الذي نحن فيه وأنت في أمانتك وفضلك ومنزلتك من أهل بلدك  وحاجة من قبلك إليك واعتمادهم على ما جاءهم منك ، حقيق بأن تخاف على نفسك  وتتبع ما ترجو النجاة باتباعه ، فإن الله تعالى يقول في كتابه : <font color="green">{ والسابقون الأولون من المهاجرين والأنصار} </font>(التوبة 100) وقال تعالى : <font color="green">{ فبشر عباد . الذين يستمعون القول فيتبعون أحسنه } </font>.  (الزمر 17-18) فإنما الناس تبع لأهل المدينة ، إليها كانت الهجرة وبها نزل  القرآن وأحل الحلال وحرم الحرام ، إذ رسول الله بين أظهرهم يحضرون الوحي  والتنزيل ويأمرهم فيطيعونه ويسن لهم فيتبعونه ، حتى توفاه الله واختار له  ما عنده ، صلوات الله عليه ورحمته وبركاته ، ثم قام من بعده أتبع الناس له  من أمته ممن ولي الأمر من بعده فما نزل بهم مما علموا أنفذوه ، وما لم يكن  عندهم فيه علم سألوا عنه ، ثم أخذوا بأقوى ما وجدوا في ذلك في اجتهادهم  وحداثة عهدهم ، وإن خالفهم مخالف أو قال امرؤٌ غيره أقوى منه وأولى ترك  قوله وعمل بغيره ، ثم كان التابعون من بعدهم يسلكون تلك السبيل ويتبعون تلك  السنن ، فإذا كان الأمر بالمدينة ظاهراً معمولاً به لم أر لأحد خلافه للذي  في أيديهم من تلك الوراثة التي لا يجوز لأحد انتحالها ولا ادعاؤها ، ولو  ذهب أهل الأمصار يقولون هذا العمل ببلدنا وهذا الذي مضى عليه من مضى منا ،  لم يكونوا من ذلك على ثقة ، ولم يكن لهم من ذلك الذي جاز لهم [22].</font></b><br />
+<br />
+<b><font size="5">ويعتبر الإمام مالك عمل أهل المدينة أو إجماعهم من مصادر التشريع عنده .  وممّا ينبغي ذكره ، أن عمل أهل المدينة أو إجماعهم من الأصول الفقهية التي احتج بها سلف الإمام مالك واعتبروه حجة يعتمدون عليها .  وتتجلى  هذه القضايا في فعل عمر بن الخطاب رضي الله عنه في أقضيته ، وتتبعه للسنن ،  ومشاورته للصحابة المتواجدين في المدينة ، وكذلك في أقضية عثمان رضي الله  عنه ، ومن بعدهما التابعون ، بالإضافة إلى آثار الصحابة وأقضية الأئمة [23].</font></b><br />
+<br />
+<b><font size="5">وممّا يؤيد اعتبار سلف الإمام مالك بهذا الأصل ، أمران : </font></b><br />
+<br />
+<b><font size="5">1 -  الاحتجاج به : حيث قال سعيد بن المسيب في الرجل يتزوج وهو محرم : &quot; أجمع أهل المدينة على أن يفرق بينهما [24].</font></b><br />
+<br />
+<b><font size="5">2 -  استعمالهم  مصطلحات في العمل ، سار على نهجهم فيها مالك ، ونقل بها قضاياه ، مثل :  قول سلمان بن يسار في كفارة اليمين : &quot; أدركت الناس وهم إذا أعطوا في كفارة  اليمين بالمد الأصغر ، رأوا ذلك مجزئاً عنهم &quot; [25]وكذلك : عبارة &quot; قد مضى أمر الناس على هذا &quot; ، وغيرها من المصطلحات [26].</font></b><br />
+<br />
+<b><font size="5">ويتبين لنا أن الإمام مالك كان يرى الفقهاء يحتجون بعمل أهل المدينة باستعمال مصطلحات متعددة ، تبعهم فيها [27].  يقول الأستاذ الدكتور ، احمد محمد نور سيف في هذا الموضوع : &quot; أنه (مالك)  كان شديد الاتباع لهم (فقهاء المدينة) ، بعيداً عن الابتداع ، ميالاً إلى  التأسي بمن سبقه ، مجانباً لما لم ير أصوله تعتمد على تلك الثروة الفقهية  عندهم ، ولذا كان عمل أهل المدينة أو إجماعهم أحد الأصول التي اعتمد عليها  في الاجتهاد والاستنباط &quot; [28].</font></b><br />
+<br />
+<b><font size="5">ولقد اختُلف في عمل أهل المدينة وكثر الحديث حوله بالنقد والجدل من المعاصرين للإمام مالك وكذلك المتأخرين .  واختلف المالكية أنفسهم في المراد من عمل أهل المدينة ، وفيما يأتي آراء لبعض فقهائهم : </font></b><br />
+<br />
+<b><font size="5">1 -  القاضي عبد الوهاب <b>[29]</b></font></b><br />
+<br />
+<b><font size="5"> أ -  إجماع  أهل المدينة نقلاً حجة تحرم مخالفته ، ومن طريق الاجتهاد مختلف في كونه  حجة ، والصحيح عندنا أنه يرجح به على غيره ، ولا يحرم الذهاب إلى خلافه [30].</font></b><br />
+<br />
+<b><font size="5">ب -  إجماع أهل المدينة على ضربين : نقلي واستدلالي .  </font></b><br />
+<br />
+<b><font size="5">1-             النقلي : ومنه نقل شرع مبتدأ من جهة النبي صلى الله عليه وسلم إما من قول ، أو فعل ، أو إقرار .  فالقول  : كنقلهم الصاع والمد والأذان والإقامة والأوقات والأحباس والمنبر ونحوه .  والفعل : كنقلهم العمل المتصل في عهدة الرقيق ، وغير ذلك .  والإقرار  : كتركهم أخذ الزكاة من الخضراوات مع أنها كانت تزرع بالمدينة ، ولم يأخذ  النبي صلى الله عليه وسلم ولا الخلفاء من بعده منها زكاة .  وهذا النوع من إجماعهم حجة يلزم عندنا المصير إليه ، وترك الأخبار والمقاييس له ، لا اختلاف بين أصحابنا فيه .</font></b><br />
+<br />
+<b><font size="5">2-    الاستدلالي : وهو إجماعهم من طريق الاستدلال ، فاختلف أصحابنا فيه على ثلاثة أوجه : </font></b><br />
+<br />
+<b><font size="5"><font color="red">الأول :</font> أنه ليس بحجة ولا مرجح ، وهو قول ابن بكير ، وأبي يعقوب الرازي ، والقاضي أبي بكر ، وابن السمعاني ،  والطيالسي ، وأبي فرج ، والأبهري ، وأنكروا كونه مذهباً لمالك .  </font></b><br />
+<br />
+<b><font size="5"><font color="red">الثاني :</font> ليس بحجة ولكن يرجح به أحد الإجتهادين ، وبه قال بعض أصحاب الشافعي .  </font></b><br />
+<br />
+<b><font size="5"><font color="red">الثالث :</font>  أنه حجة وإن لم يحرم خلافه ، وعليه يدل كلام أحمد بن المعذل ، وأبي مصعب ،  وإليه ذهب أبو الحسن بن أبي عمر من البغداديين ، وجماعة من المغاربة من  أصحابنا ، ورأوه مقدماً على خبر الواحد والقياس ، وأطبق المخالفون أنه مذهب  مالك ، ولا يصح عنه كذا مطلقاً [31].</font></b><br />
+<br />
+<b><font size="5">2 -  القاضي عياض [32] </font></b><br />
+<br />
+<b><font size="5">إجماع  أهل المدينة على ضربين ، ضرب من طريق النقل والحكاية الذي تؤثره الكافة عن  الكافة وعملت به عملاً لا يخفى ونقله الجمهور عن زمن النبي صلى الله عليه  وسلم .  والثاني : إجماعهم على عمل  من طريق الاجتهاد والاستدلال ، فهذا النوع اختلف فيه أصحابنا فذهب معظمهم  إلى انه ليس بحجة ولا فيه ترجيح .  والمراد به عنده وعند كثير من محققي المالكية عمل الصحابة لا غير [33].</font></b><br />
+<br />
+<b><font size="5">3 -  ابن القصار [34]</font></b><br />
+<br />
+<b><font size="5">من  مذهب مالك رحمه الله العمل على إجماع أهل المدينة فيما طريقه التوقيف من  الرسول صلى الله عليه وسلم ، أو أن يكون الغالب فيه أنه عن توقيف منه عليه  الصلاة والسلام ، كإسقاط زكاة الخضراوات ؛ لأنه معلوم أنها قد كانت في وقت  النبي صلى الله عليه وسلم ، ولم ينقل أنه اخذ منها الزكاة ، وإجماع أهل  المدينة على ذلك ، فعمل عليه وإن خالفهم غيره [35].</font></b><br />
+<br />
+<b><font size="5">4 -  أبو عبيد القاسم <b>[36]</b></font></b><br />
+<br />
+<b><font size="5">وإجماعهم (أهل المدينة) فيقسم إلى قسمين : أحدهما : استنباط ، والآخر : توقيف .  فالضرب الأول : لا فرق بينهم وبين سائر أهل الأمصار فيه .  وأما  الضرب الثاني : المضاف إلى التوقيف فهو الذي يعوّل عليه ، ويُعترض على خبر  الواحد به ، نحو إسقاطهم الزكاة في الخضراوات ، والآذان ، والتكبير على  الجنائز ، وإجازة الوقوف ، ومعاقلة الرجل المرأة إلى ثلث الدية [37]. </font></b><br />
+<br />
+<b><b><font size="5">5 -  ابن الحاجب <b>[38]</b></font></b></b><br />
+<br />
+<br />
+<b><font size="5">إجماع أهل المدينة من الصحابة والتابعين حجة عند مالك .  وقيل : محمول على أن روايتهم متقدمة .  وقيل : على المنقولات المستمرة كالأذان والإقامة .  والصحيح : التعميم [39].</font></b><br />
+<br />
+<b><font size="5">6 -  القرافي [40]</font></b><br />
+<br />
+<b><font size="5">اختلف أصحابه (مالك) في تقرير مذهبه على قولين : </font></b><br />
+<br />
+<b><font size="5"> أ -  منهم  من يقول : إنما مقصوده تلك الأقوال المنقولة خاصة ، إما عن قول سمعوه من  رسول الله صلى الله عليه وسلم ، أو عن فعل وضع كما كان في &quot;الصاع&quot; و&quot;المد&quot; ،  فينقل الأبناء عن الآباء والأخلاف عن الأسلاف أن هذا هو المد الذي كانوا  يؤدون به الزكاة إلى رسول الله صلى الله عليه وسلم ، وأن الأذان كان على  هذه الصورة في زمانه عليه السلام كما قاله مالك لأبي يوسف لما ناظره في  الأذان والصاع والأوقاف ، فسأل أبناء الصحابة فأخبروه بذلك ، فقال : هذا  أذان القوم ، وهذا صاعهم ، وهذه أوقاف الصحابة – رضوان الله عليهم – فرجع  أبو يوسف عن مذهب أبي حنيفة إلى ذلك .  </font></b><br />
+<br />
+<b><font size="5">ب -  ومنهم  من قال : بل المقصود ما هو أعم من هذا وهو أنهم إذا اتفقوا على نقل ، أو  كانوا في أنفسهم يفعلون فعلاً لا يُعلم مستندهم فيه ، فإنه يكون حجة ويقدّم  على الأحاديث ؛ لأن الظاهر من حالهم أنهم ما عدلوا عن الحديث – مع  اطّلاعهم عليه – إلا وقد اطّلعوا على ناسخ [41].</font></b><br />
+<br />
+<b><b><font size="5">7 -  الباجي <b>[42]</b></font></b></b><br />
+<br />
+<br />
+<b><font size="5">أن  مالكاً إنما عوّل على أقوال أو أفعال أهل المدينة وجعلها حجة في ما طريقه  النقل كمسألة الأذان ، وترك الجهر ببسم الله الرحمن الرحيم ، ومسألة الصاع ،  وترك إخراج الزكاة من الخضراوات ، وغير ذلك من المسائل التي طريقها النقل  واتصل العمل بها في المدينة على وجه لا يخفى مثله ونقل نقلاً يحج ويقطع  العذر .  فهذا نقل أهل المدينة  عنده في ذلك حجة مقدمة على خبر الآحاد وعلى أقوال سائر البلاد الذين نقل  إليهم الحكم في هذه الحوادث أفراد الصحابة وآحاد التابعين .</font></b><br />
+<br />
+<b><font size="5">والضرب  الثاني من أقوال أهل المدينة ما نقلوه من سنن رسول الله صلى الله عليه  وسلم من طريق الآحاد أو ما أدركوه بالاستنباط والاجتهاد .  فهذا  لا فرق فيه بين علماء المدينة وعلماء غيرهم في أن المصير منه إلى ما عضده  الدليل والترجيح ، ولذلك خالف مالك في مسائل عدة أقوال أهل المدينة [43].</font></b><br />
+<br />
+<b><font size="5">وبناءً  على ما ذكر سابقاً : فإن المالكية اختلفوا في المقصود من عمل أهل المدينة ،  فمن قائل : إن المراد به المنقولات المستمرة ، وقيل : إن روايتهم أولى من  رواية غيرهم ، وقيل : إن إجماعهم أولى ولا تمتنع مخالفته ، وقيل : إنما  أراد ترجيح اجتهادهم على اجتهاد غيرهم ، وقيل : أراد إجماع أهل المدينة من  الصحابة ، وقيل : بل أراد الصحابة والتابعين ، واختار بعضهم التعميم . </font></b><br />
+<b><font size="5">يتبع</font></b><br />
+<br />
+<br />
+<br />
+</span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_900972" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_900972" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=900972" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_900972" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_900973">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-02-19,&nbsp;<span class="time">01:40 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post900973" href="showthread.php?t=172233&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=900973#post900973" class="postcounter">#2</a><a id="postcount900973" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,746</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: عمل أهل المدينة (حقيقته وأثره في اختلاف الفقهاء)
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_900973">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><span style="font-family: traditional arabic"><b><font size="6"><b><font color="red">عمل أهل المدينة (حقيقته وأثره في اختلاف الفقهاء)</font><br />
+ </b></font></b><br />
+ <br />
+ <br />
+ <b><font size="6"><b><font color="#0070c0">*</font><font color="#008000">رجاء بنت صالح باسودان   باحثة سعودية.</font></b></font></b></span> </font></span><div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><br />
+<br />
+<b><font color="#0070c0"> المبحث الثاني : رأي بعض الفقهاء والأصوليين في عمل أهل المدينة </font></b><br />
+<br />
+<b>1 -  الشافعي<b>[44]</b>       </b><br />
+<br />
+<b>قال  في الرسالة : ولست أقول ولا أحد من أهل العلم : هذا مجتمع عليه إلا لما  تلقى عالماً أبداً إلا قاله لك وحكاه عمن قبله ، كالظهر أربع ، وكتحريم  الخمر وما أشبه ذلك .  قال : وقد  أجده يقول : المجمع عليه ، وأجد من المدينة من أهل العلم كثيراً يقولون  بخلافه ، وأجد عامة أهل البلدان على خلاف ما يقول المجمع عليه[45].   </b><br />
+<br />
+<b>2 - ابن تيمية<b>[46]</b>      </b><br />
+<br />
+<b>إجماع أهل المدينة على أربع مراتب :</b><br />
+<br />
+<b><font color="red">الأولى :</font> ما يجري مجرى النقل عن النبي صلى الله عليه وسلم ، مثل نقلهم لمقدار الصاع والمد ، وكذلك صدقة الخضراوات والأحباس ، وهو حجة .</b><br />
+<br />
+<b><font color="red">الثانية :</font> العمل القديم بالمدينة قبل مقتل عثمان بن عفان ، فهذا حجة في مذهب مالك ، وهو المنصوص عن الشافعي .</b><br />
+<br />
+<b><font color="red">الثالثة :</font>  إذا تعارض في المسألة دليلان كحديثين وقياسين ، جهل أيهما أرجح ، وأحدهما  يعمل به أهل المدينة ؛ ففيه نزاع : فمذهب مالك والشافعي أنه يرجح بعمل أهل  المدينة ، ومذهب أبي حنيفة لا يرجح بعمل أهل المدينة . </b><br />
+<br />
+<b><font color="red">الرابعة :</font>  العمل المتاخر بالمدينة ، فهذا هل هو حجة شرعية يجب اتباعه أم لا ؟ فالذي  عليه أئمة الناس أنه ليس بحجة شرعية ، هذا مذهب الشافعي وأحمد وأبي حنيفة  وغيرهم ، وهو قول المحققين من أصحاب مالك [47].</b><br />
+<br />
+<b>3 -  الآمدي <b>[48]</b></b><br />
+<br />
+<b>اتفق  الأكثرون على أن إجماع أهل المدينة وحدهم لا يكون حجة على من خالفهم في  حالة انعقاد إجماعهم ، خلافاً لمالك ، فإنه قال : يكون حجة .  ومن أصحابه من قال : إنما أراد ترجيح روايتهم على رواية غيرهم .  ومنهم  من قال : أراد به أن يكون إجماعهم أولى ولا تمتنع مخالفته ، ومنهم من قال :  أراد بذلك أصحاب رسول الله صلى الله عليه وسلم ، والمختار : مذهب الأكثرين  [49].</b><br />
+<br />
+<b>4 -  الغزالي <b>[50]</b></b><br />
+<br />
+<b>قال مالك : الحجة في إجماع أهل المدينة فقط .....  ثم قال :  وربما  احتجوا بثناء رسول الله صلى الله عليه وسلم على المدينة وعلى أهلها ، وذلك  يدل على فضيلتهم وكثرة ثوابهم لسكناهم المدينة ولا يدل على تخصيص الإجماع  بهم [51].</b><br />
+<br />
+<b>5 -  ابن القيم <b>[52]</b></b><br />
+<br />
+<b>العمل نوعان : نوع لم يعارضه نص ولا عمل قبله ولا عمل مصر آخر غيره ، وعمل عارضه واحد من هذه الثلاثة [53]. </b><br />
+<br />
+<b><font color="#0070c0">المبحث الثالث : تحرير محل الخلاف</font></b><br />
+<br />
+<b>إن دعوى القول بأن الإمام مالك يرى أن إجماع الأمة هو إجماع أهل المدينة قول باطل لا أساس له من الصحة ، ولم ينقل عنه [54].  فقد  زعم بعض أهل الأصول أن الإمام مالك عدّ إجماع أهل المدينة بمنزلة إجماع  الأمة ( المصدر الثالث من مصادر التشريع ) وعدم اعتداده بما يخالف إجماعهم.</b><br />
+<br />
+<b>كذلك  زعم بعضهم : أن الإمام مالك يرى إجماع أهل المدينة حجة في كل عصر دون قصره  على عصر الصحابة والتابعين ، وهذا ظن فاسد لا يليق أن ينسب إليه [55].</b><br />
+<br />
+<b>وبناءً على ما ذكر سابقاً من الفهم الخاطئ لمراد الإمام مالك بعمل أهل المدينة شنّع أكثرهم عليه .  يقول القاضي عياض في معرض الرد على هذه المزاعم :  &quot;  اعلموا أكرمكم الله أن جميع أرباب المذاهب من الفقهاء والمتكلمين وأصحاب  الأثر والنظر إلبٌ واحد على أصحابنا على هذه المسألة مخطئون لنا فيها  بزعمهم ، محتجون علينا بما سنح لهم حتى تجاوز بعضهم حد التعصب والتشنيع إلى  الطعن في المدينة وعدّ مثالبها وهم يتكلمون في غير موضع خلاف ، فمنهم من  لم يتصور المسألة ولا تحقق مذهبنا فتكلموا فيها على تخمين وحدس ، ومنهم من  أخذ الكلام فيها ممن لم يحققه عنّا ، ومنهم من أطالها وأضاف إلينا ما لا  نقوله فيها &quot; .  ثم أضاف قائلاً : &quot;  حكى أبو بكر الصيرفي وأبو حامد الغزالي أن مالكاً يقول : لا يعتبر إلا  بإجماع أهل المدينة دون غيره ، وهذا ما لا يقوله هو ولا أحد من أصحابه ،  وحكى بعض الأصوليين أن مالكاً يرى إجماع الفقهاء السبعة بالمدينة إجماعاً ،  ووجه قوله بأنه لعله كانوا عنده أهل الاجتهاد في ذلك الوقت دون غيرهم ،  وهذا ما لم يقله مالك ولا روي عنه [56].</b><br />
+<br />
+<b>وقال  الباجي:&quot; قد أكثر أصحاب مالك في ذكر إجماع المدينة والاحتجاج به، وحمل ذلك  بعضهم على غير وجهه فتشنّع به المخالف عليه وعدل عمّا قرّره في ذلك  المحققون من أصحاب مالك[57].</b><br />
+<br />
+<b>والذي يمكن أن يتعلق به من نسب إلى مالك أنه يرى أن الإجماع هو إجماع أهل المدينة ( في رسالته إلى الليث بن سعد ) أمران : </b><br />
+<br />
+<b>1 -  قوله : &quot; فإنما الناس تبع لأهل المدينة &quot; .</b><br />
+<br />
+<b>2 -  قوله : &quot; فإذا كان الأمر بالمدينة ظاهراً معمولاً به ، لم أر لأحد خلافه &quot; .</b><br />
+<br />
+<b>فهذا  لا يدل على أنه يرى تخصيص الإجماع بهم ، أو أن إجماعهم لا تجوز مخالفته ،  وإنما أوضح مكانة علم أهل المدينة ، وأنهم قدوة لغيرهم ، ولا يرى لأحد  عذراً في مخالفة الأمر عندهم ، إذا كان ظاهراً معمولاً به ، بل غاية ما يدل  عليه أنه حجة عنده ، ولا يلزم من كونه حجة عنده ، أن يكون إجماعاً بمنزلة  إجماع الأمة &quot; [58].</b><br />
+<br />
+<b>وبهذا ينتفي أن يكون المراد من إجماع أهل المدينة عند الإمام مالك هو إجماع الأمة. </b><br />
+<br />
+<b><b><font color="#4f81bd">أنواع عمل أهل المدينة والاختلاف في حجية تلك الأعمال </font></b></b><br />
+<br />
+<br />
+<b>النوع الأول : اتفق  العلماء على أن إجماع أهل المدينة في كل ما كان طريقه النقل من النبي صلى  الله عليه وسلم سواء كان نقلاً لقوله : كالأذان والإقامة وغيرها ، أم لفعله  : كصفة صلاته وعدد ركعاتها ومثل ذلك ، أم نقلاً لإقراره عليه الصلاة  والسلام لما شاهده منهم ولم ينكره عليهم ، أم نقلاً لتركه أموراً شاهدها  منهم ، وأحكاماً لم يلزمهم إياها .  هذا  النوع من الإجماع اتفقت أكثر النقول على أنه حجة يلزم العمل به وترك ما  خالفه من قياس أو خبر واحد ؛ لأنه نقل متواتر ، فهو موجب للعلم القطعي ولا  يترك العمل به [59]. </b><br />
+<br />
+<b>قال  القاضي عياض : فهذا النوع من إجماعهم ... حجة يلزم المصير إليه ويترك ما  خالفه من خبر واحد أو قياس ، فإن هذا النقل محقق معلوم موجب للعلم القطعي  فلا يترك لما توجبه غلبة الظنون وإلى هذا رجع أبو يوسف وغيره من المخالفين  ممن ناظر مالكاً وغيره من أهل المدينة في مسألة الأوقاف والمد والصاع حين  شاهد هذا النقل وتحققه ، ولا يجب لمنصف أن ينكر الحجة هذه ، وهذا الذي تكلم  عليه مالك عن أكثر شيوخنا ولا خلاف في صحة هذا الطريق ، وكونه حجة عند  العقلاء وتبليغه العلم يدرك ضرورة ، وإنما خالف في تلك المسائل من غير أهل  المدينة من لم يبلغه النقل الذي بها [60].</b><br />
+<br />
+<b>وقال القاضي عبد الوهاب : لا خلاف بين أصحابنا في هذا ، ووافق عليه الصيرفي وغيره من أصحاب الشافعي كما حكاه الآمدي [61] </b><br />
+<br />
+<b>وقال الباجي[62]: أن مالكاً إنما عوّل على أقوال أهل المدينة وجعلها حجة في ما طريقه النقل .</b><br />
+<br />
+<b>أما النوع الثاني : وهو ما كان طريقه الاجتهاد والاستدلال والاستنباط ، وهذا النوع هو محل النزاع والخلاف في كونه حجة ملزمة أم لا !  يقول &quot;ابن القيم&quot; فيه : &quot; وأما العمل الذي طريقه الاجتهاد والاستدلال فهو معترك النزال ومحل الجدال [63].</b><br />
+<br />
+<b>وقد  اعتبر ابن تيمية العمل القديم (المرتبة الثانية) حجة في مذهب مالك ، وهو  المنصوص عن الشافعي ، وظاهر مذهب أحمد ، والمحكي عن أبي حنيفة ، وما يعلم  لأهل المدينة عمل قديم على عهد الخلفاء الراشدين مخالف لسنة رسول الله صلى  الله عليه وسلم .  وأما العمل الذي  وافقه دليل وخالفه آخر من جنسه (المرتبة الثالثة) ففي حجيته نزاع ، فمذهب  مالك والشافعي أنه يرجح بعمل أهل المدينة ومذهب أبي حنيفة لا يرجح بعمل أهل  المدينة ، ولأصحاب أحمد وجهان .  أما  العمل المتأخر بالمدينة (المرتبة الرابعة) فقد جزم ابن تيمية بعدم حجيته ،  حيث قال : &quot; والناس على عدم حجيته ، وهو مذهب الشافعي وأحمد وأبي حنيفة  وقول المحققين من أصحاب مالك [64].</b><br />
+<br />
+<b>حجة الإمام مالك ومن تبعه :</b><br />
+<br />
+<b>تتضح حججه من رسالته التي أرسلها إلى الليث بن سعد ، وهي كالتالي :</b><br />
+<br />
+<b>1 -  أن  القرآن المشتمل على الشرائع وفقه الإسلام نزل في المدينة ، وأهلها هم أول  من وجه إليهم التكليف ، ومن خوطبوا بالأمر والنهي ، وأجابوا داعي الله فيما  أمر ، فهي دار هجرة النبي عليه الصلاة والسلام ومهبط الوحي ، ومستقر  الإسلام ، وجمع الصحابة ، فلا يخرج الحق عن أهلها .</b><br />
+<br />
+<b>2 -  أن أهل المدينة شاهدوا التنزيل ، وسمعوا التنزيل ، وكانوا أعرف بأحوال الرسول .</b><br />
+<br />
+<b>3 -  أن رواية أهل المدينة مقدمة على رواية غيرهم ، فكان إجماعهم حجة على غيرهم [65].</b><br />
+<br />
+<b>وقد احتج من ناصر مذهب مالك بالآثار التي وردت في فضل المدينة ، وبيان شرفها ، ومنها:</b><br />
+<br />
+<b>1 -  قوله عليه الصلاة والسلام : <font color="#0000cc">&quot; إن المدينة لتنفي خبثها ، كما ينفي الكير خبث الحديد &quot; </font>[66].</b><br />
+<br />
+<b>2 -  قوله عليه الصلاة والسلام<font color="#0000cc">: &quot;إن الإيمان ليأرز إلى المدينة كما تأرز الحية إلى حجرها&quot; </font>[67].</b><br />
+<br />
+<b>3 - قوله عليه الصلاة والسلام<font color="#0000cc">:&quot;لا يكيد أحد أهل المدينة إلا إنماع كما ينماع الملح في الماء&quot;</font> [68].</b><br />
+<br />
+<b>4 -  قوله عليه الصلاة والسلام : <font color="#0000cc">&quot;  ليس من بلد إلا سيطؤه الدجال ، إلا مكة والمدينة ، ليس له من نقابها نقب  إلا عليه الملائكة صافين يحرسونها ، ثم ترجف المدينة بأهلها ثلاث رجفات ،  فيخرج الله كل كافر ومنافق &quot; </font>[69]</b><br />
+<br />
+<b>ويرد  على هذا الاحتجاج : أن الآثار قد خصتها بالذكر إظهاراً لشرفها ، وتمييزاً  لها عن غيرها لما اشتملت عليه من الصفات المذكورة ، ولا يدل على تخصيص  أهلها بالإجماع .  وأن اشتمال المدينة على صفات موجبة لفضلها لا يدل على انتفاء الفضيلة عن غيرها ، ولا على الاحتجاج بإجماع أهلها .  ولا يدل على انحصار أهل العلم فيها والمعتبرين من أهل الحل والعقد ومن تقوم الحجة بقولهم [70]. </b><br />
+<br />
+<b>ومن  ردود المخالفين لحجية عمل أهل المدينة ما لا صلة له بما قرره محققوا  المالكية وأئمة مذهبهم ، وأهل العناية بالاستدلال ، وإنما ينصرف نقدهم إلى  من توسع في حجية العمل من المغالين ، مما لم يقله مالك ولا أئمة أصحابه  وأتباعه ، وبعض الردود تعدّى محل النزاع إلى الطعن في الفقه المدني عامة [71].</b><br />
+<br />
+<b>والذي  احتج به الإمام مالك بن أنس من إجماع أهل المدينة ما كان يدل على النقل  والتقرير من النبي صلى الله عليه وسلم ..... وهذا القول هو المؤيد بالحجة  وإليه يشير كلام مالك في &quot;الموطأ&quot; .  قال  إسماعيل بن أبي أويس : سألت مالك بن أنس خالي من قوله في &quot;الموطأ&quot; : &quot;  الأمر المجتمع عليه عندنا الذي لا اختلاف فيه &quot; و&quot; الأمر المجتمع عليه &quot; و &quot;  الأمر عندنا &quot; ؟ .  فقال : أما قولي &quot; الأمر المجتمع عليه عندنا لا اختلاف فيه &quot; فهذا ما لا اختلاف فيه قديماً ولا حديثاً .  وأما قولي &quot; الأمر المجتمع عليه&quot; فهو الذي اجتمع عليه من أرضاه من أهل العلم وإن كان وقع فيه خلاف .  وأما قولي  &quot;الأمر عندنا &quot; و &quot; سمعت بعض أهل العلم &quot; فهو قول من أرتضيه وأقتدي به .  فذكر  أن الأمر المجتمع عليه الذي لا اختلاف فيه هو الذي تناقله أهل العصر عن  الذي قبلهم ، فهذا هو إجماع أهل المدينة عنده ، لا إجماع عن رأي واجتهاد ،  وهذا ما لا يتوقف عن الاحتجاج به منصف ، فإنه يفيد العلم الضروري كنقلهم  مسجده ومنبره وقبره [72].</b><br />
+<br />
+<b><b><font color="#4f81bd">العمل بقول أهل المدينة وترك خبر الواحد</font></b></b><br />
+<br />
+<br />
+<b>وأما  حجة مالك أنه كان في بعض الأحيان يقدم عمل أهل المدينة على خبر الآحاد ...  هو أن ذلك الرأي المشهور المعمول به في المدينة هو سنة مأثورة مشهورة ،  والسنة المشهورة مقدمة على خبر الآحاد [73].</b><br />
+<br />
+<b>وتفصيل  القول فيه : أنه إن كان إجماع أهل المدينة أساسه النقل ، فإنه مقدم على  خبر الآحاد ؛ لأنه نقل متواتر ، وخبر الآحاد لا يعارض المتواتر لأنه ظني ،  والمتواتر قطعي ، وهذا أمر لا خلاف فيه عند المالكيين .  أما  إذا كان عمل أهل المدينة أو إجماعهم أساسه الاجتهاد ، فالخبر أولى عند  جمهور المالكيين ، وبعضهم قرّر أن الإجماع يجوز أن يكون من طريق الاجتهاد ،  وأن إجماع المدينة كيفما كانت أسبابه حجة مضعفة لخبر الاحاد [74]. </b><br />
+<br />
+<b>وقد  أحصى الشاطبي في الموافقات طائفة من المسائل أخذ فيها مالك بالقياس أو  المصلحة أو القاعدة العامة وترك خبر الآحاد ؛ لأنه يرى الأصول التي أخذ بها  قطعية أو تعود إلى أصل قطعي ، والخبر الذي ردّه ظني [75] </b><br />
+<br />
+<b>ومن  هنا يتضح أن الإمام مالك رحمه الله يرى أن دلالة خبر الآحاد ظنية وليست  قطعية ، لذلك فهو يترك العمل بالحديث الأحادي إذا صادم أصلاً قطعياً عنده .</b><br />
+<br />
+<b>&quot; فقد أخذ مالك بالعديد من أخبار الآحاد في الموطأ ، ولم ينقل فيها العمل ، مما يدل على أنه لا يشترط في خبر الآحاد مصاحبة العمل له [76].</b><br />
+<br />
+<b><b><font color="#0070c0">المبحث الرابع : بعض المسائل لأثر الاختلاف في العمل بقول أهل المدينة </font></b></b><br />
+<br />
+<br />
+<b><b>المسائل التي يحتج بها الإمام مالك بعمل أهل المدينة كثيرة ، وقد يوافقه غيره من الأئمة على ذلك لدليل قام عنده أو لا يوافقه .  وهذه بعض المسائل المتنوعة التي احتج فيها الإمام مالك بعمل أهل المدينة .</b></b><br />
+<br />
+<br />
+<b><b>المسألة الأولى : القراءة خلف الإمام </b></b><br />
+<br />
+<br />
+<b> 1 – ذهب الإمام مالك رحمه الله تعالى إلى استحبابه لقراءة الفاتحة في الصلاة السرية وتركه لها في القراءة الجهرية .  وحجته : أنه الأمر الذي عليه أهل المدينة .  فقد  جاء في &quot;الموطأ &quot; : قال يحي : سمعت مالكاً يقول : الأمر عندنا أن يقرأ  الرجل وراء الإمام ، فيما لا يجهر فيه الإمام بالقراءة ، ويترك القراءة  فيما يجهر فيه الإمام بالقراءة [77].</b><br />
+<br />
+<b>2 -  ذهب  الإمام الشافعي رحمه الله تعالى إلى وجوب قراءة الفاتحة في الصلاة السرية  والجهرية . قال : &quot; فواجب على من صلى منفرداً أو إماماً أن يقرأ بأم القرآن  في كل ركعة لايجزيه غيرها &quot; [78]. </b><br />
+<br />
+<b>3 – ذهب الحنفية إلى عدم قراءة المأموم للفاتحة في الصلاتين السرية والجهرية [79].</b><br />
+<br />
+<b>4  – وذهب أحمد رحمه الله تعالى إلى استحباب القراءة للمأموم فيما لا يجهر  فيه ، وفي سكتات الإمام وإذا كان بعيداً لا يسمع قراءة الإمام [80]. </b><br />
+<br />
+<b><b>المسألة الثانية : توريث ذوي الأرحام </b></b><br />
+<br />
+<br />
+<b>1 -  ذهب  الإمام مالك رحمه الله إلى أنه لا ميراث لذوي الأرحام ، وحجته : إجماع أهل  المدينة ، قال في &quot;الموطأ&quot; : &quot; الأمر المجتمع عليه عندنا ، الذي لا اختلاف  فيه : و الذي أدركت عليه أهل العلم ببلدنا : أن ابن الأخ للأم ، و الجد  أبا الأم : و العم أخا الأب للأم : و الخال ، و الجدة أم أبي الأم ، و ابنة  الأخ للأب و الأم : و العمة و الخالة : لا يرثون بأرحامهم شيئاً [81].</b><br />
+<br />
+<b>2  – و ذهبت الحنفية و الحنابلة إلى أن ذوي الأرحام يرثون عندما لا يكون عاصب  أو ذو فرض غير الزوجين ، على اختلاف في طريقة توريثهم تتردد بين القرابة  والتنزيل . فالحنفية يختارون طريقة القرابة فيورثون الأقرب فالأقرب من ذوي  الأرحام .  والحنابلة يورثون على طريقة التنزيل ، أي يجعلونه بمنزلة من يدلي به ممن يرث [82]. </b><br />
+<br />
+<b>3 -  أما  الشافعية فأصل مذهبهم أن لا يورث ذوو الأرحام ، بل المال لبيت المال ، و  أفتى المتأخرون إذا لم ينتظم أمر بيت المال بالرد على أهل الفرض غير  الزوجين ما فرض عن فروضهم بالنسبة ، فإن لم يكونوا صرف إلى ذوي الأرحام [83]. </b><br />
+<br />
+<b> من أدلة من قال بالتوريث :</b><br />
+<br />
+<b> أ -  قوله تعالى <font color="green">{ وأولوا الأرحام بعضهم أولى ببعض في كتاب الله }</font> . و هذا عموم يشمل ذوي الأرحام و يجعلهم أحق بالميراث [84].</b><br />
+<br />
+<b> ب -  قوله عليه الصلاة و السلام <font color="#0000cc">&quot; ... و الخال وارث من لا وارث له .... &quot;</font>و استدل به على أن الخال من جملة الورثة و هو من ذوي الأرحام : و مثله سائر الأرحام [85].</b><br />
+<br />
+<b> و من أدلة من لم يورث ذوي الأرحام :</b><br />
+<br />
+<b> أ -  قوله عليه الصلاة و السلام حين سئل عن ميراث العمة و الخالة : <font color="#0000cc">&quot; لا ميراث لهما &quot;</font> [86]</b><br />
+<br />
+<b>ب*-           أن المواريث ثبتت بالنص ، و لا نص في ذوي الأرحام [87]</b><br />
+<br />
+<b><b>المسألة الثالثة : قتل المسلم بالذمي </b></b><br />
+<br />
+<br />
+<b>اختلف الأئمة في قتل المسلم بالذمي ، إذا قتله المسلم عمداً ، هل يقتل به ؟</b><br />
+<br />
+<b>1 -  قال مالك رحمة الله تعالى : لا يقتل مسلم بكافر إلا أن يقتله المسلم قتل غيلة فيقتل به [88].</b><br />
+<br />
+<b>2 -  و قال أبو حنيفة و أصحابه رحمهم الله تعالى : يقتل به مطلقاً [89].</b><br />
+<br />
+<b>3 -  أما الإمام الشافعي و أحمد رحمهما الله تعالى فقالا : لا يقتل مسلم بكافر بحال [90].</b><br />
+<br />
+<b>الأدلة : حجة الإمام مالك رحمه الله تعالى : عمل أهل المدينة .</b><br />
+<br />
+<b> من أدلة الإمام أبي حنيفة و أصحابه رحمهم الله تعالى : </b><br />
+<br />
+<b>-  قوله تعالى : <font color="green">{ يا أيها الذين آمنوا كتب عليكم القصاص في القتلى الحر بالحر و العبد بالعبد و الأنثى بالأنثى }</font>.(البقرة: 78) . ووجه الاستدلال : عدم التفصيل في الحر بين مؤمن و غيره [91]</b><br />
+<br />
+<b>-  قوله عليه الصلاة و السلام : <font color="#0000cc">&quot; العمد قود &quot;</font>[92]، و هذا عمد فيجب القود به ، أي قتل القاتل ، و هو القصاص [93]</b><br />
+<br />
+<b>حجة الإمام الشافعي رحمه الله تعالى : </b><br />
+<br />
+<b>-  أن  ظاهر الكتاب فرض القصاص بين المؤمنين المكلفين الذين ربطت بينهم أخوة  الإيمان ، إذا قتل بعضهم بعضاً ، لا من انقطعت بهم الرابطة . </b><br />
+<br />
+<b>- سنة المصطفى عليه الصلاة و السلام حيث ثبت الدليل أنه لا يقتل مسلم بغيره بحال من الأحوال [94]</b><br />
+<br />
+<b>أما حجة الإمام أحمد رحمه الله تعالى : </b><br />
+<br />
+<b>-   قول النبي صلى الله عليه و سلم <font color="#0000cc">: &quot; المسلمون تتكافأ دماؤهم ، و يسعى بذمتهم أدناهم ، و لا يقتل مؤمن بكافر &quot;</font> [95].</b><br />
+<br />
+<br />
+<b>-  الذمي  منقوص بالكفر ، و هو في هذا كالمستأمن ، و موافقة أبي حنيفة الجماعة على  أن المسلم لا يقاد بالمستأمن . فكذلك الذمي إذا قتله المسلم لا يقتل به [96].</b><br />
+<br />
+<br />
+يتبع<br />
+</font></span></div><span style="font-family: traditional arabic"><font size="5"> <br />
+</font></span></div><span style="font-family: traditional arabic"><font size="5"><br />
+</font></span>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_900973" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_900973" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=900973" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_900973" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_900974">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-02-19,&nbsp;<span class="time">01:43 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post900974" href="showthread.php?t=172233&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=900974#post900974" class="postcounter">#3</a><a id="postcount900974" name="3"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,746</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: عمل أهل المدينة (حقيقته وأثره في اختلاف الفقهاء)
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_900974">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><b><font size="6"><b><font color="red">عمل أهل المدينة (حقيقته وأثره في اختلاف الفقهاء)</font><br />
+ </b></font></b><br />
+ <br />
+ <br />
+ <b><font size="6"><b><font color="#0070c0">*</font><font color="#008000">رجاء بنت صالح باسودان   باحثة سعودية.<br />
+<br />
+</font></b></font></b><br />
+<b><b><font size="5"><font color="#4f81bd">المسألة الرابعة : المقدار المحرم في الرضاع</font></font></b></b><br />
+<br />
+<br />
+<b><font size="5">اتفق  العلماء على أن الرضاع يثبت حرمة النكاح كما يثبتها النسب ، و إنما  اختلفوا في مسائل متعلقة بالرضاع ، منها : المقدار الذي يثبت به التحريم ؟</font></b><br />
+<br />
+<b><font size="5">1-  فذهب  مالك و أبو حنيفة رحمهما الله تعالى : إلى أن قليل الرضاع و كثيرة سواء في  ثبوت التحريم. قال الإمام مالك في الموطأ : الرضاعة قليلها و كثيرها إذا  كان في الحولين تحرم [97]. </font></b><br />
+<br />
+<b><font size="5">2-  و ذهب الشافعي رحمه الله تعالى : أن التحريم لا يثبت إلا بخمس رضعات متفرقات .</font></b><br />
+<br />
+<b><font size="5">3-  وعن أحمد رحمه الله تعالى ثلاث روايات : أ -  قليل الرضاع و كثيره يحرم .</font></b><br />
+<br />
+<b><font size="5">ب – لا يثبت التحريم إلا بثلاث رضعات .</font></b><br />
+<br />
+<b><font size="5">جـ - أن التحريم يتعلق بخمس رضعات فصاعداً [98]</font></b><br />
+<br />
+<b><font size="5">الأدلة : </font></b><br />
+<br />
+<b><font size="5">حجة الإمام مالك : عمل أهل المدينة .</font></b><br />
+<br />
+<b><font size="5">أما الحنفية فاحتجوا بقوله تعالى<font color="#0000cc">:&quot; وأمهاتكم اللاتي أرضعنكم وأخواتكم من الرضاعة &quot; .</font> (النساء: 23)</font></b><br />
+<br />
+<b><font size="5">وجه الاستدلال : أن الله تعالى علّق التحريم بفعل الرضاعة من غير فصل بين قليل أو كثير ، وهذا مذهب ابن عمر [99].</font></b><br />
+<br />
+<b><font size="5">حجة  الشافعي ، والصحيح في مذهب أحمد ، رحمهما الله تعالى : أن آية الرضاع عامة  وخصّصتها السنة المحكية عن رسول الله صلى الله عليه وسلم ، وبحديث الرسول  عليه الصلاة والسلام : <font color="#0000cc">&quot; لا تحرم المصة والمصتان ، ولا الرضعة والرضعتان &quot;</font> ، وما استدل به الشافعي استدل به الحنابلة للصحيح من مذهبهم [100]. </font></b><br />
+<br />
+<b><font size="5">المسألة الخامسة : مسألة ضع وتعجّل</font></b><br />
+<br />
+<b><font size="5"> أجمع  أهل العلم على تحريم تأخير الدين مقابل الزيادة فيه ، واختلفوا في عكسه :  أي تعجيل القضاء مقابل حطّ شيء من الدين ، وهو المسمّى &quot;ضع وتعجل&quot; [101]</font></b><br />
+<br />
+<b><font size="5">1 -  فذهب الإمام مالك رحمه الله تعالى إلى إلحاق الثاني بالأول ، فلا يجوز ذلك بحال ، وهو مما اجتمع عليه أهل المدينة كافة .  جاء  في &quot;الموطأ&quot; : &quot; قال مالك : والأمر المكروه الذي لا اختلاف فيه عندنا ، أن  يكون للرجل على الرجل الدين إلى أجل ، فيضع عنه الطالب ويعجله المطلوب ،  وذلك عندنا بمنزلة الذي يؤخر دينه بعد محله عن غريمه ، ويزيده الغريم في  حقه ، قال : فهذا الربا بعينه لا شك فيه &quot; [102]</font></b><br />
+<br />
+<b><font size="5">2 -  ذهب أبو حنيفة وابن حنبل والشافعي في أحد قوليه : إلى منعه [103]</font></b><br />
+<br />
+<b><font size="5">3 -  أحد قولي الشافعي وابن عباس من الصحابة : أن ضع وتعجّل جائز [104]</font></b><br />
+<br />
+<b><font size="5">الأدلة : </font></b><br />
+<br />
+<b><font size="5">-  استدل الإمام مالك بالعمل الذي لا اختلاف فيه عند أهل المدينة .</font></b><br />
+<br />
+<b><font size="5">-  واستدل الجمهور : أ -  بما  روي أن المقداد بن الأسود قال : أسلفت رجلاً مائة دينار ، ثم خرج سهمي في  بعث بعثه رسول الله صلى الله عليه وسلم ، فقلت له : عجل لي تسعين ديناراً  وأحط عشرة دنانير ، فقال : نعم ، فذكر ذلك لرسول الله صلى الله عليه وسلم  فقال: &quot; أكلت ربا يا مقداد وأطعمته&quot; .</font></b><br />
+<br />
+<b><font size="5">ب -  أن عبدالله بن عمر سئل عن الرجل يكون له الدين على الرجل إلى أجل ، فيضع عنه صاحب الحق ويعجله الآخر ؟  فكره ذلك عبدالله بن عمر ونهى عنه [105]</font></b><br />
+<br />
+<b><font size="5">جـ  - قد ثبت تحريم ربا الجاهلية ، وهو المعروف ب&quot; انظرني أزدك &quot; بصريح الكتاب  والسنة وإجماع الأمة ، ولما كان &quot; ضع وتعجّل &quot; شبيه بالزيادة مع النظرة ،  بجامع مقابلة الزمان بمقدار من الثمن في الموضعين جميعاً ، فإن الزيادة في  زمان الأول قابلتها زيادة في قدر الدين ، والحط من الزمان في الثاني قابله  حط من قدر الدين ، وبه يعلم أنهما سواء في الحكم .  وأن الحط من الدين مقابل تعجيله فيه شراء الجنس الواحد ببعضه متفاضلاً مع التأخير ، والتفاضل والنساء في الجنس الواحد لا يجوز [106]</font></b><br />
+<br />
+<b><font size="5">-  استدل  القائلون بجواز تعجيل الدين مقابل الحط عنه : ما روي عن ابن عباس رضي الله  عنهما قال: لما أمر النبي صلى الله عليه وسلم بإخراج بني النضير من  المدينة ، جاء ناس منهم فقالوا : يا رسول الله !  إنك أمرت بإخراجهم ولهم على الناس ديون لم تحل ؟  فقال النبي صلى الله عليه وسلم : <font color="#0000cc">&quot; ضعوا وتعجلوا &quot; </font>.  وفي الحديث إباحة للحط من الدين مقابل تعجيله ، وقد ثبت عن ابن عباس أنه كان لا يرى بأساً أن يقول المدين : أعجل لك وتضع عني [107]</font></b><br />
+<br />
+<b><font size="5">-  أن في الحط من الدين منفعة للمدين فصار من أسباب الزيادة في الإرفاق فلم يمنع [108].</font></b><br />
+<br />
+<b><font size="5"><font color="red">الخاتمة</font></font></b><br />
+<br />
+<b><font size="5">1-  انفراد  الإمام مالك بالقول بعمل أهل المدينة . والمقصود بعمل أهل المدينة :  أقاويل أهلها ، ومنه ما كان أصله سنة عن النبي صلى الله عليه وسلم ، ومنه  ما كان سنة خلفائه الراشدين رضي الله عنهم ومنه ما كان اجتهاداً ممن بعدهم  من الصحابة والتابعين .</font></b><br />
+<br />
+<b><font size="5">2-  بطلان الدعوى القائلة بأن الإمام مالك يرى أن إجماع الأمة هو إجماع أهل المدينة وأن إجماع    أهل المدينة حجة في كل عصر .</font></b><br />
+<br />
+<b><font size="5">3- حجية العمل النقلي سواء أكان مصدره قولاً أو فعلاً أو تقريراً مباشراً من النبي صلى الله عليه و سلم . و تحريم مخالفته .</font></b><br />
+<br />
+<b><font size="5">4-  أن الخلاف في إجماع أهل المدينة فيما طريقه الاجتهاد والاستدلال والاستنباط .</font></b><br />
+<br />
+<b><font size="5">5-  أن العمل القديم لأهل المدينة حجة .</font></b><br />
+<br />
+<b><font size="5">6-  عدم حجية العمل المتأخر بالمدينة .</font></b><br />
+<br />
+<b><font size="5">7-  أن عمل أهل المدينة الذي وافقه دليل وخالفه آخر ، اختلف فيه : فمنهم من يرجح بعمل أهل المدينة ، ومنهم لا يرجح .</font></b><br />
+<br />
+<b><font size="5">8-  اختلاف  العلماء في تحديد مراد الإمام مالك من العمل ، واستخدامه لمصطلحات عديدة ،  كقوله : &quot; الأمر المجتمع عليه &quot; و &quot; الذي لا اختلاف فيه &quot; ، وغيرهما .</font></b><br />
+<br />
+<b><font size="5">9-  أن  الإمام مالك لا يستحق مثل هذا التشنيع ، خاصة إذا علمنا أنه لم يرد حمل  الناس على &quot;الموطأ&quot; عندما عُرض عليه هذا الأمر ، ولو كان يريد إلزام الناس  بما فيه لوافق عليه في الحال .</font></b><br />
+<br />
+<b><font size="5">10-  أن خبر الآحاد دلالته ظنية عند الإمام مالك ، لذا فهو لا يعمل به عند مصادمته لعمل أهل المدينة المتواتر .  </font></b><br />
+<br />
+<b><b><font size="5"><font color="#0070c0">*</font><font color="#0070c0">رجاء بنت صالح باسودان</font><font color="#0070c0"> باحثة سعودية.</font></font></b></b><br />
+<br />
+<br />
+<b><font size="5"><font color="red">****</font></font></b><br />
+<br />
+<br />
+<b><font size="5"> <br />
+ </font></b><br />
+<br />
+</span><span style="font-family: Calibri"><hr /></span><span style="font-family: traditional arabic"><br />
+<br />
+<b><font size="5">[1] انظر : ترتيب المدارك للقاضي عياض ، ص 104-112 -  مالك  لأبي زهرة ، ص 18 وما بعدها .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[2] انظر : ترتيب المدارك ، ص 119 و ما بعدها   -  مالك ، ص 22 وما بعدها ، ص 83 وما بعدها .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[3] انظر : ترتيب المدارك ، ص 125 وما بعدها  -  مالك ، ص 33 وما بعدها .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[4] انظر : ترتيب المدارك ، ص 191 وما بعدها  -  مالك ، ص 175-194  </font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[5] انظر : مالك ، ص 194 وما بعدها .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[6] المرجع السابق ، ص 218</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[7] المرجع السابق ، ص 382 وما بعدها .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[8] يونس (71)</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[9] سنن الدار قطني ، 2/172 -  فتح الباري شرح صحيح البخاري ، ابن حجر ، ج 4 ، ص 142 ، الموسوعة الإلكترونية .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[10] الإحكام للآمدي ، ج 1 ، ص 167  -  إرشاد الفحول للشوكاني ، ص 131 ، الموسوعة الإلكترونية .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[11] المستصفى ، ج 1 ، ص 173</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[12] الإحكام في أصول الأحكام ، ج 1 ، ص 168</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[13] انظر : الإحكام للآمدي ، ج 1 ، ص 168 – إرشاد الفحول للشوكاني ، ص 132 ، الموسوعة الإلكترونية .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[14]  وهو ما تم تعريفه في المبحث الأول .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[15] انظر : المستصفى للغزالي ، ج 1 ، ص 191 -  الإحكام للآمدي ، ج 1 ، ص 214</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[16] أن  يكون السكوت مجرداً من علامة الرضا أو الكراهة ، وأن ينتشر الرأي المقول  به وتمضي مدة كافية للتأمل ، وأن تكون المسألة إجتهادية ، وتنتفي الموانع  التي تمنع من اعتبار هذا السكوت موافقة . أصول الفقه الإسلامي ، د. وهبة  الزحيلي ، ج1 ، ص553</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[17] المرجع السابق ،ص 552 ، 553  -  الإحكام للآمدي ، ج1 ، ص 214 -  إرشاد الفحول</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[18] أثر الأدلة المختلف فيها ، د. مصطفى ديب البغا ، ج2 ، ص 427</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[19] الأحزاب 33</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[20] انظر : المستصفى للغزالي ،ج1،ص185 -  الأحكام للآمدي ،ج1 ، ص 209 -  مختصر ابن الحاجب وشرحه البيان ، ص568 – أصول الفقه الإسلامي ، ج1 ، ص 516 ، 517 ، 518</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[21] انظر : الإحكام ، ص 211 -  إرشاد الفحول ، ص 150 ، 152 ، الموسوعة الإلكترونية -  المستصفى ، ج1 ، ص 187</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[22] ترتيب المدارك للقاضي عياض ، ج1 ، ص 64-65</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[23] عمل أهل المدينة  ، د. أحمد محمد نور سيف ، ص 80-81</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[24] سنن البيهقي ، 5 / 66 ، الموسوعة الإلكترونية .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[25] الموطأ ، ك النذور والأيمان ، ب 8 ، ص 29</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[26] عمل اهل المدينة ، أحمد محمد نور سيف ، ص 81</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[27] انظر مالك لأبي زهرة ، ص 280</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[28] عمل اهل المدينة ، ص 86</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[29] شيخ  المالكية أبو محمد عبدالوهاب بن علي بن نصر بن أحمد بن حسين العراقي ، صنف  كتاب التلقين والمعرفة في شرح الرسالة للقيرواني ، كان ثقة ، خرج في آخر  عمره إلى مصر فمات بها سنة 422 هـ  .  تهذيب سير أعلام النبلاء ، ج2 ، ص 299</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[30] المعونة على مذهب أهل المدينة للقاضي عبدالوهاب ، مسألة ملحقة في كتاب المقدمة في الأصول لابن القصار ، ص 242</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[31] كتاب الملخص للقاضي عبدالوهاب ، وهذه ا لمسألة ملحقة في كتاب المقدمة في الأصول لابن القصار ، ص 253 - 255</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[32]  القاضي  أبو الفضل عياض بن موسى بن عياض اليحصبي الأندلسي السبتي المالكي ، ولد  سنة 476ه ، من كتبه الشفا ، وقد حدث عنه خلق من العلماء منهم خلف بن بشكوال  والأشيري ، توفي بمراكش سنة 544 هـ . تهذيب سير أعلام النبلاء ، ج3 ،ص 16</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[33] ترتيب المدارك للقاضي عياض ، ج1 ، ص 68 - 70</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[34]  شيخ  المالكية أبو الحسن علي بن عمر بن أحمد البغدادي ابن القصار ، روى عنه  أبوذر الحافظ وأبو الحسين بن المهتدي بالله ، ووثقه الخطيب ، قال القاضي  عياض : كان أصولياً نظاراً ولي قضاء بغداد ، توفي سنة 397 هـ . تهذيب سير  أعلام النبلاء ، ج2 ، ص 251</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[35] المقدمة في الأصول لابن القصار ، تحقيق : أ . محمد بن الحسين السليماني ، ص 75 - 76</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[36] الفقيه  أبو عبيد الله القاسم بن خلف الجبيري المالكي الطرطوشي الأندلسي ، لزم  قرطبة وسمع بها من قاسم بن أصبغ وغيره ، وسمع بالعراق من أبي بكر الأبهري  ولازمه وتفقه عنده على المذهب المالكي وأقام في رحلته ثلاثة عشر عاماً .  ترتيب المدارك وتقريب المسالك ، ج3 ، ص562</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[37] التوسط  بين مالك وابن القاسم في المسائل التي اختلفا فيها من مسائل المدونة لأبي  عبيد القاسم ، من الملاحق في كتاب المقدمة في الأصول لابن القصار ، ص 211 ،  212</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[38] العلامة  المقرئ الأصولي الفقيه النحوي أبوعمرو عثمان بن عمر بن أبي بكر الكردي  الدويني المالكي ، ولد سنة 570 هـ حفظ القرآن وأخذ بعض القراءات عن الشاطبي  ، درّس بجامع دمشق وبالنورية المالكية .  تهذيب سير أعلام النبلاء ، ج3 ، ص 291</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[39] بيان المختصر شرح مختصر ابن الحاجب للأصفهاني ، ج1 ، ص 563</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[40] الإمام  شهاب الدين أحمد بن إدريس بن عبدالرحمن الصنهاجي المصري المعروف بالقرافي ،  تتلمذ على العز بن عبدالسلام وابن الحاجب وغيرهما ، وكان بارزاً بارعاً في  الفقه والأصول والتفسير وعلم الكلام ، من مؤلفاته : الذخيرة ، القواعد .  توفي سنة 684 هـ ودفن بالقرافة . الديباج المذهب ، ص 62 ، الموسوعة  الإلكترونية .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[41] عمل أهل المدينة للقرافي ، مسألة ملحقة في كتاب المقدمة في الأصول لابن القصار ، ص 223 ، 224</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[42] الإمام  العلامة الحافظ أبو الوليد سليمان بن خلف بن سعد ابن أيوب بن وارث التجيبي  الأندلسي القرطبي الباجي الذهبي صاحب التصانيف ، ولد سنة 403 هـ حج وجاور  ثلاثة أعوام ، ثم ارتحل إلى دمشق ثم الموصل فبرز في الحديث والفقه والكلام  والأصول والأدب ، ثم رجع إلى الأندلس وتوفي سنة 474 هـ . تهذيب سير أعلام  النبلاء ، ج 2 ، ص 421</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[43] إحكام الفصول للباجي ، ص 480 ، 481 ، 482</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[44] الإمام  محمد بن إدريس بن العباس بن عثمان بن شافع ، عالم العصر ناصر الحديث ،  فقيه الملة أبو عبدالله ، ولد بغزة أخذ العلم بمكة عن فضيل بن عياض وعدّة ،  وارتحل إلى المدينة وصنف في أصول الفقه وفروعه وتكاثر عليه الطلبة . حدّث  عنه الحميدي وأحمد بن حنبل ، ثقة حجة حافظ توفي سنة 204 هـ . تهذيب سير  أعلام النبلاء ، ج1، 353الشيخ الإمام العلامة فقيه العصر شيخ الحنابلة ،  مجد</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[45] ص 534-535</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[46] الشيخ  الإمام العلامة فقيه العصر شيخ الحنابلة ، مجد الدين أبو البركات  عبدالسلام بن عبدالله بن الخضر بن محمد بن علي الحراني ، ابن تيمية . ولد  سنة 590 هـ ، وتفقه على عمه فخر الدين الخطيب ، ثم سار إلى بغداد فسمع من  أبي أحمد بن سكينة وابن طبرزد وعدة ، حدّث عنه ولده شهاب الدين والدمياطي  وعدة ، صنف التصانيف وانتهت إليه الإمامة في الفقه ، توفي بحران سنة 652 هـ  . تهذيب سير أعلام النبلاء ج3ص299</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[47] صحة أصول مذهب أهل المدينة ، ابن تيمية ، ص 36 ، 42، 43 ، 44</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[48] العلامة  المصنف فارس الكلام سيف الدين علي بن أبي علي بن محمد بن سالم التغلبي  الآمدي الحنبلي الشافعي ، ولد سنة نيف وخمسين ، له نحو من عشرين تصنيفاً  منها : منتهى السول في الأصول ، ثم تحول إلى دمشق ودرّس بالعزيزية مدة ،  توفي سنة 631 هـ . تهذيب سير أعلام النبلاء ، ج3 ، ص 230</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[49] الإحكام ، ج1 ، ص 206 – 207</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[50] الشيخ  الإمام حجة الإسلام زين الدين أبو حامد محمد بن محمد الطوسي الشافعي صاحب  التصانيف ، تحول إلى نيسابور فلازم إمام الحرمين ، ثم زار بيت المقدس وصحب  الفقيه نصر بن إبراهيم بدمشق وألف كتاب الإحياء ، برع في الأصول والخلاف  والجدل والمنطق ، وكان شديد الذكاء ، توفي سنة 505 هـ . تهذيب سير أعلام  النبلاء ، ج 2 ، ص 491</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[51] المستصفى ، ج1 ، ص 187</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[52] شمس  الدين أبي عبدالله محمد بن أبي بكر ، ولد سنة 691هـ ، سمع الحديث واشتغل  بالعلم وبرع في علوم متعددة مثل : التفسير والحديث ، ولما عاد ابن تيمية من  مصر في عام 712هـ لازمه حتىمات وصاحبه ابن كثير ، له من التصانيف الكثير ،  توفي سنة 751هـ . البداية والنهاية ج14</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[53] إعلام الموقعين ، ج2 ، ص 385</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[54]  فقد نسب الغزالي إلى مالك أنه يقول :لاحجة إلا في إجماع أهل المدينة ، انظر المستصفى ، ج1 ، ص 187</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[55] المسائل التي بناها الإمام مالك على عمل أهل المدينة ، د. محمد المدني بوساق ،ج1 ، ص 68</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[56] ترتيب المدارك للقاضي عياض ، ج1 ، ص 67 ، 68 ، 71</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[57] إحكام الفصول للباجي ، ص 480</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[58] انظر : عمل أهل المدينة ، د. أحمد محمد نور سيف ، ص 101 - 102</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[59] أثر الأدلة المختلف فيها ، د. مصطفى ديب البغا ، ص 427 - 428</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[60] ترتيب المدارك للقاضي عياض ، ج1 ، ص 68 - 69</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[61] المرجع السابق ، ص 69</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[62] انظر ص 13 من هذا البحث .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[63] إعلام الموقعين ، ج2 ، ص 392</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[64] المسائل التي بناها الإمام مالك على عمل أهل المدينة ، ج1 ، ص 86 – 87 عن فتاوى ابن تيمية (20/306-311)</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[65] الإحكام للآمدي ج1 ص207 ، أثر الإختلاف في القواعد الأصولية د. مصطفى الخن ص 458-459 ، مالك لأبي زهرة ص280</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[66] صحيح البخاري ، ج2 ، ك 29 ، ب 2 ، ص 221</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[67] المرجع السابق ، ب 6 ، ص 222</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[68] المرجع السابق ، ب 7 ، ص 222</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[69] صحيح البخاري ، ج2 ، ك 29 ، ب 9 ، ص 223</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[70] انظر : الإحكام للآمدي ج1 ص 207 ، 208 -  المستصفى للغزالي ج1 ص 187</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[71] المسائل التي بناها الإمام مالك على عمل أهل المدينة ، د. محمد المدني بوساق ، ج1 ، ص 105 -106</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[72] مسألة في إجماع أهل المدينة لابن عتيق الربعي المالكي ، وهي ملحقة في كتاب المقدمة في الأصول لابن القصار ، ص 318 - 319</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[73] مالك لأبي زهرة ، ص 280</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[74] المرجع السابق ، ص 284</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[75] المرجع السابق ، ص 253</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[76] عمل أهل المدينة بين مصطلحات مالك وآراء الأصوليين ، د. أحمد محمد نور سيف ، ص 36</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[77] ج1 ، ك 3 ، الصلاة ، ب 10 ، ص 54</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[78] الأم ، الإمام الشافعي ، ج1 ، ص 107 ، الموسوعة الإلكترونية .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[79] الهداية شرح البداية ، المرغيناني ،ج1 ، ص 55 ، الموسوعة الإلكترونية .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[80] المغني ، ابن قدامة ، ج1 ، ص 331 ، الموسوعة الإلكترونية .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[81] ج2 ، ك27 ، الفرائض ، ب 12 ، ص 56</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[82] المغني ، ابن قدامة ، ج6 ، ص 206-207  -  حاشية ابن عابدين ، ج6 ، ص 792 ، الموسوعة الإلكترونية .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[83] الأم ، الشافعي ، ج4 ، ص 80 ، الموسوعة الإلكترونية .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[84] المسائل التي بناها الإمام مالك على عمل أهل المدينة ، د. محمد المدني بوساق ، ج3 ، ص 1355</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[85] المرجع السابق ، ص 1356</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[86] سنن الدار قطني ، ج4 ، ص 98 ، الموسوعة الإلكترونية .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[87] المسائل التي بناها الإمام مالك على عمل أهل المدينة ، مرجع سابق ، ص 1350</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[88] الموطأ ، ك 43 ، العقول ، ب 15 ، ما جاء في دية أهل الذمة ، ج 2 ، ص 296</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[89] الهداية شرح البداية ، المرغيناني ، ج4 ، ص 160 ، الموسوعة الإلكترونية .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[90] الأم ، الشافعي ، ج6 ، ص 38  -  المغني ، ابن قدامة ، ج8 ، ص 218 ، الموسوعة الإلكترونية</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[91] أثر الأدلة المختلف فيها في الفقه الإسلامي ، د. مصطفى ديب البغا ، ج2 ، ص 519</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[92] سنن الدار قطني ، ج3 ، ص 94 ، الموسوعة الإلكترونية .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[93] أثر الأدلة المختلف فيها ، مرجع سابق ، ص 519</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[94] المرجع السابق ، ص 519</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[95] المغني ، ابن قدامة ، ج8 ، ص 218 ، الموسوعة الإلكترونية .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[96] المرجع السابق ، ص 218</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[97] ك 30 الرضاع ، ب رضاعة الصغير ، ج2 ، ص 113 -  الهداية شرح البداية للمرغيناني ، ج1 ، ص223،الموسوعة الإلكترونية</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[98] أثر الأدلة المختلف فيها ، د. مصطفى البغا ، ج2 ، ص 504</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[99] المرجع السابق ، ص 505<br />
+</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[100] المغني ، ابن قدامة ، ج8 ، ص 138 ، الموسوعة الإلكترونية .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[101] المسائل التي بناها الإمام مالك على عمل أهل المدينة ، د. محمد المدني بوساق ، ج2 ، ص 764</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[102] ك31 البيوع ، ب 39 ما جاء في الربا في الدين ، ج2 ، ص 160</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[103] المغني ، ابن قدامة ، ج4 ، ص 250 ،  -  سنن البيهقي الكبرى ، ك البيوع ، ج5 ، ص 275 ، ح 10246 ، الموسوعة الإلكترونية .</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[104] المسائل التي بناها الإمام مالك على عمل أهل المدينة ، مرجع سابق ، ص 765</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[105] الموطأ ، ك 31 البيوع ، ب 39 ما جاء في الربا في الدين ، ج2 ، ص 159</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[106] المغني لابن قدامة ، ج 4 ، ص 52 ، الموسوعة الإلكترونية .  المسائل ، د. محمد بوساق ، ج2 ، ص 766-767</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[107] المسائل ، مرجع سابق ، ص 769</font></b><br />
+<br />
+<br />
+<br />
+<br />
+<b><font size="5">[108] المرجع السابق ، ص 770 - 771</font></b><br />
+</span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_900974" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_900974" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=900974" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_900974" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_901154">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-02-21,&nbsp;<span class="time">10:38 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post901154" href="showthread.php?t=172233&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=901154#post901154" class="postcounter">#4</a><a id="postcount901154" name="4"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=49436&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمدالمرنيسي غير متواجد حالياً"><strong>محمدالمرنيسي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=49436&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=49436&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمدالمرنيسي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2009</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>480</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: عمل أهل المدينة (حقيقته وأثره في اختلاف الفقهاء)
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_901154">
+				<blockquote class="postcontent restore">
+					جزاكم الله خيرا أبا الوليد،لو تفضلتم بوضع هذا الموضوع في ملف خاص لكان ذلك أسهل وأيسر لقراءته ومراجعته بصورة أحسن.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_901154" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_901154" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=901154" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_901154" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=172233&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="popupctrl"><span class="ctrlcontainer">مجلس الفقه وأصوله</span></a>
+		<a href="showthread.php?t=172233#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=696d1a7d9adaea36633b28fa7c3827c1">لوحة التحكم</a></li>
+		<li><a href="private.php?s=696d1a7d9adaea36633b28fa7c3827c1">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1">الاشتراكات</a></li>
+		<li><a href="online.php?s=696d1a7d9adaea36633b28fa7c3827c1">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=172257&amp;s=696d1a7d9adaea36633b28fa7c3827c1">سؤال .. من أجاز هذا من العلماء ؟!</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=166597&amp;s=696d1a7d9adaea36633b28fa7c3827c1">حكم دخول مكة من غير إحرام</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A3%D9%87%D9%84">أهل</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D8%AE%D8%AA%D9%84%D8%A7%D9%81">اختلاف</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D9%81%D9%82%D9%87%D8%A7%D8%A1">الفقهاء</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9">المدينة</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%AD%D9%82%D9%8A%D9%82%D8%AA%D9%87">حقيقته</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%B9%D9%85%D9%84">عمل</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%81%D9%8A">في</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%88%D8%A3%D8%AB%D8%B1%D9%87">وأثره</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=172233#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=172233#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">04:38 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,2428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=40a3dbf8dad57f073fe7698bbce8648b&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=67104";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس اللغة العربية وعلومها - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=10" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1713958091" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1713958091" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="اختبار, الأخطاء, الإملائية, لمهارتك" />
+	<meta name="description" content="اختبار لمهارتك الإملائية (الأخطاء الإملائية 9) 
+ 
+ 
+ميّز الخطأ من الصواب فيما يأتي وصححه :  
+شئ – قد بريء من المرض – هو بريء من التهمة - الإحتياط - الإحتشام - هذا بناءك - وشاهدتُ بنائه - كان معه عصتان - هاتان دولتان عظمتان وكبرتان – إبن من أنت؟ - مَائة - اتخذتُ الحق مبدأاً - كرتٌ - مسئلة - أتقن كلا اللغتين - قابلت أخين - كان عمر ابن الخطاب عادلا - الإستعجال - الإعتزال - الإعتصام - فأرسل لى بذلك كتابتًا - أسعدني منحَك أخوك جائزة - له - الله – مياة - قضاتٌ - مراعاتٌ - دكتوراه – اتجاه - اللهم احفظ" />
+
+	<title> اختبار لمهارتك الإملائية (الأخطاء الإملائية 9)</title>
+	<link rel="canonical" href="showthread.php?t=67104&s=40a3dbf8dad57f073fe7698bbce8648b" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1713958091" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1713958091" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1713958091" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1713958091&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=40a3dbf8dad57f073fe7698bbce8648b" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="40a3dbf8dad57f073fe7698bbce8648b" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=40a3dbf8dad57f073fe7698bbce8648b" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=40a3dbf8dad57f073fe7698bbce8648b -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=40a3dbf8dad57f073fe7698bbce8648b"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=40a3dbf8dad57f073fe7698bbce8648b">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=40a3dbf8dad57f073fe7698bbce8648b">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=40a3dbf8dad57f073fe7698bbce8648b">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=40a3dbf8dad57f073fe7698bbce8648b" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=40a3dbf8dad57f073fe7698bbce8648b">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=10&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس اللغة العربية وعلومها</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> اختبار لمهارتك الإملائية (الأخطاء الإملائية 9)</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=40a3dbf8dad57f073fe7698bbce8648b&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 8 من 8
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=67104&s=40a3dbf8dad57f073fe7698bbce8648b" title="تحديث الصفحة">اختبار لمهارتك الإملائية (الأخطاء الإملائية 9)</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=67104" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;t=67104&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=addsubscription&amp;t=67104" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;search_type=1&amp;searchthreadid=67104&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="40a3dbf8dad57f073fe7698bbce8648b" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="67104" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_420008">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-10-28,&nbsp;<span class="time">04:54 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post420008" href="showthread.php?t=67104&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=420008#post420008" class="postcounter">#1</a><a id="postcount420008" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=63438&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="أبو مالك الدرعمي غير متواجد حالياً"><strong>أبو مالك الدرعمي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=63438&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=63438&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو مالك الدرعمي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>118</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> اختبار لمهارتك الإملائية (الأخطاء الإملائية 9)
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_420008">
+				<blockquote class="postcontent restore">
+					<span style="font-family: arial black"><font size="7"><font color="#0000ff">اختبار لمهارتك الإملائية (الأخطاء الإملائية 9)<br />
+<br />
+<br />
+</font></font></span><font size="6"><font color="#0000ff"><span style="font-family: arial black"><b>ميّز الخطأ من الصواب فيما يأتي وصححه : </b><br />
+</span><b><span style="font-family: simplified arabic"><span style="font-family: arial black">شئ – قد بريء من المرض – هو بريء من التهمة - الإحتياط - الإحتشام - هذا بناءك - وشاهدتُ بنائه - كان معه عصتان - هاتان دولتان عظمتان وكبرتان – إبن</span></span></b><span style="font-family: simplified arabic"><b><span style="font-family: simplified arabic"> من أنت؟ </span></b><b><span style="font-family: simplified arabic">- مَائة - اتخذتُ الحق مبدأاً - كرتٌ - مسئلة - أتقن كلا اللغتين - قابلت أخين - كان عمر ابن الخطاب عادلا </span></b><b><span style="font-family: arial">-</span></b><b><span style="font-family: simplified arabic"> الإستعجال - الإعتزال - الإعتصام - فأرسل لى بذلك كتابتًا - أسعدني منحَك أخوك جائزة </span></b><b><span style="font-family: simplified arabic">- له - الله – مياة</span></b><b><span style="font-family: arial"> - </span></b><b><span style="font-family: simplified arabic">قضات</span></b><b><span style="font-family: simplified arabic">ٌ </span></b><b><span style="font-family: simplified arabic">- مراعاتٌ </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">دكتوراه – اتجاه - اللهم احفظ بناتَنا - بما تكتب؟ ولما تستعجل؟ وعمَّ تتحدث؟ - أولوا العزم - إن كنتا شهمًا - لاكن - ذالك الذين ( للمثنى ) - اللذين (للجمع) - عَمْرُ - - العاشرة مساءًا - باسم الله - رمي - سعى - أنظر إليّ فأنا انظر إليك - استخرج - طاها - هاذا - أُُلائك - عبائة - فوأد - مساءلة - فَجْئَةً </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">هم </span></b><b><span style="font-family: simplified arabic">يتاءلمون - تباطوء - القارء - امروء - ينبيء – احمد الله - الامام -</span></b><b><span style="font-family: simplified arabic">ازالة - الخاطيء - قرأتُ جزءاً - إختبار </span></b><b><span style="font-family: simplified arabic">- إشتراك </span></b><b><span style="font-family: simplified arabic">- إلتحق </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">أأبنك هذا؟</span></b><b><span style="font-family: simplified arabic"> - هم يلعبونا - حضر عشر رجال وعشر نسوة - </span></b><b><span style="font-family: simplified arabic">إستخراجات </span></b><b><span style="font-family: simplified arabic">– إستقبال </span></b><b><span style="font-family: simplified arabic">– أدعوا اللة ان ينصركي ويهديَك أختاه - </span></b><b><span style="font-family: simplified arabic">الحيَاتُ - النجات – الاستخلاص</span></b><b><span style="font-family: simplified arabic"> -</span></b><b><span style="font-family: simplified arabic"> الاستدقاق - الإستراتيجي - بارئ - يكتب بالقلمي - لا تنسى ذكر الله يا أبتي - إبنة</span></b><b><span style="font-family: simplified arabic">الرشيد - تطصادم الأراؤُ – ساعي إلى الحق وقاضي به – إمرأةٌ - إسم - أسماء – كثرة المألفات - ماءة – اللتي - مؤمناة - بيوةٌ - مياه أمواة - علاماتٌ - إلاه - لاكن</span></b><b><span style="font-family: simplified arabic"> -</span></b><b><span style="font-family: simplified arabic"> أكلو </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">بذلو - لن يهملوا - علمتُ نبأً - دعى الشيخ لك - أعيى المرض صاحبُه - عصى </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">بكا</span></b><b><span style="font-family: simplified arabic"> الغلام – بَعثتُ </span></b><b><span style="font-family: simplified arabic">إليكم وإليهي</span></b><b><span style="font-family: arial"> - </span></b><b><span style="font-family: simplified arabic">رأيت كلا الحديقتين - ذهب إلى الفصل</span></b><b><span style="font-family: simplified arabic">ي</span></b><b><span style="font-family: simplified arabic">– ذووا المهارة</span></b><b><span style="font-family: arial"> - </span></b><b><span style="font-family: simplified arabic">إليكي عني فأنتي سبب الأخطائ - نافذتٌ</span></b><b><span style="font-family: simplified arabic"> - </span></b><b><span style="font-family: simplified arabic">اشربي - إشربي - اشربِ - سمعتُ خبراً – رأيتُ شيخاً - لة - هذهي – اللة – الإقتناع – الإكتئاب - الإكتحال</span></b><b><span style="font-family: arial"> - </span></b><b><span style="font-family: simplified arabic">مهندسوا الشركة </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">أرجو- ترجو - نرجوا - عيسى ابن مريم - (عمر-رضي الله عنه- ابن الخطاب).</span></b></span></font><br />
+<br />
+<br />
+<br />
+</font><br />
+<div style="text-align: center;"><b><font color="olive"><span style="font-family: arial"><span style="font-family: arial black"><font size="6">أسأل الله تعالى أن يُخلصها لكاتبها وقارئها ، وأن ينفع بها من تبلغه ، وأن يسوقها لأهلها الذين يحتاجونها. </font></span></span></font></b></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_420008" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_420008" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=420008" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_420008" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_420034">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-10-28,&nbsp;<span class="time">07:33 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post420034" href="showthread.php?t=67104&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=420034#post420034" class="postcounter">#2</a><a id="postcount420034" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=62660&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="أبو أسماء الحنبلي النصري غير متواجد حالياً"><strong>أبو أسماء الحنبلي النصري</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=62660&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=62660&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو أسماء الحنبلي النصري غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>478</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: اختبار لمهارتك الإملائية (الأخطاء الإملائية 9)
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_420034">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="#0000ff"><span style="font-family: arial black"><b>ميّز الخطأ من الصواب فيما يأتي وصححه : </b><br />
+</span><b><span style="font-family: simplified arabic"><span style="font-family: arial black">شئ <font color="red"><u>شيء</u></font> – قد بريء <u><font color="red">برئ</font></u> من المرض – هو بريء <font color="red"><u>برئ</u></font> من التهمة - الإحتياط <u><font color="red">الاحتياط</font></u> - الإحتشام <font color="red"><u>الاحتشام</u></font> - هذا بناءك <font color="red"><u>بناؤك</u></font> - وشاهدتُ بنائه <font color="red"><u>بناءه</u></font> - كان معه عصتان <font color="red"><u>عصوان</u></font> - هاتان دولتان عظمتان <u><font color="red">عظميان</font></u> وكبرتان وكبريان – إبن <font color="red"><u>ابن</u></font></span></span></b><span style="font-family: simplified arabic"><b><span style="font-family: simplified arabic"> من أنت؟ </span></b><b><span style="font-family: simplified arabic">- مَائة <u><font color="red">مِائة</font></u> - اتخذتُ الحق مبدأاً <u>مبدأ</u>- كرتٌ <u>كرة</u>- مسئلة (هذا وجه صحيح) والقاعدة: <font color="red"><u>مسألة</u></font>- أتقن كلا <font color="red"><u>كلتا</u></font> اللغتين - قابلت أخين <font color="red"><u>أخوين</u></font> - كان عمر ابن <font color="red"><u>بن</u></font> الخطاب عادلا </span></b><b><span style="font-family: arial">-</span></b><b><span style="font-family: simplified arabic"> الإستعجال <font color="red"><u>الاستعجال</u></font> - الإعتزال <u><font color="red">الاعتزال</font></u> - الإعتصام <font color="red"><u>الاعتصام</u></font> - فأرسل لى بذلك كتابتًا <u><font color="red">كتابة</font></u> - أسعدني منحَك <font color="red"><u>منحُك</u></font> أخوك <u><font color="red">أخاك</font></u> جائزة </span></b><b><span style="font-family: simplified arabic">- له <u><font color="red">لا</font></u>  - الله – مياة</span></b><b><span style="font-family: arial"> <font color="red"><u>مياه</u></font> - </span></b><b><span style="font-family: simplified arabic">قضات</span></b><b><span style="font-family: simplified arabic">ٌ <u><font color="red">قضاة</font></u> </span></b><b><span style="font-family: simplified arabic">- مراعاتٌ <font color="red"><u>مراعاة</u></font> </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">دكتوراه(أعجمية!) – اتجاه <font color="red"><u>وجاه أو جهة</u></font> - اللهم احفظ بناتَنا <font color="red"><u>بناتِنا</u></font> جمع مؤنث سالم ينصب بالكسرة نيابة..- بما <font color="red"><u>بم</u></font> تكتب؟ ولما <u><font color="red">ولم</font></u> تستعجل؟ وعمَّ تتحدث؟ - أولوا <font color="red">أولو</font> العزم - إن كنتا <font color="red"><u>كنت</u></font> شهمًا - لاكن <u>لكن</u> - ذالك <font color="red"><u>ذلكما</u></font> الذين <font color="red"><u>اللذين</u></font> ( للمثنى ) - اللذين <u><font color="red">الذين</font></u> (للجمع) - عَمْرُ <font color="red"><u> عمرٌو</u></font>- - العاشرة مساءًا <u><font color="red">مساءً</font></u> - باسم الله (خلاف)- رمي (تصح بوضع النقطتين وبغيرها) - سعى - أنظر <u><font color="red">انظر</font></u> إليّ فأنا انظر <font color="red"><u>أنظر</u></font> إليك - استخرج - طاها <u><font color="red">طه</font></u> - هاذا <font color="red"><u>هذا</u></font> - أُُلائك <font color="red"><u>أولئك</u></font>- عبائة <u>عباءة</u> - فوأد <u>فؤاد</u> - مساءلة - فَجْئَةً <u>فجأة </u></span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">هم </span></b><b><span style="font-family: simplified arabic">يتاءلمون <u>يتألمون</u> - تباطوء <font color="red"><u>تباطؤ</u></font> - القارء <u><font color="red">القارئ</font></u> - امروء <font color="red"><u>امرء</u></font> - ينبيء <font color="red"><u>ينبئ</u></font> – احمد<u><font color="red">(تصح أمرا!)</font></u> أحمد<font color="red">(المتكلم)</font> الله - الامام <u><font color="red">الإمام</font></u> -</span></b><b><span style="font-family: simplified arabic">ازالة <u><font color="red">إزالة</font></u>- الخاطيء <u>الخاطئ</u> - قرأتُ جزءاً <u>جزءً</u>- إختبار <u><font color="red">اختبار</font></u> </span></b><b><span style="font-family: simplified arabic">- إشتراك <font color="red"><u>اشتراك</u></font> </span></b><b><span style="font-family: simplified arabic">- إلتحق <u><font color="red">التحق</font></u> </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">أأبنك(تصح على وجه) <font color="red"><u>أئبنك</u></font> هذا؟</span></b><b><span style="font-family: simplified arabic"> - هم يلعبونا <u><font color="red">يلعبون معنا أو يلاعبوننا</font></u>- حضر عشر <u><font color="red">عشرة</font></u> رجال وعشر نسوة - </span></b><b><span style="font-family: simplified arabic">إستخراجات <u>استخراجات</u></span></b><b><span style="font-family: simplified arabic">– إستقبال <font color="red"><u>استقبال</u></font> </span></b><b><span style="font-family: simplified arabic">– أدعوا <u><font color="red">ادعي أو أدعو</font></u> اللة <u><font color="red">الله</font></u> ان <u>أن</u> ينصركي <font color="red"><u>ينصركِ</u></font> ويهديَك أختاه - </span></b><b><span style="font-family: simplified arabic">الحيَاتُ <u>الحياة</u> - النجات <font color="red"><u>النجاة</u></font> – الاستخلاص</span></b><b><span style="font-family: simplified arabic"> -</span></b><b><span style="font-family: simplified arabic"> الاستدقاق - الإستراتيجي <font color="red"><u>الاستراتيجي</u></font> - بارئ - يكتب بالقلمي <font color="red"><u>بالقلمِ</u></font> - لا تنسى <u><font color="red">تنسَ </font></u>ذكر الله يا أبتي - إبنة <u><font color="red">ابنة</font></u> </span></b><b><span style="font-family: simplified arabic">الرشيد - تطصادم <u><font color="red">تصطدم</font></u> الأراؤُ <font color="red"><u>الآراء</u></font> – ساعي إلى الحق وقاضي به – إمرأةٌ <font color="red"><u>امرأة</u></font> - إسم <u><font color="red">اسم</font></u> - أسماء – كثرة المألفات <font color="red"><u>المؤلفات</u></font> - ماءة!! – اللتي <u><font color="red">التي</font></u> - مؤمناة <font color="red"><u>مؤمنات</u></font> - بيوةٌ <font color="red"><u>بيوت</u></font>- مياه أمواة <font color="red"><u>أمواه</u></font> - علاماتٌ - إلاه(لها وجه) <font color="red"><u>إله</u></font>- لاكن (سبقت)</span></b><b><span style="font-family: simplified arabic"> -</span></b><b><span style="font-family: simplified arabic"> أكلو<font color="red"><u>(أكلوا)</u></font> </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">بذلو<font color="red"><u>(بذلوا)</u></font> - لن يهملوا - علمتُ نبأً - دعى <font color="red"><u>دعا</u></font> الشيخ لك - أعيى المرض صاحبُه <font color="red"><u>صاحبَه</u></font> - عصى <u><font color="red">عصا(الخشب)</font></u> وصحيحة إذا كانت من العصيان لأن أصلها يعصي. </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">بكا</span></b><b><span style="font-family: simplified arabic"> <u><font color="red">بكى</font></u> الغلام – بَعثتُ </span></b><b><span style="font-family: simplified arabic">إليكم وإليهي</span></b><b><span style="font-family: arial"> <u>وإليه</u> - </span></b><b><span style="font-family: simplified arabic">رأيت كلا <font color="red"><u>كلتا</u></font> الحديقتين - ذهب إلى الفصل</span></b><b><span style="font-family: simplified arabic">ي <font color="red"><u>الفصلِ</u></font></span></b><b><span style="font-family: simplified arabic">– ذووا <font color="red"><u>ذوو</u></font> المهارة</span></b><b><span style="font-family: arial"> - </span></b><b><span style="font-family: simplified arabic">إليكي <font color="red"><u>إليكِ </u><u>فأنتِ</u></font> عني فأنتي  سبب الأخطائ <font color="red"><u>الأخطاء</u></font> - نافذتٌ</span></b><b><span style="font-family: simplified arabic"> <font color="red"><u>نافذة</u></font> - </span></b><b><span style="font-family: simplified arabic">اشربي - إشربي <font color="red"><u>اشربي</u></font> - اشربِ - سمعتُ خبراً – رأيتُ شيخاً - لة <font color="red"><u>له</u></font> - هذهي <font color="red"><u>هذه</u></font> – اللة <font color="red"><u>الله</u></font>– الإقتناع <u><font color="red">الاقتناع</font></u> – الإكتئاب <font color="red"><u>الاكتئاب</u></font> - الإكتحال <font color="red"><u>الاكتحال</u></font></span></b><b><span style="font-family: arial"> - </span></b><b><span style="font-family: simplified arabic">مهندسوا <font color="red"><u>مهندسو</u></font> الشركة </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">أرجو- ترجو - نرجوا - عيسى ابن مريم - (عمر-رضي الله عنه- ابن الخطاب).</span></b></span></font><br />
+<br />
+<br />
+<font size="7"><font color="red"><b>وجزاك الله خيرا.</b></font></font></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_420034" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_420034" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=420034" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_420034" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_420075">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-10-28,&nbsp;<span class="time">10:21 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post420075" href="showthread.php?t=67104&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=420075#post420075" class="postcounter">#3</a><a id="postcount420075" name="3"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=48892&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="أم هانئ غير متواجد حالياً"><strong>أم هانئ</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=48892&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=48892&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أم هانئ غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2009</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,782</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: اختبار لمهارتك الإملائية (الأخطاء الإملائية 9)
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_420075">
+				<blockquote class="postcontent restore">
+					<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				<div class="bbcode_postedby">
+					<img src="images/metro/purple/misc/quote_icon.png" alt="اقتباس" /> المشاركة الأصلية كتبت بواسطة أبو مالك الدرعمي
+					<a href="showthread.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=420008#post420008" rel="nofollow"><img class="inlineimg" src="images/metro/purple/buttons/viewpost-left.png" alt="مشاهدة المشاركة" /></a>
+				</div>
+				<div class="message"><span style="font-family: arial black"><font size="7"><font color="#0000ff">اختبار لمهارتك الإملائية (الأخطاء الإملائية 9)</font></font></span><br />
+ <br />
+ <br />
+<font size="6"><font color="#0000ff"><span style="font-family: arial black"><b>ميّز الخطأ من الصواب فيما يأتي وصححه : </b></span></font></font><br />
+<font size="6"><font color="#0000ff"><b><span style="font-family: simplified arabic"><span style="font-family: arial black">شئ <font color="darkred">شيء</font>– قد بريء <font color="darkred">برئ</font> من المرض – هو بريء من التهمة - الإحتياط <font color="darkred">الاحتياط</font> - الإحتشام <font color="darkred">الاحتشام</font> - هذا بناءك <font color="darkred">بناؤك</font> - وشاهدتُ بنائه <font color="darkred">بناءه</font> - كان معه عصتان - هاتان دولتان <font color="darkred">عظيمتان وكبيرتان</font> – إبن</span></span></b><span style="font-family: simplified arabic"><b><span style="font-family: simplified arabic"> <font color="darkred">ابن</font> من أنت؟ </span></b><b><span style="font-family: simplified arabic">- مَائة - اتخذتُ الحق مبدأاً <font color="darkred">مبدءًا</font> - كرتٌ <font color="darkred">كرةٌ</font> - مسئلة <font color="darkred">مسألة</font> - أتقن كلا <font color="darkred">كلتا </font>اللغتين - قابلت أخين <font color="darkred">أخوين</font> - كان عمر ابن<font color="darkred"> بن</font> الخطاب عادلا </span></b><b><span style="font-family: arial">-</span></b><b><span style="font-family: simplified arabic"> الإستعجال <font color="darkred">الاستعجال</font> - الإعتزال <font color="darkred">الاعتزال</font>- الإعتصام <font color="darkred">الاعتصام</font> - فأرسل لى بذلك كتابتًا <font color="darkred">كتابةً</font> - أسعدني منحَك <font color="darkred">منحُك</font> أخوك <font color="darkred">أخاك</font> جائزة </span></b><b><span style="font-family: simplified arabic">- له - الله – مياة <font color="darkred">مياه</font></span></b><b><span style="font-family: arial"> - </span></b><b><span style="font-family: simplified arabic">قضات</span></b><b><span style="font-family: simplified arabic">ٌ <font color="darkred">قضاةٌ</font></span></b><b><span style="font-family: simplified arabic">- مراعاتٌ <font color="darkred">مراعاةٌ</font></span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">دكتوراه – اتجاه - اللهم احفظ بناتَنا - بما <font color="darkred">بم</font> تكتب؟ ولما <font color="darkred">لم</font> تستعجل؟ وعمَّ تتحدث؟ - أولوا<font color="darkred"> أولو</font> العزم - إن كنتا <font color="darkred">كنت</font> شهمًا - لاكن<font color="darkred"> لكن</font> - ذالك <font color="darkred">ذانك</font> الذين <font color="darkred">اللذين</font> ( للمثنى ) - اللذين (للجمع) <font color="darkred">الذين</font>- عَمْرُ <font color="darkred">عمرو</font>- - العاشرة مساءًا<font color="darkred"> مساءً</font> - باسم الله - رمي<font color="darkred"> رمَى</font> - سعى - أنظر<font color="darkred">انظر</font> إليّ فأنا انظر <font color="darkred">أنظر</font> إليك - استخرج - طاها <font color="darkred">طه</font> - هاذا <font color="darkred">هذا </font>- أُُلائك <font color="darkred">أولئك</font> - عبائة <font color="darkred">عباءة</font> - فوأد <font color="darkred">فؤاد</font>- <font color="darkred">مُ</font>ساءلة - فَجْئَةً <font color="darkred">فجأة</font></span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">هم </span></b><b><span style="font-family: simplified arabic">يتاءلمون <font color="darkred">يتألمون</font> - تباطوء <font color="darkred">تباطؤ</font>- القارء <font color="darkred">القارئ</font> - امروء <font color="darkred">امرؤ </font>- ينبيء<font color="darkred"> ينبئ</font> – احمد الله<font color="darkred"> أحمد</font> - الامام <font color="darkred">الإمام</font> -</span></b><b><span style="font-family: simplified arabic">ازالة <font color="darkred">إزالة</font> - الخاطيء <font color="darkred">الخاطئ</font> - قرأتُ جزءاً - إختبار <font color="darkred">اختبار</font></span></b><b><span style="font-family: simplified arabic">- إشتراك<font color="darkred"> اشتراك</font></span></b><b><span style="font-family: simplified arabic">- إلتحق <font color="darkred">التحق</font> </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">أأبنك هذا؟ <font color="darkred">أهذا ابنك / آبنك</font></span></b><b><span style="font-family: simplified arabic"><font color="darkred"> هذا ؟</font>- هم يلعبونا <font color="darkred">يلعبون</font> - حضر عشر <font color="darkred">عشرة</font> رجال وعشر نسوة - </span></b><b><span style="font-family: simplified arabic">إستخراجات <font color="darkred">استخراجات</font> </span></b><b><span style="font-family: simplified arabic">– إستقبال <font color="darkred">استقبال</font> </span></b><b><span style="font-family: simplified arabic">– أدعوا <font color="darkred">أدعو</font> اللة<font color="darkred"> الله</font> ان <font color="darkred">أن</font> ينصركي <font color="darkred">ينصركِ</font> ويهديَك أختاه - </span></b><b><span style="font-family: simplified arabic">الحيَاتُ <font color="darkred">الحياة</font> - النجات <font color="darkred">النجاة</font> – الاستخلاص</span></b><b><span style="font-family: simplified arabic"> -</span></b><b><span style="font-family: simplified arabic"> الاستدقاق - الإستراتيجي <font color="darkred">الاستراتيجي</font> - بارئ - يكتب بالقلمي <font color="darkred">بالقلمِ</font> - لا تنسى<font color="darkred"> تنسي</font> ذكر الله يا أبتي <font color="darkred">ابنتي</font>- إبنة <font color="darkred">ابنة</font> </span></b><b><span style="font-family: simplified arabic">الرشيد - تطصادم الأراؤُ <font color="darkred">تتصادم الآراءُ</font> – ساعي <font color="darkred">ساعٍ</font> إلى الحق وقاضي <font color="darkred">قاضٍ</font> به – إمرأةٌ <font color="darkred">امرأة</font> - إسم <font color="darkred">اسم</font> - أسماء – كثرة المألفات <font color="darkred">المؤلفات</font> - ماءة <font color="darkred">المائة</font> – اللتي <font color="darkred">التي</font>- مؤمناة <font color="darkred">مؤمنات</font> - بيوةٌ <font color="darkred">بيوتٌ</font> - مياه أمواة <font color="darkred">أمواه</font> - علاماتٌ - إلاه <font color="darkred">إله</font> - لاكن</span></b><b><span style="font-family: simplified arabic"> <font color="darkred">لكن</font>-</span></b><b><span style="font-family: simplified arabic"> أكلو <font color="darkred">أكلوا</font></span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">بذلو <font color="darkred">بذلوا</font>- لن يهملوا - علمتُ نبأً - دعى <font color="darkred">دعا</font> الشيخ لك - أعيى المرض صاحبُه <font color="darkred">صاحبَه</font> - عصى </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">بكا</span></b><b><span style="font-family: simplified arabic"> <font color="darkred">بكى</font> الغلام – بَعثتُ </span></b><b><span style="font-family: simplified arabic">إليكم وإليهي<font color="darkred"> إليه</font></span></b><b><span style="font-family: arial"> - </span></b><b><span style="font-family: simplified arabic">رأيت كلا <font color="darkred">كلتا</font> الحديقتين - ذهب إلى الفصل</span></b><b><span style="font-family: simplified arabic">ي <font color="darkred">الفصلِ</font></span></b><b><span style="font-family: simplified arabic">– ذووا <font color="darkred">ذوو</font>المهارة</span></b><b><span style="font-family: arial"> - </span></b><b><span style="font-family: simplified arabic">إليكي <font color="darkred">إليكِ</font> عني فأنتي <font color="darkred">فأنتِ</font> سبب الأخطائ <font color="darkred">الأخطاء</font> - نافذتٌ</span></b><b><span style="font-family: simplified arabic"> <font color="darkred">نافذة</font> - </span></b><b><span style="font-family: simplified arabic">اشربي - إشربي <font color="darkred">اشربي</font> - اشربِ <font color="darkred">اشربْ</font> - سمعتُ خبراً <font color="darkred">خبرًا</font>– رأيتُ شيخاً <font color="darkred">شيخًا</font> - لة <font color="darkred">له</font> - هذهي <font color="darkred">هذه</font> – اللة <font color="darkred">الله</font> – الإقتناع <font color="darkred">الاقناع</font>– الإكتئاب<font color="darkred"> الاكتئاب</font> - الإكتحال</span></b><b><span style="font-family: arial"> <font color="darkred">الاكتحال</font> - </span></b><b><span style="font-family: simplified arabic">مهندسوا <font color="darkred">مهندسو</font> الشركة </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">أرجو- ترجو - نرجوا<font color="darkred"> نرجو</font> - عيسى ابن مريم - (عمر-رضي الله عنه- ابن الخطاب).</span></b></span></font></font><br />
+ <br />
+ <br />
+ <br />
+ <br />
+ <br />
+<div style="text-align: center;"><b><font color="olive"><span style="font-family: arial"><span style="font-family: arial black"><font size="6">أسأل الله تعالى أن يُخلصها لكاتبها وقارئها ، وأن ينفع بها من تبلغه ، وأن يسوقها لأهلها الذين يحتاجونها. </font></span></span></font></b></div></div>
+			
+		</div>
+	</div>
+</div><font size="5">آمين ، وجزاكم الله خيرا .</font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_420075" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_420075" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=420075" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_420075" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_420194">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-10-28,&nbsp;<span class="time">03:28 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post420194" href="showthread.php?t=67104&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=420194#post420194" class="postcounter">#4</a><a id="postcount420194" name="4"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13048&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="سارة بنت محمد غير متواجد حالياً"><strong>سارة بنت محمد</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13048&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=13048&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="سارة بنت محمد غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						مشرفة سابقة بمجالس طالبات العلم
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>3,129</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: اختبار لمهارتك الإملائية (الأخطاء الإملائية 9)
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_420194">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="#0000ff"><b><span style="font-family: simplified arabic"><span style="font-family: arial black">شيء – قد برء من المرض – هو بريء من التهمة - الاحتياط - الاحتشام - هذا بناؤك - وشاهدتُ بناءه - كان معه عصوان - هاتان دولتان عظميان وكبيرتان – ابن</span></span></b><span style="font-family: simplified arabic"><b><span style="font-family: simplified arabic"> من أنت؟ </span></b><b><span style="font-family: simplified arabic">- مئة - اتخذتُ الحق مبدأً - <font color="red">كرتٌ</font>؟؟ كرة - مسألة - أتقن كلتا اللغتين - قابلت أخوان - كان عمر بن الخطاب عادلا </span></b><b><span style="font-family: arial">-</span></b><b><span style="font-family: simplified arabic"> الاستعجال - الاعتزال - الاعتصام - فأرسل لي بذلك كتابا - أسعدني منحَك أخاك جائزة </span></b><b><span style="font-family: simplified arabic">- له - الله – مياه</span></b><b><span style="font-family: arial"> - </span></b><b><span style="font-family: simplified arabic">قض</span>اة </b><b><span style="font-family: simplified arabic">- مراعاة </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">دكتوراه – اتجاه - اللهم احفظ بناتَنا - بم تكتب؟ ولم تستعجل؟ وعمَّ تتحدث؟ - أولوا العزم - إن كنت شهمًا - لكن - ذلك - اللذين ( للمثنى ) - الّذين (للجمع) - عَمْرُو  - - العاشرة مساءً - بسم الله - رمَى - سعَى - انظر إليّ فأنا انظر إليك - استخرج - طه - هذا - أُُولئك - عباءة - فؤاد - مَسْألة-<font color="indigo"> مُسَائلة</font> - فَجأةً </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">هم </span></b><b><span style="font-family: simplified arabic">يتألمون - تباطؤ - القارئ - امرؤ - يُنبَّأ – (أنا) أحمد الله، أو احمد الله (فعل أمر) - الإمام -</span></b><b><span style="font-family: simplified arabic">إزالة - الخاطئ - قرأتُ جزءً - اختبار </span></b><b><span style="font-family: simplified arabic">- اشتراك </span></b><b><span style="font-family: simplified arabic">- التحق </span></b><b><span style="font-family: arial">- </span></b><font color="indigo"><b><span style="font-family: simplified arabic">(ابنك هذا؟)</span></b></font><b><span style="font-family: simplified arabic"> (في خط المصحف ءآلآن)- هم يلعبون - حضر عشَرة رجال وعشْرِ نسوة - </span></b><b><span style="font-family: simplified arabic">استخراجات </span></b><b><span style="font-family: simplified arabic">– استقبال </span></b><b><span style="font-family: simplified arabic">– ادعي الله أن ينصركِ ويهديَكِ أختاه - </span></b><b><span style="font-family: simplified arabic">الحيَاة - النجاة – الاستخلاص</span></b><b><span style="font-family: simplified arabic"> -</span></b><b><span style="font-family: simplified arabic"> الاستدقاق - الإستراتيجي - بارئ - يكتب بالقلم - لا تنسَ ذكر الله يا أبتِ - ابنة </span></b><b><span style="font-family: simplified arabic">الرشيد - تتصادم الأراء – ساعٍ إلى الحق وقاضٍ به – امرأةٌ - اسم - أسماء – كثرة المؤلفات - مئة – التي - مؤمنات - بيوت - مياه أمواء - علاماتٌ - إله - لكن</span></b><b><span style="font-family: simplified arabic"> -</span></b><b><span style="font-family: simplified arabic"> أكلوا </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">بذلوا - لن يَهْملوا - علمتُ نبأً - دعا الشيخ لك - أعيا المرض صاحبَه - عصا </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">بكى</span></b><b><span style="font-family: simplified arabic"> الغلام – بَعثتُ </span></b><b><span style="font-family: simplified arabic">إليكم وإليه</span></b><b><span style="font-family: arial"> - </span></b><b><span style="font-family: simplified arabic">رأيت كلتا الحديقتين - ذهب إلى الفصل</span></b><b><span style="font-family: simplified arabic">– ذَوُو المهارة</span></b><b><span style="font-family: arial"> - </span></b><b><span style="font-family: simplified arabic">إليكِ عني فأنت سبب الأخطاء - نافذة</span></b><b><span style="font-family: simplified arabic">- </span></b><b><span style="font-family: simplified arabic">اشربي - اشربي - اشربي - سمعتُ خبراً – رأيتُ شيخاً - له - هذه – الله – الاقتناع – الاكتئاب - الاكتحال</span></b><b><span style="font-family: arial"> - </span></b><b><span style="font-family: simplified arabic">مهندسو الشركة </span></b><b><span style="font-family: arial">- </span></b><b><span style="font-family: simplified arabic">أرجو- ترجو - نرجوا - عيسى بن مريم - (عمر-رضي الله عنه- <font color="indigo">ابن</font> ؟؟! الخطاب).</span></b></span></font><br />
+<br />
+<br />
+</font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><font color="#37404E"><span style="font-family: lucida grande">عن جعفر بن برقان: قال لي ميمون بن مهران: يا جعفر قل لي في وجهي ما أكره، فإن الرجل لا ينصح أخاه حتى يقول له في وجهه ما يكره.</span></font><br />
+<br />
+<font color="#37404E"><span style="font-family: lucida grande">السير 5/75</span></font></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_420194" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_420194" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=420194" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_420194" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_420392">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-10-29,&nbsp;<span class="time">12:31 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post420392" href="showthread.php?t=67104&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=420392#post420392" class="postcounter">#5</a><a id="postcount420392" name="5"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=34456&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="أبو الهمام البرقاوي غير متواجد حالياً"><strong>أبو الهمام البرقاوي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=34456&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=34456&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		<li class="left">
+			<a href="http://www.ahlalhdeeth.com/vb/index.php" class="siteicon_homepage">
+				زيارة الصفحة الرئيسية
+			</a>
+		</li>
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو الهمام البرقاوي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Mar 2009</dd>
+						<dt>الدولة</dt> <dd>اللهم باركـ لنا في شـامنا</dd>
+						
+						<dt>المشاركات</dt> <dd>792</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: اختبار لمهارتك الإملائية (الأخطاء الإملائية 9)
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_420392">
+				<blockquote class="postcontent restore">
+					بوركت أبا مالك <br />
+واسمح لي بنقل ذلك في مقالي !
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font color="blue">يا ر<font color="red">ب !!</font></font></div><div style="text-align: center;"><font color="blue">ا<font color="red">جْعل</font>ني من الرَّا<font color="red">سخ</font>ين في ال<font color="red">عل</font>م</font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_420392" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_420392" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=420392" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_420392" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_424289">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-11-07,&nbsp;<span class="time">12:18 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post424289" href="showthread.php?t=67104&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=424289#post424289" class="postcounter">#6</a><a id="postcount424289" name="6"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=68996&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="فتى الأندلس غير متواجد حالياً"><strong>فتى الأندلس</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=68996&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=68996&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="فتى الأندلس غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>8</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: اختبار لمهارتك الإملائية (الأخطاء الإملائية 9)
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_424289">
+				<blockquote class="postcontent restore">
+					كنت أود أن أقترح عليك ان تكون عبارة خير من جمل متفرقة
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_424289" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_424289" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=424289" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_424289" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_424903">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-11-08,&nbsp;<span class="time">03:20 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post424903" href="showthread.php?t=67104&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=424903#post424903" class="postcounter">#7</a><a id="postcount424903" name="7"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=63438&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="أبو مالك الدرعمي غير متواجد حالياً"><strong>أبو مالك الدرعمي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=63438&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=63438&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو مالك الدرعمي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>118</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: اختبار لمهارتك الإملائية (الأخطاء الإملائية 9)
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_424903">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><div style="text-align: center;"><b><font color="#339966"><span style="font-family: Simplified Arabic"><font size="6"><span style="font-family: Arial Black">الأكارم :</span></font></span></font></b></div><div style="text-align: center;"><b><font color="#339966"><span style="font-family: Simplified Arabic"><a href="http://majles.alukah.net/member.php?u=62660" target="_blank"><font color="#339966"><span style="font-family: Simplified Arabic"><span style="font-family: Arial Black"><font size="6">أبو أسماء الحنبلي النصري</font></span></span></font></a></span></font></b></div><div style="text-align: center;"><b><font color="#339966"><span style="font-family: Simplified Arabic"><font size="6"><span style="font-family: Arial Black">أم هانئ</span></font></span></font></b></div><div style="text-align: center;"><b><font color="#339966"><span style="font-family: Simplified Arabic"><font size="6"><span style="font-family: Arial Black">سارة بنت محمد</span></font></span></font></b></div><div style="text-align: center;"><b><font color="#339966"><span style="font-family: Simplified Arabic"><font size="6"><span style="font-family: Arial Black">أبو الهمام البرقاوي</span></font></span></font></b></div><div style="text-align: center;"><b><font color="#339966"><span style="font-family: Simplified Arabic"><font size="6"><span style="font-family: Arial Black">فتى الأندلس</span></font></span></font></b></div><div style="text-align: center;"><b><font color="#339966"><span style="font-family: Simplified Arabic"><font size="6"><span style="font-family: Arial Black">جزاكم الله خيرًا وبارك الله فيكم</span></font></span></font></b></div><div style="text-align: center;"><b><font color="#339966"><span style="font-family: Simplified Arabic"><span style="font-family: Arial Black"><font size="6">هذه إجابة الاختبار وأرجو أن نتناقش فيها</font></span></span></font></b></div></div><b><font color="#339966"><span style="font-family: Simplified Arabic"><div style="text-align: center;"><b><font color="purple"><span style="font-family: Arial Black"><font size="6"><font color="blue">تصحيح الاختبار – الأخطاء الإملائية 10</font></font></span></font></b><br />
+<div style="text-align: center;"><font size="6"><br />
+<br />
+<br />
+</font> </div><font size="6"><span style="font-family: Arial Black"><b><font color="purple">شَيْء (الهمزة متطرفة قبلها ساكن ، فتُرسم على السطر) ، بَرِئ (الهمزة متطرفة وقبلها كسر ، فتُرسم على ياء) ، بَرِيْءٌ (همزة متطرفة قبلها ساكن) ، الاحتياط – الاحتشام - الاستعجال - الاعتزال</font></b><b><font color="purple"> - </font></b><b><font color="purple">الاعتصام (مصدر الفعل الماضي الخماسي ومصدر الفعل الماضي السداسي همزة وصل) ، هذا بناؤُك (بناء : خبر مرفوع ، انتبه : هنا الهمزة لا تُعتبر متطرفة) ، شاهدتُ بناءه (مفعول به) ، كان معه عصوان - هاتان دولتان </font></b><b><font color="purple">عُظميان وكبريان - وهاتان دعويان ضد الخصم ... الاسم المقصور إذا كانت ألفه </font></b><b><font color="purple">ثالثة ترد إلى أصلها عند التثنية (ألف أو ياء) فيكون الصواب : عصوان أو عصوين </font></b><b><font color="purple">(حسب موقعها الإعرابي) - وعظميان أو عظميين ، وكبريان أو كبريين ، انظر إلى هذه الألف إذا كانت مكتوبة </font></b><b><font color="purple">ألفا مثل : (عصا) فاعلم أن أصلها الواو ، وإذا كانت مرسومة ياء ؛ مثل : (فتى) فاعلم أن </font></b><b><font color="purple">أصلها الياء ، فتقول : فتيان أو فتيين ، </font></b></span></font><br />
+<div style="text-align: center;"><font size="6"><br />
+</font> </div><font size="6"><span style="font-family: Arial Black"><b><font color="purple">ابن من أنت؟</font></b><b><font color="purple"> (</font></b><b><font color="purple">هذه الكلمات همزة وصل ، فتكتب هكذا : ابن – امرأة - اسم – ابنة</font></b><b><font color="purple">) ، </font></b><b><font color="purple">مِائة (يخطئ بعضنا في نطق كلمة (مائة) فيَفتح الميم وذلك لوجود </font></b><b><font color="purple">الألف ، والصواب كسر الميم لأن الألف هنا شكل كتابي غير منطوق) ، اتخذتُ الحق مبدأً (تُحذف ألف التنوين من الاسم المنتهي بهمزة مرسومة ألفًا مثل</font></b><b><font color="purple">: زُرْتُ سبأً) ، كرة</font></b><b><font color="purple"> ،</font></b><b><font color="purple">(من الخطأ كتابة نقطتين فوق الهاء في مثل : له - الله - مياه</font></b><b><font color="purple"> - </font></b><b><font color="purple">دكتوراه - اتجاه </font></b><b><font color="purple">(وذلك لأن هذه هاء وليست تاء وإذا أردت التأكد من كونها هاء ضع </font></b><b><font color="purple">عليها تنوينا فما ينطق معك تاء فضع النقطتين وما ينطق معك </font></b><b><font color="purple">هاء فلا تضع النقطتين</font></b><b><font color="purple">، </font></b><b><font color="purple">طريقة أخرى ألحق بالكلمة ضميرًا ، مثل : اتجاهه أو </font></b><b><font color="purple">اتجاهك ....إلخ</font></b><b><font color="purple">)</font></b><b><font color="purple"> ، </font></b></span></font><br />
+<div style="text-align: center;"><font size="6"><br />
+</font> </div><font size="6"><span style="font-family: Arial Black"><b><font color="purple">مسألة (الهمزة مفتوحة وما قبلها ساكن) ، أُتقن </font></b><b><font color="purple">كلتا اللغتين (ونسمع</font></b><b><font color="purple"> : </font></b><b><font color="purple">رأيت كلا البنتين ، والصواب : كلتا ، ؛ </font></b><b><font color="purple">حيث إن كلا : للمثنى المذكر وكلتا : للمثنى المؤنث</font></b><b><font color="purple">) </font></b><b><font color="purple">، </font></b><b><font color="purple">قابلت أخوين (لأن كلمة (أَخٌ) ليست من المضعف الذي تُشدد </font></b><b><font color="purple">فيه الخاء ، لكنها من الناقص المحذوف اللام ، وهي الواو ، هذه الواو ترد عند النسب </font></b><b><font color="purple">، فتقول : (أخويّ) ، والتثنية ، فتقول : (أخوان) ، هذان أخوان ، ومررت بأخوين)</font></b><b><font color="purple"> ، </font></b></span></font><br />
+<div style="text-align: center;"><font size="6"><br />
+</font> </div><font size="6"><span style="font-family: Arial Black"><b><font color="purple">كان </font></b><b><font color="purple">عمر بن الخطاب عادلا </font></b><b><font color="purple">(تُحذف ألف (ابن) في الكتابة إذا وقعت صفة مفردة </font></b><b><font color="purple">بين عَـلَمين مذكرين ، والثاني منهما أبًا للأول </font></b><b><font color="purple">ومتصلا به من غير فاصل بينهما</font></b><b><font color="purple">)</font></b><b><font color="purple"> ، فأرسل لي بذلك كتابة (تُحذف ألف التنوين من الاسم المنتهي بالتاء المربوطة) ، أسعدني منحُك أخاك جائزة ، قضاة - مراعاة ، اللهم احفظ بناتِنا (بنات : ليست جمع تكسير بل هي جمع مؤنث سالم فتنصب بالكسرة) ، بم تكتب؟ ولم تستعجل؟ </font></b><b><font color="purple">وعمَّ تتحدث؟ ، أولو العزم (أولو - ذوو) بمعنى أصحاب تُكتب بدون ألف في النهاية ، إن كنت شهمًا ، لكن – ذلك - اللذين (للمثنى) – الذين </font></b><b><font color="purple">(</font></b><b><font color="purple">للجمع) ، عَمْرو ، </font></b></span></font><br />
+<div style="text-align: center;"><font size="6"><br />
+</font> </div><font size="6"><span style="font-family: Arial Black"><b><font color="purple">العاشرة مساءً (الكلمات التى تنتهي بهمزة قبلها ألف لا تُزاد بعدها ألف </font></b><b><font color="purple">فى حالة النصب مثل : سمعتُ رجاءً - رأيتُ فناءً - سماءً - رداءً</font></b><b><font color="purple">) ، تباطؤ</font></b><b><font color="purple"> (الهمزة متطرفة قبلها ضم) ، </font></b><b><font color="purple">أبنك هذا؟ (تُحذف همزة الوصل في {ابن} إذا دخلت عليها همزة الاستفهام) ، بسم الله - رمى - سعى – انظر (الأمر من الفعل الثلاثي بهمزة وصل) إليّ فأنا أنظر</font></b><b><font color="purple"> (فعل مضارع بهمزة قطع) </font></b><b><font color="purple">إليك ، طه - هذا - أُُولئك ، عباءة ، فجأة - يتألمون</font></b><b><font color="purple"> - </font></b><b><font color="purple">القارئ</font></b><b><font color="purple"> - </font></b><b><font color="purple">امرؤ - ينبئ – أحمد الله - الإمام - إزالة – الخاطئ ، قرأتُ جزءًا - اختبار</font></b><b><font color="purple"> - </font></b><b><font color="purple">اشتراك - التحق ، هم يلعبون - حضر عشرة رجال وعشر نسوة - استخراجات</font></b><b><font color="purple"> – </font></b><b><font color="purple">استقبال ، أدعو الله أن ينصركِ ويهديَك يا أختاه ، الحيَاة - النجاة ، الاستخلاص</font></b><b><font color="purple"> - </font></b><b><font color="purple">الاستدقاق - الاستراتيجي ، بارئ ، يكتب بالقلم ، </font></b></span></font><br />
+<div style="text-align: center;"><font size="6"><br />
+</font> </div><font size="6"><span style="font-family: Arial Black"><b><font color="purple">لا تنس ذكر الله يا أبت – ابنة </font></b><b><font color="purple">الرشيد - تتصادم الآراء – ساعٍ إلى الحق وقاضٍ به – امرأة - اسم - أسماء – كثرة </font></b><b><font color="purple">المؤلفات – مائة (الأصح كتابتها بالألف) ، التي ، مؤمنة</font></b><b><font color="purple"> ، </font></b><b><font color="purple">بيوتٌ ، </font></b><b><font color="purple">مياه وأمواه ، علاماتٌ ، إله ، لكن</font></b><b><font color="purple"> ، </font></b><b><font color="purple">أكلوا - بذلوا - لن يهملوا ، دعا الشيخ لك ، أعيا المرضُ صاحبَه ، عصى ، </font></b><b><font color="purple">بكى الغلام ، بَعثتُ إليكم وإليه ، رأيت كلتا الحديقتين ، ذهب إلى الفصل ، ذوو </font></b><b><font color="purple">المهارة ، إليكِ عني فأنتِ سبب الأخطاء ، نافذة ، اشربي ، اشرب ، سمعتُ خبرًا ، رأيتُ </font></b><b><font color="purple">شيخًا ، هذه ، الله ، الاقتناع – الاكتئاب - الاكتحال ، مهندسو الشركة ، أرجو </font></b><b><font color="purple">- </font></b><b><font color="purple">ترجو - نرجو ، عيسى ابن مريم ، (عمر- رضي الله عنه - ابن الخطاب</font></b><b><font color="purple">)</font></b></span></font><br />
+<div style="text-align: center;"><br />
+</div></div></span></font></b>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_424903" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_424903" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=424903" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_424903" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_427032">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-11-12,&nbsp;<span class="time">12:37 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post427032" href="showthread.php?t=67104&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=427032#post427032" class="postcounter">#8</a><a id="postcount427032" name="8"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=68749&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="الوفاء شعارنا غير متواجد حالياً"><strong>الوفاء شعارنا</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=68749&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=68749&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="الوفاء شعارنا غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>2</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: اختبار لمهارتك الإملائية (الأخطاء الإملائية 9)
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_427032">
+				<blockquote class="postcontent restore">
+					<font size="6"><font color="red">جزاك الله خيييييييييييييي  ييير</font></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_427032" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_427032" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=427032" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_427032" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=67104&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="popupctrl"><span class="ctrlcontainer">مجلس اللغة العربية وعلومها</span></a>
+		<a href="showthread.php?t=67104#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=40a3dbf8dad57f073fe7698bbce8648b">لوحة التحكم</a></li>
+		<li><a href="private.php?s=40a3dbf8dad57f073fe7698bbce8648b">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=40a3dbf8dad57f073fe7698bbce8648b">الاشتراكات</a></li>
+		<li><a href="online.php?s=40a3dbf8dad57f073fe7698bbce8648b">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=40a3dbf8dad57f073fe7698bbce8648b">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=40a3dbf8dad57f073fe7698bbce8648b">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=40a3dbf8dad57f073fe7698bbce8648b">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=40a3dbf8dad57f073fe7698bbce8648b">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=40a3dbf8dad57f073fe7698bbce8648b">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=40a3dbf8dad57f073fe7698bbce8648b">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=40a3dbf8dad57f073fe7698bbce8648b">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=40a3dbf8dad57f073fe7698bbce8648b">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=68148&amp;s=40a3dbf8dad57f073fe7698bbce8648b">بلغت أوج عظمتها</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=68308&amp;s=40a3dbf8dad57f073fe7698bbce8648b">أين أجد ترجمته</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1">اختبار</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D8%A7%D9%84%D8%A3%D8%AE%D8%B7%D8%A7%D8%A1">الأخطاء</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D8%A7%D9%84%D8%A5%D9%85%D9%84%D8%A7%D8%A6%D9%8A%D8%A9">الإملائية</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D9%84%D9%85%D9%87%D8%A7%D8%B1%D8%AA%D9%83">لمهارتك</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=67104#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=40a3dbf8dad57f073fe7698bbce8648b" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=40a3dbf8dad57f073fe7698bbce8648b">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=67104#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">08:12 AM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

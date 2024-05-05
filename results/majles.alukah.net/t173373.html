@@ -1,0 +1,1363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=696d1a7d9adaea36633b28fa7c3827c1&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=173373";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="الذنوب, الله, بإذن, تكفر, خصلة, والخطايا, وتذهب" />
+	<meta name="description" content="الحمد لله رب العالمين، والصلاة والسلام على رسول الله وعلى آله وصحبه أما بعد: 
+فلكون أعمار أمة محمد - صلى الله عليه وسلم - قصيرة تتراوح ما بين الستين والسبعين، وقليل من يتجاوز ذلك، فإن الله - سبحانه وتعالى- برحمته وكرمه وجوده وفضله على أمة محمد - صلى الله عليه وسلم - يسر لهم وهيأ لهم من الأعمال والخصال القولية والفعلية ورتب عليها أجوراً عظيمة يرتقي بها المؤمن درجات عالية في الجنة، ومنها ما يمحو ويكفر بها ويذهب عن عباده الخطايا والذنوب، وهذا مشروط بالإيمان والإخلاص لله - تعالى -، فقد جمعت بإذن" />
+
+	<title> خصلة تكفر وتذهب الذنوب والخطايا بإذن الله</title>
+	<link rel="canonical" href="showthread.php?t=173373&s=696d1a7d9adaea36633b28fa7c3827c1" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=696d1a7d9adaea36633b28fa7c3827c1 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=696d1a7d9adaea36633b28fa7c3827c1">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> خصلة تكفر وتذهب الذنوب والخطايا بإذن الله</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=696d1a7d9adaea36633b28fa7c3827c1&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 1 من 1
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=173373&s=696d1a7d9adaea36633b28fa7c3827c1" title="تحديث الصفحة">خصلة تكفر وتذهب الذنوب والخطايا بإذن الله</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=173373" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;t=173373&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=addsubscription&amp;t=173373" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;search_type=1&amp;searchthreadid=173373&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="173373" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_904685">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-04-08,&nbsp;<span class="time">08:20 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post904685" href="showthread.php?t=173373&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=904685#post904685" class="postcounter">#1</a><a id="postcount904685" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=152557&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="المربط غير متواجد حالياً"><strong>المربط</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=152557&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=152557&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="المربط غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Apr 2019</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>19</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> خصلة تكفر وتذهب الذنوب والخطايا بإذن الله
+		</h2>
+		
+				
+					
+					
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_904685">
+				<blockquote class="postcontent restore">
+					<font size="4"><font color="#0000ff">الحمد لله رب العالمين، والصلاة والسلام على رسول الله وعلى آله وصحبه أما بعد:<br />
+</font></font><span style="font-family: Times New Roman"><font size="4"><font color="blue">فلكون أعمار أمة محمد - صلى الله عليه وسلم - قصيرة تتراوح ما بين الستين والسبعين، وقليل من يتجاوز ذلك، فإن الله - سبحانه وتعالى- برحمته وكرمه وجوده وفضله على أمة محمد - صلى الله عليه وسلم - يسر لهم وهيأ لهم من الأعمال والخصال القولية والفعلية ورتب عليها أجوراً عظيمة يرتقي بها المؤمن درجات عالية في الجنة، ومنها ما يمحو ويكفر بها ويذهب عن عباده <a href="https://www.nafsany.cc/vb/showthread.php?t=123198" target="_blank" rel="nofollow">الخطايا</a> والذنوب، وهذا مشروط بالإيمان والإخلاص لله - تعالى -، فقد جمعت بإذن الله ما تيسر من الخصال من القرآن الكريم، وأصح كتابين بعد القرآن -البخاري ومسلم- وكذا سلسلة الأحاديث الصحيحة للشيخ الألباني - رحمه الله - ومن عدة مطويات وقصاصات دعوية وعنونت الموضوع ب: &quot; 71 خصلة تكفر وتذهب الذنوب والخطايا بإذن الله&quot; سائلاً الله أن ينفع بها، وأن يجعلها خالصة لوجهه الكريم ويتقبلها مني صدقة جارية على والديّ وعليّ وعلى زوجتي، وعلى جميع المؤمنين والمؤمنات والمسلمات و المسلمات الأحياء منه والأموات. ولكل من يرغب في طباعتها أو جمعها في مطوية أو كتيب صغير فهذا من دواعي سروري وفرحتي فله ذلك، طمعا في الثواب العظيم من رب كريم جواد رحيم.</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">71 خصلة تكفر وتذهب الذنوب والخطايا بإذن الله:</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">1- ترك الشرك الدليل: قال رسول الله - صلى الله عليه وسلم -: ((قال الله - تعالى -: يابن آدم لو لقيتني بمثل الأرض خطايا لا تشرك بي شيئا، لقيتك بملء الأرض مغفرة)) مسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">2- الصلوات الخمسة المفروضة الدليل: قال رسول الله - صلى الله عليه وسلم -: ((الصلوات الخمس، والجمعة إلى الجمعة... مكفرات ما بينهم إذا اجتنب الكبائر)) مسلم وقوله - صلى الله عليه وسلم -: ((ما من امرئ مسلم تحضره صلاة مكتوبة فيحسن وضوءها وخشوعها وركوعها إلا كانت كفارة لما قبلها من الذنوب، ما لم يؤت كبيرة، وذلك الدهر كله)) مسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">3- الغسل والتطهر والتطيب والذهاب إلى صلاة الجمعة الدليل: قال رسول الله - صلى الله عليه وسلم -: ((لاَ يَغتَسِلُ رَجُلٌ يَومَ الجُمُعَةِ، وَيَتَطَهرُ مَا استَطَاعَ مِن طُهرٍ، وَيَدهِنُ مِن دُهنِهِ، أَو يَمَس مِن طِيبِ بَيتِهِ، ثُم يَخرُجُ فَلاَ يُفَرقُ بَينَ اثنَينِ، ثُم يُصَلي مَا كُتِبَ لَهُ، ثُم يُنصِتُ إِذَا تَكَلمَ الإِمَامُ، إِلا غُفِرَ لَهُ مَا بَينَهُ وَبَينَ الجُمُعَةِ الأُخرَ))-البخاري</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">4- الصلاة الدليل: عن ابن مسعود: أن رجلا أصاب من امرأة قبلة فأتى النبي - صلى الله عليه وسلم - فأخبره، فأنزل الله - عز وجل -: ((أقم الصلاة طرفي النهار و زلفا من الليل إن الحسنات يذهبن السيئات)) فقال الرجل: يا رسول الله ألي هذا؟ قال: لجميع أمتي كلهم)) البخاري</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">5- صلاة ركعتين بخشوع الدليل: قال رسول الله - صلى الله عليه وسلم -: ((من توضأ نحو وضوئي هذا، ثم صلى ركعتين لا يحدث فيهما نفسه غفر الله له ما تقدم من ذنبه)) البخاري</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">6- الصوم الدليل: قال رسول الله - صلى الله عليه وسلم -: ((فتنة الرجل في أهله وماله وولده وجاره تكفرها: الصلاة، والصوم، والصدقة... )) البخاري</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">7- صيام رمضان الدليل: قال رسول الله - صلى الله عليه وسلم -: ((من صام رمضان إيماناً واحتساباً غفر له ما تقدم له من ذنبه)) البخاري</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">8- قيام رمضان الدليل: قال رسول الله - صلى الله عليه وسلم -: ((من قام رمضان إيمانا واحتسابا غفر له ما تقدم له من ذنبه)) البخاري</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">9- قيام ليلة القدر الدليل: قال رسول الله - صلى الله عليه وسلم -: ((من قام ليلة القدر إيمانا واحتسابا غفر له ما تقدم له من ذنبه)) البخاري</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">10- صيام يوم عرفة الدليل: قال رسول الله - صلى الله عليه وسلم -: ((صيام يوم عرفة أحتسب على الله ان يكفر السنة التي قبله والسنة التي بعده)) الترمذي، وابن ماجة، والحاكم</font></font></span>  <br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">11- صيام عاشوراء الدليل: قال رسول الله - صلى الله عليه وسلم -: ((صيام يوم عاشوراء أحتسب على الله أن يكفر السنة التي قبله)) أبو داوود، والترمذي، وابن ماجة، والحاكم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">12- الصدقة الدليل: قال رسول الله - صلى الله عليه وسلم -: ((الصدقة تطفئ الخطيئة كما يطفئ النار الماء)) الترمذي وقوله - صلى الله عليه وسلم -: ((يا معشر النساء تصدقن، وأكثرن، فإني رأيتكن أكثر أهل النار)) البخاري ومسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">13- الأمر بالمعروف والنهي عن المنكر الدليل: قال رسول الله - صلى الله عليه وسلم -: ((فتنة الرجل في أهله وماله وولده وجاره تكفرها: الصلاة، والصوم، والصدقة... والأمر والنهي)) البخاري</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">14- التأمين الدليل: قال رسول الله - صلى الله عليه وسلم -: ((إذا أمن الإمام فأمنوا، فإنه من وافق تأمينه تأمين الملائكة غفر له ما تقدم من ذنبه)) البخاري ومسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">15- قول هذا الذكر الدليل: قال رسول الله - صلى الله عليه وسلم -: ((إذا قال الإمام: سمع الله لمن حمده، فقولوا: ربنا لك الحمد، فإنه من وافق قوله قول الملائكة غفر له ما تقدم من ذنبه)) البخاري ومسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">16- الحج المبرور الدليل: قال رسول الله - صلى الله عليه وسلم -: ((من حج لله فلم يرفث ولم يفسق رجع كيوم ولدته أمه)) البخاري وقوله - صلى الله عليه وسلم -: ((الحج المبرور ليس له جزاء إلا الجنة)) البخاري</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">17- المصائب الدليل: قال رسول الله - صلى الله عليه وسلم -: ((ما من مسلم يصيبه أذى إلا حات الله عنه خطاياه كما تحات ورق الشجر)) البخاري وقوله - صلى الله عليه وسلم -: ((ما من مصيبة تصيب المسلم إلا كفر الله بها عنه حتى الشوكة يشاكها)) البخاري</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">18- الحمى الدليل: قال رسول الله - صلى الله عليه وسلم -: ((لا تسبي الحمى، فإنها تذهب خطايا بني آدم كما يذهب الكير خبث الحديد)) مسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">19- الأعمال الصالحة الدليل: قول الله - تعالى -: (إن الحسنات يذهبن السيئات) هود 114</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">20- العمرة الدليل: قال رسول الله - صلى الله عليه وسلم - ((العمرة الى العمرة كفارة لما بينهما)) البخاري</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">21- الشهادة الدليل: قال رسول الله - صلى الله عليه وسلم - ((يفغر للشهيد كل الذنب إلا الدين)) مسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">22- قول هذا الذكر عند النوم الدليل: قال رسول الله - صلى الله عليه وسلم - ((إذا أتيت مضجعك فتوضأ وضوءك للصلاة، ثم اضطجع على شقك الأيمن، وقل: اللهم اني أسلمت نفسي إليك، ووجهت وجهي إليك، وفوضت أمري اليك، وألجأت ظهري اليك، رغبة ورهبة اليك، لا ملجأ ولا منجأ منك إلا اليك، آمنت بكتابك الذي انزلت وبنبيك الذي أرسلت، فإن مت مت على الفطرة، وأجعلهن آخر ما تقول)) البخاري، ومسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">23- ذكر الله والتسبيح الدليل: قال رسول الله - صلى الله عليه وسلم - ((من قال سبحان الله وبحمده، في يوم مائة مرة حطت خطاياه وإن كانت مثل زبد البحر)) مسلم وقوله - صلى الله عليه وسلم -: ((أيعجز أحدكم أن يكسب كل يوم ألف حسنة: يسبح مائة تسبيحة فيكتب له ألف حسنة أو يحط عنه ألف خطيئة)) مسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">24- صلاة الجماعة الدليل: قال رسول الله - صلى الله عليه وسلم - ((من توضأ للصلاة فأسبغ الوضوء، ثم مشى الى الصلاة المكتوبة، فصلاها مع الناس أو مع الجماعة أو في المسجد، غفر الله له ذنوبه)) مسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">25- الوضوء الحسن الدليل: قال رسول الله - صلى الله عليه وسلم - ((من توضأ فأحسن الوضوء، خرجت خطاياه من جسده، حتى تخرج من تحت أظافره)) مسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">26- إسباغ الوضوء على المكاره</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">27- المشي على المسجد</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">28-إنتظار الصلاة الدليل: قال رسول الله - صلى الله عليه وسلم - ((ألا أدلكم على ما يمحو الله به الخطايا، ويرفع به الدرجات؟ قالوا: بلى يا رسول الله، قال: إسباغ الوضوء على المكاره، وكثرة الخطا إلى المساجد، وانتظار الصلاة بعد الصلاة، فذلك الرباط)) مسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">29- قول هذا الذكر بعد الآذان الدليل: قال رسول الله - صلى الله عليه وسلم - ((من قال حين يسمع المؤذن: وأنا اشهد انه لا اله الا الله وحده لا شريك له، وأن محمدا عبده ورسوله، رضيت بالله ربا وبحمد رسولا، وبالإسلام دينا، غفر له ذنبه)) مسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">30- قول هذا الذكر بعد الصلاة المفروضة الدليل: قال رسول الله - صلى الله عليه وسلم - ((من سبح الله في دبر كل صلاة ثلاثا وثلاثين، وحمد الله ثلاثا وثلاثين، وكبر الله ثلاثا وثلاثين، فتلك تسعة وتسعون، وقال تمام المائة: لا اله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير، غفرت خطاياه وإن كانت مثل زبد البحر)) البخاري ومسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">31- مسح الركنين اليماني والاسود</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">32- الطواف بالكعبة الدليل: قال ابن عمر: سمعت رسول الله - صلى الله عليه وسلم - يقول ((إن مسحهما أي الركنين كفارة للخطايا)) وسمعته يقول ((من طاف بهذا البيت أسبوعا فأحصاه كان كعتق رقبة)) وسمعته يقول ((لا يضع قدما ولا يرفع أخرى إلا حط الله عنه خطيئة وكتب له بها حسنة)) الترمذي والنسائي</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">33- كفارة المجلس الدليل: قال رسول الله - صلى الله عليه وسلم - ((من جلس في مجلس فكثر فيه لغطه فقال قبل أن يقوم من مجلسه ذلك: سبحانك اللهم وبحمدك، أشهد أن لا إله إلا أنت، أستغفرك وأتوب إليك، إلا غفر له ما كان في مجلسه ذلك)) البخاري ومسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">34- مجالس الذكر الدليل: قال رسول الله - صلى الله عليه وسلم - ((إن لله ملائكة سياحين في الأرض... فإذا وجدوا اقواما يذكرون الله تنادوا: هلموا إلى بغيتكم، فيجيئون، فيحفون بهم إلى السماء الدنيا، فيقول الله: على أي شيء تركتم عبادي يصنعون، فيقولون: تركناهم يحمدونك ويمجدونك ويذكرونك... فيقول: فإني أشهدكم أني قد غفرت لهم...)) البخاري ومسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">35- إماطة الأذى عن الطريق الدليل: قال رسول الله - صلى الله عليه وسلم - ((بينما رجل يمشي بطريق وجد غصن شوك على الطريق، فأخره، فشكر الله له، فغفر له)) مسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">36- الآذان الدليل: قال رسول الله - صلى الله عليه وسلم - ((المؤذن يغفر له بمد صوته، ويشهد له كل رطب ويابس)) النسائي</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">37- الخوف من الله الدليل: قال رسول الله - صلى الله عليه وسلم - ((يعجب ربك من راعي غنم في رأس شظية الجبل، يؤذن بالصلاة ويصلي، فيقول الله - عز وجل -: انظروا الى عبدي هذا، يؤذن ويقيم الصلاة، يخاف مني، قد غفرت لعبدي وأدخلته الجنة)) ابو داوود، والنسائي، والحاكم 38- الصلاة على النبي - صلى الله عليه وسلم - الدليل: قال رسول الله - صلى الله عليه وسلم - ((من صلى عليا صلاة واحدة، صلى الله عليه عشر صلوات، وحطت عنه عشر خطيئات، ورفعت له عشر درجات)) النسائي، والحاكم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">39- الصلاة في المسجد الأقصى الدليل: قال رسول الله - صلى الله عليه وسلم - ((لما فرغ سليمان من بناء بيت المقدس سأل الله ثلاثا: حكما يصادف حكمه، وملكا لا ينبغي لأحد من بعده، وألا يأتي هذا المسجد أحد لا يريد إلا الصلاة فيه إلا خرج من ذنوبه كيوم ولدته أمه، فقال - صلى الله عليه وسلم -: أما اثنتان أعطيهما، وأرجو أن يكون قد أعطي الثالثة)) النسائي، وأحمد، وابن ماجة</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">40- صلاة الليل الدليل: قال رسول الله - صلى الله عليه وسلم - ((الصدقة تطفئ الخطيئة كما يطفئ النار الماء، وصلاة الرجل من جوف الليل)) الترمذي، وابن ماجة</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">41- قول هذا الذكر الدليل: قال رسول الله - صلى الله عليه وسلم - ((من تعار من الليل فقال: لا اله الا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير، الحمد لله، وسبحان الله، و لا اله الا الله، والله اكبر، ولا حول ولا قوة الا بالله، ثم قال: اللهم اغفر لي أو دعا استجيب له، فإن توضأ وصى قبلت صلاته)) البخاري ومسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">42- الاستغفار الدليل: قال رسول الله - صلى الله عليه وسلم - ((والذي نفسي بيده لو لم تذنبوا لذهب الله بكم ولجاء بقوم يذنبون فيستغفرون الله فيغفر لهم)) مسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">43- التوبة الدليل: قال الله - تعالى -: (يا عبادي الذين أسرفوا على أنفسهم لا تقنطوا من رحمة الله، إن الله يغفر الذنوب جميعا إنه هو الغفور الرحيم) وقول الله - تعالى-: (ألم يعلموا أن الله يقبل التوبة عن عباده ويأخذ الصدقات وأن الله هو التواب الرحيم)، وقول الله - تعالى-: (وهو الذي يقبل التوبة عن عباده ويعفو عن السيئات)، وقال الرسول - صلى الله عليه وسلم - ((من تاب قبل أن تطلع الشمس من مغربها تاب الله عليه)) مسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">44- سقاية العطشى الدليل: قال رسول الله - صلى الله عليه وسلم -: ((بينما رجل يمشي بطريق اشتد عليه العطش، فوجد بئرا فنزل فيها فشرب ثم خرج، فإذا كلب يلهث يأكل الثرى من العطش، فقال الرجل: لقد بلغ هذا الكلب من العطش مثل الذي كان بلغ مني، فنزل البئر فملأ خفه ماء ثم أمسكه بفيه حتى رقي فسقى الكلب، فشكر الله له فغفر له، قالوا: يا رسول الله! وإن لنا في هذه البهائم لأجرا؟ فقال - صلى الله عليه وسلم -: في كل كبد رطبة أجر)) مسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">45- قول هذا الذكر الدليل: قال رسول الله - صلى الله عليه وسلم -: ((من قال: لا اله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير، في يوم مائة مرة، كانت له عدل عشر رقاب، وكتب له مائة حسنة، ومحيت عنه مائة سيئة، وكانت له حرزا من الشيطان يومه ذلك حتى يمسي، ولم يأت أحد بأفضل مما جاء به إلا أحد عمل أكثر من ذلك)) البخاري ومسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">46- الصلاة في المساجد الأربعة الدليل: عن عاصم بن سفيان الثقفي قال ((قد أخبرنا انه من صلى في المساجد الأربعة غفر له ذنبه))-أحمد، والنسائي، وابن ماجة، وابن حبان- قال ابن حبان: المساجد الاربعة: المسجد الحرام، ومسجد المدينة، ومسجد الأقصى، ومسجد قباء.</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">47- الإكثار من قراءة سورة تبارك الدليل: قال رسول الله - صلى الله عليه وسلم - ((سورة من القرآن ثلاثون آية تشفع لصاحبها حتى يغفر له، تبارك الذي بيده الملك)) أبو داوود، وابن ماجة، واحمد، وابن حبان</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">48- قول هذا الذكر الدليل: قال رسول الله - صلى الله عليه وسلم - لعلي - رضي الله عنه -: ((ألا أعلمك كلمات إذا قلتهم غفر لك مع أنه مغفور لك: لا إله إلا الله الحليم الكريم، لا إله إلا الله العلي العظيم، سبحان الله رب السموات السبع، ورب العرش العظيم، الحمد لله رب العالمين)) الترمذي، وأحمد، والنسائي</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">49- عمل خصلة تدخل الجنة الدليل: قال رسول الله - صلى الله عليه وسلم - ((أربعون خصلة، أعلاهن منيحة العنز، ما يعمل رجل بخصلة منها رجاء ثوابها وتصديق موعودها إلا أدخله الله به الجنة)) البخاري.</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">50- الساعي على الارملة والمسكين الدليل: قال رسول الله - صلى الله عليه وسلم -: ((الساعي على الأرملة والمسكين كالمجاهد في سبيل الله أو القائم الليل الصائم النهار)) البخاري ومسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">51- قول هذا الذكر بعد الفراغ من الطعام الدليل: قال رسول الله - صلى الله عليه وسلم -: ((إذا أردت أن يغفر لك ما تقدم من ذنبك فقل بعد الفراغ من أكل الطعام: الحمد لله الذي أطعمني هذا و رزقنيه من غير حول مني ولا قوة)) صحيح الترمذي3458، صحيح ابن ماجة2673</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">52- المصافحة بين المسلمين الدليل: قال رسول الله - صلى الله عليه وسلم –: ((ما من مسلمين يلتقيان فيتصافحان إلا غفر الله لهما قبل أن يفترقا)) الترمذي وصححه الألباني 2727</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">53- قول هذا الذكر الدليل: قال رسول الله - صلى الله عليه وسلم -: ((من قال: أستغفر الله الذي لا إله إلا هو الحي القيوم وأتوب إليه، غفرت ذنوبه وإن كان قد فر من الزحف)) ابو داوود، والترمذي والحاكم، وقال صحيح على شرط البخاري ومسلم.</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">54- الصلاة ركعتين إذا أذنب الدليل: قال رسول الله - صلى الله عليه وسلم - ((ما من عبد يذنب ذنبا فيحسن الطهور، ثم يقوم فيصلي ركعتين، ثم يستغفر الله، إلا غفر له)) ابو داوود</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">55- الدعاء والاستغفار للوالدين الدليل: قال رسول الله - صلى الله عليه وسلم -: ((إن الله - عز وجل - ليرفع الدرجة للعبد الصالح في الجنة، فيقول: يا رب، أنى لي هذا؟! فيقول: باستغفار ولدك لك)) أحمد</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">56- سلامة الصدر وترك الشحناء الدليل: قال رسول الله - صلى الله عليه وسلم -: ((تفتح أبواب الجنة يوم الاثنين والخميس، فبغفر لكل عبد لا يشرك بالله شيئا، إلا رجلا كانت بينه وبين أخيه شحناء، فيقال: أنظروا هذين حتى يصطلحا، أنظروا هذين حتى يصطلحا، أنظروا هذين حتى يصطلحا)) مسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">57- الاستغفار ثلث الليل الآخر الدليل: قال رسول الله - صلى الله عليه وسلم -: ((ينزل ربنا كل ليلة الى السماء الدنيا حين يبقى ثلث الليل الآخر، فيقول: من يدعوني فأستجب له، و من يسألني فأعطيه، ومن يستغفرني فاغفر له)) مسلم</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">58- القول السديد الدليل: قال الله - تعالى-: (يا أيها الذين آمنوا اتقوا الله وقولوا قولاً سديداً * يصلح لكم أعمالكم ويغفر لكم ذنوبكم) الاحزاب 80-81</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">59- ذكر الدخول في السوق الدليل: قال رسول الله - صلى الله عليه وسلم -: ((من دخل السوق فقال: لا اله الا الله وحده لا شريك له، له الملك، وله الحمد، يحيي ويميت، وهو حي لا يموت، بيده الخير، وهو على كل شيء قدير، كتب الله له ألف ألف حسنة، ومحا عنه ألف ألف سيئة، ورفع له ألف ألف درجة))</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">60- الجهاد بالنفس والمال الدليل: قال الله - تعالى-: (يا أيها الذين آمنوا هل أدلكم على تجارة تنجيكم من عذاب أليم * تؤمنون بالله ورسوله وتجاهدون في سبيل الله بأموالكم وأنفسكم ذلكم خير لكم إن كنتم تعلمون * يغفر لكم ذنوبكم ويدخلكم جنات تجري من تحتها الأنهار ومساكن طيبة في جنات عدن ذلك الفوز العظيم) الصف 11-12-</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">61- الحمد لله، وسبحان الله، ولا إله إلا الله، والله أكبر الدليل: عن أنس بن مالك - رضي الله عنه - أن رسول الله - صلى الله عليه وسلم - مر بشجرةٍ يابسةِ الورق فضربها بعصاه فتناثر الورق، فقال رسول الله - صلى الله عليه وسلم -: ((إن الحمد لله، وسبحان الله، ولا إله إلا الله، والله أكبر لتساقط من ذنوب العبد كما تساقط ورق هذه الشجرة)) -الترمذي وحسنه الألباني وقال رسول الله - صلى الله عليه وسلم -: ((ما على الأرض رجل يقول: لا إله إلا الله، والله أكبر، وسبحان الله، والحمد لله، ولا حول ولا قوة إلا بالله، إلا كفرت عنه ذنوبه ولو كانت أكثر من زبد البحر)) سنن الترمذي، وصححه الحاكم، واقره الحاكم، حسَّنه الترمذي، وحسّنه الألباني</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">62- الوضوء ثم إتيان المسجد لا يريد إلا الصلاة الدليل: قال رسول الله - صلى الله عليه وسلم -: ((صَلاَةُ الجَمِيعِ تَزِيدُ عَلَى صَلاَتِهِ فِي بَيتِهِ، وَصَلاَتِهِ فِي سُوقِهِ، خَمسًا وَعِشرِينَ دَرَجَةً، فَإِن أَحَدَكُم إِذَا تَوَضأَ فَأَحسَنَ، وَأَتَى المَسجِدَ، لاَ يُرِيدُ إِلا الصلاَةَ، لَم يَخطُ خَطوَةً إِلا رَفَعَهُ اللهُ بِهَا دَرَجَةً، وَحَط عَنهُ خَطِيئَةً، حَتى يَدخُلَ المَسجِدَ، وَإِذَا دَخَلَ المَسجِدَ، كَانَ فِي صَلاَةٍ مَا كَانَت تَحبِسُهُ، وَتُصَلي - يَعنِي عَلَيهِ المَلاَئِكَةُ - مَا دَامَ فِي مَجلِسِهِ الذِي يُصَلي فِيهِ: اللهُم اغفِر لَهُ، اللهُم ارحَمهُ، مَا لَم يُحدِث فِيهِ)) -البخاري-</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">63- التَجاَوزُ عَنِ المُوسِرِ، وَالتخَففُ عَنِ المُعسِرِ الدليل: قال رسول الله - صلى الله عليه وسلم -: ((مَاتَ رَجُلٌ، فَقِيلَ لَهُ، قَالَ: كُنتُ أُبَايِعُ الناسَ، فَأَتَجَوزُ عَنِ المُوسِرِ، وَأُخَففُ عَنِ المُعسِرِ، فَغُفِرَ لَهُ)) قَالَ أَبُو مَسعُودٍ: سَمِعتُهُ مِنَ النبِي - صلى الله عليه وسلم -)) –البخاري</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">64- لزوم الإقرار بالذنب والاستغفار والتوبة بعد إقترافه الدليل: قال رسول الله - صلى الله عليه وسلم -: ((إِن عَبدًا أَصَابَ ذَنبًا - وَرُبمَا قَالَ أَذنَبَ ذَنبًا - فَقَالَ: رَب أَذنَبتُ - وَرُبمَا قَالَ: أَصَبتُ - فَاغفِر لِي، فَقَالَ رَبهُ: أَعَلِمَ عَبدِي أَن لَهُ رَبا يَغفِرُ الذنبَ وَيَأخُذُ بِهِ؟ غَفَرتُ لِعَبدِي، ثُم مَكَثَ مَا شَاءَ اللهُ ثُم أَصَابَ ذَنبًا، أَو أَذنَبَ ذَنبًا، فَقَالَ: رَب أَذنَبتُ - أَو أَصَبتُ - آخَرَ، فَاغفِرهُ؟ فَقَالَ: أَعَلِمَ عَبدِي أَن لَهُ رَبا يَغفِرُ الذنبَ وَيَأخُذُ بِهِ؟ غَفَرتُ لِعَبدِي، ثُم مَكَثَ مَا شَاءَ اللهُ، ثُم أَذنَبَ ذَنبًا، وَرُبمَا قَالَ: أَصَابَ ذَنبًا، قَالَ: قَالَ: رَب أَصَبتُ - أَو قَالَ أَذنَبتُ - آخَرَ، فَاغفِرهُ لِي، فَقَالَ: أَعَلِمَ عَبدِي أَن لَهُ رَبا يَغفِرُ الذنبَ وَيَأخُذُ بِهِ؟ غَفَرتُ لِعَبدِي ثَلاَثًا، فَليَعمَل مَا شَاءَ &quot;)) –البخاري</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">65- الخروج لصلاة العيد الدليل: فعن أُمِّ عَطِيَّةَ قَالَتْ: ((كُنَّا نُؤْمَرُ أَنْ نَخْرُجَ يَوْمَ الْعِيدِ حَتَّى نُخْرِجَ الْبِكْرَ مِنْ خِدْرِهَا حَتَّى نُخْرِجَ الْحُيَّضَ فَيَكُنَّ خَلْفَ النَّاسِ فَيُكَبِّرْنَ بِتَكْبِيرِهِمْ وَيَدْعُونَ بِدُعَائِهِمْ يَرْجُونَ بَرَكَةَ ذَلِكَ الْيَوْمِ وَطُهْرَتَهُ)) رواه البخاري</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">66- الغزو في سبيل الله الدليل: قال رسول الله - صلى الله عليه وسلم -: ((مقام أحدكم في سبيل الله خير من صلاة ستين عاما خاليا ألا تحبون أن يغفر الله لكم ويدخلكم الجنة اغزوا في سبيل الله من قاتل في سبيل الله فواق ناقة وجبت له الجنة))- السلسلة الصحيحة للألباني</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">67- بذل السلام وحسن الكلام الدليل: قال رسول الله - صلى الله عليه وسلم -: ((إن من موجبات المغفرة بذل السلام وحسن الكلام))- السلسلة الصحيحة للألباني</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">68- إقامة الحد على المذنب الدليل: قال رسول الله - صلى الله عليه وسلم -: ((أيما عبد أصاب شيئا مما نهى الله عنه ثم أقيم عليه حده كفر عنه ذلك الذنب))- السلسلة الصحيحة للألباني</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">69- من مات وهو يشهد أن لا إله إلا الله وأن محمدا رسول الله صادقا من قلبه الدليل: قال رسول الله - صلى الله عليه وسلم -: ((ما من نفس تموت وهي تشهد أن لا إله إلا الله وأني رسول الله يرجع ذلك إلى قلب موقن إلا غفر الله لها))- السلسلة الصحيحة للألباني 2278-</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">70- الصبر على البلاء المضجع للعبد مع حمده لله الدليل: قال رسول الله - صلى الله عليه وسلم -: ((إن الله - تعالى -يقول إذا ابتليت عبدا من عبادي مؤمنا فحمدني وصبر على ما ابتليته به فإنه يقوم من مضجعه ذلك كيوم ولدته أمه من <a href="https://www.nafsany.cc/vb/showthread.php?t=123198" target="_blank" rel="nofollow">الخطايا</a> ويقول الرب للحفظة إني أنا قيدت عبدي هذا وابتليته فأجروا ((له)) من الأجر ما كنتم تجرون له قبل ذلك وهو صحيح))- السلسلة الصحيحة للألباني 2009-</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">71- حسن إسلام المرء الدليل: قال رسول الله - صلى الله عليه وسلم -: ((إِذَا أَسلَمَ العَبدُ فَحَسُنَ إِسلاَمُهُ، يُكَفرُ اللهُ عَنهُ كُل سَيئَةٍ كَانَ زَلَفَهَا، وَكَانَ بَعدَ ذَلِكَ القِصَاصُ: الحَسَنَةُ بِعَشرِ أَمثَالِهَا إِلَى سَبعِ مِائَةِ ضِعفٍ، وَالسيئَةُ بِمِثلِهَا إِلا أَن يَتَجَاوَزَ اللهُ عَنهَا &quot;))- البخاري-.</font></font></span><br />
+<span style="font-family: Times New Roman"><font size="4"><font color="blue">وفي الختام: أسأل الله - جل وعلا - بأسمائه كلها وصفاته جميعا- تبارك وتعالى -الفتاح العليم وبأنه خير الفاتحين أسأله - جل وعلا - لي ولوالديّ ولعموم المسلمين، أن يفتح علينا أجمعين من واسع فضله وعظيم منه وجزيل عطائه، وأساله - جل وعلا - أن يجعلنا جميعا من مفاتيح الخير ومغاليق الشر، وأن يهدي لنا، وأن يهدي بنا، وأن ييسر الهدى لنا و بنا. وصلي اللهم على نبينا محمد وعلى آله وسلم.</font></font></span><br />
+<br />
+<span style="font-family: Times New Roman"><font size="6"><font color="red">(( مــــــنــــقــ  ـــــول ))</font></font></span>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_904685" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_904685" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=904685" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_904685" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=173373&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=173373#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=696d1a7d9adaea36633b28fa7c3827c1">لوحة التحكم</a></li>
+		<li><a href="private.php?s=696d1a7d9adaea36633b28fa7c3827c1">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1">الاشتراكات</a></li>
+		<li><a href="online.php?s=696d1a7d9adaea36633b28fa7c3827c1">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=173369&amp;s=696d1a7d9adaea36633b28fa7c3827c1">وإنه لحب الخير لشديد</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=173375&amp;s=696d1a7d9adaea36633b28fa7c3827c1">منهج الوسطية في بناء الشخصية الإسلامية</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%B0%D9%86%D9%88%D8%A8">الذنوب</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D9%84%D9%87">الله</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A8%D8%A5%D8%B0%D9%86">بإذن</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%AA%D9%83%D9%81%D8%B1">تكفر</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%AE%D8%B5%D9%84%D8%A9">خصلة</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%88%D8%A7%D9%84%D8%AE%D8%B7%D8%A7%D9%8A%D8%A7">والخطايا</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%88%D8%AA%D8%B0%D9%87%D8%A8">وتذهب</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=173373#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=173373#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">04:54 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

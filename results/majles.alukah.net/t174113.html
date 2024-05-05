@@ -1,0 +1,4803 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=ec1b4717d08f17a417a70c4e8f25f7a8&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=174113";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس اللغة العربية وعلومها - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=10" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="البلاغة, دروس, سهلة, علم, للمبتدئين., المسند, يعلم, على, ولا, مثل, لأغراض, منها, أولا, فتقول, تعريف, ثانيا, إليه, تقول, زَيْدٌ, شاعر, وقد, لَا, الشَّاعِرُ, غيره, والمسند, تعالى, هُدًى, طَالِبُ, سبب, بين, تقديم, فيما, يلي, أغراض, الأصل, الخبر, قصره, مَنْهُومَانِ, إلا, بعض, وصف, مُحَمَّدٌ, وتأخيره, إرادة, إفادة, وتنكيره, يكون, لغرض, قَائِمٌ, عنه" />
+	<meta name="description" content="http://majles.alukah.net/imgcache/2019/05/55.jpg 
+الحمد لله والصلاة والسلام على رسوله محمد وعلى آله وصحبه وسلم. 
+أما بعد... 
+فهذه دروس موجزة في علم البلاغة تشتمل على زبدة ما في مائة المعاني والبيان مع زيادات أسأل الله أن ينفع بها وأن يتمها على خير. 
+ 
+الدرس الأول 
+ 
+الفصاحة 
+ 
+الفصاحة لغة تدل على الظهور والبيان، يقال: &quot;أفصحَ الصبحُ&quot; إذا أضاء. و&quot;أفصح الصبيُّ&quot; إذا بان كلامه وفُهِم." />
+
+	<title> دروس سهلة في علم البلاغة للمبتدئين.</title>
+	<link rel="canonical" href="showthread.php?t=174113&s=ec1b4717d08f17a417a70c4e8f25f7a8" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=10&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس اللغة العربية وعلومها</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> دروس سهلة في علم البلاغة للمبتدئين.</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<form action="showthread.php?t=174113&amp;page=2&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" method="get" class="pagination popupmenu nohovermenu">
+<input type="hidden" name="t" value="174113" /><input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+	
+		<span><a href="javascript://" class="popupctrl">صفحة 1 من 2</a></span>
+		
+		
+		
+		<span class="selected"><a href="javascript://" title="النتائج 1 إلى 20 من 32">1</a></span><span><a href="showthread.php?t=174113&amp;page=2&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="مشاهدة النتائج 21 إلى 32 من 32">2</a></span>
+		
+		
+		<span class="prev_next"><a rel="next" href="showthread.php?t=174113&amp;page=2&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="الصفحة التالية - النتائج 21 إلى 32 من 32"><img src="images/metro/purple/pagination/next-left.png" alt="التالي" /></a></span>
+		
+		
+		<span class="first_last"><a href="showthread.php?t=174113&amp;page=2&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="الصفحة الأخيرة - النتائج 21 إلى 32 من 32">الأخيرة<img src="images/metro/purple/pagination/last-left.png" alt="الأخيرة" /></a></span>
+		
+	
+	<ul class="popupbody popuphover">
+		<li class="formsubmit jumptopage"><label>إذهب إلى الصفحة: <input type="text" name="page" size="4" /></label> <input type="submit" class="button" value="إذهب" /></li>
+	</ul>
+</form>
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 20 من 32
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=174113&s=ec1b4717d08f17a417a70c4e8f25f7a8" title="تحديث الصفحة">دروس سهلة في علم البلاغة للمبتدئين.</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=174113" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;t=174113&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=addsubscription&amp;t=174113" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;search_type=1&amp;searchthreadid=174113&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="174113" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_907205">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-07,&nbsp;<span class="time">02:11 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post907205" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=907205#post907205" class="postcounter">#1</a><a id="postcount907205" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفاء الدين العراقي غير متواجد حالياً"><strong>صفاء الدين العراقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=13233&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفاء الدين العراقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_907205">
+				<blockquote class="postcontent restore">
+					<font color="#000000"><span style="font-family: Tahoma"><div style="text-align: center;"><img src="http://majles.alukah.net/imgcache/2019/05/55.jpg" border="0" alt="" /></div></span></font><br />
+<font color="#000000"><span style="font-family: Tahoma"><div style="margin-right:40px"><font size="6">الحمد لله والصلاة والسلام على رسوله محمد وعلى آله وصحبه وسلم.<br />
+أما بعد...<br />
+فهذه دروس موجزة في علم البلاغة تشتمل على زبدة ما في مائة المعاني والبيان مع زيادات أسأل الله أن ينفع بها وأن يتمها على خير.<br />
+<br />
+<div style="text-align: center;"><font color="#800000"><b>الدرس الأول</b><br />
+<br />
+<b>الفصاحة</b></font></div><br />
+<b><u>الفصاحة لغة</u></b> تدل على الظهور والبيان، يقال: &quot;أفصحَ الصبحُ&quot; إذا أضاء. و&quot;أفصح الصبيُّ&quot; إذا بان كلامه وفُهِم.<br />
+<b>وتقع في الاصطلاح</b> وصفا للكلمة، والكلام، والمتكلم فيقال: كلمة فصيحة، وكلام فصيح، ومتكلم فصيح.<br />
+<b>ففصاحة الكلمة</b>: سلامتها من: تنافر الحروف، ومخالفة القياس، والغرابة.<br />
+<b>فتنافر الحروف</b>: وصف في الكلمة يوجب ثقلها على اللسان. فيعسر النطق بها ولا ترتاح لسماعها الأذن.<br />
+مثاله: (الهِعْخِع) لنبات أسود تأكله الإبل، فحروفه لما اجتمعت وتقاربت في المخرج- إذْ هي حروف حلقية- تنافرت ولم تتلائم فعسر النطق بها. ومثل مُسْتَشْزِر أي مرتفع.<br />
+<b>ومخالفة القياس</b>: كون الكلمة غير جارية على القانون الصرفي.<br />
+مثل: فك الإدغام في موضع يجب فيه الإدغام مثل: الأَجْلَل، والفصيح هو الأَجلُّ أي الأعظم، ومثل: جمع الكلمة جمعا لا تقره قواعد الصرف كجمع بُوق على بوقات والفصيح أبواق.<br />
+<b>والغرابة</b>: كون الكلمة غير ظاهرة المعنى لكونها غير مأنوسة الاستعمال عند العرب الفصحاء.<br />
+مثل: تَكَأكَأَ أي اجتمعَ، وافْرَنْقَعَ أي انصرف، فليس كل كلمة لها معنى في اللغة يفصح استعمالها وإن كانت مهجورة غير متداولة.<br />
+<b>وفصاحة الكلام</b>: سلامته من: تنافرِ الكلمات، وضعفِ التأليف، والتعقيدِ، مع فصاحة كلماته في نفسها.<br />
+<b>فتنافر الكلمات</b>: وصف في الكلام يوجب ثقله على اللسان. فيعسر النطق به ولا ترتاح لسماعه الأذن.<br />
+كقول الشاعر:<br />
+وقَبرُ حَرْبٍ بمكانٍ قَفْرُ... وليسَ قربَ قَبْرِ حَرْبٍ قبرُ<br />
+فالشطر الثاني من البيت ثقيل بسبب اجتماع كلمات متكررة متقاربة المخرج، مع أن كل كلمة لوحدها فصيحة.<br />
+<b>وضعف التأليف</b>: كون الكلام غيرَ جارٍ على القانون النَّحْوِي المشهور بين النحاة. <br />
+مثل: عود الضمير على متأخر لفظا ورتبة، وقد استقر عند النحاة أن ذلك لا يجوز كأن يقال: ضَرَبَ غلامُهُ زيدًا، فغلامه فاعل وضميره يعود على زيدٍ المتأخر في النطق والمتأخر في الرتبة لأنه مفعول به ورتبته متأخرة عن الفاعل، والفصيح: ضربَ زيدًا غُلامُهُ.<br />
+وليس المراد هو مخالفة قواعد النحو الأساسية كرفع الفاعل ونصب المفعول به كأن يقول قائل ضربَ زيدٍ عمرًا فهذا فاسد من أصله ولا يوصف بأنه غير فصيح، وأما عود الضمير على متأخر لفظا ورتبة فإنه وإن كان غير حسن لكنه ليس بممتنع كامتناع جر الفاعل.<br />
+والتعقيد نوعان: لفظي ومعنوي.<br />
+<b>فالتعقيد اللفظي</b>: أن يكون الكلام خفيَّ الدلالة بسبب التقديم والتأخير أو الفصل بين الكلمات المتلازمة.<br />
+مثل: ما قرأَ إلا واحدًا سليمٌ معَ كتابًا أخيه. فإن هذا الكلام غير فصيح لتعقيده الشديد. والتركيب الصحيح: ما قرأ سليمٌ مع أخيه إلا كتابا واحدًا.<br />
+<b>والتعقيد المعنوي</b>: أن يكون الكلام خفي الدلالة بسبب استعمال مجازات وكنايات لا يفهم المراد منها.<br />
+مثل: &quot;نشر الحاكم ألسنته في المدينة&quot; مريدا جواسيسه. فهذا غير فصيح لأن كلمة اللسان تطلق أحيانا ويراد بها اللغة، ولا يعرف استعمالها للجاسوس فيكون في الكلام تعقيد معنويّ والصواب أن يقال: نشر الحاكم عيونَه.<br />
+ومثل أن يكنّى عن الفرح والسرور بجمود العين فيقال: بعد الحزن والفراق جمدت عيني أي فرحتُ، فإن جمود العين يكنى به عن بخل العين بالدمع وقت البكاء والحزن ولا يعهد إرادة الفرح به.<br />
+ثم بعد سلامة الكلام من العيوب الثلاثة: تنافر الكلمات، وضعف التأليف، والتعقيد لا بد أن تكون الكلمات المفردة في نفسها فصيحة ليس فيها تنافر الحروف، والمخالفة للقياس الصرفي، والغرابة؛ لأن فصاحة الكلمة شرط في فصاحة الكلام.<br />
+<b>وفصاحة المتكلم</b>: ملكة يُقتدر بها على التعبير عن المقصود بكلام فصيح في أي غرض كانَ. <br />
+فلا يكون المتكلم فصيحا حتى يكون ذا ملكة -أي صفة راسخة في النفس- يتمكن بها من إنشاء الكلام الفصيح الخالي من تلك العيوب في أي غرض وفي أي موقف أراد كالمدح والهجاء والوعظ، ولا يوصف الشخص بها لإتيانه أحيانا ببعض الكلام الفصيح من غير حيازة الملكة.<br />
+<br />
+<div style="text-align: center;">( أسئلة )</div><br />
+1- ما هي الفصاحة لغة واصطلاحا؟<br />
+2- ما معنى فصاحة الكلمة والكلام والمتكلم؟<br />
+3- مثل بمثال من عندك لكلمة فصيحة وأخرى غير فصيحة.<br />
+<br />
+<div style="text-align: center;">( ت 1 )</div><br />
+بيّن سبب عدم فصاحة الكلمات الآتية:<br />
+( الظِّشُ - اِطْلَخَمَّ - مَوْدَدَة - النُّقَاخ )<br />
+<br />
+<div style="text-align: center;">( ت 2 )</div><br />
+بين سبب عدم فصاحة الكلام الآتي:<br />
+( كريم متى أَمْدَحْهُ أَمْدَحْهُ والورى...معي وإذا ما لمتُه لمتُه وحدي - سَكَنَ صاحبُها الدارَ ( يقصد: سكن الدارَ صاحبُها ) - كيف يكون حليفَك النجاحُ وأبوك وكسول أنت غبي ( يقصد: كيف يكون النجاح حليفَك وأبوك غبي وأنت كسول ) - من لم يظلم الناس يظلم ( يقصد: من لم يحافظ على حقوقه تؤخذ منه ))</font></div></span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_907205" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_907205" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=907205" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_907205" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_907206">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-07,&nbsp;<span class="time">02:12 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post907206" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=907206#post907206" class="postcounter">#2</a><a id="postcount907206" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفاء الدين العراقي غير متواجد حالياً"><strong>صفاء الدين العراقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=13233&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفاء الدين العراقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_907206">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><font color="#000000"><span style="font-family: Tahoma"><font size="6"><font color="#800000"><b>الدرس الثاني</b><br />
+<br />
+<b>البلاغة</b></font><br />
+</font></span></font></div><font size="6"><font color="#000000"><span style="font-family: Tahoma"><br />
+<b><u>البلاغة في اللغة</u></b>: الوصول يقال: &quot;بلغ فلان المدينة&quot; إذا وصل إليها.<br />
+<b><u>وفي الاصطلاح</u></b> تقع وصفا للكلام والمتكلم فقط فيقال: كلام بليغ ومتكلم بليغ ولا يقال: كلمة بليغة للمفردة.<br />
+<b>فبلاغة الكلام</b>: مطابقته لمقتضى الحال مع فصاحته.<br />
+</span></font></font><br />
+<font size="6"><b><u>فالحال</u></b> هو: الأمر الحامل للمتكلم على أن يورد عبارته على صورة مخصوصة.</font><br />
+<font size="6"><b><u>والمقتَضَى</u></b> هو: الصورة المخصوصة التي تُورَد عليها العبارة.</font><br />
+<font size="6"><b><u>والمطابقة</u></b> هي: اشتمال الكلام على تلك الصورة المخصوصة.</font><br />
+<br />
+<font size="6"><font color="#000000"><span style="font-family: Tahoma">مثل: أن يقال لمنكر رسالة النبي صلى الله عليه وسلم:&quot; إنَّ محمدًا لرسولُ اللهِ&quot; فإنكار المخاطب لهذه الرسالة&quot; حال&quot;؛ لأنه أمر يحمل المتكلم على أن يورد في كلامه شيئا خاصا هو التوكيد محوا للإنكار ولهذا جيء بإنَّ واللام، فصورة التوكيد &quot; مقتضى الحال&quot; لأن الحال اقضتها ودعت إليها، واشتمال الكلام على تلك الصورة المخصوصة هو &quot;المطابقة لمقتضى الحال&quot;.<br />
+ومثل: المدح فهو &quot;حال&quot; يدعو المتكلم أن يورد الكلام على صورة الإطناب والتوسع التي هي&quot;مقتضى الحال&quot; واشتمال الكلام على تلك الصورة هو &quot;المطابقة لمقتضى الحال&quot;.<br />
+بعبارة مختصرة: المدح حال يدعو للإطناب فإذا أطنبت في المدح فكلامك بليغ.<br />
+فلكل حال ومقام مقتضى معين ولهذا قيل: لكل مقام مقال، فإذا لم تؤكد للمنكر ولم تطنب للممدوح فلا بلاغة.<br />
+وقولنا&quot;مع فصاحته&quot; بيان لاشتراط الفصاحة في البلاغة فلا يكون الكلام بليغا إلا مع فصاحته؛ فكل كلام بليغ فصيح، وليس كل كلام فصيح بليغا؛ لجواز أن يكون كلام فصيح غيرَ مطابق لمقتضى الحال كما إذا قيل لمنكر قيام زيد: زيدٌ قائمٌ. من غير توكيد فهو فصيح لكنه غير بليغ.<br />
+<b><u>وبلاغة المتكلم</u></b>: ملكة يُقتَدرُ بها على التعبير عن المقصود بكلام بليغ في أي غرض كان. كالمدح والذم والوعظ.<br />
+وعلم أن كل متكلم بليغ فصيح وليس كل متكلم فصيح بليغا؛ لجواز أن يكون للإنسان ملكة يقتدر بها على كلام فصيح مثل: زيدٌ قائمٌ الملقى للمنكر من غير أن يقتدر بتلك الملكة على مراعاة الخصوصيات المناسبة للحال.<br />
+وظهر أن فصاحة الكلام وبلاغته يتوقفان على السلامة من ستة أمور: من تنافر الحروف، ومن مخالفة القياس، ومن الغرابة، ومن تنافر الكلمات، ومن ضعف التأليف، ومن التعقيد اللفظي والمعنوي.<br />
+وتزيد البلاغة بالتوقف على أمر آخر وهو مطابقته لمقتضى الحال، فمتى فقد في الكلام السلامة من واحد من الأمور الستة الأولى انتفت الفصاحة فتنتفي البلاغة لتوقفها عليها، ومتى فقدَ الكلامُ المطابقةَ كان غير بليغ ولو كان فصيحا.<br />
+واعلم أن الملكة المذكورة لا تنال بمجرد دراسة القواعد النظرية لعلم البلاغة بل بالإطلاع الواسع على كلام العرب البلغاء نظما ونثرا والحذو حذوهم وممارسة أساليبهم وبذلك تكتسب الملكة وينال الذوق السليم.<br />
+</span></font></font><br />
+<font size="6">فتنافر الحروف والكلمات يعرف بالذوق السليم المكتسب بالممارسة لكلام البلغاء.</font><br />
+<font size="6">ومخالفة القياس تعرف بعلم الصرف.</font><br />
+<font size="6">والغرابة تعرف بكثرة الإطلاع على كلام العرب والإحاطة بكلامهم ليعرف المأنوس من غيره.</font><br />
+<font size="6">وضعف التأليف والتعقيد اللفظي يعرفان بعلم النحو.</font><br />
+<font size="6">والتعقيد المعنوي يعرف بعلم البيان لأنه يبحث في المجاز والكنايات فيعرف ما لا يصلح استعماله منهما لتعقيده وخفائه.</font><br />
+<font size="6">والأحوال ومقتضياتها تعرف بعلم المعاني إذْ هو العلم الذي يبين لك مثلا إن الإنكار حال يقتضي توكيد الكلام، وعدم الإنكار يقتضي عدم التوكيد.</font><br />
+<br />
+<font size="6"><font color="#000000"><span style="font-family: Tahoma"><div style="text-align: center;">( أسئلة )</div><br />
+1- ما هي البلاغة لغة واصطلاحا؟<br />
+2- ما معنى بلاغة الكلام وبلاغة المتكلم؟<br />
+3- ما معنى الحال والمقتضى والمطابقة؟</span></font></font><font color="#000000"><span style="font-family: Tahoma"><br />
+<br />
+<br />
+</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_907206" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_907206" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=907206" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_907206" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_907308">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-08,&nbsp;<span class="time">02:20 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post907308" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=907308#post907308" class="postcounter">#3</a><a id="postcount907308" name="3"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفاء الدين العراقي غير متواجد حالياً"><strong>صفاء الدين العراقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=13233&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفاء الدين العراقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_907308">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: &amp;quot"><font size="6"><b><font color="#800000">الدرس الثالث</font></b><font color="#800000"><br />
+<br />
+<b>تعريف علم البلاغة </b></font><br />
+</font></span></div><font size="6"><span style="font-family: &amp;quot"><br />
+<b><u>علم البلاغة</u></b> اسم لثلاثة علوم هي: المعاني، والبيان، والبديع.<br />
+<b><u>فأما المعاني</u></b> فهو: قواعد يعرف بها كيفية مطابقة الكلام لمقتضى الحال.<br />
+مثال تلك القواعد: المنكر يلقى إليه الكلام مؤكدا، وخالي الذهن أي الذي ليس في نفسه إنكار أو شك يلقى إليه الكلام خاليا من التوكيد، والذكي يلقى إليه الكلام موجزا، والغبي يلقى إليه الكلام مطنبا.<br />
+ولذلك تختلف صور الكلام باختلاف الأحوال.<br />
+مثال: قال الله تعالى: (وأَنَّا لا ندْري أَشرٌ أُرِيدَ بمن في الأرضِ أمْ أَرادَ بهم ربهم رَشَدا) فاختلفت صورة الكلام لاختلاف الحال، فإن صورة الكلام قبل كلمة &quot;أم&quot; تخالف صورة ما بعدها؛ لأن الصورة الأولى فيها فعل الإرادة مبنيٌّ للمجهول، والصورة الثانية فيها فعل الإرادة مبني للمعلوم، والحال هو الذي دعى إلى ذلك الاختلاف.<br />
+فصورة البناء للمجهول الحال الداعي لها هو عدم نسبة الشر إلى الله تعالى.<br />
+وصورة البناء للمعلوم الحال الداعي لها هو نسبة الخير إليه سبحانه.<br />
+<b><u>وأما علم البيان</u></b> فهو: قواعد يعرف بها إيراد المعنى الواحد بطرق مختلفة في وضوح الدلالة.<br />
+فمثلا لو أراد شخص أن يتحدث عن كرم زيد فتارة يقول: ( زيدٌ كريمٌ ) وهذا نصّ على المعنى المراد.<br />
+وتارة يستعمل طرقا أخرى فيقول مثلا: (زيدٌ مثل حاتم الطائي) فَيُفهم منه نفس المعنى وهو كرم زيد ولكن بأسلوب مختلف هو أقوى في نفس السامع وهو تشبيهه بحاتم الطائي في الكرم. وهذا هو التشبيه.<br />
+وقد يعبر بأسلوب آخر فيقول: (رأيتُ بحرًا يحسن للناس) فيعرف منه كرمه أيضا، وهذا هو المجاز.<br />
+وقد يختار أسلوبا آخر كأن يقول: (زيدٌ النارُ في بيته لا تنطفئ) كناية عن كثرة الطبخ واستقبال الضيوف والزوار، وهو يدل أيضا على كرمه، وهذه هي الكناية.<br />
+ولا شك أن هذه الأساليب تختلف في وضوح الدلالة على كرم زيد فبعضها أوضح من بعض. <br />
+وعلم البيان يدور على هذه المباحث الثلاثة: التشبيه، والمجاز، والكناية.<br />
+<br />
+<b><u>وأما علم البديع</u></b> فهو: قواعد يعرف بها وجوه تحسين الكلام المطابق لمقتضى الحال.<br />
+بمعنى أنه العلم الذي يعرف به الوجوه والمزايا التي تكسب الكلام المطابق لمقتضى الحال جمالا وتزيده حسنا.<br />
+فأصل البلاغة تكون بالمعاني والبيان فلو اشتمل الكلام على ما يقتضيه المعاني والبيان فهو كلام بليغ وإن لم يراع فيه البديع، ولكن مراعاة البديع تزيده حسنا وتزيينا وترفع من شانه، فهذا العلم من مكملات البلاغة.<br />
+ومن أمثلته السجع كقولنا: المرءُ بآدابه لا بزيّه وثيابه.<br />
+<br />
+<div style="text-align: center;">(<font color="#8B4513"> أسئلة </font>)</div><br />
+1- ما هو علم المعاني؟<br />
+2- ما هو علم البيان؟<br />
+3- ما هو علم البديع؟<br />
+</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_907308" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_907308" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=907308" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_907308" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_907480">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-09,&nbsp;<span class="time">07:52 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post907480" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=907480#post907480" class="postcounter">#4</a><a id="postcount907480" name="4"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفاء الدين العراقي غير متواجد حالياً"><strong>صفاء الدين العراقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=13233&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفاء الدين العراقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_907480">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><b>الدرس الرابع</b><br />
+ <br />
+<b>علم المعاني- أحوال الإسناد الخبري</b></div> <br />
+ينحصر البحث في علم المعاني في ثمانية أبواب:&quot;أحوال الإسناد الخبري، وأحوال المسند إليه، وأحوال المسند، وأحوال متعلِّقات الفعل، والقصر، والإنشاء، والفصل والوصل، والإيجاز والإطناب&quot; وبسبب هذه الأشياء التي تعرض على اللفظ يكون الكلام مطابقا لمقتضى الحال.<br />
+ <br />
+<b>الباب الأول: أحوال الإسناد الخبري</b><br />
+ <br />
+<b><u>الكلام إما خبر أو إنشاء</u></b>.<br />
+<b>والخبر</b>: ما يصح أن يقال لقائله إنه صادق فيه أو كاذب. كسافرَ محمدٌ وعليُّ قائمٌ.<br />
+<b>والإنشاء</b>: ما لا يصح أن يقال لقائله إنه صادق فيه أو كاذب. كسافرْ يا محمدُ، وقمْ يا عليُ.<br />
+والمراد بصدق الخبر مطابقته للواقع، وبكذبه عدم مطابقته له.<br />
+ولكل كلام ركنان وهما: المسند والمسند إليه، فالمسند مثل: الفعل والخبر، والمسند إليه مثل الفاعل ونائبه والمبتدا.<br />
+مثل: قامَ زيدٌ، وزيدٌ قائمٌ، وضُرِبَ زيدٌ.<br />
+وأما المفاعيل والحال والتمييز والتوابع والنواسخ وأدوات الشرط ونحوها فتسمى قيودا.<br />
+مثل: ضربَ زيدٌ عمرًا ضربا مبرحا، فـ ضربَ المسند، وزيدٌ المسند إليه، والبقية قيود.<br />
+<b>وأما الإسناد</b> فهو: ضم كلمة لأخرى على وجه الإفادة التامة، مثل زيدٌ قائمٌ، فزيدٌ المسند إليه، وقائمٌ المسندُ ونسبة القيام إلى زيد إسنادٌ، ومثل قامَ زيدٌ فقد ضممنا الفعل إلى الاسم لافادة الحكم بقيام زيد.<br />
+والإسناد إما أن يقبل الصدق والكذب فيكون خبريا، أو لا يقبلهما فيكون إنشائيا.<br />
+ <br />
+ <br />
+ <br />
+<b>معاني الخبر</b><br />
+ <br />
+<b><u>الأصل في الخبر</u></b> أن يلقى لإفادة المخاطَب الحكم الذي تضمنته الجملة، أو لإفادة أن المتكلم عالم به.<br />
+مثال الأول: حضرَ الأميرُ؛ لإفادة المخاطب بحضور الأمير. ويسمى &quot;فائدة الخبر&quot;.<br />
+ومثال الثاني: أنتَ حضرتَ أمسِ؛ لإفادة المخاطَب أنك تعرف ذلك ويسمى &quot;لازم الفائدة&quot;.<br />
+وقد يخرج عن هذا الأصل لإفادة معان أخر تستفاد من السياق كالتحسر والتفاخر.<br />
+مثل: قوله تعالى على لسان أم مريم:&quot;ربِّ إني وضعتها أنثى&quot; فإنه ليس مقصودها بهذا اللفظ الإعلام بالحكم أو لازمه لأن المخاطب وهو المولى سبحانه عالم بكل منهما، بل لإظهار التحسر على خيبة رجائها والتحزن إلى ربها؛ لأنها كانت ترجو أن تلد ذكرًا فأخبرَت أنها وضعت أنثى.<br />
+ومثل: إني أملك من الأموال كذا وكذا. تقصد بذلك التفاخر.<br />
+ <br />
+<b>أقسام الخبر</b><br />
+<b><u>للمخاطَب ثلاث حالات</u></b>:<br />
+1- أن يكون خالي الذهن من الحكم غير عارف به، وفي هذه الحال يلقى إليه الخبر خاليا من أدوات التوكيد، ويسمى هذا القسم من الخبر ابتدائيا. مثل: زيدٌ قائمٌ.<br />
+2- أن يكون مترددا في الحكم طالبا أن يصل إلى اليقين في معرفته، وفي هذه الحال يحسن توكيده له ليتمكن من نفسه، ويسمى هذا القسم من الخبر طلبيا. مثل: إن زيدًا قائمٌ.<br />
+3- أن يكون منكرا له معتقدا خلافه، وفي هذه الحال يجب أن يؤكد الخبر بمؤكد واحد أو أكثر على حسب قوة الإنكار. ويسمى هذا القسم من الخبر إنكاريا. مثل: إنَّ زيدًا لقائمٌ.<br />
+ومن أدوات التوكيد: إنَّ، وأَنَّ، والقسم، ولام الابتداء، ونونا التوكيد، وقد.<br />
+هذا هو الأصل وقد يخرج عنه كأن ينزل غير المنكر منزلة المنكر فيؤكد له الحكم.<br />
+مثل: جاءَ شقيقٌ عارِضًا رُمْحَهُ... إِنَّ بني عمِّكَ فيهم رِماحُ.<br />
+فشقيقٌ هذا جاء منازل بني عمه عارضا رمحه بوضعه على فخذيه راكبا على فرسه معجبا بشجاعته وكأن بني عمه ليس عندهم رماح فلذا أكّد الخبر مع أنه غير منكر ولكن نزل منزلة المنكر لما تصرف هكذا فكأنه منكر لرماحهم.<br />
+( أسئلة )<br />
+ <br />
+١. ما هو الخبر وما هو الإنشاء؟<br />
+٢. ما ركنا الكلام وما هو الإسناد؟<br />
+٣. ما هو الأصل في الخبر؟<br />
+ <br />
+( ت ١ )<br />
+ <br />
+ميّز بين الخبر والإنشاء في الجمل التالية:<br />
+( رَكِبَ زيدٌ الفرسَ - اجْتَهِدْ في درسك  - يا عبدَ اللهِ  - محمدٌ صلى الله عليه وسلم رسولُ اللهِ )<br />
+ <br />
+( ت ٢ )<br />
+ <br />
+ميّز بين فائدة الخبر ولازم الفائدة فيما يلي:<br />
+( تقول في درس لك للأطفال: عثمان بن عفان رضي الله عنه هو الخليفة الثالث ويلقب بذي النورين - تقول لتلميذ لك ينفق على المساكين ويخفي ذلك عليك: أنت تنفق على المساكين - تقول لمن يخفي عنك أنه فاز بالجائزة: أنت الفائز بالجائزة  - تقول لمن يبحث عن زيد: هو في المسجد ).
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_907480" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_907480" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=907480" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_907480" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_907546">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-10,&nbsp;<span class="time">03:08 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post907546" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=907546#post907546" class="postcounter">#5</a><a id="postcount907546" name="5"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفاء الدين العراقي غير متواجد حالياً"><strong>صفاء الدين العراقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=13233&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفاء الدين العراقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_907546">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: &amp;quot"><font size="6"><font color="#800000"><b>الدرس الخامس</b><br />
+<br />
+<b>الحقيقة والمجاز العقليان</b></font><br />
+</font></span></div><font size="6"><span style="font-family: &amp;quot"><br />
+<b><u>اعلم </u></b>أن الفعل تارة يسند لفاعله الحقيقي وتارة يسند لغيره، فإذا قلتَ: أنبتَ اللهُ البقلَ، فقد أسندت الإنبات إلى فاعله، وإذا قلتَ: أنبتَ الربيعُ البقلَ فقد أسندت الإنبات إلى غير الذي هو له، والأصل أنبتَ اللهُ البقلَ في وقتِ الربيع فالأول حقيقة عقلية، والثاني مجاز عقلي.<br />
+<b>فالحقيقة العقلية</b> هي: إسناد الفعل أو ما في معناه إلى ما هو له عند المتكلم في الظاهر.<br />
+فقولنا: &quot;أو ما في معناه&quot; أي أو ما في معنى الفعل من كل اسم يعمل عمل الفعل كاسم الفاعل والمفعول مثل: قولنا: الله منبتٌ البقلَ. فالفعل المبني للمعلوم &quot;أنبتَ&quot; وما في معناه وهو اسم الفاعل &quot;منبتٌ&quot; أسند إلى فاعله.<br />
+ومثل: ضُرِبَ زيدٌ، وزيد مضروب. فالفعل المبني للمجهول &quot;ضُرِبَ&quot; وما في معناه وهو اسم المفعول &quot;مضروب&quot; أسند إلى مفعوله فيكون حقيقة عقلية.<br />
+وقولنا: &quot;عند المتكلم&quot; أي أن الحكم بكون الإسناد إلى ما هو له أو غير ما هو له يرجع فيه إلى اعتقاد المتكلم وليس إلى الواقع ولهذا لو قال ملحدٌ: أنبتَ الربيعُ البقلَ. فهو حقيقة عقلية عنده أي حسب ما يراه هو، ولو قالها المؤمن فهو مجاز عقلي بقرينة الاعتقاد.<br />
+وقولنا: &quot;في الظاهر&quot; أي في ظاهر حال المتكلم أي ما يفهم من ظاهر حاله فإنا لا ندري بخفايا قلبه وحقيقة معتقده.<br />
+<b>وأما المجاز العقلي</b> فهو: إسناد الفعل أو ما في معناه إلى غير ما هو له عند المتكلم في الظاهر لعلاقة.<br />
+مثل قول المؤمن: أنبتَ الربيعُ البقلَ، فإنه أسند الإنبات إلى غير فاعله عند المتكلم لأنه مؤمن بالله والذي صحح هذا الإسناد هو العلاقة الزمنية فلكون الإنبات يحصل في الربيع نسب له.<br />
+ومثل: بنى الأميرُ المدينةَ، فهذا مجاز عقلي لأن الأمير لا يبني بنفسه ولكن لكون أمره بذلك هو السبب في البناء نسب إليه.<br />
+<br />
+( أسئلة )<br />
+<br />
+1. ما هي الحقيقة العقلية وما هو المجاز العقلي؟<br />
+2. ما معنى قولنا في تعريف الحقيقة العقلية ( عند المتكلم في الظاهر )؟<br />
+3. مثل بمثال من عندك للحقيقة العقلية وآخر للمجاز العقلي.<br />
+<br />
+( ت )<br />
+<br />
+ميّز الحقيقة العقلية من المجاز العقلي فيما يلي:<br />
+( قرأ محمدٌ الكتابَ - نهارُ العابدِ صائمٌ - بَنَى العمّالُ المدينةَ - جرى النهرُ ).<br />
+<br />
+</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_907546" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_907546" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=907546" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_907546" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_907549">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-10,&nbsp;<span class="time">03:54 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post907549" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=907549#post907549" class="postcounter">#6</a><a id="postcount907549" name="6"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username online popupctrl" href="member.php?u=102918&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="أبو البراء محمد علاوة متواجد حالياً"><strong>أبو البراء محمد علاوة</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102918&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=102918&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-online.png" alt="أبو البراء محمد علاوة متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						مشرف
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>16,358</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_907549">
+				<blockquote class="postcontent restore">
+					<span style="font-family: traditional arabic"><font size="5"><font color="#0000ff">بارك الله فيك</font></font></span>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none">وأمتثل قول ربي: {فَسَتَذْكُرُون ما أَقُولُ لَكُمْ ۚ وَأُفَوِّضُ أَمْرِي إِلَى اللَّهِ ۚ إِنَّ اللَّهَ بَصِيرٌ بِالْعِبَادِ}</div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_907549" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_907549" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=907549" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_907549" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_907642">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-11,&nbsp;<span class="time">03:11 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post907642" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=907642#post907642" class="postcounter">#7</a><a id="postcount907642" name="7"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفاء الدين العراقي غير متواجد حالياً"><strong>صفاء الدين العراقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=13233&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفاء الدين العراقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_907642">
+				<blockquote class="postcontent restore">
+					<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				<div class="bbcode_postedby">
+					<img src="images/metro/purple/misc/quote_icon.png" alt="اقتباس" /> المشاركة الأصلية كتبت بواسطة أبو البراء محمد علاوة
+					<a href="showthread.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=907549#post907549" rel="nofollow"><img class="inlineimg" src="images/metro/purple/buttons/viewpost-left.png" alt="مشاهدة المشاركة" /></a>
+				</div>
+				<div class="message"><span style="font-family: traditional arabic"><font size="5"><font color="#0000ff">بارك الله فيك</font></font></span></div>
+			
+		</div>
+	</div>
+</div>وفيك الله بارك.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_907642" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_907642" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=907642" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_907642" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_907643">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-11,&nbsp;<span class="time">03:11 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post907643" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=907643#post907643" class="postcounter">#8</a><a id="postcount907643" name="8"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفاء الدين العراقي غير متواجد حالياً"><strong>صفاء الدين العراقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=13233&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفاء الدين العراقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_907643">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: &amp;quot"><font size="6"><font color="#800000"><b>الدرس السادس</b><br />
+<br />
+<b>الباب الثاني- أحوال المسند إليه</b></font><br />
+</font><br />
+<font size="6"><br />
+المسند إليه تعرض له أحوال يجب مراعتها بحسب ما يقتضيه المقام وهي: ( الذكر والحذف، والتعريف والتنكير، والتقديم ) بأن يقال: لماذا تم حذف المسند إليه في الكلام، ولماذا عرف هنا ولماذا نكّر ولماذا قدّم.<br />
+<b><u>حذف المسند إليه</u></b>: الأصل أن يذكر المسند إليه ولكن قد يحذف لغرض وفائدة ومن تلك الأغراض:<br />
+أولا: <b>الصَّون</b> أي أن تصونه عن الذكر تعظيما له.<br />
+مثل: نجومُ سماءٍ كلما انقضَّ كوكبٌ... بدا كوكبٌ تأوي إليه كواكِبهُ<br />
+أي هم نجومُ سماء فحذف المبتدأ لتعظيمه.<br />
+ثانيا: <b>الإنكار</b> أي إمكانية الإنكار عند وجود الحاجة كأن يذكر شخص آخر بسوء قائلا &quot;غشّاش&quot; فإذا قيل أتعني فلانا أمكنه أن ينكر ويتملص والأصل: فلان غشاش.<br />
+ثالثا: <b>الاحتراز</b> عن العبث في الكلام، نحو قول من رأى الهلالَ: &quot; الهلالُ &quot; أي هذا الهلال، فحذف المسند إليه هذا لأنه واضح يمكن الاستغناء عن ذكره فلا فائدة من التطويل.<br />
+رابعا: <b>الاختبار</b> للمخاطب هل يفطن للمقصود، كأن يزورك شخصان وأحدهما له سبق صحبة لك ثم يغادران فتقول لمن عندك: &quot;وفيٌّ&quot; أي هو وفيٌّ تعني الصاحب فحذفته لتنظر هل انتبه مخاطبك لمن تقصد.<br />
+<b><u>ذكر المسند إليه</u></b>: اعلم أن المسند إليه واجب الذكر إذا لم يقم عليه قرينة وهذا لا بحث فيه هنا في علم المعاني، فإذا دلت عليه قرينة جازَ ذكره وحذفه، وهنا يبدأ بحث المعاني فيبحثون متى يترجح الحذف وقد ذكرنا بعض المرجحات، ومتى يترجح الذكر فمن ذلك:<br />
+أولا وثانيا: <b>التعظيم والإهانة</b> إذا كان اللفظ مما يفيد معنى التعظيم أو الإهانة، كأن يسألك شخص: هل رجع خالد؟ فتقول: رجع الشجاع المقدام، أو الجبان الرعديد، فتذكر المسند إليه في الأول تعظيمًا له، وتذكره في الثاني إهانة له وتحقيرًا وكان يكفيك أن تقول: رجعَ لقيام القرينة عليه بواسطة السؤال.<br />
+ثالثا: <b>بسط</b> <b>الكلام</b> <b>وإطالته</b>، وذلك في مقام يكون إصغاء السامع فيه مطلوبًا للمتكلم لخطر مقامه، ولقربه من قلب المتكلم، ولهذا يطال الحديث مع الأحبة.<br />
+مثاله قوله تعالى حكاية عن موسى عليه السلام: ( هِيَ عَصَايَ أَتَوَكَّأُ عَلَيْهَا وَأَهُشُّ بِهَا عَلَى غَنَمِي ) قال ذلك حين سأله تعالى: (وَمَا تِلْكَ بِيَمِينِكَ يَا مُوسَى) وكان يكفيه في الجواب أن يقول: &quot;عصا&quot;؛ لأن &quot;ما&quot; للسؤال على الجنس، لكنه ذكر المسند إليه &quot;هي&quot; حبا في إطالة الكلام في حضرة الذات العلية، ولهذا لم يكتف موسى بذكر المسند إليه، بل أعقب ذلك بذكر أوصاف لم يسأل عنها، فقال: (أَتَوَكَّأُ عَلَيْهَا...) إلى آخر الآية. <br />
+رابعا: <b>التنبيه</b> أي ذكر المسند إليه للتنبيه على جهل وغباوة السامع لكونه لا يفهم إلا بالتصريح.<br />
+مثل: قولك لمن يعبد صنمًا: الصنم لا ينفع ولا يضر. فيكفي أن تقول: لا ينفع ولا يضر. لكن للتعريض بغباوته تذكر المسند إليه&quot;الصنم&quot;.<br />
+خامسا: <b>قلة</b> <b>الثقة</b> <b>بالقرينة</b> <b>لضعفها</b>.<br />
+مثال ذلك أن تقول: &quot;أبو الطيب نعم الشاعر&quot; فتذكر المسند إليه إذا سبق لك ذكر أبي الطيب في حديثك وطال عهد السامع به، أو ذكر معه كلام في شأنٍ شخص غيره فتخشى أن المخاطب لا يفهم المقصود.<br />
+<br />
+( أسئلة )<br />
+<br />
+1- ما هي بعض أغراض حذف المسند إليه؟<br />
+2- ما هي بعض أغراض ذكر المسند إليه؟<br />
+3- مثل بمثال من عندك لحذف المسند إليه وآخر لذكره.<br />
+<br />
+( ت 1 )<br />
+<br />
+بيّن سبب حذف المسند إليه فيما يلي:<br />
+( كاتبٌ، في جواب من سألك: ما مهنة خالد؟ - قال تعالى: ... - خيرُ جَليسٍ - شِرِّيرٌ، تقوله لمن ذكر عندك الوزير).<br />
+<br />
+( ت 2)<br />
+<br />
+بيّن سبب ذكر المسند إليه فيما يلي:<br />
+( أنا غرستها، في جواب من قال: من غرس هذه الشجرة، وهو يراك تنفض يديك من تراب غرسها - هو كتابٌ اشتريته، في جواب الأستاذ الذي سأل: ما الذي في يدك؟ - اللهُ أمرَ بالإحسان إلى الوالدين، في جواب من قال لك: أأمر اللهُ بالإحسان إلى الوالدين؟ - زيدٌ نِعْمَ الصديقُ، تقوله إذا سبق لك ذكر زيد وطال عهد السامع به ).</font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_907643" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_907643" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=907643" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_907643" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_907813">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-12,&nbsp;<span class="time">07:06 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post907813" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=907813#post907813" class="postcounter">#9</a><a id="postcount907813" name="9"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفاء الدين العراقي غير متواجد حالياً"><strong>صفاء الدين العراقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=13233&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفاء الدين العراقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_907813">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: &amp;amp"><font size="6"><font color="#800000"><b>الدرس السابع</b><br />
+<br />
+<b>تعريف المسند إليه بالضمير وا</b><b>لعَلَم</b><b> والاسم الموصول</b></font><br />
+</font></span></div><font size="6"><span style="font-family: &amp;amp"><br />
+المسند إليه قد يكون معرفة وقد يكون نكرة، والمعرفة ستة: الضمير، والعلم، والاسم الموصول، واسم الإشارة، والمعرف بأل، والمضاف إلى معرفة.<br />
+أولا: تعريفه بالضمير، وهو قد يكون للمتكلم كـ ( أَنَا قَائِمٌ )، وللمخاطَب كـ ( أَنْتَ قَائِمٌ )، وللغائب كـ ( هُوَ قَائِمٌ)<br />
+والأصل في ضمير المخاطب أن يوجه لشخص مشاهد معين كقولك: ( أَنْتَ شُجَاعٌ )، ولكن قد يُخرَج عن هذا الأصل فيُستعمَل لقصد تعميم الخطاب أي توجيهه لكل من يتأتى منه خطابه.<br />
+كقول المتنبي: إِذَا أَنْتَ أَكْرَمْتَ الكَرِيمَ مَلَكْتَهُ... وَإِنْ أَنْتَ أَكْرَمْتَ اللَّئِيمَ تَمَرَّدَا<br />
+فليس القصد بـ ( أَنْتَ ) شخصا معينا، ومنه ما يستعمله المصنفون في كتبهم من نحو: اعلمْ، فافهمْ، تأمّلْ.<br />
+ثانيا: تعريفه بالعَلَم، ويعرَّف المسند إليه باسم العلم لأغراض منها:<br />
+1- لكي يحضر في ذهن المخاطب بعينه لأن اسم العلم كأنه عين الشخص المسمى، مثل قوله تعالى: ( وَمَا مُحَمَّدٌ إِلَّا رَسُولٌ ).<br />
+2- 3<b>- </b>للتعظيم أو الاحتقار كما في الألقاب والكنى الصالحة لإفادة ذلك المعنى، مثل: ( قَدِمَ حُسَامُ الدِّينِ )، و( رَحَلَ أَبُو جَهْلٍ ).<br />
+ثالثا: تعريفه بالاسم الموصول، ويكون لأمور منها:<br />
+1- أن يجهل المتكلم تعريفه بغيرها أو يكون السامع لا يعرفه إلا بالصلة مثل: ( الَّذِي كَانَ مَعَنَا بِالأَمْسِ هَا هُوَ قَادِمٌ ).<br />
+2- التعظيم كقوله تعالى: ( إِنَّ الَّذِي فَرَضَ عَلَيْكَ القُرْآنَ لَرَادُّكَ إِلَى مَعَادٍ ).<br />
+3- الإيماء أي الإشارة إلى وجه ترتب الحكم على المسند إليه كقوله تعالى: ( إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ كَانَتْ لَهُمْ جَنَّاتُ الفِرْدَوْسِ نُزُلًا )، فجاء بالمسند إليه اسما موصولا لبيان أن علة الحكم -وهو دخول جنات الفردوس- ما تضمنته الصلة من الإيمان والعمل الصالح، فالجزاء من جنس العمل.<br />
+4- التفخيم والتهويل كقوله تعالى: ( فَغَشِيَهُمْ مِنَ اليَمِّ مَا غَشِيَهُمْ )، فاستعمل ما الموصولية لتهويل الأمر.<br />
+<br />
+<div style="text-align: center;">(<font color="#800000"> أسئلة</font> )</div><br />
+ما هي بعض أغراض تعريف المسند إليه بالضمير والعلم والاسم الموصول؟<br />
+<br />
+<div style="text-align: center;">( <font color="#800000">ت </font>)</div><br />
+بين نوع التعريف وسببه فيما يلي:<br />
+( جاء <u>أبو النور</u> - إِنَّ <u>الَّذِينَ</u> يَسْتَكْبِرُونَ عَنْ عِبَادَتِي سَيَدْخُلُونَ جَهَنَّمَ دَاخِرِينَ - <u>أنا</u> الذي نظر الأعمى إلى أدبي...وأسمعتْ كلماتي مَن به صمم ).</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_907813" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_907813" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=907813" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_907813" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_907886">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-13,&nbsp;<span class="time">02:59 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post907886" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=907886#post907886" class="postcounter">#10</a><a id="postcount907886" name="10"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفاء الدين العراقي غير متواجد حالياً"><strong>صفاء الدين العراقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=13233&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفاء الدين العراقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_907886">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: &amp;quot"><font size="6"><font color="#800000"><b>الدرس الثامن</b><br />
+<br />
+<b>تعريف المسند إليه بالإشارة وأل والإضافة</b></font><br />
+</font></span></div><font size="6"><span style="font-family: &amp;quot"><br />
+رابعا: تعريفه باسم الإشارة، ويكون لأمور منها: <br />
+1- بيان حال المشار إليه من القرب أو التوسط أو البعد، كقولك في الإشارة للقريب: ( هَذَا زَيْدٌ )، وللمتوسط: (ذَاكَ زَيْدٌ )، وللبعيد: ( ذَلِكَ زَيْدٌ ). <br />
+2- الإشارة إلى غباوة المخاطب وأنه لا تتميز الأشياء لديه إلا بالإشارة الحسية كقول الفرزدق يهجو جريرًا، ويفتخر عليه بآبائه:<br />
+أُولَئِكَ آبَائِي فَجِئْنِي بِمِثْلِهِمْ...إ�  �ذَا جَمَعَتَنَا يَا جَرِيرُ المُجَامِعُ<br />
+حيث أورد المسند إليه اسم إشارة قصدًا إلى أن يصم جريرًا بوصمة الغباوة، وأنه لا يدرك إلا المحس بحاسة البصر، ولو أنه عدد آباءه بأسمائهم، فقال: فلان وفلان آبائي، لم يكن فيه ما أراد الشاعر من التعريض بغباوته عند من له ذوق سليم.<br />
+خامسا: تعريفه بأَلْ، ويكون لأمور حسب مدلول أل فإنها تكون للعهد وللحقيقة.<br />
+1- فأل العهدية هي التي يشار بها إلى معهود، إما لتقدم ذكره كقوله تعالى: ( وَلَقَدْ أَرْسَلْنَا إِلَى فِرْعَوْنَ رَسُولًا فَعَصَى فِرْعَوْنُ الرَّسُولَ )، وإما لكونه معهودا عند السامع مثل: ( جَاءَ الشَّيْخُ ) أي المعهود الذي يتعارفونه بينهم، وإما لكونه حاضرا مثل: أكرمِ الرجلَ أي الحاضر.<br />
+2- وأل التي للحقيقة وهي التي يشار بها إلى الحقيقة، وهي ثلاثة أقسام:<br />
+أ- ما يقصد بها الإشارة إلى نفس الحقيقة بغض النظر عن الأفراد.<br />
+مثل: ( الرَّجُلُ خَيْرٌ مِنَ المَرْأَةِ ) أي هذا النوع من الإنسان خير من هذا النوع لما اختصه الله به من الفضائل وإلا فهنالك نساء كثر خير من كثير من الرجال فليس الحكم متوجها إلى الأفراد.<br />
+ب- ما يقصد بها الإشارة إلى جميع أفراد الحقيقة كقوله تعالى: ( إِنَّ الإِنْسَانَ لَفِي خُسْرٍ إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ ) أي كل إنسان في خسر إلا من استثنى.<br />
+ج- ما يقصد بها الإشارة إلى فرد مبهم من أفراد الحقيقة إذا قامت القرينة على ذلك كقوله تعالى: ( وَأَخَافُ أَنْ يَأْكُلَهُ الذِّئْبُ وَأَنْتُمْ عَنْهُ غَافِلُونَ ) عرف المسند إليه بأل للإشارة بها إلى فرد غير معين من أفراد حقيقة الذئب، فليس المراد الحقيقة نفسها بقرينة قوله: ( أَنْ يَأْكُلَهُ الذِّئْبُ ) إذ الحقيقة من حيث هي أمر لا وجود لها في الخارج حتى يتحقق منها أكل أو شرب، وليس المراد فردًا معينًا من أفراد الحقيقة، إذ لا عهد في الخارج بذئب معين، فتعين أن يكون المراد فردًا مبهمًا من أفرادها.<br />
+ومثل أن تقول لشخص: ( اذْهَبْ إِلَى السُّوقِ وَاشْتَرِ لَنَا كَذَا )، فالمراد من السوق فرد ما من أفراد السوق.<br />
+سادسا: تعريفه بالإضافة، ويكون لأمور منها:<br />
+1- الاختصار إذ أنها أخصر طريق إلى إحضار مدلول المسند إليه في ذهن السامع كما تقول: (جَاءَ غُلَامِي) فالتعبير بالإضافة أخصر من قولك: (الغُلَامُ الَّذِي لِي) أو (غُلَامٌ لِي).<br />
+2- التعظيم كقوله تعالى: (إِنَّ عِبَادِي لَيْسَ لَكَ عَلَيْهِمْ سُلْطَانٌ) فإضافتهم إلى الله تشريف وتعظيم لشأنهم. <br />
+3- الاحتقار مثل قوله عليه الصلاة والسلام في حديث البخاري: (تَعِسَ عَبْدُ الدِّينَارِ).<br />
+<div style="text-align: center;"><br />
+(<font color="#800000"> أسئلة</font> )</div><br />
+1-ما هي أغراض تعريف المسند إليه باسم الإشارة؟<br />
+2- ما هي أغراض تعريف المسند إليه بأل ؟<br />
+3- ما هي ما هي أغراض تعريف المسند إليه بالإضافة؟<br />
+<br />
+<div style="text-align: center;">( <font color="#800000">ت</font> )</div><br />
+بين نوع التعريف وسببه فيما يلي:<br />
+( إِنَّ <u>المؤمنين </u>في الجنة - <u>رسولُ</u> الخليفة جاء - <u>هذا</u> يوسفُ ).</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_907886" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_907886" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=907886" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_907886" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_908191">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-15,&nbsp;<span class="time">10:02 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post908191" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=908191#post908191" class="postcounter">#11</a><a id="postcount908191" name="11"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفاء الدين العراقي غير متواجد حالياً"><strong>صفاء الدين العراقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=13233&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفاء الدين العراقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_908191">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: &amp;quot"><font size="6"><font color="#800000"><b>الدرس التاسع</b><br />
+ <br />
+<b>تنكير المسند إليه وتقديمه</b></font><br />
+</font></span></div><font size="6"><span style="font-family: &amp;quot"> <br />
+المسند إليه قد ينكَّر لأغراض منها:<br />
+أولا: التحقير بمعنى انحطاط شانه إلى درجة لا يعتد بها ولا يلتفت إليها، كقولك: ( مَا زَيْدٌ إِلَّا طَالِبٌ ) في مقام عدم الاكتراث برأيه.<br />
+ثانيا: التعظيم ومنه قوله تعالى: ( الر كِتَابٌ أَنْزَلْنَاهُ إِلَيْكَ ) أي كتاب عظيم.<br />
+ثالثا: الإفراد مثل قوله تعالى: ( وَجَاءَ رَجُلٌ مِنْ أَقْصَى المَدِينَةِ يَسْعَى ) أي جاء رجل واحد.<br />
+رابعا: التكثير بمعنى أنه بلغ من الكثرة بحيث لا يمكن الإحاطة بتعداده، نحو: ( إِنَّ لَهُ لَإِبِلًا  ) و( إِنَّ لَهُ لَغَنَمًا ).<br />
+خامسا: التقليل ومثاله قوله تعالى: ( لَوْ كَانَ لَنَا مِنَ الْأَمْرِ شَيْءٌ ) فقد نكر المسند إليه، وهو ( شَيْءٌ ) لقصد إفادة أنه شيء قليل.<br />
+تنبيه: الفرق بين التعظيم والتكثير هو أن التعظيم يراعى فيه الحال والشأن كعلو المرتبة وبعد المنزلة، أما التكثير فالمراعى فيه الكميات والمقادير كالمعدودات والموزونات، وكذلك يقال في الفرق بين التحقير والتقليل.<br />
+والمسند إليه قد يقدّم لأغراض منها:<br />
+أولا: كون التقديم هو الأصل فيه مثل قوله تعالى: ( مُحَمَّدٌ رَسُولُ اللهِ ) قدّم المبتدأ ( مُحَمَّدٌ ) لأن الأصل فيه أن يتقدم على الخبر، ولا يعدل عن الأصل إلا لنكتة وفائدة.<br />
+ثانيا: التمكين أي تمكين الخبر في ذهن السامع بأن يكون المسند إليه فيه ما يشوِّق لمعرفة الخبر فيقدم فتنتظر النفوس الخبر وتتشوق إليه فيتمكن في النفس مثل قوله صلى الله عليه وسلم في صحيح البخاري: ( ثَلَاثَةٌ مَنْ كُنَّ فِيهِ وَجَدَ حَلَاوَةَ الإِيمَانِ )، فقدّم ( ثَلَاثَةٌ ) لتشويق السامع وتمكين الخبر في نفسه.  <br />
+ثالثا: التعجيل للمسرة أو المساءة، مثل: ( الأَمِيرُ جَاءَنَا )، فقدّم المسند إليه ( الأَمِيرُ ) لتعجيل ما يسر المخاطَب، ومثل قوله تعالى: ( النَّارُ وَعَدَهَا اللهُ الَّذِينَ كَفَرُوا ) فقدّم المسند إليه ( النَّارُ ) لتخويف السامع وتعجيل السوء الذي ينتظره إن كان من الذين كفروا.<br />
+رابعا: الاختصاص والحصر بشرط أن يسبق المسند إليه نفي ويكون الخبر جملة فعلية، مثل: ( مَا أَنَا قُمْتُ ) أي بل قام غيري، والأصل: مَا قُمْتُ، فيفيد تقديمه اختصاصه بعدم القيام وإثباته لغيره.<br />
+ وقال بعض العلماء لا يفيد التقديم هنا الحصر.<br />
+الخروج عن الظاهر: ما تقدم من بيان أحوال المسند إليه من ذكر وحذف وتعريف وتنكير جار على مقتضى الظاهر، وقد يخرج المسند إليه عن هذا الظاهر لنكت منها:<br />
+1- الأَوْلَوِيَّة بأن يجاب المخاطَب بغير ما ينتظره لكون هذا هو الأولى بسؤاله.<br />
+مثل قوله تعالى: ( يَسْأَلُونَكَ مَاذَا يُنْفِقُونَ ) فالسؤال عن المُنْفَقِ فظاهر الحال يقتضي الجواب عن ذلك، لكن أجاب الله تعالى عن جهة الإنفاق فقال: ( قُلْ مَا أَنْفَقْتُمْ مِنْ خَيْرٍ فَلِلْوَالِدَيْ  نِ وَالأَقْرَبِينَ وَاليَتَامَى وَالمَسَاكِينِ وَابْنِ السَّبِيلِ ) وذلك لنكتة بلاغية وهي أنه ليس المهم ماذا تنفق -أنفقْ ولو شق تمرة- بل المهم أين تنفق هذه النفقة.<br />
+ويسمى هذا الأسلوب بالأسلوب الحكيم.<br />
+2- الالتفات وهو: الانتقال من كلٍّ من التكلم أو الخطاب أو الغيبة إلى صاحبه.<br />
+مثل أن ينتقل من الغيبة إلى الخطاب كقوله تعالى: ( وَقَالُوا اتَّخَذَ الرَّحْمَانُ وَلَدًا لَقَدْ جِئْتُمْ شَيْئًا إِدًّا ) أي منكرا عظيما، والأصل: لقد جَاؤُوا، فانتقل من ضمير الغيبة إلى الخطاب. <br />
+وللالتفات غرضان:<br />
+الأول: عامّ في كل التفات، وهو تنشيط السامع وجذب انتباهه.<br />
+والثاني: خاصّ تختص به بعض المواضع يلمح من سياق الكلام، ومنها الآية المتقدمة، والغرض في الالتفات فيها هو التوبيخ لأن توبيخ الحاضر أبلغ في الإهانة له.<br />
+  <div style="text-align: center;">( <font color="#800000">أسئلة </font>)</div> <br />
+١- ما هي بعض أغراض تنكير المسند إليه؟<br />
+٢- ما هي بعض أغراض تقديم المسند إليه؟<br />
+٣- متى يخرج المسند إليه عن مقتضى الظاهر؟<br />
+ <div style="text-align: center;">( <font color="#800000">ت ١</font> )</div> <br />
+بيّن سبب تنكير المسند إليه فيما يلي:<br />
+( وَ<u>رِضْوَانٌ</u> مِنَ اللهِ أَكْبَرُ - <u>امرأةٌ</u> أَوْلَى مِن أربعٍ - وَلَكُمْ فِي القِصَاصِ <u>حَيَاةٌ</u> - واللهُ يَعِدُكُمْ مَغْفِرَةً مِنْهُ وَفَضْلًا - <u>دنيا</u> لا تساوي جناحَ بعوضةٍ ).<br />
+ <div style="text-align: center;">( <font color="#800000">ت ٢</font> )</div> <br />
+بيّن سبب تقديم المسند إليه فيما يلي:<br />
+( <u>العفوُ عنك</u> صدر به الأمرُ - ما <u>خالدٌ</u> أنشأ القصيدةَ - الَّذِينَ <u>هُمْ</u> يُرَاؤُونَ وَيَمْنَعُونَ المَاعُونَ - <u>زيدٌ</u> في الدار )<br />
+</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_908191" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_908191" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=908191" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_908191" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_908255">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-16,&nbsp;<span class="time">04:04 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post908255" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=908255#post908255" class="postcounter">#12</a><a id="postcount908255" name="12"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفاء الدين العراقي غير متواجد حالياً"><strong>صفاء الدين العراقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=13233&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفاء الدين العراقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_908255">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><font color="#000000"><span style="font-family: Tahoma"><font size="6"><font color="#800000">الدرس العاشر<br />
+<br />
+أحوال المسند إليه باعتبار ما يتعلق به</font><br />
+</font></span></font></div><font size="6"><font color="#000000"><span style="font-family: Tahoma"><br />
+بعد أن بينا أحوال المسند إليه في ذاته من الذكر والحذف والتعريف والتنكير والتقديم نبين أحواله باعتبار ما يتعلق به فمن ذلك التوابع وهي: النعت والتوكيد وعطف البيان والبدل والتوكيد.<br />
+أولا: النعت: ومن أغراض الإتيان بالمسند إليه منعوتا:<br />
+1- التبيين بأن يكون المسند إليه غامضا يحتاج إلى كشف وبيان مثل: ( الهَلُوعُ الَّذِي إِذَا مَسَّهُ الشَّرُّ جَزَعَ وَإِذَا مَسَّهُ الخَيْرُ مَنَعَ مَذْمُومٌ فِي الشَّرْعِ ). فالمسند إليه هو ( الهَلُوعُ ) وقد وصف بقولنا ( الَّذِي إِذَا...مَنَعَ ) لكشف حقيقته. <br />
+2- المدح مثل: ( جَاءَ عَلِيٌّ الشُّجَاعُ ).<br />
+3- الذم مثل: ( مَاتَ المَلِكُ الظَّالِمُ ).<br />
+4- التخصيص مثل: ( جَاءَنِي رَجُلٌ عَالِمٌ )، فرَجُل فيه عموم فبالوصف تخصَّص وقلَّ الشيوع.<br />
+5- التعيين أي التنصيص على ما يفهم مثل: جاءني رجلٌ واحدٌ، فواحد معلوم مما قبله ولكنه ذكر للتنصيص عليه.<br />
+ثانيا: التوكيد ومن أغراض الإتيان بالمسند إليه مؤكدا:<br />
+1- دفع توهم عدم الشمول نحو قولك: ( نَجَحَ الطُّلَّابُ كُلُّهُمْ ) لمن خفتَ أن يُظَنَّ أنك قصدت الأغلب.<br />
+2- دفع توهم السهو مثل: ( جَاءَ زَيْدٌ زَيْدٌ ) لدفع توهم من ظن أنك سهوت بذكر زيد وأردت عمرًا.<br />
+3- دفع توهم المجاز مثل جاء الملك نفسه لدفع توهم المجاز وأنه جاء رسول الملك.<br />
+ثالثا: عطف البيان ومن أغراض الإتيان بعطف البيان للمسند إليه:<br />
+الإيضاح كقولك: ( أَقْسَمَ باللهِ أَبُو حَفْصٍ عُمَرُ )، فلفظ ( عُمَرُ ) جيء به بعد لفظ ( أَبُو حَفْصٍ ) ليوضِّح من هو المقصود به فإن كنية أبي حفص تطلق على الكثير من الناس. ومثله: ( قَدِمَ صَدِيقُكَ خَالِدٌ ).<br />
+رابعا: البدل ومن أغراض الإتيان بالبدل من المسند إليه:<br />
+التقرير أي تثبيت الحكم في نفس السامع وتوكيده مثل: ( جَاءَ عَمُّكَ زَيْدٌ ).<br />
+خامسا: عطف النسق ومن أغراض الإتيان بالمسند إليه متبوعا بعطف النسق:<br />
+1- تفصيل المسند إليه مع الاختصار، نحو قولك: ( جَاءَ زَيْدٌ وَعَمْرٌو )، فوصفُ المجيء لا يختص بزيد فجيء بالعطف لتفصيل من أسند إليه المجيء وهو أيضا أخصر من: ( جَاءَ زَيْدٌ جَاءَ عَمْرٌو ).<br />
+2- رد السامع إلى الصواب، مثل: ( مَا جَاءَ زَيْدٌ بَلْ عَمْرٌو ) ردًّا على من اعتقد أن الجائي زيد.<br />
+فهذا ما يتعلق بالتوابع، ومما يتعلق بالمسند إليه أيضا ضمير الفصل ( هُوَ )، ومن أغراض تعقيب المسند إليه بضمير الفصل<a href="http://feqhweb.com/vb/#_ftn1" target="_blank" rel="nofollow">[1]</a> التخصيص والحصر، مثل: ( زَيْدٌ هُوَ القَائِمُ ) أي لا غيرُه، ومنه قوله تعالى: ( إِنَّ رَبَّكَ هُوَ أَعْلَمُ بِمَنْ ضَلَّ عَنْ سَبِيلِهِ ) أي لا غيرُه.<br />
+<div style="text-align: center;">(<font color="#800000"> أسئلة</font> )</div><br />
+١. ما هي التوابع؟<br />
+٢. ما هي أغراض الإتيان بالتوابع؟<br />
+٣. مثل بمثال من عندك لكل من التوابع في جملة مفيدة.<br />
+<div style="text-align: center;">( <font color="#800000">ت ١</font> )</div><br />
+بيّن نوع التابع واذكر الغرض منه:<br />
+( زارني رَجلٌ <u>مجتهِدٌ</u> - فَسَجَدَ المَلَائِكَةُ <u>كُلُّهُمْ</u> أَجْمَعُونَ - أخذ الجائزةَ التلميذُ <u>محمدٌ</u> - أُولَئِكَ لَهُمْ رِزْقٌ مَعْلُومٌ <u>فَوَاكِهُ</u> وَهُمْ مُكْرَمُونَ - وَجَاءَ رَبُّكَ <u>وَالمَلَكُ</u> صَفًّا صَفًّا ).<br />
+<div style="text-align: center;">( <font color="#800000">ت ٢</font> )</div><br />
+عيّن ضمير الفصل فيما يلي:<br />
+( أَلَمْ يَعْلَمُوا أَنَّ اللهَ هُوَ يَقبَلُ التَّوْبَةَ عَنْ عِبَادِهِ - إِنَّ اللهَ هُوَ رَبِّي وَرَبُّكُمْ فَاعْبُدُوهُ - إِنَّ رَبَّكَ هُوَ أَعْلَمُ بِمَنْ ضَلَّ عَنْ سَبِيلِهِ - محمدٌ هو المهتدي )<br />
+</span></font></font><font size="6"><font color="#000000"><span style="font-family: Tahoma"><br />
+</span></font></font><hr /><font size="6"><font color="#000000"><span style="font-family: Tahoma"><a href="http://feqhweb.com/vb/#_ftnref1" target="_blank" rel="nofollow">[1]</a> هو يسمى ضميرا لكونه على صورة ضمير الغائب ( هو ) من قولنا: ( هُوَ قَائِمٌ ) ولكنه في حقيقته حرف جيء به للفصل بين الصفة والخبر، فإذا قلتَ: ( زَيْدٌ القَائِمُ ) فيحتمل أن القائم صفة لزيد والخبر لم يذكر بعد، ويحتمل أنه خبر وأنك تريد إسناد القيام إلى زيد فللفصل بين الأمرين نقول: ( زَيْدٌ هُوَ القَائِمُ ) فلا يحتمل الوصفية.</span></font></font><font color="#000000"><span style="font-family: Tahoma"><br />
+<br />
+<br />
+</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_908255" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_908255" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=908255" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_908255" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_908444">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-18,&nbsp;<span class="time">05:18 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post908444" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=908444#post908444" class="postcounter">#13</a><a id="postcount908444" name="13"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفاء الدين العراقي غير متواجد حالياً"><strong>صفاء الدين العراقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=13233&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفاء الدين العراقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_908444">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: &amp;quot"><font size="6"><font color="#800000"><b>الدرس الحادي عشر</b><br />
+ <br />
+<b>أحوال المسند باعتبار ذاته</b></font></font></span></div><font size="6"><span style="font-family: &amp;quot"> <br />
+أحوال المسند في ذاته هي: الحذف، والذكر، وكونه فعلا، واسما، وكونه مفردا.<br />
+حذف المسند: الأصل في المسند أن يذكر لأنه أحد ركني الإسناد ولا يجوز أن يحذف إلا إذا دلت عليه قرينة، مثل أن يقول لك شخص: ( مَنْ جَاءَ؟ )، فتقول: ( زَيْدٌ ) بحذف المسند وهو ( جَاءَ ). <br />
+ويحذف المسند لنفس اعتبارات حذف المسند إليه المتقدمة فيأتي لأغراض منها:<br />
+1- الصون مثل قوله تعالى: ( أَفَمَنْ هُوَ قَائِمٌ عَلَى كُلِّ نَفْسٍ بِمَا كَسَبَتْ )، فالاسم الموصول ( مَنْ ) مبتدأ وخبره محذوف تقديره: كَمَنْ لَيْسَ كَذَلِكَ. والغرض من هذا الحذف هو تعظيم وصون الرب الذي هو قائم على كل نفس بما كسبت من أن يذكر في مقابله الآلهة العاجزة.    <br />
+2- الإنكار مثل: أن يدور حديث عن الظَّلَمَة ومن هم في هذا العصر فيقول: ( الأَمِيرُ )، فيقال له: ( أَتَعْنِي أَنَّ أَمِيرَنَا ظَالِمٌ؟ ) فيتأتى له الإنكار، والأصل: الظالمُ الأميرُ، فحذف الخبر المسند ليتمكن من التفصي من المسؤولية عند الحاجة.<br />
+3- الاحتراز عن العبث مثل قوله تعالى: ( أَنَّ اللهَ بَرِيءٌ مِنَ المُشْرِكِينَ وَرَسُولُهُ ) أي ورسوله بريءٌ منهم أيضا، فقد حذف المسند إلى ( رَسُولُهُ ) لأن في ذكره عبثا لقيام القرينة عليه.<br />
+4- الاختبار مثل قولك لمخاطبك: ( لِي شَجَرَةٌ ظِلُّهَا وَارِفٌ وَثَمَرُهَا ) وتسكت، تريد: وَثَمَرُهَا حُلْوٌ، فتحذف الخبر لأن السياق يدل على أنك تقصد بيان مزايا الشجرة مختبِرا حال المخاطب هل ينتبه.<br />
+ <br />
+ذكر المسند: يذكر المسند لنفس اعتبارات ذكر المسند إليه المتقدمة فيأتي لأغراض منها:<br />
+أولا التعظيم كأن يسألك شخص: ( أَيْنَ شَيْخُكَ؟ ) فتقول: ( هَذَا شَيْخِي )، وكان يكفيك أن تقول ( هَذَا ).<br />
+ثانيا: الإهانة كأن يسألك شخص: ( أَيْنَ الفَاسِقُ؟ ) فتقول: ( هَذَا الفَاسِقُ )، وكان يكفيك أن تقول ( هَذَا ).<br />
+ثالثا: بسط الكلام وإطالته مثاله أن يسألك من تحب إطالة الحديث معه: ( مَنْ صَدِيقُكَ؟ ) فتقول: ( زَيْدٌ صَدِيقِي الوَفِيُّ الَّذِي لَا أَعْرِفُ لَهُ نَظِيرًا )، فتذكر المسند ( صَدِيقِي ) لبسط الكلام ولهذا زدتَ من الوصف ما لم تُسأَل عنه. <br />
+رابعا: التنبيه أي ذكر المسند إليه للتنبيه على جهل وغباوة السامع لكونه لا يفهم إلا بالتصريح، مثل أن يسألك شخص: ( مَنْ هُوَ إِلَهُكُمْ؟ )، فتقول: ( اللهُ إِلَهُنَا )، وكان يكفيك أن تقول: ( اللهُ ) لكن للتعريض بغباوته تذكر المسند ( إِلَهُنَا ) بدليل أنه يسأل عن أظهر الأشياء.<br />
+خامسا: قلة الثقة بالقرينة لضعفها مثال ذلك أن يسألك شخص: ( مَنْ أَكْرَمُ العَرَبِ وَأَشْجَعُهُمْ فِي الجَاهِلِيَّةِ؟ ) فتقول في جوابه: ( عَنِتَرَةُ أَشْجَعُ العَرَبِ، وَحَاتِمٌ أَجْوَدُهُمْ )، فتذكر ( أشجع ) و( أجود ) خشيةَ أن يلتبس على السامع لو قلت: ( عَنْتَرَةُ وَحَاتِمٌ ) فقط من غير أن تعين صفة كل واحد منهم، فلا يُدرَى أيهم الأشجع والأجود.<br />
+سادسا: هنالك غرض زائدٌ في ذكر المسند يختص به عن ذكر المسند إليه وهو:<br />
+أنّ ذكر المسند يفيدنا تعيين كون المسند اسما أو فعلا مثل ( زَيْدٌ قَائِمٌ ) و( زَيْدٌ يَقُومُ )، والاسم يختلف في دلالته عن الفعل، فلو حذفتَ المسند لم يتبين غرضك هل أردتَ الاسم أو الفعل.<br />
+فيجيء المسند فعلا لإفادة الحدوث في زمن مخصوص مثل: ( ضَرَبَ - يَضْرِبُ - اضْرِبْ )، فإذا قلتَ: ( ضَرَبَ زَيْدٌ عَمْرًا ) دلّ على حدوث الضرب بعد أن لم يكن في زمن مضى وانقضى.<br />
+ويختص المضارع عن الماضي والأمرِ بإفادة الاستمرار التجددي بالقرائن وهو: أن يدل المضارع على حدوث الشيء مرة بعد أخرى بحيث يكون استمراره غير متصل مثل: ( يُصَلِّي المُؤْمِنُ لِرَبِّهِ ) أي صلاته متجددة كل يوم لا أنه مستمر بالصلاة طول الوقت لا ينصرف عنها لحاجة، والقرينة هنا كون الصلاة نسبت للمؤمن الذي لا يترك صلاته، وأما مثل ( يَضْرِبُ زَيْدٌ عَمْرًا ) مجرّدا من القرائن فلا يدل على أنه يستمر ضربه له ويتجدد باستمرار. <br />
+ويجيء المسند اسما لإفادة ثبوت المسند للمسند إليه من غير تقييد بزمن مثل: ( الشَّمْسُ مُضِيئَةٌ )، فلا يستفاد منها سوى ثبوت الإضاءة للشمس بدون النظر إلى حدوث ذلك في زمن.<br />
+وقد يفيد الاستمرار الثبوتي بالقرائن وهو: إثبات الشيء للشيء إثباتا دائما متصلا مثل: ( العِلْمُ نَافِعٌ ) فإنه يدل على دوام النفع للعلم بقرينة المقام فإن المقام مقام مدح.<br />
+فتحصَّل أن الاسم يدل على الثبوت بالوضع، وعلى الدوام -أي الاستمرار الثبوتي- بالقرينة.<br />
+ويجيء المسند اسما مفردا لا جملة لإجراء الحكم على نفس المسند إليه الأول مثل: ( زَيْدٌ قَائِمٌ )، بخلاف ما لو كان جملة فإنه يجري على غير المسند إليه الأول مثل: ( زَيْدٌ قَامَ أَبُوهُ ) و( زَيْدٌ قَائِمٌ أَبُوهُ ). <br />
+ </span></font><div style="text-align: center;"><span style="font-family: &amp;quot">( <font color="#800000">أسئلة</font> )<font size="6"><br />
+</font></span></div><font size="6"><span style="font-family: &amp;quot"> <br />
+١. ما هي أحوال المسند في ذاته؟<br />
+٢. ما هي أغراض حذف وذكر المسند؟<br />
+٣. ما هي أغراض المجيء بالمسند اسما وفعلا واسما مفردا؟<br />
+ <div style="text-align: center;">( <font color="#800000">ت ١</font> )</div> <br />
+بيّن سبب حذف المسند فيما يلي:<br />
+( يَمْحُو اللهُ مَا يَشَاءُ <u>وَيُثْبِتُ</u> وَعِنْدَهُ أُمُّ الكِتَابِ - يسألك شخص عن تعيين طالبَيْن أحدهما مجتهد والآخر كسول فتقول: خالد مجتهد <u>وسعيد</u> ).<br />
+ <div style="text-align: center;">( <font color="#800000">ت ٢ </font>)</div> <br />
+بيّن سبب ذكر المسند فيما يلي:<br />
+( أَأَنْتَ فَعَلْتَ هَذَا بِآلِهَتِنَا يَا إِبْرَاهِيمُ قَالَ بَلْ ف<u>َعَلَهُ</u> كَبِيرُهُمْ هَذَا  - يسألك من تحب تطويل الحديث معه: من تعرف مِن الطلبة؟ فتقول: <u>أعرف</u> خالدا <u>وأعرف</u> محمدا <u>وأعرف</u> عليا - حالي مستقيم ورزقي <u>ميسور</u> ).<br />
+</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_908444" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_908444" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=908444" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_908444" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_908728">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-21,&nbsp;<span class="time">03:19 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post908728" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=908728#post908728" class="postcounter">#14</a><a id="postcount908728" name="14"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=137780&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="محمد سلطان المحاسب غير متواجد حالياً"><strong>محمد سلطان المحاسب</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=137780&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=137780&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد سلطان المحاسب غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2016</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>18</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_908728">
+				<blockquote class="postcontent restore">
+					مجموعة دروس قيمة بارك الله لك
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_908728" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_908728" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=908728" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_908728" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_908738">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-21,&nbsp;<span class="time">04:34 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post908738" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=908738#post908738" class="postcounter">#15</a><a id="postcount908738" name="15"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفاء الدين العراقي غير متواجد حالياً"><strong>صفاء الدين العراقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=13233&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفاء الدين العراقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_908738">
+				<blockquote class="postcontent restore">
+					<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				<div class="bbcode_postedby">
+					<img src="images/metro/purple/misc/quote_icon.png" alt="اقتباس" /> المشاركة الأصلية كتبت بواسطة محمد سلطان المحاسب
+					<a href="showthread.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=908728#post908728" rel="nofollow"><img class="inlineimg" src="images/metro/purple/buttons/viewpost-left.png" alt="مشاهدة المشاركة" /></a>
+				</div>
+				<div class="message">مجموعة دروس قيمة بارك الله لك</div>
+			
+		</div>
+	</div>
+</div>وفيك الله بارك.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_908738" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_908738" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=908738" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_908738" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_908739">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-21,&nbsp;<span class="time">04:35 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post908739" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=908739#post908739" class="postcounter">#16</a><a id="postcount908739" name="16"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفاء الدين العراقي غير متواجد حالياً"><strong>صفاء الدين العراقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=13233&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفاء الدين العراقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_908739">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: &amp;amp"><font size="6"><font color="#B22222">الدرس الثاني عشر<br />
+ <br />
+تعريف المسند وتنكيره وتقديمه وتأخيره</font><br />
+</font></span></div><font size="6"><span style="font-family: &amp;amp"> <br />
+المسند يعرَّف لأغراض منها:<br />
+أولا: إرادة العهد، بمعنى أن يكون المسند معلومًا للمخاطب معهودًا له، ولكنه لا يعلم المسند إليه، كأن يعلم مخاطبك أن كتابة حصلت ولا يعلم صاحبها فتقول له وتخبره: ( زَيْدٌ الكَاتِبُ )، أي الكتابةَ المعهودةَ التي عرفتَ حصولها.<br />
+ثانيا: إفادة قصره على المسند إليه مثل أن تقول مُخبِرًا: ( زَيْدٌ الشَّاعِرُ ) أي لا غيره.<br />
+والمسند ينكَّر لأغراض منها:<br />
+أولا: التحقير مثل قولك: ( نَصِيبِي مِنْ هَذَا المَالِ شَيْءٌ ) أي حقير تافه لا يؤبه له ولا يعتد به.<br />
+ثانيا: التعظيم والتفخيم ومنه قوله تعالى: ( ذَلِكَ الكِتَابُ لَا رَيْبَ فِيهِ هُدًى لِلْمُتَّقِينَ ) بجعل المبتدأ محذوفا تقديره هو و( هُدًى ) خبره وقد نكِّر للدلالة على فخامة هداية الكتاب وكمالها وأنها بلغت غاية فوق متناول المدارك.<br />
+ثالثا: التعميم أي عدم إرادة الحصر، تقول: ( مُحَمَّدٌ شَاعِرٌ ) أي شاعر من الشعراء بخلاف لو قلتَ: ( مُحَمَّدٌ الشَّاعِرُ ) لأفهم أنك تريد أن تقول إن محمدا هو الشاعر ولا شاعر غيره.<br />
+والمسند يقدّم لأغراض منها: <br />
+أولا: إفادة قصره على المسند إليه كقوله تعالى: ( للهِ مُلْكُ السَّمَاوَاتِ وَالأَرْضِ ) أي لا لغيره.<br />
+ثانيا: لتشويق السامع بأن يشتمل المسند على وصف أو أوصاف للمسند إليه تشوق النفس إلى ذكره.<br />
+مثل: ( مَنْهُومَانِ لَا يَشْبَعَانِ: طَالِبُ عِلْمٍ وَطَالِبُ مَالٍ ) فـ ( مَنْهُومَانِ ) خبر و( طَالِبُ ) مبتدأ وقد قدم الخبر عليه لاشتماله على وصف مشوق.<br />
+وأما تأخير المسند فلكون تأخيره هو الأصل ولا يعدل عنه إلا لغرض مثل: ( زَيْدٌ قَائِمٌ )، أخر الخبر لأن هذا هو الأصل.<br />
+  <br />
+( أسئلة )<br />
+ <br />
+١. ما هي بعض أغراض تعريف المسند وتنكيره؟<br />
+٢. ما هي بعض أغراض تقديم المسند وتأخيره؟<br />
+ <br />
+( ت ١ )<br />
+ <br />
+بين سبب تعريف المسند وتنكيره فيما يلي:<br />
+١- يعلم زيد أن متاعه سُرِقَ لكن لا يعلم من سرقه، فتقول له: ( عمرٌو السارقُ ). <br />
+٢- مَا خَالدٌ رَجُلًا يُذْكَرُ. <br />
+٣- المدرسة خالية عن كل فقيه إلا بكرًا فتقول: ( بَكْرٌ الفَقِيهُ ).<br />
+ <br />
+( ت ٢ )<br />
+ <br />
+بين سبب تقديم المسند وتأخيره فيما يلي:<br />
+١- ثَلَاثَةٌ لَيْسَ لَهَا إِيَابُ..الوَقْت  ُ وَالجَمَالُ وَالشَّبَابُ. <br />
+٢- ( لَكُمْ دِينُكُمْ وَلِيَ دِينِ ). <br />
+٣- طَلَبُ العِلْمِ مُهِمٌّ.<br />
+ <br />
+</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_908739" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_908739" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=908739" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_908739" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_909162">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-25,&nbsp;<span class="time">05:30 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post909162" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=909162#post909162" class="postcounter">#17</a><a id="postcount909162" name="17"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفاء الدين العراقي غير متواجد حالياً"><strong>صفاء الدين العراقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=13233&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفاء الدين العراقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_909162">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><font size="6"><font color="#800000">الدرس الثالث عشر<br />
+ <br />
+أحوال المسند باعتبار ما يتعلق به</font></font></div><font size="6"> <br />
+انتهينا من أحوال المسند باعتبار ذاته وآن أوان بيان أحواله باعتبار ما يتعلق به وهي أربعة أمور: <br />
+أولا: وصف المسند ويؤتى به لأغراض منها تتميم الفائدة بتخصيص المسند نحو: ( زَيْدٌ كَاتِبٌ مُجِيدٌ )، فالوصف لإفاده التخصيص لأن الكاتب منه مجيد ومنه غير مجيد، فإذا قلت : ( مُجِيدٌ ) تخصَّص وتمت الفائدة.<br />
+ثانيا: تقييد الفعل بالمفاعيل ونحوها وذلك لزيادة الفائدة، والمقصود بالمفاعيل: المفعول به وفيه وله ومعه والمفعول المطلق وبنحوها: مثل الحال والتمييز وظرف الزمان والمكان.<br />
+مثاله: لو قلتَ: ( أَكَلَ زَيْدٌ ) ولم تذكر ماذا أكل لن تحصل الفائدة، فإذا قلتَ: ( أَكَلَ زَيْدٌ الخُبْزَ ) وضح المقصود.<br />
+ومثل: ( زَيْدٌ أَعْطَى )، فهنا لم يتضح المُعْطَى، فإذا قلتَ: ( زَيْدٌ أَعْطَى مِائَةَ دِينَارٍ ) فقد زدتَ الفائدة، فإذا زدتَ المفعول له فقلت: ( زَيْدٌ أَعْطَى مِائَةَ دِينَارٍ سَدًّا لِخَلَّةِ فَقِيرٍ ) فقد زدتَ فائدة أخرى، وإذا أردتَ أن تزيد مكان الإعطاء وزمانه فتزيد الفائدة.<br />
+ثالثا: ترك تقيد الفعل بالمفاعيل ونحوها وذلك لمانع من زيادة الفائدة كاستقباح الذكر.<br />
+مثل قوله تعالى: ( ثُمَّ اتَّخَذْتُمُ العِجْلَ مِنْ بَعْدِهِ وَأَنْتُمْ ظَالِمُونَ )، فالفعل ( اتَّخَذَ ) يتعدى لمفعولين لكن في هذا الموضع لم ينصب إلا مفعولا واحدا، والأصل: اتّخذتم العجل إلها، فحذف المفعول الثاني لاستقباح ذكره.<br />
+رابعا: تقييد الفعل بأدوات الشرط وذلك لإفادة معنى تلك الأداة فإنّ معانيها تختلف.<br />
+ومن تلك الأدوات: ( إِذَا - إِنْ -  لَوْ ).<br />
+1- الأصل في استعمال ( إِذَا ) الجزم بوقوع الشرط في الاستقبال بخلاف ( إِنْ ) فالأصل في استعمالها عدم الجزم بوقوع الشرط في الاستقبال.<br />
+فإذا قلتَ: ( إِذَا جَاءَ زَيْدٌ أَكْرَمْتُهُ ) دل على جزم المتكلم بمجيئه، وإذا قلتَ: ( إِنْ جَاءَ زَيْدٌ أَكْرَمْتُهُ ) دل على الشك بمجيئه.<br />
+مثل قوله تعالى: ( كُتِبَ عَلَيْكُمْ إِذَا حَضَرَ أَحَدَكُمُ المَوْتُ إِنْ تَرَكَ خَيْرًا الوَصِيَّةُ ) فعبر أولا بـ ( إِذَا ) لأن الموت متحقق، وعبر بـ ( إِنْ ) لأن ترك المال مشكوك فيه.<br />
+2- الأصل في استعمال ( لَوْ ) الجزم بعدم بوقوع الشرط في الماضي وهو حرف امتناع لامتناع أي امتنع وقوع الجواب لامتناع حصول الشرط، مثل: ( لَوْ جَاءَ زَيْدٌ لَأَكْرَمْتُهُ ) فانتفى الإكرام لتحقق انتفاء مجيء زيد في الماضي.<br />
+( أسئلة )<br />
+ <br />
+١. ما هي أحوال المسند باعتبار ما يتعلق به؟<br />
+٢. ما هو غرض تقييد المسند بالمفاعيل ونحوها؟<br />
+٣. ما هو غرض تقييد المسند بأداة الشرط؟<br />
+ <br />
+( ت ١ )<br />
+ <br />
+بين حال المسند باعتبار ما يتعلق به فيما يأتي:<br />
+١- حَفِظَ زَيْدٌ مِائَةَ المَعَانِي وَالبَيَانِ السَّنَةَ المَاضِيَةَ. <br />
+٢- خَالدٌ طَالِبُ عِلْمٍ مُجْتَهِدٌ. <br />
+ <br />
+( ت ٢ )<br />
+ <br />
+بين نوع التقييد وما يستفاد منه فيما يأتي:<br />
+١- ( لَوْ كَانَ فِيهِمَا ءَالِهَةٌ إِلَّا اللهُ لَفَسَدَتَا ). <br />
+٢- ( إِذَا جَاءَ نَصْرُ اللهِ وَالفَتحُ، وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللهِ أَفْوَاجًا، فَسَبِّحْ... ). <br />
+٣- ( وَإِنْ يُكَذِّبُوكَ فَقَدْ كُذِّبَتْ رُسُلٌ مِنْ قَبْلِكَ ). <br />
+</font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_909162" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_909162" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=909162" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_909162" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_909770">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-31,&nbsp;<span class="time">07:16 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post909770" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=909770#post909770" class="postcounter">#18</a><a id="postcount909770" name="18"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفاء الدين العراقي غير متواجد حالياً"><strong>صفاء الدين العراقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=13233&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفاء الدين العراقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_909770">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><font size="5">الدرس الرابع عشر<br />
+ <br />
+أحوال متعلِّقات الفعل<br />
+</font></div><font size="5"> <br />
+تقدم أن للفعل متعلِّقات يتقيد بها كالمفعول به، ولهذه المتعلِّقات أحوال كالحذف والذكر، وقبل بيانها نذكر مقدمة وهي: أن حالة الفعل مع مفعوله كحالته مع فاعله من جهة التلبّس لكنها مختلفة؛ فالفعل الذي هو الضرب مثلا يتلبس به الفاعل من جهة وقوعه منه، ويتلبس به المفعول من جهة وقوعه عليه، فكل منهما متلبس بالفعل ولكن جهة التلبس مختلفة.<br />
+وإذا قصد المتكلم وقوع الفعل فقط بغض النظر عمن فعله ومن وقع عليه فحينئذ يصير الفعل المتعدي بمنزلة الفعل اللازم فلا يذكر مفعوله ولا يقدر أيضا؛ لأن المقدر كالمذكور.<br />
+مثل قوله تعالى: ( قُلْ هَلْ يَسْتَوِي الَّذِينَ يَعْلَمُونَ وَالَّذِينَ لَا يَعْلَمُونَ ) أي من ثبتت له حقيقة العلم ومن لم تثبت، فلا يقدر المفعول كأن يقال إن تقديره الذين يعلمون كذا والذين لا يعلمون كذا وذلك لكون القصد حصول الفعل فقط.<br />
+فإن حذف المفعول به وقصد تعلق الفعل به فهنا لا بد من تقدير.<br />
+أولا: يحذف المفعول به لأغراض منها:<br />
+1- الإيضاح بعد الإبهام مثل قوله تعالى: ( وَلَوْ شَاءَ لَهَدَاكُمْ أَجْمَعِينَ ) أي ولو شاء هدايتكم لهداكم أجمعين، فحذف المفعول به  ( هدايتكم ) ليكون تمكينه في النفس أشد لبيانه بعد إبهامه. بيانه:<br />
+أنه ( لما قيل: ( وَلَوْ شَاءَ ) علم أن هنالك شيئا تعلقت به المشيئة، فلما جيء بجواب الشرط ( لَهَدَاكُمْ ) وضح ذلك الشيء وعلم أنه ( الهداية ) فكل من الشرط والجواب حينئذ دلا على المفعول، غير أن الشرط دل عليه إجمالًا، والجواب دل عليه تفصيلًا ، والبيان بعد الإبهام أو ا لتفصيل بعد الإجمال، أوقع في النفس ). من المنهاج الواضح.<br />
+2- مجيء الذكر بأن يحذف المفعول به مع الفعل الأول كي ينصبه الفعل الثاني بلفظه الصريح لكمال العناية به.<br />
+مثل قول الشاعر: <br />
+قَدْ طَلَبْنَا فَلَمْ نَجِدْ لَكَ فِي السُّؤْ    دَدِ وَالمَجْدِ وَالمَكَارِمِ مِثْلا.<br />
+والأصل: قد طلبنا لك مِثْلًا في السؤدد والمجد والمكارم فلم نجده، فالفعلان ( طَلَبْنَا ) و( نَجْدْ ) يطلبان مفعولا به واحدا فحذف مع الأول وأعمل مع الثاني لكمال العناية به، إذ الأهم هو أنه لم يجد مثلا لا الطلب، ولو ذكره مع الأول لتعين أن يذكر ضميره مع الثاني دون لفظه الصريح وهو خلاف غرض الشاعر بكمال العناية بعدم الوجدان.<br />
+3- منع توهم السامع غير المقصود ابتداءً مثل قول الشاعر: <br />
+وَكَمْ ذُدْتَ عَنِّي مِنْ تَحَامُلِ حَادِثٍ     وَسَورَةِ أَيَّامٍ حَزَزْنَ إِلَى العَظْمِ.<br />
+ذدتَ أي دفعتَ، تحامل حادث أي ظلم حادث من حوادث الزمان، سورة أيام أي شدتها، حززن أي قطعن.<br />
+يقول إن الممدوح قد دفع عنه ظلم الزمان وشدة أيام قطعن اللحم إلى العظم أي بلغت الغاية في الشدة، والشاهد هو: ( حَزَزْنَ إِلَى العَظْمِ ) فحذف المفعول وهو اللحم لأنه لو قال حززن اللحم لتوهَّم السامع أنهن حززن اللحم فقط ولم تبلغ من شدتها الوصول إلى العظم. نعم حينما يكمل الكلام ويسمع ( إلى العظم ) فسيفهم أنها بلغت العظم لكن الشاعر أراد أن يسد الباب ابتداءً فيدفع توهم غير المراد ابتداءً.<br />
+4- إرادة التعميم مع الاختصار كقوله تعالى: ( واللهُ يَدْعُو إِلَى دَارِ السَّلَامِ ) أي يدعو جميعَ عباده إلى دار السلام، فحذف المفعول ( جميعَ عباده ) لقصد تعميم الخطاب لكل أحد، ولو صرّح وقال ( جميعَ عباده ) لتحقق التعميم ولكن فات الاختصار.<br />
+5- مراعاة الفاصلة كقوله تعالى: ( وَالضُّحَى، وَاللَّيْلِ إِذَا سَجَى، مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَى ) ولو قال ( وما قَلَاكَ ) لفات مراعاة رؤوس الآيات.<br />
+6- استهجان ذكره مثل أن تدخل على موضع خلوة أحد، ثم تُسْأَل فتقول: ( مَا رَأَيْتُ مِنْهُ ) أي ما رأيتُ العورة منه. <br />
+ثانيا: تقديم المفعول به وما يشبه المفعول به كالحال والتمييز والظرف، ويكون للرد على الخطأ في تعيين المفعول به، كقولك: ( زَيْدًا عَرَفْتُ ) لمن ظن أنك عرفتَ غيره، ومثل: ( رَاكِبًا جَاءَ زَيْدٌ ) للرد على من ظن أنه جاء ماشيا، ويكون هذا التقييد لإفادة الحصر.<br />
+ثالثا: تقديم بعض المعمولات على بعض، ويكون لغرضين:<br />
+1- كونه الأصل كتقديم الفاعل على المفعول به، مثل: ( ضَرَبَ زَيْدٌ عَمْرًا ).<br />
+2- لكونه هو الأهم كتقديم المفعول به على الفاعل في مثل: ( ضَرَبَ عَمْرًا زَيْدٌ ) إذا كان مقصود المتكلم الاهتمام  بالمضروب أكثر منه بالضارب.<br />
+ <br />
+ <br />
+( أسئلة )<br />
+ <br />
+١. ما هي بعض أغراض حذف المفعول به؟<br />
+٢. ما هي بعض أغراض تقديم المفعول به؟<br />
+٣. ما هي بعض أغراض تقديم بعض المعمولات على بعض؟<br />
+ <br />
+( ت ١ )<br />
+ <br />
+بين الغرض من حذف المفعول به فيما يأتي:<br />
+١- أَرَدْتُ فَلَمْ أَجِدْ عَالِمًا مِثْلَكَ. <br />
+٢- ( فَإنْ يَشَإِ اللهُ يَخْتِمْ عَلَى قَلْبِكَ ). <br />
+٣- ( قُلْ إِنَّمَا أُمِرْتُ أَنْ أَعْبُدَ اللهَ وَلَا أُشْرِكَ بِهِ ). <br />
+٤- ( سَيَذَّكَّرُ مَنْ يَخْشَى ). <br />
+٥- عَاشَرْتُ الأَمِيرَ فَلَمْ أَعْرِفْ مِنْهُ وَلَمْ يَعْرِفْ مِنِّي سِوَى الخَيْرَ. <br />
+ <br />
+( ت ٢ )<br />
+ <br />
+بين الغرض من تقديم المعمول فيما يلي:<br />
+١- ضَرَبْتُ زَيْدًا قَائِمًا. <br />
+٢- ( النَّصْرَ رَأَيْتُ ) لمن ظن أنك رأيتَ غيره. <br />
+٣- ادَّعَى النُّبُوَّةَ مُسَيْلَمَةُ الكَذَّابُ. <br />
+ <br />
+ <br />
+</font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_909770" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_909770" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=909770" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_909770" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_909825">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-06-01,&nbsp;<span class="time">05:28 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post909825" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=909825#post909825" class="postcounter">#19</a><a id="postcount909825" name="19"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفاء الدين العراقي غير متواجد حالياً"><strong>صفاء الدين العراقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=13233&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفاء الدين العراقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_909825">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><font size="5">الدرس الخامس عشر<br />
+ <br />
+القصر</font></div><font size="5"> <br />
+<b>القصر</b> ويسمى الحصر أيضا هو: تخصيص شيء بشيء بطريق مخصوص.<br />
+مثاله: كلمة التوحيد: (لا إله إلا الله) تدل على إثبات الإلوهية لله ونفيها عن كل من عداه. فهذه الجملة تقوم مقام جملتين: الأولى: الله إله، والثانية: لا إله سواه، إذْ القصر يتضمن نفيا وإثباتا.<br />
+وله ثلاثة أركان:<br />
+1- المقصور وهو: الشيء الأول المخصَّص.<br />
+2- المقصور عليه وهو: الشيء الثاني المخصَّص به.<br />
+ويسميان: طَرَفي القصر.<br />
+3- طريق القصر وهو: الوسيلة المستعملة في الحصر.<br />
+ففي كلمة التوحيد: المقصور هو الإلوهية، والمقصور عليه هو الله، وطريق الحصر هو النفي والاستثاء ( لا- إلا )<br />
+وطرق القصر المشهورة<sup>(<a href="http://majles.alukah.net/#_ftn1" target="_blank">[1]</a> ) </sup> أربعة:<br />
+1- <b>النفي والاستثناء</b>. والمقصور عليه ما بعد أداة الاستثناء.مثل: ما فاز إلا عليٌّ، فالفوز هو المقصور وعلي هو المقصور عليه والطريق هو النفي والاستثناء. <br />
+2- <b>إنما</b>. والمقصور عليه مؤخر وجوبا مثل: إنما الرزاق الله، فالرازق هو المقصور، والله هو المقصور عليه والطريق هو إنما.<br />
+3- <b>العطف</b> بـ ( لا- بل- لكن ).<br />
+مثل: الأرض متحركة لا ثابتةٌ. والمقصور عليه هو المقابل لما بعد لا، فالمقصور هو الأرض، والمقصور عليه هو التحرك. <br />
+ومثل: ما سافر زيدٌ بل عمرٌو. فالمقصور هو السفر، والمقصور عليه هو عمرٌو، والطريق هو العطف بـ لا.<br />
+ومثل: ما سافرَ زيدٌ لكنْ عمرُو. فالمقصور هو السفر والمقصور عليه هو عمرو، والطريق هو العطف بـ لكنْ.<br />
+فالمقصور عليه فيهما هو ما بعد بل ولكنْ.<br />
+4- <b>تقديم ما حقه التأخير</b>. وهنا يكون المقصور عليه هو المقدّم مثل: بالجدِّ فازَ إبراهيمُ، والأصل: فازَ إبراهيمُ بالجدِّ، والمقصور هو فوز إبراهيم، والمقصور عليه هو الجدّ والطريق هو تقديم ما حقه التأخير.<br />
+<b>الفروقات بين تلك الطرق:</b><br />
+أولا: تقديم ما حقه التأخير يفيد القصر بالمفهوم بينما بقية الطرق تفيد القصر بالوضع والنص. توضيحه:<br />
+القصر -كما علمت- يتحقق بالنفي والإثبات، فالطريق الأول موضوع في لغة العرب لأجل هذا الغرض، وكذا إنما تتضمن وضعا النفي والإثبات فقولك إنما جاء زيدٌ في قوة= ما جاء إلا زيدٌ، و&quot;لا&quot; العاطفة&quot; موضوعة للنفي بعد الإثبات، و&quot;بل ولكن&quot; موضوعتان للإثبات بعد النفي.<br />
+فالطرق الثلاثة الأولى تفيد الحصر بالوضع، بخلاف تقديم ما حقه التأخير فلم يوضع لأجل هذا الغرض بل الإفادة له بالفحوى ومفهوم الكلام لا بالنص بمعنى أن صاحب الذوق السليم إذا تأمل في الكلام الذي فيه التقديم المذكور فهم الحصر، وإن لم يعرف أن التقديم- في اصطلاح البلغاء- يفيد الحصر.<br />
+ثانيا: الأصل في النفي والاستثناء أن يستعمل في أمر من شأنه أن يجهله المخاطب وينكره، والأصل في إنما أن تستعمل في أمر من شأنه أن لا يجهله المخاطب ولا ينكره.<br />
+مثال ذلك أن ترى شبحًا من بُعْد، فتقول: &quot;ما القادم إلا محمد&quot;  لمخاطب ينكر عليك ذلك معتقدًا أنه محمود لا محمد، فقدوم محمد أمر من شأنه أن يجهله المخاطب، وينكره لبعد الشبح في مرأى العين.<br />
+ومثل أن ترى شبحًا من قرب، بحيث يدرك بقليل من التأمل فتقول لآخر &quot;:إنما المقبل ذئب&quot;  فمثل هذا الحكم -والحالة هذه- من شأنه ألا يجهله المخاطب ولا ينكره لقرب الشبح في مرأى العين.<br />
+وهذا هو مقتضى الظاهر وقد ينزل المعلوم منزلة المجهول، وينزل المجهول منزلة المعلوم.<br />
+مثال الأول: قوله تعالى حكاية عن قوم شعيب (وما أنتَ إلا بشرٌ مثلنا) وشعيب يعلم أنه بشر ولا ينكره، لكنه هؤلاء الكفار نزلوا المعلوم منزلة المجهول لأنهم يزعمون نه لا تجتمع النبوة  والبشرية فجاؤوا بالخبر على صورة النفي والاستثناء.<br />
+ومثال الثاني: قوله تعالى حكاية عن اليهود: (إِنَّمَا نَحْنُ مُصْلِحُونَ ) ادعوا: أن إصلاحهم المجهول للمخاطبين، والمنكر لديهم أمر جلي ظاهر، من شأنه ألا يجهله المخاطب ولا ينكره تنزيلًا للأمر المجهول لهم، المنكر عندهم منزلة المعلوم المعترف به.<br />
+</font><font size="5"><br />
+</font><hr /><font size="5">([1] ) مما يفيد الحصر إضافة الضمير بين المبتدأ والخبر من نحو قولنا: زيدٌ هوَ العالِمُ كماتقدم.<br />
+</font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_909825" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_909825" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=909825" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_909825" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_909905">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-06-02,&nbsp;<span class="time">03:29 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post909905" href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=909905#post909905" class="postcounter">#20</a><a id="postcount909905" name="20"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفاء الدين العراقي غير متواجد حالياً"><strong>صفاء الدين العراقي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=13233&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=13233&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفاء الدين العراقي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,043</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: دروس سهلة في علم البلاغة للمبتدئين.
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_909905">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><font size="5"><b>الدرس السادس عشر</b><br />
+ <br />
+<b>        تقسيم القصر</b></font></div><font size="5"> <br />
+<b><u>ينقسم القصر</u></b> باعتبار طرفيه المقصور والمقصور عليه إلى نوعين:<br />
+أولا: <b>قصر صفة على موصوف</b> بأن يكون المقصور صفة وحكما من الأحكام ويكون المقصور عليه هو المتصف بتلك الصفة والحكم.<br />
+ثانيا: قصر موصوف على صفة بأن يكون المقصور هو الموصوف ويكون المقصور عليه هو الصفة.<br />
+مثال الأول: لا إله إلا الله، فإله هو المقصور، والمقصور عليه هو الله، وبما أن الإلهية صفة والله هو الموصوف بها فهذا قصر صفة على موصوف.<br />
+ومثال الثاني: إنما الحياة لهوٌ، وقد تقدم أن المقصور عليه بـ إنما هو المؤخر وجوبا، فالمقصور عليه هو اللهو وهو صفة تتصف بها الحياة الذي هو المقصور، فهو قصر موصوف على صفة بمعنى.<br />
+والتمييز بينهما يعتمد على تحديد المقصور عليه إن كان موصوفا فهو قصر صفة على موصوف، وإن كان صفة فهو قصر موصوف على صفة.<br />
+مثل: إنما الشاعر زيدٌ، فالمقصود هنا قصر صفة الشعر على زيدٍ، وإذا قلنا: إنما زيدٌ شاعرٌ، فالمقصور عليه هو الشعر وهو وصف، فيكون من قصر الموصوف على صفة أي قصر زيد على  كونه شاعرا فهذه صفته الوحيدة فليس هو فقيه أو محدث أو نحوهما.<br />
+<b><u>وينقسم القصر</u></b> باعتبار الواقع  إلى قصر حقيقي وإضافي.<br />
+أولا: <b>القصر الحقيقي </b>وهو: أن يختص المقصور بالمقصور عليه في الحقيقة والواقع بأن لا يتعداه إلى غيره أصلا.<br />
+مثل: لا خالق إلا الله، فالقصر هنا حقيقي لأنه لا أحد يخلق غير الله سبحانه أبدا. وهذا قصر صفة على موصوف.<br />
+ثانيا: <b>القصر الإضافي</b> وهو: أن يختص المقصور بالمقصور عليه بحسب الإضافة إلى شيء معين. وقد يتجاوزه إلى غيره.<br />
+مثل: إنما الكاتبُ زيدٌ. أي لا عمرٌو وذلك ردا على مَن زعم أن عمرا كاتبٌ ولا تريد أن زيدًا هو الكاتب الوحيد في الأرض أو في بلده دون غيره. وبما أن زيدًا موصوف والكتابة صفته فهو من قصر الصفة على الموصوف.<br />
+ومثل: إنما عُمَرُ عادلٌ. أي لا جائرٌ وذلك ردا على من زعم ظلمه لرعيته، وهو من قصر الموصوف على الصفة أي أن صفة عمر هي العدل، ولا تريد أنه ليس له أي صفة سوى العدل.<br />
+<b>مواقع القصر</b><br />
+ <br />
+1- بين المبتدأ والخبر مثل: ما زيدٌ إلا شاعرٌ.<br />
+2- بين الفعل والفاعل مثل: ما قامَ إلا زيدٌ.<br />
+3- بين المفعولين مثل: ما أعطيتُ الفقيرَ إلا درهما.<br />
+4- بين الفعل ومتعلقاته كالحال والتمييز والظرف مثل: ما جاءَ محمدٌ إلا راكبا.<br />
+ <br />
+ <br />
+</font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_909905" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_909905" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=909905" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_909905" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<form action="showthread.php?t=174113&amp;page=2&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" method="get" class="pagination popupmenu nohovermenu">
+<input type="hidden" name="t" value="174113" /><input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+	
+		<span><a href="javascript://" class="popupctrl">صفحة 1 من 2</a></span>
+		
+		
+		
+		<span class="selected"><a href="javascript://" title="النتائج 1 إلى 20 من 32">1</a></span><span><a href="showthread.php?t=174113&amp;page=2&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="مشاهدة النتائج 21 إلى 32 من 32">2</a></span>
+		
+		
+		<span class="prev_next"><a rel="next" href="showthread.php?t=174113&amp;page=2&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="الصفحة التالية - النتائج 21 إلى 32 من 32"><img src="images/metro/purple/pagination/next-left.png" alt="التالي" /></a></span>
+		
+		
+		<span class="first_last"><a href="showthread.php?t=174113&amp;page=2&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="الصفحة الأخيرة - النتائج 21 إلى 32 من 32">الأخيرة<img src="images/metro/purple/pagination/last-left.png" alt="الأخيرة" /></a></span>
+		
+	
+	<ul class="popupbody popuphover">
+		<li class="formsubmit jumptopage"><label>إذهب إلى الصفحة: <input type="text" name="page" size="4" /></label> <input type="submit" class="button" value="إذهب" /></li>
+	</ul>
+</form>
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=174113&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="popupctrl"><span class="ctrlcontainer">مجلس اللغة العربية وعلومها</span></a>
+		<a href="showthread.php?t=174113#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">لوحة التحكم</a></li>
+		<li><a href="private.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الاشتراكات</a></li>
+		<li><a href="online.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=191262&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">ما حكم الاستهزاء باللغة العربية؟</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=191279&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">زيد ضاربه عمرو</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A7%D9%84%D8%A8%D9%84%D8%A7%D8%BA%D8%A9">البلاغة</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%AF%D8%B1%D9%88%D8%B3">دروس</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%B3%D9%87%D9%84%D8%A9">سهلة</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%B9%D9%84%D9%85">علم</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D9%81%D9%8A">في</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D9%84%D9%84%D9%85%D8%A8%D8%AA%D8%AF%D8%A6%D9%8A%D9%86.">للمبتدئين.</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=174113#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=174113#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">01:54 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

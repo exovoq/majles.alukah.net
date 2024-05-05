@@ -1,0 +1,1824 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=40a3dbf8dad57f073fe7698bbce8648b&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=177589";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس التفسير وعلوم القرآن - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=14" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1713958091" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1713958091" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="القرآنية, المتقدمين, المقاصد, بين, والمتأخرين, القرآن, مقاصد, إلى, الشريعة, على, التي, الذي, عند, العلماء, maqasid, هذا, كتابه, وقد, تعريف, للمقاصد, al-quran, ابن, قصد, فقد, أما, كما, الشارع, الله, الكريم, البحث, التشريع, الشرعية, ومقاصد, تعالى, بعض, ذكر, ذلك, القرآن،, الأحكام, أَيْ, إليه, حيث, النظر, بالمقاصد, هذه, الغزالي, ولا, وضع, المعاني, قوله" />
+	<meta name="description" content="المقاصد القرآنية بين المتقدمين والمتأخرين     
+ 
+أ. عائشة عبد الملك محمد سعد 
+ 
+ 
+     د. محمد نجيب بن عبد القادر" />
+
+	<title> المقاصد القرآنية بين المتقدمين والمتأخرين</title>
+	<link rel="canonical" href="showthread.php?t=177589&s=40a3dbf8dad57f073fe7698bbce8648b" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1713958091" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1713958091" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1713958091" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1713958091&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=40a3dbf8dad57f073fe7698bbce8648b" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="40a3dbf8dad57f073fe7698bbce8648b" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=40a3dbf8dad57f073fe7698bbce8648b" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=40a3dbf8dad57f073fe7698bbce8648b -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=40a3dbf8dad57f073fe7698bbce8648b"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=40a3dbf8dad57f073fe7698bbce8648b">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=40a3dbf8dad57f073fe7698bbce8648b">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=40a3dbf8dad57f073fe7698bbce8648b">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=40a3dbf8dad57f073fe7698bbce8648b" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=40a3dbf8dad57f073fe7698bbce8648b">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=14&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس التفسير وعلوم القرآن</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> المقاصد القرآنية بين المتقدمين والمتأخرين</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=40a3dbf8dad57f073fe7698bbce8648b&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 2 من 2
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=177589&s=40a3dbf8dad57f073fe7698bbce8648b" title="تحديث الصفحة">المقاصد القرآنية بين المتقدمين والمتأخرين</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=177589" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;t=177589&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=addsubscription&amp;t=177589" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;search_type=1&amp;searchthreadid=177589&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="40a3dbf8dad57f073fe7698bbce8648b" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="177589" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_917257">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-09-21,&nbsp;<span class="time">03:48 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post917257" href="showthread.php?t=177589&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=917257#post917257" class="postcounter">#1</a><a id="postcount917257" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,720</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> المقاصد القرآنية بين المتقدمين والمتأخرين
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_917257">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><b><font size="6"><span style="font-family: arabic typesetting"><font color="#ff0000"><b>المقاصد</b> <b>القرآن</b><b>ية بين المتقدمين والمتأخرين</b></font></span></font></b><font size="6"><span style="font-family: arabic typesetting"> <br />
+</span></font><br />
+<b><font size="6"><span style="font-family: arabic typesetting"><font color="#800080"><b>أ.</b> <b>عائشة عبد</b> <b>الملك محمد سعد</b></font><font color="#800080"><b>[*]</b></font></span></font></b><br />
+<br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font size="6"><font color="#008000"><b>د</b><b>.</b> <b>محمد نجيب بن عبد</b> <b>القادر</b></font><font color="#008000"><b>[**]</b></font></font><br />
+</font></span></b><br />
+<br />
+<b><span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span></b><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <br />
+</font></span><br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font color="#800000">ملخص البحث:</font><br />
+</font></span></b><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">يهدف هذا البحث إلى التعريف بالمقاصد القرآنية، مبيناً العلاقة بين  مقاصد القرآن ومقاصد التشريع وطرق العلماء في الكشف عن المقاصد القرآنية.  كما ويهدف إلی تتبع اجتهادات بعض من المفسرين المتقدمين والمتأخرين  وإشاراتهم في تفسیراتهم، والتي تدل علی اعتبارهم للمقاصد في تفسیر القرآن.  وقد سلك الباحثان المنهج الوصفي, لجمع الأقوال والتعريفات والمنهج التحليلي  بتفسير أقوال العلماء واستنباطاتهم. وقد خلص البحث إلى نتائج أهمها أن  جمله التعريفات تدور على كون المقاصد تمثل مراد الله في أحكامه وتشريعاته  القرآنية والغايات التي نزل القرآن لأجل تحقيقها مما فيه مصلحة للعباد،  وأظهر البحث أن مقاصد الشريعة جزء من مقاصد القرآن, ولاحظ البحث أن  الاستقراء هو أكثر ما اجمع عليه العلماء لمعرفة مقاصد القرآن. وأبرز ما خرج  به هذا البحث أن أكثر من عني بمقاصد القرآن وتفصيلها هم العلماء  المتأخرون, وأن هذا التفاوت في العناية بالمقاصد القرآنية عائد إلى أن كل  مرحلة اتسمت بمميزات عن سابقتها وكل عالم أو مفسر نظر للمقاصد من زاوية  مختلفة تتأثر بكثير من الأحيان بخلفيات أصحابها الفكرية والعلمية.</font></span><br />
+<b><span style="font-family: arabic typesetting"><font size="5">Abstract:</font></span></b><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">This research aims to introduce and identify Maqasid  Al-Quran (Quranic purposes), Indicating the relationship between Maqasid  Al-Quran and Maqasid al-Shariah (legislation purposes), and explaining  the mufasireen’ (exegetes) approaches in detecting Maqasid Al-Quran. In  addition, this research aims to search the early and late mufasireen’  viewpoints, interpretations and their indications regarding Maqasid  Al-Quran. The researchers use the descriptive approach for collecting  statements and definitions and the analytical approach to interpret the  scholar’ statements and their indications. The findings of this research  shows that the majority of the Maqasid Al-Quran definitions emphasize  the fact that the Maqasid Al-Quran represent the Allah’ purpose in his  Quranic provisions and legislations and the targets of the Quran is to  achieve the benefit and best for the humans. Moreover, the research  reveals the Maqasid al-Shariah is part of Maqasid Al-Quran, and notices  that induction is the most followed approach by the mufasireen to figure  out Maqasid Al-Quran. The findings also reveals that late scholar and  mufassirūn  gave attention to Maqasid Al-Quran more than early scholar  and mufassirūn , this disparity in paying attention to Maqasid Al-Quran  may refer to different characteristics of various eras and each scholar  or mufassir views Maqasid Al-Quran from his own angle which is mostly  affected by their scientific and ideological backgrounds.                                              <br />
+</font></span><br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font color="#800000">المقدمة:</font><br />
+</font></span></b><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">يتطرق هذا البحث إلى تعريف المقاصد القرآنية عند العلماء, وأيضا  أوجه العلاقة بين المقاصد القرآنية والمقاصد الشرعية, وما الفرق بين مقاصد  القرآن ومقاصد السور القرآنية في تصانيف العلماء, وكذلك الأهمية والفائدة  الإجمالية من معرفة ودراسة المقاصد القرآنية, ويتناول أيضا جهود علماء  الأمة من المتقدمين والمتأخرين في استنباط واستخراج المقاصد القرآنية  وتصنيفهم للمقاصد القرآنية, واختلافهم في ذلك حسب خلفياتهم الفكرية. ويختم  الباب بالطرق والمسالك التي سلكها العلماء في معرفة المقاصد القرآنية.</font></span><br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font color="#008080">المبحث الأول</font><br />
+</font></span></b><br />
+<br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font color="#0000ff">مفهوم المقاصد القرآنية</font><br />
+</font></span></b><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#800000"><b>المقاصد في اللغة</b><b>:</b></font><br />
+</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">المقاصد جمع المقصد، وهو ما تقصده وتريد الوصول إليه, الْقَافُ  وَالصَّادُ وَالدَّالُ أصول ثَلَاثَةٌ، يَدُلُّ أَحَدُهَا عَلَى إِتْيَانِ  شَيْءٍ وَأَمِّهِ، وَالْآخَرُ عَلَى اكْتِنَازٍ فِي الشَّيْءِ.  فَالْأَصْلُ: قَصَدْتُهُ قَصْدًا وَمَقْصَدًا[1],  وجاء في لسان العرب: &quot;قصد: الْقَصْدُ: اسْتِقَامَةُ الطَّرِيقِ. قَصَد  يَقْصِدُ قَصْدًا، فَهُوَ قاصِد. وَقَوْلُهُ تَعَالَى: ﴿وَعَلَى اللَّهِ  قَصْدُ السَّبِيلِ﴾(الن  حل: 9), أَي عَلَى اللَّهِ تَبْيِينُ الطَّرِيقِ  الْمُسْتَقِيمِ والدعاءُ إِليه بِالْحُجَجِ وَالْبَرَاهِينِ الْوَاضِحَةِ،  ﴿وَمِنْهَا جَائِرٌ﴾(النحل:9  ) أَي وَمِنْهَا طَرِيقٌ غَيْرُ قَاصِدٍ.  وطريقٌ قَاصِدٌ: سَهْلٌ مُسْتَقِيمٌ. وسَفَرٌ قاصدٌ: سَهْلٌ قَرِيبٌ. وَفِي  التَّنْزِيلِ الْعَزِيزِ: ﴿لَوْ كانَ عَرَضاً قَرِيباً وَسَفَراً قاصِداً  لَاتَّبَعُوكَ﴾(  التوبة: 42), قَالَ ابْنُ عَرَفَةَ: سَفَرًا قَاصِدًا أَي  غيرَ شاقٍّ. والقَصْدُ: العَدْل&quot;[2], وقد جاء لفظ &quot;قصد&quot;في ستة مواضع[3] في القرآن الكريم يفيد اغلبها التوسط والاستقامة والاعتدال, وهي كالتالي:</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">1. اقصد: في قوله تعالى: ﴿واقصد في مشيك واغضض من صوتك﴾ (لقمان: 9),  أَيْ تَوَسَّطْ فِيهِ. وَالْقَصْدُ: مَا بَيْنَ الْإِسْرَاعِ وَالْبُطْءِ،  أَيْ لَا تَدِبَّ دَبِيبَ الْمُتَمَاوِتِي  نَ وَلَا تَثِبْ وَثْبَ  الشُّطَّارِ[4].</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">2. قصد: في قوله تعالى: ﴿وعلى الله قصد السبيل ومنها جائر﴾ (النحل:  9), أَيْ عَلَى اللَّهِ بَيَانُ قَصْدِ السبيل، فحذف المضاف وهو البيان.  والسبيل: السلام، أَيْ عَلَى اللَّهِ بَيَانُهُ بِالرُّسُلِ وَالْحِجَجِ  وَالْبَرَاهِينِ  . وَقَصْدُ السَّبِيلِ: اسْتِعَانَةُ الطَّرِيقِ، يُقَالُ:  طَرِيقٌ قَاصِدٌ أَيْ يُؤَدِّي إلى الْمَطْلُوبِ. ﴿وَمِنْها جائِرٌ﴾ أَيْ  وَمِنَ السَّبِيلِ جَائِرٌ، أَيْ عَادِلٌ عَنِ الْحَقِّ فَلَا يُهْتَدَى  بِهِ.[5]</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">3. قاصدا في قوله تعالى: ﴿لو كان عرضا قريبا وسفرا قاصدا لاتبعوك﴾ (التوبة: 42) أي سفرا سهلا معلوم الطريق.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">4. مقتصد: في قوله تعالى: ﴿فلما نجاهم إلى البر فمنهم مقتصد﴾ (لقمان: 32) أي عدل في العهد.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">5. مقتصد: في قوله تعالى: ﴿فمنهم ظالم لنفسه ومنهم مقتصد﴾ (فاطر: 32) أي ملازم للقصد وهو ترك الميل.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">6. مقتصدة: في قوله تعالى: ﴿منهم امة مقتصدة﴾ (المائدة: 66) أي منهم  قوم لم يكونوا من المؤذيين المستهزئين وَالِاقْتِصَادُ الِاعْتِدَالُ فِي  الْعَمَلِ، وَهُوَ مِنَ الْقَصْدِ، وَالْقَصْدُ إِتْيَانُ الشَّيْءِ،  تَقُولُ: قَصَدْتُهُ وَقَصَدْتُ لَهُ وَقَصَدْتُ إِلَيْهِ بِمَعْنًى[6].</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">مما سبق يتضح أن المعنى اللغوي للمقاصد لها استعمالات متعددة, كالاستقامة والاعتدال, والتوسط والحكمة إلى غير ذلك من المعاني.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#800000"><b>المقاصد في الاصطلاح</b><b>:</b></font><br />
+</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">يستخدم الأصوليون عادة المقاصد تحت معنى الهدف والغاية من الأحكام  الشرعية, وفي هذا البحث الذي يعني بالمقاصد القرآنية سوف اذكر تعريف  المقاصد الشرعية والمقاصد القرآنية التي هي أصل مقاصد الشريعة وعليها تدور  مقاصد الشريعة ومنها تستمد حتى يتبين المراد والمقصود.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">فقد عرف العلماء المقاصد بتعريفات عديدة, أما ما ذكره الإمام  الشاطبي الذي يعتبر أول من أرسى دعائم علم المقاصد, فإنه لم يحرص على إعطاء  حد وتعريف للمقاصد الشرعية، ولعله اعتبر الأمر واضحًا، ويزداد وضوحًا بما  لا مزيد عليه بقراءة كتابه المخصص للمقاصد من &quot;الموافقات&quot; ولعل ما زهده في  تعريف المقاصد كونه كتب كتابه للعلماء، بل للراسخين في علوم الشرعية[7]</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">أما ابن عاشور فقد عرف المقاصد الشرعية: المعاني والحكم الملحوظة  للشارع في جميع أحوال التشريع أو معظمها بحيث لا تختص ملاحظتها بالكون في  نوع خاص من أحكام الشريعة[8]</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">أما الدكتور أحمد الريسوني فقد عرف مقاصد الشريعة: بأنها الغايات التي وضعت الشريعة لأجل تحقيقها لمصلحة العباد[9]</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وقد استخلص اليوبي في كتابه مقاصد الشريعة الإسلامية أن تعريف  المقاصد: المعاني والحكم ونحوها التي راعاها الشارع, في التشريع عموما  وخصوصا, من أجل تحقيق مصالح العباد[10]</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">هذا بالنسبة لتعريف المقاصد الشرعية والتي يصلح أن تكون تعريف  للمقاصد اصطلاحا, أما بالنسبة لتعريف المقاصد القرآنية التي هي موضع دراستي  في هذه الرسالة, فانه قد ورد ذكر المصطلح في عدد من كتب المتقدمين من ذلك  كتاب القواعد للعز بن عبد السلام, ذكرها في عدة مواضع, وأيضا ذكره ابن  عاشور في مواضع عدة. أما من المعاصرين فقد ذكره عدد منهم أمثال الشيخ رشيد  رضا في تفسير المنار, مقاصد القرآن وغيرهم[11].</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وجاء في تعريف المقاصد: أنها الغايات[12] والأهداف التي أنزل الله تعالى القرآن من أجلها.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">ومن تعاريف مقاصد القرآن: (الأسرار والحكم والغايات التي نزل القرآن  لأجل تحقيقها جلبًا للمصالح، ودفعًا للمفاسد، وهي واضحة في جميع القرآن أو  معظمه)[13].</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وخلاصة القول إن هذه التعريفات في جملتها تدور على كون المقاصد تمثل  مراد الله في أحكامه وتشريعاته القرآنية والغايات التي نزل القرآن لأجل  تحقيقها مما فيه مصلحة للعباد في المعاش والمعاد.</font></span><br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font color="#0000ff">المبحث الثاني</font><br />
+</font></span></b><br />
+<br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font color="#800000">العلاقة بين مقاصد القرآن ومقاصد التشريع</font><br />
+</font></span></b><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">هناك اختلاف بين المقاصد القرآنية والمقاصد الشرعية فقد ارتبط لفظ  المقاصد بعلم أصول الفقه إلا أن الأصوليون لم يضعوا تعريفا, فمقاصد القرآن  يستنطقها المفسر من القرآن نفسه أما مقاصد الشريعة فيستخرجها الأصولي من  كتب الفقه وأصوله, كما أن مقاصد القرآن تعد شرطا للوقوف على مقاصد الشريعة  فمقاصد الشريعة تعد خطوة تالية للمقاصد القرآنية, كما أن مقاصد الشريعة  تتعلق بموضوع واحد من الموضوعات القرآنية وهو مجال الأحكام والتشريع. ولا  يخفى ما بين مقاصد القرآن[14],  ومقاصد التشريع من تعلق، فمقاصد التشريع بمعنى: &quot;المعاني التي لاحظها  الشارع في أحكامه والغايات التي لأجلها وضع هذه الأحكام&quot;، والتي لا تخرج عن  جلب المصالح ودرء المفاسد؛ إنما هي مستمدة من أصل التشريع الأول: القرآن  الكريم، وهي لذلك متضمنة في مقاصده العامة. فمقاصد القرآن[15]  من حيث المفهوم والمجال ليست منحصرة في المقاصد الشرعية (بمعناها التشريعي  الفقهي) وتختلف عنها, فان مقاصد القرآن تعني المحاور الكبرى والقضايا  العامة التي جاء القرآن لتقريرها, وبذلك تغدوا مقاصد الشريعة جزءا من مقصد  القرآن, إذ التشريع والأحكام جزء من القرآن الكريم وليس كل القرآن ولا يمكن  حصر الكلي في الجزئي.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وهناك من يعتبر أن مقاصد الشريعة هي نفسها مقاصد القرآن, وفي ضمن مقاصد القرآن وتبعا لها[16].</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وقد بين هذه العلاقة أبو إسحاق الشاطبي، حين ذكر ما انطوت عليه سور  القرآن الكريم من المقاصد الكبرى، ومنها سورة البقرة التي (قررت قواعد  التقوى المبنية على سورة الأنعام) وفيها نجد &quot;حفظ الدين... وحفظ النفس  والعقل والنسل والمال.</font></span><br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font color="#0000ff">المبحث الثالث</font><br />
+</font></span></b><br />
+<br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font color="#800000">العلاقة بين مقاصد القرآن ومقاصد السور</font><br />
+</font></span></b><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">&quot;مقاصد السور ومقاصد القرآن،هما نوعان متقاربان ومتداخلان، أما  مقاصد السور فقد كانت محط عناية المفسرين، وممن كان له اهتمام خاص بمقاصد  السور من المتقدمين الإمام البقاعي في كتابه: &quot;مصاعد النظر في مقاصد  السور&quot;، وأيضا في تفسيره: &quot;نظم الدرر في تناسب الآيات والسور&quot;؛ حيث اهتم  بإبراز مقاصد السور في بداية تفسيره لها واطرد عنده هذا الأمر كثيرا، ولم  يغب هذا النظر عند بعض من تقدمه من المفسرين كأبي حيان والرازي والقرطبي  وابن عطية، وإن لم يطرد.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">أما مقاصد القرآن، فإن النظر فيها أعم، وأقرب ما يكون إلى مقاصد  التشريع، لذلك وجدناه واضحا عند المتأخرين ممن اهتموا بتجديد أمر التفسير  وبمقاصد التشريع؛ كالشيخ رشيد رضا والشيخ الطاهر بن عاشور، إلا أن هذا  الأمر لم يغب تماما عند بعض المتقدمين، الذين ألمحوا بإشارات عابرة مختصرة  إلى مقاصد القرآن وأهمية مراعاتها في التفسير&quot;[17]. فالسور القرآنية كانت مدخلا عند العديد من المفسرين للحديث عن مقاصد القرآن الكريم[18],  انطلاقا من أن لكل سورة موضوع عام ومقصد محدد, وأن مقاصد القرآن هي مجموع  مقاصد سوره, وأن فضل السورة يتأتى من نسبة ما تضمنته من هذه المقاصد.</font></span><br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font color="#0000ff">المبحث الرابع</font><br />
+</font></span></b><br />
+<br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font color="#800000">الأهمية والفائدة الإجمالية لمعرفة مقاصد القرآن الكريم</font><br />
+</font></span></b><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">فمن أهم ما يستفاد[19] من معرفة مقاصد القرآن الكريم -وخاصة مقاصدَه العامة- ما يلي:</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">1. معرفة مقاصد القرآن الكريم هي المدخل السليم إلى فهم الرسالة  القرآنية الإسلامية على وجهها الصحيح، بلا زيادة ولا نقصان، ولا إفراط ولا  تفريط. فمقاصد القرآن، إنما هي ما نَص عليه القرآن، وما نزل لأجله القرآن،  وماس استُخلص من جُملةٍ من معانيه وأحكامه.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">2. معرفة هذه المقاصد العامة واستحضارها عند قراءة القرآن وتدبره،  تـمَكِّن قارئَه من الفهم السليم للمعاني التفصيلية والمقاصد الخاصة  لأمثاله وقصصه ووعده ووعيده، ولكل آية وكل لفظ وكل حكم ورد فيه.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">3. بمعرفة مقاصد القرآن يتسدد فهمنا لمقاصد السنة النبوية جملة  وتفصيلا، ومن خلال ذلك يتسدد النظر الفقهي والاجتهاد الفقهي، كما سأبين  لاحقا إن شاء الله تعالى وبعونه.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">4. مقاصد القرآن هي الميزان والمعيار الذي يجب أن نزن به أعمالنا  الفردية والجماعية، وحياتنا الخاصة والعامة، فكل عمل قلبي أو أخلاقي أو  اقتصادي أو سياسي أو عسكري أو حضاري لا يهتدي بمقاصد القرآن، وبمقاصده في  القرآن، فهو حائد عن هدي القرآن. خذ مثالا على ذلك أن من أهم مقاصد القرآن  التي سبقت الإشارة إليها مقصد إقامة العدل، فهذا المقصد الكبير معيار نزن  به مواقفنا الشخصية، وعقودنا المالية، كما نزن به القضاء العادل والسياسة  العادلة. ومثاله أيضا أن الزواج مقصده في القرآن أن يكون سكينة ورحمة، فكل  زواج إسلامي يوزن بمدى تحقيقه هذه السكينة والرحمة.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">5. مقاصد القرآن هي الميزان والمعيار الذي لا بد منه كذلك للمفسرين  في مناهجهم وتفسيراتهم؛ فبمعرفتها ومراعاتها يضمن المفسر لنفسه ولتفسيره أن  تكون اهتماماته ومقاصده واستنباطاته في نطاق مقاصد القرآن، بلا زيادة ولا  نقصان. وهذا ضرب من “تفسير القرآن بالقرآن”، ويمكن تسميته “تفسير القرآن في  ضوء مقاصده”.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وهذه هي الفائدة العلمية الأهم والأوسع أثرا؛ وهي التي تعصم  المفسرين من الانجرار وراء أمور لا مكان لها في مقاصد الكتاب العزيز.  ومعلوم أن المفسر إذا استقام منهجه في تفسيره، انعكس خير ذلك وأثرُه على  قرائه وعلى عامة المسلمين، وإذا اختل منهجه ونتائجه، انتقل ذلك إليهم وأصبح  دينا لهم…كما يذكر أن من أهمية المقاصد ككل تكمن في كونه يبحث ويدرس  ويُـبرز جوهر الشريعة وغاية رسالتها، ويكشف عن حِكَمها ومقاصد أحكامها. وهو  بذلك الجدير بإبراز محاسنها ومكارمها، ونفي الأفهام والتفسيرات المشوِّهة  لها. وبهذه الخصائص النفيسة يتمكن هذا العلم من التقويم والتسديد والإمداد  لسائر العلوم والدراسات الإسلامية. &quot;ثم أن الانفتاح على مقاصد القرآن  الكريم الكلية وتوظيفها في مشروع نهضوي تتبدل فيه كل الأفكار والقيم  والعادات والتقاليد الساذجة التي أنعشتها الإسرائيليات والتي عطلت العقل  المسلم وحجبته عن فهمه لمرادات الشارع المقدس يتوقف على الترقي في مراتب  هذا المنهج, أعني من القراءة الواعية الهادفة إلى القراءة العلمية  المتخصصة, كما يوفر هذا المنهج وعي الآيات القرآنية الكريمة إلى درجة  الإشراف على الطفرات الاجتماعية الكبرى في تاريخ البشرية, لاسيما عند دراسة  السنن القرآنية للتاريخ وكيفية التحكم بمسار الأحداث وهذا الوعي القرآني  هو الذي يحصن الفرد والمجتمع, ويسد الفراغ الإيديولوجي الذي أدى إلى غربة  المسلم المؤمن في مجتمعه وعلى أرضه, بسبب الاستيراد الفوضوي للثقافات  الهابطة من هنا وهناك&quot;[20].</font></span><br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font color="#008080">المبحث الخامس</font><br />
+</font></span></b><br />
+<br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font color="#0000ff">تقسيمات العلماء للمقاصد القرآنية</font><br />
+</font></span></b><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#800000"><b>أولا:</b> <b>مقاصد</b> <b>القرآن</b> <b>الكريم</b> <b>عند المتقدمين:</b></font><br />
+</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">بذل العلماء السابقون والمعاصرون جهودا كبيرة في الكشف عن مقاصد  القرآن وتوضيحها وان لم يكونوا يذكروا ذلك بلفظ الصريح-مقاصد القرآن- فانه  لم تخل العديد من كتب التفسير من إشارات إلى مقاصد القرآن عند ذكر غرض  المفسر من تفسيره, ومن العلماء المتقدمين في ذكر المقاصد:</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>إمام الحرمين الجويني</b> <b>(ت</b><b>:</b> <b>478ه)</b><b>:</b>  رائد علم المقاصد, فهو أول من طرحها على بساط البحث, في كتابه البرهان في  أصول الفقه, حيث كان يردد كثيرا لفظ المقصد والمقصود والقصد ويشير إلى  أهمية المقاصد وكان له السبق في الإشارة إلى الضروريات الخمس[21].</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وحذا حذوه <b>الإمام أبو حامد الغزالي</b> <b>(ت</b><b>:</b> <b>505ه)</b>:  ولكنه أضاف وطور وأبدع حيث أوضح الضروريات والحاجيات والتحسينيات, وذكر  بعض الأدلة التي يمكن من خلالها الوصول إلى المقاصد, وأشار إلى بعض قواعد  المقاصد في كتابه &quot;جواهر القرآن &quot;ويعد أبو حامد الغزالي[22]  الوحيد من بين القدماء الذي وضع تصنيفا واضحا ودقيقا لمقاصد القرآن. وقد  قسم الغزالي  المقاصد حيث قال في جواهر القرآن: &quot;فلذلك انحصرت سُوَرُ  القرآن وآياتُه في ستة أنواع: ثلاثة منها: هي السوابق والأصول المُهِمِّة,  وثلاثة: هي الرَّوادف والتوابع المُغنِيَة المُتِمَّة.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">أما الثلاثة المُهِمَّة فهي: تعريف المدعو إليه, وتعريف الصراط  المستقيم الذي تجب ملازمته في السلوك إليه, وتعريف الحال عند الوصول إليه.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وأما الثلاثة المُغْنِيَة المُتِمَّة:</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">فأحدها: تعريف أحوال المُجيبين للدعوة ولطائف صُنع الله فيهم؛  وسِرُّهُ ومقصودُه التشويقُ والترغيبُ، وتعريفُ أحوال النَّاكبين  والنَّاكلين عن الإجابة وكيفيةُ قمعِ الله لهم وتنكيلِهِ لهم؛ وسِرُّهُ  ومقصوده الاعتبار والترهيب.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وثانيها: حكاية أحوال الجاحدين، وكَشْفُ فضائحهم وجهلهم بالمجادلة  والمُحاجَّة على الحق، وسِرُّه ومقصوده في جنب الباطل الإِفضاحُ  والتَّنْفير، وفي جَنب الحق الإيضاحُ والتَّثْبيتُ والتَّقهير.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وثالثها: تعريف عمارة منازل الطريق، وكيفية أخذ الزاد والأُهبة والاستعداد.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">فهذه ستة أقسام&quot;[23]. ويمكن القول: إن مقاصد[24]  القرآن الأساسية بحسب الغزالي هي: 1- التوحيد (تعريف المدعو إليه), 2-  المعاد أو الوعد والوعيد (تعريف الحال عند الوصول إليه), 3- القصص(تعريف  أحوال السالكين والناكبين),4- أحكام التشريع (تعريف عمارة منازل الطريق).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"> فهذا التقسيم[25]  الذي جاء به الغزالي يبدو شاملا لجميع مقاصد القرآن, وسنجد أن تصنيف  العلماء بعد الغزالي لمقاصد القرآن لا يكاد يخرج عما ذكره, كما أن مقاصد  الشريعة التي يعبر عنها العلماء بالكليات الخمس أدرجها الغزالي ضمن المقصد  الأخير, المتعلق بعمارة منازل الطريق وهذا الأمر يعزز ما ذهبنا إليه من أن  مقاصد القرآن تختلف عن مقاصد الشريعة فهذا مقصد واحد من مقاصد الشريعة.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وكذلك الإمام ابن العربي فقد كان ممن اشتهر  بتفسير النصوص مع مراعاة المقاصد الشرعية, وذلك في شروحاته الحديثة  كالمسالك والقبس كلاهما في الموطأ, وكذلك في عارضة الأحوذي في شرح جامع  الترمذي, وكذلك في أحكام القرآن[26]. وقد كان التفسير المقاصدي عند ابن العربي في أحكام القرآن يقوم على أساسين[27], هما: 1- النظر إلى معاني النصوص, بتعليلها ومعرفة أسرارها وحكمها, دون الوقوف على ظواهرها.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">2-النظر إلى الأحكام من حيث مقصودها في جلب المصالح ودرء المفاسد.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وأما عناصر[28]  نظرية التفسير المقاصدي عنده فقد شملت التيسير ورفع الحرج, النظر إلى  المعاني المرادة وعدم الوقوف على ظواهر الألفاظ, النظر إلى المال ومنه سد  الذرائع, وتحريم الحيل, واعتبار المصلحة, ومقاصد المكلفين, وتعليل  العبادات, وأما طريقته[29] في توظيف المقاصد عمليا فقد جاءت على شكلين: تقصيد الآيات القرآنية, والاستدلال بالمقاصد على الأحكام.      </font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">والإمام <b>العز بن عبد السلام</b> <b>(ت660ه)</b><b>:</b>  الذي تفرد بكتابه (قواعد الأحكام في مصالح الأنام) بالكلام عن المصالح  والمفاسد وارتباط الأحكام بالمقاصد وقد أبدع في هذا الكتاب وأشبع الكلام عن  مقاصد الشارع وأثرها في تفسير النصوص وقد عرف المقاصد والمفاسد, وقسم  المقاصد إلى دنيوية وأخروية, كما وظف المقاصد في الترجيح بين المصالح  والمفاسد, وأشار أيضا إلى بعض طرق الكشف عن المقاصد, وتطرق أيضا إلى  المقاصد الجزئية للأحكام الشرعية[30].</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>والإمام القرافي (ت</b><b>:</b> <b>684ه)</b><b>:</b> الذي عده ابن عاشور من المؤسسين للمقاصد في كتابه الفروق والذخيرة[31].  وقد ذكر من خلال كتابه (الفروق) بعض القواعد المتعلقة بالمقاصد وهي  مستفادة من شيخه مثل قاعدة المقاصد وقاعدة الوسائل. وقاعدة المشقة المسقطة  للعبادة والمشقة التي لا تسقطها.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"> وأيضاً في كتابه (شرح تنقيح الفصول) ذكر الضروريات، وذكر  المقاصد الخمسة وذكر الخلاف في العرض وكذلك نجد اهتمامه بالمقاصد في كتابه  (النفائس) أكثر وأكثر فقد ذكر جملة من القواعد والفوائد المتعلقة بالمقاصد[32].</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>والإمام ابن تيمية</b> <b>(ت728ه)</b><b>:</b>  الذي لا يخلو مؤلف من مؤلفاته من ذكر المقاصد, وهذا واضح في مواضع كثيرة  من مجموع الفتاوى ومن الفتاوى الكبرى ومن مظاهر التجديد عند ابن تيمية في  المقاصد: اعتراضه على حصر المقاصد في الضروريات الخمس إذ تتعدى عنده إلى  معان أخرى كحب الله والخوف منه, والإخلاص في الدين والعمل به[33].</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>وابن القيم</b> <b>(ت</b><b>:</b> <b>751ه)</b><b>:</b>  الذي نحا منحا شيخه ابن تيمية في رعايته لمقاصد الشريعة لاسيما في كتابه  الفذ أعلام الموقعين عند الكلام على رفع الحرج وسد الذرائع ومنع الحيل  الشرعية[34].</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>والإمام الشاطبي</b><b>:</b> وقد ذهب ابن عاشور إلى أن الشاطبي هو الذي أفرد المقاصد بالتدوين في كتابه الموافقات. والشاطبي[35] لم يعمد إلى وضع حد أو رسم للمقاصد, بل بدأ مباشرة ببيان المقاصد من خلال بيان أقسامها، فقسمها إلى قسمين: قصد الشارع؛ وقصد المكلف.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>القسم الأول</b>: قصد الشارع: وقسمه إلى أربعة أنواع هي:</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">1- قصد الشارع إلى وضع الشريعة ابتداءً أي بالقصد الذي يعتبر في  المرتبة الأولى، ويكون ما عداه كالتفصيل له، وهذا القصد الأول, وهو الذي  قال فيه الشاطبي: «تكاليف الشريعة ترجع إلى حفظ مقاصدها في الخلق، وهذه  المقاصد لا تعدو أن تكون ثلاثة أقسام: ضرورية، وحاجية، وتحسينية», وهذه  المقاصد تجمعها قاعدة «درء المفاسد وجلب المصالح».</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">2- قصد الشارع في وضع الشريعة للإفهام.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">3- قصد الشارع في وضع الشريعة للتكليف بمقتضاها.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">4- قصد الشارع في دخول المكلف تحت أحكام الشريعة.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>القسم الثاني</b>: قصد المكلف: وخصصه لمقاصد المكلف في  التكليف، مؤكداً أن العمل إذا تعلق به القصد تعلقت به الأحكام التكليفية،  وإذا عرى عن القصد لم يتعلق به شيء منها.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">  وهذه التقسيمات تجمع مدلول المقاصد عند الشاطبي، الذي يمتد ليشمل  المقاصد المصلحية والدلالية للخطاب الشرعي والمرتبطة في تحققها واقعاً  بامتثال المكلف.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"> &quot;وقد ورد كلام العلماء عن مقاصد القرآن في مناسبات عديدة منها: في  مقدمات التفسير كما فعل ابن جزي (741ه) في مقدمة تفسيره تحت باب سماه: &quot;في  المعاني والعلوم التي تضمنها القرآن&quot; حيث ميز في مقاصد القرآن بين عام  وتفصيلي، فقال: &quot;أما الجملة فاعلم أن المقصود بالقرآن دعوة الخلق إلى عبادة  الله وإلى الدخول في دينه. وفي كتب علوم القرآن عند الكلام عن أقسام علوم  القرآن كما فعل السيوطي (900ه) وعند الكلام عن سورة الفاتحة واحتوائها على  كل مقاصد القرآن الكريم, وعند الكلام عن تحقيق بعض المقاصد في سور عديدة  كالكوثر والكافرون&quot;[36]</font></span><br />
+<br />
+<font size="5">يتبع</font><br />
+</div><span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_917257" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_917257" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=917257" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_917257" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_917258">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-09-21,&nbsp;<span class="time">03:50 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post917258" href="showthread.php?t=177589&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=917258#post917258" class="postcounter">#2</a><a id="postcount917258" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,720</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: المقاصد القرآنية بين المتقدمين والمتأخرين
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_917258">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><b><font size="6"><span style="font-family: arabic typesetting"><font color="#ff0000"><b>المقاصد</b> <b>القرآن</b><b>ية بين المتقدمين والمتأخرين</b></font><br />
+</span></font></b><br />
+ <b><font size="6"><span style="font-family: arabic typesetting"><font color="#800080"><b>أ.</b> <b>عائشة عبد</b> <b>الملك محمد سعد</b></font><font color="#800080"><b>[*]</b></font><br />
+</span></font></b><br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font size="6"><font color="#008000"><b>د</b><b>.</b> <b>محمد نجيب بن عبد</b> <b>القادر</b></font><font color="#008000"><b>[**]<br />
+</b></font></font></font></span></b><span style="font-family: arabic typesetting"><font size="5"><font color="#0000ff"><b>ثانيا</b><b>:</b> <b>مقاصد</b> <b>القرآن</b> <b>الكريم</b> <b>عند المتأخرين</b><b>:</b></font></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"> جاء ذكر مقاصد القرآن عند بعض العلماء والمفسرين المتأخرين بنفَس  مختلف عما ورد عند المتقدمين، ونجد أن الثروة العلمية في المرحلة المعاصرة  قد لعبت دورا ملموسا في إحياء روح المعاني القرآنية ومقاصد القرآن الكريم  وقد طهر ذلك جليا في مصنفاتهم نذكر منها:</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>مقاصد</b> <b>القرآن</b> <b>الكريم</b> <b>عند رشيد رضا</b> في كتابه الوحي المحمدي حيث جعل مقاصد القرآن عشرة[37]:</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">المقصد الأول: الإصلاح الديني لأركان الدين الثلاثة: الإيمان بالله وعقيدة البعث والجزاء والعمل الصالح.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">المقصد الثاني: بيان ما جهل البشر من أمر النبوة والرسالة ووظائف الرسل.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">المقصد الثالث: بيان أن الإسلام دين الفطرة السليمة والعقل والفكر  والعلم والحكمة والبرهان والحجة والضمير والوجدان والحرية والاستقلال.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">المقصد الرابع: الإصلاح الاجتماعي الإنساني والسياسي الذي يتحقق  بالوحدات الثمان: وحدة الأمة، ووحدة الجنس البشري، ووحدة الدين، ووحدة  التشريع بالمساواة في العدل، ووحدة الأخوة الروحية، ووحدة المساواة في  العبد، ووحدة الجنسية السياسية الدولية، ووحدة القضاء، ووحدة اللغة.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">المقصد الخامس: تقرير مزايا الإسلام العامة في التكاليف الشخصية من  العبادات والمحظورات، أهم هذه المزايا: الوسطية، والوصول إلى سعادة  الدارين، والتعارف والتأليف بين البشر، والتيسير، وعدم الغلو، وقلة  التكاليف وسهولتها، وعزائم ورخص، ومراعاة درجات البشر من العقل والفهم،  والمعاملة بالظاهر، ومدار العبادات على إتباع ما جاء به النبي e.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">المقصد السادس: بيان حكم الإسلام السياسي الدولي: نوعه وأساسه وأصوله العامة.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">المقصد السابع: الإرشاد إلى الإصلاح المالي.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">المقصد الثامن: إصلاح نظام الحرب ودفع مفاسدها، وقصرها على ما فيه خير البشر</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">المقصد التاسع: إعطاء النساء جميع الحقوق الإنسانية والدينية والمدنية.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">المقصد العاشر: هداية الإسلام في تحرير الرقيق.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#800000"><b>مقاصد</b> <b>القرآن</b> <b>الكريم</b> <b>عند عبد العظيم الزرقاني</b><b>:</b></font><br />
+</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">أجمل الشيخ عبد العظيم الزرقاني مقاصد القرآن الكريم[38] في ثلاثة مقاصد وهي<b>:</b> أن يكون هداية الثقلين, وأن يقوم لتأييد النبي e, وأن يتعبد الله خلقه بتلاوة هذا الطراز الأعلى من كلامه المقدس.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">ونلاحظ أن المقاصد عند الزرقاني تتعلق بالمقاصد العامة من إنزال القرآن.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#800000"><b>مقاصد</b> <b>القرآن</b> <b>الكريم</b> <b>عند محمود شلتوت</b><b>:</b></font><br />
+</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">قسم العلامة[39]  محمود شلتوت مقاصد القرآن في كتابه إلى القرآن الكريم إلى ثلاثة أنواع:  ناحية العقيدة, والأخلاق, والأحكام. فالعقائد تطهر القلب من بذور الشرك  والوثنية, وتربطه بمبدأ الروحية الصافية, والأخلاق تهذب النفس وتزكيها  وترفع من شان الفرد والجماعة و..., والأحكام هي ما بينه الله في كتابه أو  بين أصوله من النظم التي يجب اتباعها في تنظيم علاقة الإنسان بربه وعلاقته  بأخيه الإنسان.<br />
+</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#800000"><b>مقاصد</b> <b>القرآن</b> <b>الكريم</b> <b>عند الشيخ الطاهر بن عاشور</b><b>:</b></font><br />
+</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">فقد لخص العلامة ابن عاشور في مقدمة تفسيره مقاصد القرآن فقال: المقاصد الأصلية التي جاء القرآن لتبيانها بحسب ما بلغ إليه استقراؤنا[40] ثمانية أمور:</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>الأول</b><b>:</b> إصلاح الاعتقاد وتعليم  العقد الصحيح. وهذا أعظم سبب لإصلاح الخلق, لأنه يزيل عن النفس عادة  الإذعان لغير ما قام عليه الدليل, ويطهر القلب من الأوهام الناشئة عن  الإشراك والدهرية وما بينهما, وقد أشار إلى هذا المعنى قوله تعالى: ﴿فما  أغنت عنهم آلهتهم التي يدعون من دون الله من شيء لما جاء أمر ربك وما  زادوهم غير تتبيب﴾. فأسند لآلهتهم زيادة تتبيبهم, وليس هو من فعل الآلهة,  ولكنه من آثار الاعتقاد بالآلهة.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>الثاني</b><b>:</b> تهذيب الأخلاق. قال  تعالى: وإنك لعلى خلق عظيم. وفسرت عائشة رضي الله تعالى عنها لما سئلت عن  خلقه e فقالت: كان خلقه القرآن. وفي الحديث الذي رواه مالك في الموطأ بلاغا  أن رسول الله e قال: &quot;بعثت لأتمم مكارم حسن الأخلاق&quot;, وهذا المقصد قد فهمه  عامة العرب بله خاصة الصحابة، وقال أبو خراش الهذلي مشيرا إلى ما دخل على  العرب من أحكام الإسلام بأحسن تعبير:</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">فليس كعهد الدار يا أم مالك           ولكن أحاطت بالرقاب السلاسل</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وعاد الفتى كالكهل ليس بقائل        سوى العدل شيئا فاستراح العواذل</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">أراد بإحاطة السلاسل بالرقاب أحكام الإسلام. والشاهد في قوله وعاد الفتى كالكهل.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>الثالث</b><b>:</b> التشريع وهو الأحكام  خاصة وعامة. قال تعالى: ﴿إنا أنزلنا إليك الكتاب بالحق لتحكم بين الناس بما  أراك الله﴾. ﴿وأنزلنا إليك الكتاب بالحق مصدقا لما بين يديه من الكتاب  ومهيمنا عليه فاحكم بينهم بما أنزل الله﴾. ولقد جمع القرآن جميع الأحكام  جمعا كليا في الغالب، وجزئيا في المهم, فقوله: ﴿تبيانا لكل شيء﴾. وقوله:  ﴿اليوم أكملت لكم دينكم﴾. المراد بهما إكمال الكليات التي منها الأمر  بالاستنباط والقياس. قال الشاطبي لأنه على اختصاره جامع والشريعة تمت  بتمامه ولا يكون جامعا لتمام الدين إلا والمجموع فيه أمور كلية.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"> ويعد ابن عاشور أول من أفرد المقاصد بمصنف مستقل أسماه &quot;مقاصد الشريعة الإسلامية&quot;.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#800000"><b>مقاصد</b> <b>القرآن</b> <b>الكريم</b> <b>عند علال الفاس</b><b>ي</b> <b>(ت</b><b>:</b> <b>1394ه)</b><b>:</b></font><br />
+</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"> لعلال الفاسي رحمه الله كتاب: مقاصد الشريعة الإسلامية  ومكارمها وقد تكلم فيه عن المقاصد الشرعية وقد تميّز بالاختلاف عمّا دأب  عليه الأصوليون، حين يكتبون في المقاصد؛ وهذا أمر نلاحظه بوضوح عبر فصول  كتابه الموسوم بـ”مقاصد الشريعة الإسلامية ومكارمها”. ونظراته المقاصدية[41] لم تنحصر في هذا الكتاب فحسب بل ظهرت في مؤلفات أخرى له أيضا ك: دفاع عن الشريعة, النقد الذاتي.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وقد اعتنى بمقاصد القرآن وجعل المقصد العام هداية البشر, والمقصد العام للشريعة عمارة الأرض وإقامة النظام.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#800000"><b>مقاصد</b> <b>القرآن</b> <b>عند عبد الكريم حامدي</b><b>:</b></font><br />
+</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">فهو من المهتمين بعلم المقاصد عموما وله كتاب مدخل إلى علم  المقاصد, وكذلك مقاصد القرآن من تشريع الأحكام, وقد انطلق من تقسيم ابن  عاشور للمقاصد إلى مقاصد عامة, ومقاصد خاصة. فأما المقاصد العامة فقسمها  كابن عاشور إلى ثلاث أقسام: تحقيق الصلاح الفردي, والصلاح الاجتماعي,  والصلاح العالمي. وأما المقاصد الخاصة فقد استمد أقسامها مما ذكره رشيد رضا  فأجملها في: إصلاح العقل, وإصلاح النفس, وإصلاح الجسم, والإصلاح العائلي,  والإصلاح المالي, والإصلاح العقابي, والإصلاح السياسي, والإصلاح التشريعي.  ويمكن القول أن عبد الكريم حامدي استخدم مصطلح مقاصد القرآن لكن بمفهوم  مصطلح مقاصد الشريعة فالمقاصد التي بنى عليها حامدي دراسته هي ضمن مقصد  واحد من مقاصد القرآن العامة هو مقصد التشريع[42].<br />
+</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#800000"><b>مقاصد</b> <b>القرآن</b> </font></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">أفرد المقاصد بالتأليف بعد البحث والدراسة. حيث كتب بحثا قدمه للندوة التأسيسية لمركز دراسات مقاصد الشريعة الإسلامية[43]  التي عقدتها مؤسسة الفرقان للتراث الإسلامي في لندن عام 2005م, وطبع لاحقا  ضمن كتاب أصدره المركز تحت عنوان مقاصد الشريعة الإسلامية ثم وسعه وجعله  كتابا مستقلا تحت عنوان: بين المقاصد الكلية والنصوص الجزئية دراسة في فقه  مقاصد الشريعة. وهو الكتاب الذي فصل فيه نظريته في المقاصد وعلاقتها  بالمدرسة الوسطية والفكر الوسطي.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">والمقاصد عند القرضاوي تأخذ مفهوم المبادئ التي لا تصلح الإنسانية  بغيرها, وقد ذكر سبعة من مقاصد القرآن, رأى أن القرآن أكدها وكررها وعنى  بها اشد العناية, فقد لخص هذه المقاصد في سبعة:</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">1- تصحيح العقائد والتصورات للألوهية والرسالة والجزاء, وذلك بإرساء دعائم التوحيد.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">2- تقرير كرامة الإنسان وحقوقه.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">3- عبادة الله وتحقيق العبودية لله. ﴿وما خلقت الجن والإنس إلا ليعبدون﴾.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">4- تزكية النفس البشرية ﴿ونفس وما سواها﴾</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">5- تكوين الأسرة وإنصاف المرأة.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">6- بناء الأمة الشهيدة على البشرية بأن تكون متميزة عن غيرها.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">7- الدعوة إلى عالم إنساني متعاون[44].</font></span><br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font color="#0000ff">المبحث السادس</font><br />
+</font></span></b><br />
+<br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font color="#800000">طرق العلماء في الكشف عن المقاصد القرآنية</font><br />
+</font></span></b><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">نجد أن العلماء تكلموا في المسالك التي تستخدم في استخراج المقاصد  وبعض الطرق والجهات التي يُعرف بها مقصد الشارع من تشريع الحكم؛ وقد كانت  ترد في ثنايا كلامهم عن أسرار الشريعة وغاياتها؛ وأنها معللة بمصالح العباد  وغير ذلك؛ وإن لم ينصوا عليها في مباحث ومسائل مستقلة؛ أو أنهم كانوا  يوردون هذه الطرق من غير ذكر أنها مسالك يعرف بها حكم التشريع وأسرار  التكليف. وقد بيَّن الأصوليون مسالك الكشف عن العلة من نقلية وعقلية في  مجال القياس، غير أن محاولتي الشاطبي ثم ابن عاشور فيما بذلاه من جهد  لتقعيد مسالك الكشف عن مقاصد الشريعة, تُعدُّ خطوة متقدمة في هذا السبيل  لإنارة درب المجتهد في تبين مقاصد الأحكام المجردة.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وقد اعتمد الشيخ النورسي منهج الاستقراء في تحديد المقاصد القرآنية, حيث تحتاج عملية استخلاص مقصد عام لدين الإسلام إلى دراسة[45]  استقرائية, متفحصة ومتدرجة في نصوص الوحي قرانا وسنة, تبدأ من جرد المقاصد  الجزئية في مختلف مجالات التشريع, ثم تتجه نحو مقاصد أساسية أكثر عمومية,  وتستخرج منها مقصدا واحدا عاما يجمع ما تفرق فيما دونه من المقاصد الأخرى ,  والتي يجب أن ترتبط به بوجه من الوجوه.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وقد ذكر الشيخ ابن عاشور ثلاث[46] من الطرق التي يتوصل بها إلى إثبات المقاصد الشرعية وهي:</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>الطريق الأول</b>: وهو أعظمها، استقراء الشريعة في  تصرفاتها، وهو على نوعين: أعظمهما: استقراء الأحكام المعروفة عللها، الآيل  إلى استقراء تلك العلل المثبتة بطرق مسالك العلة. والنوع الثاني: استقراء  أدلة أحكام اشتركت في علة، بحيث يحصل لنا اليقين بأن تلك العلة مقصد مراد  للشارع.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>الطريق الثاني</b>: أدلة القرآن الواضحة الدلالة التي  يضعف احتمال أن يكون المراد منها غير ما هو ظاهرها بحسب الاستعمال العربي،  بحيث لا يشك في المراد منها إلا من شاء أن يدخل على نفسه شكا لا يعتد به.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>الطريق الثالث</b>: السنة المتواترة، وهذا الطريق لا  يوجد له مثال إلا في حالين: الأول: التواتر المعنوي الحاصل من مشاهدة عموم  الصحابة عملا من النبي، e، فيحصل لهم علم بتشريع في ذلك يستوي فيه جميع  المشاهدين. والثاني: تواتر عملي، يحصل لآحاد الصحابة من تكرر مشاهدة أعمال  رسول الله e بحيث يستخلص من مجموعها مقصدا شرعيا.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وقد أورد[47] الإمام نور الدين الخادمي في كتابه مقاصد الشريعة الإسلامية, مسلكين للكشف على المقاصد وهي:</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">1- الاستنباط المباشر من القرآن والسنة, سواء من خلال مجرد الأمر  والنهي الابتدائيين التصريحيين، أو من خلال اعتبار علل الأمر والنهي.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">2- الاستخراج من المقاصد الأصلية والتابعة, فالمقاصد الأصلية: هي  المقاصد التي شُرعت ابتداءً وقُصرت أولًا وأساسًا، ومثالها: التناسل وإعمار  الكون، هو المقصد الأصلي للزواج، أما المقاصد التابعة؛ فهي المقاصد التي  شُرعت بدرجة ثانية بعد المقاصد الأصلية قصد تقويتها وتأكيدها، ومثالها في  الزواج: الاستمتاع بالزوجة، والأنس بالذرية، والتجمل بمال المرأة، وتحقيق  الراحة النفسية.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وجاء في كتاب مقاصد الشريعة الإسلامية لليوبي[48] أن طرق معرفة المقاصد ما يلي:</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">1- الاستقراء.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">2- معرفة علل الأمر والنهي.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">3- مجرد الأمر والنهي الابتدائي التصريحي.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">4- التعبيرات التي يستفاد منها معرفة المقاصد.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">5- سكوت الشارع عن التسبب أو عن شرعية العمل مع قيام المعنى المقتضي له.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">فنلاحظ مما سبق أن لكل عالم ومجتهد طرق ذكرها في استخراج أو معرفة  المقاصد كونها لم تتعين بواسطة نصوص معلومة ولم تتحدد بواسطة أدلة خاصة</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وكذلك كان للإمام الشاطبي ومن قبله طرق ومسالك في استخراج المقاصد  بشكل عام ليس هنا مجال لبحثه وذكره, وإنما نلاحظ أن الاستقراء هو أكثر ما  اجمع عليه العلماء لمعرفة مقاصد القرآن إلى جانب المسالك الأخرى.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">والاستقراء <b>في اللغة</b>: التتبع[49], <b>وفي الاصطلاح</b><b>:</b> هو تصفح الجزئيات لإثبات حكم كلي. أو هو[50] تصفح أمور جزئية ليحكم بحكمها على أمر يشمل تلك الجزئيات.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">والاستقراء على قسمين:</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">1- استقراء تام: وهو تتبع جميع الجزئيات ما عدا صورة النزاع، وهذا دليل قطعي عند أكثر العلماء ـ على إثبات الحكم في صورة النزاع.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">2- استقراء ناقص: وهو تتبع أكثر الجزئيات ويسمى عند الفقهاء بـ (إلحاق الفرد بالأغلب). وهذا دليل ظني. وقال في[51]  المستصفى: التام يصلح للقطعيات وغير التام لا يصلح إلا للفقيهات, لأنه  مهما وجد الأكثر على نمط, غلب على الظن أن الآخر كذلك, والمراد هنا أن  الاستقراء [52]من الطرق التي تعرف بها مقاصد الشريعة.<br />
+</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#800000"><b>الخلاصة</b><b>:</b></font><br />
+</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">وردت كثير من التعريفات للمقاصد القرآنية وخلاصة  القول إن هذه التعريفات في جملتها تدور على كون المقاصد تمثل مراد الله في  أحكامه وتشريعاته القرآنية والغايات التي نزل القرآن لأجل تحقيقها مما فيه  مصلحة للعباد في المعاش والمعاد.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">أن العلماء القدامى والمحدثين قد بذلوا جهودا كبيرة في الكشف عن  مقاصد القرآن الكريم بهدف فهم القرآن الكريم فهما دقيقا وقد اهتموا بهذا  الأمر تحت مسميات عديدة. وان دراسة مقاصد القرآن هي اللبنة الأولى التي  تعيننا على فهم القرآن الكريم وهداياته فهما شموليا دقيقا.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">إن كثير من العلماء والباحثين خلطوا بين مقاصد الشريعة ومقاصد  القرآن, واعتبروا أن مقاصد الشريعة هي مقاصد القرآن, والصحيح أن، مقاصد  الشريعة جزء من مقاصد القرآن إذ التشريع جزء من القرآن وليس كل القرآن, كما  أن من  العلماء القدامى من اهتموا بمقاصد السور ولكن مقاصد القرآن وجد  واضحا عند المتأخرين ممن اهتموا بتجديد أمر التفسير.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">أن كل مرحلة اتسمت بمميزات عن سابقتها وكل عالم أو مفسر نظر  للمقاصد من زاوية مختلفة تتأثر بكثير من الأحيان بخلفيات أصحابها الفكرية  والعلمية.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">العلماء القدامى ذكروا مقاصد القرآن في أثناء تفسيرهم للآيات, أو  حديثهم عن مقاصد الشريعة على وجه الإجمال, وأما مقاصد القرآن وتفصيلها  فأكثر من عني به العلماء المتأخرون. ومنهم ابن عاشور وغيره من المعاصرين.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">أن لكل عالم ومجتهد طرق ذكرها في استخراج أو معرفة المقاصد كونها  لم تتعين بواسطة نصوص معلومة ولم تتحدد بواسطة أدلة خاصة, وإنما نلاحظ أن  الاستقراء هو أكثر ما اجمع عليه العلماء لمعرفة مقاصد القرآن إلى جانب  المسالك الأخرى.<br />
+</font></span><br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font color="#800000">هوامش البحث:</font><br />
+</font></span></b><br />
+<br />
+<span style="font-family: arabic typesetting"><br />
+</span><hr /><span style="font-family: arabic typesetting"><font size="5"><b>[*]</b> طالبة في الماجستير، بقسم القرآن والسنة, كلية الدراسات الإسلامية، الجامعة الوطنية الماليزية.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>[**]</b> أستاذ دكتور بقسم القرآن والسنة, كلية الدراسات الإسلامية، الجامعة الوطنية الماليزية.</font></span><br />
+<br />
+<hr /><span style="font-family: arabic typesetting"><font size="5">[1] ابن زكريا, الحسين أحمد بن فارس, معجم مقاييس اللغة., دار الفكر, تحقيق عبد السلام هارون, 1979م, د ط, 5-95</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[2] ابن منظور, محمد بن مكرم بن منظور الأفريقي, لســـــــــان العرب, دار صادر, بيروت, ط1, مادة قصد, (3-353)</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[3] عبد الباقي, محمد فواد, المعجم المفهرس لألفاظ القرآن الكريم, الناشر: دار الكتب المصرية, سنة النشر: 1364هـ, د ط, ص545</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[4]  القرطبي, أَبُو عَبْدِ اللَّهِ مُحَمَّدُ بْنُ أَحْمَدَ بْنِ أبي بكر بن  فرح الأنصاري, الجامع لأحكام القرآن, تحقيق: أحمد البردوني وإبراهيم أطفيش  دار الكتب المصرية– القاهرة, ط 2, 1384هـ- 1964م, (14-71)</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[5] المرجع السابق(10-81)</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[6] المرجع السابق (6-242)</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[7] الريسوني, أحمد, نظرية المقاصد عند الإمام الشاطبي, الناشر: الدار العالمية للكتاب الإسلامي, ط 2, 1412 هـ - 1992م, (1-5)</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[8] ابن عاشور, محمد الطاهر, مقاصد الشريعة الإسلامية, تحقيق ودراسة:محمد الطاهر الميساوي, دار النفائس, عمان, ط 2, 2001م, ص251</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[9] الريسوني, احمد, نظرية المقاصد عند الإمام الشاطبي, (1-7)</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[10]  اليوبي, محمد سعد بن أحمد, مقاصد الشريعة الإسلامية وعلاقتها بالأدلة  الشرعية, دار الهجرة للنشر والتوزيع, ط 1, 1998المملكة العربية السعودية,  ص37</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[11]  بنظر: قائد, نشوان عبد خالد, دور الاستقراء في إثبات مقاصد القرآن الكريم  عند ابن عاشور, مجلة جامعة المدينة العالمية المحكمة, العدد الرابع (سبتمبر  2012 – ديسمبر 2012)</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[12]  الحضيري, محمد عبد السلام حسن, مقاصد القرآن الكلية وأهميتها في التفسير  الموضوعي للموضوع القرآني, بحث مقدم لمؤتمر التفسير الموضوعي للقرآن الكريم  (واقع وآفاق) جامعة الشارقة, كلية الشريعة والدراسات الإسلامية, 25-26من  شهر4 2010م</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[13] قائد, نشوان عبد خالد, دور الاستـــــــقرا  ء      في إثبات مقاصـــد القرآن الكريم عند ابن عاشور, مجلة جامعة المدينة العالمية المحكمة, العدد الرابع (سبتمبر 2012– ديسمبر 2012)</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[14] زمرد, فريده, بين مقاصد التفسير والنقد التفسيري, دار الحديث الحسنية/الرباط  مقال صادر عن</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">  الكاتبة في  مجلة الإحياء, الرابطة المحمدية للعلماء, 4 شعبان 1436 / 23 ماي 2015م</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[15]  ينظر: بودوخة, مسعود, جهود العلماء في استنباط مقاصد القرآن, المؤتمر  العالمي الأول للباحثين في القرآن الكريم وعلومه, في موضوع جهود الأمة في  خدمة القرآن الكريم وعلومه, أيام 10-11-12 جمادى الأول 1432 هـ الموافق  14-15-16 أبريل 2011 م، بمدينة فاس ـ المملكة المغربية. ط1، 1434هـ/2013م،ص  959</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[16]  الريسوني, أحمد, مقاصد المقاصد الغايات العلمية والعملية لمقاصد الشريعة,  الشبكة العربية للأبحاث والنشر, ط 1, بيروت, 2013م, ص7س</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[17]  زمرد, فريده, بين مقاصد التفسير والنقد التفسيري, دار الحديث  الحسنية/الرباط  مقال صادر عن الكاتبة في  مجلة الإحياء, الرابطة المحمدية  للعلماء, 4 شعبان 1436 / 23 ماي 2015م</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[18] ينظر: بودوخة, مسعود, جهود العلماء في استنباط مقاصد القرآن, ،ص 966</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[19] ينظر: الريسوني, أحمد, مقاصد مقاصد القرآن, مقال منشور في موقع الأستاذ احمد الريسوني, السبت, 2 نوفمبر 2013</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[20] الحسني, السيد محمد, مقاصد القرآن الكريم محاولة أخرى, مقال نشر للكاتب في واحة الفكر براثا نيوز, 22اكتوبر, 2012م.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[21]  ينظر: ريالات, زهير سالم التفسير المقاصيدي عن ابن العربي في تفسيره أحكام  القرآن, رسالة مقدمة لنيل درجة الدكتوراه في قسم التفسير وعلوم القرآن,  جامعة اليرموك أريد الأردن, 2011م, ص54. وما بعدها\الأطرش رضوان جمال,  قائد, نشوان عبده خالد, الجذور التاريخية للتفسير المقاصيدي للقرآن الكريم,  بحث مشور في مجلة الإسلام في آسيا, العدد الخاص الأول, مارس 2011م.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[22] ينظر: بودوخة, مسعود, جهود العلماء في استنباط مقاصد القرآن, ،ص 969.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[23] الغزالي, أبو حامد, جواهر القرآن, تحقيق محمد رشيد رضا, دار إحياء العلوم, بيروت, ط 2, 1986م, (1-23).</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[24] ينظر: بودوخة, مسعود, جهود العلماء في استنباط مقاصد القرآن, ص969</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[25] ينظر:المرجع السابق, 969.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[26]  ينظر: الأطرش رضوان جمال, قائد, نشوان عبده خالد, الجذور التاريخية  للتفسير المقاصيدي للقرآن الكريم, بحث منشور في مجلة الإسلام في آسيا,  العدد الخاص الأول, مارس 2011م.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[27]  ينظر: ريالات, زهير سالم التفسير المقاصيدي عن ابن العربي في تفسيره أحكام  القرآن, رسالة مقدمة لنيل درجة الدكتوراه في قسم التفسير وعلوم القرآن,  جامعة اليرموك أريد الأردن, 2011م, ص148, 149.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[28] المرجع السابق.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[29] المرجع السابق.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[30]  ينظر: ريالات, زهير سالم التفسير المقاصدي عن ابن العربي في تفسيره أحكام  القرآن, رسالة مقدمة لنيل درجة الدكتوراه في قسم التفسير وعلوم القرآن,  جامعة اليرموك إريد الأردن, 2011م, ص54.وما بعدها.الأطرش, رضوان جمال,  قائد, نشوان عبده خالد, الجذور التاريخية للتفسير المقاصدي للقرآن الكريم,  بحث منشور في مجلة الإسلام في آسيا, العدد الخاص الأول, مارس 2011م.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[31] المرجع السابق.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[32]اليوبي, محمد سعد بن أحمد بن مسعود, مقاصد الشريعة الإسلامية وعلاقتها بالأدلة الشرعية, ص59.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[33]  ينظر: ريالات, زهير سالم التفسير المقاصيدي عن ابن العربي في تفسيره أحكام  القرآن, رسالة مقدمة لنيل درجة الدكتوراه في قسم التفسير وعلوم القرآن,  جامعة اليرموك إربد الأردن, 2011م, ص54. وما بعدها. الأطرش, رضوان جمال,  قائد, نشوان عبده خالد, الجذور التاريخية للتفسير المقاصيدي للقرآن الكريم,  بحث منشور في مجلة الإسلام في آسيا, العدد الخاص الأول, مارس</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">  2011م.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[34] المرجع السابق</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[35]  حسنة, عمر عبيد, في الاجتهاد التنزيلي, بحث منشور في مجلة الأمة الثالث  والتسعين للدكتور بشير بن مولود جحش، في سلسلة الكتب، التي يصدرها مركز  البحوث والدراسات، في وزارة الأوقاف والشؤون الإسلامية، بدولة قطر,  العدد93, مارس 2003 مـ ص72.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[36]  الخطيب, عبد الله, مقاصد القرآن وأهميتها في تحديد الموضوع القرآني, دراسة  نصية في بعض كتب التفسير وعلوم القرآن الكريم, جامعة الشارقة, د ط, ص5.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[37] ينظر: رضا, محمد رشيد بن علي, الوحي المحمدي, دار الكتب العلمية– بيروت, ط 1، 1426هـ- 2005م (1-121وما بعدها)</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[38] الزرقاني, محمد عبد العظيم, مناهل العرفان في علوم القرآن مطبعة عيسى البابي, ط3, (1-21)</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[39] ينظر: بودوخة, مسعود, جهود العلماء في استنباط مقاصد القرآن, ،ص 971.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[40] ابن عاشور, محمد الطاهر بن محمد, التحرير والتنوير, الدار التونسية للنشر تونس, 1984م, د ط, (1-39)</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[41]  ينظر: ينظر:ريالات, زهير سالم التفسير المقاصدي عن ابن العربي في تفسيره  أحكام القرآن, رسالة مقدمة لنيل درجة الدكتوراه في قسم التفسير وعلوم  القرآن, جامعة اليرموك اربد الأردن, 2011م, ص60.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[42]: بودوخة, مسعود, جهود العلماء في استنباط مقاصد القرآن, ،ص978.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[43]  ينظر:عودة:د جاسر, مقاصد الشريعة عند الشيخ القرضاوي, ملتقى الإمام  القرضاوي مع الأصحاب والتلاميذ, الدوحة قطر, 14-16/7/2007م, ص32.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[44] بودوخة, مسعود, جهود العلماء في استنباط مقاصد القرآن, ،ص978.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[45]  الأحمر, عبد السلام, المقاصد القرآنية في فكر النورسي, النور للدراسات  الحضارية والفكرية, السنة الخامسة, يناير, 2014م, العدد 9, ص155</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[46]  ينظر:ابن عاشور, الشيخ محمد الطاهر, مقاصد الشريعة الإسلامية, تحقيق محمد  الطاهر الميساوي, ط 2, دار النفائس, الأردن, 2001م, ص190.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[47] ينظر:الخادمي, نور الدين بن مختار, علم المقاصد الشرعية, مكتبة العبيكان الطبعة: الأولى 1421هـ- 2001م.(1-67)</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[48] ينظر: اليوبي, محمد سعد بن أحمد بن مسعود, مقاصد الشريعة الإسلامية وعلاقتها بالأدلة الشرعية, ص124.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[49]  الفاربي, أبو نصر إسماعيل بن حماد الجوهري تحقيق: أحمد عبد الغفور عطار,  الناشر: دار العلم للملايين – بيروت, الطبعة: الرابعة 1407 هـ* - 1987 م,  (6-2461)</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[50] الزركشي, بدر الدين بن محمد بهادر, البحر المحيط, دار الكتبي, 1994م, ط 1, (8-6) .</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[51] المرجع السابق, (8-8).</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">[52] اليوبي, محمد سعد بن أحمد بن مسعود, مقاصد الشريعة الإسلامية وعلاقتها بالأدلة الشرعية, ص59.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>المراجع</b><b>:</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">ابن زكريا, الحسين أحمد بن فارس, معجم مقاييس اللغة., دار الفكر, تحقيق عبد السلام هارون, 1979م, د ط.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">ابن منظور, محمد بن مكرم بن منظور الأفريقي, لسان العرب, دار صادر, بيروت, ط1.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">عبد الباقي, محمد فواد, المعجم المفهرس لألفاظ القرآن الكريم, الناشر: دار الكتب المصرية, سنة النشر: 1364هـ, د ط.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">القرطبي, أَبُو عَبْدِ اللَّهِ مُحَمَّدُ بْنُ أَحْمَدَ بْنِ أبي  بكر بن فرح الأنصاري, الجامع لأحكام القرآن, تحقيق: أحمد البردوني  وإبراهيم أطفيش دار الكتب المصرية–القاهر�  �, ط2, 1384هـ- 1964م.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">الريسوني, أحمد, نظرية المقاصد عند الإمام الشاطبي, الناشر: الدار العالمية للكتاب الإسلامي, ط 2, 1412هـ- 1992م.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">ابن عاشور, محمد الطاهر, مقاصد الشريعة الإسلامية, تحقيق ودراسة: محمد الطاهر الميساوي, دار النفائس, عمان, ط 2, 2001م.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">اليوبي, محمد سعد بن أحمد, مقاصد الشريعة الإسلامية وعلاقتها  بالأدلة الشرعية, دار الهجرة للنشر والتوزيع, ط 1, 1998المملكة العربية  السعودية.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">قائد, نشوان عبد خالد, دور الاستقراء في إثبات مقاصد القرآن  الكريم عند ابن عاشور, مجلة جامعة المدينة العالمية المحكمة, العدد الرابع  (سبتمبر 2012 – ديسمبر 2012).</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">الحضيري, محمد عبد السلام حسن, مقاصد القرآن الكلية وأهميتها في  التفسير الموضوعي للموضوع القرآني, بحث مقدم لمؤتمر التفسير الموضوعي  للقرآن الكريم (واقع وآفاق) جامعة الشارقة, كلية الشريعة والدراسات  الإسلامية, 25-26من شهر4 2010م.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">زمرد, فريدة, بين مقاصد التفسير والنقد التفسيري, دار الحديث  الحسنية/الرباط  مقال صادر عن الكاتبة في مجلة الإحياء, الرابطة المحمدية  للعلماء, 4 شعبان 1436/23 ماي 2015م.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">بودوخة, مسعود, جهود العلماء في استنباط مقاصد القرآن, المؤتمر  العالمي الأول للباحثين في القرآن الكريم وعلومه, في موضوع جهود الأمة في  خدمة القرآن الكريم وعلومه, أيام 10-11-12 جمادى الأول 1432 هـ الموافق  14-15-16 أبريل 2011 م، بمدينة فاس ـ المملكة المغربية. ط1، 1434هـ/2013م.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">الريسوني, أحمد, مقاصد المقاصد الغايات العلمية والعملية لمقاصد الشريعة, الشبكة العربية للأبحاث والنشر, ط 1, بيروت, 2013م.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">الريسوني, أحمد, مقاصد القرآن, مقال منشور في موقع الأستاذ احمد الريسوني, السبت, 2 نوفمبر 2013م.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">الحسني, السيد محمد, مقاصد القرآن الكريم محاولة أخرى, مقال نشر للكاتب في: واحة الفــــكر</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">     براثا نيوز, 22 أكتوبر, 2012م.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">الأطرش رضوان جمال, قائد, نشوان عبده  خالد, الجذور التاريخية للتفسير المقاصدي للقرآن الكريم, بحث منشور في مجلة  الإسلام في آسيا, العدد الخاص الأول, مارس 2011م.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">الغزالي, أبو حامد, جواهر القرآن, تحقيق محمد رشيد رضا, دار إحياء العلوم, بيروت, ط 2, 1986م.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">حسنة, عمر عبيد, في الاجتهاد التنزيلي, بحث منشور في مجلة الأمة  الثالث والتسعين للدكتور بشير بن مولود جحش، في سلسلة الكتب، التي يصدرها  مركز البحوث والدراسات، في وزارة الأوقاف والشؤون الإسلامية، بدولة قطر,  العدد93, مارس 2003 مـ.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">الخطيب, عبد الله, مقاصد القرآن وأهميتها في تحديد الموضوع  القرآني, دراسة نصية في بعض كتب التفسير وعلوم القرآن الكريم, جامعة  الشارقة, د ط.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">رضا, محمد رشيد, الوحي المحمدي, دار الكتب العلمية– بيروت, ط1، 1426هـ-2005م.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">الزرقاني, محمد عبد العظيم, مناهل العرفان في علوم القرآن مطبعة عيسى البابي, ط3.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">ابن عاشور, محمد الطاهر بن محمد, التحرير والتنوير, الدار التونسية تونس, 1984م, د ط.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">عودة: د جاسر, مقاصد الشريعة عند الشيخ القرضاوي, ملتقى الإمام القرضاوي مع الأصحاب والتلاميذ, الدوحة قطر, 14-16/7/2007م.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">الأحمر, عبد السلام, المقاصد القرآنية في فكر النورسي, النور للدراسات الحضارية والفكرية, السنة الخامسة, يناير, 2014م, العدد 9.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">ابن عاشور, الشيخ محمد الطاهر, مقاصد الشريعة الإسلامية, تحقيق محمد الطاهر الميساوي, ط 2, دار النفائس, الأردن, 2001م.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">الخادمي, نور الدين بن مختار, علم المقاصد الشرعية, مكتبة العبيكان الطبعة: الأولى 1421هـ- 2001م.<br />
+</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">الفارابي, أبو نصر إسماعيل بن حماد الجوهري تحقيق: أحمد عبد  الغفور عطار, الناشر: دار العلم للملايين – بيروت, الطبعة: الرابعة 1407  هـ* - 1987 م.</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5">الزركشي, بدر الدين بن محمد بهادر, البحر المحيط, دار الكتبي, 1994م, ط1.<br />
+</font></span><br />
+<br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_917258" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_917258" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=917258" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_917258" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=177589&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="popupctrl"><span class="ctrlcontainer">مجلس التفسير وعلوم القرآن</span></a>
+		<a href="showthread.php?t=177589#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=40a3dbf8dad57f073fe7698bbce8648b">لوحة التحكم</a></li>
+		<li><a href="private.php?s=40a3dbf8dad57f073fe7698bbce8648b">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=40a3dbf8dad57f073fe7698bbce8648b">الاشتراكات</a></li>
+		<li><a href="online.php?s=40a3dbf8dad57f073fe7698bbce8648b">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=40a3dbf8dad57f073fe7698bbce8648b">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=40a3dbf8dad57f073fe7698bbce8648b">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=40a3dbf8dad57f073fe7698bbce8648b">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=40a3dbf8dad57f073fe7698bbce8648b">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=40a3dbf8dad57f073fe7698bbce8648b">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=40a3dbf8dad57f073fe7698bbce8648b">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=40a3dbf8dad57f073fe7698bbce8648b">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=40a3dbf8dad57f073fe7698bbce8648b">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=177577&amp;s=40a3dbf8dad57f073fe7698bbce8648b">أسهل طريقة لحفظ القرآن الكريم</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=177598&amp;s=40a3dbf8dad57f073fe7698bbce8648b">ألفاظ قرآنية: الظلم، الجور، الرهق</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86%D9%8A%D8%A9">القرآنية</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D8%A7%D9%84%D9%85%D8%AA%D9%82%D8%AF%D9%85%D9%8A%D9%86">المتقدمين</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B5%D8%AF">المقاصد</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D8%A8%D9%8A%D9%86">بين</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D9%88%D8%A7%D9%84%D9%85%D8%AA%D8%A3%D8%AE%D8%B1%D9%8A%D9%86">والمتأخرين</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=177589#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=40a3dbf8dad57f073fe7698bbce8648b" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=40a3dbf8dad57f073fe7698bbce8648b">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=177589#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">08:06 AM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

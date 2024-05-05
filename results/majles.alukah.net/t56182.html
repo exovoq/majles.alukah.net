@@ -1,0 +1,2322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=40a3dbf8dad57f073fe7698bbce8648b&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=56182";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس اللغة العربية وعلومها - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=10" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1713958091" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1713958091" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	
+	<meta name="description" content="لتبدأ يا دكتور في هذه القضية التي أرقت كثيرًا من الناس وتكلم عنها كثير من الناس حتى نستجلي الموضوع من جميع جوانبه. 
+ 
+بسم الله الرحمن الرحيم. 
+ 
+الحمد لله رب العالمين، والصلاة والسلام على أشرف الأنبياء والمرسلين نبينا محمد، وعلى آله وأصحابه وأتباعه بإحسان إلى يوم الدين. 
+ 
+أما بعد: 
+ 
+فلا شك -كما تفضل الأستاذ طارق- أن قضية المجاز هي قضية شغلت بال كثير من اللغويين والبلاغيين وذوي الأصول وذوي العقيدة والدعاة أيضًا بشكل عام، لأن القول فيها ما زال شائكًا وإن استقر -حقيقة- بعد تأصيل العلوم وتثبيت" />
+
+	<title> المجاز والحقيقة  للشيخ/ د. ناصر بن عبد الرحمن الخنين</title>
+	<link rel="canonical" href="showthread.php?t=56182&s=40a3dbf8dad57f073fe7698bbce8648b" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1713958091" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1713958091" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1713958091" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1713958091&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=40a3dbf8dad57f073fe7698bbce8648b" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="40a3dbf8dad57f073fe7698bbce8648b" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=40a3dbf8dad57f073fe7698bbce8648b" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=40a3dbf8dad57f073fe7698bbce8648b -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=40a3dbf8dad57f073fe7698bbce8648b"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=40a3dbf8dad57f073fe7698bbce8648b">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=40a3dbf8dad57f073fe7698bbce8648b">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=40a3dbf8dad57f073fe7698bbce8648b">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=40a3dbf8dad57f073fe7698bbce8648b" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=40a3dbf8dad57f073fe7698bbce8648b">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=10&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس اللغة العربية وعلومها</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> المجاز والحقيقة  للشيخ/ د. ناصر بن عبد الرحمن الخنين</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=40a3dbf8dad57f073fe7698bbce8648b&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 6 من 6
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=56182&s=40a3dbf8dad57f073fe7698bbce8648b" title="تحديث الصفحة">المجاز والحقيقة  للشيخ/ د. ناصر بن عبد الرحمن الخنين</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=56182" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;t=56182&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=addsubscription&amp;t=56182" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;search_type=1&amp;searchthreadid=56182&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="40a3dbf8dad57f073fe7698bbce8648b" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="56182" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_357700">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-04-20,&nbsp;<span class="time">01:57 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post357700" href="showthread.php?t=56182&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=357700#post357700" class="postcounter">#1</a><a id="postcount357700" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=55687&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="محب اللغة والأدب غير متواجد حالياً"><strong>محب اللغة والأدب</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=55687&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=55687&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محب اللغة والأدب غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Mar 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>137</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> المجاز والحقيقة  للشيخ/ د. ناصر بن عبد الرحمن الخنين
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_357700">
+				<blockquote class="postcontent restore">
+					لتبدأ يا دكتور في هذه القضية التي أرقت كثيرًا من الناس وتكلم عنها كثير من الناس حتى نستجلي الموضوع من جميع جوانبه.<br />
+<br />
+بسم الله الرحمن الرحيم.<br />
+<br />
+الحمد لله رب العالمين، والصلاة والسلام على أشرف الأنبياء والمرسلين نبينا محمد، وعلى آله وأصحابه وأتباعه بإحسان إلى يوم الدين.<br />
+<br />
+أما بعد:<br />
+<br />
+فلا شك -كما تفضل الأستاذ طارق- أن قضية المجاز هي قضية شغلت بال كثير من اللغويين والبلاغيين وذوي الأصول وذوي العقيدة والدعاة أيضًا بشكل عام، لأن القول فيها ما زال شائكًا وإن استقر -حقيقة- بعد تأصيل العلوم وتثبيت مصطلحات العلوم بشكل عام.<br />
+<br />
+لنبدأ أولاً بتعريف المجاز من حيث اللغة، وكذا الحقيقة فنقول:<br />
+<br />
+إن الأصل هو الحقيقة، والحقيقة: من الفعل الثلاثي &quot;حقَّ&quot; أصلها &quot;حقق&quot; &quot;حقَّ&quot; وأدغمت القاف الأولى في الثانية فشددت القاف.<br />
+<br />
+&quot;حقَّ&quot;: أي: ثبت، يقال: حقَّ الشيء إذا ثبت، ومنه قوله -جل وعز-: &#64831; لِيُحِقَّ الْحَقَّ وَيُبْطِلَ الْبَاطِلَ &#64830; [الأنفال: 8] أي ليثبته ويظهره، وقوله -جل وعز-: &#64831; وَكَانَ حَقًّا عَلَيْنَا نَصْرُ الْمُؤْمِنِينَ &#64830; [الروم: 47]، أي: أن نصر المؤمنين الملتزمين بالإسلام المطبقين له ثابت عند الله -جل وعز- على مدار الأزمنة وتقلب العصور، فالحقيقة تعني الثبات والاستقرار، وإذا أطلقت الأسماء على أشياء معينة ثبتت عليها، إذا قلت: جدار، تعارفت العرب على كونه جدارًا، أطلقت على السماء وهي الجرم العالي العظيم سماءً فثبت في حقها ذلك الاسم، الأسد أطلقوا عليه أسدًا -هذا الاسم- فثبت في حق ذلك الحيوان المفترس هذا الاسم.<br />
+<br />
+أما المجاز فهو على الضد من الحقيقة، من التجوز، جاز الشيء: إذا تجاوزه، تقول: تجاوزني فلان بسيارته إذا تعداني وانتقل من مكان إلى آخر فتجاوزني وتعداني، فهو مصدر ميمي، المجاز مصدر ميمي أصله من الفعل &quot;جاز - يجوز - جوازًا وتجوزًا&quot; يعني ذلك أن فيه تعديا وتجاوزا وانتقالا من شيء إلى شيء، ومن مكان إلى مكان ومن اسم إلى اسم، هذا في الاصطلاح العام.<br />
+<br />
+فالكلمة إذا أطلقت على اسم معين وثبتت عليه في عرف العرب واستعمالاتها وفي قاموسها وفي لغتها سميت هذه الكلمة حقيقة على ذلك الشيء، وإذا أطلقت الكلمة من كلام كان ثابتًا على شيء إلى أمر آخر سواءً كان حيوانًا أو إنسانا أو كذا فيكون في ذلك تجوز من مكانه الأصلي إلى مكانه الجديد، فيقال لهذه الكلمة: تجوز بها فصارت مجازًا، مثل أن تقول: فلان يتكلم بالدرر، فالدرر هنا ليس مقصودا بها الدر جمع درة المعروفة، وإنما المقصود بكلام حسن رائع يشدك كما تشد نظرك الدرة الرائعة المتألقة، فكلمة الدرر أطلقت على الكلام من باب التشبيه فهو استعارة، شبهت كلماته الآن بالدرر بجامع الحسن والشد والإصغاء في كل، والقرينة المانعة من إرادة المعنى الأصلي هو كلمة (يتكلم)، لأن الدرر لا يمكن أن تخرج من الفم، إذن أصبح المجاز إطلاقه من شيء إلى شيء لابد من قرينة تمنع من إرادة المعنى الأصلي، ولولا هذه القرينة لكان الكلام فوضى، لفعل من شاء ما شاء من الكلام ولغيرت الحقائق وللبس على الناس في هذا، فلابد إذن كما يقول العلماء من قرينة تمنع من إرادة المعنى الأصلي الأساسي للكلمة، وأيضًا مع القرينة لابد من علاقة بين المعنى الأصلي والمعنى المتجوز إليه، عندما تقول: رأيت أسدًا يسلم عليه الناس، فهناك علاقة مشابهة بين الأسد -وهو الاسم الأصلي للحيوان المفترس- الذي عرف عنه الشجاعة والجرأة والسطوة والصولة والمخافة -يخاف الناس منه-، وذلك الإنسان الشجاع أو الرجل الشجاع فلما وجدت علاقة ملابسة بينهما جوز الاستعمال بأن تنقل اسم الأسد وهو حقيقة على الحيوان المفترس إلى الرجل الشجاع ليكون ذلك مجازًا وتجوزًا لعلاقة بينه وهي المشابهة في طرف أو في شيء من الأشياء وهي الشجاعة وهي معنوية.<br />
+<br />
+القرينة التي تمنع ما وجد في هذا الكلام في هذا السياق في هذا المثال وهو قولنا: يسلم عليه الناس، لأن الأسود في الحقيقية لا يسلم عليها الناس بل يهابونها ويفرون منها، وأما الرجل فكل يتشرف بأن يسلم عليه وبأن يتقرب منه.<br />
+<br />
+ينبغي أن يعلم أن الكلام ينقسم إلى قسمين:<br />
+<br />
+أولاً: الحقائق، ثانيًا: المجاز.<br />
+<br />
+هذا أمر.<br />
+<br />
+الأمر الثاني: أن الأصل في الكلام أن يُحمل الكلام والألفاظ على الحقيقة؛ لأنها هي الأصل، وأنه لا يصار للمجاز إلا بشرطه الأساسي وهو وجود قرينة تمنع من إرادة المعنى الأصلي حتى يحفظ حق اللفظة نفسها الأساسية، وأيضًا لابد من مسوغ يسوغ الانتقال من اللفظة نقلها من أساسها إلى المعنى المتجوز إليه وهذه تسمى العلاقة، قد تكون المشابهة في الاستعارة وقد تكون المشابهة في المجاز المرسل كما سيأتي.<br />
+<br />
+فالمجاز فرع عن الحقيقة ثم إن المجاز لا يقال به لا يقال بالمجاز إلا إذا قام شرطه، وهو وجود العلاقة المسوغة ووجود القرينة.<br />
+<br />
+شبهوا المجاز أو الاستعارة مثل إنسان عندما يريد أن يستعير شيئًا يستعير ثوبا أو إناء أو شيئا، لابد أن يكون عارفًا بالرجل الذي سيستعير منه، الأمر الثاني: أنه قاس هذا الثوب مثلاً لابد أن يكون على مقاسه إن كان سيلبسه، لابد من وجود أشياء لطيفة: العلاقة والقرينة، وليعلم أن هذا الثوب ثوب فلان أيضًا يملكه أساسًا، لأنه أصلاً حقه فأقول: إن الكلام ينقسم إلى هذين القسمين الكبيرين وهما الحقيقة والمجاز وأن الأصل في الكلام وفي ألفاظ كلام العرب أنها الحقائق، وأنه لا ينتقل إلى مجازات إلا بمسوغ.<br />
+<br />
+الأمر الآخر المهم وهو أن الذي دعا العرب إلى أن تنقل ألفاظها من موقع إلى موقع أو من مسألة إلى مسألة أو من مكان إلى مكان هو السعة، والتوسع في العربية ورياضة فصاحة لسانها، رياضة عند العرب، وتفنن في التعبير عند التفنن في عرض المعاني، ولو كانت جامدة في ألفاظها لكانت اللغة جافة ومتحجرة، لكن طراوتها وحلاوتها ولطف استعمالها جوز للعرب الذين برعوا في القول وفصح لسانهم وتمكنوا من البيان جوز لهم ذلك أن ينقلوا عباراتهم وألفاظهم من معنى إلى معنى ومن موقع إلى موقع نظرًا للذكاء الذي وظفوه في أذهانهم من حيث انتقال الألفاظ إلى ألفاظ، فاستعاروا الجمادات للأحياء، تقول: فلان جبل من العلم، أنت لا تقول ذلك إلا لأنه ثابت، إذن الداعي لانتقاله إلى المجاز دقة التصوير، ولذلك كان المجاز أدخل في البيان منه في المعاني، لماذا؟ لأن المجاز قام على التصوير، عندما تصور الأشياء تريد أن تصور عظمتها تقول: فلان سحابة في العطاء، هي جماد السحابة لا تعقل، لكنها تدر وتعطي مما ينفع الناس ويقبلون عليه كما في هذه الأيام ولله الحمد، هذه الأمطار الهاطلة التي عمت ولله الحمد بلاد المسلمين وبلاد المملكة بالذات في مواقع كثيرة كما هو حاليًا الآن في المواقع التي بين الرياض والدوادي وشقرا وجهة حفر الباطن وكثير من مواقع المملكة الآن ولله الحمد المطر يتهاطل عليها فنحمد الله -عز وجل- على ذلك، فنذكر هذه النعمة لنشكره -جل وعز- ونستزيده أيضًا من فضله فأقول: إن الداعي للاستعمال هو المرونة عند العرب.. التفنن في الإبداع والتعبير، الثالث: التطرية، تطرية العربية والتفنن في هذا.<br />
+<br />
+نعود إلى مسألة موقف العلماء.<br />
+<br />
+قبل هذا: متى قيل بالمجاز؟ في أي زمن؟<br />
+<br />
+المجاز كغيره من مصطلحات علوم العربية كالتوكيد كالحذف كالذكر كقول الفاعل أو المفعول به وغيره، هذه مصطلحات علمية حدثت في أثناء فترة تدوين العلوم، وفي الوقت ذاته تفريع جزئيات هذا العلوم.<br />
+<br />
+يعني من القرن الثاني؟.<br />
+<br />
+في نهاية أو في منتصف القرن الثاني بدايات، وفي الثالث بدأ يعمر القول فيه، والرابع أيضًا ظهر واستقر كثير من العلوم.<br />
+<br />
+من أوائل من قال بذلك شيخ العربية &quot;سيبويه&quot; -رحمه الله- المتوفى سنة مائة وثمانين هجرية قال ذلك في كتابه، والمتتبع لكتابه يجد أن كلام سيبويه في هذا ظاهر في مثل قوله -جل وعز-: &#64831; بَلْ مَكْرُ اللَّيْلِ وَالنَّهَارِ &#64830; [سبأ: 33]، قال عن ذلك: بل مكركم في الليل والنهار، ثم قال: الليل والنهار لا يمكران، وإنما يُمكر فيهما، وإنما قيل ذلك على سبيل التوسع والتجوز، لأن الليل والنهار لا يمكران، ليس لهما حقيقة معنى زمن ظرف، الذي يمكر فيهما أو في زمنها أو في أوقاتهما الناس بحسب مكر كل أحد بعينه الرجل أو المرأة أو الكبير أو الصغير أو كذا، الحاصل: أن سيبويه من أوائل من ذكر ذلك وكذلك تعاقب بعده اللغويون في هذه المسألة.<br />
+<br />
+من أوائل أيضًا من نص على هذا وبدأ يعالجه بوصفه مصطلحًا علميًا بلاغيًا الشيخ السني أو الكاتب السني الأديب المعروف ابن قتيبة المتوفى سنة مائتين وست وسبعين للهجرة -رحمه الله- في كتابه &quot;تأويل مشكل القرآن الكريم&quot; فقد ذكر ذلك ونص عليه وعالج ورد على من قال بإنكاره في كتابه هذا، وعندما انتصر للمجاز وقال: إنه أسلوب من أساليب العرب تعبر به عن المعاني، وأن الأمم التي قبلها ما أتيت إلا من جهلها بمثل هذا، إلا من جهلها بالمجاز وبأساليبه، قال ابن قتيبة مثلاً: وقد تبين لمن عرف اللغة أن القول يقع فيه المجاز، ثم رد على من قال هذا قال: لو أن من أنكروا المجاز وشبهتهم أنه يقال إنه ضرب من الكذب، لأنك إذا أسندت إلى الشيء ولم يقله مثلاً كنت كاذبًا قال: لو فعل بعملهم هذا أو أخذ بقولهم هذا لكان أكثر كلامنا كذبًا، مثل على هذا قال: فإنهم زعموا أنه كذب؛ لأن الجدار مثلاً في قوله -جل وعز-: &#64831; جِدَارًا يُّرِيدُ أَن يَنْقَضَّ &#64830; [الكهف: 77] لا يريد، والقرية لا تُسأل في قوله -جل وعز-: &#64831; وَاسْأَلِ الْقَرْيَةَ &#64830; [يوسف: 82] قال: وهذا من أشنع جهالاتهم، وأدلها على سوء نظرهم وقلة أفهامهم ولو كان المجاز كذبًا وكل فعل ينسب إلى غير الحيوان باطلاً كان أكثر كلامنا فاسدًا، لأننا نقول: نبت البقل وطالت الشجرة وأينعت الثمرة وأقام الجبل ورخص السعر، وتقول: كان هذا الفعل منك في وقت كذا وكذا والفعل لم يكن.. إنما كون، والله تعالى يقول: &#64831; فَإِذَا عَزَمَ الأمْرُ &#64830; [محمد: 21] والأمر لا يعزم وإنما يُعزم عليه، ويقول -جل وعز-: &#64831; فَمَا رَبِحَت تِّجَارَتُهُمْ &#64830; [البقرة: 16] والتجارة لا تربح وإنما يُربح فيها وهكذا، هذه المسائل يقول: إنها على سبيل التجوز.<br />
+<br />
+الحقيقة العلماء كما ذكرت انقسموا إلى ثلاث مجموعات:<br />
+<br />
+المجموعة الأولى: من قال بإنكاره أصلاً -في اللغة والقرآن-، ومن أوائل من ذهب إلى هذا أو من عرف عنه ذلك أبو إسحاق الإسفراييني المتوفى سنة ثماني عشرة وأربعمائة هجرية، هو ذكر هذا السيوطي في &quot;الإتقان&quot; وأيضًا ذهب أبو إسحاق في قول هذا إلى إنكار أن يكون المجاز واقعًا في اللغة في لغة العرب أو في القرآن الكريم وحمل هذا في بعض أحوال مقالاته شيخ الإسلام ابن تيمية وتلميذه أيضًا ابن القيم في هذه المسألة وذلك لغرض عقدي وهو الرد على من قال بنفي الصفات، وسنأتي إلى هذا، هذا قول.<br />
+<br />
+القول الثاني: فريق آخر وقال: إنه موجود في اللغة لكنه منفي وقوعه في القرآن، وهذا القول ينسب إلى داود الظاهري المتوفى سنة سبعين ومائتين للهجرة، وابنه أيضًا محمد وأخذ بهذا القول أيضًا الشيخ محمد الأمين الشنقيطي -رحمه الله- المتوفى سنة ثلاث وتسعين وثلاثمائة وألف هجرية.<br />
+<br />
+القول الثالث: هو قول الجمهور، سواءً كان جمهور الأصوليين وجمهور البلاغيين، أكثرهم أو معظمهم يقول به؛ لأن عملهم عليه، ومن ذلك والذي ذكر أيضًا ذلك ونص عليه ابن قدامة -رحمه الله- صاحب اللمعة &quot;لمعة الاعتقاد&quot; فقال: والقرآن يشتمل على الحقيقة والمجاز ومن منع فقد كابر، يقول: من منع ذلك فقد كابر.<br />
+<br />
+والزركشي أيضًا في &quot;البرهان&quot; قال: وأما المجاز فاختلف في وقوعه في القرآن، والجمهور على الوقوع ولو أسقط المجاز من القرآن لسقط منه شطر الحسن، وهذه العبارة استعارها الزركشي من ابن قتيبة في تأويل مشكل القرآن.<br />
+<br />
+والسيوطي أيضًا ذكر ذلك، قالوا: فقد اتفق البلغاء على أن المجاز أبلغ من الحقيقة، في المقامات التي يمكن أن يعبر فيها عن شيء بالمجاز والحقيقة، فالمجاز عندئذ يكون أبلغ من ذلك، الشوكاني -رحمه الله- أيضًا شدد في هذا، شدد على المنكرين في المجاز وقال بأنهم قليلو الاطلاع، مفرطون فيما ينبغي الوقوف عليه، وقال: المجاز واقع في لغة العرب عند الجمهور أو عند جمهور أهل العلم، ووقوعه وكثرته في اللغة العربية أشهر من نار على علم، وأوضح من شمس النهار، وكما أنه واقع في اللغة العربية فهو أيضًا واقع في الكتاب العزيز عند الجماهير وقوعًا كثيرًا، وليس في المقام من الخلاف ما يقتضي ذكر بعض المجازات الواقعة في القرآن والأمر أوضح من ذلك، وكما أن المجاز واقع في الكتاب العزيز وقوعًا كثيرًا فهو أيضًا واقع في السنة وقوعًا كثيرًا والإنكار لهذا النوع مباهتة لا تستحق المجاوبة.<br />
+<br />
+هذا الأمر عند رأي الجمهور بشكل عام، طائفة من اللغويين ذهبوا إلى أن المجاز هو أكثر اللغة على عكس ما هو الراجح، قالوا: إن أكثر كلام العرب مجاز، وحمل هذا الرأي ابن جني اللغوي المعروف من القدماء، ومن المعاصرين الأديب مصطفى صادق الرافعي، ومن أمثلتهم يقولون: عندما تقول: ضربت زيدًا أنت لم تضربه كله، وإنما ضرت رأسه أو خده أو جزءًا منه أو يده أو كتفه فهذا على سبيل التجويز، لكن هذا فيه تمحل، وتقول: مشيت على الأرض لا.. أنت لم تمشي على الأرض كلها وإنما على جزء صغير منها، فالحاصل أن هؤلاء بالغوا، وأولئك بالغوا والحق الوسط، والحق هو التوسط بينهما.<br />
+<br />
+شيخ الإسلام -رحمه الله- حقيقة القول عنه في مسألة المجاز مضطرب أو هو -رحمه الله- قال به في فترة من حياته ثم رجع عنه وعدل عن القول به نظرًا لاستفحال أمر المعطلة والمؤولة الذين دخلوا من باب المجاز على آيات الصفات وأولوها، وعطلوا ما لله -عز وجل- من صفات الكمال والجلال التي أثبتها لنفسه في صريح كتابه، وفي صحيح سنة نبيه -عليه الصلاة والسلام- ، وحمل رأيه هذا تلميذه ابن قيم الجوزية في كتابه &quot;الصواعق المرسلة في الرد على المعطلة والجهمية&quot;، وشيخ الإسلام من أوسع من أدار البحث في الموضوع -شيخ الإسلام ابن تيمية- في كتابه &quot;الإيمان&quot; فطول في هذا الكلام وأفاض فيه، لكنه أيضًا ورد عنه ما يثبت القول به، أو ما يفيد أنه أيضًا قد قال به، بدليل أنه تأول بعض الآيات باسم المجاز، وإن لم ينص على اسمه لكنه نص على أثره وعلى حقيقته.<br />
+<br />
+فمثلاً عن كلام شيخ الإسلام -رحمه الله- في بعض الكلام ننقله عنه لنثبت بهذا أن الشيخ -رحمه الله- قد قال به من حيث الأثر، من حيث النتيجة، وإن لم ينص عليه فمثلاً قوله في حديثه عن قوله -جل وعز-: &#64831; رَبِّ إِنَّهُنَّ أَضْلَلْنَ كَثِيرًا مِّنَ النَّاسِ &#64830; [الرعد: 36] قال: فنسب الإضلال إليهن، والإضلال هو ضرر لمن أضللنه وهذا كما يقال للمحبوب المعشوق الذي تضر محبته وعشقه: إنه عذب هذا وأهلكه، وأفسده وقتله وعثره وإن كان ذلك المحبوب قد لا يكون شاعرًا بحال هذا البتة.<br />
+<br />
+وفسر أيضًا شيخ الإسلام حديث التنافس في الدنيا والتحذير منه المشهور في قوله -عليه الصلاة والسلام-: (فتهلككم كما أهلكتهم) قائلاً: فجعل الدنيا المبسوطة هي المهلكة لهم، وذلك سبب حبها والحرص عليها والمنافسة فيها وإن كان مفعولاً بها، لا اختيار لها، انتهى كلامه.<br />
+<br />
+هذا ما يسميه البلغاء المجاز العقلي الذي يُسند فيه الفعل إلى غير ما هو له، والعلاقة هنا السببية.<br />
+<br />
+وكذلك أول آيات في &quot;الفتاوى&quot; في الجزء الخامس عشر صفحة مائتين وثلاثة وسبعين، ومائتين وأربعة وسبعين، وذكر أيضًا أمثلة أخرى في الجزء الثامن في &quot;الفتاوى&quot; صفحة خمسمائة وإحدى عشر وغير ذلك من كلامه -رحمه الله- في هذه المسألة.<br />
+<br />
+فالكلام في هذا هو أن شيخ الإسلام وأمثاله إنما أرادوا أن يحموا جناب التوحيد بالذات مسألة الإيمان بالأسماء والصفات، هذا في وقت لم يستقر فيه القول بالمجاز، ولم تنضبط قواعده، لكننا نقول: إن مسألة الصفات وما تعلق بها: أصلاً القول فيها لا ينطبق عليها شرط المجاز، بمعنى: أن الأصل في ألفاظها هي الحقائق، الأصل في ألفاظ الأسماء والصفات هي الحقائق، لماذا؟ لأنه لا توجد قرينة تصرف مراد اللفظ في حق الأسماء والصفات عن حقيقته فالأصل الحقيقة، فالبلغاء أنفسهم متفقون على أنه لا يُقال بالمجاز إلا إذا وجدت قرينة تمنع من إرادة المعنى الأصلي، فإذا عدمت هذه القرينة لا يقال إن في الكلام مجازًا، وهو متفقون على هذا، اتفاقهم على هذا ظاهر وشيخ الإسلام نفسه أيضًا نصَّ على مثل هذا الكلام.<br />
+<br />
+ففقدان القرينة التي تصرف المعنى عن أصله يجعل الكلام في الأسماء والصفات هو على أصله وهو أنه حقيقة، وبذلك إذا تدبرنا هذا الكلام تبين لنا أن الأسماء والصفات وأن أيضًا أمور المغيبات كحقيقة الجنة والنار, وكحقيقة القبر وعذابه والساعة وأهوالها كل ذلك الألفاظ الجارية فيها في نصوص صريح الكتاب وصحيح السنة تحمل على أصلها -الحقائق-، ولا معدل ولا موجب لحملها على المجاز لأنه لا توجد قرينة لأن الأمور غيبية.<br />
+<br />
+..الأمور الغيبية التي ليست ظاهرة.<br />
+<br />
+أي نعم.. الذي حكاها وذكرها هو الله -عز وجل- الذي يعلم السر وأخفى، ويعلم ما يصير، فالأصل حمل تلك الألفاظ في تلك المواقع وفي هذه المجالات على الحقائق، فهي فعلاً ينبغي أن يصار إليها ويقال إنها حقائق وليس فيها ما يوجب صرف الألفاظ عن حقيقتها.<br />
+<br />
+القائلون بالمنع في مسألة منع المجاز في القرآن يقولون: إن الإخبار عن -مثلاً- الجدار أو &#64831; يَا أَرْضُ ابْلَعِي مَاءَكِ &#64830; [هود: 44] وكذا هو إخبار على سبيل أن الله -سبحانه وتعالى- عالم بتلك وأنها تحدث الله -عز وجل- ويحدثها الله -سبحانه وتعالى- ويأمرها، وإن لم نعرف ذلك، فهي ليست على سبيل المجاز هي على سبيل الحقيقة، فهم يرفضون ذلك؛ لقوله هذا؟<br />
+<br />
+نعم.. نحن نقول في مثل هذا الأمور الغيبيات مثلاً في خطاب الله -عز وجل- كما ذكرنا هذا في الحلقة السابقة في قوله -جل وعز-: &#64831; وَقِيلَ يَا أَرْضُ ابْلَعِي مَاءَكِ وَيَا سَمَاءُ أَقْلِعِي وَغِيضَ الْمَاءُ وَقُضِيَ الأمْرُ وَاسْتَوَتْ عَلَى الْجُودِيِّ &#64830; [هود: 44]، الأصل فيها -كما ذكرنا- وأميل إلى هذا أن تكون هذا الخطاب نفسه على الحقيقة كذلك خطابه -جل وعز- عندما خاطب السماوات والأرض: &#64831; ائْتِيَا طَوْعًا أَوْ كَرْهًا قَالَتَا أَتَيْنَا طَائِعِينَ &#64830; [فصلت: 11]، فهذا أيضًا الأصل فيه الحقيقة؛ لأنه لا معدل عن هذا إلا بقرينة، ولا يوجد قرينة من إرادتها لأنها مخلوقة، والذي خاطب هو خالقها ليس بشرًا عاديًا، ليس إنسانًا عاديًا وإن الذي خاطبها هو خالقها -جل وعز-، فهي تنطق بلغتها كما أنها تسبح بلغتها، في قوله -جل وعز-: &#64831; تُسَبِّحُ لَهُ السَّمَاوَاتُ السَّبْعُ وَالأَرْضُ وَمَن فِيهِنَّ وَإِن مِّن شَيْءٍ إِلاَّ يُسَبِّحُ بِحَمْدِهِ وَلَكِن لاَّ تَفْقَهُونَ تَسْبِيحَهُمْ &#64830; [الإسراء: 44] الرعد يسبح، وتسبيحه قد يكون صوتًا بالنسبة لنا لكنه بالنسبة إلى الله -عز وجل- تسبيح يناسب ذلك الحدث أو ذلك الشيء فأقول: إن ذلك لا يمنع، لكن آيات أخر وردت فيها مظاهر المجاز أو ظواهره نقول بها مثل: قوله -جل وعز- عن المنافقين: &#64831; أُولَئِكَ الَّذِينَ اشْتَرَوُا الضَّلاَلَةَ بِالْهُدَى فَمَا رَبِحَت تِّجَارَتُهُمْ وَمَا كَانُوا مُهْتَدِينَ &#64830; [البقرة: 16] هنا لا يمكن أن تقول: إن الشراء هنا على سبيل الحقيقة -أن هناك سلعة في السوق ضلالة وهذه هدى وجاء قوم فاشتروا الضلالة وتركوا الهدى-، لا.. هذا أسلوب مجازي رائع جدًا ومصور، المقصود بالشراء هنا الاستبدال، فاستعير الشراء للاستبدال، شبه الاستبدال بالشراء بجامع ترتب شيء على شيء، واشتق من الشراء فعل اشترى بمعنى استبدلوا، ثم أيضًا شبهت أجريناها نحن بالفعل على اعتبار أنها استعارة تصريحية تبعية، وقد نجريها في الاسم في الأصلي من الضلالة، فتكون مكنية، شبهت الضلالة بسلعة معروضة تباع وتشترى، وبجامع ترتب شيء على شيء عند شرائها أو بيعها، ثم حذف المشبه به وهو السلعة ودل عليه بلازم من لوازمه وهو فعل الشراء، لأن الشراء من خصائص السلع، لا من خصائص الضلالات أو الضلالة، في غير مجال الأسماء والصفات والأمور المغيبات والأمور التي يختص بخلق الله -عز وجل- في مخلوقاته -جل وعز- هذه المجال فيها والمقام فيها يتسع، لماذا نقول هذا؟<br />
+<br />
+نقول هذا لأن الله -جل وعز- قد أنزل كتابه بصريح كلامه -جل وعز- بلسان عربي مبين: &#64831; نَزَلَ بِهِ الرُّوحُ الأَمِينُ &#64831;193&#64830; عَلَى قَلْبِكَ لِتَكُونَ مِنَ الْمُنْذِرِينَ &#64831;194&#64830; بِلِسَانٍ عَرَبِيٍّ مُّبِينٍ &#64830; [الشعراء: 193- 195] فما يقع في كلام العرب من تشبيهات أو توكيدات أو حذوفات أو غير ذلك أو مجازات يقع في كلام الله -جل وعز-، وما كان جميلاً رائعًا في كلام العرب في التوكيدات والتشبيهات والكنايات وغير ذلك، يقع أيضًا جميلاً رائعًا أخاذًا بصورة أعظم وأتم في كلام الله -جل وعز-، إذا قام شرطه.<br />
+<br />
+الآن نحن لا نختلف مع هذه النقطة أبدًا، القائلون بالخلاف يقولون: في مسألة: لماذا تجوزون المجاز في غير أسماء الله -سبحانه وتعالى-، ولا تجوزونه في أسماء الله -سبحانه وتعالى- أو في بعض الأمور المغيبة؟ رغم أن هذه الأمور كلها -ونحن نقول: بالمجاز العقلي- وعقلاً أن الله -سبحانه وتعالى- ليس له يدان، وعقلاً أن الله -عز وجل- ليس له بصر فأنتم تشبهونه بالمخلوقات؟.<br />
+<br />
+نقول في مثل هذا -مسألة التجويز-: قام على -كما ذكرنا- أنه لا يقال أصلاً بالمجاز أن الأصل في الكلام هو الحقيقة لا يصار ولا يتحول من الحقيقة إلى المجاز إلا بالشرط الرئيس بوجود القرينة المانعة من إرادة المعنى الأصلي، وهذه القرينة قد تكون لفظية أو تكون عقلية، أما اللفظة فهي ممتنعة في ألفاظ الأسماء والصفات والمغيبات، أما العقلية فإن عقل البشر يكون قاصرًا ضئيلاً أن يحيط بالله -جل وعز-، ولهذا قاعدة السلف في مثل هذا قاعدة سليمة رائعة جدًا ومنجية بإذن الله -عز وجل- من الزلل والخلل والخطل، وهي قولهم: أن الأسماء والصفات نمرها أسماء ألفاظ الأسماء والصفات نمرها كما جاءت من غير تعرض لها بتأويل ولا تعطيل ولا تتكيف ولا تمثيل، ينبني على هذا قولهم: أننا لا نصف الله -عز وجل- إلا بما وصف به نفسه في صريح كتابه أو صحيح سنة نبيه -عليه الصلاة والسلام- من غير تحريف ولا تعطيل ولا تكييف ولا تمثيل على حد قوله -جل وعز-: &#64831; لَيْسَ كَمِثْلِهِ شَيْءٌ وَهُوَ السَّمِيعُ الْبَصِيرُ &#64830; [الشورى: 11]، أيضًا كلام شيخ الإسلام ابن تيمية قاعدة جليلة رائعة جدًا وهي قوله -رحمه الله-: إن الكلام في الصفات فرع عن الكلام في الذات، فكما أننا نثبت لله -جل وعز- ذاتًا لا تشبه الذوات المخلوقة، فكذلك نثبت له -جل وعز- صفات لا تشبه صفات المخلوقين.<br />
+<br />
+فشبهة المعطلة عندما ينفون عن الله -عز وجل- صفاته كاليدين وكالعينين وكالوجه وغيرها مما أثبته -جل وعز- لنفسه على ما يليق بجلاله وعظمته، شبهتهم في ذلك: أننا نشبهه بخلقه، إذن خير سبيل لعدم التشبيه أن ننفيها، إذن وقعتم فيما هو أعظم من التشبيه وهو التعطيل.<br />
+<br />
+الله -جل وعز- يثبت له -جل وعز- ما يليق بجلاله تعالى وعظمته من الأسماء الحسنى والصفات العليا وأنتم تنفونه.<br />
+<br />
+هم يقولون ماذا إذا وردت أسماء أو صفات لله -عز وجل-؟<br />
+<br />
+يقولون: سميع بلا سمع، بصير بلا بصر.<br />
+<br />
+لو قيل لك أيها المعطل المتكلم بهذا القول: إنك سميع بلا سمع، بصير بلا بصر، وجهك المراد به الرضا واليدان النعمة هو نفسه سيغضب من هذا القول وسيشتط ويحتد، كيف تغضب إذا كان الكلام هذا في حقك، ولا تغضب ولا تشتد ولا تحتد أيضًا في حق الله -جل وعز- وقد أثبت هذا الشيء لنفسه -جل وعز-.<br />
+<br />
+ولهذا قاعدة السلف عظيمة جليلة: أن أسماء الله -عز وجل- وصفاته أيضًا -لأن الصفة مشتقة من الاسم-: توقيفية.<br />
+<br />
+ما معنى توقيفية؟<br />
+<br />
+أننا وقافون في هذا على ما ورد في صريح الكتاب أو صحيح السنة، توقيفية في هذا ليس لنا أن نخترع اسمًا، بمعنى: لا يجوز أن نصف الله -عز وجل- بأنه مبتكر، أو مكتشف.<br />
+<br />
+لماذا؟<br />
+<br />
+لأن لفظة (مبتكر) ما جاءت إلا بعد عجز، حاول ثم حاول فلان وكذا، وكذا حتى ابتكر هذا الشيء أو اكتشف .<br />
+<br />
+لا.. الله -عز وجل- بديع السماوات والأرض، خلقهم على غير مثال سابق، لا يعجزه شيء &#64831; إِنَّمَا أَمْرُهُ إِذَا أَرَادَ شَيْئًا أَن يَقُولَ لَهُ كُنْ فَيَكُونُ &#64830; [يس: 82] فالله -عز وجل- في مسألة الأسماء والصفات أسماؤه -جل وعز- وصفاته توقيفية، ولذلك -لانعدام القرينة- فإنه بطل القول بالمجاز في الصفات وأمور المغيبات، أيضًا العلاقة مفقودة -كما ذكرنا في مطلع الكلام- عندما تنقل لفظًا من شيء إلى شيء لابد من علاقة رابطة بينهما، وعندما -أيضًا- تنفي عن الله -عز وجل- شيئا أو تنقل إليه شيئا لابد من وجود علاقة واضحة بينهما، والله -عز وجل- متفرد -جل وعز-: &#64831; قُلْ هُوَ اللهُ أَحَدٌ &#64831;1&#64830; اللهُ الصَّمَدُ &#64831;2&#64830; لَمْ يَلِدْ وَلَمْ يُولَدْ &#64830; [الإخلاص: 1- 3] فهو -جل وعز- الخالق الذي لا شريك له ولا شبيه له ولا ند، فجميع شروط القول بالمجاز في آيات الصفات وأمور المغيبات هي منعدمة، ولذلك يصار إلى الحقائق.<br />
+<br />
+وشبهة الذين يقولون بإنكار المجاز مثلاً هي قولهم:<br />
+<br />
+1- إن المجاز كذب، وعليه فنفيه في القرآن -إذا قلنا بالمجاز في القرآن- فإن الكذب ينفى، هل يمكن أن ننفي شيئًا في القرآن الكريم؟!!<br />
+<br />
+نقول: إن الفرق بين المجاز والكذب: أن الكذب نفسه ليس فيه قرينة ولا مؤشر ولا دليل على وصفه كذبا، الكذاب يأتي بكلامه عطلاً من القرائن.<br />
+<br />
+-مثلاً- عندما يقول: رأيت قمرًا، إن كان يريد به إطلاقًا يصير القمر المعروف، لكن إذا قال: رأيت قمرًا يكلم الناس، كلمة يكلم الناس هذه قرينة على أن المقصود بالقمر هنا إنسان أو امرأة أو كذا فيها من محاسن القمر ومن جماله، فالقصد من هذا أن الفرق بين الكذب والمجاز: أن الكذب لا قرينة فيه، وأنه قام على ادعاء.<br />
+<br />
+منزوع من الدليل.<br />
+<br />
+تمامًا.. وأما المجاز فإن له قرينة تنتصب على كونه مجازًا، قد تكون لفظية وقد تكون عقلية تشهد لها السياقات العامة.<br />
+<br />
+2-أيضًا يقولون: أن المتكلم إنما يلجأ إلى المجاز عند ضيق الحقيقة، والله -عز وجل- ليس شيء يضيق عليه -جل وعز-.<br />
+<br />
+فنقول: أن هذا غير دقيق لأن العرب نفسها عندما تكلمت وعندما قالت أشعارًا، إنما تكلموا بالمجاز في مثل هذا لزيادة التصوير والمبالغة في هذا الشيء، فما ظنك بقول الشاعر مثلاً:<br />
+<br />
+قوم إذا الشر أبدى ناجذيه ** طاروا إليه زرفات ووحدانا<br />
+<br />
+تصوير رائع لسرعة هؤلاء القوم وإقدام هؤلاء على عدوهم، فإنهم لا يبالون، صور الشر بأنه أبدى ناجذيه، يعني صور الشر بسبع مفترس إذا بدا فإن الإنسان الشجاع يطير إليه ويفتك به أو يقتله أو يباعد بينه، طاروا إليه، صور أيضًا سرعتهم.<br />
+<br />
+وأيضًا قول الهذلي:<br />
+<br />
+وإذا المنية أنشبت أظفارها ** ألفيت كل تميمة لا تنفع<br />
+<br />
+هنا صور الموت ووقوعه بالإنسان فتصوره أشبه بسبع مفترس &quot;أنشبت أظفارها&quot; تمكن في الإنسان وفي جسمه وفي قلبه، خلعته خلعًا، انتهى الموضوع، لا طبيب ولا شيء، وهذا الموت طبعًا المقصود به طبعًا هو قدر الله -عز وجل- إذا حل، &#64831; فَإِذَا جَاءَ أَجَلُهُمْ لاَ يَسْتَأْخِرُونَ سَاعَةً وَلاَ يَسْتَقْدِمُونَ &#64830; [الأعراف: 34].<br />
+<br />
+كذلك قول دعبل الخزاعي:<br />
+<br />
+لا تعجبي يا سلمى من رجل ** ضحك المشيب برأسه فبكى<br />
+<br />
+ضحك المشيب، فالضحك هنا كناية عن ماذا؟ أو هو استعارة لأي شيء؟ لبدو الشيب، لبدو بياض الشيب في شعر الرأس، فصوره تصويرًا رائعًا.<br />
+<br />
+كذلك مثل ما ذكرنا في الآيات الكريمات تجد أن التصوير فيها رائع جدًا، في مثل قوله -جل وعز-: &#64831; كِتَابٌ أَنْزَلْنَاهُ إِلَيْكَ لِتُخْرِجَ النَّاسَ مِنَ الظُّلُمَاتِ إِلَى النُّورِ &#64830; [الرعد: 1] هل المقصود هنا الظلمة الحسية والنور الحسي؟<br />
+<br />
+لم نعلم أن الرسول أخرج قومًا من غرفة مظلمة إلى ساحة مسفرة أو مضيئة، لا، بل المقصود به: نور الإيمان، أخرجهم من ظلام الكفر وتيهه وعماه الذي كانوا يتخبطون فيه في الجاهلية إلى نور الإيمان وسعادته ورحابته ووضاءته، هذا هو المقصود أن هذا تصوير، المقصود هنا: أنه تصوير لهذه الحالة.<br />
+<br />
+يقول: الإمام محمد الأمين الشنقيطي -رحمه الله- هل يعد من الصنف الذي لا يرى المجاز في القرآن واللغة وذلك استدلالاً بقوله: (أما على القول بأنه لا مجاز في اللغة أصلًا -وهو الحق- فعدم المجاز في القرآن واضح) كما في كتابه &quot;منع المجاز&quot; الأضواء في الجزء العاشر صفحة مائتين وأربعين؟.<br />
+<br />
+أنا -مثل ما أشرت قبل قليل- أن الشيخ محمد -رحمه الله- نزيل المدينة، عالمها المعروف الذي استفاد منه مشايخ هذا البلد: يرى مثل ما قلنا عنه أنه يرى في كثير من كلامه أن المجاز واقع في اللغة ولكنه لا يقع في القرآن الكريم.<br />
+<br />
+ولكن هذا القول إذا تقرر -أن المجاز واقع في اللغة-: فإنه بالتبع يكون واقعًا في القرآن الكريم، لماذا؟<br />
+<br />
+لأن القرآن الكريم لم ينزل بغير العربية، إنما نزل بلسان عربي مبين بالنص.<br />
+<br />
+ثم إن المجاز كالتوكيد أو الحذف أو غير ذلك من المصطلحات التي قررها علماء اللغة وأيضًا المنظرون للبلاغة، فكما أن في كلام الله -عز وجل- توكيدًا وحذفًا وتقديمًا وتأخيرًا كذلك فيه مجاز وتشبيه وكناية واستعارة وتعريض وغير ذلك على طريقة العرب في كلامها إذا قام شرطه، بهذا الشرط بهذا القيد.<br />
+<br />
+لا نقول بالمجاز إطلاقًا، وإنما إذا قام شرطه وتوافر قيل به وإلا فلا.<br />
+<br />
+على فكرة: المشايخ أو العلماء الذين نفوا وقوع المجاز -كما ذكرنا- هم في الآيات التي فيها مجاز يقولون: هذا أسلوب من أساليب العرب، أيضًا التوكيد أسلوب من أساليب العرب لكنه سمي توكيدًا، التقديم أسلوب من أساليب العرب سمي تقديمًا، الحذوف أسلوب من أساليب العرب سمي حذفًا، كذلك المجاز أسلوب من أساليب العرب في تقرير المعاني وتأكيدها وتصوير الأمور وتحديدها سمي مجازًا، قام شرطه، فلما استقرت العلوم وضبطت الضوابط والقواعد وظهرت شروطها ودواعي القول بها انتهى الأمر، الذي دعاها هؤلاء مثلاً أن بعض علماء العربية ممن انحرف معتقدهم أو ذلت أقدامهم في آيات الصفات ظهر القول به على ألسنتهم، فقالوا: دفع المفاسد مقدم على جلب المصالح، فيغلق الباب تمامًا، الموضوع مصطلح يقيد ويضبط بضابطه فمن تعداه فقد أخطأ، من قال به مثلاً في آيات الصفات أو بغيره ولم يقم شرطه فقد أخطأ في فهمه هذا، كما يخطئ من قال بأن في الآية أو في هذا الكلام توكيد وليس فيه توكيد، ليس فيه شرط التوكيد ولا ظاهرته ولا صورته ولا حقيقته ولا أداته، فهكذا الأمر في هذا ينبغي أن يضبط من هذا الضابط أو من هذا الباب.<br />
+<br />
+أنا أريد أن أنتهي إلى خلاصة الحقيقة مهمة جدًا في هذا القول لعلها تكون ولعلها تخرج أيضًا في بحث -إن شاء الله- في المستقبل وهي صفوة القول وخلاصته في هذا الموضوع من حيث القول بالمجاز أو عدمه، أقول:<br />
+<br />
+إن المجاز مصطلح علمي حادث، كغيره من المصطلحات العلمية التي حدثت وظهرت في فترة تدوين العلوم وتفريعها لمعرفة الأدلة الشرعية وتحليل النصوص الأدبية فهو كمصطلح التوكيد والحذف وغيرهما، كما أنه لا يقال أن كلام الله -عز وجل- صدق وحق فلا يكون فيه توكيد أو حذف، كذلك لا ينكر إذا توافرت أسباب القول وحمل الكلام على المجاز إن فيه مجاز، فهو أسلوب من أساليب العرب، في بيانها كغيره من الأساليب التي خضعت للدراسة والتأصيل العلمي والضبط القاعدي.<br />
+<br />
+يقول: ما شرط وقوع المجاز في الآية؟ معرفة المجاز في نفس الآية والسورة؟ هل هناك شرط يبين معرفة المجاز في الآية؟.<br />
+<br />
+يعني كيف تستخرج المجاز من الآية؟.<br />
+<br />
+نعم.<br />
+<br />
+القاعدة الثانية أو الأمر الثاني: أن القول بالمجاز في أي أسلوب عربي لا يصار إليه إلا بشرائطه وأسبابه، وهي: القرائن والعلاقات القائمة في سياق الكلام وبدونها يُحمل الكلام على الأصل وهو الحقائق لا المجازات، وهذا باتفاق المعتبرين من أهل الاختصاص.<br />
+<br />
+ثالثًا: أن ألفاظ الأسماء والصفات وأمور المغيبات في كتاب الله -تعالى- وصحيح سنة رسوله -عليه الصلاة والسلام-، لا يصدق عليها مفهوم المجاز ولا تندرج تحت نطاقه لفقدان القرينة المانعة من إرادة معانيها الحقيقة الأصلية فتبقى على هذا الأصل، ومن خالفه فقد تعسف وحمل الأمور على غير محاملها وأتى البيوت من غير أبوابها، ولم يكن لديه حجة علمية بل يكون قد ارتكب مخالفة عقدية ودخل في نطاق الذين يلحدون في أسمائه -جل وعز- وصفاته ويميلونها عن مراد الله بها لأن مذهب السلف في ذلك هو إمرارها كما جاءت، من غير تعرض لها بتأويل أو تعطيل أو تكييف أو تمثيل على حد قوله -جل وعز- &#64831; لَيْسَ كَمِثْلِهِ شَيْءٌ وَهُوَ السَّمِيعُ الْبَصِيرُ &#64830; [الشورى: 11]، واعتقاد معاني حقائقها ودعوته -سبحانه- بها تسمية ودعاءً كما قال -جل وعز-: &#64831; وَللهِ الأَسْمَاءُ الْحُسْنَى فَادْعُوهُ بِهَا وَذَرُوا الَّذِينَ يُلْحِدُونَ فِي أَسْمَائِهِ &#64830; [الأعراف: 180].<br />
+<br />
+رابعًا: أن ما عدا الأسماء والصفات وما في حكمها مما تقوم فيه قرينة تمنع من إرادة معناها الأصلي فإنه لا حرج من حمله على المجاز إذا قام سببه، بل يتعين ذلك لامتناع إرادة معناه الحقيقي المعروف، وعلى سبيل المثال فقوله -جل وعز- مثل ما مثلنا في مسألة المنافقين وأيضًا في قوله -جل وعز-: &#64831; أَوَ مَن كَانَ مَيْتًا فَأَحْيَيْنَاهُ &#64830; [الأنعام: 122] أي: ضالاً فهديناه فهذا على التشبيه على الاستعارة.<br />
+<br />
+خامسًا: أن الدافع لإنكار من أنكر المجاز هو امتداد القول به إلى آيات الصفات ومن ثم وقع الخبط والخلط والضلال في ذلك، مع أن المذهب الحق هو أنها خارجة عن ذلك -كما تقدم- فإذا استثني ذلك يلتئم الشمل ويرتفع الخلاف ويصبح المجاز أسلوبًا سائغًا من أساليب العربية سواءً سمي مجازًا أو أسلوبًا من أساليب العرب في بيانها فيكون الخلاف في ذلك خلافًا لفظيًا خلافًا في اللفظ والاصطلاح لا في التعبير والتطبيق، وكونه يأخذ اسم المجاز أضبط وأدق وأدعى لمعرفة مجاريه وأوديته ودواعي القول به.<br />
+<br />
+سادسًا: أن كبار المفسرين وأعيانهم قد فسروا كلام الله -تعالى- من خلال أسلوب المجاز في الآيات التي تقوم القرائن على حمل الكلام عليه، من أمثال شيخ المفسرين ابن جرير الطبري وابن عطية الأندلسي والقرطبي وابن تيمية وابن القيم وابن كثير والبقاعي والقاسمي وابن سعد وغيرهم.<br />
+<br />
+سابعًا وأخيرًا: أن المجاز إذا وقع في بعض آيات الذكر الحكيم لقيام قرينة تدل عليه لا يعني ذلك تسمية الله -تعالى- بالمتجوز، ولا وصفه به؛ لأن أسماء الله -تعالى- كما ذكرنا وصفاته توقيفية بإجماع السلف، بمعنى: أننا لا نسمي الله -تعالى- ولا نصفه إلا بما وصف به نفسه صريحًا في كتابه أو في صحيح سنة نبيه -عليه الصلاة والسلام-، لأن القول بذلك تعبدي توقيفي، وليس اجتهاديًا، فكما لا يوصف الله -تعالى- بالمؤكد لوقوع التوكيد في كلامه، كذلك لا يوصف بالمتجوز أو المستعير لوقوعه في كلامه، فإن هذا لازم غير لازم، ومن قال بلزومه فلا يعتد بقوله ولا يلتفت إليه لما ذكرنا آنفًا.<br />
+<br />
+أريد أن أذكر حقيقة كلامًا لشيخ الإسلام ابن تيمية أيضًا الحقيقة ورد كلام له وأنا أرى أنه فعلاً كلامه ونص عليه وقال به في مرحلة من مراحل حياته العلمية تدل على عقل وثقل و-فعلاً- على استواء النظرة في ذهنه لهذا الموضوع، قال -رحمه الله- وقد نقل هذا القول تلميذه على كتبه، القاسمي المحدث الشامي السلفي المعروف في كتابه &quot;محاسن التأويل&quot; المتوفى سنة ألف وثلاثمائة واثنين وثلاثين هجرية، يقول ناقلاً القاسمي كلامه في &quot;محاسن التأويل&quot; يقول اقتطف ذلك من بعض فتاويه -فتاوى شيخ الإسلام ابن تيمية- يقول ابن تيمية ما نصه:<br />
+<br />
+(نحن نقول بالمجاز الذي قام دليله، وبالتأويل الجاري على نهج السبيل، ولم يوجد في شيء من كلامنا وكلام أحد منا أنَّـا لا نقول بالمجاز والتأويل، والله عند لسان كل قائل، ولكن ننكر من ذلك ما خالف الحق والصواب، وما فتح به الباب إلى هدم السنة والكتاب، واللحاق بمحرفة أهل الكتاب)<br />
+<br />
+ثم يقول:<br />
+<br />
+(والمنصوص عن الإمام أحمد وجمهور أصحابه أن القرآن مشتمل على المجاز، ولم يعرف عن غيرهم من الأئمة نص في هذه المسألة، وقد ذهب طائفة من العلماء من أصحابه وغيرهم كأبي بكر بن أبي داود وأبي الحسن الخرزي، وأبي الفضل التميمي، وابن حامد فيما أظن وغيرهم إلى إنكار أن يكون في القرآن مجاز، وإنما دعاهم إلى ذلك ما رأوه من تحريف المحرفين للقرآن بدعوى المجاز، فقابلوا الضلال والفساد بحسم المواد، ثم قال كلمة رائعة: وخيار الأمور التوسط والاقتصاد). انتهى كلامه.<br />
+<br />
+بقيت كلمة أخيرة فقط أقولها وأنقل كلام العلامة الشيخ عبد الرحمن بن ناصر البراك وفقه الله وجزاه عن المسلمين خيرًا، فقد نقل تلميذه النجيب الدكتور عبد المحسن بن عبد العزيز العسكر، زميلنا في القسم عندما وجه له سؤالاً عن إمكانية وقوع المجاز في القرآن الكريم؟ وهل فيه مستند للمؤولة في نفي الصفات؟<br />
+<br />
+فأجاب -وفقه الله- الشيخ عبد الرحمن بن ناصر البراك أبو عبد الله أجاب بالآتي يقول: القول بانقسام الكلام إلى حقيقة ومجاز اصطلاح محض ولا دليل عليه من عقل ولا نقل، ولا مشاحة في الاصطلاح -كما قيل- فلا يمتنع استعماله والتعبير به وإطلاقه في محاله من نصوص اللغة والقرآن الكريم المنزل على قلب سيد المرسلين بلسان عربي مبين، ما لم يستغل لتحريف الكلم عن مواضعه فصرف كلام الله وكلام رسوله -صلى الله عليه وسلم- عن ظاهره بغير حجة يجب المصير إليها هو التحريف الذي ذم الله به اليهود إذ كان منهجًا لهم، ومن أقبح ما وقع من التحريف في القرآن تحريفًا معنويًا ما فعله المعطلة من الجهمية والمعتزلة، ومن وافقهم في الأسماء والصفات إذ قالوا: إنها مجاز، لأن ظاهرها عندهم -وهو إثبات الصفات لله تعالى- يناقض أصولهم العقلية الفاسدة التي تقتضي بزعمهم امتناع قيام الصفات برب العالمين، وهي أصول فاسدة مناقضة للعقل كما هي مناقضة للنقل، فيبطل ما زعموه من حمل هذه النصوص على المجاز، إذ لا دليل يوجب صرف تلك النصوص عن حقائقها اللائقة به -سبحانه وتعالى- لأن الأصل حمل الكلام على حقيقته ما لم يقم دليل على صرفه عن ظاهره، كيف والأدلة العقلية والسمعية شاهدة بما تدل عليه هذه النصوص -أعني نصوص الأسماء والصفات- من إثبات صفات الكمال لرب العالمين- وتنزيهه عن كل نقص وعيب، فهو -سبحانه- أحق بكل كمال، وأحق بالتنزيه عن كل نقص، فإنه -عز وجل- له المثل الأعلى وهو أن كل كمال ثبت لمخلوق لا نقص فيه بوجه والخالق أولى به، وكل نقص ينزه عنه المخلوق فالخالق سبحانه أولى بالتنزه عنه -تعالى الله عما يقول الظالمون والجاهلون والمفترون علوًا كبيرًا-، وصلى الله على نبينا محمد.<br />
+<br />
+هذا كلام الشيخ عبد الرحمن البراك.<br />
+<br />
+أسئلة الدرس.<br />
+<br />
+السؤال الأول: أيهما أكثر وقوعًا الحقيقة أو المجاز؟<br />
+<br />
+السؤال الثاني: متى يصار إلى القول بالحقيقة للكلام؟<br />
+<br />
+السؤال الثالث: هل ألفاظ آيات الأسماء والصفات وأمور المغيبات حقيقة أو مجاز؟ ولماذا؟<br />
+<br />
+دعني أذكر سؤالاً فتجيب.<br />
+<br />
+نعم.<br />
+<br />
+إذن المجاز موجود؟.<br />
+<br />
+نعم.<br />
+<br />
+ودليله أنه موجود في القرآن وموجود في لغة العرب بشرطيه وهم.<br />
+<br />
+وهما القرينة والعلاقة.<br />
+<br />
+إذن هذا هو تلخيص ما توصلتم إليه من خلال الأدلة التي عرضتموها وكانت أدلة -في الحقيقة- كثيرة ومستفيضة، ثم ذكرتم الأصناف في ذلك وما يتعلق بهذا الأمر.<br />
+<br />
+قلنا: ويستثنى من هذا فيما ذكرنا آيات الأسماء والصفات وأمور المغيبات بشكل عام، وأحوال القيامة، والقبر والنعيم وأمور المغيبات بشكل عام التي لا يعلمها إلا الله -عز وجل- والتي لا تنهض بها قرينة ولا توجد علاقة.<br />
+<br />
+التي أتت على.. الإخبار.<br />
+<br />
+الإخبار، ومن غير قرائن صارفة عن حقائقها، فالأصل إثبات حقيقتها، نعم هذا هو الأصل، وأما ما بقي فإن كلام الله -عز وجل- ككلام العرب مع الفارق، لأنه أنزله -جل وعز- بلسان عربي مبين، فما وقع من جمال وكمال في لغة العرب فكذلك واقع في كلام الله -عز وجل- بصورة أكمل وأعظم وأتم.<br />
+<br />
+نقلته للفائدة<br />
+من دروس  الأكاديمية الإسلامية
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_357700" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_357700" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=357700" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_357700" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_358263">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-04-21,&nbsp;<span class="time">10:22 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post358263" href="showthread.php?t=56182&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=358263#post358263" class="postcounter">#2</a><a id="postcount358263" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=54746&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="أبو الحسن الرفاتي غير متواجد حالياً"><strong>أبو الحسن الرفاتي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=54746&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=54746&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو الحسن الرفاتي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Mar 2010</dd>
+						<dt>الدولة</dt> <dd>عمان-الأردن</dd>
+						
+						<dt>المشاركات</dt> <dd>497</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: المجاز والحقيقة  للشيخ/ د. ناصر بن عبد الرحمن الخنين
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_358263">
+				<blockquote class="postcontent restore">
+					جزيت خيرًا
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_358263" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_358263" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=358263" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_358263" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_358320">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-04-22,&nbsp;<span class="time">01:04 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post358320" href="showthread.php?t=56182&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=358320#post358320" class="postcounter">#3</a><a id="postcount358320" name="3"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=39788&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="الدكتور حسين حسن طلافحة غير متواجد حالياً"><strong>الدكتور حسين حسن طلافحة</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=39788&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=39788&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="الدكتور حسين حسن طلافحة غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2009</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>137</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: المجاز والحقيقة  للشيخ/ د. ناصر بن عبد الرحمن الخنين
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_358320">
+				<blockquote class="postcontent restore">
+					محب اللغة والأدب؛ بارك الله فيك، لقد استفدنا كثيراً، نتشكَّرُ لك جهدك !
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><font color="blue"><span style="font-family: Century Gothic"><font size="4">&quot; <b>يَا مَعْشَر إيَاد، أَيْنَ الآبَاءُ والأجْدَاد؟  وَأَيْنَ الْفَرَاعِنَةُ الشِّدَاد؟  أَلَمْ يكُونُوا أَكْثَرَ منْكُمْ مَالاً؟ وأَطْوَلَ آجَالاَ؟!&quot;.</b></font></span></font></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_358320" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_358320" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=358320" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_358320" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_359114">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-04-23,&nbsp;<span class="time">10:57 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post359114" href="showthread.php?t=56182&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=359114#post359114" class="postcounter">#4</a><a id="postcount359114" name="4"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=55687&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="محب اللغة والأدب غير متواجد حالياً"><strong>محب اللغة والأدب</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=55687&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=55687&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محب اللغة والأدب غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Mar 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>137</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: المجاز والحقيقة  للشيخ/ د. ناصر بن عبد الرحمن الخنين
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_359114">
+				<blockquote class="postcontent restore">
+					<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				<div class="bbcode_postedby">
+					<img src="images/metro/purple/misc/quote_icon.png" alt="اقتباس" /> المشاركة الأصلية كتبت بواسطة أبو الحسن الرفاتي
+					<a href="showthread.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=358263#post358263" rel="nofollow"><img class="inlineimg" src="images/metro/purple/buttons/viewpost-left.png" alt="مشاهدة المشاركة" /></a>
+				</div>
+				<div class="message">جزيت خيرًا</div>
+			
+		</div>
+	</div>
+</div>بارك الله فيك  أخي الكريم<br />
+<br />
+<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				<div class="bbcode_postedby">
+					<img src="images/metro/purple/misc/quote_icon.png" alt="اقتباس" /> المشاركة الأصلية كتبت بواسطة الدكتور حسين حسن طلافحة
+					<a href="showthread.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=358320#post358320" rel="nofollow"><img class="inlineimg" src="images/metro/purple/buttons/viewpost-left.png" alt="مشاهدة المشاركة" /></a>
+				</div>
+				<div class="message">محب اللغة والأدب؛ بارك الله فيك، لقد استفدنا كثيراً، نتشكَّرُ لك جهدك !</div>
+			
+		</div>
+	</div>
+</div>بارك الله فيك أخي الكريم
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_359114" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_359114" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=359114" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_359114" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_447954">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-12-27,&nbsp;<span class="time">01:19 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post447954" href="showthread.php?t=56182&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=447954#post447954" class="postcounter">#5</a><a id="postcount447954" name="5"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=55296&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="أبو سيف الدين هانى غير متواجد حالياً"><strong>أبو سيف الدين هانى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=55296&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=55296&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو سيف الدين هانى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Mar 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>5</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: المجاز والحقيقة  للشيخ/ د. ناصر بن عبد الرحمن الخنين
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_447954">
+				<blockquote class="postcontent restore">
+					السلام عليكم ورحمة الله وبركاته <br />
+ <br />
+لست أدري كيف أعبر عن سعادتى بما نقلته هنا فى قضية المجاز التي سببت لي كثر من الحيرة أثناء بحثي الذي أقوم به ، خاصة وأنني لست متخصصا في اللغة العربية .. ولكن ما نقلته هنا أثلج صدري وأراحني كثيرا .. وكشف لي كثير من الغوامض والشبهات .. وفقك الله وسدد خطاك وجزيت عنا خير الجزاء أخي الكريم .. ولي طلب صغير لو أمكن ذلك وهو <br />
+ <br />
+محاولة الاتيان بتوثيق لهذه المقالة أو الدراسة حتى أذكرها في بحثي موثقة .. بارك الله فيك .. وأنا سوف أحاول جاهدا أن أبحث عنها قد أجد لها توثيق كا( التاريخ - المصدر المنقول عنه .. وما إلى ذلك ) وإن لم تستطع فبارك الله فيك .. وشكرا
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_447954" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_447954" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=447954" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_447954" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_448717">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-12-28,&nbsp;<span class="time">10:18 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post448717" href="showthread.php?t=56182&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=448717#post448717" class="postcounter">#6</a><a id="postcount448717" name="6"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=28215&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="خالد م غير متواجد حالياً"><strong>خالد م</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=28215&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=28215&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="خالد م غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Dec 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>70</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: المجاز والحقيقة  للشيخ/ د. ناصر بن عبد الرحمن الخنين
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_448717">
+				<blockquote class="postcontent restore">
+					اخي الكريم جزاك الله بكل حرف كتبته وقد استفدت كثيرا خاصة وقد كانت لي بعض التساؤلات وقد وجدت الاجابة عن بعضها فبارك الله فيك
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><span style="font-family: DecoType Naskh">إقدح الرأي بالرأي يتبين لك وجه الصواب</span><br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_448717" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_448717" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=448717" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_448717" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=56182&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="popupctrl"><span class="ctrlcontainer">مجلس اللغة العربية وعلومها</span></a>
+		<a href="showthread.php?t=56182#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=40a3dbf8dad57f073fe7698bbce8648b">لوحة التحكم</a></li>
+		<li><a href="private.php?s=40a3dbf8dad57f073fe7698bbce8648b">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=40a3dbf8dad57f073fe7698bbce8648b">الاشتراكات</a></li>
+		<li><a href="online.php?s=40a3dbf8dad57f073fe7698bbce8648b">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=40a3dbf8dad57f073fe7698bbce8648b">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=40a3dbf8dad57f073fe7698bbce8648b">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=40a3dbf8dad57f073fe7698bbce8648b">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=40a3dbf8dad57f073fe7698bbce8648b">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=40a3dbf8dad57f073fe7698bbce8648b">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=40a3dbf8dad57f073fe7698bbce8648b">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=40a3dbf8dad57f073fe7698bbce8648b">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=40a3dbf8dad57f073fe7698bbce8648b">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=73077&amp;s=40a3dbf8dad57f073fe7698bbce8648b">الفرق بين الهمزة والألف والمد / الأخطاء الإملائية (13)</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=73014&amp;s=40a3dbf8dad57f073fe7698bbce8648b">طَرْد أم طـُرْد</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D8%A8%D9%86">بن</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=56182#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=40a3dbf8dad57f073fe7698bbce8648b" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=40a3dbf8dad57f073fe7698bbce8648b">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=56182#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">08:13 AM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,1553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=696d1a7d9adaea36633b28fa7c3827c1&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=155705";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="أفلح, الخضير, الكريم, زكاها, عبد, للشيخ, على, هذا, ولا, الله, إلى, عليه, القرآن, هذه, لكن, إذا, مثل, الإنسان, كان, العلم, يعني, لأن, يقول, أنه, إلا, الناس, قال, الصلاة, الذي, أهل, هذا،, يقرأ, فيه, كما, سورة, نقول, نفسه, فيها, التزكية, عند, ذلك, عليه،, والسلام-, وهو, وإن, أيضاً, يكون, بعض, تزكية, فلا" />
+	<meta name="description" content="بسم الله الرحمن الرحيم  
+  
+الحمد لله رب العالمين، وصلى الله وسلم وبارك على عبده ورسوله، نبينا محمد وعلى آله وصحبه أجمعين. ففي هذا الليلة المباركة، وفي هذا المكان المبارك نلتقي مع إخوة أعزاء فضلاء، يجمعنا بهم الدين والعلم ونية الخير إن شاء الله تعالى. نسأل الله –جل وعلا- أن لا يحرمنا الأجور المرتبة على مثل هذا الاجتماع. 
+عنوان الدرس في إطار قول الله -جل وعلا-: {قَدْ أَفْلَحَ مَن زَكَّاهَا} الموضوع في غاية الأهمية وجدير بالعناية. 
+يقول الله -جل وعلا- بعد أن أقسم أحد عشر قسماً: {وَالشَّمْسِ" />
+
+	<title> قد أفلح من زكاها ( للشيخ: عبد الكريم الخضير )</title>
+	<link rel="canonical" href="showthread.php?t=155705&s=696d1a7d9adaea36633b28fa7c3827c1" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=696d1a7d9adaea36633b28fa7c3827c1 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=696d1a7d9adaea36633b28fa7c3827c1">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> قد أفلح من زكاها ( للشيخ: عبد الكريم الخضير )</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=696d1a7d9adaea36633b28fa7c3827c1&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 2 من 2
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=155705&s=696d1a7d9adaea36633b28fa7c3827c1" title="تحديث الصفحة">قد أفلح من زكاها ( للشيخ: عبد الكريم الخضير )</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=155705" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;t=155705&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=addsubscription&amp;t=155705" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;search_type=1&amp;searchthreadid=155705&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="155705" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_832925">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2016-08-30,&nbsp;<span class="time">04:48 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post832925" href="showthread.php?t=155705&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=832925#post832925" class="postcounter">#1</a><a id="postcount832925" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=134533&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو لقمان عبد الرحمن غير متواجد حالياً"><strong>أبو لقمان عبد الرحمن</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=134533&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=134533&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو لقمان عبد الرحمن غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2016</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>125</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="Post" /> قد أفلح من زكاها ( للشيخ: عبد الكريم الخضير )
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_832925">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><b>بسم الله الرحمن الرحيم <br />
+ <br />
+الحمد لله رب العالمين، وصلى الله وسلم وبارك على عبده ورسوله، نبينا محمد وعلى آله وصحبه أجمعين. ففي هذا الليلة المباركة، وفي هذا المكان المبارك نلتقي مع إخوة أعزاء فضلاء، يجمعنا بهم الدين والعلم ونية الخير إن شاء الله تعالى. نسأل الله –جل وعلا- أن لا يحرمنا الأجور المرتبة على مثل هذا الاجتماع.<br />
+عنوان الدرس في إطار قول الله -جل وعلا-: {قَدْ أَفْلَحَ مَن زَكَّاهَا} الموضوع في غاية الأهمية وجدير بالعناية.<br />
+يقول الله -جل وعلا- بعد أن أقسم أحد عشر قسماً: {وَالشَّمْسِ وَضُحَاهَا * وَالْقَمَرِ إِذَا تَلَاهَا} [(1-2) سورة الشمس] إلى أن قال: {قَدْ أَفْلَحَ مَن زَكَّاهَا} [(9) سورة الشمس] أحد عشر قسماً، ولله -جل وعلا- أن يقسم بما شاء من مخلوقاته لكن ليس للمخلوق أن يقسم بغير الله -جل وعلا- و((من حلف بغير الله فقد أشرك)) لكن الله -جل وعلا- يقسم بما شاء من مخلوقاته بياناً لشأن هذا المقسم به.<br />
+هذه الأقسام وهذه الأيمان الأحد عشر عقبها -جل وعلا- بقوله: {قَدْ أَفْلَحَ مَن زَكَّاهَا} [(9) سورة الشمس] والضمير يعود على النفس، {وَنَفْسٍ وَمَا سَوَّاهَا} [(7) سورة الشمس] يعود على النفس فجواب القسم عند جمع من أهل العلم، بل جواب هذه الأقسام الأحد عشر في قوله: {قَدْ أَفْلَحَ مَن زَكَّاهَا}، والعادة أن جواب القسم يقترن باللام، والعادة والمطرد في لغة العرب أن جواب القسم يقترن باللام، وأهل العلم خرجوا هذا على أنه لطول الفصل، طول الفصل أغنى  عن وجود هذه اللام، فجواب هذه الأقسام {قَدْ أَفْلَحَ مَن زَكَّاهَا} ونازع في هذا بعض أهل العلم، ممن له عناية باللغة، كالزمخشري مثلاً، وهذا ليس له أثر، وهذا ليس لعقيدته في هذا أثر وإلا فهو معتزلي.<br />
+أقول: جواب هذه الأقسام في هذه السورة العظيمة التي سمعناها من الإمام وفقه الله، قول الله -جل وعلا-: {قَدْ أَفْلَحَ مَن زَكَّاهَا} [(9) سورة الشمس] عند كثير من المفسرين، وأجابوا عن كون الجواب لم يقترن باللام كما هو الأصل وإلا فالأصل لقد أفلح، قالوا: طول الفصل يغني عن هذه اللام، وخالف الزمخشري فقال: إن قوله: {قَدْ أَفْلَحَ مَن زَكَّاهَا} [(9) سورة الشمس] ليس هو جواب القسم، وإنما جواب القسم ما يفهم من قول الله -جل وعلا-: {فَدَمْدَمَ عَلَيْهِمْ} [(14) سورة الشمس] وحينئذ يكون الجواب: والشمس وضحاها إلى نهاية الأقسام الأحد عشر ليدمدمن الله على أهل مكة بشركهم، كما دمدم على قوم صالح ثمود، والجواب هذا مفهوم من سياق قصة الناقة، وقتل قوم صالح لها، ومعاقبتهم بالدمدمة، لكن أهل العلم يولون التزكية، تزكية النفس عناية فائقة، كما جاء في هذه السورة في قول الله -جل وعلا- {قَدْ أَفْلَحَ} [(9) سورة الشمس] والفلاح هو الظفر والفوز بالخير التام في الدنيا والآخرة، ويقول أهل العلم: إنه لا يوجد كلمة يمكن أن يعبر بها بما يجمع خير الدنيا والآخرة مثل كلمة أفلح والفلاح والمفلح، إذا تقرر هذا فتزكية النفس مطلوبة، {قَدْ أَفْلَحَ مَن زَكَّاهَا} [(9) سورة الشمس] زكاها يعود الضمير على النفس، وفاعل زكّى من أهل العلم من يرى أنه ضمير يعود إلى الله -جل وعلا-، {وَنَفْسٍ وَمَا سَوَّاهَا} [(7) سورة الشمس] فالذي سواها هو الله -جل وعلا-، {قَدْ أَفْلَحَ مَن زَكَّاهَا} [(9) سورة الشمس] الله -جل وعلا-، فعلى هذا يكون المفلح من زكى الله نفسه بهدايته إلى الطريق المستقيم، ومن أهل العلم ولعل هذا هو القول الأكثر أن الضمير يعود على صاحب النفس، فيكون المعنى: قد أفلح من زكى نفسه، من زكى نفسه، كيف يكون الفلاح لمن زكى نفسه والله -جل وعلا- يقول: {فَلَا تُزَكُّوا أَنفُسَكُمْ} [(32) سورة النجم]؟ {قَدْ أَفْلَحَ مَن زَكَّاهَا} [(9) سورة الشمس] المفلح من زكى نفسه، والله -عز وجل- نهى عن تزكية النفس، وأهل العلم يحثون على تزكية النفوس من آية سورة الشمس، {قَدْ أَفْلَحَ مَن زَكَّاهَا} [(9) سورة الشمس] يحثون على تزكية النفوس، وتكلموا وأفاضوا، لا سيما مثل ابن القيم وابن رجب وغيرهما من أئمة التحقيق هذا الموضوع في غاية الأهمية عندهم، يحثون على تزكية النفس عملاً بهذه الآية، فماذا عن قول الله -جل وعلا-: {فَلَا تُزَكُّوا أَنفُسَكُمْ هُوَ أَعْلَمُ بِمَنِ اتَّقَى} [(32) سورة النجم]، {بَلِ اللّهُ يُزَكِّي مَن يَشَاء} [(49) سورة النساء]، لا تزكوا أنفسكم يعني لا تمدحوها، لا تمدحوا أنفسكم؛ لأن التزكية هي الثناء والمدح، ومنه تزكية الرواة والشهود، يعني مدحهم، والثناء عليهم بما يستحقون به قبول شهادتهم، وقبول روايتهم، فالشاهد لا بد له من تزكية، لا بد له من يزكيه ممن يعرفه معرفة باطنة، والراوي لا بد له من يزكيه، يقول أهل العلم: <br />
+</b></div><div class="cms_table"><table align="center" class="cms_table"><tr valign="top" class="cms_table_tr"><TD align="center" class="cms_table_td"><b>.............................. ومن<br />
+وصحح اكتفاؤهم بالواحد <br />
+  <br />
+</b></TD>
+<TD align="center" class="cms_table_td"></TD>
+<TD align="center" class="cms_table_td"><b>زكاه عدلان فعدل مؤتمن<br />
+جرحاً وتعديلاً خلاف الشاهد<br />
+ج<br />
+</b></TD>
+</tr>
+</table></div>
+<div style="text-align: center;"> <br />
+<b>الشاهد لا بد له من اثنين، لكن هناك من استفاض فضله، ونبغ في الناس ذكره، لا يحتاج إلى تزكية، كما قال الحافظ العراقي -رحمه الله-: <br />
+</b></div><div class="cms_table"><table align="center" class="cms_table"><tr valign="top" class="cms_table_tr"><TD align="center" class="cms_table_td"><b>وصححوا استغناء ذي الشهرة عن <br />
+</b></TD>
+<TD align="center" class="cms_table_td"></TD>
+<TD align="center" class="cms_table_td"><b>تزكيةٍ كمالك نجم السنن<br />
+ج<br />
+</b></TD>
+</tr>
+</table></div>
+<div style="text-align: center;"> <br />
+<b>يعني هل إذا جاء شاهد مثل مالك، أو راوي في سند من أسانيد الحديث نبحث عنه في كتاب الرجال؟ ماذا قالوا عنه؟ ما نحتاج إلى هذا، الاستفاضة والشهرة تكفي في مثل هذا، لكن من جهلت عدالته الباطنة لا بد له من الخبرة، لا بد من أن يشهد له ذو خبرة، المقصود أن معنى التزكية المنهي عنها هي مدح النفس، {فَلَا تُزَكُّوا أَنفُسَكُمْ} [(32) سورة النجم] النفس تتشرف وتشرأب إلى المدح، فإن وجد من غيرها فرحت به، وإن لم يوجد بعض الناس لا يصبر، إذا لم يمدح مدح نفسه، وهذا من الضعة بمكان عظيم؛ لأن الناس ينفرون من تزكية النفس، الواحد إذا مدح نفسه نفر الناس عنه، ومع ذلك يقدم بعض الناس بكل صفاقة يمدح نفسه، ويثني عليها، {فَلَا تُزَكُّوا أَنفُسَكُمْ هُوَ أَعْلَمُ بِمَنِ اتَّقَى} [(32) سورة النجم] قد يحتاج الإنسان إلى ذكر بعض محاسنه، لاسيما إذا ظُلم، ابن عمر -رضي الله عنهما- لما وصف بالعي قال: &quot;كيف يكون عيياً من في جوفه كتاب الله؟!&quot; ويحتاجون للمدح أحياناً في مقابلة الذم بغير حق، دفاعاً عن النفس، لا لذات النفس، ولا لحظ النفس، إنما ليقبل ما يصدر عن هذه النفس، لو أن عالماً ذُم على الجميع أن يدافع عنه، يدافع عن عرضه، لكن عليه أيضاً أن يبين ما يبطل هذا الذم، ولو كان في فحواه ما يقتضي المدح، {لاَّ يُحِبُّ اللّهُ الْجَهْرَ بِالسُّوَءِ مِنَ الْقَوْلِ إِلاَّ مَن ظُلِمَ} [(148) سورة النساء] فمثل هذا لا يدخل في النهي، بعض الناس يحب أن يمدح ويزكى ويثنى عليه، فإن كانت محبته للثناء عليه بما ليس فيه، وما لم يفعله فهو مذموم قولاً واحداً، {وَّيُحِبُّونَ أَن يُحْمَدُواْ بِمَا لَمْ يَفْعَلُواْ فَلاَ تَحْسَبَنَّهُمْ بِمَفَازَةٍ مِّنَ الْعَذَابِ} [(188) سورة آل عمران] أما إذا مدح إذا كان يحب أن يمدح ويثنى عليه بفعله فهذا محل خلاف بين أهل العلم، فمنهم من يطرد، ويقول: حب الثناء مذموم على كل حال، ومنهم من يفهم من آية آل عمران أنه لا يدخل في الذم، وعلى كل حال مدح النفس، ومحبة الثناء والمدح خدش في الإخلاص، وقد تقضي عليه، ولذا يقول الإمام ابن القيم -رحمه الله- في كتاب الفوائد: &quot;إذا حدثتك نفسك بالإخلاص فاعمد إلى حب المدح والثناء فاذبحه بسكين يقينك وعلمك أنه لا أحد ينفع مدحه أو يضر ذمه إلا الله -جل وعلا-&quot;، كما قال النبي -صلى الله عليه وسلم- لما قال له الأعرابي: &quot;أعطني يا محمد، فإن مدحي زين، وذمي شين&quot; قال: ((ذاك الله)) ما في هناك أحد ينفع مدحه أو يضر ذمه إلا الله -جل وعلا-، ومع الأسف أنه في حال المسلمين الآن على كافة المستويات الفرح بالمدح من الكبير أو الصغير، من الشريف أو الوضيع، فضلاً عن أن يقال لفلان من الناس: إن الملك ذكرك البارحة وأثنى عليك، أو الوزير الفلاني أو الأمير، يمكن ما ينام بعد هذه المدحة فرحاً، مع أنه جاء في الحديث الصحيح: ((من ذكرني في نفسه ذكرته في نفسي)) من الذي يذكر؟ الله -جل وعلا-، الذي ينفع مدحه ويضر ذمه، ((ومن ذكرني في ملأ ذكرته في ملأ خير منه)) فعليكم بالذكر، اذكروا الله يذكركم، هذا بالنسبة لمدح النفس وتزكيتها المنهي عنه. <br />
+نأتي إلى التزكية الممدوحة في قوله -جل وعلا-: {قَدْ أَفْلَحَ مَن زَكَّاهَا} [(9) سورة الشمس] وقلنا: إن الفاعل ضمير يعود إلى الله -جل وعلا- من زكى الله نفسه، أو يعود إلى المخلوق الذي سعى في تزكية نفسه، وبذل الأسباب في تزكية النفس، والتزكية: هي التطهير، التطهير والتنمية والزيادة فيما يقرب إلى الله -جل وعلا- بواسطة العلم النافع والعمل الصالح، بهذا تكون التزكية، اشتراط العلم للتزكية؛ لأن الجاهل قد يجتهد في تزكية نفسه فلا يصيب لجهله، والذي لا يعمل عملاً صالحاً، أو يعمل عملاً غير صالح، هذا لا يستفيد، ولا بد من العلم النافع مع الإخلاص لله -جل وعلا-، والاعتماد كلياً على نصوص الوحيين، فهما السبيل إلى تحصيل العلم النافع، ويتبع ذلك ما يعين على فهم نصوص الوحيين مما كتبه أهل العلم أهل التحقيق من العلماء في فهم الكتاب والسنة، العمل الصالح الذي يتحقق فيه الشرطان: الإخلاص لله -جل وعلا-: {وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ} [(5) سورة البينة] والمتابعة للنبي-عليه الصلاة والسلام-، المتابعة للنبي -عليه الصلاة والسلام-، فلا تزكية ولا زكاة للنفس إلا عن طريق الرسل، لا يمكن أن يجتهد الإنسان ليوجد سبيل لتزكية نفسه من غير طريق الرسول -عليه الصلاة والسلام-، عند بعض الطرقية وبعض الصوفية عندهم طرق يربون بها المريدين، لا يعتمدون فيها على نصوص الكتاب والسنة، فمثلاً شيخ طريقة جاءه مريد وقت صلاة الجمعة، فحان وقت الصلاة ولم يخرجا إلى المسجد، فلما نوقش وعوتب، قال: فقهاؤكم يقولون: إذا خشي الإنسان على ضياع ماله يترك الجمعة والجماعة، وأنا أخشى على ضياع قلب هذا المريد، هل في هذا اتباع للرسول -عليه الصلاة والسلام-؟ ومن ترك ثلاث جمع طبع الله على قلبه، وأهل العلم يقولون: إن ترك الجمعة من باب تيسير العسرى، النار نسأل الله العافية، على كل حال لا بد من العلم النافع والعمل الصالح، طيب عوام المسلمين ما نصيبهم من هذه التزكية؟ نصيبهم وفرضهم سؤال أهل العلم، ما الطريقة؟ ما الوسيلة؟ يناقش ويسأل أهل العلم فيدلونه على الطريق، ممن لم يتيسر له طلب العلم بنفسه وشغلته الشواغل، أو لم يتذكر، أو لم يلتفت إلى العلم إلا بعد كبر سنه، والله -جل وعلا- يقول: {فَاسْأَلُواْ أَهْلَ الذِّكْرِ إِن كُنتُمْ لاَ تَعْلَمُونَ} [(43) سورة النحل] تتم التزكية بالعلم النافع، بنصوص الكتاب والسنة، العمل الصالح، بعمل القلب، عمل الجوارح، عمل اللسان، الذي تحققت فيه الشروط، شروط القبول: الإخلاص والمتابعة، {لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًا} [(2) سورة الملك] يقول الفضيل بن عياض: &quot;أحسن عملاً: أخلصه وأصوبه&quot; قيل: يا أبا علي ما أخلصه وما أصوبه؟ قال: &quot;إن العمل إذا لم يكن خالصاً لله -جل وعلا- لم يقبل، وإذا لم يكن صواباً على سنة النبي -عليه الصلاة والسلام- لم يقبل&quot;، فهذان الشرطان لا بد منهما في كل عبادة، وعلى رأس هذه العبادات الإيمان بالله -جل وعلا- بشروطه المذكورة في حديث جبريل، لا بد من الإيمان، ولا بد من تحقيق التوحيد، لا بد من تحقيق التوحيد، وتنقية التوحيد من شوائب الشرك والبدع والمعاصي، لا بد من هذا؛ ليتم الأمن في الدنيا والآخرة؛ ليتحقق الأمن في الدنيا والآخرة، {وَلَيُبَدِّلَن�  �َهُم مِّن بَعْدِ خَوْفِهِمْ أَمْنًا يَعْبُدُونَنِي لَا يُشْرِكُونَ بِي شَيْئًا} [(55) سورة النــور]، {الَّذِينَ آمَنُواْ وَلَمْ يَلْبِسُواْ إِيمَانَهُم بِظُلْمٍ أُوْلَئِكَ لَهُمُ الأَمْنُ وَهُم مُّهْتَدُونَ} [(82) سورة الأنعام] فلا بد من تحقيق التوحيد وتخليصه وتنقيته من شوائب <br />
+الشرك والبدع والمعاصي، وكل ما يخص التوحيد، ولا بد من أن يكون الإيمان كاملاً، أو يقرب من الكمال بقدر الاستطاعة، فيحرص على أن يؤمن بالله -جل وعلا-، وملائكته، وكتبه، ورسله، واليوم الآخر، وبالقدر خيره وشره، ويحقق الإيمان من خلال هذه الأركان الستة، ولا يأتي بما يضعف هذا الإيمان، بل يأتي بما يقوي الإيمان في القلب، وهي الأعمال الصالحة، الأعمال الصالحة هي التي تقوي الإيمان بالقلب، وهي التي تزكي النفس، والذي يضعف الإيمان بالقلب لا شك أنه هو المعاصي، وعلى رأسها الشرك، الذي يقضي على الإيمان بالكلية {لَئِنْ أَشْرَكْتَ لَيَحْبَطَنَّ عَمَلُكَ} [(65) سورة الزمر] مما يقوي الإيمان النظر في آيات الله الكونية والشرعية، النظر في آيات الله الكونية والشرعية، وأيضاً الأعمال الصالحة، وترك المعاصي، ففعل المأمورات، وترك المحظورات مما يقوي الإيمان في القلب، التزكية بالإيمان الخالص لله -جل وعلا- بالتوحيد المحقق على ضوء ما جاء عن الله وعن رسوله -عليه الصلاة والسلام-، والبعد عن ما يخدش هذا الإيمان وهذا التوحيد من بدع ومعاصي، التزكية تكون بهذا مع الأعمال الصالحة التي أوجبها الله -جل وعلا- على عباده، كالصلاة التي هي الركن الثاني من أركان الإسلام، {إِنَّ الصَّلَاةَ تَنْهَى عَنِ الْفَحْشَاء وَالْمُنكَرِ} [(45) سورة العنكبوت] و((الصلوات الخمس والجمعة إلى الجمعة كفارات لما بينها إذا اجتنبت الكبائر)) فهذه الصلاة إذا أديت على الوجه المطلوب، وأقيمت على ضوء ((صلوا كما رأيتموني أصلي)) فإنها تنهى عن الفحشاء والمنكر، وبهذا يندفع سؤال يلقيه كثير من الناس، يقول نرى الشخص يصلي، يصلي وهو مواظب على الصلاة، لكنه مع ذلك صلاته ما نهته عن فحشاء ولا منكر، يزاول منكرات، ويترك واجبات، نقول: هذه الصلاة ليست هي الصلاة التي يمتثل فيها قوله -عليه الصلاة والسلام-: ((صلوا كما رأيتموني أصلي)) وهذه الصلاة إن كفرت نفسها كما قال شيخ الإسلام يكفي؛ لأن من المصلين من يخرج بدون أجر، ومنهم من يخرج بعشر الأجر، ومنهم من يخرج من الأجر بالخمس أو الربع أو النصف، ومنهم من يخرج بأكثر من ذلك، وذلك فضل الله يؤتيه من يشاء، لكن العبد لا بد أن يبذل، لا بد أن يري الله من نفسه خيراً، ويصدق في بذله، وإذا علم الله -جل وعلا- منه صدق النية أعانه، وإلا فكثير من الناس يقول: حاولنا جاهدين أن نخلص في صلاتنا ونستحضر ونخشع، لكن لم نستطع، الإنسان يدخل المسجد ويخرج منه كأنه قد دخل أي مكان فيه اجتماع كقصر أفراح أو مدرسة أو ما أشبه ذلك، لا فرق، ويخرج من صلاته كما دخل، ويرجع إلى ما كان يزاوله قبل صلاته، نقول: هذه الصلاة لا بد فيها من مراجعة النفس، تراجع نفسك ما الخلل الذي تطرق إلى صلاتك، بحيث لم تترتب عليه آثارها؟ قد يقول قائل: صلوات الناس بهذه الكيفية صحيحة وإلا باطلة؟ الله -جل وعلا- يقول: {إِنَّمَا يَتَقَبَّلُ اللّهُ مِنَ الْمُتَّقِينَ} [(27) سورة المائدة] والذي لا تنهاه صلاته عن الفحشاء والمنكر يزاول المنكرات، يترك واجبات هذا ليس من المتقين، والحصر في القبول إنما هو من المتقين، فهل يقال: بأن الفساق تجب عليهم إعادة صلواتهم؟ ما قال بهذا أحد من أهل العلم، فصلواتهم صحيحة، لكن القبول المرتب على هذه الصلاة، ونفي القبول بالنسبة للمتقي القبول ونفيه عن غيره؛ لأن الأسلوب أسلوب حصر {إِنَّمَا يَتَقَبَّلُ اللّهُ مِنَ الْمُتَّقِينَ} [(27) سورة المائدة] مفهومه أن الفساق لا يتقبل الله منهم، والمراد بهذا نفي الثواب المرتب على هذه العبادة، ليخرج منها بغير شيء، أو بالعشر أو بأقل أو أكثر، فينتبه الإنسان لمثل هذا الأمر، بعض الناس يقول: حاولت هذا  شيء نجده من أنفسنا، يحاول الإنسان أن يستحضر، يحاول والشيطان ينازعه في صلاته، فلا يستطيع أن يتغلب على الشيطان؛ لأسباب بدت منه هو، هو زاول أشياء حالت دونه ودون تحقيق هذا الإقبال على الله -جلا وعلا-، تجده يحضر إلى المسجد من مكان فيه شبهة، أو ينظر إلى أمور لا يجوز النظر إليها، أو يتكلم في أشياء لا يجوز الكلام فيها، فعلى الإنسان أن يحفظ نفسه، وهذه من أعظم وسائل التزكية، يحفظ نفسه من فضول الكلام، من فضول النظر، من فضول الأكل، من فضول الخلطة، من إيش؟ من فضول الكلام، ومع الأسف أن وظيفة كثير من الناس الآن القيل والقال، لاسيما بعد وجود هذه الفتن، التي ماجت بالناس وماجوا بها، تجد مجالسهم معمورة بقال فلان وذكر فلان، وحلل فلان، والإذاعة الفلانية قالت كذا، والقناة قالت كذا، فضول، هذا إذا سلم من المحرم، تجده فاكهته الكلام في الناس، فلان كذا وفلان كذا وفلان قصير وفلان طويل فلان أسمر فلان أبيض، ويقدح في فلان وعلان لأدنى مناسبة، وتجد لسانه على كتفه كما يقال، يقع في كافة الناس، أخيارهم وغير الأخيار، وتجد مثل هذا النوع -وهذا أمر مجرب- الذي وظيفته القيل والقال لا يستطيع أن يملك لسانه في المواطن التي جاء الحث فيها على حفظ اللسان، وتجده لا يطيق الجلوس مع الأخيار الذين يحفظون أنفسهم من القيل والقال، تجد أثقل مجلس عنده شخص فيه عنده تحري بحيث يحسب حسابه لو تكلم في شخص قال له هذا الشخص المتحري: اتق الله ترى هذه غيبة، والغيبة محرمة، هذه ثقيلة على النفس، فتجده يكره الأخيار من أجل هذا، وينبسط لمن على شاكلته ممن وظيفته القيل والقال، والرسول -عليه الصلاة والسلام- يقول: ((من حج فلم يرفث ولم يفسق رجع من ذنوبه كيوم ولدته أمه)) الحج أربعة أيام، يعني في وقتها ما يزيد عن أربعة أيام، ومع ذلك لا يستطيع من هذا ديدنه أن يحفظ نفسه هذه الأيام الأربعة، ما يستطيع ولا يوفق؛ لأنه ما تعرف على الله في الرخاء، أيام الرخاء ما تعرف على الله ليعرف في الشدة، وتجد من هذا شأنه وهذا ديدنه ترد عليه المواسم العشر الأواخر من رمضان، وعشر ذي الحجة، ويوم عرفة، والمواسم الفاضلة التي تضاعف فيها الأجور، ويريد أن يحفظ نفسه، ويجتمع قلبه على كتاب الله -جل وعلا- مثلاً، ثم بعد ذلك لا يستطيع، لا يستطيع، يفتح المصحف تجده يترك مصالحه في بلده ويأتي إلى أقدس البقاع، ويجلس من صلاة العصر إلى غروب الشمس ينتظر الإفطار في المسجد الحرام، وبيده المصحف ثم بعد ذلك ينظر في المصحف دقيقتين، ثلاث، خمس، ثم يلتفت يميناً وشمالاً عله أن يجد أحد قادم ولا رايح ولا غادي ممن يعرفه ليتحدث معه كما كان ذلك ديدنه في حال الرخاء، التفت يميناً وشمالاً ثم بعد ذلك فتح المصحف ثانية وهكذا، فإن لم يجد أحد ذهب هو يبحث عن الناس، فمثل هذا لا يعان على اغتنام هذه الأوقات، وإذا قيل له: إن السلف يختمون كل ليلة في العشر الأواخر، قال: هذا خيال، ما يمكن، مستحيل، كيف؟ لأنه يقيس الناس على نفسه، فعلينا أن نحرص على حسم هذه المادة، وألا نتكلم إلا بعد محاسبة للنفس، هل هذه الكلمة أو هذا الكلام ينفعني يوم القيامة حين ألقى الله -جل وعلا- أو يضرني؟ إن كان ينفع فأقدم، وإن كان يضر فأحجم، وإن كان لا هذا ولا هذا، فمن حسن إسلام المرء تركه ما لا يعنيه، ويدخل في الكلام الكتابة، يعني بعض الناس مغرم بالكتابة، ويكتب كثير، فلا تكتب إلا ما ينفعك يوم القيامة. <br />
+</b></div><div class="cms_table"><table align="center" class="cms_table"><tr valign="top" class="cms_table_tr"><TD align="center" class="cms_table_td"><b>فلا تكتب بكفك غير شيءٍ<br />
+ج <br />
+</b></TD>
+<TD align="center" class="cms_table_td"></TD>
+<TD align="center" class="cms_table_td"><b>يسرك في القيامة أن تراه<br />
+ ج<br />
+ج<br />
+ج<br />
+</b></TD>
+</tr>
+</table></div>
+<div style="text-align: center;"> <br />
+<b>فهذه فضول الكلام لا بد من حسمها، فضول النظر، النظر والبصر نعمة من نعم الله -جلا وعلا- لا يعرفها إلا من فقدها، نعمة، لكنها إذا استغلت بما لا يرضي الله -جل وعلا- صارت نقمة، صارت نقمة، وهذه النعم لا بد من شكرها، واستعمالها فيما يرضي الله -جل وعلا-، عنده بصر يستعمله في قراءة القرآن، يستعمله في قراءة العلم، يستعمله في مصالحه في دنياه، التي يتخذ منها طريقاً وسبيلاً إلى الجنة، لكن إن استعمله فيما حرم الله عليهم كالنظر إلى ما لا يجوز النظر إليه، سواء كان ذلك نظراً مباشراً، أو بواسطة آلات أو قنوات، أو صور أو مجلات، أو ما أشبه ذلك، كل هذا كل هذا يحرم عليه النظر فيه، فهذه النعمة انقلبت بالنسبة له نقمة، نسأل الله العافية، وأيضاً السمع من أعظم النعم من نعم المولى -جل وعلا- على الإنسان، بل فضله جمهور أهل العلم على البصر، فإذا كان السمع بهذه المثابة فلا بد أن يؤدى شكر هذه النعمة، فلا يصنع فيه إلا ما يرضي الله -جل وعلا-، والحذر الحذر من سماع ما يحرم سماعه، والآن الأبواب مفتوحة لرؤية وسماع ما يحرم إلى الشرك الأكبر، دخل في بيوت الناس وعامتهم، قنوات السحر الآن تشاهد في بيوت عوام المسلمين، وتسمع، والله المستعان، شر مستطير لا بد من أن يقف المسلم منه وقفة حازمة، ويقي نفسه، ومن ولاه الله عليه {قُوا أَنفُسَكُمْ وَأَهْلِيكُمْ نَارًا وَقُودُهَا النَّاسُ وَالْحِجَارَةُ} [(6) سورة التحريم] لا بد من هذا، ثم إذا تيسر له أن يتعدى هذا النفع خارج بيته إلى جاره إلى أخيه إلى قريبه إلى الأمة بكاملها فلا يحرم نفسه؛ لأن هذا الغزو خطير جداً، يعني عاش الناس مدة، سنوات، وقد غزو في قعر بيوتهم بالشهوات، القنوات الماجنة غزت بلاد المسلمين بالشهوات، ثم بعد ذلك بالشبهات التي تزلزل العقائد، ثم بعد ذلك بالشرك الأكبر، نسأل الله السلامة والعافية، كيف يزكي نفسه من أتاح الفرصة لمن ولاه الله عليه بمشاهدة هذه الأمور، والنفس تنازع مادام هذا موجود فالصراع قوي، وشخص سكن في شقة في بلد ما فيها القنوات كلها فأراد أن ينظر إلى الأخبار بحث عن المجد ما استطاع أن يصل إليها، فوجد في أخبار الجزيرة فإذا التي تلقي الأخبار امرأة، جاء بالشرشف -الغطاء غطاء النوم- وغطا به الآلة؛ لئلا يرى المرأة، هذا أول مرة، المرة الثانية نازعته نفسه إلى أن كشف الغطاء، فمن العصمة أن لا يقدر الإنسان على هذه الأمور، من العصمة أن يحسم الإنسان مادة هذه الأمور بالكلية، ويستغني بما ينفعه، أما أن يجعل هذه الأمور في متناول يده ويد من ولاه الله عليه ممن لا يدرك المصلحة، كثير من النساء لا يدركن المصلحة، كثير من البنين والبنات لا يدركون المصلحة من المفسدة، ثم بعد ذلك يلوم القناة، أو يلوم من تسبب في هذا، هو أنت المتسبب. <br />
+</b></div><div class="cms_table"><table align="center" class="cms_table"><tr valign="top" class="cms_table_tr"><TD align="center" class="cms_table_td"><b>ألقاه في اليم مكتوفاً ثم قال له<br />
+<br />
+<br />
+</b></TD>
+<TD align="center" class="cms_table_td"></TD>
+<TD align="center" class="cms_table_td"><b>إياك إياك أن تبتل بالماء<br />
+<br />
+<br />
+ <br />
+</b></TD>
+</tr>
+</table></div>
+
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_832925" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_832925" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=832925" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_832925" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_832926">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2016-08-30,&nbsp;<span class="time">04:50 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post832926" href="showthread.php?t=155705&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=832926#post832926" class="postcounter">#2</a><a id="postcount832926" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=134533&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو لقمان عبد الرحمن غير متواجد حالياً"><strong>أبو لقمان عبد الرحمن</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=134533&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=134533&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو لقمان عبد الرحمن غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2016</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>125</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_832926">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><b>شاب أو شابة، مراهق أو مراهقة تترك لهم هذه الفرصة، ولا حسيب ولا رقيب، ثم تقول: والله أريد صلاحهم، {رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَ  ا قُرَّةَ أَعْيُنٍ} [(74) سورة الفرقان] كيف يجاب مثل هذا الدعاء وأنت تركت لهم أسباب ووسائل الفساد، ويسرتها لهم؟ كيف يقول الولد: {رَّبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا} [(24) سورة الإسراء] وأنت تركت لهم أسباب ووسائل الفساد {كَمَا رَبَّيَانِي صَغِيرًا} كيف ربيتهم أنت؟ إن ربيتهم على الخير والفضل، وحب الخير وأهله، والعلم النافع والعمل الصالح أبشر؛ لأنك ربيتهم على مراد الله -جل وعلا-، لكن إن ربيتهم على خلاف ذلك فلا تتوقع هذه النتيجة، إلا برحمة أرحم الراحمين. <br />
+المقصود أن فضول الكلام، وفضول النظر، وفضول السمع، وفضول الحواس كلها التي لا تنفع في يوم القيامة على مريد التزكية للنفس أن يحسم مادتها، طيب إذا منع الإنسان من فضول الكلام فما البديل؟ يصمت؟ يعني يتكلم بما ينفع جملة جملتين ويصمت؟ لا الباب مفتوح، اللسان له وظائف، ((اقرؤوا القرآن فإنه يأتي يوم القيامة شفيعاً لأهله)) ولك بكل حرف عشر حسنات، يقول الرسول -عليه الصلاة والسلام-: ((لا أقول: (ألم) حرف، ولكن ألف حرف، ولام حرف، وميم حرف)) والختمة الواحدة لا تكلف الإنسان، ما يحتاج إلى حمل أثقال، ولا جلوس في شمس، ولا في مكان مخوف ولا شيء، في روضة المسجد يستند على مثل هذا بعد صلاة الصبح لمدة ساعة، ويقرأ القرآن في سبع، كما قال الرسول لابن عمرو: ((اقرأ القرآن في سبع ولا تزد)) إلى أن تنتشر الشمس، وبهذا يحصل في كل أسبوع على ثلاثة ملايين حسنة، ولا خوف من مؤشر ولا غيره، هذه الثلاثة ملايين مضبوطة ومحفوظة في سجل لا يغادر صغيرة ولا كبيرة إلا أحصاها، اللهم إلا إذا أنت تسببت في تضييعه هذا شيء يعود إليك، فالمفلس من يأتي بأعمال أمثال الجبال من صلاة وصيام وحج وزكاة وبر واجتهاد، ثم بعد ذلك يأتي وقد شتم هذا، وضرب هذا، وسفك دم هذا، وأخذ مال هذا، فهذا يأخذ من حسناته، وهذا من حسناته، ختمة لفلان، وختمة لفلان، وهكذا، وفي الغالب أن من ينشغل بهذه المنكرات لا يوفق لقراءة القرآن، لاسيما على الوجه المأمور به، فما تودعه في سجلك وصحائف أعمالك مضبوط، ولا خوف عليه، لا من لص، ولا من هامور يلعب بالسلوك، ما فيه، مضبوط، متقن، يعني إذا كان الناس في أموالهم يتذرعون بأنه ضحك عليهم، هذه الأجور مضبوطة، ما أحد يتصرف فيها، ولا يتحكم، {وَوَجَدُوا مَا عَمِلُوا حَاضِرًا} [(49) سورة الكهف] حاضر تقلب الصفحات ووجهك مشرق، نسأل الله من فضله، المقصود أن قراءة القرآن من تزكية النفس، والذي يفعل ما أمر به من قراءة القرآن على الوجه المأمور به بالتدبر والترتيل، لا شك أن هذا من أعظم وسائل تقوية الإيمان، كما قال شيخ الإسلام بن تيمية -رحمه الله-: &quot;قراءة القرآن على الوجه المأمور به تورث القلب من الإيمان والعلم واليقين والطمأنينة ما لا يدركه شيء، أو لا يحصل بشيء آخر البتة، ولا يدركه إلا من جربه وعاناه&quot;، ويقول ابن القيم -رحمه الله-: <br />
+</b></div><div class="cms_table"><table align="center" class="cms_table"><tr valign="top" class="cms_table_tr"><TD align="center" class="cms_table_td"><b>فتدبر القرآن إن رمت الهدى<br />
+<br />
+<br />
+</b></TD>
+<TD align="center" class="cms_table_td"></TD>
+<TD align="center" class="cms_table_td"><b>فالعلم تحت تدبر القرآنِ<br />
+ج <br />
+</b></TD>
+</tr>
+</table></div>
+<div style="text-align: center;"> <br />
+<b>أيضاً الذكر ((لا يزال لسانك رطباً بذكر الله)) جالس في أي مكان كان، أثقل ما على الناس الانتظار، جلست تنتظر في مكان ما، في مستوصف، وإلا في بيتك تنتظر زميل لك، وإلا أحداً بيطرق الباب عليك، تأخر، تضيق بك الدنيا ذرعاً، الناس جبلوا على هذا، لكن من استغل وقته بذكر الله، وأنس بالله -جل وعلا- ما يضيق صدره، يتمنى أن لو تأخر الدور؛ لأنه لو قال: سبحان الله، والحمد لله، ولا إله إلا الله، والله أكبر الباقيات الصالحات، غراس الجنة، كما جاء في الحديث الصحيح أن إبراهيم -عليه السلام- قال: ((يا محمد أقرئ أمتك السلام، وأخبرهم أن الجنة قيعان، وغراسها التسبيح والتحميد والتهليل والتكبير)) أمور أمور لا تكلف الإنسان شيئاً، سبحان الله وبحمده مائة مرة تقال في دقيقة ونصف ((من قال: سبحان الله وبحمده مائة مرة حطت عنه خطاياه، وإن كانت مثل زبد البحر)) والحديث متفق عليه، لا أحد يقول: والله ثواب عظيم على أمر يسير، لا، فضل الله يؤتيه من يشاء، والله يضاعف لمن يشاء، إلى سبعمائة ضعف، يعني قد يقول الإنسان: هذه أمور لا يتخيلها عقل، لكن فضل الله أعظم، قالوا: إذاً نكثر! قال: ((الله أكثر)) يعني إذا كان آخر من يدخل الجنة، يعني يخرج من النار ويدخل الجنة، فيقال له: تمنّ، تضيق به الأماني، فيقال له: أتريد ملك أعظم ملك من ملوك الدنيا؟ فيقول: إي يا رب، فيقال: لك مثله ومثله ومثله إلى عشرة أمثاله، هذا آخر من يدخل الجنة، يخرج من النار ويدخل الجنة، فكيف بالسابقين المسارعين إلى الخيرات، لكن على الإنسان أن يعمل وأن يبذل، وأن يكون على الجادة؛ لأن العمل لا يرفع إذا حاد عن الجادة يميناً وشمالاً، لا بد من المتابعة للرسول -عليه الصلاة والسلام-، ولا بد من الإخلاص لله -جل وعلا-، والعلم بغير هذين الشرطين باطل، لا قيمة له. <br />
+فضول الأكل أيضاً عائق عن الطريق الموصل إلى الجنة، من العوائق؛ لأن الإنسان إذا أكل كثيراً نام كثيراً، وأصيب بالبطنة، ولا شك أن البطنة تورث كما قال أهل العلم عدم الفطنة، يكسل ويخمل ويتبلد وتجتمع وتتراكم الدهون في مجاريه وعلى قلبه، مثل هذا يصعب عليه أن يشمر لطاعة الله -عز وجل-، فإذا أكل كثيراً نام عن قيام الليل، وقد ينام عن صلاة الصبح، وقد يصاب بأمراض تعوقه عن الأعمال الصالحة، وقد يدفعه نهمه إلى أن يطلب الطعام من غير حله، وكل هذه الأمور لا شك أنها عائق عن تزكية النفس. <br />
+فضول الخلطة الإنسان لا بد له من أن يجتمع بغيره، لا بد أن يجتمع بغيره؛ لأنه كما قال ابن القيم وابن خلدون وغيرهما: &quot;الإنسان مدني بالطبع، وحاجته بيد غيره&quot; قد تكون حاجته بيد غيره، وحاجة غيره بيده، فيحتاج إلى أن يجتمع بفلان وفلان، فهذه الخلطة يحرص الإنسان بقدر الإمكان على تقليلها إلا بقدر الحاجة، وما أوتي كثير من طلبة العلم إلا من قبل هذه الخلطة، تجده إذا صلى العشاء ينظر من بيجينا؟ من بنروح له؟ فقط ما له هم إلا هذا، ثم ينتظر فلان أو يذهب إلى فلان وتذهب عليه الساعات الطوال، ويسهرون الليل كله فإذا حاول مع نفسه وجاهد نفسه للوتر قد يغلبها فيوتر بشيء يسير، لا يحضر فيه قلب، وقد تغلبه، وهذا سببه الخلطة، والخلطة هي سبب القيل والقال، فليقلل الإنسان الخلطة، ومسألة الخلطة والعزلة مسألة اهتم بها أهل العلم، وألفوا فيها الكتب، من خير ما ألف (العزلة) لأبي سليمان الخطابي، من علماء القرن الرابع (388) تقريباً توفي، ذكر فيها النصوص التي تحث على العزلة ((يوشك أن يكون خير مال المسلم غنم يتبع بها شعف الجبال يفر بدينه من الفتن))، وجاء أيضاً الأمر بالخلطة، والتحذير من ترك الجمع والجماعات، والحث على نفع الناس، ولذا الإنسان في هذا الباب إما أن يكون مؤثراً في غيره غير متأثر، أو العكس، فإن كان ممن يؤثر في الناس ولا يتأثر بما عندهم من مخالفات فهذا يتعين في حقه الخلطة، وإن كان ممن يتأثر بما عند الناس من مخالفات ولا يستطيع أن يؤثر فيهم خيراً، فإن مثل هذا يتعين في حقه العزلة، وعلى نصوص العزلة يتنزل حال مثل هذا، بعض الناس يؤثر ويتأثر، ينفع فلان وينتفع به فلان، وعنده شيء من البذل والنفع المتعدي، ومع ذلك قابل للتأثير، يتأثر، نقول: هذا بحسب ما يغلب عليه من طبعه، مع مجاهدة نفسه بعدم التأثر، مثل هذا إذا غلب على ظنه التأثير وتأثره يسير فإنه يجاهد هذا اليسير، ويخالط الناس، أما إذا كان تأثره كثير وتأثيره أقل فمثل هذا العزلة علاجه؛ لأن درء المفاسد عند أهل العلم مقدم على جلب المصالح، وألزم ما على الإنسان وأهم وأولى ما يعنى به الإنسان إصلاح نفسه؛ لأن بعض الناس يكون مثل السراج يضيء للناس، لكنه يحرق نفسه، فإصلاح النفس أولى من إصلاح الغير، والله المستعان.<br />
+ذكرنا أن من أعظم وسائل تحصيل التزكية للنفس الإيمان الخالص لله -جل وعلا-، والتوحيد المحقق المخلص عن شوائب الشرك والبدع والمعاصي، ثم بعد ذلك ذكرنا الصلاة، وما يترتب عليها من تزكية النفس، والنهي عن الفحشاء والمنكر، والزكاة أيضاً التي نص فيها على التزكية، واسمها مأخوذ منها زكاة المال، {خُذْ مِنْ أَمْوَالِهِمْ صَدَقَةً تُطَهِّرُهُمْ وَتُزَكِّيهِم بِهَا} [(103) سورة التوبة]، وكذلك الصيام الذي غايته التقوى، تحقيق التقوى، {يَا أَيُّهَا الَّذِينَ آمَنُواْ كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ} [(183) سورة البقرة] فإذا كانت الزكاة تزكي الإنسان في نفسه وعمله وماله، فإن الصيام محقق للتقوى، {لَعَلَّكُمْ تَتَّقُونَ} والتقوى فعل الأوامر، واجتناب النواهي، ويرد هنا السؤال الذي ورد بالنسبة للصلاة، يصلي الإنسان ولا تنهاه صلاته عن الفحشاء والمنكر، وقلنا: إن الصلاة هذه فيها خلل، والصيام الذي لا يورث التقوى لا شك أن فيه خللاً، لم يكن على مراد الله ومراد رسوله -عليه الصلاة والسلام- من الصيام وإلا فالوعد ممن لا يخلف الميعاد، بل أهل العلم يقولون: لعل من الله واجبة، {لَعَلَّكُمْ تَتَّقُونَ} فالصيام مورث للتقوى بلا محالة، لكن أي صيام يورث التقوى؟ ينهى صاحبه عن ارتكاب المحظور وترك المأمور؟ الصيام الذي حفظ عما يخدشه، ((الصوم جنة)) في رواية: ((ما لم يخدشها)) فالذي لا يحفظ صيامه عن قول الزور، فإن هذا الصيام لا شك أنه لا تترتب عليه آثاره، وكذلك مثل قول الزور ارتكاب المحرمات أثناء الصيام، فمثل هذا الصيام لا يورث التقوى، ومع ذلك لا يؤمر بإعادته، الصوم صحيح عند أهل العلم مسقط للطلب، لكن الآثار المترتبة عليه لا توجد، ويعاقب على ما أرتكبه حال صيامه من محرم أعظم مما يعاقب عليه حال فطره. <br />
+الحج ((من حج فلم يرفث ولم يفسق رجع من ذنوبه كيوم ولدته أمه)) وهو أيضاً مشترط فيه التقوى {وَاذْكُرُواْ اللّهَ فِي أَيَّامٍ مَّعْدُودَاتٍ فَمَن تَعَجَّلَ فِي يَوْمَيْنِ فَلاَ إِثْمَ عَلَيْهِ وَمَن تَأَخَّرَ فَلا إِثْمَ عَلَيْهِ لِمَنِ اتَّقَى} [(203) سورة البقرة] القيد لمن تعجل أو لمن تأخر؟ نعم للأمرين؛ لأن بعض الناس قد يفهم من الآية أنها مدح للتأخر؛ لاقتران التأخر بالتقوى نقول: لا، هذا قيد لمن تعجل، وهو أيضاً قيد لمن تأخر، ومعنى الآية كما قال ابن رجب وغيره، هو معنى قوله: ((رجع من ذنوبه كيوم ولدته أمه)) {فَمَن تَعَجَّلَ فِي يَوْمَيْنِ فَلاَ إِثْمَ عَلَيْهِ} يعني ارتفع عنه الإثم شريطة أن يكون قد اتقى، ومن تأخر فلا إثم عليه ارتفع عنه الإثم، رجع من ذنوبه كيوم ولدته أمه شريطة أن يكون قد اتقى، وأما ترجيح وتفضيل التأخر على التعجل فيؤخذ من فعل النبي -عليه الصلاة والسلام-، أنه تأخر ما تعجل، وأما بالنسبة للآية فالتقوى قيد لمن تعجل ولمن تأخر، فلا بد من التقوى، لماذا؟ لتكون الآثار المرتبة والمترتبة على هذه الأعمال الصالحة محققة، هذه وعود من الله -جل وعلا- في كتابه، ما يقال: ينظر في أسانيدها هل هي صحيحة أو ضعيفة؟ لا، هذا ثابت بالدليل القطعي، بكلام الله -جل وعلا-، في الصيام {لَعَلَّكُمْ تَتَّقُونَ} [(183) سورة البقرة] وفي الحج: {لِمَنِ اتَّقَى} [(203) سورة البقرة] فلا بد من التقوى وبالتقوى تتم تزكية النفس، فالرابط بين التقوى والتزكية قول، فلا يمكن أن تتم تقوى من غير تزكية أو تزكية من غير تقوى، فهما متلازمان، بهذا ننتهي من المحاضرة، وإن كان الكلام في التزكية كثير جداً، وأهل العلم لاسيما ابن القيم وابن رجب أولوا هذا الموضوع عناية فائقة، ويمكن أن يطرق من وجوه عديدة، وبأساليب كثيرة، لكن هذا ما سمح به الوقت، والأسئلة كثيرة جداً، يمكن تحتاج إلى محاضرات، بل لقاءات، لكن نأتي منها بالشيء اليسير، ويرجع الباقي.<br />
+إذا قيل للشخص: إنه سلفي هل تعبير هذا تزكية؟ أو تعتبر هذه تزكية؟ أرجو توضيح هذه المسألة؟<br />
+إذا قيل: إنه سلفي من قبل من يعتد بقوله من أهل العلم فهذه تزكية له، لكن إن قالها عن نفسه {فَلَا تُزَكُّوا أَنفُسَكُمْ} [(32) سورة النجم] اللهم إلا إذا كان مقتدياً بسلف هذه الأمة، ويريد أن يبرز هذا المذهب، ويحث إليه، كما قالوا في الأثري: فلان بن فلان الأثري، انتسب إلى الأثر جماعة من أهل العلم. <br />
+</b></div><div class="cms_table"><table align="center" class="cms_table"><tr valign="top" class="cms_table_tr"><TD align="center" class="cms_table_td"><b>يقول راجي ربه المقتدري<br />
+<br />
+<br />
+</b></TD>
+<TD align="center" class="cms_table_td"></TD>
+<TD align="center" class="cms_table_td"><b>عبد الرحيم بن الحسين الأثري<br />
+<br />
+<br />
+</b></TD>
+</tr>
+</table></div>
+<div style="text-align: center;"> <br />
+<b>طالب:........<br />
+لكن هو في بلد يقل فيه السلفية أو يكثر فيه السلفية؟ أو الأصل فيه السلفية؟ <br />
+طالب:........<br />
+على كل حال مثل هذه الأمور تقدر بقدرها، والإنسان ينظر إلى ما وقر في قلبه، إن كان يترفع بذلك على غيره فتزكية للنفس. <br />
+هذا سؤال فيه إشكال حول..، هذا يسأل عن صوت المرأة هل هو عورة؟ وإذا كان كذلك فما حكم ردها على الهاتف؟<br />
+أولاً: المنهي عنه بالنسبة للمرأة هو الخضوع بالقول {فَلَا تَخْضَعْنَ بِالْقَوْلِ فَيَطْمَعَ الَّذِي فِي قَلْبِهِ مَرَضٌ} [(32) سورة الأحزاب] الخضوع بالقول لا يجوز بحال، وإذا كان صوت المرأة وجد هكذا، خلق هكذا فيه شيء من الخضوع، فمنعه من أجل الفتنة المترتبة عليه، وإلا إذا تكلمت المرأة من غير خضوع، وصوتها لا يورث فتنة في قلب محدثها فالمرجح أنه ليس بعورة، وإن كان من أهل العلم من المتقدمين والمتأخرين يرى أنه عورة؛ لأنه مؤثر في الرجال ولا محالة، ويستدلون على ذلك بأمور، منها: أنها لا تجهر في صلاتها، ولا تجهر في تلبيتها، وإذا نابها شيء في الصلاة صفقت ولا تسبح، المقصود أن هذا القول معروف عند أهل العلم، فخير ما للمرأة ألا تتعرض للرجال لا بكلام ولا بغيره، وهذا أحفظ لها ولهم، لكن إن احتاجت إلى ذلك ولا يوجد من يقضي حاجتها إلا هي فالأصل -إن شاء الله- الجواز، مع أمن فتنة.<br />
+إرادة الإنسان بعملٍ صالح الدنيا والثناء والمال مثل التدريس في المدارس للمواد الدينية والإمامة؟<br />
+هذه الأمور أعني تعليم العلم الشرعي من أمور الآخرة المحضة، لا يجوز فيها التشريك، لا بد أن يبذل لله -جل وعلا-، وكونه يأخذ من بيت المال ما يعينه على تحقيق الهدف الذي من أجله خلق، وهو تحقيق العبودية لله -جل وعلا- هذا لا يضره.<br />
+يقول: ما حكم نظر النساء، العلماء، مثل، نظر النساء، العلماء، القنوات، مثل الناس، في المسجد، كأن هذا يقول: رتب الكلمات التالية، ما فيها شيء يربطها؟<br />
+على كل حال السؤال كأنه واضح، يعني نظر المرأة لصورة الرجل؛ لأنه يوجد من يشوش في هذه المسألة، المرأة مأمورة بغض البصر كالرجل تماماً، فإذا كان لا يجوز للرجل أن ينظر ويحدد في امرأة بعينها، فكذلك لا يجوز لامرأة أن تنظر إلى رجل بعينه، وعليها أن تغض البصر كما أمر الرجل بأن يغض البصر، وغض البصر من وسائل التزكية، من أعظم وسائل التزكية، ومن أعظم وسائل حفظ القلب، لا من الرجال ولا من النساء، ونص على التزكية في مسألة غض البصر، والله المستعان. <br />
+يقول: هل ما ورد عن بعض الصحابة والسلف من الختم في ليلتين أو ليلة مخالف للسنة؟<br />
+أولاً: ثبت عن عثمان -رضي الله عنه- أنه يقرأ القرآن في ليلة، يعني في ركعة، قراءة القرآن أقل تقدير لها ست ساعات يعني بالتجربة، ست ساعات، ورأينا من يبكي وهو يقرأ بهذه السرعة، فالمسألة مسألة مران، لكن أقل من هذا مستحيل، لا يأتينا من يقول: إنه يقرأ القرآن في ساعة أو في لحظة، كما يدعى الآن وسابقاً، يعني هذا الكلام مأثور من قديم مثل هذا، ولا يمكن أنه يخطر على بال إنسان أن يقرأ القرآن ولا تصفح ولا فتح صفحات، يعني القسطلاني في شرح البخاري ذكر عن شيخ من الشيوخ، وأثنى عليه أنه قرأ القرآن في سبع، كيف في سبع؟ أو في سبعة؟ قرأ القرآن في سبعة، في أسبوع، قرأ القرآن في أسبوع هذا اللفظ، اللي يقول: قرأ القرآن في أسبوع قلنا: طيب هذا أمر الرسول -عليه الصلاة والسلام- لعبد الله بن عمر، قال: وقيل: في شوط، عرفنا أن الأسبوع سبعة أشواط، يمكن هذه وإلا ما يمكن؟ مستحيل، وقيل: في شوط، هذا مستحيل، وهذا عبث لكلام الله -جل وعلا-، مع أنه لا يمكن تصوره، ولا يدخل في عقل، وهو أيضاً محاولة مثل هذا الأمر عبث، وجاء الأمر لعبد الله: ((اقرأ القرآن في سبع ولا تزد)) لأن هذا أقرب إلى أن تكون القراءة على الوجه المأمور به، بالتدبر والترتيل، وجاء أيضاً: ((لا يفقه من قرأ القرآن في أقل من ثلاث)) طيب عثمان يقرأ في ليلة، وثبت عن كثير من الصحابة ليلة أو ليلتين، من السلف والتابعين والأئمة كثير هذا، أقول: لعل ما أثر عنهم استغلالاً للمواسم، لا يكون ديدن ولا عادة، لكن استغلال المواسم كالعشر الأواخر يعني إذا كان النبي -صلى الله عليه وسلم- يحيي ليله، يحيي الليل، وإحياء الليل يكون بالقراءة، بالذكر، بالصلاة،........، لكن ظروف الناس تختلف، ما يقال لشخص متفرغ للعبادة وللتلاوة: لا تقرأ القرآن إلا في سبع، والشخص المشغول بالأعمال الكثيرة والدوام والدروس ونفع الناس وقضاء حوائجهم يقال له: اقرأ القرآن في سبع، فهذا يختلف عن هذا، وقول الرسول -عليه الصلاة والسلام- لعبد الله بن عمرو: ((ولا تزد)) هذا من باب الشفقة عليه، من باب الشفقة عليه، وإذا نهي الإنسان من شيء شفقة عليه فأهل العلم يقولون: الأمر يعود إليه، فإذا كان لا يتأثر به ولا يضره هذا الأمر إليه، ولذلك زاد عبد الله بن عمرو، صار يقرأ في ثلاث، على كل حال هذه مسألة مسألة يختلف فيها بين أهل العلم، فمنهم من يقول: إن الأمر على ما جاء عن الصحابة، ومن أكثر فالله أكثر، ورتبت الأجور على الحروف، فقراءة الحروف تثبت بمثل هذه السرعة، أجر الحروف المرتب، الأجر المرتب على الحروف يثبت، ولو كانت القراءة هذاً، أما الأجور العظيمة التي ((من قرأ القرآن وهو ماهر فيه مع السفرة الكرام البررة)) لا بد أن يقرأ على الوجه المأمور به، وأهل العلم بينهم خلاف أيهما أكثر أجراً من يقرأ القرآن على الوجه المأمور به بحيث يختم في الأسبوع مرة، أو يقرأ القرآن بالسرعة ويختم في الأسبوع سبع مرات، يعني المسألة مفترضة في شخص يقول: أنا أجلس في المسجد ساعة، بعد صلاة الصبح، فهل الأفضل أن أقرأ جزء واحد بالتدبر والترتيل، أو أقرأ خمسة؟ لأن الخمسة مجربة في الساعة، أيهما أفضل؟ الجمهور على أنه يقرأ جزءاً واحداً على الوجه المأمور به أفضل من أن يقرأ خمسة، وعند الشافعية قول معروف أنه كلما أكثر من الحروف فهو أفضل، ولو أخل بالتدبر والترتيل، وعلى كل حال قول الجمهور هو المورث للعلم النافع، والإيمان الخالص، واليقين والطمأنينة كما قال شيخ الإسلام. <br />
+ابن القيم يقول: إن من يسرع في قراءته، ويكثر من الختم بالنسبة لمن يتدبر ويرتل ويقل من الختم كمن أهدى عشر درر، وذاك أهدى درة واحدة، الذي يسرع وختم عشر مرات هذا أهدى عشر درر، وذاك أهدى درة واحدة، لكن افترض أن العشر قيمة كل واحدة ألف، لكن قيمة الواحدة في مقابل العشر مائة ألف، صار أيهما أفضل؟ <br />
+طالب:.......<br />
+نعم الذي يتدبر ويرتل أفضل بكثير، وقراءة الهذ وإن كان يرجى ما رتب فيها من أجر، وفيها خير ونفع عظيم للإنسان، لكنها ليست بشيء مقارنة بقراءة الانتفاع بالقرآن، والإنسان على ما تعود، الذي تعود السرعة لا يستطيع أن يترك السرعة، مثل السرعة بالسيارة، الذي عود نفسه على السرعة ما يستطيع، فإذا مر بآية تأمر بالتدبر قصر قليلاً؛ يعني الآيات الأربع، آيات التدبر الأربع إذا مر بها قصر قليلاً، ثم نسيها فرجع إلى ما كان عليه، وهذا نظير من جبل على السرعة في القيادة، إذا رأى حادث قصر قليلاً، ثم بعد ذلك عشرة كيلو ينساه، يرجع إلى ما كان عليه، فعلى الإنسان أن يعود نفسه على التدبر والترتيل، لكن شخص من عشر أو عشرين سنة عود نفسه على أنه يختم في كل ثلاث، أو في كل سبع بسرعة بالهذ، وأراد أن يعود إلى الطريقة الثانية الأمثل والأفضل فهل نقول: إنه بدلاً من أن يختم في الشهر أربع مرات يختم واحدة، أو بدل أن يختم عشر يختم أربع أفضل له؟ أو يستمر على طريقته؟ لأن الرسول -عليه الصلاة والسلام- إذا عمل عملاً أثبته، والتقليل من الختم رجوع بعض الشيء، رجوع في الكم، وإن لم يكن رجوعاً في الكيف، والعبرة في الكيف؛ لأن بعض الناس يجد في نفسه أن يقلل بعد أن اعتمد طريقاً واستمر عليه سنين، الرسول -عليه الصلاة والسلام- إذا عمل عملاً أثبته، وجاء في الحديث الصحيح في البخاري وغيره ((مه اكلفوا من العمل ما تطيقون، فإن الله لا يمل حتى تملوا)) هل نقول: إن الذي رجع من الختم عشر مرات في الشهر إلى مرة أو مرتين، نقول: هذا مل؟ أو نقول: إنه بدلاً من الكم نرجع إلى الكيف والكيف أفضل؟ لأن هذا لا بد أن يوجد في نفس الحريص، صاحب التحري يؤثر فيه مثل هذا؛ لأن النبي -عليه الصلاة والسلام- إذا عمل عملاً أثبته وهذا رجع، عمل عملاً وأثبته مدة طويلة ثم نكص عنه، ورجع، والرجوع والنكوص عند أهل العلم مذموم بلا شك، لكن يبقى أنه بدلاً من العناية بالكم تكون العناية بالكيف، والكيف أهم.<br />
+يقول: هل التزكية التي تقدم عند بعض الوظائف أو المعاهد داخلة في النهي؟<br />
+يعني هذا صارت نظام، نظام في الجهات الرسمية حينما تريد عمل من الأعمال، هات تزكيات من أهل العلم، فيذهب لفلان وفلان وفلان من أجل أن يزكوه ويمدحوه ويثنوا عليه، هل هذا من المنهي عنه؟ لأنه قد يوجد من يتورع عن مثل هذا ويفوز بالأعمال المهمة، والتمكين من الدراسة، الدراسة العالية لا بد فيها من التزكيات، هل نقول: إن هذا صاحب التحري وصاحب الورع والتثبت الذي لا يريد التزكية المنهي عنها هل نقول له: عليك أن تكف عن مثل هذا، وإن فاز بها غيرك؟ أو نقول لمثل هذا: أمر مطلوب شرعاً في مواصلة العلم والتعليم، مطلوب شرعاً، وما لا يتم إلا به فحكمه حكمه، لا شك أن هذه من المضايق؛ لأن الإنسان وهو يسعى جاهداً إلى مثل هذا في باله شيء أو أشياء، وفيها الراجح وفيها المرجوح، نعم إن رجح في ذهنه التمكين من التعليم؛ لأن التعليم العالي يحتاج إلى شهادات، فإن رجح في ذهنه التمكين من التعليم وأنه لا يتمكن إلا بهذه الشهادة المتطلبة لهذه التزكيات، فهذه أمور مغتفرة في سبيل الهدف النبيل هذا الذي يرمي إليه، وإن كان جال في ذهنه أشياء، أنه كلما أخذ من شهادة زاد راتبه مثلاً، مع تمكينه من التعليم ومع أمور تحتف بذلك فليكف؛ لأن ما عند الله لا ينال بسخطه، هذا العلم مما عند الله، وما يبتغى به وجه الله، لا ينال بمثل هذه الأمور، ومع الأسف أنها صارت مشكلة الآن، وإلا لو أن التزكية مطلوبة؛ لأن بعض الناس مجاهيل ما يدرى عنهم، ما يدرى عن حقيقتهم، فلا بد من تزكيتهم، لكن المعروف طلب التزكية منه غير وجيه.<br />
+يقول: هل يشترط احتساب النية في نفقة الرجل على أهله حتى يكتب له الأجر؟<br />
+النية لا بد منها ((إنما الأعمال بالنيات، وإنما لكل امرئ ما نوى)) فلا بد من النية، وكم من أجور عظيمة تفوت كثير من الناس لغفلتهم، وعزوف النية عن أذهانهم، تجده في نهاية كل شهر يذهب إلى المحلات التجارية والمواد الغذائية، ويجلب المصروف لزوجته وأولاده وبناته، وهو لا يستحضر شيئاً، مع أن الرسول -عليه الصلاة والسلام- قال: أنه يؤجر على كل شيء، حتى ما يضعه في في امرأته، يحتسب الأجر من الله -جل وعلا-، والله أعلم. <br />
+وصلى الله وسلم وبارك على عبده ورسوله، نبينا محمد وعلى آله وصحبه أجمعين. <br />
+</b></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_832926" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_832926" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=832926" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_832926" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=155705&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=155705#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=696d1a7d9adaea36633b28fa7c3827c1">لوحة التحكم</a></li>
+		<li><a href="private.php?s=696d1a7d9adaea36633b28fa7c3827c1">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1">الاشتراكات</a></li>
+		<li><a href="online.php?s=696d1a7d9adaea36633b28fa7c3827c1">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=135493&amp;s=696d1a7d9adaea36633b28fa7c3827c1">اعرف عدوك</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=155706&amp;s=696d1a7d9adaea36633b28fa7c3827c1">كلمات تكتب بماء الذهب</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A3%D9%81%D9%84%D8%AD">أفلح</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%AE%D8%B6%D9%8A%D8%B1">الخضير</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D9%85">الكريم</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%B2%D9%83%D8%A7%D9%87%D8%A7">زكاها</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%B9%D8%A8%D8%AF">عبد</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%82%D8%AF">قد</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%84%D9%84%D8%B4%D9%8A%D8%AE">للشيخ</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%85%D9%86">من</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=155705#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=155705#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">04:53 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

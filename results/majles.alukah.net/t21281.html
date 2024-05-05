@@ -1,0 +1,4826 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=696d1a7d9adaea36633b28fa7c3827c1&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=21281";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الفقه وأصوله - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=15" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="الله, ولا, كما, الإسلام, فلا, عبد, تحل, الرافضة, يحل, الشيخ, وقد, يدعون, ذلك, حتى, ذبائح, والحسين, لنا, الدائمة, الصحابة, والحسن, كان, عليها, مشركون, ذبائحهم, علي, الشيعة, حكم, اللجنة, ذبيحته, ولو, ذبيحة, انتهى, البيت, الكريم, القرآن, الغيب, علياً, الجعفرية, أكل, بأحاديث, وهم, دليل, على, يطعنون, الرافضي, حيث, ذبحهم, ولم, ونحوهم, أكبر" />
+	<meta name="description" content="السلام عليكم ورحمة الله وبركاته  
+ 
+مشايخنا الكرام وجدت هذه الفتوى  
+ 
+ 
+ 
+ولي ثلاثة اسئلة  ارجو ان تفيدوننا  
+ 
+الاول" />
+
+	<title> حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية</title>
+	<link rel="canonical" href="showthread.php?t=21281&s=696d1a7d9adaea36633b28fa7c3827c1" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=696d1a7d9adaea36633b28fa7c3827c1 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=696d1a7d9adaea36633b28fa7c3827c1">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=696d1a7d9adaea36633b28fa7c3827c1&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<form action="showthread.php?t=21281&amp;page=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1" method="get" class="pagination popupmenu nohovermenu">
+<input type="hidden" name="t" value="21281" /><input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+	
+		<span><a href="javascript://" class="popupctrl">صفحة 1 من 2</a></span>
+		
+		
+		
+		<span class="selected"><a href="javascript://" title="النتائج 1 إلى 20 من 27">1</a></span><span><a href="showthread.php?t=21281&amp;page=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مشاهدة النتائج 21 إلى 27 من 27">2</a></span>
+		
+		
+		<span class="prev_next"><a rel="next" href="showthread.php?t=21281&amp;page=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة التالية - النتائج 21 إلى 27 من 27"><img src="images/metro/purple/pagination/next-left.png" alt="التالي" /></a></span>
+		
+		
+		<span class="first_last"><a href="showthread.php?t=21281&amp;page=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة الأخيرة - النتائج 21 إلى 27 من 27">الأخيرة<img src="images/metro/purple/pagination/last-left.png" alt="الأخيرة" /></a></span>
+		
+	
+	<ul class="popupbody popuphover">
+		<li class="formsubmit jumptopage"><label>إذهب إلى الصفحة: <input type="text" name="page" size="4" /></label> <input type="submit" class="button" value="إذهب" /></li>
+	</ul>
+</form>
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 20 من 27
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=21281&s=696d1a7d9adaea36633b28fa7c3827c1" title="تحديث الصفحة">حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=21281" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;t=21281&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=addsubscription&amp;t=21281" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;search_type=1&amp;searchthreadid=21281&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="21281" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_150540">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-16,&nbsp;<span class="time">11:04 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post150540" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=150540#post150540" class="postcounter">#1</a><a id="postcount150540" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=19766&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="باعث الخير غير متواجد حالياً"><strong>باعث الخير</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=19766&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=19766&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="باعث الخير غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>May 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>83</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="Post" /> حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_150540">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;">السلام عليكم ورحمة الله وبركاته <br />
+<br />
+مشايخنا الكرام وجدت هذه الفتوى <br />
+<br />
+<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				حكم ذبائح الشيعة – الرافضة -<br />
+نحن نعيش في مجتمع شيعي ، وأنتم تعلمون عقائد الشيعة المخالفة للكتاب والسنة مع دعواهم الإسلام ، فهل يجوز لنا أن نأكل ذبائحهم التي يذكرون اسم الله عليها ويذبحونها - للبيع في الأسواق - للقبور أو الأموات أو المشاهد أو للنذر؟ .<br />
+<br />
+<br />
+صفحة جديدة 1 <br />
+<br />
+الحمد لله<br />
+من شروط حل الذبيحة أن يكون الذابح لها مسلماً أو كتابيّاً ، فلا تحل ذبيحة المشرك ولا المجوسي ولا المرتد .<br />
+والشيعة لهم جملة من العقائد والأعمال التي تخرجهم من دائرة الإسلام ، كاعتقادهم تحريف القرآن الكريم ، وأن أئمتهم يعلمون الغيب ، وأنهم معصومون من السهو والخطأ .<br />
+ويستغيثون بالأموات ، ويدعونهم من دون الله ، ويسجدون لقبورهم ، ويسبون أفضل البشر بعد الأنبياء والرسل وهم أصحاب النبي صلى الله عليه وسلم ويكفرونهم ، وقد سبق بيان ذلك في جواب السؤال رقم (1148) و(10272) و (21500) .<br />
+فمن اعتقد شيئاً من ذلك ، أو فعل شيئاً من هذه الكفريات ، فهو خارج عن الإسلام ولا تحل ذبيحته . <br />
+وقد سئل علماء اللجنة الدائمة للإفتاء : عن أكل ذبائح الشيعة الجعفرية ، علماً بأنهم يدعون علياً والحسن والحسين وسائر سادتهم في الشدة والرخاء :<br />
+فأجابوا : <br />
+&quot;إذا كان الأمر كما ذكر السائل من أن الجماعة الذين لديه من الجعفرية يدعون علياً والحسن والحسين وسادتهم فهم مشركون مرتدون عن الإسلام والعياذ بالله ، ولا يحل الأكل من ذبائحهم ، لأنها ميتة ولو ذكروا عليها اسم الله &quot; انتهى .<br />
+&quot;فتاوى اللجنة الدائمة&quot; (2/264) .<br />
+وسئلوا أيضاً :<br />
+أنا من قبيلة تسكن في الحدود الشمالية ومختلطين نحن وقبائل من العراق ومذهبهم شيعة وثنية يعبدون قبباً ويسمونها بالحسن والحسين وعلي ، وإذا قام أحدهم قال : يا علي ، يا حسين ، وقد خالطهم البعض من قبائلنا في النكاح في كل الأحوال ، وقد وعظتهم ولم يسمعوا ، وقد سمعت أن ذبحهم لا يؤكل وهؤلاء يأكلون ذبحهم ولم يتقيدوا ونطلب من سماحتكم توضيح الواجب نحو ما ذكرنا ؟ <br />
+فأجابوا :<br />
+&quot;إذا كان الواقع كما ذكرت من دعائهم عليّاً والحسين والحسن ونحوهم : فهم مشركون شركاً أكبر يخرج من ملة الإسلام ، فلا يحل أن نزوجِّهم المسلمات ، ولا يحل لنا أن نتزوج من نسائهم ، ولا يحل لنا أن نأكل من ذبائحهم ، قال الله تعالى : (ولا تنكحوا المشركات حتى يؤمنَّ ولأمَةٌ مؤمنة خير من مشركة ولو أعجبتكم ولا تنكحوا المشركين حتى يؤمنوا ولعبدٌ مؤمنٌ خيرٌ من مشركٍ ولو أعجبكم أولئك يدعون إلى النار والله يدعو إلى الجنة والمغفرة بإذنه ويبين آياته للناس لعلهم يتذكرون)&quot; انتهى .<br />
+الشيخ عبد العزيز بن عبد الله بن باز ، الشيخ عبد الرزاق عفيفي ، الشيخ عبد الله بن غديان ، الشيخ عبد الله بن قعود <br />
+&quot; فتاوى اللجنة الدائمة &quot; ( 2 / 264) .<br />
+وسئل الشيخ عبد الله بن جبرين حفظه الله عن الأكل من ذبائح الرافضة :<br />
+فأجاب : <br />
+&quot;لا يحل ذبح الرافضي ولا أكل ذبيحته ، فإن الرافضة غالباً مشركون حيث يدعون علي بن أبي طالب دائماً في الشدة والرخاء حتى في عرفات والطواف والسعي ، ويدعون أبناءه وأئمتهم كما سمعنا مراراً ، وهذا شرك أكبر وردة عن الإسلام يستحقون القتل عليها ، كما يغلون في وصف علي رضي الله عنه ويصفونه بأوصاف لا تصلح إلا لله كما سمعناهم في عرفات، وهم بذلك مرتدون حيث جعلوه ربّاً وخالقاً ومتصرفاً في الكون ويعلم الغيب ويملك الضر والنفع ونحو ذلك ، كما أنهم يطعنون في القرآن الكريم ويزعمون أن الصحابة حرفوه وحذفوا منه أشياء كثيرة تتعلق بأهل البيت وأعدائهم فلا يقتدون به ولا يرونه دليلا ، كما أنهم يطعنون في أكابر الصحابة كالخلفاء الثلاثة وبقية العشرة وأمهات المؤمنين ومشاهير الصحابة كأنس وجابر وأبي هريرة ونحوهم ، فلا يقبلون أحاديثهم لأنهم كفار في زعمهم ، ولا يعملون بأحاديث الصحيحين إلا ما كان عن أهل البيت ، ويتعلقون بأحاديث مكذوبة ، أو لا دليل فيها على ما يقولون ، ولكنهم مع ذلك ينافقون فيقولون بألسنتهم ما ليس في قلوبهم ويخفون في أنفسهم ما لا يبدون لك ، ويقولون : &quot;من لا تقية له فلا دين له&quot; ، فلا تقبل دعواهم في الأخوة ومحبة الشرع ... إلخ , فالنفاق عقيدة عندهم ، كفى الله شرهم&quot; انتهى .<br />
+<br />
+والله أعلم<br />
+<br />
+ <br />
+<br />
+<br />
+<br />
+الإسلام سؤال وجواب
+			
+		</div>
+	</div>
+</div>ولي ثلاثة اسئلة  ارجو ان تفيدوننا <br />
+<br />
+الاول <br />
+<br />
+من العلماء من يشترط اقامة الحجة على الرافضة وبالاخص عوامهم في تكفيرهم <br />
+<br />
+فهل ايضا لا تحل ذبيحة الرافضي العامي الجاهل بما يفعل ؟<br />
+<br />
+الثاني <br />
+<br />
+ما حكم المرتد الى ديانة من ديانات اهل الكتاب ( اليهودية او النصرانية ) هل تحل ذبيحته حتى ان سمى وذكى ام لا تحل وما الدليل ؟<br />
+<br />
+الثالث <br />
+<br />
+هل هناك دليل خاص في تحريم ذبائح المشركين ؟ <br />
+<br />
+بارك الله فيكم </div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_150540" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_150540" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=150540" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_150540" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_150619">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-17,&nbsp;<span class="time">02:35 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post150619" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=150619#post150619" class="postcounter">#2</a><a id="postcount150619" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=24080&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو البراء الأندلسي غير متواجد حالياً"><strong>أبو البراء الأندلسي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=24080&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=24080&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو البراء الأندلسي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Sep 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>223</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_150619">
+				<blockquote class="postcontent restore">
+					الأخ الفاضل أكتب لك على عجل و لعلي أعود إليك إن شاء الله<br />
+<br />
+استدل من حرم ذبيحة المشركين و المرتدين <br />
+<br />
+قوله تعالى<br />
+إِنَّمَا حَرَّمَ عَلَيْكُمُ الْمَيْتَةَ وَالدَّمَ وَلَحْمَ الْخِنْزِيرِ وَمَا أُهِلَّ بِهِ لِغَيْرِ اللَّهِ فَمَنِ اضْطُرَّ غَيْرَ بَاغٍ وَلَا عَادٍ فَلَا إِثْمَ عَلَيْهِ إِنَّ اللَّهَ غَفُورٌ رَحِيمٌ (173) {البقرة}<br />
+<br />
+عن ابن عباس:&quot;وما أهِلّ به لغير الله&quot;، يعني: ما أهِل للطواغيت كلّها. يعني: ما ذبح لغير الله من أهل الكفر، غير اليهود والنصارى<br />
+<br />
+عن عقبة بن مسلم التُّجيبي وقيس بن رافع الأشجعي أنهما قالا أحِل لنا ما ذُبح لعيد الكنائس، وما أهدي لها من خبز أو لحم، فإنما هو طعام أهل الكتاب. قال حيوة، قلت: أرأيت قَول الله:&quot;وما أهِلّ به لغير الله&quot;؟ قال: إنما ذلك المجوسُ وأهلُ الأوثان والمشركون.{راجع تفسير ابن جرير}<br />
+<br />
+و قوله تعالى<br />
+الْيَوْمَ أُحِلَّ لَكُمُ الطَّيِّبَاتُ وَطَعَامُ الَّذِينَ أُوتُوا الْكِتَابَ حِلٌّ لَكُمْ {المائدة}<br />
+<br />
+قال ابن كثير _تفسير القرآن_<br />
+{ وَطَعَامُ الَّذِينَ أُوتُوا الْكِتَابَ حِلٌّ لَكُمْ } فدل بمفهومه -مفهوم المخالفة-على أن طعام من عداهم من أهل الأديان  لا يحل<br />
+<br />
+عن الحسن بن محمد الحنفية<br />
+{ أَنَّ النَّبِيَّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ أَخَذَ الْجِزْيَةَ مِنْ الْمَجُوسِ وَقَالَ : سُنُّوا بِهِمْ سُنَّةَ أَهْلِ الْكِتَابِ غَيْرَ نَاكِحِي نِسَائِهِمْ وَلَا آكِلِي ذَبَائِحِهِمْ }{حديث مرسل رواه مالك و الطبراني}<br />
+<br />
+قال ابن تيمية  _مجموع الفتاوى_<br />
+وَهَذَا مُرْسَلٌ . وَعَنْ خَمْسَةٍ مِنْ الصَّحَابَةِ تُوَافِقُهُ وَلَمْ يُعْرَفْ عَنْهُمْ خِلَافٌ وَأَمَّا حُذَيْفَةُ فَذَكَرَ أَحْمَد : أَنَّهُ تَزَوَّجَ بِيَهُودِيَّةٍ . وَقَدْ عَمِلَ بِهَذَا الْمُرْسَلِ عَوَامُّ أَهْلِ الْعِلْمِ . &quot; وَالْمُرْسَلُ &quot; فِي أَحَدِ قَوْلَيْ الْعُلَمَاءِ حُجَّةٌ ؛ كَمَذْهَبِ أَبِي حَنِيفَةَ وَمَالِكٍ وَأَحْمَد فِي إحْدَى الرِّوَايَتَيْن  ِ عَنْهُ . وَفِي الْآخَرِ هُوَ حُجَّةٌ إذَا عَضَّدَهُ قَوْلُ جُمْهُورِ أَهْلِ الْعِلْمِ وَظَاهِرُ الْقُرْآنِ أَوْ أُرْسِلَ مِنْ وَجْهٍ آخَرَ . وَهَذَا قَوْلُ الشَّافِعِيِّ . فَمِثْلُ هَذَا الْمُرْسَلِ حُجَّةٌ بِاتِّفَاقِ الْعُلَمَاءِ<br />
+<br />
+و قد نقل غير واحد من أهل العلم الإجماع عى حرمة أكل ذبائح الملل الأخرى دون أهل الكتاب<br />
+<br />
+قال ابن قدامة   _المغني_<br />
+ أجمع أهل العلم على تحريم صيد المجوسي وذبيحته إلاّ ما لا زكاة له كالسمك والجراد<br />
+<br />
+<br />
+وقال ابن عبد البر   _الإستذكار_<br />
+ وأجمعوا أن المجوسي والوثني ولو سمّى الله لم تؤكل ذبيحته<br />
+<br />
+وقال ابن تيمية  _مجموع الفتاوى_<br />
+ أما المشركون فاتفقت الأمة على تحريم نكاح نسائهم وطعامهم<br />
+<br />
+<br />
+<br />
+ستكون لي عودة بإذن الله أخي الكريم.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none">قوام الدين بكتاب يهدي و سيف ينصر</div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_150619" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_150619" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=150619" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_150619" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_150653">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-17,&nbsp;<span class="time">07:03 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post150653" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=150653#post150653" class="postcounter">#3</a><a id="postcount150653" name="3"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=20102&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="من صاحب النقب غير متواجد حالياً"><strong>من صاحب النقب</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=20102&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=20102&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="من صاحب النقب غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>May 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,018</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_150653">
+				<blockquote class="postcontent restore">
+					اسمع يا أخ الإسلام إذا وصلت المسألة للشرك فلا فرق بين عامي و عالم و كلهم مشركين لا تؤكل ذبيحتهم بغض النظر هل قامت عليهم الحجة أو لم تقم فالله لم ينهى عن أكل ذبيحة المشرك العالم فقط و لم يبح ذبيحة المشرك الجاهل
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_150653" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_150653" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=150653" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_150653" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_150655">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-17,&nbsp;<span class="time">07:08 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post150655" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=150655#post150655" class="postcounter">#4</a><a id="postcount150655" name="4"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=19766&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="باعث الخير غير متواجد حالياً"><strong>باعث الخير</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=19766&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=19766&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="باعث الخير غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>May 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>83</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_150655">
+				<blockquote class="postcontent restore">
+					<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				ستكون لي عودة بإذن الله أخي الكريم.
+			
+		</div>
+	</div>
+</div>انتظرك شيخنا الكريم <br />
+<br />
+وبارك الله فيك على ما اوردته لنا من الاقوال
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_150655" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_150655" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=150655" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_150655" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_150737">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-17,&nbsp;<span class="time">01:35 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post150737" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=150737#post150737" class="postcounter">#5</a><a id="postcount150737" name="5"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=8125&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو شعيب غير متواجد حالياً"><strong>أبو شعيب</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=8125&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=8125&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو شعيب غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>557</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_150737">
+				<blockquote class="postcontent restore">
+					الصواب الذي أراه أخي الكريم هو جواز ذبائح الرافضة وكل ملة منتسبة إلى الإسلام وليست منها كالجهمية ، والمرتدين إلى اليهودية والنصرانية ..<br />
+ <br />
+أما جواز ذبائح المشركين المنتسبين إلى الإسلام ، والذين لم يجهروا بتركهم له .. فهو قياسهم على اليهود والنصارى .. فإن اليهود والنصارى قد نقضوا أصل دينهم بمكفرات كثيرة ، ولكن مع هذا فقد حلّت ذبائحهم .<br />
+ <br />
+ومن ناحية أخرى .. <br />
+ <br />
+إن الذبيحة تحلّ إن توافرت فيها ثلاثة أمور :<br />
+ <br />
+- أن تذبح لله تعالى وليس لغيره .<br />
+- أن يُذكر اسم الله عليها .<br />
+- أن تُذكى .<br />
+ <br />
+ومتى ما تحققت هذه الثلاث شروط ، فقد حلّت الذبيحة ..<br />
+ <br />
+وأدلة هذه الثلاث هي :<br />
+ <br />
+<font color="red">وَلاَ تَأْكُلُواْ مِمَّا لَمْ يُذْكَرِ اسْمُ اللّهِ عَلَيْهِ</font> [الأنعام : 121]<br />
+ <br />
+حُرِّمَتْ عَلَيْكُمُ الْمَيْتَةُ وَالْدَّمُ وَلَحْمُ الْخِنْزِيرِ <font color="red">وَمَا أُهِلَّ لِغَيْرِ اللّهِ بِهِ</font> وَالْمُنْخَنِقَ  ةُ وَالْمَوْقُوذَة  ُ وَالْمُتَرَدِّي  َةُ وَالنَّطِيحَةُ وَمَا أَكَلَ السَّبُعُ إِلاَّ مَا ذَكَّيْتُمْ <font color="red">وَمَا ذُبِحَ عَلَى النُّصُبِ</font> وَأَن تَسْتَقْسِمُواْ بِالأَزْلاَمِ ذَلِكُمْ فِسْقٌ الْيَوْمَ يَئِسَ الَّذِينَ كَفَرُواْ مِن دِينِكُمْ فَلاَ تَخْشَوْهُمْ وَاخْشَوْنِ الْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ وَأَتْمَمْتُ عَلَيْكُمْ نِعْمَتِي وَرَضِيتُ لَكُمُ الإِسْلاَمَ دِيناً فَمَنِ اضْطُرَّ فِي مَخْمَصَةٍ غَيْرَ مُتَجَانِفٍ لِّإِثْمٍ فَإِنَّ اللّهَ غَفُورٌ رَّحِيمٌ [المائدة : 3]<br />
+ <br />
+ولا يوجد دليل صريح - بحد علمي - يحرّم ذبائح من كان الأصل في دينه استيفاء جميع هذه الشروط ..<br />
+ <br />
+ويذكر ذلك ابن كثير - رحمه الله - في تفسيره لآية [المائدة : 5] .. فقال :<br />
+<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				وهذا أمر مجمع عليه بين العلماء : أن ذبائحهم حلال للمسلمين ؛ لأنهم يعتقدون تحريم الذبح لغير الله ، ولا يذكرون على ذبائحهم إلا اسم الله ، وإن اعتقدوا فيه تعالى ما هو منزه عن قولهم ، تعالى وتقدس
+			
+		</div>
+	</div>
+</div>جعل علة الحلّ لذبائحهم في أمرين : ذكر اسم الله ، واعتقاد تحريم الذبح لغير الله .<br />
+ <br />
+فاليهود والنصارى في أصل دينهم موافاة الشروط الشرعية في الذبح .. وإن خالف أحدهم ، فذبح بعضهم للمسيح مثلاً .. أو لم يذكر اسم الله على ذبيحته .. فالراجح من القول أن ذبيحته تحرم ولا تحل .. <br />
+ <br />
+ونأتي للرد على أدلة المعارضين :<br />
+ <br />
+قول ابن عباس - رضي الله عنه - وغيره ، خالفهم فيها آخرون .. كابن عمر .. وقد أخذ به الإمام أحمد وقال بحرمة ذبائح النصارى في عيدهم ، إذ الغالب عليهم الذبح لغير الله .. (انظر اقتضاء الصراط المستقيم) .<br />
+ <br />
+ثم يقال إن هؤلاء المنتسبين إلى الإسلام يذبحون لله ، ويذكرون اسم الله عليه .. فخرج من كونه أهلّ لغير الله به .<br />
+ <br />
+أما قوله تعالى : { اليوم أحل لكم الطيبات وطعام الذين أوتوا الكتاب حل لكم وطعامكم حل لهم } .. <br />
+ <br />
+فالجواب أن يقال :<br />
+ <br />
+أولاً .. أن آية { اليوم أحل لكم الطيبات وطعام الذين أوتوا الكتاب حل لكم وطعامكم حل لهم } لا تدل على نسخ أمر كان حراماً فيما مضى ، ثم حلّ بهذه الآية ، إنما هو تأكيد على جواز أكل طعام أهل الكتاب ، بدليل قوله تعالى : { اليوم أحل لكم الطيبات } ، مع أن الطيبات كانت قد أحلت قبل ذلك .. فجاءت هذه الآية تأكيداً لما أبيح من قبل .. فليس في ذلك تخصيص لأهل الكتاب دون عموم الكفار من أمر قد حرمه من قبل .<br />
+ <br />
+فيكون السؤال هنا : هل كانت ذبائح جميع الكفار ، بما فيهم أهل الكتاب ، محرمة قبل نزول هذه الآية ، ثم جاءت هذه الآية استثناء لهم دون غيرهم من الكافرين ؟ .. أم أن العلة السابقة التي تعومل فيها مع ذبائح أهل الكتاب قبل نزول الآية هي : { ولا تأكلوا مما لم يذكر اسم الله عليه } و { إنما حرم عليكم الميتة والدم ولحم الخنيز وما أهل لغير الله به } ؟؟ <br />
+ <br />
+فإن لم يثبت حرمة طعام أهل الكتاب قبل نزول هذه الآية ، فإن هذا يدلّ على أن هذه الآية لم تأت بتشريع جديد ، إنما جاءت لتأكيد هذا الحكم .. خاصة وأن السياق يفيد ذلك .<br />
+ <br />
+--------------<br />
+ <br />
+أما حكم من ارتد من المسلمين إلى اليهودية والنصرانية ، فإسحاق وأحمد (في أحد قوليه) يجيزان ذلك .. وأظن ذلك هو الراجح ، لتحقق العلة السابقة في ذبائحهم ..<br />
+ <br />
+هذا ، والله أعلم .
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_150737" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_150737" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=150737" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_150737" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_150769">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-17,&nbsp;<span class="time">02:54 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post150769" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=150769#post150769" class="postcounter">#6</a><a id="postcount150769" name="6"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=24080&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو البراء الأندلسي غير متواجد حالياً"><strong>أبو البراء الأندلسي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=24080&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=24080&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو البراء الأندلسي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Sep 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>223</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_150769">
+				<blockquote class="postcontent restore">
+					الأخ أبو شعيب ما رأيك في الإجماع المنقول؟<br />
+<br />
+و هل سبقك أحد من العلماء بهذا القول؟<br />
+<br />
+أرجو أن توضح لنا بارك الله فيك.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none">قوام الدين بكتاب يهدي و سيف ينصر</div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_150769" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_150769" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=150769" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_150769" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_150772">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-17,&nbsp;<span class="time">03:00 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post150772" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=150772#post150772" class="postcounter">#7</a><a id="postcount150772" name="7"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=24080&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو البراء الأندلسي غير متواجد حالياً"><strong>أبو البراء الأندلسي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=24080&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=24080&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو البراء الأندلسي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Sep 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>223</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_150772">
+				<blockquote class="postcontent restore">
+					الأخ باعث الخير أما بخصوص الرافضة فإليك بعض الفتاوى في ذلك<br />
+<br />
+ <br />
+موضوع الفتوى  أكل ذبائح الرافضة  <br />
+السؤال س: هل يجوز للمسلم المتبع لسنة النبي محمد صلى الله عليه وسلم أن يأكل من ذبائح الرافضة ومجالستهم ومؤانستهم على الطعام والشراب، علمًا بأن البعض قد يرى أن أكل ذبائحهم إنما هي من باب الدعوة والتودد لهم، أفتونا مأجورين. .. أدام الله عزكم ؟  <br />
+الاجابـــة لا يجوز أكل ذبائحهم ولو ذكروا عليها اسم الله تعالى ولو حلت ذبائح اليهود والنصارى التي يذكرون عليها اسم الله؛ فإن المشركين لا تحل ذبائحهم ومعلوم أن الرافضة مشركون حيث يعبدون علي بن أبي طالب وزوجته فاطمة وابنيه الحسن والحسين ويبالغون في مدح علي حتى يرفعوه إلى مقام الربوبية كما تدل على ذلك كتبهم وأشرطتهم وأشعارهم وخطبهم وكما سمعناهم يدعون عليًا وأولاده حتى في المطاف وفي عرفات وفي سائر الأوقات وهذا شرك صريح يحبط الأعمال لقوله تعالى:  وَلَا تَدْعُ مِنْ دُونِ اللَّهِ مَا لَا يَنْفَعُكَ وَلَا يَضُرُّكَ فَإِنْ فَعَلْتَ فَإِنَّكَ إِذًا مِنَ الظَّالِمِينَ وَإِنْ يَمْسَسْكَ اللَّهُ بِضُرٍّ فَلَا كَاشِفَ لَهُ إِلَّا هُوَ  وقد قال تعالى:  وَلَوْ أَشْرَكُوا لَحَبِطَ عَنْهُمْ مَا كَانُوا يَعْمَلُونَ  وقال:  لَئِنْ أَشْرَكْتَ لَيَحْبَطَنَّ عَمَلُكَ  فالمشرك لا يقر على شركة ولو بذل الجزية بل يقاتل حتى يتوب أو يموت وشرك الرافضة أمر واضح يشترك فيه عوامهم وخواصهم. <br />
+<br />
+وأيضًا فإن الرافضة يطعنون في القرآن ويدّعون أنه محرف وقد ألف بعض المتأخرين كتابًا سماه فصل الخطاب في إثبات تحريف كتاب رب الأرباب يعني القرآن الكريم فهم يدعون أن الصحابة حذفوا منه أكثر من ثلثيه ومن ذلك ما يتعلق بفضائل أهل البيت وبالولاية والعهد لعلي رضي الله عنه ـ ولا شك أن هذا طعن في الدين وتكذيب للقرآن لقوله تعالى:  وَإِنَّا لَهُ لَحَافِظُونَ  وإذا كان محرفًا ناقصًا لم تقم لله الحجة على العباد ولم يحفظه الله لهم وهو خلاف الإجماع وقد كذبوا على جعفر الصادق رضي الله عنه ـ وزعموا أن عنده مصحف فاطمة ما فيه من مصحفكم حرف واحد ثم إنهم يطعنون في الصحابة ويكفرون أكابرهم كالخلفاء الثلاثة ولا يثبتون إلا أفرادًا قلة نحو العشرة ولا شك أن تكفيرهم لهم طعن في الكتاب والسنة والشريعة التي جاءتنا بواسطتهم فإذا كانوا كفارًا ومرتدين فالشريعة غير محفوظة في اعتقادهم ثم لهم اعتقاد مكفر وهو تعطيلهم للصفات الذاتية والفعلية كالجهمية ولهذه الاعتقادات يجب بغضهم وهجرهم وتحرم موالاتهم وهم أعداء لأهل السنة فيجب الحذر منهم. كفى الله شرهم ورد كيدهم في نحورهم. وصلى الله على محمد. <br />
+<br />
+  <br />
+عبد الله بن عبد الرحمن الجبرين  <br />
+<br />
+ <br />
+<br />
+<br />
+حكم ذبائح الرافضة<br />
+المفتي: ناصر بن حمد الفهد<br />
+ما حكم أكل الأنعام التي يذبحها الشيعة ؟ <br />
+وتلك التي يذبحها من يدعي الإسلام ويدعي أنها تذبح على الشريعة الإسلامية مع أننا نعلم بما يشبه اليقين أن أنظمة البلد لا تسمح لهم بذلك ولا تمكنهم منه، ولكننا لا نعلم علم اليقين عن مدى صدقهم. <br />
+<br />
+الجواب : <br />
+<br />
+أما الشيعة فلا تجوز ذبائحهم . <br />
+<br />
+لأن عقائدهم عقائد كفرية : <br />
+<br />
+<br />
+<br />
+فهم يستغيثون بالأموات . <br />
+<br />
+ويحرفون القرآن . <br />
+<br />
+ويلعنون الصحابة . <br />
+<br />
+ويعتقدون عصمة الأئمة . <br />
+<br />
+وغيرها من العقائد الباطلة. <br />
+<br />
+وأما الذبائح التي يغلب على ظنكم بأنها لم تذك تذكية شرعية فلا يجوز لكم أن تأكلوا منها ولو قالوا بأنها مذكاة، لأن كثيرا من أحكام الشرع تبنى على الظن الغالب. {انتهت فتوى الشيخ}<br />
+<br />
+<br />
+قال البخاري  _خلق أفعال العباد_<br />
+ ما أبالي صليت خلف الجهمي والرافضي، أم صليت خلف اليهود والنصارى، لا يُسلم عليهم، ولا يُعادون ولا يُناكحون، ولا يشهدون، ولا تُؤكل ذبائحهم<br />
+<br />
+و قال أحمد بن يونس  _شرح أصول اعتقاد أهل السنة_<br />
+أنا لا آكل ذبيحة رجل رافضي فإنه عندي مرتد
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none">قوام الدين بكتاب يهدي و سيف ينصر</div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_150772" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_150772" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=150772" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_150772" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_150790">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-17,&nbsp;<span class="time">03:49 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post150790" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=150790#post150790" class="postcounter">#8</a><a id="postcount150790" name="8"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=8125&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو شعيب غير متواجد حالياً"><strong>أبو شعيب</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=8125&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=8125&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو شعيب غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>557</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_150790">
+				<blockquote class="postcontent restore">
+					الإجماع المنقول - إن صح - فهو في المرتد المنتسب إلى غير دين الإسلام (كمن يرتد إلى المجوسية .. أو يكفر بجميع الأديان) .. لذلك فلا يصح أن تدرج الرافضة والجهمية وغيرها من الملل المنتسبة إلى الإسلام في هذا الحكم .<br />
+<br />
+وقد اختلف العلماء في ذبيحة المرتد إذا انتسب إلى النصرانية أو اليهودية .. على قولين .. والجمهور على التحريم .<br />
+<br />
+بل إن أبا حنيفة - رحمه الله - أجاز ذبائح الصابئة المنتسبين إلى الزبور .. والمعلوم أنهم ليسوا من أهل الكتاب .. وذلك للعلة التي ذكرتها لك .<br />
+<br />
+فإن كان اليهود الواقعون في الشرك والناقضون لأصل دينهم .. تجوز ذبائحهم بمجرد انتسابهم إلى اليهودية ..<br />
+<br />
+وكذلك الحال مع النصارى ، الذين جعلوا الله ثالث ثلاثة ، وبعضهم قال إن الله هو المسيح .. ومع ذلك تحل ذبائحهم ..<br />
+<br />
+وقد اختلف الصحابة في بني تغلب .. الذين ينتسبون إلى النصرانية اسماً ، ولا يؤدون أياً من شعائرها .. ففي حين يحرّم عليّ - رضي الله عنه - ذبائحهم .. يرى ابن عباس - رضي الله عنه - مجرد انتسابهم إلى النصرانية (وإن لم يلتزموا بها) كافياً في تحليل ذبائحهم .<br />
+<br />
+فمن باب أولى تحليل ذبائح المنتسبين إلى الإسلام من المذاهب التي كفرها العلماء ..<br />
+<br />
+كل هذا لاشتراكهم في علة تحليل الميتة في أصل دينهم ، وهي : ذكر اسم الله .. الذبح لله .. التذكية .<br />
+<br />
+هذا ، والله أعلم .
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_150790" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_150790" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=150790" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_150790" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_150824">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-17,&nbsp;<span class="time">07:05 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post150824" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=150824#post150824" class="postcounter">#9</a><a id="postcount150824" name="9"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=19766&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="باعث الخير غير متواجد حالياً"><strong>باعث الخير</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=19766&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=19766&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="باعث الخير غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>May 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>83</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_150824">
+				<blockquote class="postcontent restore">
+					<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				اسمع يا أخ الإسلام إذا وصلت المسألة للشرك فلا فرق بين عامي و عالم و كلهم مشركين لا تؤكل ذبيحتهم بغض النظر هل قامت عليهم الحجة أو لم تقم فالله لم ينهى عن أكل ذبيحة المشرك العالم فقط و لم يبح ذبيحة المشرك الجاهل
+			
+		</div>
+	</div>
+</div>ما رأيت اجابتك الا ها الحين <br />
+جزاك الله خيرا
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_150824" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_150824" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=150824" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_150824" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_150831">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-17,&nbsp;<span class="time">07:28 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post150831" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=150831#post150831" class="postcounter">#10</a><a id="postcount150831" name="10"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=19766&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="باعث الخير غير متواجد حالياً"><strong>باعث الخير</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=19766&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=19766&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="باعث الخير غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>May 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>83</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_150831">
+				<blockquote class="postcontent restore">
+					بارك الله فيكم <br />
+<br />
+نخلص من هذا الموضوع الى انه <br />
+1- لا تجوز ذبيحة المشركين ولا المرتدين <br />
+2- ذبائح الرافضة فيها خلاف <br />
+3- اذا كانت ذبيحة الرافضة لا تحل فلا فرق بين عالم وجاهل <br />
+<br />
+ولكن يبقى تساؤل <br />
+<br />
+ما هو القول الفصل في <br />
+<br />
+المرتد الى النصرانية ؟<br />
+<br />
+فاقول الاخ ابو البراء تدل على ان ذبيحته لا تحل <br />
+واقوال الاخ ابي شعيب تقول انها تحل لانه اصبح من اهل الكتاب واهل الكتاب تحل ذبائحهم بالشروط المعروفة <br />
+<br />
+ولي تساؤل اخر للاخ ابي شعيب <br />
+<br />
+تقول ان ذبيحة الرافضة تحل لانهم منتسبون الى الاسلام وان كان عندهم شرك فاهل الكتاب مشركون ومع ذلك تحل ذبائحهم <br />
+<br />
+لكن الا يعني هذا القول ان كل مشرك اذا التزم الشروط المعلومة ف يالذبح وكان على غير اليهودية او النصرانية تحل ذبيحته ؟<br />
+<br />
+وثمة تساؤل اخر <br />
+<br />
+عند من يقول بكفر تارك الصلاة <br />
+اذا سأل هذا الذابح - التارك للصلاة - يقول انا اذبح لله واسمي الله واذكي <br />
+<br />
+فهل مع هذا تحرم ذبيحته ام ماذا ؟<br />
+<br />
+بارك الله فيكم <br />
+وقد افدتوني كثيرا بارك الله فيكم وزادكم رفعة وعلما
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_150831" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_150831" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=150831" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_150831" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_150833">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-17,&nbsp;<span class="time">07:37 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post150833" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=150833#post150833" class="postcounter">#11</a><a id="postcount150833" name="11"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=1768&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الإمام الدهلوي غير متواجد حالياً"><strong>الإمام الدهلوي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=1768&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=1768&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="الإمام الدهلوي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Apr 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>556</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_150833">
+				<blockquote class="postcontent restore">
+					يقول الإمام الشوكاني رحمه الله في رده على صاحب حدائق الأزهار: ( ... قوله : فصل يشترط في الذابح الإسلام فقط . <br />
+<font color="Red">أقول : إذا ذبح الكافر ذاكراً لاسم الله عز وجل غير ذابح لغير الله وأنهر الدم وفرى الأوراج فليس في الأدلة ما يدل على تحريم هذه الذبيحة الواقعة على هذه الصفة </font> ، ولا يصح الإستدلال بمثل قوله عز وجل  :  &quot; إلا ما ذكيتم &quot;   لكون الخطاب فيها للمسلمين لأنا نقول الخطاب فيها لكل من يصلح للخطاب ، فمن زعم أن الكافر خارج من ذلك بعد أن ذبح لله وسمى فالدليل عليه . <br />
+وأما إذا ذبح الكافر لغير الله فهذه الذبيحة حرام ولو كانت من مسلم وهكذا إذا ذبح غير ذاكر لاسم الله عز وجل فإن إهمال التسمية منه كإهمال التسمية من المسلم حيث ذبحا جميعا لله عز وجل وسيأتي الكلام على التسمية . <br />
+<font color="Red">وإذا عرفت هذا لاح لك أن الدليل على من قال باشتراط إسلام الذابح لا على من قال إنه لا يشترط </font> ، فلا حاجة إلى الإستدلال على عدم الإ شتراط بما لا دلالة فيه على المطلوب كالاحتجاج بأنه  صلى الله عليه وسلم  : لم ينه عن ذبائح المنافقين ، فإن المنافقين كان يعاملهم  صلى الله عليه وسلم  معاملة المسلمين في جميع الأحكام عملا بما أظهروه من الإسلام وجريا على الظاهر.  <br />
+<font color="Red">وأما ما يقال من حكاية الإجماع على عدم حل ذبيحة الكافر فدعوى الإجماع غير مسلمة وعلى تقدير أن لها وجه صحة فلا بد من حملها على ذبيحة كافر ذبح لغير الله أو لم يذكر اسم الله </font>) إهــ السيل الجرار (4/ 65) .
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_150833" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_150833" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=150833" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_150833" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_150839">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-17,&nbsp;<span class="time">08:10 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post150839" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=150839#post150839" class="postcounter">#12</a><a id="postcount150839" name="12"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=24080&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو البراء الأندلسي غير متواجد حالياً"><strong>أبو البراء الأندلسي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=24080&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=24080&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو البراء الأندلسي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Sep 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>223</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_150839">
+				<blockquote class="postcontent restore">
+					بارك الله فيك أخي الدهلوي <br />
+<br />
+و لكن الشوكاني مطالب بنقض الإجماع و لا ينقض بمجرد أنه قال غير مسلمة كما أن قول الشوكاني مطلق في جميع الكفار و ليس كما خصصه الأخ أبو شعيب.<br />
+<br />
+نحسبه كذلك_ عبد الله عزام    _الذبائح و اللحوم المستوردة_<br />
+<br />
+الذابح: يشترط أن يكون الذابح مسلما  عاقلا ، أو كتابيا  عاقلا .<br />
+واشتراط العقل: حتى يقصد الذبح لأن الذبح عبادة فلا بد لها من نية {وهذا مذهب جمهور الفقهاء من الحنفية والمالكية  والحنبلية}{2} 2- أنظر حكم اللحوم المستوردة للدكتور أبو فارس ص{33}. فلا تجوز ذبيحة السكران والولد غير المميز ولا المجنون.<br />
+وعلى هذا: فلا تجوز ذبيحة المشرك ولا الكافر ولا المرتد ولا الوثني ولا الشيوعي ولا الدرزي، ولا النصيري، ولا القادياني ولا البهائي، ولا المجوس، ولا الهندوسي، ولا البوذي.<br />
+والدليل على اشتراط كونه مسلما  أو كتابيا قوله تعالى:<br />
+{اليوم أحل لكم الطيبات وطعام الذين أوتوا الكتاب حل لكم وطعامكم حل لهم}<br />
+{المائدة: 5}<br />
+والمقصود من طعام الذين أوتوا الكتاب هو ذبائحهم: قاله ابن عباس وأبو أمامة ومجاهد وسعيد بن جبير وعطاء والحسن ومكحول والنخعي والسدي ومقاتل.<br />
+قال ابن كثير{3}: 3- أخرجه البخاري تعليقا  بصيغة الجزم، أنظر فتح الباري {9/636}. وهذا أمر مجمع عليه بين العلماء.<br />
+<br />
+وأما ما سوى ذبيحة المسلم والكتابي فهي حرام: أخذا  من مفهوم المخالفة -مفهوم الصفة- للآية، ولأن القرآن الكريم سكت عن ذكر غير المسلم والكتابي، وتخصيص ذكرهما يدل على أن ما سواهما حرام {لأن السكوت في معرض الحاجة إلى بيان بيان}.<br />
+ولو كانت ذبيحة غيرهما حلال لما كان من ذكر طعام أهل الكتاب فائدة والقرآن منزه عن اللغو.<br />
+وقد روي سعيد بن منصور بسند جيد عن ابن مسعود {رضي الله عنه}{1}: 1- تفسير ابن كثير {2/91}.  {لا تأكلوا من الذبائح إلاما ذبح المسلمون وأهل الكتاب}.<br />
+وروى الحاكم في المستدرك عن عكرمة عن ابن عباس {رضي الله عنهما} في رجل ذبح ونسي أن يسمي قال: يأكل، وفي المجوسي يذبح ويسمي، قال: لا تأكل.<br />
+وقال الحاكم{2}: 2-  انظر كشاف القناع {6/302}.   صحيح على شرط الشيخين ولم يخرجاه، ووافقه الذهبي.<br />
+وقد روى عبد الرزاق في مصنفه مثله عن ابن عباس {رضي الله عنهما}.<br />
+ملاحظة: هذه الحاشية موجودة ولا يوجد إشاره أو علامه لها في النصوص في الكتاب الأصلي أرجوا الإنتباه {عامر}. 3- المستدرك للحاكم {4/332}.<br />
+وفي مصنف عبد الرزاق عن جابر{1} 1- مصنف عبد الرزاق {4/964}. {رضي الله عنه}:{لا تأكل صيد كلب المجوسي ولا ما أصاب سهمه} وعنه مجاهد مثله، وروى الدارقطني{2} 2- سنن الدراقطني {4/492}. عن جابر {رضي الله عنه} مثله، وروى عبد الرزاق{3} 3- مصنف عبد الرزاق {4/784}. عن قيس بن السكن قال: قال ابن مسعود: {إنكم نزلتم أرضا لا يقصب بها المسلمون إنما هم النبط أو قال النبيط وفارس، فإذا اشتريتم لحما  فسألوا، فإن كان ذبيحة يهودي أو نصراني فكلوا فإن طعامهم حل لكم} رجال الحديث رجال الشيخين عدا قيس بن السكن فهو على شرط مسلم قال ابن حجر: هو ثقة{4}. 4- تقريب التهذيب لابن حجر {2/921}.<br />
+وهنا الأمر وهو تحريم ذبيحة المجوسي وصيده يكاد يكون مجمعا  عليه بين الصحابة رضوان الله عليهم، ولا شك أن تحريم ذبيحة المجوسي منتشر بين الصحابة.<br />
+ولا نعلم فردا  واحدا  من الصحابة خالفه.<br />
+ قال ابن تيمية{5} 5- مجموع فتاوي ابن تيمية {12/301}. في الفتاوي: {إن ذبائح المجوس حرام عند جماهير السلف والخلف، وقد قيل: أن ذلك مجمع عليه بين الصحابة.<br />
+وفي سنن البهيقي{1}: 1- أنظر رسالة ابن حميد في اللحوم المستورده ص{76}.  {كتب رسول الله ص الى مجوس هجر يعرض عليهم الإسلام، فمن أسلم قبل منه، ومن أبى ضربت عليه الجزيه على أن لا تؤكل لهم ذبيحة، ولا تنكح لهم أمرأة}.<br />
+قال البيهقي: هذا مرسل وإجماع لكثر المسلمين يؤكده. <br />
+وقال ابن تيمية: جاء في حديث الحسن بن محمد بن الحنفيه وغيره من التابعين أن النبي ص قال:  سنوا بهم سنه أهل الكتاب، غير ناكحي نسائهم ولا آكلي ذبائحهم .<br />
+قال ابن تيميه{2}: 2- مجموعة فتاوي ابن تيمية {23/781}. وهذا مرسل، وأقوال خمسة من الصحابة توافقه، ولم يعرف عنهم خلاف، والمرسل حجة عند الحنفية ومالك وأحمد في إحدى الروايتين، وفي الآخر حجة:اذا عضده قول جمهور أهل العلم وظاهر القرآن أو أرسل من وجه آخر: وهذا قول الشافعي.<br />
+فهذا المرسل حجه باتفاق العلماء وهذا المرسل نص في خصوص المسألة.<br />
+وعلى هذا وبعد أن ثبتت حرمة ذبيحة المجوسي بالنصوص الصحيحة والمجوسي كافر لأنه ليس من أهل الكتاب، ففي المسند وصحيح الترمذي والتفسير وكتب الحديث نصوا على الحديث المشهور{3} 3- مجموعة فتاوي ابن تيمية {23/781}. لما اقتلت فارس  والروم وانتصرت الفرس، ففرح بذلك المشركون لأنهم من جنسهم وليس لهم كتاب.<br />
+فذبيحة كل كافر حرام، فالشيوعي والبوذي والوثني والهندوسي والسيخ والبهائي والقادياني والبعثي والنصيري واليزيدي {الذي يعبد الشيطان} والدرزي والماسوني والوجودي والعلماني كلها حرام.<br />
+قال ابن قدامه{1}: 1- المغني لابن قدامه {11/83}. {أجمع أهل العلم على تحريم صيد المجوسي وذبيحته} وشذ أبو ثور.<br />
+قال إبراهيم الحربي: {خرق أبو ثور الإجماع} <br />
+ولذا فتحريم ذبيحة المجوسي منصوص عليه من قبل الصحابة وليس كما قال فضيلة الشيخ إبن محمود {رئيس المحاكم الشرعية - قطر } بأنه لا نص عليه.<br />
+والمجوسي كافر، وعليه فذبائح الكفار حرام، كما أن ذبائح المجوس حرام.<br />
+ <br />
+قال الشيخ صالح الفوزان  _الملخص الفقهي_<br />
+ومفهوم الآية الكريمة أن الكافر غير الكتابي لا تحل ذبيحته ، وهذا بالإجماع<br />
+<br />
+و لا أدري الأخ أبو شعيب من أين أتى لنا بقول  التفريق بين من هو مشرك منتسب للإسلام و من هو مشرك ليس بمنتسب له,وحتى من عرف بالشذوذ الفقهي في هذا العصر و جنح إلى  التيسير الفقهي في كثير من المسائل ذكر الإجماع على تحريم ذبيحة دون المسلم و الكتابي{أخي الكريم لا أتهمك بالشذوذ بل نحسبه على خير لما رأيناه منك من كتابة في العقيدة و التوحيد و لكن أتحدث عموما}<br />
+<br />
+والذي نؤكده أنه لا يجوز ذبيحة أي ذابح، إنما يشترط في الذابح أن يكون مسلماً أو مؤمناً بكتاب سماوي، ذلك أن الذبح هو إزهاق لروح خلقها الله عز وجل وهذا الإزهاق، ليس مأذوناً به من قبل الله إلا لمن آمن به، وآمن بأن له وحياً، وآمن بأن هناك آخرة. وذلك المسلم والكتابي.<br />
+أما الذي ينكر الله ويجحد رسالته ولا يعترف لله بسلطان أي سلطان فهذا لم يعطه الله الحق أن يذبح مخلوقاً أو كائناً حياً، أو يزهق روح حينوان ما، وليس له هذا الحق، وليس عنده هذا الإذن.<br />
+ولهذا حين يذبح المسلم يقول: باسم الله والله أكبر.<br />
+أي أنني أذبح وأزهق هذه الروح مأذوناً من الله، عندي تصريح إلهي بإزهاق هذه الروح. وهذا الكائن الحي أقتله باسم الله. أما الذي لا يعترف بالله إطلاقاً فكيف يباح له هذا، وكيف يمنح هذا الحق، وكيف يعطي هذه الرخصة ؟ ولم يعطه الله ذلك. ولهذا فالمرتد والملحد، الذي لا يؤمن بالله ولا برسالاته ولا بأي دين سماوي ولا بأي كتاب أنزله الله، ولا بأي نبي مرسل من الله، كالشيوعي، هذا لا تحل ذبيحته بالإجماع.<br />
+ومن هنا لا يجوز للمسلمين أن يأكلوا هذا الدجاج واللحوم التي ترد من عند الشيوعيين، فهي قد ذبحها قوم ينكرون الله عز وجل.<br />
+<br />
+من لديه إضافة فلا يبخل علينا بارك الله فيكم.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none">قوام الدين بكتاب يهدي و سيف ينصر</div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_150839" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_150839" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=150839" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_150839" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_150841">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-17,&nbsp;<span class="time">08:17 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post150841" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=150841#post150841" class="postcounter">#13</a><a id="postcount150841" name="13"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=24080&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو البراء الأندلسي غير متواجد حالياً"><strong>أبو البراء الأندلسي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=24080&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=24080&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو البراء الأندلسي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Sep 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>223</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_150841">
+				<blockquote class="postcontent restore">
+					<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				<div class="bbcode_postedby">
+					<img src="images/metro/purple/misc/quote_icon.png" alt="اقتباس" /> المشاركة الأصلية كتبت بواسطة باعث الخير
+					<a href="showthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=150831#post150831" rel="nofollow"><img class="inlineimg" src="images/metro/purple/buttons/viewpost-left.png" alt="مشاهدة المشاركة" /></a>
+				</div>
+				<div class="message">2- ذبائح الرافضة فيها خلاف </div>
+			
+		</div>
+	</div>
+</div>أي خلاف أخ الكريم؟<br />
+<br />
+لو قلنا بكفر الرافضة وهو الحق الذي لا مرية فيه فهو يدخل ضمن الإجماع الوارد لأن الرافضة دين غير دين الإسلام و ملة أخرى.<br />
+<br />
+فأين الخلاف في المسألة؟و من قال به؟
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none">قوام الدين بكتاب يهدي و سيف ينصر</div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_150841" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_150841" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=150841" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_150841" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_150859">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-17,&nbsp;<span class="time">08:44 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post150859" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=150859#post150859" class="postcounter">#14</a><a id="postcount150859" name="14"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=24080&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو البراء الأندلسي غير متواجد حالياً"><strong>أبو البراء الأندلسي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=24080&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=24080&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو البراء الأندلسي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Sep 2008</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>223</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_150859">
+				<blockquote class="postcontent restore">
+					<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				<div class="bbcode_postedby">
+					<img src="images/metro/purple/misc/quote_icon.png" alt="اقتباس" /> المشاركة الأصلية كتبت بواسطة باعث الخير
+					<a href="showthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=150540#post150540" rel="nofollow"><img class="inlineimg" src="images/metro/purple/buttons/viewpost-left.png" alt="مشاهدة المشاركة" /></a>
+				</div>
+				<div class="message"><div style="text-align: center;"><br />
+ما حكم المرتد الى ديانة من ديانات اهل الكتاب ( اليهودية او النصرانية ) هل تحل ذبيحته حتى ان سمى وذكى ام لا تحل وما الدليل ؟<br />
+ </div></div>
+			
+		</div>
+	</div>
+</div><br />
+هذه من المسائل الخلافية<br />
+<br />
+قال ابن قدامة  _الشرح الكبير_<br />
+ولا تباح ذبيحة المرتد وإن كانت ردته إلى دين اهل الكتاب وهذا قول مالك والشافعي واصحاب الرأي، وقال إسحاق إن تدين بدين اهل الكتاب حلت ذبيحته ويحكى ذلك عن الاوزاعي لان عليا رضي الله عنه قال: من تولى قوما فهو منهم ولنا انه كافر لا يقر على دينه فلم تحل ذبيحته كالوثني ولانه لا تثبت له احكام اهل الكتاب إذا تدين بدينهم فانه لا يقر بالجزية ولا يسترق ولا يحل له نكاح المرتدة، وأما قول علي فهو منهم لم يرد انه منهم في جميع الاحكام بدليل ما ذكرنا ولانه لم يكن يرى حل ذبائح نصارى بني تغلب ولا نكاح نسائهم مع توليهم للنصاري ودخولهم في دينهم ومع اقرارهم على ما صولحوا عليه فلا يعتقد ذلك في المرتدين.<br />
+<br />
+<br />
+قال الكاشاني  _بدائع الصنائع_<br />
+فَإِنْ انْتَقَلَ الْكِتَابِيُّ إلَى دِينِ أَهْلِ الْكِتَابِ مِنْ الْكَفَرَةِ لَا تُؤْكَلُ ذَبِيحَتُهُ ؛ لِأَنَّ الْمُسْلِمَ لَوْ انْتَقَلَ إلَى ذَلِكَ الدِّينِ لَا تُؤْكَلُ ذَبِيحَتُهُ فَالْكِتَابِيُّ أَوْلَى<br />
+<br />
+<br />
+قال الشافعي  _الأم_<br />
+لا تؤكل ذبيحة المرتد إلى أي دين ما ارتد لانه إنما رخص في ذبائح أهل الكتاب الذين يقرون على أديانهم<br />
+<br />
+وهو كذلك مذهب أهل الظاهر<br />
+<br />
+قال ابن حزم _المحلى_<br />
+ولا يحل أكل ما ذكاه غير اليهودي.والنصرا�  �ي.والمجوسي{ابن حزم يعتبر المجوس أهل كتاب}، ولاما ذكاه مرتد إلى دين كتابي أو غير كتابي.<br />
+<br />
+<br />
+و الله تعالى أعلم.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none">قوام الدين بكتاب يهدي و سيف ينصر</div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_150859" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_150859" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=150859" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_150859" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_151018">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-18,&nbsp;<span class="time">06:24 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post151018" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=151018#post151018" class="postcounter">#15</a><a id="postcount151018" name="15"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=8125&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو شعيب غير متواجد حالياً"><strong>أبو شعيب</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=8125&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=8125&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو شعيب غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>557</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_151018">
+				<blockquote class="postcontent restore">
+					<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				<div class="bbcode_postedby">
+					<img src="images/metro/purple/misc/quote_icon.png" alt="اقتباس" /> المشاركة الأصلية كتبت بواسطة أبو البراء الأندلسي
+					<a href="showthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=150841#post150841" rel="nofollow"><img class="inlineimg" src="images/metro/purple/buttons/viewpost-left.png" alt="مشاهدة المشاركة" /></a>
+				</div>
+				<div class="message">أي خلاف أخ الكريم؟<br />
+لو قلنا بكفر الرافضة وهو الحق الذي لا مرية فيه فهو يدخل ضمن الإجماع الوارد لأن الرافضة دين غير دين الإسلام و ملة أخرى.<br />
+فأين الخلاف في المسألة؟و من قال به؟</div>
+			
+		</div>
+	</div>
+</div>نحن من قال به (ابتسامة) .<br />
+<br />
+علة حلّ الذبيحة في الرافضة متحققة في اليهود والنصارى .. وهي كما ذكرت : 1- ذكر اسم الله 2- الذبح لله 3- التذكية .<br />
+<br />
+وهذا الذي جعله الله أصلاً في كل ذبيحة ..<br />
+<br />
+فإن كان في أصل دين أي قوم هو أداء هذه الثلاث أمور .. فلا يجب علينا التحقق منها .. كما لم يُلزم الرسول - صلى الله عليه وسلم - التحقق من ذبائح اليهود والنصارى إن استوفت هذه الشروط أم لا .<br />
+<br />
+ولكن إن عُلم عن النصراني أو اليهودي ، بل وحتى المسلم .. عدم استيفاء أي من هذه الشروط ، حرُمت ذبيحته .. (في ترك التسمية تفصيل ، فإن تركها عمداً حرُمت ، وإن تركها ناسياً لم تحرُم) .<br />
+<br />
+وذكرت أن اليهود والنصارى قد وقعوا في كثير من نواقض دينهم الذي شرعه الله لهم ، سواء بالشرك أم بالتكذيب والإعراض ، أم بتحريف كلام الله .. كل ذلك ، والله - عز وجل - يبيح ذبائحهم ..<br />
+<br />
+فمن باب أولى إباحة ذبائح الرافضة الذين ينتسبون إلى الإسلام ويؤدون كثيراً من شعائره .. قياساً لهم على أهل الكتاب ..<br />
+<br />
+ثم ذكرت لك أن آية : { وطعام الذين أوتوا الكتاب حل لكم } .. لا تفيد الحصر ، ولا تفيد نسخ أمر أصله الحرمة .. بل غاية ما تفيده هو التأكيد ، بدلالة ما قبلها ، وهو : { اليوم أحلت لكم الطيبات } .. والطيبات كانت حلالاً قبل إنزال هذه الآية ..<br />
+<br />
+فكان الأصل الذي يتعامل به مع الذباح هو : ذكر اسم الله .. والذبح لله .. والتذكية .. لا غير ..<br />
+<br />
+فمن كان في أصل دينه هذه الأمور ، فقد حلّت ذبيحته ..<br />
+<br />
+لذلك أباح أبو حنيفة - رحمه الله - ذبائح الصابئة الذين ينتسبون إلى الزبور .. مع أنهم ليسوا أهل كتاب ..<br />
+<br />
+هذا ، والله أعلم .
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_151018" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_151018" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=151018" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_151018" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_151260">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-18,&nbsp;<span class="time">10:52 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post151260" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=151260#post151260" class="postcounter">#16</a><a id="postcount151260" name="16"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=8459&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="المغيرة غير متواجد حالياً"><strong>المغيرة</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=8459&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=8459&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="المغيرة غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>43</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_151260">
+				<blockquote class="postcontent restore">
+					: الرد على من تعلق بإجتهاد الإمام ابن كثير في حكمة إباحة ذبائح أهل الكتاب دون غيرهم .<br />
+<br />
+	فلقد ذكر الإمام ابن كثير رحمه الله في تفسيره [ فإنه لايلزم من إباحة طعام أهل الكتاب إباحة أكل مالم يذكر إسم الله عليه لأنهم يذكرون إسم الله على ذبائحهم وقرابينهم وهم متعبدون بذلك ] ا.هـ <br />
+	* فتعلق قوم بهذا الإجتهاد وقاموا عليه في إباحة ذبائح المشركين إذا سموا على ذبائحهم !! .<br />
+    يقول علماء الأصول : [ من المتفق عليه أن الباعث على تشريع الأحكام هو تحقيق مصالح العباد بجلب مصلحة أو دفع مضرة وهو حكمة الحكم وكان المتوقع ربط الحكم بالحكمة لأنها الغاية منه ، ولكن الحكمة كثيراً ماتكون خفية أو غير منضبطة(1) .<br />
+ـــــــــــــــ  ــــ<br />
+(1) مثل حكمة ذبائح أهل الكتاب - فالحكم هو الحل ، والحكمة أمر خفي لم ينص عليه الله سبحانه وتعالى في الأيات .<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــ.	<br />
+	<br />
+	..فمثلاً شرع الله تعالى القصر في الصلاة الرباعية أثناء السفر لدفع المشقة .. فالحكم هو القصر والحكمة هى دفع المشقة ، ولكن هذه المشقة  أمر خفي غير منضبط فلا يصح (1) ربط الحكم به ولكن السفر وصف منضبط فيعلل به الحكم .<br />
+	* ومعنى هذا أن الحكم الشرعي يوجد حيث توجد علته ولو تخلفت حكمته وينتفي الحكم حيث تنتفي علته ولو وجدت حكمته ، لأن الحكمة لخفائها في بعض الأحكام ولعدم إنضباطها في بعضها يتعذر أن تكون أمارة على وجود الحكم أو عدمه .. <br />
+	وكذلك كون أهل الكتاب أبيحت ذبائحهم لإنهم يسمون .. يقابله إجتهاد آخر كما نقل عن الإمام الطبري في تفسيره [ وذبائح أهل الكتاب ذكية سموا عليها أو لم يسموا لأنهم أهل توحيد] . ا . هـ<br />
+	فذكر لأنهم أهل توحيد ولم يعتبر التسمية في حكمة الحل <br />
+	ونقل الإمام النووى الإجماع على من أكل متروك التسمية ليس بفاسق <br />
+ويؤيد قولهم هذا أن كثيراً من العلماء والصحابة ذكروا أن أهل الكتاب يوجد منهم من يذكر إسم غيرالله  على ذبائحهم كالمسيح - والزهرة - ونرجس  <br />
+	بل أن قول عطاء ومجاهد ومكحول مشهور في أن النصرانى إذا ذبح بإسم المسيح حل .. فإن الله تعالى أحل لنا ذبيحته وقد علم أنه سيقول ذلك.<br />
+	ونقل الإمام النووى أنهم لايسمون قال : [ ولقوله تعالى: ( وطعام الذين أوتوا الكتاب حل لكم ) وهم لايسمون ..] ا. هـ . <br />
+			 صحيح مسلم شرح النووى ج 13- ص 73- <br />
+						              <br />
+    ونقل الإمام ابن حجر في فتح البارى:[ ومما يستدل به على عدم إشتراط التسمية قوله تعالى :( وطعام الذين أوتوا الكتاب حل لكم ) الأية فأباح الأكل من ذبائحهم مع وجود الشك في أنهم سموا أو لا ...] ا. هـ .<br />
+	** فمن الطرق الصحيحة للإستدلال التي ينبغى أن تتبع هو الجمع بين أطرف الأدلة ..<br />
+	 نلخص من هذا : أن الحكمة التي إجتهد الإمام ابن كثير في إستنباطها إتضح أن هناك علماء أخرين إستنبطوا غيرها ، وثبت أن أهل الكتاب يسمون غير الله على ذبائحهم أحياناً .. والحكمة تختلف عن العلة ..<br />
+	 فيحمل بذلك كلام الإمام ابن كثير على أن غالب أهل زمانه أو مكانه من أهل الكتاب يسمون على ذبائحهم فاجتهد بأن الحكمة في حل ذبائحهم لهذا .. والله أعلم <br />
+ـــــــــــــــ  ــــــ<br />
+(1) ولهذا لايصح ربط حكم حل ذبائح أهل الكتاب بالحكمة المتوقعة من ذلك ولو أجتهد بعض العلماء في إستنباطها أو توقعها .. فتأمله .<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــ<br />
+	<br />
+	 ولكن من الخطاء الواضح إستنباط البعض حكم الإباحة في ذبائح المشركين غير أهل الكتاب من إجتهاد العالم في حكمة أو علة غير منصوص عليها في الأية الخاصة بحل الذبائح لإهل الكتاب .<br />
+	وهذه الحكمة غير منضبطة بنفسها كما ذكرنا من إجتهاد علماء أخرين في غيرها .. فمن غير الصواب القياس عليها وجعلها مؤثرة في حكم حل أو حرمة غيرهم من أهل الملل الكافرة . والله أعلم .
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_151260" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_151260" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=151260" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_151260" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_151262">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-18,&nbsp;<span class="time">10:54 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post151262" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=151262#post151262" class="postcounter">#17</a><a id="postcount151262" name="17"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=8459&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="المغيرة غير متواجد حالياً"><strong>المغيرة</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=8459&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=8459&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="المغيرة غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>43</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_151262">
+				<blockquote class="postcontent restore">
+					الرجوع إلى الأصل في الأشياء 	      <br />
+		عند ورود الشك أو التردد <br />
+<br />
+	* قال الإمام ابن رجب الحنبلي رحمه الله : [ ومن هذا أيضاً ماأصله الحل كطهارة الماء والثوب والأرض إذا لم ينفي زوال أصله فيجوز إستعماله ، ومن أصله الحظر كالأبضاع(1)   ولحوم الحيوان فلا تحل إلا بيقين حله من التذكية والعقد  كالأبضاع .. فإن تردد في شى من ذلك لظهور سبب أخر رجع إلى الأصل فيبنى عليه فيما أصله الحرمة على التحريم ، ولهذا نهى النبى صلى الله عليه وسلم عن أكل الصيد الذي يجد فيه الصائد أثر سهم غير سهمه أوكلب غير كلبه أو يجده قد وقع في الماء وعلل بأنه لايدرى هل مات من السبب المبيح له أو من غيره ] .<br />
+	* يقول الإمام الشاطبي رحمه الله :[ فالأصل في الإبضاع المنع إلا بالأسباب المشروعة ، والحيوانات الأصل في أكلها المنع حتى تحصل الذكاة المشروعة إلى غير ذلك من الأمور المشروعة ] . [ الموافقات ]<br />
+	* وقال الإمام السيوطي عليه رحمة الله :[ الفائدة الثانية : الشك على ثلاث أضرب : <br />
+1- شك طرأ على أصل حرام .<br />
+2- شك طرأ على أصل مباح .<br />
+3- شك لايعرف أصله .<br />
+	فالأول مثل أن يجد شاة في بلد فيها مجوس فلا يحل حتى يعلم أنها ذكاة مسلم لأن أصلها التحريم وشككت في الذكاة المبيحة ، فلو كان الغالب المسلمون جاز الأكل عملاً بالغالب المفيد للطهور] .<br />
+	   [ كتاب الأشباه والنظائر ص 94- في تعارض الأصلين] <br />
+ـــــــــــــــ  ـــ<br />
+(1) الأبضاع هى الفروج .<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــ<br />
+	* وقال الإمام ابن قدامة المقدسي رحمه الله : [ وقد روى الإمام أحمد بإسناده عن قيس بن السكن الأسدي قال : قال رسول الله صلى الله عليه وسلم : &quot; إنكم نزلتم بفارس من النبط ، فإذا إشتريتم لحماً فإن كان من يهودي أو نصراني فكلوا ، وإن كانت ذبيحة مجوسي فلا تأكلوا] .<br />
+					 [ كتاب المغني ج 4 ص 570-]<br />
+	وقال ايضاً في ج 4 ص 296:[ المشكوك فيه على ثلاث أضرب : <br />
+	الأول : ماأصله الحظر كالذبيحة في بلد مجوس أو عبدة أوثان يذبحون فلا يجوز شراؤها وإن أمكن أن يكون ذبحها مسلم ، لأن الأصل التحريم فلا يزول إلا بيقين أو ظاهر ، وكذلك إن كان فيها أخلاط من المسلمين والمجوس لم يجوز شراؤها لذلك ، والأصل في ذلك حديث النبى صلى الله عليه وسلم : &quot; إذا أرسلت كلبك المعلم فخالط كلباً لم يسم عليها فلا تأكل ، فإنك لاتدرى أيهما قتله &quot; ـ متفق عليه .<br />
+فأما إن كان في بلد الإسلام فالظاهر إباحتها لأن المسلمين لايقرون في بيع مالايحل بيعه ظاهراً ] . [ كتاب المغني ج 4 ص 296]<br />
+	* وقال الإمام ابن حجر العسقلانى رحمه الله : [ رواية عدي في الصيد صريحة مقرونة بالتعليل المناسب للتحريم وهو خوف الإمساك على نفسه متأيدة بأن الأصل في الميتة التحريم ، إن شككنا في السبب المبيح رجعنا إلى الأصل ]. [كتاب فتح البارى شرح صحيح البخارى ج 12- ص 7 ] <br />
+	* وقال الإمام ابن القيم الجوزية رحمه الله :[ إن باب الذبائح على التحريم إلا ماأباحه الله ورسوله ، فلو قدر تعارض دليلي الحظر والإباحة لكان العمل بدليل الحظر أولى لثلاثة أوجه :<br />
+1- تأيده بالأصل الحاظر .           <br />
+ 2- إنه أحوط .<br />
+3- أن الدليلين إذا تعارضا تساقطا ورجع إلى أصل التحريم ] .<br />
+					  [ كتاب احكام أهل الذمة ص 255 ]<br />
+  وقال ايضاً في كتابه أعلام المواقعين ج-1 ص 295- دار الحديث :<br />
+  [ النوع الثانى : استصحاب الوصف المثبت للحكم حتى يثبت خلافه وهو حجة ، لما كان الأصل في الذبائح التحريم وشك هل وجد الشرط المبيح أم لا ؟ بقى الصيد على أصله في التحريم..] . <br />
+	* وقال شيخ الإسلام ابن تيمية رحمه الله :[ الدماء تعصم بالشبهات ولاتحل الفروج والذبائح بالشبهات ] .<br />
+	  [الفتاوى الكبرى ج 4 ص 71 فتاوى النساء ص 1119]<br />
+<br />
+	* وقال الإمام ابن العربى رحمه الله :[ وقال علماؤنا .. الأصل في الحيوان التحريم ]. [احكام القران ج 2 ص 548- دار الجبل ]<br />
+	* ويقول الإمام النووى رحمه الله : [ قوله صلى الله عليه وسلم : &quot; إن وجدت مع كلبك غيره وقد قتل فلا تأكل فإنك لاتدرى أيهما قتله &quot;<br />
+فيه بيان قاعدة مهمة وهى أنه إذا حصل الشك في الذكاة المبيحة للحيوان لم يحل لأن الأصل تحريمه وهذا مما لاخلاف  فيه ] .<br />
+				 [ كتاب شرح صحيح مسلم ج 13 ص 78]<br />
+	وقال أيضاً في كتاب المجموع المهذب ج 9- ص 82-: [ إن وجدنا شاة مذبوحة ولم ندري من ذبحها فإن كان في بلد فيه من لاتحل ذكاته كالمجوس لم تحل سواء تمحضوا أو كانوا مختلطين بالمسلمين للشك في الذكاة المبيحة ، والأصل التحريم وإن لم يكن فيها أحد منهم حلت والله أعلم] 						 [كتاب المجموع المهذب ج 9 ص 82]<br />
+<br />
+	قلت : قد علمنا مما ذكر من أقوال العلماء ، أن الأصل في الذبائح التحريم يرجع إليه عند الإشتباه في الأدلة .
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_151262" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_151262" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=151262" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_151262" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_151263">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-18,&nbsp;<span class="time">10:55 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post151263" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=151263#post151263" class="postcounter">#18</a><a id="postcount151263" name="18"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=8459&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="المغيرة غير متواجد حالياً"><strong>المغيرة</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=8459&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=8459&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="المغيرة غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>43</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_151263">
+				<blockquote class="postcontent restore">
+					معلومات مهمة عن مقاصد الشريعة <br />
+	<br />
+الأصول الكلية والفروع الجزئية :<br />
+	* يقول الإمام الشاطبي رحمه الله في الإعتصام :[ ولايمكن أن تعارض الفروع الجزئية الأصول الكلية لأن الفروع الجزئية إن تقتضي عملاً فهي في محل التوقف ، وإن إقتضت عملاً فالرجوع إلىالأصول هو الطريق المستقيم ، ويتناول الجزئيات حتى إلى الكليات فمن عكس الأمر حاول شططاً ودخل في حكم الذم لأن متبع الشبهات مذموم فكيف يُعذر بالمشتبهات دليلاً أو يبني عليها حكم من الأحكام ، وإذا لم تكن دليلاً في نفس الأمر فجعلها بدعة محدثة هو الحق ..] <br />
+الجمع بين أطراف الأدلة :  <br />
+الإمام الشاطبي يقول :[ ومدار الغلط هو الجهل بمقاصد الشرع وعدم ضم أطرافه بعضها البعض ، فإن مأخذ الأدلة عند الأئمة الراسخين إنما هو على أن تؤخذ الشريعة كالصورة الواحدة بحسب ماثبت من كلياتها وجزئياتها المرتبة عليها .. وعامها على خاصها ، ومطلقها المحمول على مقيدها ، ومجملها المفسر ببينها... إلى ماسوى ذلك من مناحيها ، فإذا حصل للناظر من جملتها حكم من الأحكام فذلك الذي نظمت به حين إستنبطت .<br />
+	ومامثلها إلا مثل الإنسان الصحيح السوي ، فكما أن الإنسان لايكون إنساناً حتى يستنطق ، فلا ينطق باليد وحدها أو الرجل وحدها ولا بالرأس وحده ولا باللسان  وحده بل بجملته التي سُمي بها إنساناً . كذلك الشريعة لا يطلب منها الحكم على حقيقة الإستنباط إلا بجملتها ، ولا من دليل منها أي دليل كان وإن ظهر لبادى الرأي نطق ذلك الدليل فإنما هو توهميً لاحقيقي .. كاليد إذا أستنطقت فإنما تنطق توهماً لاحقيقة من حيث علمت أنها يد إنسان لامن حيث هى إنسان لإنه محال ...<br />
+	فكأن الراسخين تصوروا الشريعة صورة واحدة يخدم بعضها بعضاً كأعضاء الإنسان إذا صورت صورة مثمرة .. وشأن متبعي المتشابهات أخذ دليل ما ـ أي دليل كان ـ عفواً وأخذاً أولياً ، وإن كان ثم مايعرضه من كلي أو جزئي .. فكأن العضو الواحد لايعطي في مفهوم أحكام الشريعة حكماً حقيقياً . فمتبعه متبع متشابه ولايتبعه إلا من في قلبه زيغ كما شهد الله به ( ومن أصدق من الله قيلا) .<br />
+	ومن اتباع المتشابهات الأخذ بالمطلقات قبل النظر في مقيداتها . وبالعمومات من غير تأامل هل لها مخصصات أم لا ؟ وكذلك العكس بأن يكون النص مقيداً فيطلق أو خاصاً فيعم بالرأي من غير دليل سواه ... <br />
+	فإن هذا المسلك رمي في عماية واتباع للهوى في الدليل ، وذلك أن المطلق المنصوص على تقييده مشتبه إذا لم يُقيد ، فإن قيد صار واضحاً ، كما أن إطلاق المقيد رأي في ذلك المقيد معارض للنص من غير دليل..] 	[من كتاب الإعتصام ح1 ص 239 دار الفكر ] .
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_151263" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_151263" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=151263" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_151263" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_151264">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-18,&nbsp;<span class="time">10:57 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post151264" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=151264#post151264" class="postcounter">#19</a><a id="postcount151264" name="19"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=8459&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="المغيرة غير متواجد حالياً"><strong>المغيرة</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=8459&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=8459&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="المغيرة غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>43</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_151264">
+				<blockquote class="postcontent restore">
+					ثبوت وجود الإجماع في هذه المسألة(3)  <br />
+<br />
+   * يقول الشيخ الإسلام ابن تيمية رحمه الله : [ أما المشركون فقد إتفقت الأمة على تحريم نكاح نسائهم وطعامهم ... يعني ذبائحهم ] . <br />
+				  [ مجموع الفتاوى ج 8 ص 100 ]<br />
+  * ويقول الإمام ابن حزم رحمه الله : [ أتفقوا أن ماصاده كما ذكرنا مشرك ليس مسلمًا ولانصرانياً ولامجوسياً ولايهودياً فقتله كلبه أو غير الكلب أنه لايؤكل ..] . [ كتاب مراتب الإجماع ص 146]<br />
+ـــــــــــــــ  ــــــــــ<br />
+(1) هذا سؤال مهم إجابته تزيل الإختلاف بإذن الله .<br />
+(2) نذكرمنها مايخص هذا الباب .<br />
+(3) نذكر بقول الإمام ابن قدامة المقدسي في روضة الناظر : يجب على المجتهد في كل مسألة أن ينظر إلى الإجماع فإن وجده لم يحتاج إلى النظر فيما سواه ولو خالفه كتاب أو سنة .. (يراجع مقدمة هذا البحث ).<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــ<br />
+	* وقال الإمام ابن القاسم الغرناطي رحمه الله : [ صنف إتفق على جواز تذكيته ؛ وهو المسلم البالغ العاقل الذكر .. وصنف أتفق على تحريم تذكيته ؛ وهو المشرك من عبدة الأوثان ...] .<br />
+	[القوانين الفقهية . الباب الخامس في الذبائح ص 184]<br />
+     * ويقول الإمام عبد القاهر البغدادي رحمه الله :[ إجماع فقهاء الإسلام على إستباحة ذبائح اليهود والسامرة والنصارى وعلى جواز نكاح نسائهم وعلى جواز قبول الجزية منهم ..]<br />
+	وأما غير اليهود والنصارى فيذكر الإمام عند نهاية حديثه عليهم أنه لاتجوز ذبائحهم ولانكاح نسائهم حتى قال :[ وقد أجمع المسلمون على هؤلاء الأصناف الذي ذكرناهم لايحل للمسلمين أكل ذبائحهم ولانكاح نسائهم  واختلفوا في قبول الجزية منهم.. ] . [كتاب الفرق بين الفرق ص 348]<br />
+	* ويقول العلامة ابن القيم الجوزية رحمه الله :[ وأما تحريم ذبائحهم ومناكحتهم فإتفاق من الصحابة رضي الله عنهم ،  ولهذا أنكر الإمام أحمد وغيره على أبى ثور طرده القياس وأفتاءه بحل ذبائحهم وجواز مناكحتهم ودعا عليه أحمد حيث أقدم على مخالفة أصحاب رسول الله صلى الله عليه وسلم . والصحابة كانوا أفقه وأعلم وأسد قياساً ورأياً فإنهم أخذوا في الدماء بحقنها موافقة لقول رسول الله صلى الله عليه وسلم وفعله :&quot; سنوا بهم سنة أهل الكتاب &quot; ، حيث أخذها منهم ( الجزية ).. <br />
+	 وأخذوا في الأبضاع والذبائح بتحريمها إحتياطاً وإبقاء لها على الأصل وإلحاقاً لهم بعباد الأوثان أي المشركون ولم يلحقوا بأهل الكتاب لقوله صلى الله عليه وسلم :&quot; سنوا بهم سُنة أهل الكتاب &quot; ،<br />
+	 وأما الفتاوى عن الصحابة بحل ذبائح أهل الكتاب فنعم لعمر الله لايُعرف عنهم فيها خلاف . وقال عبد الله بن أحمد : قال أبى : لابأس بذبائح أهل الحرب إذا كانوا من أهل الكتاب . وقال ابن المنذر : أجمع على هذا كل من يُحفظ عنه أهل العلم ] .<br />
+		[ كتاب أحكام أهل الذمة ج 1 ص 110 دار العلم] .<br />
+	* ويقول الإمام القرطبى رحمه الله : [ وأما المجوس فالعلماء مجمعون - إلا من شذ منهم - على أن ذبائحهم لاتؤكل ولايتزوج منهم لأنهم ليسوا أهل كتاب على المشهور عند العلماء ولابأس بأكل طعام من لاكتاب له كالمشركين وعبدة الأوثان مالم يكن من ذبائحهم ولم يحتج إلى ذكاة إلا الجبن ] . [الجامع لأحكام القران ج 6 ص 77- المسألة الخامسة ]<br />
+	* وقال الإمام النيسابورى رحمه الله :[ وأتفقوا على أن المجوس قد سن لهم سنة أهل الكتاب في أخذ الجزية منهم دون أكل ذبائحهم ونكاح نسائهم ..] . [هامش تفسير الطبري ج 6 ص 63]
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_151264" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_151264" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=151264" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_151264" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_151267">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2008-10-18,&nbsp;<span class="time">11:10 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post151267" href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=151267#post151267" class="postcounter">#20</a><a id="postcount151267" name="20"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=8459&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="المغيرة غير متواجد حالياً"><strong>المغيرة</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=8459&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=8459&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="المغيرة غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>43</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: حكم ذبيحة الرافضة والمرتد الى النصرانية او اليهودية
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_151267">
+				<blockquote class="postcontent restore">
+					ماذكره العلماء في أهلية الذلبح وإعتقاده <br />
+<br />
+	* قال الإمام الطبري رحمه الله في تفسيره لسورة المائدة :[ وهى قوله تعالى :( وطعام الذين أوتوا الكتاب حل لكم ) وذبائح أهل الكتاب من اليهود والنصارى وهم الذين أوتوا التوراة والإنجيل وأنزل عليهم فدانوا بهما أو بأحدهما ( حل لكم ) يقول حل أكله دون ذبائح سائر أهل الشرك الذين لاكتاب لهم من مشركي العرب وعبدة الأوثان والأصنام فإن من لم يكن منهم (1) ممن أقر بتوحيد الله عند ذكره ودان دين أهل الكتاب فحرام عليكم ذبائحهم ... ].<br />
+ [ جامع البيان في تفسير القران ج 5 ص 572- دار المعارف ]<br />
+	* وقال الإمام الطبري رحمه الله أيضاً في تفسيره لسورة الأنعام وهى قوله تعالى :( فكولوا مما ذُكر إسم الله عليه إن كنتم بأياته مؤمنين ) <br />
+ـــــــــــــــ  ـ<br />
+(1) تأمل جيداً <br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــ<br />
+	يقول تعالى ذكره لنبيه محمد صلى الله عليه وسلم وعباده المؤمنين به وبأياته ( فكلوا ) أيها المؤمنون مما ذكيتم من ذبائحكم وذبحتموه الذبح الذي بينت لكم أنه تحل به الذبيحة لكم وذلك ماذبحه المؤمنون بى من أهل دينكم دين الحق أو ذبحه من دان بتوحيدي من أهل الكتاب دون ماذبحه أهل الأوثان ومن لاكتاب له من المجوس ( إن كنتم بأياته مؤمنين ) يقول : إن كنتم بحجج الله التي أتتكم وأعلامه بإحلال ماأحللت لكم وتحريم ماحرمت عليكم من المطاعم والمأكل مصدقين ودعوا عنكم زخرف ماتوحيه الشياطين بعضها إلى بعض من زخرف القول لكم وتلبيس دينكم عليكم غروراً ] .<br />
+	* ويقول الإمام القرطبي رحمه الله :[ وقال أبوعمر : ولابأس يأكل طعام عبدة الأوثان والمجوس وسائر من لاكتاب له من الكفار مالم يكن من  ذبائحهم ولم يحتج إلى ذكاة ]. [الجامع لآحكام القران ـ البقرة 173].<br />
+	  ويذكر الإمام أيضاً في تفسيره للأية5 من سورة المائدة :[ فإن كان أبو الصبي مجوسياً وأمه كتابية فحكمه حكم أبيه عند مالك وعند غيره لاتؤكل ذبيحة الصبي إذا كان أحد أبويه ممن لاتؤكل ذبيحته ].<br />
+	  ويقول أيضاً :[ والضرب الثانى هى التذكية التي ذكرنا إنما هى التي تحتاج إلى الدين والنية فلما كان القياس اللا يجوز ذبائحهم كما نقول أنهم ـ أي أهل الكتاب ـ لاصلاة لهم ولاعبادة مقبولة .. رخص الله في ذبائحهم على هذه الأمة وأخرجها النص عن القياس ..] .<br />
+							  [ الجامع لأحكام القران ].<br />
+	  * وقال الحافظ ابن كثير رحمه الله :[ وأما المجوس فإنهم وإن أخذت منهم الجزية تبعاً وإلحاقاً لأهل الكتاب فإنهم لاتؤكل ذبائحهم ولاتنكح نسائهم خلافاً لأبى ثور ، وإنما الذي في صحيح البخاري عن عبد الرحمن بن عوف أن رسول الله صلى الله عليه وسلم أخذ الجزية من مجوس هجر ولو سلم صحة هذا الحديث فعمومه مخصوص بمفهوم هذه الأية ( وطعام الذين أوتوا الكتاب حل لكم) فدل بمفهومه مفهوم المخالفة على أن طعام من عداهم من أهل الأديان لايحل ، وقوله تعالى :( وطعامكم حل لهم ) أي ولكم أن تطعموهم من ذبائحكم كما أكلتم من ذبائحهم وهذا من باب المكافأة والمقابلة والمجازاة ..] .[ تفسير القرآن العظيم ـ المائدة5 ].<br />
+	* ويقول الإمام ابن نيمية رحمه الله :[ وأما المجوسية فقد ذكرنا أن الكلام فيها مبنى على أصلين ؛<br />
+	 إحداهما : أن المجوس لاتحل ذبائحهم ولاتنكح نساؤهم ، والدليل على هذا وجوه أحدها: أن يقال : ليسوا من أهل الكتاب ومن لم يكن أهل الكتاب لم يحل طعامه ولانساؤه .. ولكن إذا كان لهم كتاب ثم رفع بقى لهم شبهة كتاب وهذا القدر يؤثر في حقن دمائهم بالجزية إذا قيدت بأهل الكتاب ،  وأما الفروج والذبائح فحلها مخصوص بأهل الكتاب(1) ] .. <br />
+			 [ فتاوى النساء ص 119- باب نكاح الكفار] .<br />
+	* وقال الإمام ابن تيمية رحمه الله أيضاً :[ إن الله قد حرم ماذبح على النصب وذلك يقتضي تحريمه وإن كان الذابح كتابياً لأنه لو كان التحريم لكونه وثنياً لم يكن فرق بين ذبحه على النصب وغيرهما ، لأنه لما أباح لنا طعام أهل الكتاب دل على أن طعام المشركين حرام فتخصيص ماذبح على الوثن يقتضى فائدة جديدة ].[ إقتضاء الصراط المستقيم ]<br />
+	وقال في موضع أخر من نفس الكتاب يقول :[ ولهذا لما كان الذبح عبادة في نفسه ( كره ) علي رضي الله عنه وغير واحد من أهل العلم منهم أحمد في إحدى الروايتين عنه أن يوكل المسلم في ذبح نسيكته كتابياً لأن نفس الذبح عبادة بنيته مثل الصلاة ولهذا تختص بمكان وزمان ونحو ذلك بخلاف تصرفة اللحم فإنه عبادة مالية ] . [ اقتضاء الصراط المستقيم ].<br />
+ـــــــــــــــ  ــــ<br />
+(1) هذا كلام مفيد لمن إشتبه عليه أكل ذبائح مشركي هذا الزمان .<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــ<br />
+	<br />
+	* ويقول الإمام ابن قدامة المقدسي رحمه الله :[ إذا أرسل كلبه فأرسل مجوسي كلبه فقتلا صيداً لم يحل لأن صيد المجوس حرام فإذا أجتمع الحظر والإباحة غلب الحظر كالمتولد بين مايؤكل ومالايؤكل ، ولأن الأصل الحظر ، والحل موقوف على شرط وهو تذكية من هو من أهل الذكاة ] . 	ويذكر في موضع أخر من كتابه المغني ج8 :[ ولافرق بين الحربي والذمي في إباحة ذبيحة الكتابي منهم وتحريم ماسواه ] .<br />
+	 ويقول أيضا على المجوس :[ وقال تعالى:( وطعام الذين أوتوا الكتاب حل لكم ) فمفهومه تحريم طعام غيرهم من الكفار ولأنهم لاكتاب لهم فلم تحل ذبائحهم كأهل الأوثان ] .<br />
+	ويقول أيضاً:[ وحكم سائر الكفار من عبدة الأوثان والزنادقة وغيرهم حكم المجوس في تحريم ذبائحهم وصيدهم إلا الحيتان والجراد وسائر ماتباح ميتته فإن ماصادوه مباح لأنه لايزيد بذلك موته بغيرسبب ] .<br />
+	ويقول عن المرتد :[ لايؤكل صيد مرتد ولاذبيحته وإن تدين بدين أهل الكتاب ـ قول أكثر أهل العلم ـ  ومنهم من قال إذا ذهب إلى النصرانية أو اليهودية تباح ذبيحته لأن من تولى قوماً فهو منهم ] .<br />
+					[ المغني ج 8- كتاب الصيد والذبائح ]<br />
+	* ويقول الإمام النووى رحمه الله :[ في الفصل مسائل : أحدهما : أن يكون المذكي مسلماً ويشترط كونه مسلماً أو كتابياً فتحل ذبيحة الكتابي للأية الكريمة (1)... ثم قال : ولاتحل ذبيحة المرتد ولاالوثني ولاالمجوسي لماذكره المصنف ، وهكذا الحكم في الزنديق وغيره من الكفار الذين ليس لهم كتاب ] . [كتاب شرح المهذب ج 9 ]<br />
+	* ذكرالإمام ابن القيم رحمه الله إجابة مفيدة عن سؤال للإمام ابن حزم عن يهودي مستخف بدينه ذبح شاة يعتقد حل شحمها هل يحرم علينا الشحم أم لا ؟ <br />
+	فأجاب عليه بما يهمنا في هذا البحث :[ السؤال جوابه فيه فإنه متى اعتقد حل الشحوم خرج عن اليهودية إما إلى الإسلام وإما إلى الزندقة . فإن تحريم الشحوم ثابت بنص التوراة . فإن كذب التوراة وأقام على اليهودية فليس بيهودي ولاتحل ذبيحته ، وإن آمن بالتوراة واعتقد حل الشحوم .. لأن شريعة الإسلام أبطلت ماسواها من الشرائع والواجب إتباعها . فهذا الإعتقاد حق ولكن لايبيح له الشحوم المحرمة إلا بالتزام شريعة الإسلام التي رفع الله بها عنهم الأصار والأغلال فإذا لم يلتزم شريعة الإسلام وأقام على اليهودية لم ينفعه إعتقاده دون انقياده شيئاً . كما لوأعتقد أن محمداً رسول الله ولم ينقد للإسلام ومتابعته..] . [ أحكام أهل الذمة ج1 ـ أحكام الذبائح ].<br />
+ـــــــــــــــ  ـــــــ<br />
+(1) ينبغي تأمل هذا الكلام جيداً .<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــ<br />
+	ويقول الإمام ابن القيم رحمه الله أيضاً ( عن بعض علل التحريم والجمع بين الميتة وذبيحة غير المسلم والكتابى ):[ وأما جمعها ـ أي الشريعة ـ بين الميتة وذبيحة غير الكتابي في التحريم وبين ميتة الصيد وذبيحة المحرم له فأي تفاوت في ذلك .<br />
+	 وكأن السائل رأي أن الدم لما أحتقن في الميتة كان سبباً لتحريمها وماذبحه المحرم أو الكافر غير الكتابي لم يحتقن دمه فلا وجه لتحريمه وهذا غلط وجهل ؛ فإن علة التحريم لو إنحصرت في أحتقان الدم لكان للسؤال وجه ، فأما إذا تعددت علل التحريم لم يلزم من إنتفاء بعضها أنتفاء الحكم إذا خلفه علة أخرى ، وهذا أمر مطرود في الأسباب والعلل العقلية فما الذي ينكر منه في الشرع .<br />
+	( فإن قيل ): أليست سَّوت الشريعة بينهما في كونهما ميتة وقد أختلفا في سبب الموت ،  فتضمنت جمعها بين مختلفين وتفريقها بين متماثلين فإن الذبح واحد صورة وحساً وحقيقة .. فجعلت بعض صوره مخرجاً للحيوان عن كونه ميتة وبعض صوره موجباً لكونه ميتة من غير فرق ...<br />
+	( قيل) : الشريعة لم تُسِّو بينهما في إسم الميتة لغة وإنما سوَّت بينهما في الإسم الشرعي .. فصار إسم الميتة في الشرع أعم منه في اللغة .. والشارع يتصرف في الأسماء اللغوية بالنقل تارة وبالتعميم تارة وبالتخصيص تارة ، وهكذا يفعل أهل العرف . فهذا ليس بمُنكر شرعاً ولاعرفاً.. <br />
+	وأما الجمع بينهما في التحريم ،  فلأن الله سبحانه حرم علينا الخبائث ، والخبث الموجب للتحريم قد يظهر لنا وقد يخفي . فما كان ظاهراً لم ينصب الشارع علامة غير وصفه . وماكان خفياً نصب عليه علامة تدل على خبثه .. فإحتقان الدم في الميتة سبب ظاهر وأما ذبيحة المجوسي والمرتد وتارك التسمية ومن أهل بذبيحته لغير الله .. فنفس ذبيحة هؤلاء أكتسبت المذبوح خبثاً أوجب تحريمه ] . [ كتاب أعلام المواقعين ج 2 ] <br />
+	* وقال الإمام البيضاوي رحمه الله : عند قوله تعالى:( وطعام الذين أوتوا الكتاب حل لكم ) يتناول الذبح وغيرها ويعم الذين أوتوا الكتاب اليهود والنصارى واستثنى علي رضى الله عنه نصارى بني تعلب وقال :&quot; ليسوا على النصرانية ولم يأخذوا منها  إلا شرب الخمر &quot;. ولايلحق بهم المجوس وإن لحقوا بهم في التقدير على الجزية لقوله عليه السلام: &quot; سنوا بهم سنة أهل الكتاب غير ناكحي نسائهم ولا أكلي ذبائحهم&quot; ] .[ تفسير البيضاوي ] <br />
+	* الشيخ سلمان حفيد الشيخ محمد بن عبد الوهاب ، يتحدث عن جريمة الشرك وآثارها فيقول : [ الشرك هو أظلم الظلم وأقبح القبائح وأنكر المنكرات وأبغض الأشياء إلى الله وأكرهها إليه وأشدها مقتاً لديه ورتب عليه من عقوبات الدنيا والأخرة مالم يترتب على ذنب سواه ، وأخبر أنه لايُغفر وأن أهله نجس ،  ومنعهم من قُربان حرمه ،  وحرَّم ذبائحهم ومناكحتهم ، وقطع الموالاة بينهم وبين المؤمنين وجعلهم أعداء له سبحانه ولملائكته ورسله والمؤمنين ، وأباح لأهل التوحيد أموالهم ونساءهم وأبناءهم وأن يتخذوهم عبيداً ..] . [ كتاب توحيد الخلاق ص 184]<br />
+	* ويقول الشيخ محمد بن إبراهيم  أل الشيخ ( لابد من صحة معتقد المذكي ) :[ يشترط في القصَّاب (1) فاضل الدين أن يكون مسلماً صحيح المعتقد ينكر الخرافات كعبادة القبور وغيرها مما يُعبد من دون الله ، ينكر جميع المعتقدات والبدع الكفرية ، كمعتقد القاديانية والرافضة الوثنية وغيرها   <br />
+	ولايكتفي في حل ذبيحته بمجرد الإنتساب إلى الإسلام والنطق بالشهادتين وفعل الصلاة وغيرها من أركان الإسلام مع عدم الشروط التي ذكرناها .. فإن كثيراً من الناس ينتسبون إلى الإسلام  وينطقون بالشهادتين ويؤدون أركان الإسلام الظاهرة ولايكتفي بذلك في الحكم بإسلامهم ولاتحل ذكاتهم لشركهم بالله العظيم في العبادة بدعاء الأنبياء والصالحين والأستغاثة بهم وغير ذلك من أسباب الردة عن الأسلام .<br />
+	وهذا التفريق بين المنتسبين إلى الإسلام أمر معلوم بالأدلة من الكتاب والسنة وإجماع سلف الأمة وأئمتهم..<br />
+	 ثم ماذكرنا من الأمور المطلوبة في هذا القصَّاب يعتبر في ثبوتها نقل عدل ثقة يعلم حقيقة ذلك من هذا الرجل وينقله الثقة عن هذا العدل حتى يصل إلى من يثبت لديه ذلك حكماً ممن يعتمد على ثبوته عنده شرعاً والله أعلم ] .<br />
+ [ من فتاوى الشيخ محمد بن إبراهيم أل الشيخ ج 12- باب الذكاة ].<br />
+ـــــــــــــــ  ــ<br />
+(1) وفي الحديث أن الله إذا حرم أكل شئ حرم ثمنه .. فتحريم ذبائح المشركين يحرم بيعها (. جامع العلوم والحكم . الحديث 45)<br />
+* هذه الفتوى مطابقة تماماً لهذا الواقع .. فتأملها جيداً فلعلها تزيل الإشتباه  ..<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــ<br />
+	* وقال الإمام البغوي رحمه الله :[ فأما ذبيحة أهل الشرك والمجوس فحرام وحديث عبد الله بن عمر أن النبى صلى الله عليه وسلم لقى زيد بن عمرو بن نفيل بأسفل بارح . قال الخطابى : أمتناعه من أكل مافي السفر إنما كان خوفاً من أن يكون ذلك مما ذُبح لأصنامهم ، فأما ماذبحوه لمأكلتهم ، فكان النبى صلى الله عليه وسلم لايتنزه عنه لأنه كان بين ظهرانيهم ، ويتناول أطعمتهم ، ولم يُرو أنه تنزه عن شيء من ذلك قبل نزول تحريم ذبائح الشرك إلا ماكان من إجتنابه الميتات طبعاً ، أو تقذراً وماذبح لأصنامهم لئلا يكون معظماً لغير الله عصمة من الله عز وجل ، ولم يزل عليه السلام على شريعة إبراهيم صلى الله عليه وسلم ولم يكن يتناول مالايحل ولما لم يكن فيما ذبحوه لمأكلتهم معنى الميتة ولامعنى ماذبح لأصنامهم ، ولم ينزل عليه تحريمه ، كان الظاهر منه الأباحة كأمر النكاح فإنه أنكح ابنته زينب من أبى العاص بن الربيع وهو مشرك وبقيت بعد الهجرة بمكة مدة ثم نزل تحريم إنكاحهم بعد ذلك فكذلك أمر أطعمتهم ..]     <br />
+  [شرح السنة ص 14- دار الكتب العلمية] .<br />
+	* ومن فتاوي الإمام إبن تيمية رحمه الله ( في أن أهل الكتاب تحل ذبائحهم في كل زمان ) قال :[ وبالجملة فالقول بأن أهل الكتب المذكورين في القرآن هم من كان دخل في ذلك قبل النسخ والتبديل قول ضعيف ، والقول بأن علي بن أبى طالب رضي الله عنه أراد ذلك قول ضعيف ، بل الصواب المقطوع به أن كون الرجل كتابياً أو غير كتابي هو حكم مستقل بنفسه لابنسبه ، وكل من تدين بدين أهل الكتاب فهو منهم سواء كان أبواه أو جده دخل في دينهم أولم يدخل ، وسواء كان دخوله قبل النسخ والتبديل أو بعد ذلك وهذا مذهب جمهور العلماء (1) ] . [ الفتاوى الكبرى ج 2 ص 140]<br />
+	* ويقول الإمام ابن القيم رحمه الله : [ ونجاسة الشرك عينية ولهذا جعل سبحانه الشرك نجَساً ( بفتح الجيم ) ولم يقل إنما المشركون نجِس <br />
+( بالكسر) فإن النجَس عين النجاسة والنجِس ( بالكسر ) هو المتنجس ... 	فالثوب إذا أصابه بول أو خمر نجس والبول والخمر نَجِسَ . فأنجس النجاسة الشرك كما أنه أظلم الظلم ..] .<br />
+ [ كتاب إغاثة اللهفان ج1 ]<br />
+	 * فتوى للإمام ابن تيمية رحمه الله  في المرتدين من أهل الأهواء والبدع :[ سُئل شيخ الإسلام عن النصيرية هل تؤكل ذبائحهم ويتزوج منهم أم لا ؟ <br />
+	فأجاب : هؤلاء القوم المسمَّون النصيرية هم وسائر أصناف القرامطة الباطنية أكفر من اليهود والنصارى بل وأكفر من كثير من المشركين .. وضررهم على أمة محمد صلى الله عليه وسلم أعظم من ضرر الكفار المحاربين مثل كفار التتار والفرنج وغيرهم ؛ فإن هؤلاء يتظاهرون عند جهال المسلمين بالتشيع وموالاة أهل البيت وهم في الحقيقة (2) لايؤمنون بالله ولابرسوله ولابكتابه ولابأمر ولابنهي.. <br />
+وقد أتفق علماء المسلمين على أن هولاء لاتجوز مناكحتهم ولايجوز أن ينكح الرجل مولاته منهم امرأة ولاتباح ذبائحهم ..]   <br />
+		 [مجموع الفتاوى ج 35- قتال أهل البغى حكم المرتد] .<br />
+ـــــــــــــــ  ـــ<br />
+(1) إذا فالذي تحتاج إليه في هذا االزمان من أكل ذبائح أهل الكتاب هو التأكد من أنهم يذبحون الذبح المشروع وإلا فيكون التحريم من وجه أخر كالموقودة والمنخنقة .. وغيرها . <br />
+(2) هذه الفتوى من شيخ الإسلام تقترب كثيراً من هذا الواقع من حيث ذكرهم لإسم الله على ذبائحهم وهم خارجون عن الدين .. لأنهم يتظاهرون بالتشيع وموالاة أهل البيت كما قال الشيخ .. فتأملها .<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــ
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_151267" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_151267" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=151267" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_151267" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<form action="showthread.php?t=21281&amp;page=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1" method="get" class="pagination popupmenu nohovermenu">
+<input type="hidden" name="t" value="21281" /><input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+	
+		<span><a href="javascript://" class="popupctrl">صفحة 1 من 2</a></span>
+		
+		
+		
+		<span class="selected"><a href="javascript://" title="النتائج 1 إلى 20 من 27">1</a></span><span><a href="showthread.php?t=21281&amp;page=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مشاهدة النتائج 21 إلى 27 من 27">2</a></span>
+		
+		
+		<span class="prev_next"><a rel="next" href="showthread.php?t=21281&amp;page=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة التالية - النتائج 21 إلى 27 من 27"><img src="images/metro/purple/pagination/next-left.png" alt="التالي" /></a></span>
+		
+		
+		<span class="first_last"><a href="showthread.php?t=21281&amp;page=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الصفحة الأخيرة - النتائج 21 إلى 27 من 27">الأخيرة<img src="images/metro/purple/pagination/last-left.png" alt="الأخيرة" /></a></span>
+		
+	
+	<ul class="popupbody popuphover">
+		<li class="formsubmit jumptopage"><label>إذهب إلى الصفحة: <input type="text" name="page" size="4" /></label> <input type="submit" class="button" value="إذهب" /></li>
+	</ul>
+</form>
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=21281&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="popupctrl"><span class="ctrlcontainer">مجلس الفقه وأصوله</span></a>
+		<a href="showthread.php?t=21281#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=696d1a7d9adaea36633b28fa7c3827c1">لوحة التحكم</a></li>
+		<li><a href="private.php?s=696d1a7d9adaea36633b28fa7c3827c1">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1">الاشتراكات</a></li>
+		<li><a href="online.php?s=696d1a7d9adaea36633b28fa7c3827c1">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=3145&amp;s=696d1a7d9adaea36633b28fa7c3827c1">موضوع هام للمناقشة : حكم العبادات والمعاملات في الأرض المغصوبة</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=21480&amp;s=696d1a7d9adaea36633b28fa7c3827c1">القواعد الفرعية التي تندرج تحت قاعدة : الأمور بمقاصدها</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%88">او</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=21281#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=21281#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">04:32 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

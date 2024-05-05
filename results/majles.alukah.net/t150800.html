@@ -1,0 +1,2544 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=696d1a7d9adaea36633b28fa7c3827c1&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=150800";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="المسيطير, الوالدين or, سامي, مقترحات, وأفكار, الله, على, جناتك, موتى, النعيم, جنات, وجميع, والدي, وأطل, والدتي, عمرها, طاعتك, المسلمين, وارحم, واجعله, صرنا, ورحمتك, أرحم, الراحمين, http://www.saaid.net/rasael/829.htm, وكرمك, بمنك, احفظ, إذا, إلى, صاروا, إليه, وارحمنا, قرأت, أحسن, جزاك, خيرا, كثيرا, هذا, الوالدين, الحقيقة, أخانا, الفاضل, أمتعنا, الجزاء, ورزقنا, البر, خير, الشيخ, محمد" />
+	<meta name="description" content="مقترحات وأفكار في &quot;بر الوالدين&quot; 
+ 
+ 
+ 
+ 
+ 
+سامي المسيطير 
+@Smusaiteer" />
+
+	<title> مقترحات وأفكار في بر الوالدين/ سامي المسيطير</title>
+	<link rel="canonical" href="showthread.php?t=150800&s=696d1a7d9adaea36633b28fa7c3827c1" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=696d1a7d9adaea36633b28fa7c3827c1 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=696d1a7d9adaea36633b28fa7c3827c1">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> مقترحات وأفكار في بر الوالدين/ سامي المسيطير</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=696d1a7d9adaea36633b28fa7c3827c1&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 4 من 4
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=150800&s=696d1a7d9adaea36633b28fa7c3827c1" title="تحديث الصفحة">مقترحات وأفكار في بر الوالدين/ سامي المسيطير</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=150800" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;t=150800&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=addsubscription&amp;t=150800" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;search_type=1&amp;searchthreadid=150800&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="150800" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_812014">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2016-02-13,&nbsp;<span class="time">08:26 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post812014" href="showthread.php?t=150800&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=812014#post812014" class="postcounter">#1</a><a id="postcount812014" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=82152&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد عبد الأعلى غير متواجد حالياً"><strong>محمد عبد الأعلى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=82152&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=82152&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد عبد الأعلى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jun 2011</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>3,205</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> مقترحات وأفكار في بر الوالدين/ سامي المسيطير
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_812014">
+				<blockquote class="postcontent restore">
+					<div class="cms_table"><table width="98%" class="cms_table"><tr valign="top" class="cms_table_tr"><TD class="cms_table_td"><div style="text-align: center;"><font size="5"><font color="#0000FF">مقترحات وأفكار في &quot;بر الوالدين&quot;</font></font></div></TD>
+</tr>
+<tr valign="top" class="cms_table_tr"><TD class="cms_table_td"></TD>
+</tr>
+<tr valign="top" class="cms_table_tr"><TD class="cms_table_td"><font size="4"><font color="#800000">سامي المسيطير<br />
+@Smusaiteer</font></font></TD>
+</tr>
+<tr valign="top" class="cms_table_tr"><TD class="cms_table_td"><div style="text-align: center;"><font size="4"><br />
+بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ</font></div><font size="4">الإخوة الأكارم /<br />
+<br />
+موضوع &quot; بر الوالدين &quot; طُرح كثيرا ، وسُمع كثيرا ، وقُرئ عنه كثيرا ... <br />
+<br />
+تأملتُه مليا ... فرأيتُ فيه خللا ظاهرا بينا جليا ... فبعضنا يسمع عن &quot;بر الوالدين&quot; ... ولا يعرف كيف يبرهما !!... <br />
+<br />
+فبدا لي أن أطرحه بطريقة أخرى ... أحسب أنها تؤدي إلى المقصد ... مما طُرح ، وسُمع ، وقُرئ .<br />
+<br />
+أطرحه بصيغة الأفكار والمقترحات التي تُدخل السرور على الوالدين ، وتؤنسهما ، وتسعدهما ؛ فيكون الرضى عنك منهما بإذن الله ... <br />
+<br />
+وقد يناسب بعضَها بعضُنا ... وقد لايناسب ... فخذ ما شئت ودع ماشئت .<br />
+<br />
+وهذه الأفكار نتيجة تأمل ... وهذا التأمل فيه ما فيه ... فغضَّ الطرف عنه ... <br />
+<br />
+وقد قصدتُ تجاوز ما يُطرح في الدروس والمحاضرات والخطب ونحوها مما لا يخفى على الأفاضل مثلكم ... فلا يعتب عليّ الأخوة .<br />
+<br />
+والمقصد الفوز برضى الوالدين ... ورضى الله - كما لا يخفى - من رضاهما .<br />
+<br />
+ولا يعرف ... ولن يعرف .... ولم يعرف ... قدر الوالد والوالدة إلا من فقدهما ... وعندها يقول &quot; يا ليت !! &quot; ... ولن تنفعه .<br />
+<br />
+وأقول : كيف يفلح من عقّ والديه ...وأغضبهما ؟!. نسأل الله العافية .<br />
+<br />
+نسأل الله أن يرحم المتوفى منهما ... ويطيل في عمر الحي على طاعته ... <br />
+<br />
+وأن يرزقنا برهما ، والقيام بحقهما وواجبهما ... <br />
+<br />
+وأن يجمعنا بهما وذرياتنا ... مع نبينا محمد صلى الله عليه وسلم في أعالي الجنان .<br />
+<br />
+وأسأل الله أن يجزي من طلبَ ... فتسبب في طرح هذا الموضوع خيرا ... وأن يهبه خير ما وهب عباده الصالحين .<br />
+<br />
+فأستأذنكم بالإكمال ...</font><u><font size="4"><br />
+ </font></u><br />
+<hr /><u><font size="5"><br />
+أولا</font></u><font color="#000000"><font size="5">:</font></font><font size="5"><font color="Red">الدعاء .</font></font><font size="4"><font color="Red"><br />
+<br />
+</font></font><font color="#000000"><font size="4">من ألزم ، وأوجب ، وأهم ، وأولى ، وأحرى ، وآكد الواجبات تجاه الوالدين : &quot;</font></font><font size="4"><font color="Navy"> الدعاء لهما </font></font><font color="#000000"><font size="4">&quot; ...<br />
+اجعل ذكرهما والدعاء لهما ... ملازما لك ... لا ينفك عن بالك .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">تذكرهما في سجودك ... في وترك ... في دعائك المطلق ... في حجك ... في عمرتك ... في طوافك ... عند دخول خطيب الجمعة حتى تنقضي الصلاة ... في آخر ساعة من يوم الجمعة ... بين الآذان والإقامة ... وغيرها من أوقات الإجابة التي لا تخفى عليك ...</font></font><font size="4"><font color="navy">فتدعو لهما </font></font><font color="#000000"><font size="4">.<br />
+<br />
+</font></font><font size="4"><font color="Red">ادع لهما بـ </font></font><font color="#000000"><font size="4">:</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- الرحمة ... ( رب ارحمهما ) .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- المغفرة .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- العافية .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- حسن الخاتمة .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- إطالة العمر على الطاعة .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- الهداية والصلاح .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- إعانتهما على الطاعة .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- التخلص من المعاصي التي قد يُبتلى بها أحدهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- دخول الجنة والتعوذ من النار .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- الشفاء مما قد يصيبهما من أمراض .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- أن يعينهما على تربية إخوانك .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- أن ييسر لهما الرزق الحلال الطيب .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- أن يبارك لهما فيما يحبون مما يرضي الله .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- أن يؤلف بينهما ( إن كان بينهما مايكدر العيش ).</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- أن يجزيهما خير الجزاء على مابذلاه تجاهكم .<br />
+<br />
+</font></font><font size="4"><font color="Navy"><u>ومن أجمل اللفتات وأجلّها</u></font></font><font color="#000000"><font size="4">... والتي تدخل السرور عليهما بما قد لا يخطر لك على بال ...</font></font><font size="4"><font color="red">أن تخبرهما بفضلهما عليك ... <u>وأنك تدعو لهما </u></font></font><font color="#000000"><font size="4">... في كل حين وعلى كل حال .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">قد تتفاجأ إذا قلتَ لهما ذلك ... ببكاء أحدهما ... خاصة إذا كان الواحد منا - وللأسف - قليل الخاتمة معهما من قبل  .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أصلح الله أحوالنا .<br />
+ </font></font><br />
+<hr /><font color="#000000"><font size="5"><br />
+</font></font><u><font size="5">ثانيا </font></u><font size="5">: <font color="Red">الصدقة عنهما </font>.</font><font size="4"><br />
+<br />
+ومن أجلّ الأعمال ، وأعظمها : الصدقة عنهما ... ووضع الوقف الخيري لهما ... وإشراكهما في أعمال الخير المالية .<br />
+<br />
+قد تتبرع لهما استقلالا ... وقد تشركهما معك في صدقتك .<br />
+<br />
+شارك لهما في بناء المساجد ... وحفر الآبار ... وطباعة المصاحف ... وأوقاف الخير العامة .<br />
+<br />
+قال أحد الأفاضل : تبرعت لمشروع كبير يحوي مسجد جمعة ، ومدرسة لتعليم القرآن ، ومغسلة للأموات ... وأشركت والديّ معي في أجر الصدقة ... فكنت أفرح كثيرا إذا صليت في ذلك الجامع أو مررت بجواره ... لعلمي أني ووالديّ قد ساهمنا في بناءه .<br />
+<br />
+شارك ولو بالقليل ... ولا تقل أن ما أتبرع به لا يُعدّ ... أو ما أتصدق به لايؤثر ... فأنت تتعامل مع الله تعالى ... فنعم المولى الكريم ... سبحانه وتعالى ... وموازين الآخرة ... لا تقارن بموازين الدنيا .<br />
+ثانيا : الصدقة .<br />
+<br />
+ومن أجلّ الأعمال ، وأعظمها : الصدقة عنهما ... ووضع الوقف الخيري لهما ... وإشراكهما في أعمال الخير المالية .<br />
+<br />
+قد تتبرع لهما استقلالا ... وقد تشركهما معك في صدقتك .<br />
+<br />
+شارك لهما في بناء المساجد ... وحفر الآبار ... وطباعة المصاحف ... وأوقاف الخير العامة .<br />
+<br />
+قال أحد الأفاضل : تبرعت لمشروع كبير يحوي مسجد جمعة ، ومدرسة لتعليم القرآن ، ومغسلة للأموات ... وأشركت والديّ معي في أجر الصدقة ... فكنت أفرح كثيرا إذا صليت في ذلك الجامع أو مررت بجواره ... لعلمي أني ووالديّ قد ساهمنا في بناءه .<br />
+<br />
+شارك ولو بالقليل ... ولا تقل أن ما أتبرع به لا يُعدّ ... أو ما أتصدق به لايؤثر ... فأنت تتعامل مع الله تعالى ... فنعم المولى الكريم ... سبحانه وتعالى ... وموازين الآخرة ... لا تقارن بموازين الدنيا .<br />
+<br />
+والقاعدة في هذا تقول : ( <a href="http://ahlalhdeeth.com/vb/showthread.php?t=148698" target="_blank" rel="nofollow">( مهوب شغلك ) !. </a>)</font><font color="#000000"><font size="4"><br />
+</font></font><u><font size="4">أيضا </font></u><font size="4">: <br />
+قد يناسب أن <font color="Red">تخبرهما </font>بأن تتصدق عنهما - أحيانا - لتدخل السرور عليهما ... وأنك &quot; صدقة جارية لهما &quot; .... ثم لا تسأل عن دعائهما لك ... ورضاهما عنك .<br />
+ </font><br />
+<hr /><font size="5"><br />
+</font><u><font size="5">ثالثا</font></u><font color="#000000"><font size="5">:</font></font><font size="5"><font color="Red">أخذهما في رحلة برية .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">قد يناسب أن تطلب من والديك أن تأخذهما معك إلى رحلة برية ... تأخذهما إلى مكان جميل وممتع ... إلى روضة من الرياض الجميلة ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">تطلب منهما أن لا يحضرا شيئا ... عدا أغراضهما الخاصة .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">تحضر أنت جميع احتياجات الرحلة ... وتخبرهما بذلك ... فتقول : لا أريد إلا أن أدخل السرور عليكما ... أريد أن أوسع صدوركما ... أريد إيناسكما ... إلخ .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وتحرص على إحضار ما يحبون من المأكولات ... قهوة ، حنيني ، معصوب ، عصيدة ، مشغوفة  ، دغابيس  ، كشري  ، ملوخية بالأرنب  .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إن طلبا أحدا من إخوانك يشارككما الرحلة فقل : أبشرا ... سمعا وطاعة ... ونفذ طلبهما ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ثم تجعلهما على راحتهما في البر ... وتخدمهما في كل مايريدون ... تسخن لهما الماء ، تصلح لهما الفطور أو الغداء ... تشوي لهما ... تشعل لهما الحطب ... تجعل لهما حاجزا عن الهواء ... تفاجأهما بإهدائهما الجوارب أو الغطاء أو القفازين أو البشت أو غطاء الرأس ... وتلبسهما إياه ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أحضر لهما المقاعد والمتاكئ ... وإن كانا يرغبان الكراسي ... فأحضرها لهما .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ثم تمشي وإياهما في الصحراء ... فتفتح معهما الموضوعات التي يحبونها ... كيف كانوا في السابق ؟... كيف تم زواجهما ؟... كيف كانت ولادتك إخوانك ؟... وأي الولادات أشد من بين إخوانك ؟ ... ما أحب البلاد إليكما ؟... ما أحب الأكلات إليكما ؟... مواقف محرجة ... مواقف مضحكة ... مواقف محزنة ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إلعب معهما لعبا مناسبة ... لعبة الحروف مثلا ... تذكر مدينة ... ثم يذكر والدك مدينة حسب آخر حرف من مدينتك ... ثم تذكر والدتك مدينة حسب آخر حرف من مدينة والدك ... وهكذا .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إلعب معهما اللعبة التي تسمى مرطاخ أو ملطاخ  ... وشجع من يفوز .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أرّخ هذه الرحلة البرية ... واجعلها من أجمل الأيام التي قضيتها مع والديك ... ثم اطلب منهما تكرارها .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أسأل الله أن يعيننا إلى بر والدينا ... ورضاهما عنا .<br />
+ </font></font><br />
+<hr /><font color="#000000"><font size="5"><br />
+</font></font><u><font size="5">رابعا</font></u><font color="#000000"><font size="5">:</font></font><font size="5"><font color="Red">ضيافتهما</font></font><font color="#000000"><font size="5">.</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">هذه الفكرة ... لها أثرٌ عجيب ... وتأثير فريد ... قد تُستغرب في أصلها ، وقد تَستغرب من طرحها ... وقد تَتعجب منها ، ومن عرضها ... وقد تُعجب بها ؛ فتطبقها ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وهي تناسب من لا يرى حرجا فيها ... ومن كان كذلك ... فليجربها .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">الفكرة تقوم على أن تدعو والديك إلى غداء أو عشاء في إحدى المطاعم العائلية المحافظة ... ثلاثة فقط ... أنت وهما ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">تعرض لهما مايريدان في قائمة المطعم ... وتطلبه لهما .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">حادثهما عن طفولتك ... وشقاوتك ... وبيتكم القديم ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">حادثهما عن طفولتهما ... وعن والديهما ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">حادثهما عن إخوانك ... وأعمامك ... وأخوالك ... وكيف كانت حياتهما ؟.</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ستشعر بحياة جديدة ... وسعادة تغمر قلبك ... في إدخال السرور عليهما .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">لاشك أن ضيافتهما في منزلك ... أولى وأحرى ... لكن التجديد في ذلك هو ماسيدخل السرور إلى قلبيهما .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وسأذكر قصة عجيبة في هذا المقام ... تبين أثر هذه الضيافة .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ملحوظة :</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">ضيافتهما تعني أن الحساب عليك  ... لاتورط الوالد وتخليه يحاسب .</font></font><font size="4"><br />
+<br />
+</font><font size="4"><font color="#000000">أسأل الله أن يصلح أحوالنا ... ويعيننا على برهما .<br />
+</font><font color="#FF0000"><br />
+يقول صاحب القصة :</font><br />
+<br />
+</font><font color="#000000"><font size="4">بعد 21 سنة من زواجي ، وجدت بريقاً جديداً من الحب ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">قبل فترة بدأت أخرج مع امرأة غير زوجتي ... وكانت فكرة زوجتي ... حيث بادرتني بقولها : &quot; أعلم جيداً كم تحبها &quot; ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">المرأة التي أرادت زوجتي أن أخرج معها ... وأقضي وقتاً معها كانت &quot;</font></font><font size="4"><font color="Red">أمي </font></font><font color="#000000"><font size="4">&quot; ... التي ترملت منذ 19 سنة .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ولكن مشاغل العمل وحياتي اليومية ( 3 ) أطفال ... ومسؤوليات مختلفة ... جعلتني لا أزورها إلا نادراً !!.</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">في يوم ؛ اتصلت بها ... ودعوتها إلى العشاء ... سألتني : &quot; هل أنت بخير ؟! &quot; ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">لأنها غير معتادة على مكالمات متأخرة ... وتقلق من ذلك ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">فقلت لها : &quot;نعم ؛ أنا ممتاز ... ولكني أريد أن أقضي وقتا معك يا أمي &quot;.</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">قالت : &quot; نحن فقط ؟! &quot; .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">فكرتْ قليلاً ثم قالت : &quot;أحب ذلك كثيراً &quot;...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">في يوم الخميس وبعد العمل ... مررت عليها وأخذتها ... وكنت مضطربا ، وعندما وصلت ... وجدتها هي أيضاً قلقة.</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">كانت تنتظر عند الباب ؛ مرتدية ملابسا جميلة ، ويبدو أنه آخر فستان قد اشتراه أبي قبل وفاته .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ابتسمت أمي ... وقالت : &quot;</font></font><font size="4"><font color="Navy">قلت للجميع أنني سأخرج اليوم مع ابني ، والجميع فرح </font></font><font color="#000000"><font size="4">، ولا يستطيعون انتظار الأخبار التي سأقصها عليهم بعد عودتي !! &quot; .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ذهبنا إلى مطعم عادي ، ولكنه جميل وهادئ ، تمسكت أمي بذراعي وكأنها السيدة الأولى ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">بعد أن جلسنا ؛ بدأتُ أقرأ قائمة الطعام ؛ حيث أنها لا تستطيع أن تقرأ إلا الأحرف الكبيرة .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وبينما كنت أقرأ كانت تنظر إلي بابتسامة عريضة على شفتيها المجعدتين ، وقاطعتني قائلة :</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">&quot; كنت أنا من أقرأ لك وأنت صغير !!&quot; .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أجبتها : &quot; حان الآن موعد تسديد شيء من ديني بهذا الشيء ... ارتاحي أنت يا أماه &quot; .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">تحدثنا كثيراً أثناء العشاء ، لم يكن هناك أي شيء غير عادي ، ولكن قصص قديمة ، وقصص جديدة ، لدرجة أننا نسينا الوقت إلى ما بعد منتصف الليل !!.</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وعندما رجعنا ، ووصلنا إلى باب بيتها ؛ قالت : &quot; أوافق أن نخرج سوياً مرة أخرى ، ولكن على حسابي &quot; .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">فقبّلت يدها ، وودعتها ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">بعد أيام قليلة ؛ توفيت أمي بنوبة قلبية .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">حدث ذلك بسرعة كبيرة ... لم أستطع عمل أي شيء لها .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وبعد عدة أيام وصلني عبر البريد ورقة من المطعم الذي تعشينا به أنا وهي - رحمه الله - مع ملاحظة مكتوبة بخطها :</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">&quot;</font></font><font size="4"><font color="navy">دفعت الفاتورة مقدماً ... كنت أعلم أنني لن أكون موجودة ... المهم دفعت العشاء لشخصين لك ولزوجتك ، <u><font color="Red">لأنك لن تقدّر ما معنى تلك الليلة بالنسبة لي </font></u>... أحبك ياولدي</font></font><font color="#000000"><font size="4">&quot;.</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">في هذه اللحظة فهمت وقدرت معنى كلمة &quot; حب &quot; أو &quot; أحبك &quot; ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وما معنى أن نجعل الطرف الآخر يشعر بحبنا ومحبتنا له ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">لا شيء أهم من الوالدين وبخاصة الأم ... امنحهم الوقت الذي يستحقونه ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">انتهت القصة .<br />
+ </font></font><br />
+<hr /><font color="#000000"><font size="5"><br />
+</font></font><u><font size="5">خامسا</font></u><font color="#000000"><font size="5">:</font></font><font size="5"><font color="Red">أخذهما في جولة داخلية ( التمشي بهما .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">قد يناسب أيضا التنسيق مع الوالدين أو أحدهما ، وأخذهما في جولة داخل المدينة ، مثال ذلك :</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- زيارة بعض أقاربكم زيارة خفيفة ، وإن أرادا البقاء فالأمر لهما .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- زيارة الأحياء القديمة ، وطلب الشرح منهما عن سبب بناء البيوت بهذه الهيئة ، وكيف كانت المنازل ، وكيف أصبحت ، وكيف كانت النفوس في السابق ، وكيف هي الآن .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- زيارة منزلكم القديم ، وطلب البيان منهما عن تصميمه ، وكيف كان العيش فيه .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- زيارة الأسواق القديمة ( مثل الحلة لأهل الرياض  .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- زيارة المناطق الأثرية ( مثل بوابة مدينة الرياض ، والثميري ، شارع الوزير ، شارع العطايف ، المصمك ... إلخ ) .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- قد يناسب الوالد زيارة منطقة الحراج ( مثل حراج ابن قاسم  ... وتركه على راحته ، بل على راحة راحته  .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- قد يفرح الوالدان إذا أخذتهما إلى بعض جيرانهم السابقين ، وتكون زيارة خفيفة جدا ( فنجال قهوة على الماشي  .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- زيارة المحلات المسماة ( أبوريالين ) .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- زيارة الأحياء الفقيرة .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- زيارة بعض المباني المشتهرة التي تُرى غالبا في وسائل الأعلام ... ومشاهدتها على الواقع .</font></font><font size="4"><br />
+<br />
+<br />
+</font><font color="#000000"><font size="4">أي أنها جولة خفيفة ... يمكن أن تقول عنها ( تمشية ) ... تشعر بها والديك بأنك معهما ، وأنك قريب منهما ، ويسعدك كثيرا أن تأخذهما معك ، ويسعدك - أكثر - أن ترى البسمة على وجوههما .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ولاتنس الوقوف عند إحدى المحلات وشراء بعض المشروبات أو المأكولات التي يرغب بها والداك أثناء الجولة .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وأيضا عند العودة خذ لهما شيئا يسيرا ( مأكول أو مشروب ) ليدخلا به إلى المنزل ... يعني ( قدوع <img src="images/smilies/smile.png" border="0" alt="" title="Smile" class="inlineimg" /> ... أو شيئا يسيرا يفرحون به الأطفال ( كيس بطاطس ، شكوكلاته ، حلوى ) .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أقر الله عينك برضاهما عنك .</font></font><font size="4"><br />
+<br />
+</font><u><font size="4"><font color="Red">لفتة </font></font></u><font color="#000000"><font size="4">/</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">مع أصحابنا ... لانمل من الركوب معهم والتنزه بصحبتهم ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ومع والدينا قد نستكثر الساعة ، وقد نستصعب الوضع .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أسأل الله أن يلطف بنا .</font></font><font size="4"><br />
+ </font><br />
+<hr /><font size="5"><br />
+</font><u><font size="5">سادسا</font></u><font color="#000000"><font size="5">:</font></font><font size="5"><font color="red">تقبيل الرأس واليد </font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">من توقير الوالدين ، وتبجيلهما ، واحترامهما ... تقبيل رأسيهما وأيديهما ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">تقبيل الرأس واليد ... لانتصور أثره وتأثيره ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وتستطيع أن تعرف هذا الأثر ... إذا لم تقم به ... لترى أثر ذلك في وجه والديك وتصرفاتهما معك .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">قد يتردد البعض في تقبيل رأس والده أو والدته ... ولكن لا يتردد ... ولن يتردد في تقبيل رأس عالم طالب علم قد يصغر سن والده ... أو يقاربه ... بل حتى ولو أكبر من والده ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">فحق الوالدين لا يدانيه حق بشر ... الآن .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وتقديم حقهما من أوجب الحقوق بعد حق الله ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">قبّل رأس والديك كلما رأيتهما ... حسب ماتراه .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وإن كانا يرغبان في تقبيل اليد ... فقبل أيديهما ... فلكم قامت تلك الأيدي معك بما لا يستطيع أن يقوم به أحد سواهما .</font></font><font size="4"><br />
+<br />
+<br />
+</font><u><font size="4"><font color="Red">لفتة </font></font></u><font color="#000000"><font size="4">/</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">يتمنى من فقد والديه بأن يشتري تلك القبلة بما يملك ... فمن أطال الله في عمر والديه فلا يحرم نفسه تلك النعمة ... وذلك البر .</font></font><font size="4"><br />
+ </font><br />
+<hr /><font size="5"><br />
+</font><u><font size="5">سابعا</font></u><font color="#000000"><font size="5">:</font></font><font size="5"><font color="Red">مدحهما والثناء عليهما </font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">لا شك أن مدح الوالد والوالدة والثناء عليهما ... مما يؤنسهما ، ويدخل السرور عليهما ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">امدحهما ... افتخر بهما ... تشرف بالانتساب إليهما ... انسب الفضل لهما - بعد الله - ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إن نجحت في دراستك ... فقل : هذا النجاح بفضل الله ثم تربية الوالد والوالدة .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إن وُفقت في عمل ... فقل : هذا التوفيق بفضل الله ثم حرص الوالد والوالدة ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إن ترقيت في وظيفة ... فقل : هذه الترقية بفضل الله ثم دعاء الوالد والوالدة .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إن رزقت بمال ... فقل : هذا المال بفضل الله ثم دعاء الوالد والوالدة .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إن أتقنت عملا ... فقل : هذا الاتقان بفضل الله ثم تربية الوالد والوالدة .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إن وُفقت في زواج ... فقل : هذا التوفيق بفضل الله ثم دعاء الوالد والوالدة .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إن أثنى عليك أحد ... فقل : هذا بفضل الله ثم تربية الوالد والوالدة .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">احرص على مدحهما في حال وجودهما ... وعدمه .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إذا دخل عليك أحدهما ... فقل : ماهذا النور الذي دخل علينا ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إذا أقبل عليك أحدهما ... فقل : أهلا وسهلا بمن تقر العين برؤيته ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إذا رأيتهما ... فقل : الحمد لله أن رزقني والدين مثلكما ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إذا جالستهما ... فقل : الذي ليس عنده مثلكما ... كيف يعيش ؟!.</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إذا زارك الوالدان ... فقل : حلّت البركة بحضوركما ... لاحرمنا الله منكما . ( تبارك البيت أفتى أهل العلم بعدم جوازها ) .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ونحو ذلك .</font></font><font size="4"><br />
+<br />
+</font><u><font size="4"><font color="Red">لفتة </font></font></u><font color="#000000"><font size="4">/</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">لا تتحرج من إدخال السرور عليهما بمثل هذه الكلمات اللطيفة ... ومن لم يستطع فليسأل الله الإعانة .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أسأل الله أن يرزقنا برهما ورضاهما .<br />
+ </font></font><br />
+<hr /><font color="#000000"><font size="5"><br />
+</font></font><u><font size="5">ثامنا</font></u><font color="#000000"><font size="5">:</font></font><font size="5"><font color="Red">ذكر محاسنهما</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">يحسن بالولد أن يذكر محاسن والديه ... ويثني عليهما بها .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">يذكرها أمامهما ... ويتمنى أن يُرزق مثلها ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">يقول في حضورهما ... وفي غيبتهما :</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- أرجو أن يرزقني الله ... مثل صدق والدي ووالدتي .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- أتمنى أن يهبني الله حسن خلق ... مثل والدي ووالدتي .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- أرجو أن يحبني الناس ... كما يحبون والدي ووالدتي .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- هنئيا لكما بالتواضع ولين الجانب ... ليتني مثلكما .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- محافظتكما على الصلاة شيء عجيب !!... ليتني أكون مثلكما .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- ليتني أستطيع أن أحفظ لساني ... كما يحفظها والدي ووالدتي .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- أرجو أن يرزقني الله ... مثل شجاعة والدي وكرمه .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- أرجو أن يرزقني الله ... مثل صلاح والدتي وبرها .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- أتمنى أن يهبني الله ... مثل ذكاء والدي ووالدتي وفطنتهما .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- أرجو أن يرزقني الله ... مثل سماحة الوالد والوالدة وتسامحهما .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- وهكذا .</font></font><font size="4"><br />
+<br />
+</font><u><font size="4"><font color="red">لفتة </font></font></u><font color="#000000"><font size="4">:</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">وقد تريد إلماحا إلى صفة تتمنى وجودها فيهما .... فتثني عليهما بها ... لتأكيدها لديهما .</font></font><font size="4"><br />
+ </font><br />
+<hr /><font size="5"><br />
+<font color="#000000">تاسعا : </font><font color="#FF0000">إظهار الاهتمام بهما وقضاء حوائجهما .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ومما يناسب ... - وقد نغفل عنه أحيانا - ... إظهار الاهتمام بالوالدين وقضاء حوائجهما ... حتى مع عدم الحاجة إليك ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">لاتستصغر خدمتهما ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">كن لماحا ... إلى مايحتاجه والداك ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">لا أقول : راقب نظراتهما ... تجاه مايحتاجون ... راقب مشاعرهما تجاه مايرغبون ... راقب همومهما تجاه مايطلبون ... لكن ... كن لماحا ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">حاول أن تعرف مايرغبه والداك ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">اسألهما ... عن مايحتاجونه ... ثم قل : سم .. آمر ... أبشر ... الآن ... لبيك ... حبا وكرامة ... أسعد الأوقات التي أخدمكما فيه .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- يريد أن يجلس والدك فيلتفت يمينا وشمالا ... وكأنه يبحث عن مقعد ... فبادر إلى الكرسي ... إلى المتكئ ... إلى المقعد ... فقربه له .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- تجد والدتك تفكر ... اسألها : سمي ... تدللي ... ماذا تريدين ؟... أنا أخدمك بعيوني ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- تجد والدك يسرح في تفكير عميق ... اسأله : ماعاش اللي يشغل همك ... أنا أقضي عنك ماتريد ... أهم شيء لاتهتم ... ولاتنشغل .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- تأكل مع والديك ... فتقطع لهما اللحم بالسكين وتقربه لهما ... تقرب لهما مابعد عنهما ... تقرب لهما الملعقة ونحو ذلك ... إذا انتهى أحدهما من الأكل ... تقرب له الفاكهة مثلا ...وتقطعها له ... تقرب له المناديل - مثلا -</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- في المناسبات العامة ... كن قريبا من والدك ... صدّره في المجلس ... قرّب له القهوة والشاي ... قدّم له زملائك وعرفهم عليه - مفتخرا - ... لاتقدم أحدا عليه مهما كان قدره ومقامه ... فلا مقام يوازي مقام الوالد ..</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ونحو ذلك مما لا يخفى على الأفاضل مثلكم .<br />
+ </font></font><br />
+<hr /><font color="#000000"><font size="5"><br />
+</font></font><u><font size="5">عاشرا</font></u><font color="#000000"><font size="5">:</font></font><font size="5"><font color="Red">مشاورتهما </font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">مما قد يخفى على البعض ... مع أهميته وتأثيره وفائدته ... مشاورة الوالدين ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">شاورهما ... ونفذ رأيهما ... واشكرهما قبل وأثناء وبعد العمل ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">شاورهما حتى في بعض الأمور اليسيرة ... لترى أثر ذلك على محياهما ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">شاورهما في اختيار تخصصك الجامعي ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">شاورهما في اختيار الزوجة ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">شاورهما في موقع السكن الذي ترغب السكن فيه ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">شاورهما في أسماء الأولاد ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">شاورهما في نوع السيارة التي ترغب أن تقتنيها ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">شاورهما في بعض مشكلاتك في العمل ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">شاورهما في بعض مايحدث لك أو لأولادك من أمراض ونحوها ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">شاورهما وحاورهما في بعض الأحداث من حولكما ... من قضايا سياسية واجتماعية واقتصادية ... ونحو ذلك .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">اشكرهما بعد ذلك ... وأطعهما في مشورتهما ... وسترى التوفيق بإذن الله ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وتحضرني قصة لأحد التجار ... والذي قصها لي بنفسه عن نفسه ... وفيها العبرة والموعظة لمن أراد الله أن يعتبر ويتذكر .</font></font><font size="4"><br />
+<br />
+<font color="#000000">لعلي أذكرها بإذن الله ..<br />
+</font><font color="#FF0000"><br />
+حدثني أحد كبار تجار النقليات والوقود ... فقال :</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">تخرجت من الجامعة ... فتقدمت مع بعض زملائي إلى إحدى الجهات الحكومية ذات المرتبات العالية ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وبعد مدة يسيرة ... تم استدعائي ... وإخباري بالقبول ... وأن عليّ بعض المتطلبات التي لابد من إكمالها لتتم عملية التوظيف .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">يقول : فعدتُ إلى والدي مستبشرا ومبشرا ... فقلت له : أبشرك بأني قُبلت ... وسأكون كذا بعد كذا سنة ... ثم الترقية إلى المرتبة كذا بعد كذا سنة ... إلخ ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">يقول : وبعد أن انتهيت ... قال لي والدي : لا أسمح لك بأن تتوظف في هذه الوظيفة !!.</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">فتعجبتُ وقلت : ياوالدي ... لكن لها مستقبل ، ووجاهة اجتماعية ورواتبها مغرية ... إلخ .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">فأعاد وقال : لا أسمح لك أن تغادر من قريتنا ... لتتوظف في بلدة بعيدة عني ... ابحث عن وظيفة في المدن حولنا ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">فألححت عليه ... وأعاد الاصرار ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">فقلت : سم ، وأبشر ... ومالك إلا اللي يرضيك ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ثم قال لي : وأبشرك يابومحمد بأني ولله الحمد من بعد ماسمعت كلام والدي ... وأنا في خير ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">افتتحت محطة بنزين في مدينة بجوار قريتنا ... ثم افتتحت الأخرى ... ثم الثالثة والرابعة والخامسة والسادسة والسابعة والثامنة والتاسعة ... والعاشرة في طور الإنشاء ... ولدي اسطول من النقليات ( أنا نسيت أعدادها ) ... وأصنف في شركة ( أرامكو ) بمرتبة عالية جدا ... وأنا في خير ونعمة ... أسأل الله أن يعينني على شكرها .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ثم قال : تصور ، لو لم أستمع لنصيحة والدي ومشورته ... ماذا سأكون ؟!...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">زملائي الآن مفرقين في المدن ... ومرتباتهم كلها لاتسوي دخلي الشهري ... ولله الحمد .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ثم قال : وأبشرك بأن المحطات التسع مطلوبة كلها للإيجار بمبلغ لا يخطر لي على بال ... بل هو أعلى بكثير من الدخل السنوي للمحطات في وضعها الحالي ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">فأسأل الله أن يجزي والديّ خير الجزاء ، وأن يعيننا على برهم ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">والحمد لله على نعمة .<br />
+ </font></font><br />
+<hr /><font color="#000000"><font size="5"><br />
+</font></font><u><font size="5">الحادي عشر</font></u><font color="#000000"><font size="5">/</font></font><font size="5"><font color="Red">حسن الاستماع لهما</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">مما قد نفتقده ... ولانحس أثره ... ولا نعرف تأثيره : حسن الاستماع للوالدين ... وإظهار البهجة والسرور عند حديثهما ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أقبل عليهما بوجهك ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أظهر التفاعل مع حديثهما ... بتحريك الرأس ... وتعابير الوجه ... ونبرات الصوت ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">استمع لهما ... حتى لو كان حديثهما مما سمعتَه من قبل ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">لاتقطع حديثهما ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">لاتقل ... لقد سمعت هذا الأمر من قبل ... !!.</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إن ذكرا لك فائدة ... فادع لهما علانية ... وبين لهما أنك استفدت مما ذكراه ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إن ذكرا لك قصة ... فأظهر لهما تأثرك ... وبين لهما أثر القصة عليك ... وأنك ستخبر بها من تعرف ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إن ذكرا لك طرفة ... فأظهر الابتسامة الصادقة التي تدخل السرور عليهما ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">لنحذر الغفلة ... تجاه مثل هذه اللفتات التي لا نعرف قدرها ... كما يعرفها الوالدان ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">حفظهما الله وأعاننا على برهما .<br />
+ </font></font><br />
+<hr /><font color="#000000"><font size="5"><br />
+</font></font><u><font size="5">الثاني عشر</font></u><font color="#000000"><font size="5">/</font></font><font size="5"><font color="Red">الاتصال عليهما </font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">مما لا يخفى على الأفاضل أن حق الوالدين لا يدانيه حق من حقوق البشر ممن هو على قيد الحياة .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">فلا يقدم غيرهما عليهما ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">اتصل على والديك كل يوم ... أو كل يومين ... إذا لم تتمكن من زيارتهما ... والجلوس معهما ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أحذّر نفسي وإخواني من التقصير في هذا الجانب ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">لاتقل إن الوالدين لايغضبهما عدم اتصالي عليهما أو التأخر في مهاتفتهما ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">لاتُقنع نفسك بذلك ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">الوالدان يسعدان ويفرحان بسماع صوت ابنهما ويأنسان بذلك ... فلا تحرم نفسك رضى والديك .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أظهر التفاعل أثناء الإتصال ... لايكن اتصالك باردا جامدا خاملا هادئا ... وكأنك تهاتف رجلا ثقيلا تتمنى أن ينتهى الاتصال به ...قبل بدايته <img src="images/smilies/smile.png" border="0" alt="" title="Smile" class="inlineimg" /> .</font></font><font size="4"><br />
+<br />
+</font><font size="4"><font color="Red">مثال </font></font><font color="#000000"><font size="4">:</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">تتصل ... فتقول بصوت يظهر فيه الحماس :</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">السلام عليكم ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">هلا والله يمه ( ماما ، أمي ، الوالدة ، ... إلخ ) ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">كيف الحال ؟...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">كيف صحتك ؟...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">كيف النوم البارح ؟...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">كيف صحة الوالد ؟...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">كيف إخواني ، كيف دراستهم ، كيف أولادهم ... إلخ .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ثم اسألها عن شيء تحبه ... وتحب الحديث عنه ... مثال :</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- كيف طبخك اليوم ... ليتني معكم كي أستمتع بفنك الراقي فيالطبخ .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- كيف صاحبتك أم فلان .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- كيف الصوم اليوم ... عسى ماتعبتي .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- كيف الدراسة في الحلقة اليوم ... وش صار عندكم ... وين وصلتي بالتسميع ...</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- ونحو ذلك .</font></font><font size="4"><br />
+<br />
+</font><font size="4"><font color="red">أيضا </font></font><font color="#000000"><font size="4">/</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">جرب أن ترسل رسالة عبر جهازك الجوال .... يكون فيها دعاء أو ثناء أو فائدة أو طرفة تسعدهما عند قراءتهما لها .<br />
+ </font></font><br />
+<hr /><font color="#000000"><font size="5"><br />
+</font></font><u><font size="5">الثالث عشر</font></u><font color="#000000"><font size="5">/</font></font><font size="5"><font color="Red">الرد على اتصالاتهما مهما كانت الظروف </font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">لا يخفى على الأفاضل حديث جريج العابد عندما كان يصلي ... وعدم رده على أمه عندما نادته !... وماذا لحقه بعد ذلك .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ولا يخفى على الأكارم قصة ذلك العالم الذي كان يجلس في مجلس علم ... يشرح فيه لطلابه ويعلمهم ... فقَدمت أمه إلى المجلس أو نادته من بعيد ... وقالت له : &quot; يافلان ؛ خذ الحبّ ... وأعطه الدجاج &quot; ... فأجابها رحمه الله ، وقام بعمل ما طلبته منه !... دون حرج !!.</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أقول :</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قد تأتي لبعضنا اتصالات من أحد الوالدين ... ونحن في عمل ... أو في مجلس علم ... أو في مجلس عام ... أو في مناسبة ... أو نحو ذلك ... وقد يتحرج البعض من الرد !!... خاصة إن كان المتصل الوالدة !!.</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">عجيب حالنا !!... نتحرج من الرد على اتصال الوالدة أو الوالد ... مع أن الواجب أن نبادر ونفتخر ونتشرف باتصالهما علينا .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ما المانع أن نرد ... ونبادر بالسلام والترحيب ... وكأننا في مكان خالٍ ؟! ... - حسب الحال - .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ما المانع إن كنت مع إخواني في العمل أن أرد وأسلم الوالدة ... وأسأل عنها ... وعن أحوالها ... وعن صحتها ... وأبين أنها الوالدة بكل فخر ... دون حذف الضمائر المؤنثة من كلماتي ؟!.</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وما المانع إن كنت مع إخواني أن ارد وأسلم على الوالد ... وأسأل عنه وعن حاله وعن صحته ... دون أدنى أدنى أدنى حرج !! .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">مئات الملايين من البشر ... يتمنون اتصالا واحدا ... من أحد والديهم ... يشترونه بالملايين ... في حين ... قد يغفل بعضنا عن ذلك ... فلا يرد على اتصالهما ... بحجة أن اتصالهما - غالبا - غير مهم بالنسبة لك ... مع أنه هام ومهم بالنسبة لهما !!.</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">جرِّب أن ترد على والدتك ... وأنت مع إخوانك ... وتتقلب في نعمة سماع صوتها ... والسؤال عن حالها ... وأخبارها ... ثم أخبرها أين أنت ... وأن إخوانك يطلبون منها الدعاء لهم ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">والله إنها لذة ونعمة لا يعادلها نعمة ... أو لذة .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">فلنحمد الله تعالى على ذلك .<br />
+ </font></font><br />
+<hr /><font color="#000000"><font size="5"><br />
+</font></font><u><font size="5">الرابع عشر</font></u><font color="#000000"><font size="5">/</font></font><font size="5"><font color="Red">إهدائهما ... واللفز* عليهما </font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أثر الهدية لا يخفى ... وتأثيرها لايمكن وصفه ... صغُرت الهدية أم كبُرت ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">لا تستصغر هديتك لوالديك ... يكفيهما منك ... تذكرك الدائم لهما ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">نظرتك أنت للهدية ... تختلف عن نظرتهما لها .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أهدهما ما يحبون مهما كانت قيمته ... قلّت في عينيك أم كبرت ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">يمكن إهداء</font></font><font size="4"><font color="red">الوالد </font></font><font color="#000000"><font size="4">مايلي :</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">- مصحف مع حامل .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- شماغ أو غترة .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- بشت .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- شراء ثوب جاهز .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- أخذ مقاسه من ثوب آخر وتفصيل ثوب جديد .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- شراء ملبوسات داخلية .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- حذاء يرتاح له .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- جوارب .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- بخور أو دهن عود أو أي عطر آخر .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- قلم .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- محفظة .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- قميص بيت والتي تسمى جلابية .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- إن كان يحب عدد السيارات فيهدى له عدة سيارات جاهزة ( مفاتيح ومفكات وزرادية ... إلخ ) .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- شراء مفرش أو مخدة أو بطانية له .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- إن كان يهتم بالتحف فيهدى له ما يناسب .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- شراء الأكلات التي يحبها .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أي أنك تتلمس احتياجه وتشتريها له .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ويمكن أن يستخدم معه عنصر</font></font><font size="4"><font color="red">اللفز </font></font><font color="#000000"><font size="4">... فيوضع في جيبه من المال ما يناسب إن كان ذلك مناسبا .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أما</font></font><font size="4"><font color="red">الوالدة </font></font><font color="#000000"><font size="4">فيمكن إهدائها ما يلي :</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- مصحف مع حامل .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- عباءة وغطاء .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- شنطة نسائية .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- شرشف صلاة وسجادة .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- حذاء مناسب لها .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- حناء .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- عطر .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- جلابية مناسبة .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- مفرش نوم وبطانية .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- أواني منزلية مناسبة .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- ساعة .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">- طقم مناسب من الذهب ... أو خاتم أو نحو ذلك .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أي أنك تتلمس احتياجاتها ... وتشتريها لها .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ويمكن أيضا أن تستخدم عنصر</font></font><font size="4"><font color="red">اللفز </font></font><font color="#000000"><font size="4">... بأن تخصص مبلغا من المال شهريا لها ... أو تهديها ما تيسر حسب الحال والمناسبة .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">---</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">(*) اللفز : هو الهدية على خفاء ، بحيث تكون بينك وبينه دون أن يراه أحد ... وغالبا تكون من المال .<br />
+ </font></font><br />
+<hr /><font color="#000000"><font size="5"><br />
+</font></font><u><font size="5">الخامس عشر</font></u><font color="#000000"><font size="5">:</font></font><font size="5"><font color="Red">غمزهما أو تهميزهما أو تمريخهما أو تدليكهما </font></font><font color="#000000"><font size="5">.</font><font size="4"><br />
+<br />
+أما هذه فلها طعم آخر ... وذوق مختلف .</font></font><br />
+<div style="text-align: center;"><font size="4"><font color="Navy">ومن لم يجرب ليس يعرف قدره *** فجرب تجد تصديق ماقد ذكرناه</font></font></div><font color="#000000"><font size="4">غمزهما ... أي تهميزهما ... أي تكميدهما ... أي تدليكهما ... .</font></font><br />
+<font color="#000000"><font size="4">أي : أن تطلب من أحد والديك أن يمد قدميه ... فتضع يديك على قدميه ... فتضغط عليها برفق وسهولة ... ذهابا وإيابا .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أي : أن تستأذن من أحدهما ... فتلصق يدك اليمنى باليسرى ... وتفرق أصابعك ... ثم تمررها على ظهره ... بضرب خفيف لطيف ... يسرّه ولا يضره ... ومن كانت يده كبيرة ... فليستخدم واحدة رفقا بالوالدين  .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أي : أن تمسك يديه ... فتغمزهما ... وتفرقع أصابعه بسهولة ... ( مع التنبه للإشكال الصحي الذي ذكره الأخ جهاد حلس وفقه الله ) .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">التهميز أو التغميز ... يعطي للجسم استرخاءً عجيبا ... أحسب - إن لم أجزم - بأن دعوة صادقة من والديك ... ستخرج من القلب ... وأسأل الله أن يستجيبها .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إن رأيت القدمين ممدوتان ... فبادر ... وإن لم يكن ... فاطلب ... واحتسب الأجر في ذلك .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">قال محمد بن المنكدر : قال محمد بن المنكدر : &quot; بتّ أغمز رجلَ أمي ، وبات أخي عمر ليلته يصلّي ، فما تسرّني ليلته بليلي &quot; .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أصلح الله الأحوال .<br />
+ </font></font><br />
+<hr /><font color="#000000"><font size="5"><br />
+</font></font><u><font size="5">السادس عشر</font></u><font color="#000000"><font size="5">:</font></font><font size="5"><font color="red">إقامة مناسبة لهما </font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">تتكرر الأيام الجميلة ... وتتعدد المناسبات المفرحة ... وتتنوع الأسباب الداعية ... لدعوة الوالدين ، والتشرف باستقبالهما ... أو ضيافتهما ... لسبب معين ... أقيمت المناسبة من أجله .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">فقد تختم الوالدة جزءا من القرآن ... فتدعوهما ... مع من ترى ... للغداء أو العشاء ... فرحا بهذا الإنجاز .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وقد يخرج الوالد من المستشفى - لا قدر الله - ... فتقيم مناسبة له ... فرحا بسلامته وخروجه .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وقد تنجح الوالدة في دار التحفيظ ... فتقيم لها حفلة مناسبة لها ... فرحا بهذا التفوق .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وقد ينجح الوالد في عمل معين أو ترقية في وظيفة ... فتقيم مناسبة له بذلك ... فرحا بهه الترقية .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وقد تقيم مناسبة لهما ... فرحا بهما ... وطلبا لرضاهما ... وبرا بهما ... ويكون الحفل باسمهما ...</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">لاعدمناهما .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ولك أن تتخيل فرحتهما بعد العودة من المناسبة ... وكيف سيكون رضاهما عنك ... وشكرهما لك ... ودعوتهما لك .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">فاللهم ارزقنا برهما ورضاهما وطاعتهما .</font></font><u><font size="4"><br />
+ </font></u><br />
+<hr /><u><font size="5"><br />
+السابع عشر</font></u><font color="#000000"><font size="5">/</font></font><font size="5"><font color="Red">طباعة مصحف باسمهما </font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">مما يؤنس الوالدان ويسعدهما .. إهدائهما مصحفا مناسبا في حجمه ووزنه وخطه .. مع كتابة اسم الوالد أو الوالدة على غلاف المصحف .. وكتابة تاريخ الإهداء أو كتابة تاريخ يحبه الوالد أو الوالدة .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وإن أهديت لهما حاملا خفيفا أو حاملا مع بكرات أو كفرات صغيرة لتسهيل نقل الحامل معهما .. فستسعدهما أيما إسعاد ..</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أسعدكم الله جميعا بطاعته .<br />
+ </font></font><br />
+<hr /><font color="#000000"><font size="5"><br />
+</font></font><u><font size="5">الثامن عشر</font></u><font color="#000000"><font size="5">/</font></font><font size="5"><font color="Red">إهدائهما درعا باسمهما</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">قد يناسب إهداء الوالد والوالدة درعا باسمهما في المناسبات التي تراها مناسبة .. كمناسبة العيد ، أو قدومهما من سفر ، أو نجاح الوالدة في تحفيظ القرآن ، أو تميز الوالد في عمله ، أو تقاعده .. ونحوها ..</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">ويكون في هذا الدرع عبارات الثناء والشكر والدعاء لهما ؛ مع ملاحظة أن يكون اسمهما ظاهرا بينا .. ويتم وضعه في مكان بارز في المنزل .. لتفوز بدعائهما كلما رأوه أو سألهما عنه أحد .</font></font><font size="4"><br />
+ </font><br />
+<hr /><font size="4"><font color="#FF0000"><br />
+</font></font><font size="4"><font color="#FF0000">( <u>متى تشتري لي بطاطس ؟</u> )</font><br />
+</font><font color="#000000"><font size="4"><br />
+طبيبة في إحدى المستشفيات تقول :</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">دخلت علي في العيادة عجوز في الستينات بصحبة ابنها الثلاثيني ..</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">لاحظت حرصه الزائد عليها ؛ فهو يمسك يدها ، و يصلح لها عباءتها ، ويمد لها الأكل والماء ..</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">بعد سؤالي عن المشكلة الصحية وطلب الفحوصات ..</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">سألته عن حالتها العقلية لأن تصرفاتها لم تكن موزونة ولا ردودها على أسئلتي ؟..</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">فقال : إنها متخلفة عقليا منذ الولادة ..</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">تملكني الفضول فسألته : فمن يرعاها ؟.</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قال : أنا ! ..</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قلت : والنعم ؛ ولكن من يهتم بنظافة ملابسها وبدنها ؟!.</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قال : أنا ادخلها الحمام ، وأحضر ملابسها ، وأنتظرها إلى أن تنتهي وأصفف ملابسها في الدولاب ، وأضع المتسخ في الغسيل ، أاشتري لها الناقص من الملابس .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قلت : ولمَ لا تحضر لها خادمة ؟! .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قال : لأن أمي مسكينة مثل الطفل لا تشتكي وأخاف أن تؤذيها الشغالة ..</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">اندهشت من كلامه ومقدار بره ، وقلت : وهل أنت متزوج ؟.</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قال : نعم الحمد لله ؛ ولدي أطفال ..</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قلت : إذن زوجتك ترعى أمك ؟..</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قال : هي ما تقصر ، فهي تطهو الطعام ، وتقدمه لها ، وقد أحضرت لزوجتي خادمة حتى تعينها .. ولكن أنا أحرص أن آكل معها حتى أطمئن علشان السكر !..</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">زاد إعجابي ومسكت دمعتي ! واختلست نظرة إلى أظافرها فرأيتها قصيرة ونظيفة .. قلت : أظافرها ؟! .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قال : قلت لك يا دكتورة هي مسكينة .. طبعا أنا..</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">نظرت الأم له وقالت : متى تشتري لي بطاطس ؟ .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قال : أبشري .. ألحين أوديك البقالة !.. فرحت الأم فرحا شديدا ، وقامت تقفز وتقول : الحين الحين .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">التفت الإبن وقال : والله إني أفرح لفرحتها أكثر من فرحة عيالي الصغار ..</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أوهمته أني أكتب في الملف حتى ما يتبين أني متأثرة ! .. سألته : هل عندها غيرك ؟.</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قال : أنا وحيدها لأن الوالد طلقها بعد شهر .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قلت : أجل رباك أبوك ؟.</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قال : لا ؛ جدتي كانت ترعاني وترعاها ، وتوفيت رحمها الله ، وعمري عشر سنوات .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قلت : هل رعتك أمك في مرضك أو تذكر أنها اهتمت فيك ؟ ، أو فرحت لفرحك أو حزنت لحزنك ؟.</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قال : دكتورة أمي مسكينة .. طول عمري ؛ من عمري عشر سنين وأنا شايل همها وأخاف عليها وأرعاها .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">كتبت الوصفة وشرحت له الدواء ..</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">أمسك يد أمه ؛ وقال : ألآن نذهب للبقالة ..</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قالت : لا .. نروح مكة !..</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">تعجبتُ .. وقلت لها : لماذا تريد مكة ؟.</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قالت : أريد أن أركب الطائرة ! .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قلت له : هي ما عليها حرج لو لم تعتمر .. لماذا تذهب بها وتضيق على نفسك ؟.</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">قال : يمكن الفرحة اللي تفرحها إذا ذهبت بها أكثر أجر عند رب العالمين من عمرتي بدونها .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">خرجوا من العيادة ، وأقفلت الباب ، وقلت للممرضة : أحتاج للراحة ، بكيت من كل قلبي وقلت في نفسي هذا وهي لم تكن له أما فقط .. حملت وولدت ، لم تربي ، لم تسهر الليالي ، لم تمرض ، لم تدرس ، لم تتألم لألمه ، لم تبكي لبكائه ، لم يجافيها النوم خوفا عليه .. لم ولم ولم .. ومع كل ذلك كل هذا البر !!.</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">تذكرت أمي وقارنت حالي بحاله .. فكرت بأبنائي .. هل سأجد ربع هذا البر ؟.</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">مسحت دموعي وأكملت عيادتي وفي القلب غصة ..</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">قال تعالى في سورة الإسراء ( وَقَضَىٰ رَبُّكَ أَلَّا تَعْبُدُوا إِلَّا إِيَّاهُ وَبِالْوَالِدَي  ْنِ إِحْسَانًا ۚ إِمَّا يَبْلُغَنَّ عِنْدَكَ الْكِبَرَ أَحَدُهُمَا أَوْ كِلَاهُمَا فَلَا تَقُلْ لَهُمَا أُفٍّ وَلَا تَنْهَرْهُمَا وَقُلْ لَهُمَا قَوْلًا كَرِيمًا (23) وَاخْفِضْ لَهُمَا جَنَاحَ الذُّلِّ مِنَ الرَّحْمَةِ وَقُلْ رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا ).</font></font><font size="4"><br />
+<br />
+</font><font size="4"><font color="#000000">اللهم ارزقنا بر والدينا وأبناءنا .<br />
+ </font></font><br />
+<hr /><font size="4"><font color="#FF0000"><br />
+</font></font><font size="4"><font color="#FF0000">حاجان «أوزبكيان» يتنازعان «حق» حمل والدتهما</font><br />
+</font><font size="4"><br />
+</font><font color="#000000"><font size="4">الجمعة 19, نوفمبر 2010</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">لجينيات ـ أصر شقيقان أوزبكيان حضرا مع والدتهما من طشقند إلى مكة المكرمة في رحلة مضنية عبر الحافلات لأداء فريضة الحج على حمل أمهما طوال الوقت ، من دون كلل أو تعب ، ليلاً ونهاراً . وكانت تتقاسم وجهيهما علامات السعادة بهذه المهمة ، إضافة إلى الخشوع والتعبد .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وكما ذكرت &quot;الحياة&quot; في عددها اليوم الجمعة فقد رفض الشقيقان عبدالرحمن ومحمد قديروف وهما في الخمسينات من العمر أن يوكلا هذه المهمة إلى دافعي العربات داخل الحرم ؛ خلال الطواف حول الكعبة ، أو السعي بين الصفا والمروة .. بل كان الشقيقان يتخاصمان في انتهاء وقت الطرف الآخر في الحمل ، وأنه حان دوره هو ، وفي أحسن الأحوال ، كان يعرض أحدهما على الآخر أن يساعده في الحمل في الوقت المخصص له ، وكان يقابَل عادةً بالشكر الملطف عن الرفض .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وكان منظرهما لافتاً للانتباه طوال فترة الحج ، إذ تعلو الهيبة المكان الذي يمرون فيه ، ويصبحون محط الأنظار .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">وعلى رغم أن حاجز اللغة كان عائقاً أمام التحاور معهم .. إلا أنهم قدّموا للجميع درساً في البر . وكانت صورتهم تغني عن آلاف الخطب ومئات الكتب التي تتحدث عن الوفاء للوالدين ، والبر بهما .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">اللافت أن تفاعل الناس مع الحدث كان متفاوتاً بين كهل وعجوز تدمع عيناهما ، وشاب ينظر لهما بتقدير واعتزاز ، وآخر ينظر بعين الحسرة ، وفتاة أطالت النظر بخيالها ، بيد أن الجميع كان يحاول أن يخدمهم ، ويساعدهم ويقدم لهم العون ، سواءً عبر تقديم الماء ، أم إهدائهم المظلة الواقية من الشمس أو زخات المطر ، والكل يلهج بالشكر والدعاء للحاجين الشقيقين ، اللذين قدّما أنموذجاً حياً من نماذج البر والوفاء .</font><font size="4"> <br />
+ </font></font><br />
+<hr /><font size="4"><font color="#FF0000"><br />
+</font></font><font size="4"><font color="#FF0000">قال الشيخ الأديب / علي الطنطاوي رحمه الله تعالى في ذكرياته (2) / ص94-96 :</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">إني أكتب اليوم عن أمي ، ولكن كل واحد منكم سيقرأ فيه الحديث عن أمه هو .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">ألم يقل سبنسر : إن الجميع يبكون في المآتم ولكن كلا يبكي على ميته ؟.</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">فمن قعد يقرأ هذه الحلقة وله &quot;أم&quot; فليتدارك ما بقي من أيامها لئلا يصبح يوماً فلا يجدها ولا يجد ما يعوضه عنها .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">وإن كانت عجوزاً أو كانت مريضة أو كانت مزعجة بكثرة طلباتها فاذكر أنها إن احتاجت إليك اليوم فلقد كنت يوماً أحوج إليها ، وإن طالبتك أن تقدم لها من مالك فقد قدمت لك من نفسها ومن جسدها ، وأنها حملتك في بطنها فكنت عضواً من أعضائها يتغذى من دمها ، ثم وضعتك كرهاً عنها ، انتزعت منها انتزاع روحها .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">أما أبصرت يوماً حاملاً في شهرها التاسع بطنها إلى حلقها لا تستطيع أن تمشي من ثقل حملها ولا تستطيع أن تنام ؟!.</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">وإن لم تر بعينك امرأة تلد أفما سمعت صراخها من ألمها ؟!.</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">ألم يبلغك ما تقاسي وما تتعذب ؟!.</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">لو سبب لك إنسان عُشر هذا العذاب لأعرضت عنه ولهجرته ؛ هذا إن أنت رفقت به فما انتقمت منه ولا آذيته ، ولكن الأم تنسى بعد لحظات من خروج الولد ألمها ثم تضمه إلى صدرها فتحس كأن روحها التي كادت تفارقها قد ردت إليها ، وتلقمه ثديها ليمتص حياتها فيقوى بضعفها ، ويسمن بهزالها أو يمدها الله بقوة من عنده فلا تضعف ولا تهزل ويقوى هو ويسمن .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">وإن ضقت بطول حياة أمك ، تخفي ذلك في أعماق نفسك وتنكره بلسانك فقد كانت ترى فيك حياتها ، إن تبسمت أحست أن الدنيا تبسم لها والأماني قد واتتها ، وإن بكيت بكى قلبها واسود نهارها ، وإن مرضت هجرت منامها ونسيت طعامها ، ترعاك ساهرة حتى تصبح ، فإن أصبحت ظلت ترعاك حتى تمسي .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">إنك لو أحببتها بقلبك كله لم توفها إلا واحداً بالمئة مما أولتك هي من حبها .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">وإن كان لك أب شيخ كبير محتاج إليك ، فاذكر أنه طالما تعب لتستريح أنت وشقي لتسعد ، ماجمع المال إلا لك وما خسر ماضيه إلا ليضمن مستقبلك ، وأنه كان يعود من عمله محطماً مكدوداً فتثب إلى حجره وتقول له : بابا ، وتمد يديدك الصغيرتين لتعانقه ، فينسى بك التعب والنصب ، ويرى المسرات كلها قد جمعت له والمتاعب كلها قد نأت عنه .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">واذكر أنه مازاد من عمرك يوم حتى نقص من عمريهما مثله ، ولا بلغت شبابك حتى ذهب شبابهما ، ولا نلت هذه القوة حتى نالهما الضعف .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">أفأن بلغت مبلغ الرجال كان جزاؤهما منك الصدود والنكران ؟!.</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">إن الإنسان يربي كلباً فيفي له ، وحماراً فلا يرفسه ، ويطعم القط فلا يعضه ، بل إن من الناس من يتألف صغار الأسود والنمور وأنواع الوحش فتأنس به وتأوي إليه وتلحس يده .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">ويفني الوالدان نفسيهما في الولد فينسى فضلهما ويجحد يدهما !.</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">يا عجــــبـــا ً !!.</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">أيكون الكلب والحمار والقط والنمر أوفى من الإنسان ؟!.</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وقد تجد في الناس من يظهر لك من حبه أكثر مما تظهر الأم ويظهر الأب ، ولكن منهم من يحبك لمالك أو لجمالك أو لجاهك وصلاح حالك ، فإن ساءت الحال أو ذهب الجمال أو قل المال أعرض عنك ولم يعد يعرفك .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">أما الذي يحبك لذاتك ويبقى على حبك مهما تبدلت الحال بك فهو أمك وأبوك ، لاتجد مثلهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">فمن كانت له أم أو كان له أب فقد فتح له باب الجنة ، فمن الذي يمر بباب الجنة مفتوحاً فلا يدخلها ؟!.</font></font><font size="4"><br />
+<br />
+</font><font size="4"><font color="Navy">إني أكتب اليوم عن موت أمي ، وقد كتبت من قبل عن موت أبي ، وإن كنت أتمنى أن أخسر تسعة أعشار ما أملك من مال أقتنيته وكتب ألفتها ، وشهرة نلتها ومناصب تقلدتها ، وأن تكون بقيت لي أمي وبقي لي أبي</font></font><font color="#000000"><font size="4">.</font></font><font size="4"><br />
+ </font><br />
+<hr /><font size="4"><br />
+</font><font color="#000000"><font size="4">رأيت رجلا قد كتب على الزجاج الخلفي لسيارته بخط كبير : (</font></font><font size="4"><font color="Red">كم أنت عظيمة يا أمي </font></font><font color="#000000"><font size="4">) .. فأعجبني ذلك منه .. ودعوت له ولأمه .<br />
+<img src="http://majles.alukah.net/imgcache/2016/02/149.jpg" border="0" alt="" /></font></font><font size="4"><br />
+ </font><br />
+<hr /><font size="4"><font color="#FF0000"><br />
+</font></font><u><font size="4">باختصار ... حتى لا يحصل التكرار</font></u><font color="#FF0000"><font size="4">:</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">1- الدعاء لهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">2- الصدقة عنهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">3- أخذهما في رحلة برية .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">4- ضيافتهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">5- أخذهما في جولة داخلية ( التمشي بهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">6- تقبيل الرأس واليد .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">7- مدحهما والثناء عليهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">8- ذكر محاسنهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">9- إظهار الاهتمام بهما وقضاء حوائجهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">10- مشاورتهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">11- حسن الاستماع لهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">12- الاتصال عليهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">13- الرد على اتصالاتهما مهما كانت الظروف .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">14- إهدائهما ... واللفز عليهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">15- غمزهما أو تهميزهما أو تمريخهما أو تدليكهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">16- إقامة المناسبات لهما .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">ويتبع بإذن الله :</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">17- طلاعة مصحف باسمهما ... وبالحجم المناسب لهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">18- تعليمها .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">19- العفو والصفح عنهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">20 - كفالة يتيم لهما ( على القول بصحتها ) .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">21- فتح حساب لهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">22- هدية الأسرة باسمهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">23- طباعة أذكار اليوم والليلة باسمهما .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">24- تعاهدهما بالأشرطة المناسبة .</font></font><font size="4"><br />
+</font><font color="#000000"><font size="4">25- متابعة صحتهما .</font></font><font size="4"><br />
+<br />
+</font><font color="#000000"><font size="4">وأسأل الله أن يرزقنا برهما ورضاهما ... حفظهما الله ورعاهما ... وأطال في أعمارهما على طاعته .</font></font></TD>
+</tr>
+</table></div>
+
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_812014" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_812014" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=812014" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_812014" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_820576">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2016-05-09,&nbsp;<span class="time">08:32 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post820576" href="showthread.php?t=150800&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=820576#post820576" class="postcounter">#2</a><a id="postcount820576" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="محمد طه شعبان غير متواجد حالياً"><strong>محمد طه شعبان</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102189&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102189&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="محمد طه شعبان غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,372</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_820576">
+				<blockquote class="postcontent restore">
+					جزاكم الله خيرًا، وأسأل الله تعالى أن يرزقني برهما بعد مماتهما بصلة رحمهما، والإحسان إلى أقاربهما.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="7"><font color="#800080">لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ الله<br />
+</font>​<a href="https://www.facebook.com/pages/%D8%A7%D9%84%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AB%D8%A7%D8%B1%D8%A9-%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85/624527567674854?fref=ts" target="_blank" rel="nofollow">الرد على الشبهات المثارة حول الإسلام</a></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_820576" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_820576" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=820576" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_820576" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_820589">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2016-05-09,&nbsp;<span class="time">12:33 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post820589" href="showthread.php?t=150800&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=820589#post820589" class="postcounter">#3</a><a id="postcount820589" name="3"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=130005&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أم رفيدة المسلمة غير متواجد حالياً"><strong>أم رفيدة المسلمة</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=130005&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=130005&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أم رفيدة المسلمة غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2015</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>616</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_820589">
+				<blockquote class="postcontent restore">
+					جزاكم الله خيراً ، <font color="#000000"><font size="4">وأسأل الله أن يرزقنا بر والدينا ورضاهما ، وحسن الخاتمة .</font></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_820589" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_820589" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=820589" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_820589" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_820633">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2016-05-09,&nbsp;<span class="time">07:12 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post820633" href="showthread.php?t=150800&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=820633#post820633" class="postcounter">#4</a><a id="postcount820633" name="4"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=102838&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أبو مالك المديني غير متواجد حالياً"><strong>أبو مالك المديني</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=102838&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=102838&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو مالك المديني غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2012</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>13,804</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_820633">
+				<blockquote class="postcontent restore">
+					في الحقيقة هذا من أحسن ما قرأت ، جزاك الله خيرا كثيرا أخانا الفاضل محمد عبد الأعلى ، وجزى الله الشيخ المسيطير خير الجزاء على ما أمتعنا به ، ورزقنا الله البر.<br />
+ اللهم احفظ والدتي وأطل عمرها على طاعتك ، وارحم والدي واجعله في جناتك جنات النعيم ، وجميع موتى المسلمين ، وارحمنا إذا صرنا إلى ما صاروا إليه بمنك وكرمك ورحمتك يا أرحم الراحمين.<br />
+<a href="http://www.saaid.net/rasael/829.htm" target="_blank" rel="nofollow">http://www.saaid.net/rasael/829.htm</a>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_820633" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_820633" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=820633" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_820633" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=150800&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=150800#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=696d1a7d9adaea36633b28fa7c3827c1">لوحة التحكم</a></li>
+		<li><a href="private.php?s=696d1a7d9adaea36633b28fa7c3827c1">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1">الاشتراكات</a></li>
+		<li><a href="online.php?s=696d1a7d9adaea36633b28fa7c3827c1">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=152663&amp;s=696d1a7d9adaea36633b28fa7c3827c1">فليكن لكم في كل يوم خمس مرات معراج تعرج فيه أرواحكم وقلوبكم إلي الله</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=152839&amp;s=696d1a7d9adaea36633b28fa7c3827c1">صفات النساء الملعونات والرجال الملعونين في الكتاب والسنة بقلم عصام بن مسعود الخزرجي الانصاري</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D9%85%D8%B3%D9%8A%D8%B7%D9%8A%D8%B1">المسيطير</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D9%88%D8%A7%D9%84%D8%AF%D9%8A%D9%86+or">الوالدين or</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A8%D8%B1">بر</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%B3%D8%A7%D9%85%D9%8A">سامي</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%81%D9%8A">في</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%85%D9%82%D8%AA%D8%B1%D8%AD%D8%A7%D8%AA">مقترحات</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%88%D8%A3%D9%81%D9%83%D8%A7%D8%B1">وأفكار</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=150800#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=150800#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">04:54 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

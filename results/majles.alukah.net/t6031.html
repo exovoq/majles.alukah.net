@@ -1,0 +1,2793 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=ec1b4717d08f17a417a70c4e8f25f7a8&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=6031";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس اللغة العربية وعلومها - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=10" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	
+	<meta name="description" content="بسم الله الرحمن الرحيم  
+الألفاظ المتعلقة بالمأكل و المشرب و الأدوات 
+أولا : الألفاظ الدالة على الأطعمة : 
+الأرز  فى  لسان العرب&quot; الأرز حب  ....وقال أبو عبيدة  الأرزة بالتسكين شجر الصنوبر والجمع   أرز   ،  و الأرز :  العرعر ،  وقيل :  هو شجر بالشام يقال لثمره الصنوبر  .....وقال أبو حنيفة :  أخبرني الخبر أن الأرز ذكر الصنوبر وأنه لا يحمل شيئا ولكن يستخرج من أعجازه وعروقه الزفت ويستصبح بخشبه كما يستصبح بالشمع وليس من نبات أرض العرب واحدته    أرزة . &quot; (1) 
+و قد وردت اللفظة عند ابى حيان لتدل على" />
+
+	<title> ألفاظ الحياة الاجتماعية فى مؤلفات أبى حيان التوحيدى (رسالة ماجستير)</title>
+	<link rel="canonical" href="showthread.php?t=6031&s=ec1b4717d08f17a417a70c4e8f25f7a8" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=10&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس اللغة العربية وعلومها</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> ألفاظ الحياة الاجتماعية فى مؤلفات أبى حيان التوحيدى (رسالة ماجستير)</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 6 من 6
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=6031&s=ec1b4717d08f17a417a70c4e8f25f7a8" title="تحديث الصفحة">ألفاظ الحياة الاجتماعية فى مؤلفات أبى حيان التوحيدى (رسالة ماجستير)</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=6031" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;t=6031&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=addsubscription&amp;t=6031" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;search_type=1&amp;searchthreadid=6031&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="6031" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_41707">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2007-08-13,&nbsp;<span class="time">02:37 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post41707" href="showthread.php?t=6031&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=41707#post41707" class="postcounter">#1</a><a id="postcount41707" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=8044&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ناشد وافى غير متواجد حالياً"><strong>ناشد وافى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=8044&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=8044&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ناشد وافى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>5</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="Post" /> ألفاظ الحياة الاجتماعية فى مؤلفات أبى حيان التوحيدى (رسالة ماجستير)
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_41707">
+				<blockquote class="postcontent restore">
+					بسم الله الرحمن الرحيم <br />
+<div style="text-align: center;">الألفاظ المتعلقة بالمأكل و المشرب و الأدوات</div>أولا : الألفاظ الدالة على الأطعمة :<br />
+الأرز  فى  لسان العرب&quot; الأرز حب  ....وقال أبو عبيدة  الأرزة بالتسكين شجر الصنوبر والجمع   أرز   ،  و الأرز :  العرعر ،  وقيل :  هو شجر بالشام يقال لثمره الصنوبر  .....وقال أبو حنيفة :  أخبرني الخبر أن الأرز ذكر الصنوبر وأنه لا يحمل شيئا ولكن يستخرج من أعجازه وعروقه الزفت ويستصبح بخشبه كما يستصبح بالشمع وليس من نبات أرض العرب واحدته    أرزة . &quot; (1)<br />
+و قد وردت اللفظة عند ابى حيان لتدل على المعنى الأول و هو ( الحَب ) و شاهد ذلك قوله :  &quot; ما تقول فى صفحة أرز مطبوخ  ، فيها نهر من سمن . &quot; (2) و أيضا قوله : قيل لهندى : ما حد الشبع ؟  قال المسألة عن هذا كالمحال ، لأن الشبع من الرز النقى البيض ، الكبار الحبّ ، المطبوخ باللبن الحليب ... محالف للشبع من السمك . &quot; (3)<br />
+الإدام  فى لسان العرب &quot;  الإدام  :  معروف  ما يؤتدم به مع الخبز ،  وفي الحديث :  نعم   الإدام   الخل  ؛ الإدام   بالكسر و الأدم بالضم  ما يؤكل بالخبز أي شيء كان ،  وفي الحديث        (  سيد إدام أهل الدنيا والآخرة اللحم ) ؛ جعل اللحم أدما وبعض الفقهاء لا يجعله أدما ويقول : لو حلف أن لا يأتدم ثم أكل لحما لم يحنث . &quot; (4)<br />
+و قد وردت اللفظة عند ابى حيان بهذا المعنى و شاهد ذلك قوله : <br />
+حياك ربك و اصطحبت ثريدة         و إدامها رُز   و أنت تـُدَبـِّـل<br />
+و شاهد ذلك قوله أيضا : العرب تقول : ماء لا تِبْنمعه و لا غيره . خبز قفار لا أدم معه . &quot; (5)<br />
+الإقط  فى لسان العرب  &quot;   الأقط  :  شيء يتخذ من اللبن المخيض يطبخ ثم يترك ثم يمصل ، والقطعة منه أقطة ،  قال ابن الأعرابي :  هو من ألبان الإبل خاصة .... ،  قال :  وربما سكن في الشعر وتنقل حركة القاف إلى ما  قبلها &quot;(6) و فى غريب الحديث نجد &quot;  أقط   وهو شيء يصنع من اللبن فيجفف  &quot; (7)<br />
+ـــــــــــــــ  ـــــــــــــــ  ــــ<br />
+(1) لسان العرب   ( أرز )  5 / 306  <br />
+(2) الإمتاع و المؤانسة      3 / 77   <br />
+(3) المرجع السابق      3 / 22<br />
+(4) لسان العرب ( أدم ) 1 / 9<br />
+(5) الإمتاع و المؤانسة   3 / 55<br />
+(6) لسان العرب ( أقط ) 1 /257<br />
+(7) غريب الحديث لابن الجوزي   1 / 32  <br />
+و قد وردت اللفظة عند أبى حيان لتدل على المعنى السابق و شاهد ذلك قوله : &quot; وادانت الأرض  ، فهدّلت الثمار ، و اطردت الأودية ، و كثر اللبن و الأقط و الجبن و اللحم و الرطب والتمر            و القمح &quot; (1) .   <br />
+الأوتكى &quot;  وتك  الأوتك و الأوتكى :  الــــتمر الشــهريز ، وهو القطـــــيعاء وقيل الســـــوادي ،  قال :<br />
+باتوا يعشون القطيعاء ضيفـــهم                             وعندهم البرني في حلل دسـم <br />
+فما أطعمونا الأوتكى عن سماحة                             ولا منعوا البرني إلا من اللؤم<br />
+.....وقيل  الأوتكى :  ضرب من التمر&quot; (2)<br />
+و قد و ردت اللفظة عند أبى حيان لتدل على المعنى السابق حيث ذكر الكلمة فى البيتين السابقين هو الآخر. <br />
+الباذنجان فى الفارسية ( بادينجان ) نقل إلى الأسبانية Berengena ...  و melan فى اليونانية معناه أسود فنظر بعضهم إلى ظاهر لفظة ففسره ( بيض الجان أو ابن الجنية  ) أما أصل هذا النبات فهو هندى فيكون اسمه هندى أيضا و يقال له فى العربية قهقب و حدق  &quot; (3)<br />
+و قد وردت اللفظة عند أبى حيان لتدل على المعنى السابق و شاهد ذلك قوله &quot; انهض بنا حتى نتغدى فإن عندى مَصُوصا و هلاما  و بقية مطجـّـنـَة و شيئا من الباذنجان البورانى البائت        المخمر . &quot; (4)<br />
+البرنى  فى لسان العرب &quot;   البرني  ضرب من التمر أصفر مدور وهو أجود التمر واحدته برنية ،  قال أبو حنيفة :  أصله فارسي ،  قال :  إنما هو بارني  فالبار الحمل ، وني تعظيم        ومبالغة &quot; (5) و &quot; برن   بفتح أوله وإسكان ثانيه وبالنون قرية بالبحرين إليها ينسب التمر البرني  &quot; (6)<br />
+و قد وردت اللفظة عند أبى حيان لتدل على المعنى السابق و شاهد ذلك قوله : <br />
+&quot; و باتوا يُعَشّون القُطَيعاء ضيفهم             و عندهم البَرْنىُّ فى جُلل دســم &quot; (7)<br />
+ـــــــــــــــ  ـــــــــــــــ  ــ<br />
+(1) الإمتاع والمؤانسة    1 / 80     <br />
+(2) لسان العرب  ( وتك )   15 / 509<br />
+وانظر الإمتاع و المؤانسة    3 / 70  <br />
+(3)تفسير الألفاظ الدخيلة فى اللغة العربية ص 6 <br />
+وانظر الألفاظ الفارسية المعربة  ص 15<br />
+(4) الإمتاع و المؤانسة 3 / 76<br />
+(5) لسان العرب ( برن ) 1 / 49 <br />
+وانظر المعجم الفارسى العربى الجامع  ص 47<br />
+(6) معجم ما استعجم  (برن )  1 / 246<br />
+(7) الإمتاع والمؤانسة   3 / 71  <br />
+البسيسة فى لسان العرب &quot;  بس السويق والدقيق وغيرهما يبسه بسا  خلطه بسمن أو زيت وهي البسيسة  قال اللحياني :  هي التي تلت بسمن أو زيت ولا تبل ،  و البس : إتخاذ البسيسة وهو أن يلت السويق أو الدقيق أو الأقط المطحون بالسمن أو بالزيت ثم يؤكل ولا يطبخ  ، وقال يعقوب :  هو أشد من اللت بللا..... و البسيسة :  الشعير يخلط بالنوى للإبل  ، و البسيسة  خبز يجفف ويدق ويشرب كما يشرب السويق  قال ابن دريد  وأحسبه الذي يسمى الفتوت . &quot; (1)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة الجمع و هى تدل على المعنى السابق و شاهد ذلك قوله :                                                      <br />
+&quot;  قيل لجُمَيّز : ما تشتهى ؟ قال بسيس مقلى بين غليان القدور ، على رائحة شواء . &quot; (2)<br />
+البصل &quot;  البصلة : نبتة ذات جسم  محورى  تنمو تحت الثرى ، و لها جذور دقيقة تضرب تحتها و أغصان ترتفع قليلا فوق سطح الأرض &quot;  (3) و&quot; البصل نبات فيه حرارة و قبض  &quot;(4)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة الجمع و هى تدل على المعنى السابق و شاهد ذلك قوله : <br />
+&quot;   لا يعقر الشارف إلا محرما        و لا يعاف بصلا و سلجما    . &quot; (5)<br />
+البطيخ  فى لسان العرب &quot;  البطيخ والطبيخ لغتان ، و البطيخ من اليقطين الذي لا يعلو ولكن يذهب حبالا على وجه الأرض ، واحدته بطيخة &quot; (6) و &quot; البطيخ نبات عشبى حولى منسطح يزرع لثملره فى المناطق المعتدلة والدافئة ، وهو من الفصيلة القرعية ، وثمرته كبيرة كروية أو مستطيلة ، و منه أصناف كثيرة  &quot; (7) <br />
+وقد وردت اللفظة عند أبى حيان بصيغة اسم الجنس و هو يدل على المعنى السابق و شاهد ذلك قوله : &quot; قال بزر جمهر : فى البطيخ عشر خصال : هو ريحان ، و تحية ، و فاكهة ، و أدم مقنّع ، و خبيص مهيأ ، و دواء للمثانة ، و غسل للغمر و الزهومة ، و مذهب لرائحة النُّورَة عند الاستحمام ،  و كوز لمن عسر عليه آلة الشراب ، و هاضوم للثقيل من الطعام . &quot; (8) .<br />
+ـــــــــــــــ  ـــــــــــــــ  ــــــــــ<br />
+(1) لسان العرب  ( بـسـس ) 1 /126 <br />
+(2) الإمتاع و المؤانسة  3 / 102<br />
+(3) الوسيط     ( بصل )   1 / 61  <br />
+(4) قطر المحيط   ( بصل )  ص 30    <br />
+(5) الإمتاع و المؤانسة  3 / 57   <br />
+(6) لسان العرب  ( بطخ )  1 /  209 <br />
+(7) الوسيط  (بطخ )   1 / 62<br />
+(8) البصائر والذخائر  4 / 15   <br />
+البوارد لم ترد هذه اللفظة فى لسان العرب و قد وردت عند أبى حيان بصيغة الجمع فى قوله :<br />
+&quot; وعجل لنا يا غلام ما أدرك عند الطباخ من الدجاج و لفراخ و البوارد و الجوزيات . &quot; (1)<br />
+و اللفظة فى هذا السياق قد يقصد بها الأطعمة التى تؤكل باردة <br />
+التفاح &quot; التفاح  : ثمر شجرة بستانية &quot; (2) و  &quot;   التفاح : هذا الثمر معروف واحدته تفاحة.....  و التفاحة :   رأس الفخذ والورك  عن كراع ، وقال :   هما تفاحتان &quot; (3) <br />
+و قد وردت اللفظة عند أبى حيان بصيغة الجمع ثم بصيغة المثنى  و هى تدل عى المعنى السابق    و شاهد ذلك قوله : &quot; لم صارت الكيفية تسرى من المكيف إلى الأول و الثانى ؟ مثال ذلك : الرائحة التى للتفاح ، فإنها تسرى إلى الدماغ ، و ليس كذلك الكمية من ذى الكم ، مثال ذلك : تفاحتان           و ثلاث  عند زيد  لا تسرى كميتها إلى عمرو ؟ &quot; (4)<br />
+التمر فى لسان العرب : &quot; التمر حـَمْـل النخل اسم جنس واحدته تمرة &quot; (5)<br />
+وقد وردت اللفظة عند أبى حيان بصيغة اسم الجنس الجمعى و هى تدل على المعنى السابق           و شاهد ذلك قوله :  &quot;  وازدانت الأرض ، فهدّلت الثمار ، واطردت الأودية ، و كثر اللبن والأقط والجبن و اللحم و الرطب و التمر و القمح . &quot; (6)<br />
+الثُرتم  فى لسان العرب  : &quot;  الثُرتم بالضم : ما فضل من الطعام والإدام في الإناء ، وخص اللحياني به ما فضل في القصعة .  &quot; (7)<br />
+و أبو حيان يتفق مع المعجم فى ذلك فيقول &quot; الثرتم من فتــــات الطعام ،  و يقال الثرتم  أيضا : ما فضل من الطعام فى الإناء &quot; (8)<br />
+ـــــــــــــــ  ـــــــــــــــ  ــــــــ<br />
+(1) الإمتاع و المؤانسة     2 / 180<br />
+(2) قطر المحيط (تفح )  ص 50 <br />
+(3) لسان العرب  ( تفح ) 2 / 418    <br />
+(4) المقابسات  ص 157<br />
+(5) لسان العرب  ( تمر )  2 / 120  <br />
+(6) الإمتاع و المؤانسة    1 /  80  <br />
+(7) لسان العرب  ( ثرتم )  2 / 245<br />
+(8)  الإمتاع والمؤانسة    3 / 73  <br />
+الثريد فى لسان العرب  : &quot; الثرد : الهشم ، ومنه قيل لما يهشم من الخبز ويبل بماء القدر وغيره  ثريدة ، و الثرد : الفت ، ثرده يثرده ثردا فهو ثريد ، و ثردت الخبز ثردا : كسرته فهو ثريد،  .....  وفي الحديث  فضل عائشة على النساء كفضل الثريد على سائر الطعام ،  قيل :  لم يرد عين الثريد وإنما أراد الطعام المتخذ من اللحم  والثريد معا لأن الثريد غالبا لا يكون إلا من لحم والعرب قلما تتخذ طبيخا ولا سيما بلحم ،  ويقال : الثريد أحد اللحمين بل اللذة والقوة إذا كان اللحم نضيجا في المرق أكثر ما يكون في نفس اللحم . &quot; (1)  <br />
+وقد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلك قوله :<br />
+&quot; قيل لأعرابى : لو كنت كنت خليفة كيف كنت تصنع ؟ قال : كنت أستكفى شريف كل قوم ناحيته ، ثم أخلو بالمطبخ فآمُرُ الطهاة فبعظمــــون الثريـــدة و يكـــثرون العُرَاق . &quot;(2) ،<br />
+و قد وردت اللفظة عند أبى حيان بصيغة اسم الجنس الجمعى و شاهد ذلك قوله : &quot; عليك بالثريد فإنه يجلو البصر  ... &quot; (3)<br />
+الجبن  فى لسان العرب : &quot;  الجُبْن و الجُبُن و الجُبُنُّ مثقل  الذي يؤكل والواحدة من كل ذلك بالهاء  جُبُنّة ، و تجبَّن اللَّبن:  صار كالجُبْن ،  قال الأزهري : وهكذا قال أبو عبيد في قوله : كُلِ الجُبُنَّ عرضا بتشديد النون  غيره ،  اجتبن فلان اللبن إذا اتخذه جبنا ،  الجوهري : الجبن هذا الذي يؤكل و الجبنة أخص منه ،  و الجبن أيضا  صفة الجبان . &quot; (4) و &quot;   والجبنة : القرص من الجبن &quot; (5) ، و الناس &quot; مع الخبز كانوا يأكلون الجبن &quot; (6)<br />
+وقد وردت اللفظة عند أبى حيان بصيغة الاسم الجنس و هى تدل على المعنى السابق و شاهد ذلك قوله :  &quot; على أن العرب – رحمك الله – أحسن الناس حالا و عيشا إذا جادتهم السماء ، ... و كثر اللبن و الأقط و الجبن و اللحم  . &quot; (7)<br />
+الجردقة  فى لسان العرب : &quot; الجردقة :  .. الرغيف فارسية معربة .&quot;(8) و &quot; أصله ( كِرْدَهُ ) و هو الغليظ من الخبز . &quot; (9) و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلك قوله:<br />
+فقلتُ صوت المِقْلَى و جَرْدَقَةً       إن خاب ذا الاقتراح أو صلحا   &quot; (10) .<br />
+ـــــــــــــــ  ـــــــــــــــ<br />
+(1) لسان العرب  ( ثرد ) 2 /  270<br />
+(2) الإمتاع والمؤانسة      3 / 35       <br />
+(3) البصائر و الذخائر    1 / 135 <br />
+(4) لسان العرب  ( جبن )    13 / 85<br />
+(5) المغرب  ( جبن )   1 / 130   <br />
+(6) طيبة الشذر – ألفاظ الحضارة العباسية <br />
+دار قباء للطباعة و النشر  - العاشر من رمضان  97    -    ص 95   <br />
+(7) الإمتاع والمؤانسة    1 / 80    <br />
+(8) لسان العرب  ( جردق )  2 / 35<br />
+(9) المعرب من الكلام الأعجمى   ص 115   <br />
+(10) الإمتاع و المؤانسة  3 / 41   <br />
+الجوذاب  فى لسان العرب  &quot;  الجوذاب  طعام يصنع بسكر وأرز ولحم   . &quot; (1) و &quot; حكى يعقوب أن رجلا دخل على يزيد بن مزيد فأكل عنده طعاما فخرج وهو يقول  ما أطيب ذوباج الأرز بجآجىء الإوز يريد ما أطيب   جوذاب   الأرز بصدور البط   . &quot; (2)<br />
+و قد وردت اللفظة عند أبى حيان لتدل على المعنى السابق و شاهد ذلك قوله : &quot; كان عبد الله بن على بن عبد الله بن العباس يكثر أكل الجُـوذاب و لا يؤثر عليه شيئا ، و كان يقول : يشد العضدين ، و يقوى الساعدين ، ويجلو الناظرين ، و يزيد فى سمع الأذنين ، و يحمر الوجنتين ، و يزيد فى المنىّ ، و هو طعام شهىّ ، فأى شىء بقى ؟ . &quot; (3)<br />
+الجوزيات فى لسان العرب : &quot;   الجوز :   الذي يؤكل فارسي معرب واحدته جوزة والجمع جوزات . &quot; (4)  و فى المعرب من الكلام الأعجمى &quot; الجوز المأكول : فارسى معرب و قد تكلمت به العرب قديما و من أمثالهم ( لأسقحنـّك شقـْح الجوز بالجندل ) و الشقح الكسر . &quot; (5) <br />
+و قد وردت اللفظة عند أبى حيان بصيغة الجمع لمنسوب إلى اجوز لتدل على الأطعمة التى تصنع من الجوز  و شاهد ذلك قوله : &quot; و عجل لنا يا غلام  ما  أدرك عند الطباخ  ، من الدجاج و الفراخ و البوارد و الجوزيات و تزايين المائدة  . &quot; (6)<br />
+الحِـرِّيف  فى لسان العرب &quot;  الحرافة :  طعم يحرق اللسان والفم ، وبصل   حِرِّيف :   يحرق الفم وله حرارة  ،وقيل : كل طعام يحرق فم آكله بحرارة  مذاقه   حِرِّيف   بالتشديد للذي يلذع اللسان بحرافته ،  وكذلك : بصل   حِرِّيف ،  قال :  ولا يقال   حَرِّيف &quot; (7) ،<br />
+و قد وردت اللفظة عند أبى حيان لتدل على الطعام الحريف و أثره على اللسان و شاهد ذلك قوله : &quot; فرغيف و سكرجة كامخ  حريف يثقب اللسان بحرافته &quot; (8) .<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــ<br />
+(1) لسان العرب  ( جذب )  2 / 324<br />
+(2) المرجع السابق  ( ذبج ) 5  / 278<br />
+(3) الإمتاع  و المؤانسة  3 / 76    <br />
+وانظر اللفظة فى المرجع السابق  3 / 76  <br />
+(4) لسان العرب  ( جوز )  2 /  330<br />
+وانظر تفسير الألفاظ الدخيلة ص 22<br />
+وانظر الألفاظ الفارسية المعرب  ص 48   <br />
+(5) المعرب من الكلام الأعجمى  ص 99<br />
+(6) الإمتاع و المؤانسة  2 / 180<br />
+(7) لسان العرب  ( حرف )   9 /  45  <br />
+(8) الإمتاع والمؤانسة        3 / 47  <br />
+الحريرة  فى لسان العرب : &quot;  الحريرة : الحسا من الدسم والدقيق ، وقيل :  هو الدقيق الذي يطبخ بلبن ، وقال شمر: الحريرة من الدقيق والخزيرة من النخال ، وقال ابن الأعرابي : هي العصيدة ثم النخيرة ثم الحريرة ثم الحسو ، وفي حديث عمر  ذرِّي وأنا أَحَرُّ لك  يقول : ذري الدقيق لاتخذ لك منه  حريرة &quot; (3) <br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلك قوله :<br />
+&quot; و يقال للحَيْس سَوِيطَة . و قال : الرغيغة لبن يطبخ . و قال : هى العصيدة ، ثم الحريرة ثم النَّجِيرة . &quot; (2) <br />
+الحَسْـو  فى لسان العرب : &quot;  يقال جعلت له حَسْـوا و حساء و حسية إذا طبخ له الشيء الرقيق يتحساه إذا اشتكى   صدره  . &quot; (3)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة اسم الجنس و هى تدل على المعنى السابق و شاهد ذلك قوله :  &quot; قال هى العصيدة ،  ثم الحريرة ،  ثم النجيرة  ، ثم الحسو  . &quot; (4) <br />
+الحَيْس  فى لسان العرب :  &quot;الحيس : الخلط ، ومنه سمي الحيس ، و الحيس : الأقط يخلط بالتمر والسمن ... وفي الحديث  أنه أولم على بعض نسائه بحيس ، قال : هو الطعام المتخذ من التمر والأقط والسمن ، وقد يجعل عوض الأقط الدقيق والفتيت   &quot; (5) و  &quot;  الحيس خلط الأقط بالتمر يعجن كالخميرة &quot; (6)  <br />
+و قد روى فى الأمثال &quot; عاد الحيس يحاس  ،  يقال هذا الأمر   حيس   أي ليس بمحكم ،  وذلك أن الحيس : تمر يخلط بسمن وأقط فلا يكون طعاما فيه قوة ،  يقال : حاس يحيس إذا اتخذ حيسا فصار الحيس اسما للمخلوط  ؛ ومنه يقال للذي أحدقت به الإماء من طرفيه محيوس ، والمعنى عاد الأمر المخلوط يخلط أي عاد الفاسد يفسد . &quot; (7)<br />
+و قد وردت اللفظة عند أبى حيان لتدل على المعنى السابق و شاهد ذلك قوله : &quot; و يقال للحيس سَوِيطَة . &quot;  (8) <br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــ<br />
+(1) لسان العرب  ( حرر )  3 / 148   <br />
+(2)الإلمتاع والمؤانسة     3 / 11  <br />
+(3) لسان العرب  ( حسو ) 3 / 177  <br />
+(4) الإمتاع و المؤانسة  3 / 11  <br />
+(5)لسان العرب  ( حيس ) 3 / 258 <br />
+(6) العين   ( حيس )    3 / 273  <br />
+(7) مجمع الأمثال   2 / 23    <br />
+(8) الإمتاع والمؤانسة   3 / 11 <br />
+الخبيص  فى لسان العرب  : &quot; الخبص :  فعلك الخبيص في الطنجير ،....  و الخبيص : الحلواء المخبوصة معروف ،  و الخبيصة أخص منه    &quot; (1) و  &quot; الخبيص  : المعمول من التمر والسمن .   &quot; (2)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلك قوله : &quot; قال حمدان : قلت لجارية أردت شراءها ....: ما كان غذاؤكِ عند مولاكِ ؟... قالت : الأرز الرَّيان من اللبن ،بالفالوذج الرَّيَّان من العسل ، و الخبيصة الريانة من الدهن  والسكر و الزعفران . &quot; (3) <br />
+و قد وردت اللفظة عند أبى حيان بصيغة اسم الجنس الجمعى  و شاهد ذلك قوله : &quot; أُتىَ زياد بن عبيد الله الحارثى و هو أمير المدينة بسلال خبيص هديةً &quot; (4)<br />
+الخـــبز فى لسان العرب  :  &quot; الخُبْزُ : الذي يؤكل ، و الخَبْز بالفتح  المصدر خبزه يخبزه خبزا و اختبزه  عمله &quot; (5) <br />
+و قد وردت اللفظة عند أبى حيان بصيغة اسم الجنس  و هى تدل على المعنى السابق و شاهد ذلك قوله : &quot; كمال المائدة كثرة الخبز . &quot; (6)     <br />
+كما يذكر أبو حيان أنواعا للخبز و شاهد ذلك قوله : &quot; ضفت رجلاً  فأتانا بخبز من بُر &quot; (7)  ، و أيضا من أنواع الخبز ( الخبز الحوارى ) و هو المصنوع من لباب الدقيق و خالصه  ، و نقرأ عنه &quot; ..و عنده أن الجاهل إذا لبس الثوب الناعم ،  و أكل الخبز الحوارى ،  و ركب الجواد ، ..هو أشرف من العالم إذا لبس الأطمار ، و طعم العُشْب  &quot; (8)<br />
+الخشكان  لم ترد اللفظة فى لسان العرب و قد وردت فى المعرب من الكلام الأعجمى             &quot; الخشكان  : قد تكلمت به العرب ، قال الراجز :<br />
+يا حبذا الكعك بلحم مثرود       و خشكان و سويق مقنود<br />
+و قد فسره  داود فى التذكرة بأنه ( دقيق الحنطة إذا عجن بشيرج و بسط و ملىء بالسكر و اللوز أو الفستق  و ماء  الورد و جمع و خبز ) &quot; (9)<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــــ<br />
+(1) لسان العرب  ( خبص )   4 / 55 <br />
+(2) القاموس المحيط  ( خبص ) 1 / 795<br />
+(3) الإمتاع و المؤانسة   3 / 77  <br />
+(4) البصائر والذخائر   4 / 187 <br />
+(5) لسان العرب  ( خبز ) 4 / 144   <br />
+(6) الإمتاع والمؤانسة    3 / 76  <br />
+(7) المرجع السابق    3 / 81      <br />
+(8) المرجع السابق   1 / 87  <br />
+(9) المعرب من الكلام الأعجمى  ص 134  <br />
+و قد وردت اللفظة عند أبى حيان و شاهد ذلك قوله : <br />
+&quot;    و أطعموا ذا الكعك و السويقا      و الخشكان اليابس الرقيقا  <br />
+وقد فسره   محقق الكتاب بأنه  الخبز اليابس المعروف عندنا بالبسكويت &quot; (1)<br />
+الخــلّ  فى لسان العرب  : &quot; الخَل :ّ ما حَمُضَ من عصير العنب وغيره ، قال ابن دريد :  هو عربي صحيح ، وفي الحديث : نعم الإدام الخل ، واحدته خَلّة يذهب بذلك إلى الطائفة منه  &quot; (2)     و قد &quot; سمي بذلك لأنه اختل منه طعم الحلاوة . &quot; (3)<br />
+و قد وردت اللفظة عند أبى حيان لتدل على المعنى السابق و شاهد ذلك قوله : &quot; قال يزيد بن ربيع : الكباب طعام الصعاليك ، و الماء و الملح طعام الأعراب ، و الهرائس و الرءوس طعام السلاطين ، و الشواء طعام الدُُّعار ، و الخلُّ والزّيت  طعام أمثالنا . &quot; (4) <br />
+الدّجاجة  فى لسان العرب :  &quot; سميت بذلك لاقبالها وإدبارها ،  تقع على الذكر والأنثى لأن الهاء إنما دخلته على أنه واحد من جنس مثل حمامة وبطة ،&quot; (5)  و &quot;  الدجاجة : طير من الدواجن  &quot; ( 6) <br />
+و قد وردت اللفظة عند أبى حيان بصيغة  الجمع و هى تدل على المعنى السابق و شاهد ذلك قوله:<br />
+&quot;  وعجل لنا يا غلام ما أُدرك عند الطباخ ، من الدجاج و الفراخ ؛ و البوارد &quot; (7) .<br />
+الرصيعة  فى لسان العرب  :  &quot; الرصيعة البر يدق بالفهر ويبل ويطبخ بشيء من               سمن  . &quot; (8)<br />
+و قد وردت اللفظة عند أبى حيان  لتدل على المعنى السابق بل إن أبا حيان يذكر نفس التعريف السابق لكلمة (9)<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــــ<br />
+(1) الإمتاع و المؤانسة  3 / 70<br />
+(2) لسان العرب  ( خلل )   11 / 211   <br />
+(3) المصباح المنير  ( خلل )  1 /  180  <br />
+(4) الإمتاع والمؤانسة      3 / 75   <br />
+(5) لسان العرب  ( دجج )  4 / 164 <br />
+(6) الوسيط       ( دجج )   1 / 281   <br />
+(7) الإمتاع و المؤانسة    2 / 180  <br />
+(8) لسان العرب ( رصع ) 5 / 258   <br />
+(9) الإمتاع  و المؤانسة  3  / 11   <br />
+الرطب   فى لسان العرب  : &quot; الرطب :   نضيج البسر قبل أن يتمر ،  واحدته رطبة ،  ....   الرطب   البسر إذا انهضم فلان وحل  &quot; (1) ، وقد يُطلق على الرطـــب تمراًو ذلـــك من بــــاب  &quot;  تسمية الشيء باسم فرعه كقول الشاعر : <br />
+وما العيش إلا نومه وتشرق      وتمر على رأس النخيل وماء <br />
+فسمي   الرطب   تمرا... هناك سمى العنب خمرا وههنا سمى   الرطب   تمرا  ، فالعنب أصل والخمر فرع ،  وكذلك   الرطب   أصل والتمر فرع &quot; (2)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة اسم الجنس الجمعى و هى تدل على المعنى السابق            و شاهد ذلك قوله :  &quot; شيئان لا تشبع منهما ببغداد السمك و الرطب . &quot; (3) <br />
+الرغيغة فى لسان العرب : &quot; الرغيغة : طعام مثل الحسا يصنع بالتمر... و الرغيغة :  ما علا الزبد ،  وهو ما يسلأ من اللبن مثل الرغوة ، وقيل : الرغيغة لبن يغلى ويذر عليه دقيق يتخذ للنفساء  ، .....    الرغيغة لبن يطبخ .  &quot; (4) <br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على المعنى الأخير و شاهد ذلك قوله : &quot; الرغيغة : لبن يطبخ &quot; (5) .<br />
+الرغـيـف  فى لسان العرب : &quot; رَغف   الطين والعجين يرغفه رغفا : كتله بيديه  ، وأصل الرغف جمعك الرغيف تكتله ،  و الرغيف : الخبزة مشتق من ذلــك ،  والجمع أرغـــفة             و رُغُــف &quot; (6)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد وهى تدل على المعنى السابق و شاهد ذلك قوله :<br />
+: &quot; كان سليمان بن ثوابة ضخم الخِوان ، كثير الطعام ، وافرَ الرغيف ، .... و كان خبزه الذى يوضع على المائدة  الرغيف من مكوك دقيق  . &quot; (7)<br />
+ـــــــــــــــ  ـــــــــــــــ  ــ<br />
+(1) لسان العرب  ( رطب )   1 / 420    <br />
+(2) المثل السائر    1 /  355   <br />
+(3) الإمتاع و المؤانسة    3 / 84 <br />
+(4) لسان العرب   ( رغغ )   8 / 428<br />
+(5) الإمتاع و المؤانسة     3/ 11     <br />
+(6) لسان العرب   ( رغف )  9 / 124     <br />
+(7) الإمتاع و المؤانسة    3 / 70      <br />
+الزبـــــد فى لسان العرب  : &quot; الزبد :  زبد   السمن قبل أن يسلأ  ،  والقطعة منه زبدة  ، وهو ما خلص من اللبن إذا مخض ،   زُبْد اللبن :  رغوته ،  ابن سيده : الزُبد بالضم :  خلاصة اللبن ، واحدته زبدة يذهب بذلك إلى الطائفة  ، الزبدة أخص من الزبد  . &quot; (1)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة اسم الجنس و هى تدل على المعنى السابق و شاهد ذلك قوله : &quot; إنما يخرج الزبد من اللبن بالمخض . &quot; (2)  <br />
+الزيت  فى لسان العرب :  &quot;  الزيت معروف :  عصارة الزيتون ،  الزيتون شجر معروف الزيت دهنه ،  واحدته زيتونة&quot; (3)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلك            &quot;  قول هشامٍ لسالمٍ – وقد رآه فأعجبه جسمه - : ما رأيت ذا كدنة أحسن منك ، فما طعامك ؟ قال : الخبز والزيت . &quot; (4)  <br />
+كما وردت اللفظة عند ابى حيان لتدل على أن الزيت يدخل فى صناعة الطعام وشاهد ذلك قوله  :   &quot; سويق جاف : هو الذى لم يلت بسمن و لا زيت  . &quot; (5) <br />
+السكباجة  لم ترد اللفظة فى لسان العرب و قد وردت اللفظة فى الألفاظ الفارسية المعربة       &quot; ( السكباج ) مرق يعمل من اللحم و الخل معرب سِكْبَـا و هو مركب من   سِـك أى خل و من    با أى  طعام . &quot; (6)<br />
+و مما يدل على ذلك أن كلمة السكباجة وردت  فى الأغانى فى قول &quot; عبيد الله بن عبد الله بن طاهر،  قال :   سمعت أبي يقول :  لو خيرت لونا من الطعام لا أزيد عليه غيره لاخترت الدراجة ، لأني إن زدت في خلها صارت   سكباجة  ،  وإن زدت في مائها صارت إسفيدباجة ،  وإن زدت في تصبيرها بل في تشييطها صارت مطجنة . &quot; (7) ، و قد  ورد ذكر للسكباجة فى البخلاء للجاحظ حيث نقرأ &quot;  اشترى لحم بقر بدرهم ، واشترى بصلاً بدانق ، وباذنجان بدانق  ، و قرعة بدانق ، فإذا كان أيم الجزر فجزرا  بدانق ، وطبخه كله سكباجا  .  &quot;  (8)<br />
+ـــــــــــــــ  ـــــــــــــــ  ــ<br />
+(1) لسان العرب  ( زبد )   3 / 219  <br />
+(2)المقابسات    ص 260<br />
+(3) لسان العرب  ( زيت ) 2 / 35 <br />
+(4) الإمتاع والمؤانسة   3  / 15     <br />
+(5) المرجع السابق    3 /  55  <br />
+(6) الألفاظ الفارسية المعربة  ص 92   <br />
+وانظر  ألفاظ الحضارة العباسية   ص 81   <br />
+وانظر المعجم الفارسى ( سكبا )  ص 217   <br />
+(1)  الأغاني   11 / 343<br />
+(2) الجاحظ – البخلاء<br />
+تحقيق طه الحاجرى  -  طبعة دار المعارف – مصر – 1971 م – ص 122 <br />
+وقد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلك قوله :<br />
+&quot; و عشق رجل جارية رومية كانت لقوم ذوى يسار ، فكتب إليها يوماً  : جُعِلتُ فداكِ ، عندى اليوم أصحابى ، وقد اشتهيت سكباجة بَقَرِيَّةً فأحب أن توجهى إلينا بما يعُمنا و يكفينا . &quot; (1)<br />
+السـكّـر فى لسان العرب  : &quot; السُّكَّر :  من الحلواء فارسي معرب ،... السكرة الواحدة من الســكر . &quot;(2) و  &quot; سُـكَّـر فى  جميع اللغات بهذا اللفظ أصله هندى حيث منشأ قصب          السكر . &quot; (3) و &quot; السكر : ماء القصب إذا غُـلى و اشتد و قذف بالزبد  تعريب شَـكَـر .&quot;(4) <br />
+و قد وردت اللفظة عند أبى حيان بصيغة اسم الجمع وهى تدل على  المعنى السابق و شاهد ذلك قوله : &quot; و قال ابن الجصاص الصوفى : دخلت على أحمد بن روح الأهوازى فقال : ما تقول فى صفحة أرز مطبوخ ، فيها نهر من سمن ، و على حافاتها كثبان من السكر المنخول  ، فدمعت عينى . فقال  : مالك ؟ قلت : أبكى شوقاً إليه . &quot; (5)   <br />
+السَّــــــلْـو  ى قال تعالى &quot; وظللنا عليكم الغمام وأنزلنا عليكم المن والسلوى كلوا من طيبات ما رزقناكم وما ظلمونا ولكن كانوا أنفسهم يظلمون &quot; (6) و السلوى فى لسان العرب : &quot;  طائر وقيل طائر أبيض مثل السمانى واحدته سلواة  .&quot; (7) ، و&quot; عن ابن عباس قال : السلوى هو السماني. &quot; (8)  ، و فى مكان آخر يقـــول     &quot; وهب بن منبه :  السلوى طير سمين مثل الحمامة . &quot; (9) ، ولكن للسلوى مدلول آخر ؛      &quot;  قال الجوهري : والسلوى العسل. &quot; (10)<br />
+ـــــــــــــــ  ـــــــــــــــ  ــــ<br />
+(1) الإمتاع والمؤانسة   3 / 8   <br />
+(2) لسان العرب  ( سكر )  4 / 375    <br />
+(3) تفسير  الألفاظ الدخيلة  ص 36<br />
+(4) الألفاظ الفارسية المعربة  ص 92   <br />
+وانظر المعجم الفارسى العربى  ( شكر )  ص 238<br />
+(5) الإمتاع و المؤانسة    3 / 77  <br />
+(6)  البقرة  57 <br />
+(7) لسان العرب  ( سلو )  6 / 395     <br />
+(8) ابن كثير    1 / 97   <br />
+(9) المرجع السبق  1 / 98    <br />
+(10) القرطبي  1 / 408 <br />
+وانظر المزهر في علوم اللغة وأنواعها   2 / 182<br />
+و قد وردت اللفظة عند أبى حيان لتدل على العسل و شاهد ذلك قوله : &quot; قلت له : كيف كان حديث ابن العميد ؟  قال :  ألذ من السَّلْوَى إذا مـــا نَشُورُها . &quot; (1)<br />
+السليقة  فى لسان العرب : &quot;  السلائق ما سلق من البقول الأزهري معناه طبخ بالماء من بقول الربيع وأكل في المجاعات وكل شيء طبخته بالماء بحتا فقد سلقته وكذلك البيض يطبخ بالماء بقشره الأعلى . &quot; (2)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على معنى غير الذى ورد فى لسان العرب و شاهد ذلك قوله : &quot; و السليقة : الذرة تدق و تصلح باللبن . &quot; (3)  <br />
+السمك  فى لسان العرب &quot; السمك : الحوت من خلق الماء ، واحدته سمكة ،  وجمع السمك سِمَاك و سُمُوك ، السمكة برج في السماء من بروج الفلك . &quot; (4)<br />
+و قد وردت  عند أبى حيان بصيغة اسم الجنس الجمعى و هى تدل على المعنى السابق و شاهد ذلك قوله :  &quot; شيئان لاتشبع منهما بغداد : السمك و الرطب . &quot; (5 )   ، و &quot; قيل لهندى ما حد الشِّبَع ؟ قال : المسألة عن هذا كالمحال ، لأن الشبع من الأرز النقى الأبيض .... مخالف للشبع من السَّمك المملوح وخبز الذرة  . &quot; ( 6).<br />
+السمن  فى لسان العرب : &quot; السَّمْن : سِلاء اللبن ، السمن سِلاء الزبد السمن للبقر ، وقد يكون للمعزى  ،  قـــال      امرؤ القيس :<br />
+وذكر معزى له فتملأ بيتنا أقطا                  وسمنا وحسبك من غنى شبع وري <br />
+والجمع أسمن سمون سمنان مثل عبد وعبدان  . &quot; (7)<br />
+ـــــــــــــــ  ـــــــــــــــ<br />
+(1) أخلاق الوزيرين   ص 393<br />
+(2) لسان العرب  ( سلق ) 6 / 268<br />
+(3) الإمتاع و المؤانسة  3 / 11 <br />
+(4) لسان العرب  ( سمك )   6 / 443   <br />
+(5) الإمتاع و المؤانسة    3 / 84 <br />
+(6) المرجع السابق   3 / 22 <br />
+(7) لسان العرب  ( سمن )  6 / 352<br />
+و للسمن قيمة كبيرة فقد كان يهدى إلى الأحباب ، و من ذلك ما ورد أن &quot; امرأ القيس آلى بألية ألا يتزوج امرأة حتى يسألها عن ثمانية وأربعة وثنتين ، فجعل يخطب النساء فإذا سألهن عن هذا قلن أربعة عشر ،  فبينما هو يسير في جوف الليل إذا هو برجل يحمل ابنة له صغيرة كأنها البدر ليلة تمامه فأعجبته ،  فقال لها : يا جارية ما ثمانية وأربعة واثنتان  ؟ فقالت : أما ثمانية فأطباء الكلبة ،  وأما أربعة فأخلاف الناقة  ، وأما اثنتان فثديا المرأة  ، فخطبها إلى أبيها فزوجه إياها ، وشرطت هي عليه أن تسأله ليلة بنائها عن ثلاث خصال  ،  فجعل لها ذلك وأن يسوق إليها مائة من الإبل وعشرة أعبد وعشر وصائف وثلاثة أفراس ،  ففعل ذلك ثم إنه بعث عبدا له إلى المرأة وأهدى إليها نحيا من  سمن  ونحيا من عسل وحلة من عصب . &quot; (1) <br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلك قوله :<br />
+&quot;  و قالت  عادية بنت فَرْعَة الزبيرية فى ابنها دوس :<br />
+تشْبُهُ دَوْس نفراً  كرامـــــا                  كانوا الذرى و الأنــــف و السَّناما <br />
+كانوا لمن خالطهم إداما                  كالسمن  لمّـــــا  سغبل الطعاما  . &quot; (2)<br />
+و أيضا نجد &quot; و سويق جاف هو الذى لم يلت بسمن و لا زيت . &quot; (3)  <br />
+السويطة  فى لسان العرب  : &quot; السويطاء مرقة كثيرة الماء تساط أي تخلط وتضرب . &quot; (4) ، و هى أيضا &quot;   مرقة كثيرة التمر والماء . &quot; (5) و الاسم فى السويطة مشتق من الخلط و شاهد ذلك : &quot;  يقال أموالهم   سويطة   بينهم أي مختلطة &quot; (6)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلك قوله :<br />
+&quot; يقال  للحيس سويطة &quot; (7)<br />
+السويق  فى لسان العرب  : &quot; السويق : ما يتخذ من الحنطة والشعير  . &quot; (8)<br />
+و قد وردت اللفظة عند أبى حيان لتدل على المعنى السابق و أبو حيان يذكر السويق الجاف و شاهد ذلك قوله : &quot; و العرب تقول : ....  و سويق جاف هو الذى  لم  يلت بسمن و لا زيت . &quot; (9)<br />
+ـــــــــــــــ  ـــــــــــــــ  ـ<br />
+(1) الأغاني     9 / 119<br />
+(2) الإمتاع و المؤانسة   3  / 9     <br />
+(3) المرجع السابق  3  / 55   <br />
+(4) لسان العرب  ( سوط )   7 /  327 <br />
+(5) العين  (  سوط )   7  /  279 <br />
+(6) إصلاح المنطق   1 /  354       <br />
+(7) الإمتاع و المؤانسة    3 / 11     <br />
+(8) لسان العرب ( سوق  ) 6 /170<br />
+(9) الإمتاع و المؤانسة  3 / 55 <br />
+و يذكر أبو حيان للسويق اسما آخر و يذكر السبب فى هذه التسميه و شاهد ذلك قوله : &quot;  السويق : الجَـشيش  لأنه رض و كُـسر   . &quot; (1)<br />
+الشـَّـهد  فى لسان العرب : &quot;  الشَّهْدُ   و   الشُّهْدُ  :  العسل ما دام لم يعصر من شمعه واحدته شَهْدَة و شُهْدَة  . &quot; (2) و &quot; في حديث المغيرة   ( لحديث من فى العاقل أشهى إلى من   الشهد   بماء رصفة ) هو اللبن المحض الطيب ، كذا قاله الهروى عند شرحه الرصفة في حرف        الراء . &quot; (3) كما أنه يضرب المثل بالشهد فى جمال الطعم و لذيذ المذاق فيقال : &quot; أحلى من   الشهد  . &quot; (4)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلبك قوله :<br />
+&quot; و قال مالك بن دينار : دخلنا على بن سيرين فقال : ما أدرى ما أُطعمكم  ؟  ثم قدّم إلينا       شُهْدة . &quot; (5)<br />
+الشِّــواء   فى لسان العرب &quot; الشَّي :  مصدر شويت ،  والشواء  الاسم ،  وأشويتهم : أطعمتهم شواء  وكذلك شويتهم تشوية ،  واشتوينا لحما في حال الخصوص . &quot; (6)<br />
+و قد وردت اللفظة عند أبى حيان لتدل على المعنى السابق و شاهد ذلك قوله : &quot; و ما كان فى تنور فهو شِواء ؛ و ما كان فى قدر فهو حميل . &quot; (7) ، و يذكر أن &quot;  الشِواء طعام الدعار &quot; (8)<br />
+الطـَفـَيْـشَـل  لم ترد هذه اللفظة فى لسان العرب أو فى كتب المعربات ، و قد  وردت اللفظة عند أبى حيان لتدل على نوع من المرق – كما ذكر محقق الكتاب – وشاهد ذلك قوله : &quot; و قد أخبرنى أبو أيوب أنه تعشى عنده ليلة من قصعة أرسل بها سعد بن عبادة فيها طَفَيْشَل فرأيته ينهك تلك القصعة ما لم ينهك غيرها . &quot; (9)<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــــــ<br />
+(1) الإمتاع و المؤانسة  3 / 72<br />
+(2) لسان العرب   ( شهد )   7 /  243<br />
+(3) النهاية في غريب الحديث  1 /  40<br />
+(4) كتاب جمهرة الأمثال  1 /  404<br />
+(5) الإمتاع و المؤانسة   3 / 3 <br />
+(6) لسان العرب  ( شوى )  7  / 446<br />
+(7) الإمتاع والمؤانسة      3 / 59 <br />
+(8) المرجع السابق 3 /75  <br />
+(9) الإمتاع و المؤانسة 3 /10<br />
+أرجو أن تفيدونى برأيكم حتى أكمل باقى الألفاظ و أدعو الله تعالى أن تحظى هذا الجزء من الدراسة بإعجابكم<br />
+السلام عليكم ورحمة الله وبركاته
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_41707" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_41707" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=41707" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_41707" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_42507">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2007-08-16,&nbsp;<span class="time">01:48 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post42507" href="showthread.php?t=6031&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=42507#post42507" class="postcounter">#2</a><a id="postcount42507" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=8044&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ناشد وافى غير متواجد حالياً"><strong>ناشد وافى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=8044&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=8044&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ناشد وافى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>5</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="Post" /> ألفاظ الحياة الاحتماعية فى مؤلفات أبى حيان التوحيدى ( رسالة ماجستير ) 2
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_42507">
+				<blockquote class="postcontent restore">
+					هذه الرسالة تقدم تحليلا لألفاظ الحياة الاجتماعية و توضح معانى الألفاظ و دلالتها و هى خظوة على طريق المعجم التاريخى <br />
+الألفاظ الدالة على الملابس <br />
+الإ زَار  فى لسان العرب  : &quot; أزر: أَزَرَ به الشيءُ: أَحاط َ، عن ابن الأَعرابـي. والإِزار: الـمِلْـحَفَة، يذكر ويؤنث؛ عن اللـحيانـي ؛ قال أَبو ذؤيب:                                                <br />
+تَبَرَّأُ مِنْ دَمِ القَتـيلِ وبَزِّه       وقَدْ عَلِقَتْ دَمَ القَتـيلِ إإِزارُها <br />
+يقول: تَبَرَّأُ من دم القَتِـيل وتَتَـحَرَّجُ ودمُ القتـيل فـي ثوبها. وكانوا إِذا قتل رجل رجلاً قـيل: دم فلان فـي ثوب فلان أَي هو قتله  . &quot;  (1) و &quot; الإزار : لباس غير مخيط يستر النصف الأسفل للجسم . &quot; (2)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلك قوله :<br />
+&quot; و قال ابن قــُـرَيعة : دخل بعض هؤلاء الخلاء و أراد أن يحلّ سراويله ، فغلطـَ  و حـَـلّ إزَاره  <br />
+و خرى َ فى  سراويله . &quot; (3) و كذلك قوله : و لا طرب أبى طاهر بن المقنعى المعدل على عَـلْوان غلام <br />
+ابن عرس فإنه إذا حضر  و ألقى إزاره ، و حل ّ أزراره ، و قال  لأهل المجلس : اقترحوا  <br />
+و اسْـتَـفتـِحـُو  ا &quot; (4)  و كذلك قوله : &quot;  يا مشقوق  ؛ نـَـعْـلُـلـكزا  ئفة ، و قميصك مقرون الحاجبين ،        و إزارك صَدَف أزرق  ، و أنت تتلاهى بأولاد الملوك . &quot; (5) ...  &quot; و القميص المقرون هو          الخلق &quot; (6)<br />
+الـبَـتُّ   فى لسان العرب  : &quot;  البَتُّ كِساءٌ غلـيظٌ مُهَلْهَلٌ، مُرَبَّع، أَخْضَرُ؛ وقـيل: هو من وَبَرٍ وصُوفٍ، والـجمع أَبُتٌّ وبِتاتٌ. التهذيب: البَتُّ ضرْبٌ من الطَّيالِسة، يسمى السَّاجَ، مُرَبَّعٌ، غلـيظ، أَخضر، والـجمع: البُتُوتُ. الـجوهري: البَتُّ الطَّيْلَسَانُ مِن خَزَ ونـحوه؛ وقال فـي كساءٍ من صُوف:<br />
+مَن كان ذا بَتَ، فهذا بَتِّـي        مُقَـيِّظٌ مُصَيِّفٌ، مُشَتِّـي،<br />
+تـخِذْتُه من نَعَجاتٍ سِتِّ<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــــــ<br />
+(1) لسان العرب  ( أزر )   1 / 245   <br />
+(2) مجمع اللغة العربية  ــــ   المعجم  الكبير   1 / 243 <br />
+(3) البصائر و الذخائر    4 / 75  <br />
+(4) الإمتاع و المؤانسة  2 /178    <br />
+(5) المرجع السابق  2 / 57   <br />
+(6) المرجع السابق  2 / 58  <br />
+وفـي حديث دار النَّدْوة وتَشاوُرِهم فـي أَمر النبـي صلى الله عليه وسلم فاعترضهم إِبلـيس فـي صورة شيخ جلـيل علـيه بَتٌّ أَي كساءٌ غلـيظ مُرَبَّعٌ، وقـيل: طَيْلَسان من خَزَ.  &quot; (1)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلك قوله : <br />
+&quot;  و العرب قد قدسها الله عن هذا الباب بأسره  ، و جبلها على أشرف الأخلاق بقدرته  ؛ و لهذا تجد أحدهم  و هو فى  بَــتّ ٍ  حافيا  حاسرا يذكر الكرم ، و يفتخر بالمكرمة . &quot; (2)<br />
+البـِـذْلة   فى لسان العرب  :  &quot; والبِذْلَة من الثـياب: ما يُلبس ويُمتهن ولا يُصان . &quot; (3)<br />
+و قد وردت الفظة عند أبى حيان بصيغة المفرد و هى تدل على الثياب  و شاهد ذلك قوله :  &quot; وجهك هذا <br />
+الحسن لا يـُـبْـتـَـذل للشحوب ، و لا يُعرَض للفحات الشمس بين الطلوع و الغروب ، أنت يجب أن تكون فى  بـِــذ ْلة  بين  حَجَلة و كِلّة  ، تـُزاح بك العلّة . &quot; (4)<br />
+البُـرْجُــد   فى لسان العرب  :  &quot;  : البُرْجُد كساء من صوف أَحمر؛ وقـيل: البُرْجُد كساء غلـيظ ، وقـيل: البُرْجُد كساء مخطط ضخم يصلـح للـخباء وغيره.  &quot; (5)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على المعنى السابق  و شاهد ذلك قوله : <br />
+&quot;  أترى  أنو شروان  إذا وقع إلى فيافى بنى أسد ...  و جاع و عطش و عـَرِىَ  ، أما كان يأكل اليربوع  و الجرذان  ؛  ....  أو ما كان يلبس البـُـرْجُـد  و الخـَميصة  و السَّمل من الثياب  ؟  &quot; (6) <br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــــــــــ<br />
+(1) لسان العرب ( بتت ) 1 / 278<br />
+(2) الإمتاع و المؤانسة  1 / 83   <br />
+(3) لسان العرب  ( بذل )  1/ 654             <br />
+(4) أخلاق الوزيرين  ص 104  <br />
+(5) لسان العرب  ( برجد ) 1 / 256 <br />
+(6) الإمتاع و المؤانسة  1 / 80  <br />
+الـبُـرْد   فى لسان العرب  :  &quot;  : البُرْدُ ثوب فـيه خطوط وخص بعضهم به الوشي، والـجمع أَبْرادٌ وأَبْردُ وبُرُودٌ.  &quot;  (1)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلك قوله :<br />
+&quot;  هات يا غلام ذلك الثوب الــَّدبيـَقىِّ  ،  و ذلك الـبُــْرد  الشـَـطـَوِىّ  ،  و ذلك الفـرُّوج الرومى . &quot; (2) <br />
+و البرد الشطوى نوع من الثياب يصنع فى مصر حيث إن &quot; شطا بالفتح والقصر وقيل شطاة بليدة بمصر ينسب إليها الثياب الشطوية  . &quot; (3)  كما أن  الثوب الدبيقى ينسب إلى &quot;  دَبـَقـَا من قرى مصر قرب تنيس تنسب إليها الثياب الدبيقية على غير قياس  . &quot; (4)<br />
+كما ودت اللفظة  عند أبى حيان بصيغة المثنى و هى تدل على المعنى السابق و شاهد ذلك قوله : <br />
+&quot; و قد يَـتَـغَـَابى المرءعن عُـظـْم ِ مالِه       و من تحت بُـرْدَيه المغيرة  أو عمرو  &quot; (5)<br />
+البُــْرقـُع   &quot; قناع تلبسه النساء و الدواب &quot; (6)  و فى لسان العرب  :  &quot;  جمع البُرْقُع البَراقِع ُ، وتَلْبَسُها الدوابّ وتلبسها نساء الأَعراب وفـيه خَرْقان للعينـين؛ قال تَوْبةُ بن الـحُمَيِّر:<br />
+وكنتُ إِذا ما جِئت لـيْلـى تَبَرْقَعَتْ       فقدْ رابَنـي منها الغَداةَ سُفُور . &quot; (7)<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــ<br />
+(1) لسان العرب  (  برد )  1 / 478<br />
+(2) الإمتاع و المؤانسة  2 / 179  <br />
+(3) ياقوت  بن عبد الله الحموى  -   معجم البلدان <br />
+دار الفكر   -    بيروت  -   2  / 342 <br />
+(4) المرجع السابق   2 / 258<br />
+(5) الإمتاع و المؤانسة   2 /  185<br />
+(6) المعجم الوسيط  1 / 52<br />
+(7) لسان العرب  (برقع )  1  /  265    <br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على البرقع الذى ترديه الدواب و شاهد ذلك قوله :  &quot; لقى رجل صاحبا له  فقال له : إنى أحبك  فقال  :  كذبت  لو كنت صادقا  ما كان لفرسك  برقع و ليس لى عباءة  .  &quot; (1)<br />
+كما  وردت اللفظة لتدل على  البرقع الذى ترتديه النساء  و لكن اللفظة جاءت بصورة الفعل و شاهد ذلك قوله : &quot;  و قال أعرابى :  خطب رجل مغمور منا امرأة مغمورة  ، فقيل  لولىّ المرأة  : تعـمَّـمَ لكم فزوّجـْـتـمـوه  ، فقال : إنا  تبرقعنا له  قبل أن يتعمم لنا . &quot; (2)<br />
+البُـرََى   فى لسان العرب  &quot;   والبُرَةُ: الـخَـلْـخال؛ حكاه ابن سيده فـيما يكتب بالـياء، والـجمع بُراتٌ وبُرىً وبُرِينَ وبِرِينَ. والبُرَة: الـحَلْقة فـي أَنف البعير، وقال اللـحيانـي: هي الـحلقة من صُفْرٍ أَو غيره تـجعل فـي لـحم أَنف البعير، وقال الأَصمعي: تـجعل فـي أَحد جانبـي الـمَنْـخَرين  . &quot; (3)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة الجمع و هى تدل على الخلاخيل التى ترتديها النساء  و شاهد ذلك  قوله :  <br />
+&quot; نـَـغـَارُ إذا ما الرَّوْع ُ أبدى عن البـُرَى     و نـَقـْـرِى عَـبـيـط َ اللحم و الماء ُ  جامِـسُ . &quot; (4) <br />
+و &quot;  الماء الجامس  : الجامد &quot; (5)<br />
+التـَّـاسُـومـَ  ـة   لم ترد اللفظة فى لسان العرب  ، و قد وردت فى  كتاب الألفاظ الفارسية المعربة <br />
+&quot; ( التاسومة ) ضرب من الأحذية   تعريب  تــَـاسُـم   و معناها : الضفيرة  و الـقِــدّة و السَّـر و فـَرعَـة <br />
+الحذاء  . &quot; (6) <br />
+ـــــــــــــــ  ـــــــــــــــ  ــــــــ<br />
+(1) الصداقة و الصديق   ص 43<br />
+(2) البصائر و الذخائر   5 /  28 <br />
+(3) لسان العرب  1 / 458   <br />
+(4) الإمتاع و المؤانسة  3 / 61   <br />
+(5) لسان العرب 2 /  354<br />
+(6) الألفاظ الفارسية المعربة  ص 33<br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على الأحذية التى يلبسها العامة و شاهد ذلك قوله : &quot; و الله الذى لا إله إلا هو  ما كان بينى و بينه ما يقتضى هذا الأنس  و هذا الاسترسال ....  و إنما ركنت إليه لمرقـَّعـَتـِه  و تاسومته  عندما كنت رأيته  عند صاحبه بالرى  . &quot; (1)<br />
+و المرقعة  من لبس الصوفية لما فيها من الرقع . <br />
+التـُّـبَّان فى لسان العرب  :  &quot;  التُّبَّان، بالضم والتشديد: سَراويلُ صغيرٌ مقدارُ شبْر يستر العورة الـمغلَّطة فقط، يكون للـملاَّحينَ  وفـي حديث عَمّار: أنه صلـى فـي تُبّانٍ فقال: إنـي مَـمْثونٌ أَي: يشتكي مَثَانَتَه، وقـيل: التُّبّانُ  شِبْهُ السَّراويلِ الصغير. وفـي حديث عمر: صلـى رجل فـي تُبّانٍ وقميص، تذكِّره العرب، والـجمع التَّبابِـين.   &quot; (2)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على سروال صغير  و شاهد ذلك قوله :<br />
+&quot;          و حالفَ القـَمْـلُ  زمانا  لِحْـيَــــتى        و ضَعـُـفت من الهـُزال ضَـْرطـِتى <br />
+و صار تـُـبـَّانى  كـَـفافَ خُـصْيتى        أيـُر حِـمارٍ فى حِـر  أُمِّ  عـيـشــتى      &quot; (3) <br />
+التـِّـلْـفاق  عند أبى حيان : &quot; تِلـْـفاق  و هو ثوبان يـُـلفـَـقان  . &quot; (4) <br />
+و قد وردت اللفظة فى لسان العرب  لتؤكد هذا المعنى و دليل ذلك  &quot;   لفق: لَفَقْت الثوب أَلْفِقُه لَفْقاً: وهو أَن تضم شقة إِلـى أُخرى فتـخيطهما. ولَفَق الشقتـين يَلفِقُهما لفْقاً ولَفَّقَهما: ضَمّ إِحداهما إِلـى الأُخرى فخاطهما، والتَّلْفـيقُ أَعم، وهما ما دامتا مَلْفُوقتـين لِفَاق وتِلْفَاق، وكلتاهما لِفْقَانِ ما دامتا مَلْفُوقتـين لِفَاق وتِلْفَاق  . &quot; (5)<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــ<br />
+(1) الإمتاع و المؤانسة  1 / 51  <br />
+(2) لسان العرب  ( تبن ) 2 / 365  <br />
+(3) الإمتاع و المؤانسة  2 / 53  <br />
+(4) الإمتاع و المؤانسة  2 / 3 <br />
+(5) لسان العرب (  لفق )  2 / 258<br />
+الثـَّـوب  فى لسان العرب  &quot;  الثَّوْبُ: اللِّباس  ُ، واحد الأَثْواب  ،  والثِّـياب  ، والـجمع أَثْوُبٌ، وبعض العرب يهمزه فـيقول أَثْؤُبٌ  &quot; (1) <br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلك قوله : <br />
+&quot;  و الثوب اسم يقع على  أشياء بها صار ثوبا  ، لأنه نـُسِج بعد أن غزل ، فسَداته لا تكفى دون لـُحمته <br />
+و لـُحمته لا تكفى دون  سَداته . &quot; (2) و قوله أيضا  &quot; و من لزم  العلم و خلا من العمل ، كان  كلابس ثوب زور . &quot; (3) و منه أيضا &quot; و قال الخليل ، وقد قيل له : إنَّ استفساد الصديق أهون من استصلاح العدو ، قال : نعم كما أن تخريق الثوب أهون من نسجه . &quot; (4)<br />
+و قد وردت اللفظة عند أبى حيان  بصيغة المثنى و شاهد ذلك قوله : &quot;  قال رجل لصاحبه : ( بكم الثوبان المصبوغان ) ،  و قال آخر ( بكم ثوبان مصبوغان ) ، و قال آخر : ( بكم  ثوبان مصبوغين ) بيّن هذه المعانى التى تضمنها لفظـٌ  لفظ  . &quot; (5)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة الجمع و شاهد ذلك قوله : &quot; و الله إنك لتـَهـَبُ الدرهمَ و الدينارَ<br />
+....  ثم تتجاوز  الذهب و الفضة  إلى الثياب العزيزة  . &quot; (6) و قوله أيضا : &quot; دخل رجل حمَّـاما فسرقت ثيابه فخرج و هو عريان ،  و على باب الحمام طبيب فقال له : ما قصتك ؟  قال : سرقت  ثيابى ، قال :<br />
+بادر  و نفس الدم  ، حتى يخفَّ عنك الغـَـمّ  . &quot; (7) <br />
+الجُــبَّـة   فى لسان العرب  :  &quot;  والـجُبَّةُ: ضَرْبٌ من مُقَطَّعاتِ الثِّـيابِ تُلْبَس، وجمعها جُبَبٌ وجِبابٌ. <br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــــ<br />
+(1) لسان العرب  ( ثوب )  2 / 456  <br />
+(2) الإمتاع و المؤانسة  1 /  121<br />
+(3) المقابسات  ص 201<br />
+(4) البصائر و الذخائر  3 / 127<br />
+(5) الإمتاع و المؤانسة  1 / 122<br />
+(6) المرجع السابق  3 / 223 <br />
+(7) البصائر و الذخائر  4 /  103  <br />
+والـجُبَّةُ: من أَسْماءِ الدِّرْع، وجمعها جُبَبٌ.  (1)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد  و هى تدل على المعنى السابق  و شاهد ذلك قوله : <br />
+&quot; حضرت مجلسا فيه مغنية ، و فيه رجل بغير جُـبَّـة ، و الدنيا باردة ، فقال و هو يرعد للمغنية : أشتهى أن أعانقك ، فقالت له : أنت إلى أن تعانق  جبة أحوج  منك إلى عناقى . &quot; (2) <br />
+و منه أيضا قوله : &quot; نادى فقير على جبة له فلم تـُطلَبْ بشىء ، فقال الفقير : ما علمت أنى  عُــْريان إلا الساعة . &quot; (3) <br />
+كما وردت فى فى قوله : &quot;  قيل لماجن : جبة نقد أحب إليك أم قـَـلَـنـْسـَوَ  ة نسيئة ؟ فقال : ضرطة نـَقـدٌ <br />
+أحب إلىّ من لحاف نسيئة . &quot; (4)<br />
+الجـِلْـبـَاب  فى لسان  العرب : &quot;  والـجِلْبابُ: القَمِيصُ. والـجِلْبابُ: ثوب أَوسَعُ من الـخِمار، دون الرِّداءِ، تُغَطِّي به الـمرأَةُ رأْسَها وصَدْرَها؛ وقـيل: هو ثوب واسع، دون الـمِلْـحَفةِ، تَلْبَسه الـمرأَةُ؛ وقـيل: هو الـمِلْـحفةُ . قالت جَنُوبُ أُختُ عَمْروٍ ذي الكَلْب تَرْثِـيه:<br />
+تَـمْشِي النُّسُورُ إِلـيه وهي لاهِيةٌ                 مَشْيَ العَذَارَى علـيهنَّ الـجَلابِـيبُ <br />
+معنى قوله وهي لاهيةٌ: أَن النُّسور آمِنةٌ منه لا تَفْرَقُه لكونه مَيِّتاً، فهي تَمْشِي إِلـيه مَشْيَ العَذارَى. ...<br />
+وقـيل: هو ما تُغَطِّي به الـمرأَة الثـيابَ من فَوق كالـمِلْـحَفةِ؛ وقـيل: هو الـخِمارُ. وفـي حديث أُم عطيةَ: لِتُلْبِسْها صاحِبَتُها من جِلْبابِها أَي إِزارها. وقد تَـجَلْبَبَ. قال يصِفُ الشَّيْب:<br />
+حتـى اكْتَسَى الرأْسُ قِناعاً أَشْهَبا          أَكْرَهَ جِلْبابٍ لِـمَنْ تَـجَلْبَبَا <br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــــ<br />
+(1) لسان العرب ( جبب ) 2 / 645  <br />
+(2) البصائر و الذخائر 1 / 230<br />
+(3) البصائر و الذخائر  4/ 45<br />
+(4) المرجع السابق   4 / 50 <br />
+وفـي التنزيل العزيز: {يُدْنِـينَ عَلَـيْهِنَّ من جَلابِـيبِهِنَّ  }. قال ابن السكيت، قالت العامرية: الـجِلْبابُ الـخِمارُ؛ وقـيل: جِلْبَابُ الـمرأَةِ مُلأَتُها التـي تَشْتَمِلُ بها، واحدها جِلْبابٌ، والـجماعة جَلابِـيبُ . (1)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة الجمع و هى تدل على القميص و شاهد ذلك قوله : &quot; و منهم <br />
+مـَن قـَعَد به الدَّهـْرُ لسنه العالية ، و جلابيبه البالية ،  فهو موضع الأجر المذخور و ناطق بالشكر المنظوم و المنثور . &quot; (2) <br />
+الحِـذَاءُ   فى لسان العرب : &quot;  الـحِذَاءُ: النعل .....   وفـي حديث ابن جريج: قلت لابن عمر رأَيتُك تَـحْتَذِي السِّبْتَ أَي تَـجْعَلُه نَعْلَك. احْتَذى  احْتَذى يَحْتَذِي إذا انْتَعل؛ ومنه حديث أَبـي هريرة، رضي اللَّه عنه، يصف جعفر بن أَبـي طالب، رضي اللَّه عنه، يصف جعفر بن أَبـي طالب، رضي اللَّه عنهما: خَيْرُ من احْتَذَى النِّعالَ. والـحِذَاء:  ما يَطَأُ علـيه البعير من خُفِّه والفرسُ من حافِرِه يُشَبَّه بذلك.  &quot; (3) <br />
+و قد وردت اللفظة عند أبى حيان التوحيدى  بصيغة المفرد و هى تدل على النعل و شاهد ذلك قوله :<br />
+&quot;  أيها الأمير ، ما ظننتُ أنكَ  إذا خلعتَ  رداءك و نزعت حذاءك  تقول ذلك المقال ، و تجول ذلك المجال . &quot; (4) و منه أيضا &quot; إن شئتَ  صِرت إلى أمير المؤمنين فإنه جالس ، فأمشى بلا حذاء و لا رداء فيرفع مجلسى  و يقبل على محادثتى . &quot; (5)<br />
+الحـِـيضَـة   فى لسان العرب  : &quot;   الـحِيضَة: الـخِرْقة التـي تَسْتَثْفِرُ بها الـمرأَة؛ قالت عائشة، رضي اللَّه عنها: لَـيْتنِـي كنتُ حِيضةً مُلْقاةً؛ وكذلك الـمَـحِيضة، والـجمع الـمَـحايِضُ. وفـي حديث بئر<br />
+ـــــــــــــــ  ـــــــــــــــ  ــــــــــ<br />
+(1) لسان العرب  ( جلب )  2 / 851 <br />
+(2) الإمتاع و المؤانسة  3 / 211 <br />
+(3) لسان العرب  ( حذو )  3 / 245  <br />
+(4) الإمتاع و المؤانسة  3 / 159  <br />
+(5) المرجع السابق  2 / 71<br />
+بُضاعة: تلقـى فـيها الـمَـحايِض؛ وقـيل: الـمَـحايِضُ جمع الـمَـحِيضِ، وهو مصدر حاضَ، فلـما سمِّي به جَمعه  .  &quot; (1)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على المعنى السابق إلى جانب أنه راد على اللفظ الوصف بقوله ( الحيضة المنسية ) و و هو يستعمل هذا الوصف ليدل على التحقير  و شاهد ذلك قوله : &quot;  سألتنى  ـــ أبقاك اللله ـــ عن فلان  و أنا  أخبرك بالأثر الذى يدل على صحة الخبر ....  فمن ذلك أنى رأيته ،  و هو فى جيرانه  كالـحِـيْضَـة المَـنْـسية ،  و كلهم يعرفه بالأُبنة . &quot; (2)  <br />
+الخِـــْرقـَـة   فى لسان العرب :  &quot;   الـخرق الشَّقُّ فـي الـحائط والثوب ونـحوه. يقال: فـي ثوبه خَرق وهو فـي الأَصل مصدر. والـخِرْقة:  القِطعة من خِرَقِ الثوب، والـخِرْقة الـمِزْقةُ منه. وخَرَقْت الثوب إِذا شَقَقْتَه. ويقال للرجل  الـمُتَمزِّق الثـياب: مُنْـخَرِق السِّرْبال. &quot; (3) <br />
+و قد  وردت الفظة عند أبى حيان التوحيدى  بصيغة المفرد و هى تدل على المعنى السابق و قد استعملها أبو حيان ليدل على  شدة البخل و شاهد ذلك قوله :  &quot;  و بعد فهو  ذكى حسن الشِّـعر  نقى اللفظ  ....<br />
+وإنفاق زمانه  و كـدّ  بدنه و قلبه  فى خدمة السلطان ،  و احتراقه فى البخل  بالدانق  و القيراط  و الكسرة و الخـِـرقة ؛  نعوذ بالله من مدح الجود  باللسان . &quot;(4)<br />
+كما  وردت اللفظة بصيغة الجمع و هى تدل على القطعة من الثوب  و شاهد ذلك قوله  :  &quot; طعن فى رسائلى ..... كأنى طعنت  فى القرآن  ، أو رميت الكعبة  بخرق الحيض  ، أو عقرت  ناقة             صالح . &quot; (5)<br />
+ـــــــــــــــ  ـــــــــــــــ  ــــــــ<br />
+(1) لسان العرب  ( حيض )  3 /  365  <br />
+(2) أخلاق الوزيرين  ص 61  <br />
+(3) لسان العرب ( خرق ) 4 / 328  <br />
+(4) الإمتاع و المؤانسة  1 / 36  <br />
+(5) أخلاق الوزيرين  ص 493<br />
+الخميصة   فى لسان العرب  &quot;  الـخَمِيصةُ: بَرْنَكانٌ أَسْوَدُ مُعْلَـم من الـمِرْعِزَّى والصُّوفِ ونـحوه. والـخَمِيصةُ: كساء أَسْودُ مُرَبَّع له عَلَـمانِ فإِن لـم يكن مُعْلـماً فلـيس بخميصة؛ قال الأَعشى:<br />
+إِذا جُرِّدَتْ يوماً حَسِبْتَ خَمِيصَة ً              علـيها، وجِرْيالَ النَّضِيرِ الدُّلامِصَا <br />
+أَراد شعرها الأَسود، شَبَّهه بالـخَمِيصة والـخَمِيصةُ سَوْداء، وشبّه لونَ بَشرَتِها بالذهب. والنَّضِيرُ: الذهب. والدُّلامِصُ: البَرّاق. وفـي الـحديث: جئتُ إِلـيه وعلـيه خَمِيصة، تكرر ذكرها فـي الـحديث، وهي ثوبُ خَزَ أَو صُوفٍ مُعلَـم، وقـيل: لا تسمى خَمِيصة إِلا أَن تكون سَوْداءَ مُعْلَـمة، وكانت من لباس الناس قديماً، وجمعها الـخَمائِصُ، وقـيل: الـخمائص ثـيابٌ من خَزّ ثـخانٌ سُودٌ وحُمْر ولها أَعْلامٌ ثِـخانٌ أَيضاً. &quot; (1)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلك قوله :<br />
+&quot; أترى أنوشروان إذا وقع فى فيافى بنى أسد .....  أو ما كان يلبس البـُرْجُــد و الخميصة  و السـَّمِـل من الثياب  و ما  هو دونه  و أخشن . &quot; (2)<br />
+الدِّثارُ  قد  ذكر أبو حيان التوحيدى الشعار فقال : &quot;  قال بعض السلف :  (( حادثوا هذه النفوس فإنها سريعة الدثور  )) ، كأنه أراد  اصْـقـُـلوها و اجلوا  الصدأ  عنها ، و  أعيدوها  قابلة لودائع الخير ، فإنها  إذا دَثَرت ــ أى صدئت ، أى تغطّت ؛ و منه الدثار الذى فوق الشـِّعار ــ  لم يُـنـْـتـَـفع بها . &quot; (3) <br />
+و قد وردت اللفظة  فى لسان العرب  تؤكد المعنى الذى أورده  أبو حيان  و شاهد ذلك  : &quot;  تَدَثَّرَ بالثوب: اشتمل به داخلاً فـيه. والدِّثارُ، ما يُتَدَثَّرُ به، وقـيل: هو ما فوق الشِّعارِ.  ... الدِّثار كل ما كان فوق الثـياب<br />
+من الشعار. وقد تَدَثَّرَ أَي تَلَفَّفَ فـي الدِّثار. وفـي حديث الأَنصار: أَنتم الشِّعارُ والناس الدِّثارُ؛ والدِّثارُ: هو الثوب الذي يكون فوق الشِّعار، يعنـي أَنتم الـخاصَّةُ والناسُ العامَّةُ.  &quot; (4)<br />
+ـــــــــــــــ  ـــــــــــــــ  ــــ<br />
+(1) لسان العرب  ( خمص )   4 /  458<br />
+(2) الإمتاع  و المؤانسة  1 /  80    <br />
+(3) المرجع السابق    1 / 23     <br />
+(4) لسان العرب (  دثر )  4 / 645  <br />
+أما كلمة الشعار  فإننا نجدها فى لسان العرب : &quot;  الشِّعارُ: ما ولـي شَعَرَ جَسَد الإِنسان دون ما سواه من الثـياب  . &quot; (1)<br />
+الرِداء  فى لسان العرب : &quot; والرِّداءُ: الذي يُلْبَسُ،  ......  الرِّداءُ: من الـمَلاَحِفِ؛ وقول طَرَفة:<br />
+ووَجْه، كأَنّ الشَّمْسَ حَلَّتْ رِداءَها       علـيه، نَقِـيّ اللّوْنِ لـم يَتَـخَذَّرِ <br />
+فإِنه جعل للشمس رداء، وهو جَوْهر لأَنه أَبلغ من النُّور الذي هو العَرَض. والـجمع أَرْدِيَة ٌ ، ......        والرِّداءُ: الغِطاءُ الكبـير. ورجلٌ غَمْرُ الرِّداءِ: واسِعُ الـمعروف وإِن كان رِداؤُه صغيراً  . (2)<br />
+و قد وردت اللفظة عند أبى حيان التوحيدى بصيغة المفرد  و هى تدل على المعنى السابق و شاهد ذلك قوله : &quot;   و يقال  أيضا على ما هو واحد فى الحد و كثير فى الاسم ، كما يقال : إن الثوب و الرداء       و الإنسان و البشر  واحد الحد ، و كثير فى الاسم . &quot; (3) و منه أيضا قوله : &quot; أيها الأمير ، ما ظننت أنك إذا خلعتَ رداءك  و نزعتَ حذاءك  تقول ذلك المقال  . &quot; (4)  و كذلك قوله : &quot; إن شئت صرت إلى أمير المؤمنين فإنه جالس ، فأمشى بلا حذاء و لا رداء فيرفع مجلسى ، و يقبل على محادثتى ، و يسألنى عن العراق مرة ، و عن الحجاز مرة . &quot; (5) <br />
+السِّـْربال    فى لسان العرب  : &quot;  سربل السِّرْبالُ القَميص والدِّرْع وقـيل كُلُّ ما لُبِسَ فهو سِرْبالٌ وقد تَسَرْبَل به سَرْبَلَه  أَي أَلبسته السِّرْبالَ ، وفـي حديث عثمان رضي اللَّه عنه : لا أَخْـلَعُ سِرْبالاً سَرْبَلَنِـيه   اللَّهُ تعالـى ؛ السِّرْبالُ القَميصُ وكَنى به عن الـخِلافة .<br />
+ـــــــــــــــ  ـــــــــــــــ  ــــــ<br />
+(1) لسان العرب ( دثر )     7  /  354 <br />
+وانظر  ألفاظ الحضارة العباسية  ص 63<br />
+(2) لسان العرب ( ردى )  5 / 325<br />
+(3) المقابسات  ص 287<br />
+(4) الإمتاع و المؤانسة 3 / 159<br />
+(5) المرجع السابق  2 /  71  <br />
+وفـي الـحديث النَّوائحُ علـيهنَّ سَرابِـيلُ من قَطِرانٍ وتطلق السَّرابـيلُ علـى الدروع؛ ومنه قول             كعب بن زهير : <br />
+شُمُّ العَرانِـين أَبْطالٌ لَبوسُهُمُ          من نَسْجِ دَاوُدَ فـي الهيْجا سَرابِـيلُ <br />
+وقـيل فـي قوله تعالـى {  سَرابِـيلَ تَقِـيكم الـحَرَّ  } ؛  إِنها القُمُص تَقـي الـحَرَّ والبَرْد فاكتفـى بذكر الـحَرِّ كأَنَّ ما وَقـى الـحَرَّ وَقـى البرد ،  وأَما قوله تعالـى{  سَرَابِـيلَ {تَقِـيكُم بَأْسَكم  } فهي الدُّرُوع . (1)<br />
+&quot;  و السِّـربال :   معرب   شـَـرْوال  و أصله  سَرْبال  مركب  من  سَرْ  أى   فوق  و من بال  أى      القامة . &quot; (2) <br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد وهى تدل على القميص أو اللباس  و شاهد ذلك قوله : <br />
+&quot; فقال : لم يكن له ـــ مع فضله الشائع  ، و أدبه البارع ــــ عـِلمُ الدين  ، و لا كان عنده شىء من الشريعة .....  و الرئيس إذا عـَرِى من هذا السِّربال  فهو ممقوت  عند الله تعالى  ، مقلى عند الناس . &quot; (3)  <br />
+كما وردت اللفظة أيضا فى قوله : &quot; فال الشاعر :<br />
+و إذا تأمّـل َ شخصَ ضيفٍ مُـقبلٍ    متــَسربلٍ سِربالَ مـَحـْـــلٍ أغْـبَـرِ<br />
+أوما إلى الكـْومَاءِ هـــذا طـــارقٌ    نـَحَرَتـْـنى الأعداءُ إن لم تـُنـْحرى    &quot; (4)<br />
+و &quot; الناقة الكَوْماء وهي الطَّويلة السَّنام . &quot; (5) ، و  &quot; الـمَـحْلُ: الشِّدّة. والـمَـحْلُ: الـجوع الشديد وإن لـم يكن جَدْب. والـمَـحْل: نقـيض الـخِصْب  . &quot; (6) <br />
+ـــــــــــــــ  ـــــــــــــــ  ـ<br />
+(1) لسان العرب  ( سربل )  3 / 1983<br />
+و انظر  د / رجب عبد الجواد   ــــ  ألفاظ الحضارة  فى القرن الرابع الهجرى <br />
+دار الآفاق  العربية ـــ  القاهرة   ـــ  ط 1   ــــ  1423هـ  - 2003م   ـــ  ص 268<br />
+(2) الألفاظ الفارسية المعربة   ص 88 <br />
+وانظر  الألفاظ الأعجمية فى الأمثال العربية  القديمة  ص 91 <br />
+(3) أخلاق الوزيرين  ص 284<br />
+(4) الإمتاع و المؤانسة  3 / 43  <br />
+(5) لسان العرب ( كوم )  12  /  1245<br />
+(6) لسان العرب ( محل ) 13 / 354 <br />
+السـِّــروال  فى لسان العرب : &quot;  السَّراوِيلُ فارسي مُعَرَّب يُذَكَّر ويؤنث ولـم يعرف الأَصمعي فـيها إِلا التأْنـيث؛ قال قـيس بن عُبادة<br />
+أَرَدْتُ لِكَيْما يَعْلَـم النـاسُ أَنـــها            سَراوِيلُ قَـيْس والوُفُودُ شهودُ <br />
+وأَن لا يَقُولوا غاب قَـيْسٌ وهذه             سَراوِيلُ عادِيَ نَمَـتـْـه ثَـمُــودُ <br />
+قال اللـيث السَّراوِيل أَعْجَمِيَّة أُعْرِبَتْ وأُنِّثَت والـجمع سَراوِيلات قال سيبويه :  ولا يُكَسَّر لأَنه لو كُسِّر لـم يرجع إِلاَّ إِلـى لفظ الواحد فتُرِكَ وقد قـيل سَراوِيل جمع واحدته سِرْوالة؛ قال :<br />
+عَلَـيْه مِن اللُّؤْمِ سِرْوالة ٌ       فَلَـيْسَ يَرِقُّ لـمُسْتَعْطِفِ <br />
+....  و قال الأَزهري : جاء السَّراوِيل علـى لفظ الـجماعة وهي واحدة قال وقد سمعت غير واحد من الأَعراب يقول سِرْوال .<br />
+وفـي حديث أَبـي هريرة أَنه كَرِه السَّراوِيل الـمُخَرْفَجةَ ؛  قال أَبو عبـيد هي الواسعة الطويلة . &quot; (1)<br />
+و قد وردت اللفظة عند أبى حيان التوحيدى بصيغة الجمع  و هو يوافق ما ورد فى اللسان و شاهد ذلك قوله :  &quot;   و قال الوزير ..  سراويل  يذكـّـر أم يؤنث  ، و يصرف أم  لا  ؟ <br />
+فكان الجواب : ....   هذه سراويل  و ما أشبهه   ، ألحقه بالجمع  فامنعه من الصرف  ، لأنه مثله            و شبيهه . &quot; (2)<br />
+و قد وردت اللفظة فى قوله :  &quot;  قال أبو علقمة لخياط  : يا خياط  ،  اقطع لى هذه السراويل ،  و ارتق  فتقها  و افتق  رتقها . &quot; (3)<br />
+و منه أيضا قوله :  &quot;   قامت امرأة تصلى  بلا  سراويل  ، فرآها  ماجن  ، فانتظر  بها حتى  سجدت  ثم  وثب عليها  .&quot; (4)<br />
+ـــــــــــــــ  ـــــــــــــــ  ــــــ<br />
+(1) لسان العرب  ( سرل ) 6 / 456 <br />
+(2) الإمتاع و  الؤانسة  2 / 169<br />
+(3) البصائر و الذخائر  3 /  68<br />
+(4) المرجع السابق  2 / 106<br />
+و يقول أيضا : &quot;  دخل بعض هؤلاء الخلاء  ، و أراد   أن  يحلّ سراويله  ، فغلط  و حـَـل َّ  إزاره            و خرى  فى سراويله . &quot; (1)<br />
+السَّمِـل   فى لسان العرب  : &quot;  سَمَلَ الثوبُ يَسْمُل سُمولاً أَسْمَلَ أَخْـلَق .... وفـي حديث عائشة ولنا سَمَلُ قَطِيفة؛ السَّمَلُ الـخَـلَق من الثـياب<br />
+وفـي حديث قَـيْلة أَنها رأَت  أَنها رأَت النبـي صلى الله عليه وسلم وعلـيه أَسْمالُ مُلَـيَّتَـيْن؛ هي جمع سَمَلٍ والـمُلَـيَّةُ  تصغير الـمُلاءة وهي الإِزار<br />
+قال أَبو عبـيد الأَسْمال الأَخْلاق الواحد منه سَمَلٌ  . &quot; (2)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على الخلق من الثياب  و شاهد ذلك قوله : <br />
+&quot;  و قد قيل لرجل منهم  فى يوم  شاتٍ  و هو يمشى فى سَمِـل  :  أما تجد  البرد  يا أخا العرب  ؟ <br />
+فقال أمشى الخـَيْـزَلـَى و يكفينى حـَسَبى  . &quot; (3) و &quot; الـخَيْزَلـى والـخَوْزَلـى: مِشْيَة فـيها ظَلَعٌ أَو تَفَكُّكٌ    أَو تَبَخْتُرٌ  .&quot; (4)<br />
+الأسمان   فى لسان العرب  :  &quot;  الأَسْمالُ الأَسْمانُ الأُزُر الـخُـلْقانُ  . &quot; (5)<br />
+و قد وردت اللفظة عند أبى حيان التوحيدى  بصيغة الجمع  و هى تدل على المعنى السابق و قد استعملها <br />
+ليدل على أنه لكل حال لبوس  و شاهد  ذلك  قوله : &quot;  و لكن مع كل خطرة خيال  ، و مع كل نظرة    وبال ،  و لكل أسْـمان حال  ،  و لكل مقام مقال  . &quot; (6)<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــ<br />
+(1) المرجع السابق  3 /  75 <br />
+(2) لسان العرب  ( سمل ) 6 / 478 <br />
+(3) الإمتاع و المؤانسة  1 / 83  <br />
+(4) لسان العرب  (خزر )  3 / 658     <br />
+(5) لسان العرب ( سمن ) 6 /  147     <br />
+( 6) الإشارات الإلهية  ص 56
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_42507" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_42507" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=42507" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_42507" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_42509">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2007-08-16,&nbsp;<span class="time">01:49 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post42509" href="showthread.php?t=6031&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=42509#post42509" class="postcounter">#3</a><a id="postcount42509" name="3"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=8044&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ناشد وافى غير متواجد حالياً"><strong>ناشد وافى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=8044&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=8044&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ناشد وافى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>5</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="Post" /> ألفاظ الحياة الاجتماعية فى مؤلفات أبى حيان التوحيدى 4
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_42509">
+				<blockquote class="postcontent restore">
+					الشِّـعار  فى لسان العرب : &quot;  الشِّعارُ: ما ولـي شَعَرَ جَسَد الإِنسان دون ما سواه من الثـياب، والـجمع أَشْعِرَةٌ وشُعُرٌ. وفـي الـمثل: هم الشِّعارُ دون الدِّثارِ؛ يصفهم بالـمودّة والقرب. وفـي حديث الأَنصار: أَنتم الشِّعار والناس الدِّثارُ أَي أَنتم الـخاصَّة والبِطانَةُ كما سماهم عَيْبَتَه وكَرِشَهُ.  ...... وفـي حديث عائشة  ، رضي الله عنها: إِنه كان لا ينام فـي شُعُرنا؛ هي جمع الشِّعار مثل كتاب وكُتُب، وإِنما خصتها بالذكر لأَنها أَقرب إِلـى ما تنالها النـجاسة من الدثار حيث تباشر الـجسد؛ ومنه الـحديث الآخر: إِنه كان لا يصلـي فـي شُعُرِنا ولا فـي لُـحُفِنا . &quot; (1) <br />
+و قد وردت اللفظة عند أبى حيان التوحيدى  بصيغة المفرد  و هى  تدل على ما ولى الجلد  من الملابس  و شاهد ذلك قوله : &quot;  &quot;  قال بعض السلف :  (( حادثوا هذه النفوس فإنها سريعة الدثور  )) ، كأنه أراد  اصْـقـُـلوها و اجلوا  الصدأ  عنها ، و  أعيدوها  قابلة لودائع الخير ، فإنها  إذا دَثَرت ــ أى صدئت ، أى تغطّت ؛ و منه الدثار الذى فوق الشـِّعار ــ  لم يُـنـْـتـَـفع بها . &quot;  (2)<br />
+الطاق  فى لسان العرب  : &quot;   والطَّاقُ: ضَرْبٌ من الـملابس. قال ابن الأَعرابـي: هو الطَّيْلَسان ، وقـيل هو الطيلسان الأَخضر؛ عن  كراع؛ قال رؤبة:<br />
+ولو تَرَى إِذْ جُبَّتِـي مِنْ طاق ِ       ولِـمَّتـي مِثْلُ جَناحِ غاق<br />
+ِوقال الشاعر:<br />
+لقد تَرَكتْ خُزَيْبَةُ كلَّ وَغْد ٍ         تَمَشَّى بـينَ خاتامٍ وطاقِ<br />
+والطِّيقانُ جمع طاق: الطَّيْلَسان مثل ساج وسِيجان؛ قال ملـيح الهذلـي:<br />
+من الرَّيْطِ والطِّيقانِ تُنْشَرُ فَوْقَهم         كأَجْنِـحَةِ العِقْبانِ تَدْنُو وتَـخْطِف<br />
+والطَّاقُ: ضَرْبٌ من الثـياب؛ قال الراجز:<br />
+يَكْفِـيكَ من طاقٍ كثـير الأَثْمان              جُمَّازَةٌ شُمِّرَ منها الكُمَّان<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــــ<br />
+(1) لسان العرب  ( شعر ) 7 / 851  <br />
+(2) الإمتاع و المؤانسة  1 / 23<br />
+قال ابن بري: الطَّاقُ الكساء، والطَّاقُ الـخِمَارُ؛ وأَنشد ابن الأَعرابـي:<br />
+سائِلَة الأَصداغ يَهْفُو طاقُها             كأَنَّما ساقُ غُرابٍ ساقُها   <br />
+وفسره فقال أَي خمارها يطير. &quot; (1)<br />
+و قد وردت اللفظة عند أبى حيان التوحيدى بصيغة المفرد و هى تدل على  الطيلسان  و شاهد ذلك قوله  على لسان الصاحب  ا بن عباد  : &quot;  تقدم يا أخى  ! و تكلم  و استأنس ، و اقترح  ، و انبسط  ، و لا تـُرَع <br />
+و احسبنى فى جوف مرقعة  ، و لا يهولك  ....  هذا  الطاق  و الرواق ، و هذه المجالس                       و الطنافس . &quot; (2) <br />
+كما وردت اللفظة عند أبى حيان لتدل على الخمار أو الرداء و شاهد ذلك قوله : &quot;  قال نضلة : اجتزت فى دَرب الزعفران  يوما فرأيت بين يدىَ جاريتين تمشيان  و تتماجنان  و لا  تشعران  بمكانى ، فضرطت إحداهما و قالت : رداء أصبغ الأصل ،  و ضرطت الثانية  فقالت : طاق  فُسْـتُـقى . &quot; (3) <br />
+الطـِّمْـر  فى لسان العرب  : &quot;  والطِّمْرُ: الثوب الـخَـلَقُ  ، وخص ابن الأَعرابـي به الكِساءَ البالـيَ من غير الصُّوف، والـجمع أَطْمارٌ  ؛ وأَنشد ثعلب:<br />
+تـحسَبُ أَطْمَارِي علـيَّ جُلَبَا <br />
+وفـي الـحديث: رُبَّ ذِي طِمْرَين لا يُؤْبَهُ له، ولو أَقْسَمَ علـى الله لأَبَرّه ، يقول: رُبَّ دي خَـلَقـين أَطَاعَ الله حتـى لو سأَل الله تعالـى أَجابه.  &quot; (4)<br />
+و قد وردت اللفظة عند أبى حيان التوحيدى بصيغة الجمع و هى تدل على الثوب الخلق و شاهد ذلك     <br />
+ـــــــــــــــ  ـــــــــــــــ  ــــــــ<br />
+(1) لسان العرب  ( طوق )  7  /  358    <br />
+(2) أخلاق  الوزيرين  ص 111 <br />
+(3) البصائر و الذخائر  1 / 129 <br />
+(4) لسان العرب  ( طمر ) 7 /  658 <br />
+قوله : &quot;  و عنده أن الجاهل إذا  لبس الثوب الناعم ، و أكل الخبز الحـُوارَى ، و ركب الجواد .... أشرف من العالِـم إذا لبس الأطمار ، و طعم العشب ، و شرب الماء القراح . &quot; (1)<br />
+الـَّطيْـلَسَان  فى لسان العرب  :  &quot;  الطَّيْلَسَانُ: ضرب من الأَكسية  قال ابن جنـي: جاء مع الأَلف والنون فَـيْعَلٌ فـي الصحيح علـى أَن الأَصمعي قد أَنكر كسرة اللام، وجَمع الطَّيلَس والطَّيْلِسَان والطَّيْلُسان طَيَالِسُ وطَيالِسة، دخـلت فـيه الهاء فـي الـجمع للعجمة لأَنه فارسي معرْب، والطَّالِسانُ لغة فـيه، قال: ولا أَعرف للطَّالسان جمعاً، وقد تَطَلْـيَسْتُ بالطَّيْلَسَان وتَطَيْلَسْتُ. التهذيب: الطَّيْلَسان تفتـح اللام فـيه وتكسر؛ قال الأَزهري: ولـم أَسمع فَـيْعَلان، بكسر العين، إِنما يكون مضموماً كالـخَيْزَرَانِ والـحَيْسَمانِ، ولكن لـما صارت الضمة والكسرة أُختـين واشتركتا فـي مواضع كثـيرة دخـلت الكسرة موضع الضمة، وحكي عن الأَصمعي أَنه قال: الطيلسان لـيس بعربـي، قال: وأَصله فارسي إِنما هو تالشان فأُعرب. قال الأَزهري: لـم أَسمع الطَّيْلِسان، بكسر اللام، لغير اللـيث. وروى أَبو عبـيد عن الأَصمعي أَنه قال: السُّدُوسُ الطَّيْلَسان ، هكذا رواه الـجوهري والعامة تقول الطَّيْلِسانُ، ولو رَخَّمْتَ هذا فـي موضع النداء لـم يجز لأَنه لـيس فـي كلامهم فَـيْعِل بكسر العين إِلا معتلاً نـحو سَيِّدٍ ومَيِّتٍ، والله أَعلـم. (2)<br />
+&quot; و الطالسان  : ضرب من الأوشحة  يلبس على الكتف  ، أو يحيط بالبدن ، خال عن التفصيل             و الخيالطة ، أو هو ما يعرف فى العامية المصرية  بالشال  . &quot; (3)<br />
+&quot; و الطيلسان كساء مدور أخضر لا أسفل له ، لحمته  أو  سداه  من صوف ، يلبسه الخواص من العلماء  و المشايخ ، و هو من لباس العجم  ، و هو معرب عن تالسان  و فــُسِّـر بكساء يلقى على الكتف  و هو مركب من  َطـرَه  و هو طرف العمامة  ، و من  سَان  و هى أداة التشبيه . &quot;(4) <br />
+ـــــــــــــــ  ـــــــــــــــ  ــــ<br />
+(1) الإمتاع و المؤانسة 1 / 87<br />
+(2)  لسان العرب  8 /  658 <br />
+(1) المعجم الوسيط 2 / 582  <br />
+وانظر  ألفاظ الحضارة فى القرن الرابع الهجرى  ص 276<br />
+(2) الألفاظ الفارسية المعربة  ص 113 <br />
+وانظر المعرب من الكلام الأعجمى  ص 227    <br />
+و قد وردت اللفظة عند أبى حيان التوحيدى بصيغة المفرد و هى تدل على الوشاح الذى يوضع على الكتف و شاهد ذلك قوله :  &quot;  لبس ابن أبى داود  َطـيْلسانا جديدا  ، فزال عن منكبه  فقال : ما أُحْسِنُ أن ألبس الجديد ، فقال له أبو العلاء  : إن كنت لا تُحْسِن أن تَـَلْبسه فإنك تـُحْسِنُ أن تـُلْبِسَه . &quot;(1)<br />
+كما وردت اللفظة عنده بصيغة الجمع  و هى تدل على المعنى السابق و شاهد ذلك قوله :  &quot; إنه يسبق إلى ظنى أنك من لفيف هذا السواد ، الذين يتقلبون فى البلاد .... رؤوس و عمائم  ،  و أكتاف و طيالس       و أكمام  ، و تبختر و أذيال . &quot; (2)  <br />
+العَبَاءة  فى لسان العرب :  &quot;  العباءَة  :  ضَرْب من الأَكسية، والـجمع أَعْبِئةٌ  . &quot; (3)  &quot; و هو كساء مشقوق  واسع  بلا  كمين يُلبس فوق الثياب  . &quot; (4) <br />
+و قد  وردت اللفظة عند أبى حيان التوحيدى بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلك قوله : &quot;  لقى رجل صاحبا له  فقال له  :  إنى أحبك  ، فقال : كذبت  لو كنت صادقا  ما كان لفرسك برقع  و ليس لى عباءة  .  &quot;(5)<br />
+كما وردت اللفظة فى قوله :  &quot; فإنه إذا سمع  هذا منها ضرب بنفسه الأرض .......  و يركل برجل        و يخرق المرقـّعة قطعة قطعة ، و يلطم و جهه ألف لطمة فى ساعة و يخرج فى العباءة كأنه عبد الرازق المجنون . &quot; (6) <br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــ<br />
+(1) البصائر و الذخائر  3 / 184 <br />
+(2) الإشارات الإلهية  ص 292  <br />
+(3) لسان العرب ( عبأ )9  / 773 <br />
+وانظر ألفاظ الحضارة فى القرن الرابع الهجرى  ص 274<br />
+(4) المعجم الوسيط  ( عبأ ) 2 /  600   <br />
+(5) الصداقة و الصديق   ص 43   <br />
+(6) الإمتاع و المؤانسة  2 / 166  <br />
+العِـمَامة   فى لسان العرب  : &quot;  والعِمامةُ: من لباس الرأْس ، وربما كُنِـيَ بها عن البَـيْضة أَو الـمِغْفَر  ....  و  عُمِّـمَ الرجلُ: سُوِّدَ لأَن تـيجان العرب العَمائم، فكلـما قـيل فـي العجم تُوِّجَ من التاج قـيل فـي العرب عُمِّـمَ  . &quot; (1)<br />
+وقد وردت اللفظة عند أبى حيان التوحيدى بصيغة المفرد و هى تدل على المعنى السابق  و شاهد ذلك قوله : &quot;   و قا : سمعت  اليوم فى كلام ابن عبيد  : لايَـثــَه  ، و طننت أن ه أراد : لاوَثه  من اللَّوْث  لوث العمامة . &quot; (2)<br />
+كما وردت اللفظة بصيغة المفرد المضاف و شاهد ذلك قوله : &quot; دخل الوليد بن يزيد  على هشام  ،        و على الوليد عمامة وَشْىٍ ، فقال هشام  : بكم أخذتَ عمامتك ؟ قال : بألف درهم . &quot; (3) و منه أيضا   قوله : &quot;  كان لهشام بن عبد الملك خـَصِى يقال له خالد ....  فلم يلبث أن مرّ  معمما بعمامة وشى ؛ فقال مسلمة : يا أمير المؤمنين ، أى فتياننا هذا ؟ . &quot;(4) <br />
+ووردت اللفظة عند أبى حيان بصيغة الجمع و شاهد ذلك قوله : &quot;  رأيت  بنى عبد المطلب كأن قدودهم الرماح الردينية  ، و كان عمائمهم فوق الرجال ألوية  . &quot; (5) و مثله قوله : &quot;  إنه يسبق إلى ظنى أنك من لفيف هذا السواد ، الذين يتقلبون فى البلاد  ... رؤوس و عمائم  ، و أكتاف و طيالس  .&quot; (6) <br />
+كما وردت اللفظة عند أبى حيان بصيغة الفعل و شاهد ذلك قوله :   &quot;  و قال أعرابى :  خطب رجل مغمور منا امرأة مغمورة  ، فقيل  لولىّ المرأة  : تعـمَّـمَ لكم فزوّجـْـتـمـوه  ، فقال : إنا  تبرقعنا له  قبل أن يتعمم لنا . &quot;  (7) <br />
+ـــــــــــــــ  ـــــــــــــــ  ــــــــــ<br />
+(1) لسان العرب  ( عمم )  9 / 215 <br />
+وانظر ألفاظ الحضارة فى القرن الرابع الهجرى  ص 270  <br />
+(2) الإمتاع و المؤانسة  2 / 192 <br />
+(3) البصائر و الذخائر  3 / 50  <br />
+(4) الإمتاع و المؤانسة  3 /  201<br />
+(5) المرجع السابق  1 / 76  <br />
+(6) الإشارات الإلهية  ص 292 <br />
+(7) البصائر و الذخائر  5 /  28    <br />
+القلنسوة   فى لسان العرب :  &quot;   والقَلْسُوَة والقَلْساة والقَلَنْسُوة والقُلَنْسيَة والقَلَنْسَاة والقلْنِـيسَةُ: من ملابس الرُّؤوس  <br />
+لا مَهلَ حتـى تَلْـحَقِـي بعَنْسِ        أَهل الرِّياطِ الِبـيضِ والقَلَنْسِي  . &quot; (1) <br />
+&quot; و قلنسوة  معربة عن الرومى Calantica   و يحتمل أن تكون معربة عن الفارسى كـَـلَّـه بـُوش  ، و هو <br />
+مركب من  كـَلَّه ، أى رأس  ، و من بـُوش  ، أى غطاء . و لعل الأجدر أن يقال  : إن القلنسوة لغة فى  <br />
+القــَـلُّـوسَة كما تقول العامة  ، و أن القلوسة  مأخوذة عن الفرنسى Calotte  و عن الفارسى  كُــلاَه . &quot; (2) <br />
+و قد وردت اللفظة عند أبى حيان التوحيدى  بصيغة المفرد و هى تدل على مايلبس على الرأس  و شاهد ذلك قوله : &quot; قيل لماجن : جُبَّة نَـقْـد أحب إليك  أم قـَـلـَنْسـَوَة نسيئة ؟ فقال : ضرطة نقد أحب إلىّ من لحاف نسيئة . &quot; (3) <br />
+كما وردت اللفظة بصيغة الجمع  ، و شاهد ذلك قوله : &quot;  قصد قوم  وليمة فقال رئيسهم : اللهم لا تجعل البواب لكـَّـازا فى الصدور  ، دفـَّـاعا فى الطهور  ،  طـَّـراحا  للقلانس  . &quot; (4)<br />
+القـَميص  فى لسان العرب  :  &quot;  : القميص الذي يلبس معروف مذكر، وقد يُعْنى به الدرع فـيؤنث؛ وأَنثه جرير حين أَراد به الدرع فقال:<br />
+تَدْعُو هوازنَ والقميصُ مُفاضةٌ         تَـحْتَ النّطاقِ، تُشَدُّ بالأَزرارِ <br />
+ـــــــــــــــ  ـــــــــــــــ  ــــــــ<br />
+(1)  لسان العرب  ( قلس )  11  / 456  <br />
+وانظر ألفاظ الحضارة فى القرن الرابع الهجرى  ص 272  <br />
+(2) الألفاظ الفارسية المعربة  ص 128<br />
+وانظر الألفاظ الأعجمية  فى  الأمثال العربية القديمة  ص 93   <br />
+(3) البصائر و الذخائر  4 / 50  <br />
+(4) المرجع السابق  8 /  20 <br />
+والـجمع أَقْمِصَة وقُمُصٌ وقُمْصانٌ   ......   . وروى ابن الأَعرابـي عن عثمان أَن النبـي صلـى الله علـيه وسلـم، قال له: إِن الله سَيُقَمِّصُك قميصاً وإِنك سَتُلاصُ علـى خَـلْعِهِ فإِياك وخَـلْعَه، قال: أَراد بالقميص الـخلافة فـي هذا الـحديث وهو من أَحسن الاستعارات . &quot; (1) ، و &quot;  القميص  : الجلباب  &quot; (2)          &quot; و القميص : الشعار تحت الدثار .. و لباس  رقيق يرتدى تحت السترة  . &quot; (3) <br />
+و قد وردت اللفظة عند أبى حيان التوحيدى بصيغة المفرد وهى تدل على المعنى السابق و شاهد ذلك قوله : &quot;  قالت امرأة  الغاضرى ، و قد قطع لها قميصا  : ما أخشن هذا القميص !!  قال لها : أهذا أخشن أم الطلاق  ؟ قالت : بل الطلاق  . &quot; (4)<br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد الموصوف و شاهد ذلك قوله فى القميص الخلق :        &quot;  القميص المقرون ، هو  الخلق الذى فى كتفيه رقعتان أجود منه ، فهما تـُـفـْـصِحان بيانا . &quot;(5) و مثله أيضا قوله : &quot;  خلصنى أيها الرجل من التـّـكـفـّف ، أنقذنى من لُبس الفقر ...  إلى متى الكـُـسَيْرة اليابسة ، و البُقيلة الذاوية ،  و القميص المرقع . &quot; (6)<br />
+كما ورد عند أبى حيان ذكر لطول القميص و قصره و شاهد ذلك قوله : &quot; و قال ابن عيـّاش المنتوف لأبى شاكر بن هشام بن عبد المللك :  لو قصَّرتَ قَميصَكَ ، قال له : ما يضرك من طُوله . قال : تدوسه فى الطّين ، قال و ما يَنْفَعَكَ من دَوْسِه . &quot; (7) <br />
+ـــــــــــــــ  ـــــــــــــــ  ــــــــــ<br />
+(1) لسان العرب ( قمص ) 11 / 358 <br />
+(2) عبد الفتاح الصعيدى   ـــ  الإفصاح فى  فقه اللغة  <br />
+دار الكتب العلمية ـــ  بيروت ـــ  ط 1  ـــ   1987  ــــ   ص 168 <br />
+(3) المعجم  الوسيط  ( قمص ) 2 / 788  <br />
+وانظر ألفاظ الحضارة  فى القرن الرابع الهجرى  ص 271  <br />
+(4) البصائر و الذخائر 8 /  185  <br />
+(5) الإمتاع  و المؤانسة  2 / 58 <br />
+(6) المرجع السابق  3 /  226ــ227  <br />
+(7) الإمتاع و المؤانسة  3  /  172  <br />
+القـِنَاع  ذكر أبو حيان أنّ &quot; القناع : خمار المرأة  ، و هو ما تـتـقـنـَّـعُ به المرأة &quot; (1) و قد وافق ذلك ما جاء فى لسان العرب  : &quot; والقِناعُ  : ما تَتَقَنَّعُ به الـمرأَةُ من ثوب تُغَطِّي رأْسَها ومـحاسِنَها. وأَلقـى عن وجْهه قِناعَ الـحياء، علـى الـمثل. وقَنَّعه الشيبُ خِمارَه إِذا علاه الشيبُ؛ وقال الأَعشى:<br />
+وقَنَّعَه الشيبُ منه خِمارا<br />
+وربما سموا الشيب قِناعاً لكونه موضعَ القِناعِ من الرأْس؛ أَنشد ثعلب  :<br />
+حتـى اكُتَسى الرأْسُ قِناعاً أَشْهَبا          أَمْلَـحَ لا آذى ولا مُـحَبَّبا  . &quot; (2)<br />
+اللِبْسة   فى لسان العرب : &quot; وإِنه لـحسَنُ اللِّبْسَة واللِّباس. واللِّبْسَةُ: حالة من حالات اللُّبْس؛ ولَبِستُ الثوب لَبْسَةً واحدة. وفـي الـحديث: أَنه نهى عن لِبْسَتَـيْن، هي بكسر اللام، الهيئة والـحالة، وروي بالضم علـى الـمصدر . &quot; (3)<br />
+و قد وردت اللفظة عند ابى حيان التوحيدى بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلك قوله : &quot;  و أنت غِـرٌ  لا هيئة لك فى لقاء الكبراء ، و محاورة الوزراء  ؛ و هذه حال تحتاج فيها إلى عادة غير عادتك ، و إلى مِران سوى مرانك  ، و لِـبْسة لا تشبه لِبـْستك . &quot; (4)<br />
+اللـَّــبوس  فى لسان العرب  : &quot;  واللَّبُوس: ما يُلبس  ، وأَنشد ابن السكيت لِبَـيْهَس الفزاري  ، فقال:<br />
+ألْبَسْ لِكُلِّ حَالَة لَبُوسَها            إِمَّا نعِيمَها وإِمَّا بُوسَهَا <br />
+واللَّبُوس: الثـياب  والسَّلاح، مُذكَّر، فإِن ذهبت به إِلـى الدِّرْع أَنَّثْتَ. وقال الله تعالـى: {وعلَّـمناه صَنْعَة لَبُوس لكم} قالوا: هي الدِّرْعُ تُلبَس فـي الـحروب. &quot; (5) <br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــ<br />
+(1) البصائر و الذخائر  1 / 105<br />
+(2) لسان العرب ( قنع ) 11 / 365 <br />
+(3) المرجع السابق  ( لبس )  12 /  487 <br />
+(4) الإمتاع و المؤانسة  1 / 6 ـــ 7 <br />
+(5) لسان العرب  ( لبس )  12 /  587 <br />
+و قد وردت اللفظة عند أبى حيان التوحيدى بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلك قوله : &quot; لـِمَ لا تـُداخل صاحب الديوان  و لِمَ  تَرْضَى  لنفسك بهذا اللـّبوس ؟  فقلتُ : أنا رجل حبُّ السلامة غالب علىّ ، و القناعة بالطفيف محبوبة عندى . &quot;(1) <br />
+اللـِّـحاف  فى لسان العرب : &quot;   اللِّـحاف والـملْـحفُ والـملْـحفة: اللِّباس الذي فوق سائر اللباس من دِثار البرد ونـحوه؛ وكل شيء تغطَّيت به فقد التَـحَفْت به. واللِّـحاف: اسم ما يْلْتَـحف به. وروي عن عائشة أَنها قالت: كان النبـيصلى الله عليه وسلم لا يصلـي فـي شُعُرِنا ولا فـي لُـحْفِنا؛ قال أَبو عبـيد: اللِّـحاف كلُّ ما تغطَّيت به. ولَـحَفْت الرَّجل أَلْـحَفُه. إِذا فعلْت به ذلك يعنـي إِذا غطَّيته؛ وقول طرَفة:<br />
+ثم راحوُا عَبِقَ الـمِسْكُ بهم           يَلْـحَفُون الأَرض هُدَّابَ الأُزُرْ<br />
+أَي يُغَطُّونها ويُلْبِسونها هدّابَ أُزُرهم إِذا جرَّوها فـي الأَرض. قال الأَزهري: ويقال لذلك الثوب لِـحاف ومِلْـحف بمـعنى واحد كما يقال إِزار ومِئْزرَ وقِرام ومِقْرَم، قال: وقد يقال مِلْـحفة ومِقْرمة وسواء كان الثوب سِمْطاً أَو مُبَطَّناً، ويقال له لِـحاف.  &quot; (2) <br />
+و قد وردت اللفظة عند أبى حيان التوحيدى بصيغة المفرد و هى تدل المعنى السابق و شاهد ذلك         قوله : &quot; قيل لماجن : جُبَّة نَـقْـد أحب إليك  أم قـَـلـَنْسـَوَة نسيئة ؟ فقال : ضرطة نقد أحب إلىّ من لحاف نسيئة . &quot; (3) <br />
+المِـئْـزر فى لسان العرب :  &quot;  وفـي حديث الاعتكاف: كان إِذا دخـل العشرُ الأَواخرُ أَيقظ أَهله وشَدَّ الـمئْزَرَ، الـمئزَرُ: الإِزار وكنى بشدّه عن اعتزال النساء، وقـيل: أَراد تشميره للعبادة. &quot; (4)<br />
+ـــــــــــــــ  ـــــــــــــــ  ــــــــــ<br />
+(1) الإمتاع و المؤانسة 1 / 104   <br />
+(2) لسان العرب (  لحف ) 12 /  548  <br />
+(3) البصائر و الذخائر  4  /  50  <br />
+(4) لسان العرب  ( أزر  ) 1 /562  <br />
+و قد  وردت  اللفظة عند أبى حيان التوحيدى بصيغة المفرد و هى تدل هلى المعنى السابق و شاهد ذلك قوله : &quot;  و شتم آخر فقال :  يا رأس الأفعى  ...  و يا  كوة الباب  ، و يا قميصا بلا  مئزر ، و يا جسرا بلا   نهر  . &quot; (1)  <br />
+المِدْرعة  فى لسان العرب  : &quot;  الـمِدْرَعُ: ضرب من الثـياب التـي تُلْبَس، وقـيل:                     جُبَّة مشقوقة الـمُقَدَّم. والـمِدْرعةُ: ضرب آخر ولا تكون إِلاَّ من الصوف خاصة  . &quot; (2)<br />
+و قد وردت اللفظة عند أبى حيان التوحيدى بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلك قوله :  &quot;  قال عُمَر  و هو بمكة :  لقد كنت أرعى إبل الخطاب بهذا الوادى فى مِـدْرعة صوف ، و كان فظَّـاً، يتعبنى إذا عملت ، و يضربنى إذا قصَّرت .  &quot;  (3) <br />
+المـِـْرط   فى لسان العرب  : &quot;  الـمِرْطُ كِساء من خَزّ أَو صُوف أَو كتّان ، وقـيل: هو الثوب الأَخضر، وجمعه مُرُوطٌ. وفـي الـحديث: أَنه صلى الله عليه وسلم كان يصلـي فـي مُرُوط نسائه أَي أَكْسِيَتِهِنّ، الواحد مِرْط يكون من صوف، وربما كان من خز أَو غيره يؤتَزر به. وفـي الـحديث: أَن النبـي، صلى الله عليه وسلم كان يُغَلِّس بالفجر فـينصرف النساء مُتَلَفِّعات بـمُروطهنّ ما يُعرفْن من الغَلَس؛ وقال الـحكم الـخُضْري:<br />
+تَسَاهَمَ ثَوْباها ففـي الدِّرْعِ رَأْدةٌ               وفـي الـمِرْطِ لَفّاوانِ رِدْفُهما عَبْلُ <br />
+قوله تساهم أَي تَقَارَعَ. والـمِرْط: كل ثوب غير مَخِيط.  &quot; (4) <br />
+ـــــــــــــــ  ـــــــــــــــ  ــــــــ<br />
+(1) الإمتاع و المؤانسة  2 /59   <br />
+(2) لسان العرب  (درع )  4 / 358    <br />
+(3) الإمتاع  و المؤانسة  3 /  1  <br />
+(1) لسان العرب  ( مرط ) 13 / 359   <br />
+و قد وردت اللفظة عند أبى حيان التوحيدى بصيغة المفرد و هى تدل على ما ترتديه المرأة  و شاهد ذلك أن أبا حيان يستعمل اللفظة لتدل على المرأة نفسها و شاهد ذلك قوله : &quot;   و لا طرب الجراحى             أبى الحسن  مع قضائه فى الكرخ .....  فإنه يغمز بالحاجب إذا رأى مـِرْطا ، و أمل أن يقبل خدَّا              و قـُـرْطا . &quot;(1)<br />
+المُـَرقــَّعـَ  ة  فى لسان العرب  : &quot;  : رقَع الثوبَ والأَديم بالرِّقاع يَرْقَعُه رَقْعاً و رَقَّعَه: أَلـحَمَ خَرْقه، ..... والرُّقْعةُ: ما رُقِع به، وجمعها رُقَعٌ ورِقاعٌ ...  والرُّقْعة: الـخِرْقة . &quot; (2)  و  &quot;  رقع الراء والقاف والعين أصلٌ يدلُّ على سَدِّ خَلَلٍ بشيء. يقال رقَعْتُ الثَّوْبَ رَقْعاً، والخِرْقَة رُقْعة، فأمّا قولُهم لواهي العقلِ: رقيعٌ، فكأنّه قد رُقِعَ لأنّه لا يُرْقَع إلاّ الواهي الخَلَق.  &quot; (3) هذا و لكن لفظة ( المُـَرقـَّعـَة  ) لم ترد فى اللسان و قد وردت اللفظة فى روايات تدل على الثوب الخلق المرقع وشاهد ذلك : &quot;  قال عمر: هذا لكم من أمرائكم غير ما يأتيكم مني من بيت مال المسلمين، فان قطعت عنكم أمراؤكم فأمروني حتى أعزلهم عنكم، ثم أمرهم بالرحيل، فلما هم بالركوب على بعيره وعليه مرقعة من صوف وفيها أربع عشرة رقعة بعضها من أدم  &quot; (4) و المرقعة من لباس الصوفية  ؛ يدل على ذلك : &quot; ووصل في هذا اليوم امرأة سليمان شاه بنت خوارزم شاه وكانت قد أصلحت بين ملك شاه وبين الامراء جميعهم في همذان وجاءت على التجريد في زي الحاج الصوفية الى الموصل وعليها مرقعة وفي رجليها طرسوس . &quot; (5)<br />
+و قد وردت اللفظة عند أبى حيان التوحيدى بصيغة المفرد و هى تدل على الثياب المرقعة التى يرتديها الفقراء من الناس و شاهد ذلك قوله : &quot;  : &quot; و الله الذى لا إله إلا هو  ما كان بينى و بينه ما يقتضى هذا<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــ<br />
+(1) الإمتاع و المؤانسة  2 /  168  <br />
+(2) لسان العرب  ( رقع )  5 / 658 <br />
+(3) مقاييس  اللغة ص 365<br />
+(4) الواقدى   ــــ  فتوح الشام <br />
+دار الكتب العلمية  ــــ  بيروت  ــــ  1997  ــــ   ص 277 <br />
+(5) أبو الفرج بن الحوزى  ـــ  المنتظم فى  تاريخ الملوك و الأمم <br />
+دار الكتب العلمية  ـــ  بيروت  ــــ 1985 ـــ  5 /125      <br />
+الأنس  و هذا الاسترسال ....  و إنما ركنت إليه لمرقـَّعـَتـِه  و تاسومته  عندما كنت رأيته  عند صاحبه بالرى  . &quot; (1)<br />
+كما وردت فى مكان آخر تدل على المعنى نفسه و قد استعملها أبو حيان ليدل على التواضع و البعد عن التكبر و العظمة و شاهد ذلك قول أبى حيان على لسان أبن عباد :   &quot;  تقدم يا أخى  ! و تكلم  و استأنس ، و اقترح  ، و انبسط  ، و لا تـُرَع و احسبنى فى جوف مرقعة  ، و لا يهولك  ....  هذا  الطاق  و الرواق ، و هذه المجالس   و الطنافس  فإن سلطان العلم فوق سلطان الولاية  . &quot;  (2)<br />
+المِطْرَف   فى لسان العرب  :  &quot;   والـمِطْرَفُ والـمُطْرَفُ: واحد الـمَطَارِفِ  ،  وهي أَرْدِية من خز مُرَبَّعة لها أَعْلام، وقـيل: ثوب مربع من خزّ له أَعلام. الفراء: الـمِطْرَفُ من الثـياب ما جعل فـي طَرَفَـيْه عَلَـمانِ، والأَصل مُطرَف، بالضم، فكسروا الـميم لـيكون أَخف كما قالوا مِغْزَلوأَصله مُغْزَل، من أُغْزِلَ أَي أُدير، وكذلك الـمِصْحَفُ والـمِـجْسَد؛ وقال الفراء: أَصله الضم لأَنه فـي الـمعنى مأْخوذ من أُطرِفَ أَي جُعل فـي طرَفه العَلَـمان، ولكنهم اسْتَثْقَلوا الضمة فكسروه. وفـي الـحديث: رأَيت علـى أَبـي هريرة، رضي الله عنه، مِطْرَفَ خَزَ . &quot; (3)<br />
+و قد وردت اللفظة عند أبى حيان التوحيدى   بصيغة التضام تحمل المعنى السابق ( ثوب من الحرير له أعلام  ) و شاهد ذلك قوله : &quot;  اختصم رجلان إلى إياس  بن معاوية  فى مـِطْرَفِ خـَـزِّ ، وادعى كل واحد منهما المطرف  ، فدعا إياس بمشط وماء فبَلّّ رأس كلِّ واحد منهما و سرح شعره ، فخرج المشط  و عليه غَفَرُ المطرف ، فدفع المطرف إلى صاحبه . &quot; (4)<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــ<br />
+(1) الإمتاع و المؤانسة  1  /   51  <br />
+(2) أخلاق الوزيرين   ص 111  <br />
+(3) لسان العرب ( طرف ) 8 /  569   <br />
+(4) البصائر و الذخائر  5 / 122 – 113<br />
+المِـنْـديل   فى لسان العرب  :  &quot;  الـمِنْدِيلُ والـمَنْدِيلُ نادر والـمِنْدَل، كله: الذي يُتَمَسَّح به، قـيل: هو من النَّدْل الذي هو الوسخ، وقـيل: إِنما اشتقاقه من النَّدْل الذي هو التناول؛ قال اللـيث: النَّدْل كأَنه الوسخ من غير استعمال فـي العربـية، وقد تَنَدَّل به وتَمَنْدَل؛ قال أَبو عبـيد: وأَنكر الكسائي تَمَنْدَل. وتَنَدَّلْت بالـمِنْدِيل وتَمَنْدَلْت أَي تمسَّحت به من أَثر الوَضوء أَو الطَّهور؛ قال: والـمِنْدِيلُ، علـى تقديرِ مفْعِيل، اسم لـما يمسَح به .  ”  (1) &quot; و المنديل : نسيج من القطن أو الحرير  أو نحوهما  مربع الشكل يمسح به العرق  أو الماء . &quot; (2)<br />
+و قد وردت اللفظة عند أبى حيان التوحيدى بصيغة المفرد و هى تدل على قطعة كبيرة من القماش توضع فيها الملابس و تـُشـَد  و شاهد ذلك قوله : &quot;  قال نضلة  : اجتزتُ فى درب الزعفران يوما فرأيتُ بين يدىّ جاريتان تتماجنان  و لا تشعران بمكانى ، فضرطتْ إحداهما و قالت : رداء أصبغ الأصل ، وضرطت الأخرى و قالت  : سراويل نيلى  ، و عادت الأولى  فضرطت و قالت : طاق فستقى ، قال نضلة : فضرطتُ  أنا من خلفهما ، فالتفتتْ  واحدة  وقالت : هذا أيشْ ؟  قلتُ : منديل دَبِيقى  يشدُّون فيه الثياب  . &quot; (3) و &quot; دَبيقٌ: بليدة كانت بين الفَرَما وتِنّيس من أعمال مصر، تنسب إليها الثياب الدبيقية، والله أعلم. &quot; (4) <br />
+النَّـعْـل   فى لسان العرب : &quot;  النَّعْل والنَّعْلةُ: ما وَقَـيْت به القدَم من الأَرض ، مؤنثة. وفـي الـحديث: أَن رجلاً شكا إِلـيه رجلاً من الأَنصار فقال:  يا خيرَ من يَمْشي بنَعْلٍ فرْدِ<br />
+قال ابن الأَثـير: النَّعْل مؤنثة وهي التـي تُلبس فـي الـمَشْي تسمَّى الآن تاسُومة، ووصفها بالفرد وهو مذكر <br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــ<br />
+(1) لسان العرب  ( ندل )  14 /  475  <br />
+(2) المعجم الوسيط  2 / 948  <br />
+(3) البصائر و الذخائر  1 /  129  <br />
+(4) ياقوت الحموى  ــــ  معحم البلدان <br />
+دار صادر  ــــ  بيروت   ــــ  1986  ـــ  2 / 569<br />
+لأَن تأْنـيثها غير حقـيقـي، والفَرْدُ هي التـي لـم تُـخْصَف ولـم تُطارَق وإِنما هي طاقٌ واحد،            النَّعْل الـحِذاء. &quot; (1) <br />
+و قد  وردت اللفظة عند أبى حيان التوحيدى بصيغة المفرد و هى تدل على الحذاء و شاهد ذلك قوله : <br />
+&quot;  لمّا ذُهِبَ بهُدْبَة ليقتل  انقطع قِـبَال نـَعْـله  فجلس يصلحه فقيل له :  أتصلحُـهُ  و أنت على ما أنت  ؟ فقال  : <br />
+أشدُّ قبال نعلى  أن يرانى        عدوّى للحوادث مستكينا .   &quot; (2)  <br />
+و &quot;  قِبال النعل، بالكسر: زمامها، وقـيل: هو مثل الزِّمام بـين الإِصبع الوسطى والتـي تلـيها وقـيل: هو الزمام الذي يكون فـي الإِصبع الوسطى والتـي تلـيها. &quot; (3) <br />
+النِّـقـَاب   فى لسان العرب : &quot;  قال ابن الأَعرابـي: فلانٌ مَيْمُونُ النَّقِـيبة والنَّقِـيمة أَي اللَّوْنِ ومنه سُمِّيَ نِقابُ الـمرأَة لأَنه يَسْتُر نِقابَها أَي لَوْنَها بلَوْنِ النِّقابِ .... النِّقابُ: القِناع علـى مارِنِ الأَنْفِ، والـجمع نُقُبٌ. وقد تَنَقَّبَتِ الـمرأَةُ، وانْتَقَبَتْ، وإِنها لـحَسَنَة النِّقْبة، بالكسر، والنِّقابُ: نِقابُ الـمرأَة. التهذيب: والنِّقابُ علـى وُجُوهٍ؛ قال الفراء: إِذا أَدْنَتِ الـمرأَةُ نِقابَها إِلـى عَيْنها، فتلك الوَصْوصَةُ، فإِن أَنْزَلْته دون ذلك إِلـى الـمَـحْجِرِ، فهو النِّقابُ، فإِن كان علـى طَرَفِ الأَنْفِ، فهو اللِّفَامُ. وقال أَبو زيد: النِّقابُ علـى مارِنِ الأَنْفِ. وفـي حديث ابن سِيرِين: النِّقاب مُـحْدَثٌ؛ أَراد أَنَّ النساءَ ما كُنَّ يَنْتَقِبْنَ أَي يَخْتَمِرْن؛ قال أَبو عبـيد: لـيس هذا وجه الـحديث، ولكن النِّقابُ، عند العرب، هو الذي يبدو منه مَـحْجِرُ العين، ومعناه أَنَّ إِبداءَهنَّ الـمَـحَاجِرَ مُـحْدَثٌ، إِنما كان النِّقابُ لاحِقاً بالعين، وكانت تَبْدُو إِحدى العينـين، والأُخرَى مستورة، والنِّقابُ لا يبدو منه إِلا العينان، وكان اسمه عندهم الوَصْوَصةَ، والبُرْقُعَ، وكان من لباسِ النساءِ، ثم            أَحْدَثْنَ النِّقابَ بعدُ؛ &quot; (4)<br />
+ـــــــــــــــ  ـــــــــــــــ  ــــ<br />
+(1) لسان العرب  ( نعل )  14 / 258 <br />
+(2) البصائر و الذخائر  5 / 15   <br />
+(3) لسان العرب ( قبل ) 11 / 456<br />
+(4) لسان العرب ( نقب )  11 / 651 <br />
+و قد و ردت اللفظة عند أبى حيان التوحيدى بصيغة الجمع و هى تدل على المعنى السابق و شاهد ذلك قوله : &quot;  و كنت قد حدثتنى عن شيخكم الحضرمى أنه قال : النُّـقُـُـبُ كثيرة  و العروس واحدة ، فقد ارتفع التناقض و سقط التنافى . &quot; (1) <br />
+ـــــــــــــــ  ـــــــــــــــ  ــــــــ<br />
+(1) المقابسات     ص  200  <br />
+ثانيا الألفاظ الدالة على الفرش   <br />
+الحَجَلة   فى لسان العرب :  &quot;  الـحَجَلة: مثل القُبَّة. وحَجَلة العروس: معروفة وهي بـيت يُزَيَّن بالثـياب والأسِرَّة والستور؛  قال أَدهم بن الزَّعراء:<br />
+وبالـحَجَل الـمقصور، خَـلْف ظُهورنا            نَوَاشِىءُ كالغِزْلان نُـجْلٌ عُيونُها <br />
+وفـي الـحديث: كان خاتَم النبوة مثل زِرِّ الـحَجَلة، بالتـحريك هو بـيت كالقُبَّة يستر بالثـياب ويكون له أَزرار كبار؛ ومنه حديث الاستئذان: لـيس لبـيوتهم سُتور ولا حِجال؛ ومنه: أعْرُوا النساء يَلْزَمْن الـحِجَال، والـجمع حَجَل وحِجَال  . &quot; (1)<br />
+و قد وردت اللفظة عند أبى حيان التوحيدى بصيغة المفرد و هى تدل على المعنى السابق و شاهد ذلك قوله :  &quot; و جهك هذا الحسن  لا  يبتذل للشحوب ، و لا يُعرَض للفحات الشمس بين الطلوع و الغروب  ، أنت يجب أن تكون فى بِذْلة بين حَجَلة و كِلّةٍ ، تزاح بك العلة . &quot; (2)<br />
+الحَشيَّة  فى لسان العرب  :   &quot; الـحَشِيَّةُ: مِرْفَقة أَو مِصْدَغة أَو نـحوُها تُعَظِّم بها الـمرأَة بدنها أَو عجيزتها لتُظَنَّ  مُبَدَّنَةً أَو عَجْزاء   …..  الـحَشِيَّةُ: الفِراشُ الـمَـحْشُوُّ. وفـي حديث علـيّ: من يَعْذِرُنـي من هؤلاء الضَّياطِرةِ يَتَـخَـلَّفُ أَحدُهم يَتَقَلَّبُ علـى حَشاياهُ أَي علـى فَرْشِه، واحدتُها حَشِيّة، بالتشديد. ومنه حديث عمروبن العاص: لـيس أَخو الـحرب من يَضَعُ خُورَ الـحَشايا عن يمينه وشماله. &quot; (3)<br />
+و قد وردت اللفظة عند أبى حيان التوحيدى بصيغة المفرد و هى تدل على الفراش المحشو  و شاهد ذلك قوله   &quot;  و عنده أن الجاهل إذا لبس الثوب الناعم   و أكل الخبز الحُوّارى  و ركب الجواد   و تقلب على <br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــ<br />
+(1) لسان العرب  ( حجل ) 3 / 654 <br />
+(2) أخلاق الوزيرين  ص 104 <br />
+(3) لسان العرب  ( حشو ) 3  258  <br />
+الحشية  و شرب الرحيق  و باشر الحسناء   هو أشرف من العالم  إذا لبس الأطمار و طعم العشب        و شرب  الماء القراح  &quot; (1)<br />
+الحَصير   فى لسان العرب  &quot;  الـحَصِيرُ: الطريق، والـجمع حُصُرٌ؛ عن ابن الأَعرابـي؛ وأَنشد:<br />
+لـما رأَيتُ فِجاجَ البِـيدِ قد  وَضَحَتْ            ولاحَ من نُـجُدٍ عادِيَّةٌ حُصُرُ <br />
+نُـجُدٌ: جمع نَـجْدٍ كَسَحْلٍ وسُحُلٍ. وعادية: قديمة. وحَصَرَ الشيءَ يَحْصُرُه حَصْراً: استوعبه. والـحَصِيرُ: وجه الأَرض،والـجمع أَحْصِرَةٌ وحُصُر. والـحَصِيرُ: سَقـيفة تُصنع من بَرْدِيَ وأَسَلٍ ثم تفرش، سمي بذلك لأَنه يلـي وجه الأَرض، وقـيل: الـحَصِيرُ الـمنسوجُ، سمي حَصِيراً لأَنه حُصِرَتْ طاقته بعضها مع بعض.. وفـي الـحديث: أَفضلُ الـجهاد وأَكملُه حجٌّ مَبْرُورٌ ثم لزومُ الـحَصِيرِ؛ وفـي رواية أَنه قال لأَزواجه هذه ثم قال لزومُ الـحُصُرِ أَي أَنكنَّ لا تَعُدْنَ تـخرجن من بـيوتكنّ وتلزمن الـحُصُر؛ هو جمع الـحَصِير الذي يبسط فـي البـيوت، وتضم الصاد وتسكن تـخفـيفا  ً؛     وقول أَبـي ذؤيب يصف ماء مزج به خمر:<br />
+تَـحَدَّرَ عن شاهِقٍ كالـحَصِيـ ـرِ             مُسْتَقْبِلَ الريحِ، والفَـيْءُ قَرّ <br />
+يقول :  تَنَزَّلَ الـماءُ من جبل شاهق له طرائق كشُطَب الـحصير.  والـحَصِيرُ: البِساطُ الصغير من    النبات. &quot; (2)<br />
+و قد وردت اللفظة عند أبى حيان التوحيدى بصيغة المفرد  و هى تدل على سَقـيفة تُصنع من بَرْدِيَ وأَسَلٍ ثم تفرش أو  البِساطُ الصغير من  النبات. و شاهد ذلك قوله  &quot;  قال  الأصمعى  دخلت على الخليل  و هو جالس على حصير صغير  فقال تعالى و اجلس  فقلت  أضيق عليك  فقال مه  فإن الدنيا بأسرها لا تسع متباغضين   و إن شبرا فى شبر  يسع متحابين   &quot; ( 3)<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــــــــــ  ـــــ<br />
+(1)	الإمتاع و المؤانسة  1 - 354 <br />
+(2)	لسان العرب  ( حصر )  3 – 459  <br />
+(3)	الصداقة و الصديق   ص 64  <br />
+الرَّوَاق  فى لسان العرب  : &quot;  الرِّواقُ سَقْفٌ فـي مقدَّم البـيت  ؛  والرِّواق سِتْر يُمدّ دون السقف. يقال: بـيت مُرَوَّقٌ؛ ومنه قول الأَعشى:<br />
+فظَلَّتْ لَدَيْهِم فـي خِباءٍ مُرَوَّقِ<br />
+قال ابن بري: بـيت الأَعشى هو قوله:<br />
+وقد أَقْطَعُ اللـيلَ الطويلَ بفتْـيةٍ             مَسَامِيحَ تُسْقَـى، والـخِباءُ مُرَوَّقُ <br />
+وقال بعضهم: رواق البـيت مُقدَّمه. ابن سيده. رِواقا اللـيل مقدمه وجَوانِبُه 0 &quot; (1)ٍ <br />
+و قد وردت اللفظة عند أبى حيان التوحيدى بصيغة المفرد و هى تدل على المعنى السابق و إن كان وجود الطاق يعد من مظاهر العظمة  و شاهد ذلك قوله  :  &quot;  تقدم يا أخى  ! و تكلم  و استأنس ،         و اقترح  ، و انبسط  ، و لا تـُرَع و احسبنى فى جوف مرقعة  ، و لا يهولك  هذا  الخدم و الحشم  ،       و هذه الغاشية و الحاشية  ، و هذه المرتبة و المِـسطَبة ، و  هذا  الطاق  و الرواق ، و هذه المجالس      و الطنافس . &quot; (2)<br />
+الطـَّنَافِس  فى القاموس المحيط &quot;  الطَّنْفَسَةُ، مُثَلَّثَةَ الطاءِ والفاءِ، وبكسر الطاءِ وفتح الفاءِ، وبالعَكْسِ: واحِدَةُ الطَّنافِس للبُسْطِ والثيابِ، والحَصيرُ من سَعَفٍ عَرْضُهُ ذِراعٌ. &quot; (3)<br />
+&quot; والطُّنْفُسة، بضم الفاء؛ الأَخيرة عن كراع: النُّمْرُقَة فوق الرحل، وجمعها طَنَافِسُ؛ وقـيل: هي البِساط الذي له خَمْلٌ رقـيق 0 &quot; (4)ٍ و &quot; يقولون  : طـَـنفَسة ، و الأجود  طِـنفسة  ، بكسر الطاء  &quot; (5)<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــ<br />
+(1) لسان العرب  ( روق )   5   /  657<br />
+(2) أخلاق الوزيرين  ص 111 <br />
+(3) القاموس المحيط  ( طنفس )  2 / 715 <br />
+(4) لسان العرب  ( طنفس )   8  / 487  <br />
+(4)	أدب الكاتب  ص 424 <br />
+و قد وردت اللفظة فى كتب المعربات حيث نجد &quot; طـِنفسة  أى بساط  ــــ فى اللاتينية  معناه غطاء يفرش 0 &quot; (1) و &quot; الطنفسة مشتقة من تََنفسَة  أو تََنبسة بالفارسية لا بل يحتمل أن اليونانى أيضا مأخوذ من الفارسى لأن الطنافس من مصوغات فارس و هى مركبة من  تَن  أى جسد   و من باس أى        حفظ  &quot; (2)ٍ<br />
+و قد وردت اللفظة عند أبى حيان التوحيدى بصيغة الجمع و هى تدل على المعنى السابق و شاهد ذلك قوله  :  &quot;  تقدم يا أخى  ! و تكلم  و استأنس ،   و اقترح  ، و انبسط  ، و لا تـُرَع و احسبنى فى جوف مرقعة  ، و لا يهولك  هذا  الخدم و الحشم  ،  و هذه الغاشية و الحاشية  ، و هذه المرتبة و المِـسطَبة ،   و  هذا  الطاق  و الرواق ، و هذه المجالس   و الطنافس . فإن سلطان العلم فوق  سلطان الولاية  &quot; (3)ٍ<br />
+الكِـلَّة  فى لسان العرب  : &quot;  الكُلَّة: الصَّوْقَعة، وهي صُوفة حمراء فـي رأْس الهَوْدَج. وجاء فـي الـحديث: نَهَى عن تَقْصِيص القُبور وتَكْلِـيلها ؛ قـيل: التَّكْلِـيل رفعُها تبنى مثل الكِلَل، وهي الصَّوامع والقِباب التـي تبنى علـى القبور، وقـيل: هو ضَرْب الكِلَّة علـيها وهي سِتْر مربَّع يضرَب علـى القبور، وقال أَبو عبـيد: الكِلَّة من السُّتور ما خِيطَ فصار كالبـيت؛ وأَنشد:<br />
+من كُلِّ مَـحْفوفٍ يُظِلُّ عِصِيَّهُ          زَوْجٌ علـيه كِلَّةٌ وقِرامُها <br />
+والكِلَّة: السِّتر الرقـيق يُخاط كالبـيت يُتَوَقّـى فـيه من البَقِّ، وفـي الـمـحكم: الكِلَّة السِّتر الرقـيق، قال: والكِلَّة غِشاءٌ من ثوب رقـيق يُتَوقَّـى به من البَعُوض  0 &quot; (4)ٍ<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــــ<br />
+(1) تفسير الألفاظ الدخيلة   ص  47 <br />
+(2) الألفاظ الفارسية المعربة  ص 11456<br />
+و انظر الألفاظ الأعجمية فى الأمثال العربية القديمة  ص 92<br />
+(3) أخلاق الوزيرين   ص 111 <br />
+(4) لسان  العرب  ( كلل  )  12  /  328  <br />
+وانظر  ألفاظ الحضارة  فى القرن الرابع   ص 290<br />
+و قد وردت اللفظة عند أبى حيان التوحيدى  بصيغة المفرد و هى تدل على الستر الرقيق  و شاهد ذلك قوله  :  &quot; وجهك هذا الحسن لا يـُـبْـتـَـذل للشحوب ، و لا يُعرَض للفحات الشمس بين الطلوع و الغروب ، أنت يجب أن تكون فى  بـِــذ ْلة  بين  حَجَلة و كِلّة  ، تـُزاح بك العلّة . &quot;  (1) <br />
+المِسطَـَبـَة   فى لسان العرب  : &quot;  سطب ابن الأَعرابـي  :  الـمَساطِبُ سَنَادينُ الـحَدّادينَ 0<br />
+أبو زيد هي الـمَسْطَبةُ الـمِسْطَبة وهي الـمَـجَرَّة  ،  ويقال للدُّكَّانِ يَقْعُدُ الناسُ علـيه مَسْطَبة قال سمعت ذلك من العرب  &quot; (2) <br />
+و قد وردت اللفظة عند أبى حيان بصيغة المفرد و هى تدل على الدكة  التى تبنى ليجلس عليها و شاهد ذلك قوله :    &quot;  تقدم يا أخى  ! و تكلم  و استأنس ، و اقترح  ، و انبسط  ، و لا تـُرَع و احسبنى فى جوف مرقعة  ، و لا يهولك  هذا الحشم و الخدم  ، و هذه الغاشية و الحاشية  ، و هذه المرتبة و المِسطـَبَة   و هذا  الطاق  و الرواق ، و هذه المجالس   و الطنافس  فإن سلطان العلم فوق سلطان الولاية  . &quot; (3)<br />
+ـــــــــــــــ  ـــــــــــــــ  ـــــــ<br />
+(1) أخلاق الوزيرين   ص 104<br />
+(2) لسان العرب  ( سطب  )  6 /  659<br />
+(3) أخلاق الوزيرين  ص 111
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_42509" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_42509" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=42509" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_42509" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_42540">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2007-08-16,&nbsp;<span class="time">08:42 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post42540" href="showthread.php?t=6031&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=42540#post42540" class="postcounter">#4</a><a id="postcount42540" name="4"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=80&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="أبو مالك العوضي غير متواجد حالياً"><strong>أبو مالك العوضي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=80&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=80&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو مالك العوضي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						مشرف سابق ومؤسس
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2006</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>7,156</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: ألفاظ الحياة الاجتماعية فى مؤلفات أبى حيان التوحيدى (رسالة ماجستير)
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_42540">
+				<blockquote class="postcontent restore">
+					وفقك الله يا أخي الكريم<br />
+<br />
+الرجاء التكرم بوضع مشاركاتك هنا لتعلقها بموضوع واحد.<br />
+<br />
+وشكرا
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font color="Red">صفحتي في تويتر</font> : <a href="https://twitter.com/#!/AboMalekAlawady" target="_blank" rel="nofollow">أبو مالك العوضي</a></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_42540" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_42540" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=42540" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_42540" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_42738">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2007-08-17,&nbsp;<span class="time">03:14 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post42738" href="showthread.php?t=6031&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=42738#post42738" class="postcounter">#5</a><a id="postcount42738" name="5"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=8044&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ناشد وافى غير متواجد حالياً"><strong>ناشد وافى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=8044&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=8044&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ناشد وافى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>5</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: ألفاظ الحياة الاجتماعية فى مؤلفات أبى حيان التوحيدى (رسالة ماجستير)
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_42738">
+				<blockquote class="postcontent restore">
+					بسم الله الرحمن الرحيم <br />
+السلام عليكم ورحمة الله وبركاته <br />
+شكرا لك ... بارك الله فيك ... <br />
+(ابتسامة)
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_42738" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_42738" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=42738" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_42738" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_43021">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2007-08-18,&nbsp;<span class="time">01:40 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post43021" href="showthread.php?t=6031&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=43021#post43021" class="postcounter">#6</a><a id="postcount43021" name="6"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=80&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="أبو مالك العوضي غير متواجد حالياً"><strong>أبو مالك العوضي</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=80&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=80&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو مالك العوضي غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						مشرف سابق ومؤسس
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Nov 2006</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>7,156</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: ألفاظ الحياة الاجتماعية فى مؤلفات أبى حيان التوحيدى (رسالة ماجستير)
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_43021">
+				<blockquote class="postcontent restore">
+					أخي الكريم<br />
+ليتك تتكرم بإعطائنا نبذة عن كتاب (الإشارات الإلهية) لأبي حيان<br />
+وإن تيسر لك رفعه مصورا فحيهلا
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font color="Red">صفحتي في تويتر</font> : <a href="https://twitter.com/#!/AboMalekAlawady" target="_blank" rel="nofollow">أبو مالك العوضي</a></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_43021" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_43021" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=43021" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_43021" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=6031&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="popupctrl"><span class="ctrlcontainer">مجلس اللغة العربية وعلومها</span></a>
+		<a href="showthread.php?t=6031#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">لوحة التحكم</a></li>
+		<li><a href="private.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الاشتراكات</a></li>
+		<li><a href="online.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=6017&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">ما توجيه قول القائل: إنــا قــائمــا</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=6704&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">فائدة: أبو حيان التوحيدي وأنواع الخطوط العربية.</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D9%81%D9%89">فى</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=6031#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=6031#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">01:55 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

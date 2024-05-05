@@ -1,0 +1,2263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=ec1b4717d08f17a417a70c4e8f25f7a8&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=192046";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="الأسماء, الحسنى, فقه" />
+	<meta name="description" content="فقه الأسماء الحسنى(1) 
+ 
+ منزلة العلم بأسماء الله -تعالى- وصفاته 
+ 
+ 
+ الشيخ عبدالرزاق بن عبدالمحسن البدر" />
+
+	<title> فقه الأسماء الحسنى</title>
+	<link rel="canonical" href="showthread.php?t=192046&s=ec1b4717d08f17a417a70c4e8f25f7a8" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> فقه الأسماء الحسنى</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 5 من 5
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=192046&s=ec1b4717d08f17a417a70c4e8f25f7a8" title="تحديث الصفحة">فقه الأسماء الحسنى</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=192046" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;t=192046&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=addsubscription&amp;t=192046" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;search_type=1&amp;searchthreadid=192046&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="192046" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_963380">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2021-10-12,&nbsp;<span class="time">08:55 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post963380" href="showthread.php?t=192046&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=963380#post963380" class="postcounter">#1</a><a id="postcount963380" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,743</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> فقه الأسماء الحسنى
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_963380">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><b><font color="#ff0000"><font size="6"><span style="font-family: arabic typesetting">فقه الأسماء الحسنى(1)<br />
+<br />
+ </span></font></font><font color="#008000"><font size="6"><span style="font-family: arabic typesetting">منزلة العلم بأسماء الله -تعالى- وصفاته</span></font></font><font color="#ff0000"><font size="6"><span style="font-family: arabic typesetting"><br />
+</span></font></font></b><br />
+<br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font color="#0000ff"><font size="6"> الشيخ عبدالرزاق بن عبدالمحسن البدر</font></font><br />
+</font></span></b><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><br />
+</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300">إنَّ  الفقه في أسماء الله الحسنى باب شريف من العلم، بل هو الفقه الأكبر، وهو  يدخل دخولاً أوَّلياً ومقدماً في قوله[: «من يُرد الله به خيراً يُفقِّهه  في الدين» (متفق عليه)، وهو أشرف ما صرفت فيه الأنفاس، وخير ما سعى في  تحصيله ونيله أولو النُّهَى والرشاد، بل هو الغاية التي تسابق إليها  المتسابقون، والنهاية التي تنافس فيها المتنافسون، وهو عماد السير إلى  الله، والمدخل القويم لنيل محابِّه ورضاه، والصراط المستقيم لكلِّ من  أحبَّه الله واجتباه.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وكما أنَّ لكلِّ بناء أساساً؛ فإنَّ أساس بناء الدِّين الإيمانُ بالله  -سبحانه- وبأسمائه وصفاته، وكلَّما كان هذا الأساس راسخاً حمل البنيان بقوة  وثبات، وسَلِم مِنَ التداعي والسقوط، قال ابن القيِّم -رحمه الله-: من  أراد علوَّ بنيانه؛ فعليه بتوثيق أساسه وإحكامه وشدَّة الاعتناء به؛ فإنَّ  علوَّ البنيان على قدر توثيق الأساس وإحكامه؛ فالأعمال والدرجات بنيانٌ  وأساسها الإيمان، ومتى كان الأساس وثيقاً حمل البنيان واعتلى عليه، وإذا  تهدَّم شيءٌ من البنيان سهل تداركه، وإذا كان الأساس غير وثيق لم يرتفع  البنيان ولم يثبت، وإذا تهدَّم شيء من الأساس سقط البنيان أو كاد.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>تصحيح الأساس وإحكامه</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      فالعارف همَّته تصحيح الأساس وإحكامه، والجاهل يرفع في البناء عن غير  أساس؛ فلا يلبث بنيانه أن يسقط، قال -تعالى-: {أَفَمَنْ أَسَّسَ  بُنْيَانَهُ عَلَى تَقْوَى مِنَ اللَّهِ وَرِضْوَانٍ خَيْرٌ أَمْ مَنْ  أَسَّسَ بُنْيَانَهُ عَلَى شَفَا جُرُفٍ هَارٍ فَانْهَارَ بِهِ فِي نَارِ  جَهَنَّمَ}(التوب  ة: 109)؛ فالأساس لبناء الأعمال كالقوة لبدن الإنسان؛ فإذا  كانت القوة قوية حملت البدن ودفعت كثيراً من الآفات، وإذا كانت القوَّة  ضعيفة ضعف حملها للبدن وكانت الآفات إليه أسرع شيء.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>أساس الإيمان</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      فاحمل بنيانك على قوَّة أساس الإيمان؛ فإذا تشعث شيء من أعالي البناء  وسطحه، كان تداركه أسهل عليك من خراب الأساس، وهذا الأساس أمران: صحَّة  المعرفة بالله وأمره وأسمائه وصفاته، والثاني: تجريد الانقياد له ولرسوله  دون ما سواه؛ فهذا أوثق أساس أسَّس العبدُ عليه بنيانه، وبحسبه يعتلي  البناء ما شاء.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>دلائل القرآن الكريم</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      ولذا كثرت الدلائل في القرآن الكريم المرسِّخةُ لهذا الأساس المثبِّتةُ  لهذا الأصل، بل لا تكاد تخلو آية من آياته من ذكرٍ لأسماء الله الحسنى  وصفاته العليا؛ مما يدل دلالة واضحة على أهميةِ العلم بها والضرورة  الماسَّة لمعرفتها، وكيف لا يتبوَّأ هذه المكانة المنيفة وهو الغاية التي  خُلِق الناسُ لأجلها وأُوجدوا لتحقيقها؛ فالتوحيد الذي خلق الله الخلق  لأجله نوعان:</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">توحيد المعرفة والإثبات، وهو يشمل الإيمان برُبوبية الله والأسماء والصفات.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">وتوحيد الإرادة والطلب، وهو توحيد العبادة.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">دلَّ  على الأوَّل قوله -تعالى-: {اللَّهُ الَّذِي خَلَقَ سَبْعَ سَمَاوَاتٍ  وَمِنَ الْأَرْضِ مِثْلَهُنَّ يَتَنَزَّلُ الْأَمْرُ بَيْنَهُنَّ  لِتَعْلَمُوا أَنَّ اللَّهَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ وَأَنَّ اللَّهَ  قَدْ أَحَاطَ بِكُلِّ شَيْءٍ عِلْمًا}(الطلاق: 12).</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">ودلَّ على الثاني قوله -تعالى-: {وَمَا خَلَقْتُ الْجِنَّ وَالْإِنْسَ إِلَّا لِيَعْبُدُونِ}(ا  لذاريات: 56).</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      في الأولى خَلَق لتعلموا، وفي الثانية خلق لتعبدوا؛ فالتوحيد علم وعمل،  وجاء في القرآن آيات كثيرة فيها الأمر بتعلم هذا العلم الشريف والعناية  بهذا الأصل العظيم، قال الله -تعالى-: {فَاعْلَمُوا أَنَّ اللَّهَ عَزِيزٌ  حَكِيمٌ}(البقرة: 209)، وقال: {فَاعْلَمُوا أَنَّ اللَّهَ عَزِيزٌ  حَكِيمٌ}(البقرة: 231)، وقال: {وَاعْلَمُوا أَنَّ اللَّهَ بِمَا  تَعْمَلُونَ بَصِيرٌ}(البقرة:2  33)، وقال: {وَاعْلَمُوا أَنَّ اللَّهَ  غَفُورٌ حَلِيمٌ}(البقرة: 235)، وقال: {وَاعْلَمُوا أَنَّ اللَّهَ غَفُورٌ  حَلِيمٌ}(البقرة: 244)، وقال: {وَاعْلَمُوا أَنَّ اللَّهَ غَنِيٌّ  حَمِيدٌ}(البقرة: 267)، وقال: {اعْلَمُوا أَنَّ اللَّهَ شَدِيدُ الْعِقَابِ  وَأَنَّ اللَّهَ غَفُورٌ رَحِيمٌ}(المائدة  : 98)، وقال: {فَاعْلَمُوا أَنَّ  اللَّهَ مَوْلَاكُمْ نِعْمَ الْمَوْلَى وَنِعْمَ النَّصِيرُ}(الأن  فال:  40)، وقال: {وَاعْلَمُوا أَنَّ اللَّهَ مَعَ الْمُتَّقِينَ}(ا  لبقرة: 194)،  وقال: {وَاعْلَمُوا أَنَّ اللَّهَ يَعْلَمُ مَا فِي أَنْفُسِكُمْ  فَاحْذَرُوهُ}(ال  بقرة: 235)، وقال: {فَاعْلَمْ أَنَّهُ لَا إِلَهَ إِلَّا  اللَّهُ}(محمد: 19). والآيات في هذا المعنى تقارب الثلاثين آية.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>ذكر الله لأسمائه وصفاته</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وأمَّا ذكر الله لأسمائه وصفاته في القرآن فهو كثير جداً، ولا يقارن به  ذكره -سبحانه- لأيِّ أمر آخر؛ إذ هو أعظم شيء ذُكِر في القرآن وأفضُله  وأرفعُه، قال شيخ الإسلام ابن تيمية -رحمه الله-: والقرآن فيه من ذكر أسماء  الله وصفاته وأفعاله أكثر مما فيه من ذكر الأكل والشرب والنكاح في الجنة،  والآيات المتضمنة لذكر أسماء الله وصفاته أعظمُ قدراً من آيات المعاد؛  فأعظم آية في القرآن آية الكرسي المتضمنة لذلك، كما ثبت ذلك في الحديث  الصحيح الذي رواه مسلم عن النبي صلى الله عليه وسلم، أنه قال لأبيّ بن كعب:  «أتدري أي آية في كتاب الله أعظم؟ قال: {اللَّهُ لَا إِلَهَ إِلَّا هُوَ  الْحَيُّ الْقَيُّومُ}؛ فضرب بيده في صدره وقال: ليهنك العلم أبا المنذر».</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>أفضل سورةٍ</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">     وأفضل سورةٍ سورةُ أمّ القرآن، كما ثبت ذلك في حديث أبي سعيد بن المعلى في الصحيح، قال له النبي صلى الله عليه وسلم :  «إنه لم ينزل في التوراة ولا في الإنجيل ولا في الزَّبور ولا في القرآن  مثلها، وهي السبع المثاني والقرآن العظيم الذي أُوتيتُه»، وفيها من ذكر  أسماء الله وصفاته أعظم مما فيها من ذكر المعاد، وقد ثبت في الصحيح عنه صلى الله عليه وسلم من  غير وجه أن {قُلْ هُوَ اللَّهُ أَحَدٌ} تعدل ثلث القرآن، وثبت في الصحيح  أنه بَشَّر الذي كان يقرؤها ويقول: إني لأحبها؛ لأنها صفة الرحمن: بأن الله  يحبه؛ فبيَّن أن الله يحب من يحب ذكر صفاته -سبحانه وتعالى-، وهذا بابٌ  واسع.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>أصل من أصول الإيمان</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وكل هذا واضح الدلالة على أهمية هذا العلم الشريف وعظم شأنه وكثرة  خيراته وعوائده، وأنه أصل من أصول الإيمان، وركن من أركان الدين، وأساس من  أُسُس ملة الإسلام، عليه تبنى مقامات الدين الرفيعة ومنازله العالية، وكيف  يستقيم أمر البشرية وتصلح حال الناس دون معرفتهم بفاطرهم وبارئهم وخالقهم  ورازقهم، ودون معرفتهم بأسمائه الحسنى وصفاته العليا ونعوته الكاملة الدالة  على كماله وجلاله وعظمته، وأنه المعبود بحق ولا معبود بحق سواه؟ ولكن أكثر  الناس شغلهم ما خُلِق لهم عما خُلِقوا له، وقد حذر الله عباده من ذلك  بقوله: {يَا أَيُّهَا الَّذِينَ آَمَنُوا لَا تُلْهِكُمْ أَمْوَالُكُمْ  وَلَا أَوْلَادُكُمْ عَنْ ذِكْرِ اللَّهِ وَمَنْ يَفْعَلْ ذَلِكَ  فَأُولَئِكَ هُمُ الْخَاسِرُونَ}(ا  لمنافقون: 9)، والله المستعان والموفِّق  لكلِّ خير.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>فضل العلم بأسماء الله -تعالى- وصفاته</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      لا ريب أن العلم بأسماء الله وصفاته أشرف العلوم الشرعية، وأزكى  المقاصد العلية وأعظم الغايات السَّنية؛ لتعلُّقه بأشرف معلوم وهو الله -عز  وجل-؛ فمعرفته -سبحانه- والعلم بأسمائه وصفاته وأفعاله أجل علوم الدين  كلها، وإرادة وجهه أجل المقاصد، وعبادته أشرف الأعمال، والثناءُ عليه  بأسمائه وصفاته ومدحُهُ وتمجيدُه أشرفُ الأقوال، وذلك أساس الحنيفية ملَّة  إبراهيم -عليه السلام-، وهو الدين الذي اجتمع عليه النبيِّون جميعهم، وعليه  اتفقت كلمتهم، وتواطأت مقالتهم، وتوارد نصحهم وبيانهم، بل إنه أحد المحاور  العظيمة التي عليها ترتكز دعوتهم من أولهم إلى خاتمهم محمد -صلوات الله  وسلامه عليهم أجمعين-، أُرسِلوا بالدعوة إلى الله -عزَّ وجل-، وبيان الطريق  الموصل إليه، وبيان حال المدعوين بعد وصولهم إليه؛ فهذه القواعد الثلاث  ضرورية في كل ملة على لسان كل رسول.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>دعوة الرسول صلى الله عليه وسلم</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وفي هذا يقول العلاَّمة ابن القيِّم -رحمه الله-: إن دعوة الرسول تدور  على ثلاثة أمور: تعريف الربِّ المدعو إليه بأسمائه وصفاته وأفعاله، الأصل  الثاني: معرفة الطريقة الموصلة إليه، وهي ذكره وشكره وعبادته التي تجمع  كمال حبّه وكمال الذلّ له، الأصل الثالث: تعريفهم ما لهم بعد الوصول إليه  في دار كرامته من النعيم الذي أفضله وأجله رضاه عنهم وتجلّيه لهم ورؤيتهم  وجهه الأعلى وسلامه عليهم وتكليمه إياهم.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>المطلب العظيم</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">     وقال في شأن بيان خاتم الرسل صلى الله عليه وسلم لهذا  المطلب العظيم: فعرَّف الناس ربهم ومعبودهم غاية ما يمكن أن تناله قواهم  من المعرفة، وأبدى وأعاد، واختصر وأطنب في ذكر أسمائه وصفاته وأفعاله، حتى  تجلَّت معرفته -سبحانه- في قلوب عباده المؤمنين، وانجابت سحائب الشك والريب  عنها كما ينجاب السحاب عن القمر ليلة إبداره، ولم يَدَع لأمَّته حاجة في  هذا التعريف لا إلى من قبله ولا إلى من بعده، بل كفاهم وشفاهم وأغناهم عن  كل من تكلم في هذا الباب {أَوَلَمْ يَكْفِهِمْ أَنَّا أَنْزَلْنَا عَلَيْكَ  الْكِتَابَ يُتْلَى عَلَيْهِمْ إِنَّ فِي ذَلِكَ لَرَحْمَةً وَذِكْرَى  لِقَوْمٍ يُؤْمِنُونَ}(الع  نكبوت: 51)، كيف لا؟ وهو القائل صلى الله عليه وسلم : «قد تركتكم على البيضاء ليلها كنهارها، لا يزيغ عنها بعدي إلاَّ هالك» رواه أحمد وابن ماجه.</font></span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>من الأسس العظام</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وبهذا يدرك المسلم شرف هذا العلم وفضلَه، وأنَّه من الأسس العظام التي  قامت عليها دعوات المرسلين، وأنه السبيل الوحيد لعزِّ العبد ورفعته وصلاحه  في الدنيا والآخرة، وعليه؛ فإن من في قلبه أدنى حياة أو محبة لربه وإرادة  لوجهه وشوق إلى لقائه؛ فطلبه لهذا الباب وحرصه على معرفته وازدياده من  التبصر فيه وسؤاله واستكشافه عنه، هو أكبر مقاصده وأعظم مطالبه وأجل  غاياته، وليست القلوب الصحيحة والنفوس المطمئنَّة إلى شيء من الأشياء أشوق  منها إلى معرفة هذا الأمر، ولا فرحها بشيء أعظم من فرحها بالظفر بمعرفة  الحق فيه”<br />
+</font></span><br />
+<br />
+<br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_963380" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_963380" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=963380" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_963380" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_963381">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2021-10-12,&nbsp;<span class="time">09:01 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post963381" href="showthread.php?t=192046&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=963381#post963381" class="postcounter">#2</a><a id="postcount963381" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,743</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: فقه الأسماء الحسنى
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_963381">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><b><font size="6"><span style="font-family: arabic typesetting"><font color="#996600">فقه الأسماء الحسنى(2) </font><br />
+<br />
+<font color="#999900">معرفة الأسماء والصفات أساس السعادة</font><br />
+</span></font></b><br />
+<br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font size="6"> <font color="#666600">الشيخ عبدالرزاق بن عبدالمحسن البدر</font></font><br />
+</font></span></b><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300">إن  معرفة الله ومعرفة أسمائه الحسنى وصفاته العليا هي غاية مطالب البرية، وهي  أفضل العلوم وأعلاها، وأشرفها وأسماها، وهي الغاية التي شمَّر إليها  المشمرون، وتنافس فيها المتنافسون، وجرى إليها المتسابقون، وإلى نحوها تمتد  الأعناق، وإليها تتجه القلوب الصحيحة بالأشواق، وبها يتحقق للعبد طيب  الحياة؛ «فإن حياة الإنسان بحياة قلبه وروحه، ولا حياة لقلبه إلا بمعرفة  فاطره ومحبته وعبادته وحده والإنابة إليه والطمأنينة بذكره والأُنس بقربه،  ومن فقد هذه الحياة فقد الخير كلَّه، ولو تعوَّض عنها بما تعوض من الدنيا،  بل ليست الدنيا بأجمعها عوضاً عن هذه الحياة؛ فمِن كلِّ شيءٍ يفوت عوضٌ،  وإذا فاته الله لم يُعوِّض عنه شيءٌ البتة».</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>حال أكثر الناس</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      والعجب من حال أكثر الناس «كيف ينقضي الزمان، وينفد العمر، والقلب  محجوبٌ ما شمَّ لهذا رائحة، وخرج من الدنيا كما دخل إليها وما ذاق أطيب ما  فيها، بل عاش فيها عيش البهائم، وانتقل منها انتقال المفاليس؟؛ فكانت  حياتُه عجزاً، وموتُه كمداً، ومعادُه حسرةً وأسفاً»، فيخرج من الحياة وما  ذاق أطيب ما فيها، ويغادر الدنيا وهو محروم من أحسن ملاذها؛ فإن اللذة  التامة والفرح والسرور وطيب العيش والنعيم إنما هو في معرفة الله وتوحيده،  والأنس به والشوق إلى لقائه، وأنكدُ العيش عيشُ قلبٍ مشتت، وفؤاد ممزق ليس  له قصدٌ صحيح يبغيه ولا مسار واضح يتَّجه فيه، تشعبت به الطرق، وتكاثرت  أمامه السبل، وفي كل طريق كبوة، وفي كل سبيل عثرة، حيرانَ يهيم في الأرض لا  يهتدي سبيلاً، ولو تنقل في هذه الدروب ما تنقل لن يحصل لقلبه قرار، ولا  يسكن ولا يطمئن ولا تقر عينُه حتى يطمئنَّ إلى إلهه وربِّه وسيِّده ومولاه،  الذي ليس له من دونه وليٌّ ولا شفيع، ولا غنى له عنه طرفة عين، والأمر كما  قيل:</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300">نقِّل فؤادك حيثُ شئتَ مِن الهوى</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300">                                     ما الحبُّ إلا للحبيبِ الأولِ</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300">كم منزلٍ في الأرض يألفُه الفتى</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300">                                     وحنينُهُ أبداً لأولِ منزِلِ</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>الهم الواحد</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      فمَن حرص على أن يكون همُّه واحدًا وهو الله، وطريقه واحدًا وهو بلوغ  رضاه؛ نال غاية المنى، وحاز مجامع السعادة، إلا أن حال أكثر الخلق في نأي  عن هذا المرام، كما قال بعض السلف: «مساكين أهل الدنيا خرجوا منها وما  ذاقوا أطيب ما فيها، قيل: وما أطيب ما فيها؟ قال: معرفة الله ومحبته والأنس  بقربه والشوق إلى لقائه».</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>السبيل الآمنة</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      فهذه المعرفة والمحبَّة والأنس هي السبيل الآمنة للسائرين والطريق  الرابحة للمستثمرين؛ «فالسير إلى الله من طريق الأسماء والصفات شأنه عجب  وفتحه عجب، صاحبه قد سيقت له السعادة وهو مستلق على فراشه غير تعب ولا  مكدود ولا مشتت عن وطنه ولا مشرد عن سكنه»؛ فلا يزال مترقياً في هذه  المعالي، ماضياً في هذه الطريق إلى أن يبلغ عالي الرتب ورفيع المنازل.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>استحضار معاني الأسماء</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وسبيل هذه المعرفة يكون «باستحضار معاني الأسماء الحسنى وتحصيلها في  القلوب حتى تتأثر القلوب بآثارها ومقتضياتها، وتمتلئ بأجل المعارف؛ فمثلاً  أسماء العظمة والكبرياء والمجد والجلال والهيبة تملأ القلب تعظيماً لله  وإجلالاً له، وأسماء الجمال والبر والإحسان والرحمة والجود تملأ القلب محبة  لله وشوقاً له وحمداً له وشكراً، وأسماء العز والحكمة والعلم والقدرة تملأ  القلب خضوعاً لله وخشوعاً وانكساراً بين يديه، وأسماء العلم والخبرة  والإحاطة والمراقبة والمشاهدة تملأ القلب مراقبة لله في الحركات والسكنات،  وحراسة للخواطر عن الأفكار الردَّية والإرادات الفاسدة، وأسماء الغنى  واللطف تملأ القلب افتقاراً واضطراراً إليه والتفاتاً إليه كل وقت في كل  حال.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      فهذه المعارف التي تحصل للقلوب بسبب معرفة العبد بأسمائه وصفاته وتعبده  بها لله لا يحصِّل العبد في الدنيا أجلّ ولا أفضل ولا أكمل منها، وهي أفضل  العطايا من الله لعبده، وهي رُوح التوحيد ورَوْحُه، ومن انفتح له هذا  الباب انفتح له باب التوحيد الخالص والإيمان الكامل».</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>المعرفة نوعان</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وها هنا ينبغي أن يعلم أن معرفة الله -سبحانه- نوعان: الأول: معرفة  إقرار، وهي التي اشترك فيها الناس البر والفاجر والمطيع والعاصي، والثاني:  معرفة توجب الحياء منه والمحبة له، وتعلق القلب به، والشوق إلى لقائه،  وخشيته، والإنابة إليه، والأنس به، والفرار من الخلق إليه.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>المصدر لكل خير</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وهذه المعرفة هي المصدر لكل خير، والمنبع لكل فضيلة؛ ولهذا فإنَّ طريقة  القرآن في الدعوة إلى الحق والهدى والتحذير من مواطن الهلاك والردى قائمة  على فتح أبواب هذه المعرفة؛ ففي القرآن يذكر -سبحانه- من صفات كماله وعلوه  على عرشه وتكلُّمه وتكليمه وإحاطة علمه ونفوذ مشيئته ما يدعو العباد إلى  لزوم الإخلاص وتحقيق التوحيد والبراءة من اتخاذ الأنداد والشركاء.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>أوصاف كماله</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      ويذكر لهم من أوصاف كماله ونعوت جلاله ما يجلب قلوبهم إلى المبادرة إلى  دعوته، والمسارعة إلى طاعته والتنافس في القرب منه، ولزوم ذكره وشكره وحسن  عبادته، ويذكر صفاته أيضاً عند ترغيبه لهم وترهيبه وتخويفه ليُعرِّف  القلوب من تخافه وترجوه وترغب إليه وترهب منه.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>أحكامه وأوامره</u></font></font></span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      ويذكر صفاته أيضًا عند أحكامه وأوامره ونواهيه ليعظِّم العبادُ أمره  ويلزموا شرعه؛ فقلَّ أن تجد آيةً فيها حكم من أحكام المكلَّفين إلا وهي  مختتمةٌ بصفة من صفاته أو صفتين، وقد يذكر الصفة في أوَّل الآية ووسطها  وآخرها، كقوله: {قَدْ سَمِعَ اللَّهُ قَوْلَ الَّتِي تُجَادِلُكَ فِي  زَوْجِهَا وَتَشْتَكِي إِلَى اللَّهِ وَاللَّهُ يَسْمَعُ تَحَاوُرَكُمَا  إِنَّ اللَّهَ سَمِيعٌ بَصِيرٌ}(المجادل  ة: 1).</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>سؤال عباده لرسوله صلى الله عليه وسلم</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      ويذكر صفاته عند سؤال عباده لرسوله عنه، ويذكرها عند سؤالهم له عن  أحكامه، وأحكامه كلها قائمة لذكر أسماء الرب وصفاته حتى إن الصلاة لا تنعقد  إلا بذكر أسمائه وصفاته، فذكر أسمائه وصفاته رُوحها وسرُّها، يصحبها من  أولها إلى آخرها، وإنما أمر بإقامتها ليُذكر بأسمائه وصفاته، وهكذا الشأن  في الطاعات وأنواع القُرَب جميعها؛ فمعرفة الأسماء والصفات أساس السعادة  والمدخل لكلِّ خير، والتوفيق بيد الله وحده.<br />
+</font></span><span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_963381" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_963381" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=963381" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_963381" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_963382">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2021-10-12,&nbsp;<span class="time">09:10 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post963382" href="showthread.php?t=192046&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=963382#post963382" class="postcounter">#3</a><a id="postcount963382" name="3"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,743</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: فقه الأسماء الحسنى
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_963382">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><b><font color="#996600"><font size="6"><span style="font-family: arabic typesetting">فقه الأسماء الحسنى(3)<br />
+<br />
+ </span></font></font><font color="#669900"><font size="6"><span style="font-family: arabic typesetting">اقتضاء أسماء الله لآثارها من الخلق والتكوين</span></font></font><font color="#996600"><font size="6"><span style="font-family: arabic typesetting"><br />
+</span></font></font></b><br /><br /><b><span style="font-family: arabic typesetting"><font size="5"><font color="#999900"><font size="6"> الشيخ عبدالرزاق بن عبدالمحسن البدر</font></font><br />
+</font></span></b><br /><br /><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300">إن  من أجلّ المقامات وأنفع الأمور التي توجب للعبد الرفعة وتعينه على حسن  المعرفة بالله، وتحقيق محبته ولزوم الثناء عليه، النظر والتأمُّل في اقتضاء  الأسماء الحسنى والصفات العليا لآثارها من الخلق والتكوين، وأن العالم كله  بما فيه من سموات وأرض وشمس وقمر وليل ونهار، وجبال وبحار، وحركات وسكنات؛  كل ذلك من بعض آثارها ومقتضياتها، «فهي كلها تشير إلى الأسماء الحسنى  وحقائقها، وتنادي عليها وتدل عليها، وتخبر بها بلسان النطق والحال.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      فلست ترى شيئًا أدلَّ على شيء من دلالة المخلوقات على صفات خالقها  ونعوت كماله وحقائق أسمائه، وهذا من أجلّ المعارف وأشرفها، وكل اسم من  أسماء الله -سبحانه- له صفة خاصة؛ فإن أسماءه أوصافُ مدحٍ وكمال، وكلّ صفة  لها مُقتضٍ وفعلٌ، إمَّا لازم وإما متعدٍّ؛ ولذلك الفعل تعلق بمفعول هو من  لوازمه، وهذا في خلقه وأمره وثوابه وعقابه، وكل ذلك آثار الأسماء الحسنى  وموجباتُها، ويستحيل تعطيل مفعوله عن أفعاله، وأفعاله عن صفاته، وصفاته عن  أسمائه، وأسمائه وصفاته عن ذاته.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>الإنكارُ على من عطله</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      ولهذا جاء في القرآن الكريم الإنكارُ على من عطله عن أمره ونهيه وثوابه  وعقابه، وأن قائل ذلك نسب الله إلى ما لا يليق به وإلى ما يتنزه عنه، وأن  ذلك حكم سيئ ممن حكم به عليه، وأن من نسبه إلى ذلك فما قدره حقَّ قدره، ولا  عظَّمه حق تعظيمه كما قال -تعالى- في حق منكري النبوة وإرسال الرسل وإنزال  الكتب: {وَمَا قَدَرُوا اللَّهَ حَقَّ قَدْرِهِ إِذْ قَالُوا مَا أَنْزَلَ  اللَّهُ عَلَى بَشَرٍ مِنْ شَيْءٍ} (الأنعام: 91)، وقال -تعالى- في حق  منكري المعاد والثواب والعقاب: (وَمَا قَدَرُوا اللَّهَ حَقَّ قَدْرِهِ  إِذْ قَالُوا مَا أَنْزَلَ اللَّهُ عَلَى بَشَرٍ مِنْ شَيْءٍ} (الزمر: 67)،  وقال في حق من جوَّز عليه التسوية بين المختلفين؛ كالأبرار والفجار  والمؤمنين والكفار: {وَمَا قَدَرُوا اللَّهَ حَقَّ قَدْرِهِ إِذْ قَالُوا  مَا أَنْزَلَ اللَّهُ عَلَى بَشَرٍ مِنْ شَيْءٍ} (الجاثية: 21)؛ فأخبر أن  هذا حكم سيِّء لا يليق به، تأباه أسماؤه وصفاته، وقال -سبحانه-:  {أَفَحَسِبْتُمْ أَنَّمَا خَلَقْنَاكُمْ عَبَثًا وَأَنَّكُمْ إِلَيْنَا لَا  تُرْجَعُونَ (115) فَتَعَالَى اللَّهُ الْمَلِكُ الْحَقُّ لَا إِلَهَ  إِلَّا هُوَ رَبُّ الْعَرْشِ الْكَرِيمِ} (المؤمنون: 115 - 116) أي: عن هذا  الظن والحسبان الذي تأباه أسماؤه وصفاته، ونظائر هذا في القرآن كثيرة؛  ينفي فيها عن نفسه خلاف موجَبِ أسمائه وصفاته؛ إذ ذلك مستلزم تعطيلها عن  كمالها ومقتضياتها.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>أنفع ما يكون للعبد</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وعليه فإن من أنفع ما يكون للعبد في هذا الباب مطالعةَ مقتضيات الأسماء  الحسنى، والتأمل في موجباتها، وحُسنِ دلالتها على كمال مبدعها وعظمة  خالقها، وأنه -سبحانه- أتقنها وأحكمها غاية الإتقان والإحكام {مَا تَرَى  فِي خَلْقِ الرَّحْمَنِ مِنْ تَفَاوُتٍ} (الملك: 3)، وكل اسم من أسماء الله  الحسنى يقتضي آثاره من الخلق والتكوين.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      فاسمه (الحميد المجيد) يمنع ترك الإنسان سدى مهملاً معطلاً لا يُؤمر  ولا يُنهى ولا يثاب ولا يعاقب، وكذلك اسمه (الحكيم) يأبى ذلك، وكذلك اسمه  (الملك)، واسمه (الحي) يمنع أن يكون معطلاً من الفعل، بل حقيقة الحياة  الفعل؛ فكل حيٍّ فعَّال، وكونه -سبحانه- خالقاً قيوماً من موجبات حياته  ومقتضياتها، واسمه (السميع البصير) يوجب مسموعاً ومرئياً، واسمه (الخالق)  يقتضي مخلوقاً، وكذلك (الرزاق)، واسمه (الملك) يقتضي مملكة وتصرُّفاً  وتدبيراً وإعطاءً ومنعاً، وإحساناً وعدلاً، وثواباً وعقاباً، واسم (البرّ  المحسن المعطي المنان) ونحوها تقتضي آثارها وموجباتها، واسم (الغفار التواب  العفو) يقتضي وجود جناية من الأمم تغفر، وتوبة تقبل، وجرائم يعفى عنها،  وهكذا الشأن في أسمائه الحسنى جميعها.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>آثار الأسماء والصفات</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      ومن تأمل في سريان آثار الأسماء والصفات في الأمر والعالم هداه إلى  الإيمان بكمال الرب -سبحانه- في أسمائه الحسنى وصفاته العليا وأفعاله  الحميدة، وأنه -سبحانه- له في كل ما قضاه وقدَّره الحكمة البالغة والآياتُ  الباهرة والتعرفات إلى عباده بأسمائه وصفاته، واستدعاءُ محبتهم له وذكرهم  له وشكرِهم له وتعبدهم له بأسمائه الحسنى.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>كلُّ اسمٍ له تعبد مختص</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">       فكلُّ اسمٍ له تعبد مختص به- علماً ومعرفة وحالاً- ولا يتحقق شيء من  هذا إلا بمثل هذا النظر والتدبر النافع في كل اسم وما يقتضيه، وأكمل الناس  عبودية المتعبد بجميع الأسماء والصفات التي يطلع عليها البشر؛ فلا تحجبه  عبوديةُ اسم عن عبودية اسم آخر، كمن يحجبه التعبد باسمه القدير عن التعبد  باسمه الحليم الرحيم، أو يحجبه عبودية اسمه المعطي عن عبودية اسمه المانع،  أو التعبُّد بأسماء التودد والبر واللطف والإحسان عن أسماء العدل والجبروت  والعظمة والكبرياء ونحو ذلك.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>طريقة الكُمَّل</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وهذه طريقة الكُمَّل من السائرين إلى الله، وهي طريقة مشتقَّة من  القرآن الكريم، قال الله -تعالى-: {وَلِلَّهِ الْأَسْمَاءُ الْحُسْنَى  فَادْعُوهُ بِهَا} (الأعراف: 180)، والدعاء بها يتناول دعاء المسألة ودعاء  الثناء ودعاء التعبد، وهو -سبحانه- يدعو عباده إلى أن يعرفوه بأسمائه  وصفاته، ويثنوا عليه بها ويأخذوا بحظهم من عبوديتها، وهو -جل وعلا- يحبّ  أسماءه وصفاته ويحب ظهور آثارها في خلقه؛ فإن ذلك من لوازم كماله، وفتح  -سبحانه- لعباده أبواب معرفته والتبصر بأسمائه وصفاته، فدعا عباده في  القرآن إلى معرفته من طريقين:</font></span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">- أحدهما: النظر في مفعولاته؛ فإنها أدلُّ شيء على أسمائه وصفاته.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">- والثاني: التفكر في آياته وتدبرها.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">الأول  تفكرٌ في آياته المشهودة، والثاني تدبُّر لآياته المتلوَّة، وكلٌّ منهما  بابٌ واسعٌ في معرفة الربِّ المجيد والإله الحميد، فسبحان من تعرَّف إلى  خلقه بأنواع<br />
+التعرُّفات، ودلهم عليه بأنواع الدلالات، وفتح لهم إليه الطرقات جميعها، ثم  نصب إليه الصراط المستقيم، وعرَّفهم به ودلهم عليه {لِيَهْلِكَ مَنْ  هَلَكَ عَنْ بَيِّنَةٍ وَيَحْيَا مَنْ حَيَّ عَنْ بَيِّنَةٍ وَإِنَّ  اللَّهَ لَسَمِيعٌ عَلِيمٌ} (الأنفال: 42).<br />
+</font></span><br />
+<br />
+<br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_963382" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_963382" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=963382" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_963382" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_963384">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2021-10-12,&nbsp;<span class="time">09:14 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post963384" href="showthread.php?t=192046&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=963384#post963384" class="postcounter">#4</a><a id="postcount963384" name="4"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,743</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: فقه الأسماء الحسنى
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_963384">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><b><font size="6"><span style="font-family: arabic typesetting"><font color="#996600">فقه الأسماء الحسنى(4) </font><br />
+<br />
+<font color="#999900">- اقتضاءُ أسماءِ الله لآثارها مِنَ العُبُوديَّة</font></span><br />
+</font></b><br /><br /><b><font size="6"><font color="#669900"><span style="font-family: arabic typesetting">الشيخ عبدالرزاق بن عبدالمحسن البدر</span></font></font></b><br /><br /><span style="font-family: arabic typesetting"><font size="5"><br />
+                                         </font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><br />
+</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300">إن  أسماء الله الحسنى وصفاته العليا مقتضيةٌ لآثارها من العبودية والأمر  اقتضاءها لآثارها من الخلق والتكوين، وقد مضى الحديث عن اقتضائها لآثارها  من الخلق والتكوين، والحديث هنا في اقتضائها لآثارها من العبودية، كالخضوع،  والذل، والخشوع، والإنابة، والخشية، والرهبة، والمحبة، والتوكل، وغير ذلك  من أنواع العبادات الظاهرة والباطنة؛ فإنَّ كلَّ اسم من أسماء الله وكلَّ  صفة من صفاته له عبودية خاصة هي من مقتضياتها ومن موجبات العلم بها والتحقق  بمعرفتها، وهذا مُطَّرِد في أنواع العبودية جميعها التي على القلب  والجوارح، وبيان ذلك أنَّ العبد إذا علم بتفرُّد الرب -تعالى- بالضر والنفع  والعطاء والمنع والخلق والرزق والإحياء والإماتة؛ فإن ذلك يثمر له  عبوديَّةَ التوكل على الله باطناً ولوازم التوكُّل وثمراته ظاهراً.</font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      قال الله -تعالى-: {وَتَوَكَّلْ عَلَى الْحَيِّ الَّذِي لَا يَمُوتُ  وَسَبِّحْ بِحَمْدِهِ وَكَفَى بِهِ بِذُنُوبِ عِبَادِهِ خَبِيرًا}(الفرقا  ن:  58)، وقال -تعالى-: {وَتَوَكَّلْ عَلَى الْعَزِيزِ الرَّحِيمِ}(الشع  راء:  217)، وقال -تعالى-: {رَبُّ الْمَشْرِقِ وَالْمَغْرِبِ لَا إِلَهَ إِلَّا  هُوَ فَاتَّخِذْهُ وَكِيلًا}(المزمل  : 9)، وقال -تعالى-: {رَبُّ الْمَشْرِقِ  وَالْمَغْرِبِ لَا إِلَهَ إِلَّا هُوَ فَاتَّخِذْهُ وَكِيلًا}(النساء  :  81).</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>الله سميع بصير</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وإذا علم العبد بأن الله سميع بصير عليمٌ، لا يخفى عليه مثقالُ ذرَّة  في السموات والأرض، وأنه يعلم السر وأخفى، ويعلم خائنة الأعين وما تُخفي  الصدور، وأنه -تبارك وتعالى- أحاط بكلِّ شيءٍ علماً، وأحصى كلَّ شيء عدداً؛  فمن علم باطِّلاع الله عليه ورؤيته له وإحاطته به؛ فإن ذلك يثمر له حفظ  اللسان والجوارح وخطرات القلب عن كلِّ ما لا يُرضي الله وجَعْلَ تعلُّقات  هذه الأعضاء بما يحبه الله ويرضاه، قال الله -تعالى-: {أَلَمْ يَعْلَمْ  بِأَنَّ اللَّهَ يَرَى}(العلق: 14)، وقال -تعالى-: {وَاتَّقُوا اللَّهَ  إِنَّ اللَّهَ سَمِيعٌ عَلِيمٌ}(الحجرات  : 1)، وقال -تعالى-: {اعْمَلُوا مَا  شِئْتُمْ إِنَّهُ بِمَا تَعْمَلُونَ بَصِيرٌ}(فصلت: 40)، وقال -تعالى-:  {وَاعْلَمُوا أَنَّ اللَّهَ يَعْلَمُ مَا فِي أَنْفُسِكُمْ  فَاحْذَرُوهُ}(ال  بقرة: 235)؛ فلا ريب أنَّ هذا العلم يورث في العبد خشية  الله ومراقبته، والإقبال على طاعته، والبعد عن مناهيه، قال ابن رجب:  «راوَدَ رجلٌ امرأةً في فلاةٍ ليلاً فأبت؛ فقال لها: ما يرانا إلا الكواكب؛  فقالت: فأين مُكوكِبُها؟!». أي: أين الله، ألا يرانا؟ فمنعها هذا العلم  اقتراف هذا الذنب والوقوع في هذه الخطيئة.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>الله غنيٌّ كريمٌ</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وإذا علم العبد بأنَّ الله غنيٌّ كريمٌ، بَرٌ رحيمٌ، واسع الإحسان،  وأنه -تبارك وتعالى- مع غناه عن عباده؛ فهو محسنٌ إليهم رحيمٌ، بهم، يريد  بهم الخير، ويكشف عنهم الضرَّ، لا لجلب منفعة إليه من العبد، ولا لدفع  مضرَّة، بل رحمةً منه وإحساناً؛ فهو -سبحانه- لم يخلق خلقه ليتكثَّر بهم من  قلَّة، ولا ليعتزَّ بهم من ذلَّة، ولا ليرزقوه ولا لينفعوه، ولا يدفعوا  عنه كما قال -تعالى-: {وَمَا خَلَقْتُ الْجِنَّ وَالْإِنْسَ إِلَّا  لِيَعْبُدُونِ (56) مَا أُرِيدُ مِنْهُمْ مِنْ رِزْقٍ وَمَا أُرِيدُ أَنْ  يُطْعِمُونِ (57) إِنَّ اللَّهَ هُوَ الرَّزَّاقُ ذُو الْقُوَّةِ  الْمَتِينُ}(الذا  ريات: 56 - 58)، وقال -تعالى-: {وَقُلِ الْحَمْدُ لِلَّهِ  الَّذِي لَمْ يَتَّخِذْ وَلَدًا وَلَمْ يَكُنْ لَهُ شَرِيكٌ فِي الْمُلْكِ  وَلَمْ يَكُنْ لَهُ وَلِيٌّ مِنَ الذُّلِّ وَكَبِّرْهُ  تَكْبِيرًا}(الإس  راء: 111)، وقال -تعالى- فيما رواه عنه رسوله صلى الله  عليه وسلم : «يا عبادي، إنكم لن تبلغُوا نفعي فتنفعوني، ولن تبلغوا ضرِّي  فتضرُّوني» رواه مسلم.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      فإذا علم العبد ذلك أثمر فيه قوَّة الرجاء- قوة رجائه بالله- وطمعه  فيما عنده، وإنزالَ حوائجه جميعها به، وإظهارَ افتقاره إليه واحتياجه له  {يَا أَيُّهَا النَّاسُ أَنْتُمُ الْفُقَرَاءُ إِلَى اللَّهِ وَاللَّهُ  هُوَ الْغَنِيُّ الْحَمِيدُ}(فاطر  : 15)، والرجاء يثمر أنواع العبودية  الظاهرة والباطنة بحسب معرفة العبد وعلمه.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>عدل الله وانتقامه</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وإذا علم العبدُ بعدل الله وانتقامه وغضبه وسخطه وعقوبته؛ فإن هذا يثمر  له الخشية والخوف والحذر والبعد عن مساخط الرّبَ، قال الله -تعالى-:  {وَاتَّقُوا اللَّهَ وَاعْلَمُوا أَنَّ اللَّهَ شَدِيدُ  الْعِقَابِ}(البق  رة: 196)، وقال الله -تعالى-: {وَاتَّقُوا اللَّهَ  وَاعْلَمُوا أَنَّكُمْ إِلَيْهِ تُحْشَرُونَ}(الب  قرة: 203)، وقال -تعالى-:  {فَإِنْ زَلَلْتُمْ مِنْ بَعْدِ مَا جَاءَتْكُمُ الْبَيِّنَاتُ فَاعْلَمُوا  أَنَّ اللَّهَ عَزِيزٌ حَكِيمٌ}(البقرة: 209).</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>جلال الله وعظمته</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وإذا علم العبد بجلال الله وعظمته وعُلُوِّه على خلقه ذاتاً وقهراً  وقدراً؛ فإنَّ هذا يثمرُ له الخضوع والاستكانة والمحبة وجميع أنواع  العبادة، قال الله -تعالى-: {ذَلِكَ بِأَنَّ اللَّهَ هُوَ الْحَقُّ وَأَنَّ  مَا يَدْعُونَ مِنْ دُونِهِ هُوَ الْبَاطِلُ وَأَنَّ اللَّهَ هُوَ  الْعَلِيُّ الْكَبِيرُ}(الحج  : 62)، وقال -تعالى-: {وَهُوَ الْعَلِيُّ  الْعَظِيمُ}(البق  رة: 255)، وقال: {وَمَا قَدَرُوا اللَّهَ حَقَّ قَدْرِهِ  وَالْأَرْضُ جَمِيعًا قَبْضَتُهُ يَوْمَ الْقِيَامَةِ وَالسَّماوَاتُ  مَطْوِيَّاتٌ بِيَمِينِهِ سُبْحَانَهُ وَتَعَالَى عَمَّا  يُشْرِكُونَ}(الز  مر: 67).</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>كمال الله وجماله</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وإذا علم العبد بكمال الله وجماله أوجبَ له هذا محبَّةٌ خاصَّةً وشوقاً  عظيماً إلى لقاء الله، «ومن أحبَّ لقاء الله أحبَّ الله لقاءه» متفق عليه،  ولا ريب أن هذا يثمر في العبد أنواعاً كثيرةً من العبادات؛ ولهذا قال  -تعالى-: {فَمَنْ كَانَ يَرْجُو لِقَاءَ رَبِّهِ فَلْيَعْمَلْ عَمَلًا  صَالِحًا وَلَا يُشْرِكْ بِعِبَادَةِ رَبِّهِ أَحَدًا}(الكهف: 110).</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>العبوديَّة بجميع أنواعها</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وبهذا يُعلَم أن العبوديَّة بأنواعها راجعة إلى مقتضيات الأسماء  والصفات؛ ولهذا فإنه يتأكَّد على كل عبد مسلم أن يعرف بَّه ويعرف أسماءه  وصفاته معرفة صحيحة سليمة، وأن يعلم ما تضمنته وآثارها، وموجبات العلم بها؛  فبهذا يعظم حظُّ العبد، ويكمل نصيبه من الخير.</font></span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>المؤمن الموحِّد</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">       إن المؤمن الموحِّد يجد بإيمانه ويقينه بأسماء ربه الحسنى وصفاته  العليا الدالة على عظمة الله وكبريائه وتفرده بالجلال والجمال ما يجذبه إلى  اجتماع همه على الله حباً وتذلُّلاً، خشوعاً وانكساراً، رغباً ورهباً،  رجاءً وطمعاً، وتوافر همته في طلب رضاه باستفراغ الوسع في التقرب إليه  بالنوافل بعد تكميل الفرائض، والتوفيق والرشد بيد الله لا مانع لما أعطى  ولا معطي لما منع، ولا حول ولا قوَّة إلا به -عزوجلَّ.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"> <br />
+</font></span><br />
+<br />
+<br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_963384" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_963384" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=963384" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_963384" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_963386">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2021-10-12,&nbsp;<span class="time">09:20 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post963386" href="showthread.php?t=192046&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=963386#post963386" class="postcounter">#5</a><a id="postcount963386" name="5"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,743</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: فقه الأسماء الحسنى
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_963386">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><b><font color="#996600"><font size="6"><span style="font-family: arabic typesetting">فقه الأسماء الحسنى(5)<br />
+<br />
+ </span></font></font><font color="#999900"><font size="6"><span style="font-family: arabic typesetting">أسماءُ الله -تعالى- كلُّها حُسنى</span></font></font><font color="#996600"><font size="6"><span style="font-family: arabic typesetting"><br />
+</span></font></font></b><br /><br /><b><span style="font-family: arabic typesetting"><font size="5"><font color="#669900"><font size="6">الشيخ عبدالرزاق بن عبدالمحسن البدر</font></font><br />
+</font></span></b><br /><br /><br />
+<br />
+<br />
+<br />
+<br />
+<span style="font-family: Tahoma"><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300">امتدح  الله في القرآن الكريم أسماءه العظيمة بوصفها كلها أنها حسنى، وتكرر وصفها  بذلك في القرآن في أربعة مواضع: قال الله -تعالى-: {وَلِلَّهِ  الْأَسْمَاءُ الْحُسْنَى فَادْعُوهُ بِهَا وَذَرُوا الَّذِينَ يُلْحِدُونَ  فِي أَسْمَائِهِ سَيُجْزَوْنَ مَا كَانُوا يَعْمَلُونَ} (الأعراف: 180)،  وقال -تعالى-: {قُلِ ادْعُوا اللَّهَ أَوِ ادْعُوا الرَّحْمَنَ أَيًّا مَا  تَدْعُوا فَلَهُ الْأَسْمَاءُ الْحُسْنَى} (الإسراء: 110)، وقال -تعالى-:  {اللَّهُ لَا إِلَهَ إِلَّا هُوَ لَهُ الْأَسْمَاءُ الْحُسْنَى} (طه: 8)،  وقال -تعالى-: {هُوَ اللَّهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ لَهُ  الْأَسْمَاءُ الْحُسْنَى يُسَبِّحُ لَهُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ  وَهُوَ الْعَزِيزُ الْحَكِيمُ} (الحشر: 24).</font></font></span><br />
+</span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      في هذه الآيات وصفٌ لأسمائه -سبحانه- جميعها بأنها حسنى، أي: بالغة في  الحسن كماله ومنتهاه، وهي جمع (الأحسن) لا جمع (الحسن)؛ فهي (أفعل) تفضيل  معرفة باللام، أي: لا أحسن منها بوجه من الوجوه، بل لها الحسن الكامل التام  المطلق؛ لكونها أحسن الأسماء، وهو المثل الأعلى في قوله -سبحانه-: {وَلَهُ  الْمَثَلُ الْأَعْلَى فِي السَّمَاوَاتِ وَالْأَرْضِ} (الروم: 27)، أي:  الكمال الأعظم في ذاته وأسمائه وصفاته؛ ولذا كانت أحسنَ الأسماء، بل ليس في  الأسماء أحسن منها، ولا يَسدُّ غيرُها مسدَّها ولا يقوم غيرها مقامها ولا  يؤدي معناها.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>صفاتِ كمال </u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وأسماء الله إنما كانت حسنى لكونها قد دلّت على صفاتِ كمالٍ عظيمةٍ  لله؛ فما كان من الأسماء علمًا محضًا لا يدل على صفة لم يكن من أسماء الله،  وما كان منها ليس دالاً على صفات كمال، بل إما دالاً على صفات نقص أو صفات  منقسمة إلى المدح والقدح لم يكن من أسماء الله؛ فأسماء الله جميعها  توقيفية دالَّةٌ على صفات كمال ونعوت جلال للرَّبِّ -تبارك وتعالى-؛ فهي  حسنى باعتبار معانيها وحقائقها لا بمجرد ألفاظها؛ إذ لو كانت ألفاظاً لا  معاني فيها لم تكن حسنى، ولا كانت دالة على مدح وكمال، ولَسَاغ وقوعُ  الأسماء الدالة على البطش والانتقام والغضب في مقام الأسماء الدالة على  الرحمة والإحسان، وبالعكس؛ فيقال: اللهم إني ظلمت نفسي فاغفر لي إنك شديد  العقاب، أو اللهم أعَطِنِي فإنَّك أنت القابض المانع، ونحو ذلك من الكلام  المتنافر غيرِ المستقيم.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>كلَّ اسم دالٌّ على معنى</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      ولهذا؛ فإنَّ كلَّ اسم من أسماء الله دالٌّ على معنى من صفات الكمال  ليس هو المعنى الذي دلَّ عليه الاسم الآخر؛ فالرحمن - مثلاً- يدلُّ على صفة  الرحمة، والعزيز يدلُّ على صفة العزَّة، والخالق يدلُّ على صفة الخلق،  والكريم يدلُّ على صفة الكرم، والمحسن يدلُّ على صفة الإحسان، وهكذا، وإن  كانت جميعُها متفقةً في الدلالة على الربِّ -تبارك وتعالى-؛ ولذا فهي من  حيث دلالتها على الذات مترادفة؛ ومن حيث دلالتها على الصفات متباينة،  لدلالة كل اسم منها على معنى خاص مستفاد منه.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>كلُّها أسماء مدح</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">       قال العلامة ابن القيم -رحمه الله-: «أسماء الرب -تبارك وتعالى-  كلُّها أسماء مدح، ولو كانت ألفاظاً مجردة لا معاني لها لم تدل على المدح،  وقد وصفها الله -سبحانه- بأنها حسنى كلها؛ فقال: {وَلِلَّهِ الْأَسْمَاءُ  الْحُسْنَى فَادْعُوهُ بِهَا وَذَرُوا الَّذِينَ يُلْحِدُونَ فِي  أَسْمَائِهِ سَيُجْزَوْنَ مَا كَانُوا يَعْمَلُونَ} (الأعراف: 180)؛ فهي لم  تكن حسنى لمجرَّد اللفظ، بل لدلالتها على أوصاف الكمال؛ ولهذا لما سمع بعض  العرب قارئاً يقرأ: {وَالسَّارِقُ وَالسَّارِقَةُ فَاقْطَعُوا  أَيْدِيَهُمَا جَزَاءً بِمَا كَسَبَا نَكَالًا مِنَ اللَّهِ} (المائدة:  38)، {والله غفور رحيم}، قال: ليس هذا بكلام الله -تعالى-؛ فقال القارئ:  أتكذِّب بكلام الله -تعالى-؟! فقال: لا، ولكن ليس هذا بكلام الله؛ فعاد إلى  حفظه وقرأ: {وَاللَّهُ عَزِيزٌ حَكِيمٌ}؛ فقال الأعرابي: صدقت، عزَّ فحكم  فقطع، ولو غفر ورحم لما قطع؛ ولهذا إذا ختمت آية الرحمة باسم عذاب أو  بالعكس ظهر تنافر الكلام وعدم انتظامه».</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>دعاء الله بأسمائه</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وعلى هذا؛ فإن دعاء الله بأسمائه المأمور به في قوله: {فَادْعُوهُ  بِهَا} لا يتأتى إلا مع العلم بمعانيها؛ فإنه إن لم يكن عالماً بمعانيها  ربما جعل في دعائه الاسم في غير موطنه، كأن يختم طلب الرحمة باسم العذاب أو  العكس؛ فيظهر التنافر في الكلام وعدم الاتساق، ومن يتدبَّر الأدعية  الواردة في القرآن الكريم، أو في سنة النبيِّ صلى الله عليه وسلم يجد أنه  ما من دعاء منها يختم بشيء من أسماء الله الحسنى، إلا ويكون في ذلك الاسم  ارتباط وتناسب مع الدُّعاء المطلوب، كقوله -تعالى-: {رَبَّنَا تَقَبَّلْ  مِنَّا إِنَّكَ أَنْتَ السَّمِيعُ الْعَلِيمُ} (البقرة: 127)، وقوله:  {رَبَّنَا آَمَنَّا فَاغْفِرْ لَنَا وَارْحَمْنَا وَأَنْتَ خَيْرُ  الرَّاحِمِينَ} (المؤمنون: 109)، وقوله: {رَبَّنَا افْتَحْ بَيْنَنَا  وَبَيْنَ قَوْمِنَا بِالْحَقِّ وَأَنْتَ خَيْرُ الْفَاتِحِينَ} (الأعراف:  89)، وهكذا الشأن في عامة الدعوات المأثورة.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>الوصف العظيم</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">إن  معرفة المسلم بهذا الوصف العظيم لأسماء الله -تعالى- -وهو كونها حسنى-  يزيد فيه التعظيمَ لها والإجلالَ والحرص على فهم معانيها الجليلة  ومدلولاتها العظيمة، ويبعده عن منزلقات المحرِّفين وتأويلات المبطلين  وتخرُّصات الجاهلين.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>المعاني المستفادة</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b><u>ويمكن أن نلخِّص المعاني المستفادة والثمار المجنية من هذا الوصف لأسماء الله في الأمور التالية:<br />
+</u></b>- الأول: أنها أسماءٌ دالَّةٌ على أحسن مسمَّى وأجلِّ موصوف، وهو الله -تبارك وتعالى- ذو الجلال والكمال والجمال.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">- الثاني: أنَّ فيها إجلالاً لله وتعظيماً وإكباراً وإظهاراً لعظمته ومجده وكماله وجلاله وكبريائه -سبحانه.</font></span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">-  الثالث: أن كل اسم منها دال على ثبوت صفة كمال لله -عز وجل-، ولذا كانت  حسنى، وصفاته -تبارك وتعالى- كلها صفات كمال، ونعوته كلها نعوت جلال،  وأفعاله كلها حكمة ورحمة ومصلحة وعدل.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">-  الرابع: أنها ليس فيها اسم يحتوي على الشر أو يدل على نقص؛ فالشر ليس  إليه؛ فلا يدخل في صفاته ولا يلحق ذاته ولا يكون في شيء من أفعاله؛ فلا  يضاف إليه فعلاً ولا وصفاً.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">-  الخامس: أن الله أمر عباده بدعائه بها بقوله: {فَادْعُوهُ بِهَا}، وهذا  شامل لدعاء العبادة ودعاء المسألة، وهذا من أجل الطاعات وأعظم القرب.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">-  السادس: أن الله وعد من أحصى تسعةً وتسعين اسماً منها حفظاً وفهماً وعملاً  بما تقتضيه بأن يدخله الجنَّة، وهذا من بركات هذه الأسماء، وبالله وحده  التوفيق.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>جادّة أهل السُّنَّة في باب الأسماء والصِّفات</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      إن جادَّة أهل السنة والجماعة في باب الأسماء والصفات وفي الدين  عموماً، جادةٌ مستقيمة وصراطهم صراط مستقيم؛ لأنه قام على تعظيم نصوص  الشريعة ولزوم ما جاء في الكتاب والسنة دون زيادة أو نقصان؛ فيؤمنون بما  ورد فيهما من أسماء الرَّبِّ وصفاته، ويُمرُّونه كما جاء، ويثبتونه كما  ورد، ولا يحرفون الكلم عن مواضعه، ولا يلحدون في أسمائه وآياته، ولا  يُكيِّفون صفاته، ولا يمثلون شيئاً منها بشيء من صفات خلقه؛ لأنه -سبحانه-  لا سميَّ له، ولا كفؤ له، ولا ندَّ، ولا يقاس بخلقه، ويؤمنون بأن رسله الذي  أخبروا عنه بتلك الصفات صادقون مصدَّقون؛ فكلامهم وحيٌ من الله، ومهمتهم  تبليغ رسالة الله، بخلاف الذين يقولون على الله ما لا يعلمون بما تمليه  عليهم عقولهم القاصرة وأفهامهم الضعيفة، وربما أيضاً بواطنُهم السيئة.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      ولهذا قال الله -سبحانه-: {سُبْحَانَ رَبِّكَ رَبِّ الْعِزَّةِ عَمَّا  يَصِفُونَ (180) وَسَلَامٌ عَلَى الْمُرْسَلِينَ (181) وَالْحَمْدُ لِلَّهِ  رَبِّ الْعَالَمِينَ} (الصافات: 180 - 182)؛ فسبَّح نفسه عما وصفه به  المخالفون للرسل، وسلَّم على المرسلين لسلامة ما قالوه من النقص والعيب، ثم  حمد نفسه على تفرده بالأوصاف التي يستحق عليها كمال الحمد.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>هكذا الشأن في أتباعهم</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      وهكذا الشأن في أتباعهم المقتفين آثارهم؛ يثبتون ما أثبته رسل الله  لربهم من صفات الكمال ونعوت الجلال، كتكليمه لعباده، ومحبته لهم، ورحمته  بهم، وعلوه عليهم، واستوائه على عرشه، وغضبه على أعدائه وسخطه عليهم، إلى  غير ذلك مما ورد من نعوت الرَّبِّ الكريمة وصفاته الجليلة، فآمنوا بذلك  كله، وأَمَرُّوه كما جاء من غير تعرض لكيفية، أو اعتقاد مشابهة أو مثلية،  أو تأويل يؤدي إلى تعطيل صفات ربِّ البريَّة، بل وسعتهم السنَّة المحمديَّة  والطريقة المرضية، ولم يتجاوزوها إلى ضلالات بدعيةٍ أو أهواء رديَّة؛  فحازوا بسبب ذلك الرتب السَّنيَّة والمنازل العَليَّة في الدنيا والآخرة؛  فسننُهم أبين، وطريقُهم أقوم، وهديهم أرشد، بل هو الحقُّ الذي لا حقَّ سواه  والهدى الذي ليس بعده إلا الضلال.</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>أصلان عظيمان</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">      ومنهجهم في هذا الباب قائمٌ على أصلين عظيمين وأساسيين متينين هما:  الإثبات بلا تمثيل، والتنزيه بلا تعطيل؛ فلا يمثِّلون صفات الله بصفات خلقه  كما لا يمثِّلون ذاته -سبحانه- بذواتهم، ولا ينفون عنه صفات كماله ونعوت  جلاله الثابتة في كتابه وسنَّة رسوله صلى الله عليه وسلم ،  بل يؤمنون بأن الله ليس كمثله شيء وهو السميع البصير، وهذا الإيمانُ يعدُّ  أصلاً من أصول الإيمان الراسخة وأساساً من أُسُسه العظيمة التي لا إيمان  لمن لم يؤمن بها؛ فمن جَحَد شيئًا من أسماء الله وصفاته ونفاها وأنكرها  فليس بمؤمن، وكذلك من كيَّفها أو شبّهها بصفات المخلوقين، -سبحانه- الله  عما يصفون، وتعالى الله عما يقول الظالمون.</font></span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><font color="#993300"><u>عظيم نعمة الله</u></font></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5">     ومن عظيم نعمة الله على العبد، أن يوفِّقه لسلوك هذا النهج القويم القائم على لزوم كتاب الله -تعالى- وسنة رسوله صلى الله عليه وسلم بعيداً  عن انحرافات أهل الباطل وتخرُّصات أهل الضلال، بل مَضَوْا -بحمد الله- على  جادة واحدة، ولم يتنازعوا في مسألة واحدة من مسائل الأسماء والصفات  والأفعال، بل كلُّهم على إثبات ما نطق به الكتاب والسنَّة كلمةً واحدة من  أولهم إلى آخرهم، لم يسوموها تأويلاً، ولم يحرفوها عن مواضعها تبديلاً، ولم  يبدوا لشيء منها إبطالاً، ولا ضربوا لها أمثالاً، بل تلقوها بالقبول  والتسليم، وقابلوها بالإيمان والتعظيم، وجعلوا الأمر فيها أمراً واحداً،  وأجروها على سَنَنٍ واحد، ولسان حال قائلهم يقول: «من الله الرسالة، وعلى  الرسول البلاغ وعلينا التسليم»، وهذا الاتفاق الذي مضى عليه أهل السنة عبر  التاريخ المديد، يُعدُّ من أبين الدلائل على صحَّة منهجهم واستقامة مسلكهم.<br />
+</font></span><br />
+<br />
+<br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_963386" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_963386" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=963386" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_963386" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=192046&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=192046#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">لوحة التحكم</a></li>
+		<li><a href="private.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الاشتراكات</a></li>
+		<li><a href="online.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=192039&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">فضل الدعاء</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=192056&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">سيرة وعِظة من «عمر بن عبد العزيز»</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A7%D9%84%D8%A3%D8%B3%D9%85%D8%A7%D8%A1">الأسماء</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A7%D9%84%D8%AD%D8%B3%D9%86%D9%89">الحسنى</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D9%81%D9%82%D9%87">فقه</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=192046#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=192046#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">01:40 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	<img src="https://majles.alukah.net/cron.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;rand=1714905603" alt="" width="1" height="1" border="0" />
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

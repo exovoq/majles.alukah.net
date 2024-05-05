@@ -1,0 +1,2334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=40a3dbf8dad57f073fe7698bbce8648b&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=160924";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس اللغة العربية وعلومها - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=10" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1713958091" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1713958091" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="العربية, القراءة, اللغة, الموسعة, بغيرها, تعليم, للناطقين, وسائل, على, إلى, التي, الطلاب, المكثفة, النصوص, بين, الفهم, اللغوية, المفردات, الدارس, تنمية, توسيع, القراءة،, قراءة, الطالب, والقراءة, أجل, الحرة, القرائية, المهارات, وقد, هذه, ومن, والتراكيب, النوع, اللغات, مما, الفرق, بشكل, الترقيم, فهم, وهي, ذلك, أحد, العرب, الثانية, مصطلح, برامج, كذلك, المعلم, الدارسين" />
+	<meta name="description" content="القراءة الموسعة 
+الباحث : حميد حمدان عوض المحمدي _المدينة المنورة 
+القراءة الموسعة في اللغة والاصطلاح : 
+في اللغة : وسع الشيء واتسع، والوسع: الجدة والطاقة، وأوسع الرجلُ إِذا كثر مَاله. قَالَ الله جلّ وعزّ: ( عَلَى الْمُوسِعِ قَدَرُهُ وَعَلَى الْمُقْتِرِ قَدْرُهُ ) سورة البقرة ، والواسِعُ: ضِدُّ الضَّيِّقِ، وَيُقَال: إِنَّه لفي سَعَة من عيشه. ووسّعت الْبَيْت وَغَيره فاتّسع وَاسْتَوْسَعَ، وَفرس وَسَاعٌ إِذا كَانَ جواداً ذَا سَعَة فِي خَطْوه وذَرْعه ) الأزهري 
+  
+وفي الاصطلاح :  
+أول من استخدم" />
+
+	<title> القراءة الموسعة من وسائل تعليم اللغة العربية للناطقين بغيرها</title>
+	<link rel="canonical" href="showthread.php?t=160924&s=40a3dbf8dad57f073fe7698bbce8648b" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1713958091" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1713958091" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1713958091" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1713958091" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1713958091&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=40a3dbf8dad57f073fe7698bbce8648b" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="40a3dbf8dad57f073fe7698bbce8648b" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=40a3dbf8dad57f073fe7698bbce8648b" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=40a3dbf8dad57f073fe7698bbce8648b -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=40a3dbf8dad57f073fe7698bbce8648b"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=40a3dbf8dad57f073fe7698bbce8648b">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=40a3dbf8dad57f073fe7698bbce8648b">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=40a3dbf8dad57f073fe7698bbce8648b">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=40a3dbf8dad57f073fe7698bbce8648b" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=40a3dbf8dad57f073fe7698bbce8648b">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=10&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس اللغة العربية وعلومها</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> القراءة الموسعة من وسائل تعليم اللغة العربية للناطقين بغيرها</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=40a3dbf8dad57f073fe7698bbce8648b&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 6 من 6
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=160924&s=40a3dbf8dad57f073fe7698bbce8648b" title="تحديث الصفحة">القراءة الموسعة من وسائل تعليم اللغة العربية للناطقين بغيرها</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=160924" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;t=160924&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=addsubscription&amp;t=160924" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;search_type=1&amp;searchthreadid=160924&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="40a3dbf8dad57f073fe7698bbce8648b" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="160924" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_855569">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2017-04-30,&nbsp;<span class="time">09:42 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post855569" href="showthread.php?t=160924&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=855569#post855569" class="postcounter">#1</a><a id="postcount855569" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=131346&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="ثمر الألباب غير متواجد حالياً"><strong>ثمر الألباب</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=131346&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=131346&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ثمر الألباب غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Feb 2016</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>66</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> القراءة الموسعة من وسائل تعليم اللغة العربية للناطقين بغيرها
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_855569">
+				<blockquote class="postcontent restore">
+					القراءة الموسعة<br />
+الباحث : حميد حمدان عوض المحمدي _المدينة المنورة<br />
+القراءة الموسعة في اللغة والاصطلاح :<br />
+في اللغة : وسع الشيء واتسع، والوسع: الجدة والطاقة، وأوسع الرجلُ إِذا كثر مَاله. قَالَ الله جلّ وعزّ: ( عَلَى الْمُوسِعِ قَدَرُهُ وَعَلَى الْمُقْتِرِ قَدْرُهُ ) سورة البقرة ، والواسِعُ: ضِدُّ الضَّيِّقِ، وَيُقَال: إِنَّه لفي سَعَة من عيشه. ووسّعت الْبَيْت وَغَيره فاتّسع وَاسْتَوْسَعَ، وَفرس وَسَاعٌ إِذا كَانَ جواداً ذَا سَعَة فِي خَطْوه وذَرْعه ) الأزهري<br />
+ <br />
+وفي الاصطلاح : <br />
+أول من استخدم مصطلح ( القراءة الموسعة ) في تعليم اللغة الأجنبية أو الثانية هو ( هارولد بالمر ) أحد أبرز علماء اللسانيات التطبيقية في تعليم اللغات في بريطانيا في القرن العشرين، ويعرف القراءة الموسعة : بأنها سرعة القراءة لكتاب بعد كتاب مع تركيز انتباه القارئ للمعنى وليس للغة النص، واختار مصطلح ( القراءة الموسعة ) لتمييزه عن ( القراءة المكثفة ) ، والتي غالبا ما تشير الأولى إلى قراءة كثير من الصفحات والنصوص الأصيلة السهلة مع العناية بالمعاني، وتشير الثانية للنشاط الموجه داخل الفصول الدراسية لدراسة النصوص التعليمية وتنمية القدرة على الفهم الدقيق للمقروء بتمييز الأفكار الرئيسة والأفكار الفرعية، والتركيز على العناصر اللغوية، والتراكيب النحوية، ومعرفة عود الضمائر، والنبر والتنغيم، وعلامات الترقيم .<br />
+ومن تعاريف القراءة الموسعة أنها أحد أنماط القراءة الأربعة في تدريس اللغات ، وذكروا منها القراءة المكثفة، ( وقد عرف بعضهم القراءة الموسعة بأنها قراءة النصوص المعدلة وصولا إلى النصوص الأصيلة، واعترض عليه بأن هذا قد يشوه مصطلح ( القراءة الموسعة ) بإدخال مصطلحي ( النصوص الأصيلة والمعدلة ) فيه، واعتبرت هذه المواد والكتب بنوعيها وسيلة من وسائل القراءة التي تهدف إلى تعزيز قدرة الطالب على التمكن من اللغة والمهارات القرائية في مسار القراءة الموسعة ) .<br />
+وظهر من الباحثين من يسميها ( القراءة التكميلية) أو ( القراءة الممتعة ) أو ( القراءة الحرة الطوعية )، وعلى الرغم من تنوع المصطلحات إلا أنها لا تخرج عن مفهوم المصطلح الأول. ومعظم تعاريف القراءة الموسعة تنص على عنصرين أساسيين: <br />
+1ـ التركيز على قراءة كثير من النصوص السهلة والمشوقة، على أن يختارها الطلاب بأنفسهم، ولا يمارس بعدها تدريبات .<br />
+2ـ القراءة الموسعة وسيلة لتعلم اللغة الأجنبية أو الثانية بشكل عام ومهارات القراءة على وجه الخصوص.<br />
+<br />
+الفرق بين القراءة المكثفة والقراءة الموسعة<br />
+هناك فرق بين التعلّم من أجل القراءة، والقراءة من أجل التعلم، وكلاهما شكلان صحيحان من أشكال القراءة لكنهما مختلفتان من حيث الأهداف والطريقة والنتائج، بما يشبه الأول دروس وتعليمات القيادة والثاني ممارسة القيادة ذاتها، وهو الفرق بين القراءة المكثفة والقراءة الموسعة .<br />
+فعندما يتعلم الطلاب من أجل القراءة، وهي القراءة المكثّفة فهم يقرؤون نصاً لتعلّم شيء ما عن اللغة بحدّ ذاتها، ربما كلمة جديدة أو قاعدة نحوية وما إلى ذلك وهي القراءة لغرض الدراسة النموذجية التي يقوم بها الطلاب في كتبهم الدراسية، وغالباً ما تحتوي على فقرات قصيرة، كثير من المفردات اللغوية التي لا يعرفها الطلاب، وعادةً ما تصاحبها نشاطات قبل وبعد القراءة، إلى جانب أسئلة الفهم <br />
+ <br />
+وعندما يقرأ الطلاب من أجل التعلم، فهم يمارسون مهارة القراءة للاطلاع على معلومات بطلاقة وسلاسة تعميق معرفتهم بعناصر اللغة التي تعرّفوا عليها سابقاً، واكتساب إحساس أفضل بالطريقة التي تلاءمت فيها تلك العناصر مع بعضها بشكل بيّن وواضح مما يسمح للطلاب بالتعامل مع اللغة بشكل أسرع ويعزز الفهم والمتعة لديهم .<br />
+ <br />
+وهذان الشكلان من أشكال القراءة ينحدران لإحدى الطرق الشائعة من طرائق تدريس اللغات للناطقين بغيرها في الميدان التعليمي ، وهي طريقة القراءة، وكان من شأن هذه الطريقة أن تجعل من القراءة المهارة الأساسية التي يدور حولها تعليم اللغة الثانية، ولم تنشأ استجابة لتغيرات في المفاهيم اللغوية أو نظريات علم النفس، فضلا عن إغفالها الحاجة إلى الاتصال الشفوي وضعف العناية والاهتمام بمهارتي الاستماع والتحدث <br />
+ <br />
+ولشرف القراءة ومكانتها أحدث الناس ما يعرف بالكتب الإضافية، وقوائم الكلمات الأكثر شيوعا في الاستخدام لكسر الجمود في هذه الطريقة، ولكن الحاجة لا زالت ماسة لتحويل هذه الطريقة من أساس نفعي إلى أساس فلسفي ، يتيح فرصة أكبر للمتعلمين الاطلاع على اللغة من مصادرها المكتوبة في برامج تعليم اللغات ، فظهر مفهومي القراءة المكثفة والقراءة الموسعة، وينبغي أن يتضح في ذهن معلم اللغة العربية الفرق بينهما . <br />
+وتعتبر القراءة المكثفة مهمة جدا لدارسي اللغة العربية من الناطقين بغيرها خصوصا في المستويات الأولي ويقصد بها ذلك النوع الذي يجري داخل الفصل، وتستهدف تنمية مهارات القراءة من خلال الكتب متعددة الموضوعات، وتتم تحت توجيه المعلم وإشرافه، بحيث يساعد الدارس علي تنمية مهاراته القرائية وثروته اللغوية . <br />
+وتعنى القراءة المكثفة بالتركيز على أساليب التدريس المبنية على السؤال والجواب، واستخدام الشرح بالعروض والتمثيل لتوصيل معاني الكلمات، بل تصف كذلك المفردات والقواعد التي يجب تدريسها، والترتيب الذي ينبغي أن تقدم فيه، وتهدف إلى تنمية قدرات الطلاب على الفهم التفصيلي، حيث ينصرف الانتباه إلى جزئيات نصية مقصودة من المفردات والتراكيب, ومراعاة رموز الترقيم والحركات الإعرابية ونطق المهارات الصوتية ، وينبغي أن تكون المادة القرائية لهذا النوع من القراءة أعلى قليلا من مستوى الدارس ومن سماتها البطء والتأني ، وقد تصاحبها القراءة الجماعية الجهرية، وقد يستعمل الطالب القاموس أثناءها . <br />
+ويشكل هذا النوع من القراءة العمود الفقري في برامج تعليم اللغة ،كما يعتبر كتاب القراءة المكثفة الكتاب الأساس في تعليم القراءة، وينبغي توظيف ما يتعلمه الدارس من معلومات أو يكتسبه من مهارات في المواقف الوظيفية الحقيقية، وألا تقتصر تدريبات التعرف على الجديد من المفردات أو التراكيب وإنما تمتد لتشمل أيضا بعض المفردات والتراكيب التي سبق تعليمها، ثم إن تزايد التدريب على المهارات الآلية حتى آخر موضوع قد يغرس في ضمير الدارس مفهوما قاصرا للقراءة، وقد يجعله أسير لهذه المهارات على حساب المهارات العقلية العليا من العناية بالمعاني والأفكار .<br />
+ومن أهداف مقرر القراءة المكثفة :<br />
+1ـ القراءة الصحيحة مع النبر والتنغيم.<br />
+2ـ دقة النطق وإخراج الحروف إخراجا صحيحا عند القراءة .<br />
+3ـ الانتقال الجيد من كلمة إلى أخرى ومن جملة إلى جملة ومن فقرة إلى فقرة .<br />
+4ـ استخدام علامات الترقيم استخداما سليما <br />
+5ـ تكوين رصيد من المفردات والتراكيب اللغوية التي تعين الدارس على التعبير المفيد .<br />
+6ـ التفريق بين الحركات المختلفة بيسر .<br />
+7ـ التمييز بين أنواع التنوين والمدود الثلاثة تمييزا واضحا <br />
+8ـ فهم معاني الدرس والاحتفاظ بأفكاره حية في الذهن<br />
+9ـ اكتشاف أخطاء الدارسين وعلاجها .<br />
+أما القراءة الموسعة فالهدف منها الفهم الكلي وتنمية قدرة الدارس على الاستقلال في تحصيل المعرفة وتذوق العمل الأدبي المتكامل، وتكون خارج الفصل ، ويقتصر دور المعلم فيها على مساعدة الدارسين في تمام الفهم ، ومناقشة ما قاموا بقراءته ، وتذليل ما صادفهم من صعوبات بأسلوب يؤكد تعويد المتعلمين الاعتماد على أنفسهم في قراءة عدد كبير من الصفحات ، وصولا بهم إلى قراءة الكتاب العربي ، وتظهر أهمية هذا النوع من القراءة لمثل هذه الفئات من المتعلمين في تحسين المهارات القرائية في كتب القراءة ذات الموضوع الواحد ، وتعزيز ما درسه الطالب في حصص القراءة المكثفة من مفردات وتراكيب .<br />
+وتحقق أغراضا مهمة , منها : <br />
+1ـ الفهم لكتاب الله تبارك وتعالى ، والأحاديث النبوية الشريفة ، وفهم كلام العرب من شعر وقصص ونثر وخطب وغير ذلك .<br />
+2ـ تنمية القدرة على التعامل اليومي بين العرب وغير العرب من المسلمين ، وفتح قنوات التواصل الثقافي والعلمي بين الطرفين ، مما يعمق من ترابط الشعوب المسلمة وتواصلها .<br />
+3ـ تنمية الذوق الأدبي والحس الحضاري في نفوس الدارسين من خلال السماح بالاتصال بمدونات الحضارة الإسلامية القديمة والإنجازات الحديثة، ودفع الجهود الماكرة التي تحاول دحر اللغة العربية كأحد أقوى مظاهر الوحدة بين الشعوب الإسلامية في مشارق الأرض ومغاربها .<br />
+ويستهدف تعليمها في برامج تعليم العربية للناطقين بلغات أخرى عدة أهداف من أهمها :<br />
+1ـ القراءة من أجل المتعة والتسلية والمشاركة .<br />
+2ـ تطوير وتحسين السرعة والطلاقة في القراءة .<br />
+3ـ توسيع ممارسة الطلاب للتحدث وطلاقة اللسان .<br />
+4ـ توسيع أفق الطلاب الثقافي وتعميق فهمهم للحياة باستخلاص المعاني من النصوص الوظيفية .<br />
+5ـ توسيع أفق الطلاب من خلال تنمية خيالهم وابتكاراتهم باستخلاص المعاني من النصوص الأدبية .<br />
+6ـ توسيع الثروة اللغوية من مفردات وتراكيب وإثراؤها .<br />
+7ـ توسيع مدارك الطلاب وتثقيفهم لتطوير مهارة الكتابة .<br />
+8ـ توسيع المعرفة اللغوية والتمكن من اللغة العربية .<br />
+9ـ الاستعمال الواعي للغة العربية في التعامل مع المصادر الثقافية الغنية في وسائل الاتصال والمعلومات الحديثة .<br />
+10 ـ الاستقلالية والاعتماد على النفس بقضاء بعض الوقت في المطالعة والقراءة الحرة . <br />
+ <br />
+وتمثل القراءة الحرة أحد الأنشطة القرائية المهمة التي بدأ التربويون الالتفات إليها في الآونة الأخيرة ، لما لها من أهمية كبيرة في شغل أوقات الفراغ بطريقة مفيدة ، بالإضافة إلى دورها كذلك في تحقيق التسلية والمتعة الهادفة ، ودورها كذلك في عملية التثقيف والتنمية الفكرية للفرد لا سيما في ظل تحديات العولمة التي تلقي بظلالها على العالم أجمع ... وقد جرت العادة أن يختار البرنامج المكثف ( برنامج لتعليم اللغة العربية للناطقين بغيرها ) في معهد اللغة العربية بجامعة الملك سعود كتابا للقراءة الموسعة ، يمضي فيه الطالب فصلا دراسيا كاملا ، وهذا في حد ذاته قد ينافي معنى القراءة الحرة أو الموسعة ، التي يفترض أن تشمل على أكبر قدر ممكن من الكتب الصحف والمجلات وغيرها مما يختاره ويحبذه الطالب بنفسه ، وهنا يبقى دور المعلم ميسرا ، يساعد الطلاب على اختيار النصوص ويهيئ بيئة مشجعة على القراءة الحرة .
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_855569" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_855569" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=855569" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_855569" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_855570">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2017-04-30,&nbsp;<span class="time">09:46 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post855570" href="showthread.php?t=160924&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=855570#post855570" class="postcounter">#2</a><a id="postcount855570" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=131346&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="ثمر الألباب غير متواجد حالياً"><strong>ثمر الألباب</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=131346&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=131346&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ثمر الألباب غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Feb 2016</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>66</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_855570">
+				<blockquote class="postcontent restore">
+					مبادئ القراءة الموسعة :<br />
+من المقومات الأساسية لنجاح أي نشاط تعليمي أن تتوافر له مواد قرائية يتم إعدادها في ضوء مجموعة من المبادئ، منها ما يختص بنوع القراءة، ومنها ما يختص بالمحتوى الثقافي للغة المنشودة، إلى غير ذلك من أمور ينبغي أن تراعى عند إعداد الأنشطة الموجهة في إطار القراءة الموسعة، والحاجة إلى تفعيل أنشطة القراءة الموسعة لا تقارن بما يجري في غرف الصف المحدودة، والتي تمثل عادة البداية للمهارات اللغوية من استماع وقراءة وإعداد الطلاب لمرحلة لاحقة أهم، وهي مرحلة أداء سلوك لغوي طبعي قائم على تلك الأنشطة الموجهة بمساعدة المعلم المختص للدارس على القراءة بطلاقة، حيث يصبح إنتاج الصيغ اللغوية ثانويا، مقارنة بإيصال المعاني والتأثير الاجتماعي، إن المتعلم في ظلال هذه الأنشطة يضع في حسبانه المحتوى الاجتماعي، ويسعى وراء ما يجعل المعنى مفهوما، ومن أجل أن يمارس اللغة بعفوية ينصرف فيها الانتباه إلى الأفكار والمعاني أكثر من الانصراف إلى المفردات والتراكيب والجزئيات النصية . <br />
+ولا ريب أن نجاح أنشطة القراءة الموسعة يقوم على عنصرين هامين : <br />
+أولهما : أن تكون هذه الأنشطة من نسيج وصميم برامج تعليم اللغة وإعداد المواد التعليمية، وأن تصبح جزءا من المنهاج، وليست عاملا مساعدا أو مكملا له، وهذا العنصر على جانب كبير من الأهمية، ويجب التأكيد عليه في جميع مستويات تعلم وتعليم اللغة .<br />
+ثانيهما : أن تعلم اللغة عملية مستمرة ليست محدودة بغرفة الصف أو المعلم ، وإذا أريد لها النجاح ، فلابد أن تقوم على ممارسة القراءة الحرة من غير قيد بزمن محدد ، أو مكان محدد .<br />
+ <br />
+المبادئ العشرة للقراءة الموسعة :<br />
+1) السهولة : <br />
+بأن تكون المواد والنصوص والكتب المتاحة لاختيار الدارسين سهلة، وهذا يجعل من أساليب تعليم القراءة باللغة الأجنبية شي مختلف نظرا لضبط الكفاءة اللغوية، وهذا من عوامل نجاح الأنشطة الموجهة في إطار القراءة الموسعة .<br />
+وإذا كانت هناك أكثر من كلمة إلى كلمتين غير معروفة في كل صفحة فالنص غير مناسب للمبتدئين وهكذا إذا كانت من أربع إلى خمس بالنسبة للمتوسطين، لأنها تجعل الطالب في معاناة وصعوبة النص، والمتوقع أن تكون السهولة عامل جذب للانتباه، وزيادة في الدافعية وإذكاء الرغبة في القراءة .<br />
+ <br />
+وقد دلت نتائج الدراسات على أن التحجر في نطق الأصوات أكثر شيوعا من التحجر في الصيغ والتراكيب النحوية، وأن حدوث التحجر في المفردات قليل أو نادر، لأن الإنسان غالبا ما يكتسب مزيدا من المفردات الجديدة ، ولكن يتحجر استعماله الخاطئ لمعاني هذه الكلمات واستعمالاتها، فيستعملها خطأ في غير معناها، ويستمر في ذلك ، وهذا يعود إلى قلة القراءة في صفحات كثيرة لمواد سهلة تمكن من الدراية لاستعمال المفردات في سياقها الحقيقي أو المجازي .<br />
+ <br />
+وفي مقياس السهولة التدرج في انتقاء النصوص المناسبة، ذلك أن مقياس السهولة مهم جدا في المستويات الأولى، ولكنه لا يصلح أن يكون معيارا للمراحل المتقدمة، لأنه قد لا يكون معبرا عن طبيعة وثقافة اللغة المتعلمة، فإذا كان مقبولا أن نختار نصوصا وروايات معينة لأنها قصيرة، ولأن بنيتها اللغوية سهلة، فإن هذا لا يستقيم عند الاختيار للمراحل المتقدمة، ذلك لأن النصوص والروايات التي كتبت لفئة الشباب من القراء غالبا ما تكون قصيرة سهلة وأن عدد شخصياتها محدود نسبيا، والأهم من ذلك أنها تبتعد عن التعقيد الأسلوبي واللجوء إلى هذا النوع من النصوص يلائم المستويات المبتدئة من صفوف المتعلمين،ولكنه  ا لا تصلح أساسا لنقل صورة أمينة عن أدب وفكر وثقافة اللغة المتعلمة ما لم يرتق الطالب إلى مستويات القراءة الإبداعية المتقدمة <br />
+2) التنوع :<br />
+فيجب أن تكون مواد القراءة متنوعة وتحتوي على طائفة واسعة من الكتب والنصوص والصحف والمجلات، وهذا التنوع يسمح للدارسين اختيار ما يريدون بأنفسهم من المواد البسيطة للقراءة في النصوص الوظيفية السهلة أو النصوص الأصيلة الموجهة لأهل اللغة وعلى مستويات مناسبة للقدرة اللغوية كأدب الأطفال للمبتدئين، وقد ترتفع قليلا للمتعلمين في المستوى المتوسط إلى أدب الشباب البالغين، والمتوقع من الدارسين المتقدمين القراءة في الكتب والمجلات والصحف المكتوبة باللغة العربية، والمواد المتنوعة تشجع على بناء اتجاهات إيجابية نحو اللغة، وما توفره للمتعلمين من المتعة والمعرفة معا .<br />
+ <br />
+3) استقلالية الاختيار :<br />
+بأن يختار المتعلمون ما يريدون قراءته من كتب ونصوص ومواد متاحة بأنفسهم، ولهم أن يتوقفوا عن القراءة متى ما كانت المواد غير مفيدة أو صعبة أو ليست ذات أهمية، وفي هذا المبدأ إفساح المجال للدارسين في التعامل مع النصوص و وتحفيزهم على التعلم الذاتي، الشيء الذي قد لا يتوفر في القراءة المكثفة تحت إشراف المعلم وسير المنهج .<br />
+ <br />
+4) القراءة الكثيرة :<br />
+أحد أهم المبادئ أن يقضي الدارسون أطول وقت ممكن لقراءة أكبر قدر من الصفحات في الكتب والنصوص المتاحة، سواء داخل أو خارج الفصول، والحد الأدنى للحصول على الفوائد وبناء عادات القراءة والاستفادة من أنشطة القراءة الموسعة هو قراءة كتاب واحد في الأسبوع .<br />
+5) القراءة للمتعة :<br />
+وهذا المبدأ يرمي إلى أن ترتبط القراءة بالمتعة والتشويق والحصول على الفهم العام للمعلومات، والاكتفاء من الاستيعاب بالخطوط العريضة لأفكار النص، وزيادة الخبرة الشخصية وتحسين المهارات اللغوية بما فيها مهارات القراءة في مواد قرائية سهلة تمكن من استخدام اللغة في مواقفها الطبيعية بالمناسب من المفردات والتراكيب والنصوص لبساطة أساليبها وقرب معانيها وحيويتها.<br />
+6) القراءة للفائدة :<br />
+وفوائد القراءة من القراءة ذاتها، لما توفره من زيادة الدخل اللغوي، ولا يلحقها تدريبات أو مهام، ولا يحتاج الدارس فيها إلى معجم، وفيها تمكين للدارس من حصول الطلاقة في القراءة لموضوعات مناسبة تلبي حاجة الإشباع الثقافي والمعرفي الذي تحمله اللغة العربية الفصحى، وتلتزم بالعبارة الواضحة القريبة السهلة، وليس بالضرورة حصول الفهم الكامل بمعناه وإنما بحصول مستوى من الفهم كاف ومرض.<br />
+7) القراءة السريعة :<br />
+فالقراءة السريعة أفضل من القراءة البطيئة، لأنه لا يتحقق مع البطء المتعة والفهم المطلوبين، والقارئ الجيد هو من يقرأ بسرعة أكبر، والبطء من سمات القراءة المكثفة، وينصح هنا بالبعد عن استعمال القاموس، لأنه يتنافى مع مبدأ السرعة والطلاقة، ويوصى الطالب إذا واجهته كلمة غير معروفة بأن يتجاهلها أو يخمن معناها من السياق، وتنشأ السرعة بعد الفهم الضمني للجمل والنصوص، ( وتعد القراءة السريعة من أهداف مهارة القراءة في المستوى الثاني <br />
+8) القراءة الصامتة الفردية : <br />
+وهي عملية فكرية ومهارة فردية يمارسها المتعلم في مراحل متقدمة يتحرر فيها من إشراف المعلم والوصاية في اختيار النص، ولا يظهر الاهتمام بالقراءة الصامتة إلا في المستويات المتأخرة، وتتيح القراءة والتأمل في كتب وقصص وموضوعات شيقة ومتدرجة من السهل إلى الصعب ومن المعلوم إلى المجهول ومبنية على مفردات شائعة وعبارات وتراكيب مناسبة تنمي الثروة اللغوية والمعرفية معا.<br />
+9) المعلم مرشد وموجه :<br />
+وهذا يتطلب من المعلم بأن يكون على دراية واسعة بأدبيات القراءة الموسعة وأساليبها وأهدافها، وأن يكون متابعا لسير النشاط متصورا لفوائده وراصدا لجميع العقبات والأخطاء التي قد تحصل في تنفيذه، حدبا على إصلاح وتوفير الملائم للنهوض بطلابه بما يفيدهم ويمكنهم من القراءة باللغة العربية الفصحى بأقصر طريق وأوفاه .<br />
+10) المعلم قدوة للقراء :<br />
+وذلك بأن يعطي المعلم مثالا شاهدا وواقعيا أثناء القراءة الصامتة حرصه على القراءة بين طلابه، وأن يمارس القراءة أمامهم باستمرار، وكذلك ينبغي أن يكون على دراية بجميع الكتب التي بين يدي طلابه، لكي يقوم بتوجيه الطلاب عند الحاجة لما يناسب مستوى بعضهم، وأن يكون حاضرا للحوار والمناقشة حول أي كتاب يمكن أن يجري.<br />
+وينبغي للمعهد مراجعة تركيبته الوظيفية وأن يحاول ابتكار أدوار خاصة للمدرسين الأساسيين الأعلى درجة مع تقديم مكافآت مناسبة، وقد تكون هذه الأدوار عبارة عن مدرسين مراقبين، أو مدربي مدرسين ن أو مدرسين باحثين . إن المعلم عامل أساسي في التطبيق الناجح لأنشطة القراءة الموسعة، فالمعلم المتميز يمكن في الغالب أن يعوض عن الموارد والمواد التعليمية الضعيفة التي يستخدمها، في حين أن المعلمين غير المدربين جيدا، قد لا يستطيعون استخدام المواد التدريسية استخداما فعالا مهما كانت جدتها، وتجمع مكتبة القراءة الموسعة بين الطريقة والمادة ، وهما في هذا النوع من النشاط متلازمان، وهما وجهان لعملة واحدة ، فإن ضعف أحدهما لم يتحقق الهدف من الآخر، فالتطبيق الجيد بدون الكتب لا يعوضه الافتقار للكتب، وغزارة الكتب وتوفرها لا جدوى لها مالم تصادف طريقة جيدة وحسن إدارة لبرنامج القراءة الموسعة <br />
+ويتفاوت المدرسون في كل مؤسسة وفقا للأبعاد التالية :<br />
+ـ الكفاية اللغوية <br />
+ـ الخبرة التدريسية <br />
+ـ المهارة والدربة <br />
+ـ التدريب والمؤهلات <br />
+ـ المعنويات والدافعية <br />
+ـ أسلوب التدريس <br />
+ولذا فمن المهم عند التخطيط لأنشطة القراءة الموسعة معرفة نوعية المعلمين التي سوف يعتمد عليها في بناء وإقامة أنشطة القراءة الموسعة لضمان تحقيق البرنامج غاياته وأهدافه
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_855570" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_855570" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=855570" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_855570" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_855571">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2017-04-30,&nbsp;<span class="time">09:47 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post855571" href="showthread.php?t=160924&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=855571#post855571" class="postcounter">#3</a><a id="postcount855571" name="3"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=131346&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="ثمر الألباب غير متواجد حالياً"><strong>ثمر الألباب</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=131346&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=131346&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ثمر الألباب غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Feb 2016</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>66</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_855571">
+				<blockquote class="postcontent restore">
+					مراحل التأسيس لأنشطة القراءة الموسعة <br />
+القراءة الموسعة تعني للطلاب قراءة كتب ممتعة سهلة للغاية لبناء قدرتهم على القراءة بسرعة وطلاقة، وهي تهدف إلى مساعدة الطالب على رفع مستوى مهاراته في القراءة أكثر من مساعدته على دراسة اللغة بحدّ ذاتها، فالقراءة الموسعة بالنسبة للطلاب هي قراءة تجمع بين السرعة والمتعة والفهم الصحيح ، ليتمكنوا من القراءة بسرعة وطلاقة من ( 150ـ 200 ) كلمة في الدقيقة كحد أدنى أو أقل من ذلك بالنسبة للطلاب المبتدئين، وينبغي أن تكون القراءة سهلة، فإذا كان هناك الكثير من الكلمات غير المعروفة في الصفحة، سيعاني الطالب من مشاكل تؤدي إلى إبطاء الحركة الطبيعية للعين مما يؤثر على الفهم ويحوّل القراءة السلسة إلى نوع من القراءة بغرض الدراسة، وتعرف القراءة الموسعة أحياناً باسم القراءة المستفيضة أو القراءة التكميلية .<br />
+ويكمل هذا النمط من القراءة دور القراءة المكثفة ، وغايتها تعزيز ما تعلمه الدارس في الفصل بتزويده بالقدرة على القراءة الحرة، والتعرف على اللغة في سياقها الطبيعي ورؤية طريقة عملها في حديث موسّع خارج حدود اللغة التي يرونها في الكتب الدراسية, وتهدف إلى تدعيم المهارات القرائية التي تعمل على بناء مفردات اللغة، فعندما يقرأ الطلاب بكثرة، يصادفون آلاف الكلمات، وأنماط من المفردات مرة بعد مرة مما يساعدهم على إتقانها والتنبوء بمعانيها، وفيما يلي نقترح برنامجاً للتعريف بالقراء ة الموسعة بطريقة سلسلة للطلاب الذين تشكل لهم القراءة الموسعة أمراً جديداً عليهم. هذه المراحل مصممة بحيث لا تسبب الإرباك والضغط للطلاب في بداية الأمر ولتساعدهم بشكل تدريجي على اختيار قراءاتهم بأنفسهم.<br />
+المرحلة الأولى : <br />
+1ـ مرحلة التخطيط: تحت شعار ( بداية صغيرة وهدف كبير ). وهي عبارة عن النشاط الذهني باختيار أفضل الطرق لتحقيق أهداف البرنامج , ولهذا لابد للمعلمين القائمين على هذه الأنشطة أن يأخذوا بعين الاعتبار محدودية الوقت والمكان والإمكانات، وهذا يعني أن نتخيل كيف يمكن أن يبدو برنامج القراءة الموسعة بعد خمس سنوات، ينبغي أن يكون البرنامج مصمما لينمو سنة بعد سنة وهذه بعض الأسئلة التي يجب عليك أن نجيب عليها : <br />
+ـ كم يحتاج الطلاب للقراءة؟ وكم مرة ؟<br />
+ـ هل ينبغي أن تخصص حصة دراسية لهذا الأمر ؟ وإن كان كذلك، ما هي المدة ومتى ؟<br />
+ـ كم عدد الكتب اللازمة لتغطية المستويات المختلفة للقدرات والاهتمامات ؟<br />
+ـ هل يجب أن ندخل القراءة الموسعة ضمن حصة دراسية قائمة, أم يجب أن نفرد للقراءة الموسعة برنامج مستقل <br />
+ـ متى, وكم مرة يقوم الطلاب بتغيير كتبهم ؟<br />
+ـ كيف نقيّم الطلاب ؟<br />
+ـ كيف نجد المال اللازم لذلك ؟<br />
+ـ أين يجب أن نحتفظ بالكتب ؟ كيف يجب أن ندير المكتبة ؟<br />
+ـ من هو المسؤول عن إدارة البرنامج وتنفيذه ؟<br />
+برامج القراءة الموسعة غالبا ما تنطوي على بعض الصعوبات، ويتطلب تنفيذها وقتاً والتزاماً، وهي ليست صعبة بقدر ما تحتاج للعناية والاهتمام, ويجب أن يكون لبرامج القراءة الموسعة أهدافاً واضحةً ورؤية مصممة، فإنها تحتاج إلى تخطيط دقيق وتحضير جيد، ومن الأهمية بمكان أن يكون الزملاء والطلاب وأولياء أمور الطلاب على اطلاع بأهمية وأهداف برنامج القراءة الموسعة، وقد يتم تثبيته لسنوات، ويستفيد منه الزملاء بوضع قائمة بعناوين الكتب في فصولهم، لتشجيع الطلاب على ارتياد نادي القراءة الموسعة أو الجناح المخصص لها بمكتبة المعهد، ويتميز برنامج القراءة الموسعة الجيد بقدرته على تجاوز مشكلة فقدان المواد وعدم كفاية الموارد ونقص الحماس الذي يعاني منه الطلاب عموماً بعد صعوبات البداية الكبرى( )<br />
+ومن المستحسن للمعلم الذي يتصدر لهذا النوع من البرامج، أن يطلع بنفسه على مبادئ القراءة الموسعة وطرق تنظيمها، إما بقراءة كتاب:<br />
+(القراءة الموسعة في أنشطة تعليم اللغة الثانية), لريتشارديوم، وجوليان بامفورد ، <br />
+أو زيارة الموقع : &lt;www.extensivereading.net&gt; <br />
+ <br />
+وعلى المعلم أن يكتشف بنفسه متعة القراءة، ليشجع الدارسين عليها، والاستمتاع بتقديم اللغة العربية الفصحى، وأن يمارس حب القراءة واختيار الكتب، وأن يكون قريبا من مصادر التعلم وجديد دور النشر، ليواجه التحديات التي قد تواجهه في قيادة برنامج القراءة الموسعة . المرحلة الثانية : <br />
+الحصول على الكتب، تحت شعار: ( كن عمليا وواقعيا ) .<br />
+قبل البدء الذي قد تستغرق مدته ثلاثة أشهر، على المعلم أن يتفقد مقدار حاجته للكتب بالطريقة التالية : <br />
+عدد صفوف القراءة الموسعة × عدد الطلاب في كل صف × عدد الكتب لكل طالب = عدد الكتب اللازمة <br />
+ <br />
+ويتطلب الأمر توفر مجموعة متنوعة وواسعة من الكتب المشوّقة لتلبية احتياجات الطلاب المختلفة ذات مستويات ملائمة وفق الضوابط التالية :<br />
+1) الجاذبية : ينبغي أن تكون جذابة في مظهرها مناسبة لاهتمامات الطلاب وما يحتاجونه من ألوان النشاط المستهدف، مع التركيز على العناية بمظهر الكتاب وجودة طباعته وحداثته .<br />
+2) السهولة : فينبغي أن تكون سهلة من أجل أن تقرأ بصورة موسعة، بأن تكون أقل من مستوى الطلاب بكثير ، مع العناية بتوفير الجو المناسب من تكييف وأثاث مريح وكتب جذابة وسلاسة نظام الاستعارة .<br />
+3) القصر : بأن تكون قصيرة مناسبة لمستويات الطلاب، حتى لا يشعر الطالب بالخوف والقلق من الكتب الطويلة ، مما يتسبب في عزوفه عن القراءة والانصراف عن المتابعة والمضي في البرنامج .<br />
+4) التنوع : وينبغي أن تكون متنوعة ، تقدم مجموعة من ألوان النشاط الوظيفي وغيره بما يلبي حاجة الطالب في استعماله للغة في الحياة العامة .<br />
+ومن الطرق المقترحة لإمداد النادي أو جناح المكتبة الموسعة قبل البدء بالكتب والمواد المناسبة، لتحقيق هذا الهدف ، الآتي : <br />
+1) ممكن أن يطلب من المدير أن يخصص ميزانية مالية للنادي، وتوفير كل ما يحتاجه من المساحة المكانية والزمانية، وأمور تنظيم الاستعارة، والوقت المخصص للقراءة، واستغلال حصص الانتظار وغياب أو تأخر بعض المعلمين بالسماح للطلاب بالاتجاه فورا إلى جناح القراءة الموسعة .<br />
+2) ويمكن أن يطلب المعلم من الطلاب المساهمة بقيمة كتاب واحد من كل طالب، وهذه بداية جيدة، إلى أن يتم إضافة بعض المواد فيما بعد .<br />
+3) ويمكن للمعلم أن يتصل بالمانحين المحليين من ( الإفراد والشركات والمنظمات ) .<br />
+4) ويمكن الحصول على التمويل من المساعدات النقدية .<br />
+5) ويمكن للمعلم أن يتطوع بالكتب من مكتبته الشخصية، أو يطلب من زملائه إعارته بعض الكتب .<br />
+6) ويمكن فرض بعض الرسوم، والرسوم المسترجعة على نظام الاستعارة، للحفاظ على المكتبة، وقد يشترط بعض الرسوم لحضور أي فصل آخر لغرض القراءة الإضافية .<br />
+المرحلة الثالثة : <br />
+البدء والتطبيق العملي، تحت شعار: ( خطوة فخطوة ).<br />
+تسمح هذه المرحلة للمدرسين تعريف الطلاب ببرنامج القراءة الموسعة بشكل عملي، وعليهم أن يشرحوا للطلاب أهمية هذا النوع من القراءة، مع للتأكيد على أن الكتاب الدراسي والقراءة الموسعة ينبغي أن يكونا مترافقين معاً، ولتذكير الطلاب بأنهم يحتاجون للقراءة للمتعة, وبذلك يتمكنون من وضع اللغة التي يتعلمونها في كتبهم المدرسية موضع الممارسة والتطبيق.<br />
+عادة ما يكون الطلاب أشخاصاً مشغولين, إما لديهم دروس أخرى أو عمل بدوام كامل أو عائلة ( أو كل ذلك معاً! )، وقد لا يتوفر لديهم الوقت الكافي لهذه القراءة، وأيضاً الكثير من الطلاب لم يقرؤوا قطّ كتاباً كاملاً باللغة العربية أو لا يحبون القراءة مطلقاً وبالتالي قد يرفضون القراءة حتى وإن كانوا يعلمون بأنها تعود عليهم بالنفع . <br />
+وكخطوة أولى قراءة يقوم بها كامل الصف، وتتمثل بوضع مجموعة مختارة من أسهل الكتب في مكتبة القراءة الموسعة على طاولة ليطلع عليها الطلاب، دعهم يلقوا نظرة عليها، اشرح للطلاب بأنه يمكنهم اختيار أي كتاب يرغبون بقراءته على أن يكون بمستوى قدراتهم.<br />
+ثم نطلب من الطلاب القراءة جميعاً كنص، بحيث يعتادون فكرة قراءة نص أطول، يجب على المدرس أن يبدأ باختيار كتاب سهل للغاية، كتاب يستطيع حتى أضعف الطلاب قراءته وبذلك يتمكن كافة الطلاب من استيعاب فكرة القراءة الموسعة، سوف تحتاج إلى عدة نسخ من نفس الكتاب بحيث يحصل كل طالبين على الأقل على كتاب واحد، الهدف في هذه الخطوة هو جعل القراءة سهلة والتركيز على المتعة والقراءة السريعة بحيث يمكنك لاحقاً مقارنتها بالقراءة الأكثر صعوبة التي من المحتمل أن يواجهها الطلاب عند قراءة كتب أخرى.<br />
+ـ في أول كتاب للطالب :<br />
+عليك أن تري الطلاب الكتاب ثم تطلب منهم النظر إليه، قد ترغب بالإشارة إلى ميزات هامة في الكتاب، وأن تطلب منهم أن يتوقعوا ما قد يكون موضوع الكتاب، يقرأ الطلاب قراءة صامتة بعض الصفحات لغاية نقطة محددة مسبقاً مثل نهاية الفصل، كرر هذه الخطوات باستخدام كتب أخرى حتى يعتاد الطلاب على فكرة القراءة السهلة .<br />
+ـ في توجيه الطالب : <br />
+يغلق الطلاب كتبهم ويسلمونها لك، أو بدلاً من ذلك، قد يسمعون القصة تروى بصوت عالٍ من المسجل الصوتي .<br />
+ـ اكتب بعض الأسئلة البسيطة على السبورة ، حتى وإن كانت باللغة الأولى للطلاب، مثل <br />
+ـ من هي الشخصيات؟ <br />
+ـ أين تجري أحداث القصة؟ <br />
+ـ ما الذي يحصل؟ <br />
+ـ ماذا سيحصل بعد ذلك؟ إلخ....<br />
+ـ اطلب منهم الإجابة على الأسئلة كل واحد مع شريكه ثم الإجابة عليها<br />
+معًا بمساعدة المعلم .<br />
+ـ ذكّر الطلاب بالقصة من الدرس السابق، اطلب منهم توقع ماذا سيحدث بعد ذلك.<br />
+ـ اقرأ معهم المزيد من الصفحات ثم أتبع ذلك بطرح بعض الأسئلة البسيطة.<br />
+ـ استمر بهذه الطريقة لعدة دروس حتى انتهاء الكتاب.<br />
+ـ اسألهم عن رأيهم بالقصة وهل وجدوا فرقاً بين هذه القراءة وقراءة المقاطع في كتبهم<br />
+المدرسية .<br />
+ـ اشرح لهم أن هدف هذا النوع من القراءة ليس دراسة اللغة بل إتاحة الفرصة لهم لممارسة القراءة وبناء قدرتهم على القراءة بسرعة، وأن سبب تمكنهم من ذلك أن هذه القراءة سهلة، قد تحتاج لأن تخبرهم بأنه حتى وإن كانوا يعرفون معظم مفردات اللغة في الكتاب، إلا أنهم ما زالوا يتعلمون لأنهم يمارسون قراءتهم ويختارون سرعة قراءة خاصة بهم.<br />
+ـ في الاختيار الذاتي :<br />
+عادةً ما تكون جيدةً فكرة بدء القراءة الموسعة في الصف للتأكد من أن الطلاب يقرؤون ويتعلمون كيف يقرؤون بشكل سليم، وفي نهاية المطاف ربما يقومون بالقراءة كواجب منزلي، وعندما يعتاد الطلاب على القراءة السهلة كصفّ، يحين الوقت لتقدّم لهم القراءة بالاختيار الذاتي :<br />
+<br />
+ـ قراءة شيء من الكتاب نفسه وليس فقط النظر إلى العنوان والغلاف والصور<br />
+ـ اختيار موضوع للقراءة مثير للاهتمام، فإذا أصبح الكتاب مملًا أو صعبًا للغاية، عليهم تركه وقراءة شيء آخر. <br />
+- اختيار ما يستطيعون قراءته بسرعة تقارب 150 ـ 200 كلمة بالدقيقة .<br />
+ـ اختيار ما يستطيعون قراءته دون استخدام قاموس<br />
+ـ أن يكونوا قادرين على فهم كل شيء في الكتاب تقريبًا<br />
+ـ يشارك فيه الجميع، الطلاب والمدرسون، وربما زملاء سابقون أيضاً<br />
+ <br />
+يستطيع المدرسون زيادة الوقت المحدد للقراءة بأن يطلبوا من الطلاب القراءة أثناء الحصة الدراسية وخارجها، بعض المدرسين يخصصون حصة دراسية كاملة أو جزء من حصة للقراءة الصامتة بحيث يمكنهم مراقبة قراءة الطلاب، في حال تعذر توفير حصة دراسية، يمكن للطلاب القراءة في المنزل أو في أي مكان آخر يرغبون به، إلا أنه من الضروري تخصيص وقت قصير من الحصة للسماح للطلاب بتبديل كتبهم، وللمدرس مراقبة القراءة وتقويمها.<br />
+ <br />
+ينبغي على إدارة البرنامج تحديد وقت معين كل يوم أو كل أسبوع عندما تكون المكتبة مفتوحة ليتمكن الطلاب من تبديل كتبهم، تطلب المدارس غالبا من الطلاب قراءة كتاب واحد في الأسبوع أو أكثر، يتوجب على الطلاب أن يعرفوا طريقة استخدام مكتبة القراءة الموسعة واستلام الكتب وإعادتها باستخدام نظام واضح وبسيط يمكن للجميع أن يفهمه.<br />
+في حفظ الكتب :<br />
+ـ تتوفر العديد من الخيارات حول مكان حفظ الكتب :<br />
+وتعتبر مكتبة المعهد المكان الأفضل نظراً لوجود أنظمة استعارة كتب معتمدة، ونظرا لتوفر المساحة الكافية وعدد الموظفين اللازم لتلبية الزيادة الهائلة في متطلبات استعارة الكتب، وقد يحتفظ بالكتب في خزانة خاصة في الصف أو في غرفة المدرس أو الأفضل من ذلك في جناح خاص لممارسة القراءة الموسعة والاستماع ملحق بمكتبة معهد اللغة الرئيس، ويستخدم بعض المدرسين عربة صغيرة توضع فيها الكتب لسهولة التنقل بها من غرفة لأخرى، ومنهم من يستخدم صناديق أو حقائب في حال وجود عدة صفوف تتشارك بنفس الكتب، لإمكانية التبادل وضمان التنوع . <br />
+ـ في فهرسة الكتب :<br />
+تستخدم عدة أنظمة للفهرسة منها : تمييز الكتب باستخدام نظام ترقيم المستوى : الأول، الثاني، الثالث، الرابع، وهكذا، هذه الطريقة تسمح للطلاب بإيجاد الكتب بسرعة وبالمستوى الخاص بهم كما تسمح بتصنيف تلك الكتب في المكان المناسب من مكتبة القراءة الموسعة بسهولة، ليس من الضروري دائماً وضع بطاقات استعارة لكل كتاب بل يكفي كتابة رقم وحيد غير مكرر بسيط داخل الغلاف الأمامي لكل كتاب لتمييز ذلك الكتاب عن غيره. ومنها تحديد الكتب بتمييزها عن بعضها من ناحية المستويات بتلوين رمز كل كتاب عن طريق وضع شريط ملوّن أو بطاقات لاصقة ملونة على جزء من ظهر الكتاب، مثلاً، كتب المستوى الأول يمكن أن تكون ملونة بالأصفر، وكتب المستوى الثاني ملونة بالأزرق، وهكذا. <br />
+في تنظيم ونظام استعارة الكتب :<br />
+هناك طرق متعددة للتنظيم بدءاً من نظام مفتوح جداً وصولاً إلى نظام مراقب بعناية، من الأمثلة على النظام المفتوح جداً السماح للطلاب باستعارة كتب من مكان عام في أي وقت يرغبون به وإعادتها بعد الانتهاء منها، إلا أن الأنظمة التي تعتمد على الأمانة تؤدي غالبا إلى فقدان الكثير من الكتب، أما النظام المراقب وهو الأكثر استخداماً وعلى نطاق واسع، يكون باستعارة الطلاب للكتب وإعادتها فقط في نفس الوقت من كل أسبوع .<br />
+ <br />
+ويمكن إعداد ورقة واحدة لكامل الصف، يسجل كل طالب رمز الكتب التي يرغب باستعارتها كل أسبوع أمام اسمه إضافة إلى التاريخ، وعند إعادة الكتب يقوم المدرس بشطب رقم الكتاب للإشارة إلى أنه تمت إعادته، من ميزات هذا النظام أنه لا يمكّن المدرس من رؤية الكتاب الذي يقرؤه كل طالب فحسب بل مستوى ذلك الكتاب أيضاً. <br />
+ويمكن إعداد ورقة منفصلة خاصة بكل طالب مما يسمح للطالب بأن يكون لديه محفظة لقراءاته، ومن ميزاته تمكين المعلم من تعقّب عدد الصفحات المقروءة ومعرفة أن الطالب قد انتقل من المستوى الأخضر إلى المستوى الأزرق مع إضافة عمود ليكتب فيها الطلاب ملاحظة قصيرة عن الكتاب، كأن يقول : ممتع للغاية ولكنه سهل قليلا ، أو مشوق وممتع ، وهكذا .<br />
+ <br />
+القراءة الموسعة عقبات ومشكلات<br />
+اللغة العربية لغة شريفة بتشريف الله عز وجل لها , إذ جعلها لغة كتابه خاتم الكتب السماوية الذي أرسل به محمدا صلى الله عليه وسلم للناس كافة ، وحفظها بحفظه لكتابه الكريم ، وجعلها باقية ببقائه ، قال تعالى : ( إنا نحن نزلنا الذكر وإنا له لحافظون ) .<br />
+ولهذا الشرف العظيم كانت لها منزلة خاصة في قلوب المسلمين قديما وحديثا في مشارق الأرض ومغاربها , فهم وإن اختلفت لغاتهم وأعراقهم ، فقد وحدت العربية كل من قال : أشهد أن لا إله إلا الله وأشهد أن محمدا رسول الله . فالمسلم ينطق بها خمس مرات يوميا على أقل تقدير في صلاته، ومن يتفقه في دينه منهم بالسماع أو الدراسة أو القراءة الموسعة بالرجوع إلى مدونات الفقه الإسلامي وشروح الحديث النبوي الشريف , فاللغة العربية وسيلته الأولى لبلوغ هذه المطالب العالية والمراتب الشريفة .<br />
+وفي وقتنا الحاضر وانتشار الإسلام في أرجاء الأرض أحتاج المسلمون إلى تعلم اللغة العربية ، وأصبحت محل اهتمام السواد الأعظم من المسلمين ممن لم تكن اللغة العربية لسانهم الأم ، فظهرت المراكز والجامعات والمدارس الرسمية وغير الرسمية للعناية بتعلم وتعليم اللغة العربية وعلومها لتكون وسيله لفهم مراد الله ومراد رسوله عليه الصلاة والسلام ، ولما للقراءة الموسعة في برامج تعليم اللغة العربية للناطقين بغيرها عظيم الأثر في إتقان العربية وتوجيه الطلاب إلى إشباع نهمهم ورغبتهم إلى المعرفة الجيدة والتمكن من ناصية اللغة فهما وتحدثا بالدرجة المطلوبة واستيعاب مقاصد النصوص واعتياد القراءة الحرة والمطالعة المستمرة ، فإن هذا لا يعني خلو الطريقة من عقبات ومشكلات يمكن تفصيلها على النحو التالي : <br />
+1ـ نقص خبرة المعلم بطرق تعليم اللغة العربية لغير الناطقين بها ، ومنها إدارة أنشطة وبرامج القراءة الموسعة, فمن الواجب على المعلم تحقيق أهداف القراءة الموسعة، والتزود بالأدوات التي تمكنه من مهارات عملية وتقنية للقيام بالمهام اللازمة لمثل هذه البرامج ، ومنها خضوعه لدورات خاصة عن القراءة الموسعة أو يطلع بنفسه على الكتب والمصادر التي تركز على ألوان إقامة أنشطة القراءة الموسعة وأساليبها ، والاستفادة من الخبرات العالمية التي حققت تقدما ملموسا في تعليم اللغات الأجنبية وطرق التدريس الحديثة . <br />
+2 ضعف الدافعية وتفهم المسؤولية لدى الطالب , فليس مجرد الانتظام في برنامج تعليم اللغة العربية يكفى لفهم كتاب الله وسنة رسوله الكريم والاستيعاب اللازم للغة مالم يأخذ نفسه بالجد ودوام القراءة الحرة والاجتهاد مع معلمه في تنفيذ خطوات القراءة الموسعة لاكتساب عادة القراءة والاطلاع على المدونات الإسلامية ، خاصة أولئك الذين يعدون أنفسهم للمستقبل دعاة إلى دين الله الحنيف إما معلما أو إماما أو مفتيا ، وينبغي أن يدرك الطالب أن الاعتماد على المعلم والمعاجم العربية والاكتفاء بالدراسة فقط ليست الطريقة الفضلى لتحقيق مآربه من تعلم العربية, فليشارك معلمه وزملاءه قدر المستطاع في اكتساب عادة القراءة والتحدث بالعربية وأنماطها التي توفرها برامج القراءة الموسعة الموازية للبرنامج العام فإنها أسنان المفتاح للنجاح . <br />
+3 ضعف الطرق المتبعة في نقل المعلومات وتحقيق الفهم الشامل, والميل إلى الطرق التقليدية والتلقين النظري, والاعتماد على الترجمة وقوة ذاكرة الطالب, وتلقي الدروس بطريقة لا تستتبع التطبيق والممارسة, فيكون حال الطالب كحال من يقرأ عن كيفية قيادة السيارة, فيجمع المعلومات الكافية لفترة طويلة في ذهنه دون تطبيق بممارسة القيادة, فسوف تتلاشى تلك المعلومات شيئا فشيئا من ذهنه, وهكذا برامج القراءة الموسعة وسيلة لضمان اعتماد الطالب على نفسه بمواصلة القراءة والفهم دون الحاجة إلى المعلم, والإعداد لما بعد التخرج من البرنامج العام .<br />
+4 ضعف الاختيار للكتب والمواد ذات الموضوع الواحد، والاقتصار على بعض التراكيب والدلالات دون بعض التي تحقق الكفاءة لإتقان اللغة العربية بمهاراتها المختلفة من حديث واستماع وقراءة وكتابة، وتشكل برامج القراءة الموسعة الحل الأمثل لمعالجة القصور وسد الفجوة بين المتعلم الجاد والوصول إلى درجة الكفاءة، وتساعد الطالب على فهم التراكيب والقوالب المختلفة واستخدامها بسلاسة وطلاقة تحدثا وكتابة .<br />
+5 عدم توفر البيئة والمكان المناسب لبرامج القراءة الموسعة, لممارسة القراءة الحرة التي تمكن الطلاب من إتقان اللغة, فالطلاب يحتاجون إلى تطبيق ما تعلموه والتحدث باللغة العربية والاستماع إليها في بيئة مزودة بإدخال المحطات المتلفزة والراديو, لتتعود آذانهم على سماع العربية والشعور بالألفة تجاهها, فليجأون إلى بعض البدائل غير الوافية بممارسة اللغة مع بعض الزملاء وسط الجامعة من طلاب الكليات وفترات الاستراحة القصيرة، وقد ينتظم بعضهم في الرحلات المسيرة للحرم النبوي الشريف للاستفادة من العلماء هناك .<br />
+6 عدم توفر الزمن المناسب لبرامج القراءة الموسعة, لممارسة القراءة الحرة التي تمكن الطلاب من إتقان اللغة ، وقد تطغى ساعات التلقي وغالبها مخصص للمحادثة على أساليب الاطلاع وتوظيف اللغة التي تضمن دوام لاتصال باللغة ومواصلة دراستها بلا انقطاع, فتحديد يوم أو يومين من أيام الأسبوع، أو حصة أو حصتين من ساعات اليوم الواحد, إن أمكن ، لأنشطة القراءة الموسعة في بيئة جاذبة بما يشبه العروض الأدبية والمسرحيات الهادفة كفيل بتحقيق أهداف كثيرة تنال استجابة الطلاب واستفادتهم.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_855571" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_855571" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=855571" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_855571" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_855572">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2017-04-30,&nbsp;<span class="time">09:48 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post855572" href="showthread.php?t=160924&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=855572#post855572" class="postcounter">#4</a><a id="postcount855572" name="4"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=131346&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="ثمر الألباب غير متواجد حالياً"><strong>ثمر الألباب</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=131346&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=131346&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ثمر الألباب غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Feb 2016</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>66</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_855572">
+				<blockquote class="postcontent restore">
+					القراءة الموسعة والكتابة (1)<br />
+القراءة والكتابة ظاهرتان متلازمتان لوعي الإنسان وتفكيره مهما كانت الأسباب والشروط والدوافع المختلفة للفصل بينهما في الأعمال المنهجية، فقد يمكن أن تجد شخصا قارئا وليس بكاتب، ولكن يستحيل أن تجد شخصا كاتبا وليس بقارئ، فالكتابة مهارة إنتاجية تعبر عن معاني الرقي والتفوق وقدرات التميز والإبداع، ومهارات التفكير السليم وتمثيل المشاعر الإنسانية في أقسى اللحظات وأجمل المواقف، وهي رفيقة القراءة الدائمة لاستحالة الكتابة بدون وجود قراءة واسعة ومطالعة مستمرة، وإهمال القراءة داعية لضعف الرغبة في الكتابة وبمرور الوقت قد نخسر مذاق القراءة ولا نستطيع الوصول إلى مفاتيح الكتابة، التي ينصر بها الدارس قضاياه ويرفع بها صوته في هذا العالم لينتزع حقوقه أو يرفع بها الظلم عن نفسه.<br />
+إذا كانت القراءة هي إحدى نوافذ المعرفة، وأداة من أهم أدوات التثقيف التي يقف بها الإنسان على نتاج الفكر البشري، فإنَّ الكتابة تعدّ في الواقع أعظم ما أنتجه العقل. ولقد ذكر علماء الأنثربولوجي أن الإنسان حين اخترع الكتابة بدأ تأريخه الحقيقي ، فكم من حضارات فُقِدتْ وأقوام بادت آثارهم لأنهم لم يعرفوا الكتابة. وكم من أمم ظلت آثارهم حية تكشف عن حضارتهم وتفوقهم بسبب أنهم سجلوها كتابة<br />
+ <br />
+الكتابة حفظت حضارات الفراعنة والآشوريين والإغريق والرومان ونقلتها إلى غيرهم<br />
+من الأمم. فبالكتابة ظلوا أحياء بأعمالهم بعد أن صاروا رفاتا بأجسادهم، الكتابة هي وسيلة من أهم وسائل التواصل الإنساني التي يتم بوساطتها الوقوف على أفكار الآخرين، والتعبير عمّا لديهم من معانٍ ومشاعر، وتسجيل ما يودون تسجيله من حوادث ووقائع.<br />
+ <br />
+والكتابة مرتبطة بالتفكير، فإذا أردنا أن نعلم التلاميذ كيف يكتبون بوضوح وكفاءة ومهارة، فلابدَّ أن يفكروا بوضوح وكفاءة ومهارة، ولكي يكتبوا في قوة وتخيّل لابدَّ أن يفكروا بقوة وتخيّل، وعملية الكتابة تسير هكذا فكّر ثم اكتب ... واكتب وأنت تفكر ، كما أنها ليست نشاطاً سهلاً أو فطرياً، بل هي نشاط مكتسب قوامه الدراسة والتعلم.<br />
+ <br />
+ <br />
+مفهوم الكتابة:<br />
+جاء في لسان العرب (كتب ) الكتابُ معروف، والجمع كُتُب . وكتب الشيء يكتبه كتابة، وكتبه   خطَّه) ،  والكتابة لغة مصدر كتب . يقُال كتب يكتب كتْبا وكِتابا وكِتابةً ... فهو كاتب، ومعناها الجمع؛ يقُال تكتب القوم إذا اجتمعوا، ومن ثم سُمي الخطُ كتابة لجمع الحروف بعضها إلى بعض.<br />
+ <br />
+أمّا في الاصطلاح : فقد كانت الكتابة تعني التدوين أو النقل أو التوثيق، قال تعالى: يا أيها الذين آمنوا إذا تداينتم بدين إلى أجل مسمى فاكتبوه&quot; <br />
+ <br />
+والكتابة هي رسم الحروف وكتابتها بشكل واضح بحيث يستطيع القارئ التعرف عليها وفهم مدلولاتها ومضامينها &quot; <br />
+ <br />
+إن امتلاك الطلاب لمهارات الكتابة يعد أمراً ضرورياً ، وخاصة في المستوى المتوسط الذي يكون الطالب فيها قد اكتسب بعض المهارات الكتابية الأساسية في المستوى الأولى وإتاحة الفرصة له كي يتقن هذه المهارات في هذه المرحلة يعد تمهيداً للمراحل المتقدمة التي يتوسع فيها نشاط الطلاب في الكتابة ، ولن يتم هذا التمكن إلا بكثرة التدريب والمراس، حيث إنَّ المعرفة بالمهارة لا يفي بإتقانها خصوصاً أن المهارات الكتابية هي عملية متراكبة الأطراف تتضمن عددا من المهارات اللازمة لها كمهارة التهجي، ومهارة الخط والرسم ومهارة تنظيم الأفكار. فامتلاك الطالب لمهارات الكتابة لا يتأتى إلا عن طريق المعرفة بالمهارة والتدرب عليها.<br />
+إن الكتابة ليست مهارة بسيطة تتركز في القدرة على رسم الحروف والكلمات رسما صحيحا فحسب، بل إن مفهوم الكتابة أوسع من هذا وأشمل؛ فالكتابة تشير إلى مجموعة من الأنشطة تبدأ بتحويل الصوت المسموع في اللغة إلى شكل مرئي متفق عليه . <br />
+ويجمع اللسانيون التطبيقيون على أن تعليم الكتابة والإنشاء هو أصعب المهام في تعليم اللغات الأجنبية، ومرجع ذلك إلى أنها تمثل منجزا حقيقيًا وتجسيدا واقعيا للكفاية التواصلية باللغة الثانية، وهي مجتمع الكفايات كلّها ، وتختلف صعوبة الكتابة باللغة العربية تبعا لاختلاف السن وطبيعة اللغة من حيث مشابهتها أو اختلافها في الصوت أو الكتابة للغة الدارس الأصلية ، ومن ثم يسهل على الباكستاني أو الفارسي تعلم العربية لما بينها وبين اللغة الأدرية واللغة الفارسية من التقارب في الأصوات وطبيعة تراكيب اللغة أو الأنماط السائدة وشكل الكتابة<br />
+ <br />
+وتعليم الكتابة للكبار أقل تعقيدا من تعليم الصغار لاكتمال نمو أعضاء الكتابة وسهولة القيام بحركات ثني وقبض عظام الأصابع الثلاثة، والإدراك التام لشكل الكلمات والحروف ورموز الكتابة، وفي ضوء أهمية المدخل الوظيفي في أنشطة الكتابة الموسعة مع برامج القراءة الموسعة التي تمثل المنهج المقنن، من بداية أهداف تعليمه، مرورا بمحتواه وأنشطته، وتقويمه، من خلال مواد ونصوص وموضوعات متعددة بحيث تأخذ شكلا متكاملا منسجما والمدخل الاتصالي والتعبير الشفوي، تصب في مصلحة الطالب وتتجاوز الأخطاء الأسلوبية والتنظيمية في التمكن من اللغة .<br />
+وإذا كان تعليم الكتابة للصغار يعتمد على الطريقة الجزئية، أي كتابة الحروف منفصلة، ثم جمع هذه الحروف في كلمات، فإن تعليم الكبار يعدل عنها إلى الطريقة الكلية مباشرة إلى كتابة كلمات أو جمل تامة، أو عبارات بسيطة. وتكرار كتابة بعض الكلمات في جمل منوعة مثل: إنني خطت قميصا، إنني اشتريت قميصا.<br />
+ <br />
+وفي هذا النوع من التعليم لا يجب أن ينظر إلى موضوع الكتابة بالدرجة الأولى على أنها وسيلة من وسائل التعبير الفني، إنما يتحتم أن ينظر إليها على أنها وسيلة اتصال وصيانة؛ وتختلف مبدئيا قابلية المتعلمين وخصائصهم الفردية، في الوصول إلى أحسن نموذج، وأفضل خط، وكتابة شخصية تنسجم مع ميولهم وقدرتهم على التقليد، ثم الإبداع.<br />
+وتعليم القراءة والكتابة في أنشطة القراءة الموسعة أصبح أكثر سهولة ويسرا مع توافر الوسائل السمعية البصرية، ووسائل الإعلام، والوسائل التكنولوجية الحديثة، والنمو المعرفي، والسير نحو التكامل الثقافي ، والانتشار الواسع للطباعة، وتزايد أداوت الكتابة، كل ذلك جعل قضية تعليم القراءة والكتابة أمرا ميسرا أمام الدارسين الجدد الراغبين في دراسة اللغة العربية من غير الناطقين بها في البلاد العربية والمعاهد الإسلامية . <br />
+ <br />
+القراءة الموسعة والكتابة (2)<br />
+واستثمار القراءة الموسعة في تعليم الكتابة مجال رحب واسع، له تطبيقاته وجوانبه المتعددة، ويتحكم في اختيار هذه التطبيقات طبيعة المهام التعليمية المراد تحقيقها، ونوع النص القرائي؛ ولذلك فإن حسن اختيار الموضوع القرائي وإدارة المكتبة في أنشطة القراءة الموسعة يمثل مدخلاً صحيحا لتنفيذ تلك المهام التعليمية بنجاح، فالتخطيط من المراحل التحضيرية الهامة لممارسة الكتابة داخل بيئة توفر الفرص الكافية من الأنشطة المتنوعة، ويغلب أن يقوم بهذا الدور مخططو البرنامج الذين حددوا المهام التعليمية وفق الأهداف المرسومة من تعليم القراءة الموسعة وأهداف النشاط الموجه الذي ينتظم فيه الطلبةُ ، وقد يكون المعلِّم أحد هؤلاء المخطِّطين. وقد تلقى هذه المسؤولية كاملة على كاهل المعلم في أحوال كثيرة.<br />
+ <br />
+والفكرة الأساسية في توظيف القراءة لأغراض الكتابة قائمة على استجابة القارئ وتلقيه للنص الذي بين يديه، وربط أنشطة القراءة الموسعة كتابية وشفاهية بتنمية مهارات الكتابة الوظيفية المتنوعة وصولا إلى مهارات البحث العلمي لدى الدارسين، على نحو يجعل الطالب قادرا على فهم اللغة العربية الأساسية، وذلك بالتركيز على موضوعات تعالج النصوص بما يكفل تحقيق العناصر المطلوبة في عملية الكتابة التي تمر بمراحلها الطبيعية، من توليد الأفكار ثم صياغتها ومراجعتها مع المعلم وتبييضها ونشرها في لوحة التميز بالجناح <br />
+ <br />
+وعلى الرغم من تفاوت العلماء تفاوًتا يسيرا في تحديد استراتيجيات تعلم الكتابة بوصفها عملية معالجة؛ إلا أن أكثرهم يتفقون على أنها : تخطيط المعلم، والتخطيط للكتابة، وكتابة المسودة، واستجابة المعلم، والمراجعة، والتحرير اللغوي، والتقييم، وما بعد الكتابة , وظاهر أن هذا النموذج شامل ويتجاوز استراتيجيات تعلم الطالب إلى استراتيجيات تفاعل المعلم والمتعلم لتحفيز الطالب وتنمية عملياته المعرفية قبل الكتابة وفي أثنائها وبعدها، لاستثمار الذخيرة الثقافية التي تقدمها النصوص والمواد في المكتبة .<br />
+ <br />
+والكتابة ليست موهبة إلهية تتحكم فيها قوانين الوراثة غالبا، وإنما هي قدرة مكتسبة كاللغة التي يتلقاها الفرد من مجتمعه. والتمكن منها ليس مستحيلا، وكل طالب باستطاعته أن يصل إلى المستوى الجيد فيها، ولعل من أهم العوامل المساعدة على الكتابة الجيدة هي:<br />
+- القراءة الموسعة والاطلاع على الكتب التي تشمل أساليب سليمة ولغة فصيحة.<br />
+- الثروة اللغوية، فهي زاد الكتابة الواضحة التي يفهمها كل من قرأها.<br />
+- معرفة قواعد النحو والصرف بحيث تحميه من الوقوع في الأخطاء النحوية<br />
+والصرفية.<br />
+- إتقان الرسم الإملائي من أجل وقوف القارئ على المعنى الذي يقصده الكاتب.<br />
+- التجاوب مع الموضوع من خلال قناعة الكاتب، فالذي يقتنع بأمر يسهل أن يكتب عنه.<br />
+ <br />
+ويتكئ النشاط في القراءة الموسعة في جانبه الاتصالي على تفعيل الأنشطة الاجتماعية نظرا لما تحمله من حالة الارتباط الشعوري والنفسي باللغة الممارسة أثناء النشاط الاجتماعي، وهو أمر يسهل من تفكك العقد التعليمية التي تعرقل مسيرة تعلم اللغات بشكل عام, وهي خطوة تعتمد على آلية التخطيط اللغوي الموصل إلى عملية التعلم والتعليم الفعال، ولابد للمدرسين من إتاحة أكبر الفرص للطلبة للمشاركة في جميع الأنشطة التي تساعد على تحسين المهارات اللغوية الفردية، ويمكن إجمال هذه الأنشطة في الآتي : <br />
+1ـ إقامة الندوات التي تشجع الدارسين على حب اللغة وترفع من مستواهم، وتقوي رغبتهم في دراستها والحرص على الأنشطة المتعلقة بها .<br />
+2ـ عقد المناظرات والمناقشات، إذ لها دور في تنشيط المتعلمين نحو التعلم الجيد، وكلما شعر الدارسون بدورهم في التعلم كلما زاد اجتهادهم لتحقيق النجاح .<br />
+3ـ تكثيف الحوار بين الدارسين باللغة العربية تحت رقابة أساتذة متخصصين .<br />
+4ـ إتاحة الفرصة للطلبة للاحتكاك بالبيئة الخارجية والتعامل معها من خلال أنشطة متنوعة كالرحلات, والزيارات العلمية، والندوات والمعارض، ومشاركة المعاهد والجامعات المناسبات، والهدف من ذلك كله الاطلاع على أكبر كم من المعلومات وتبادل الخبرات، ومباشرة الطالب ذلك بنفسه مما يسمح له بصقل معارفه بعيدا عن غرف الدراسة، والحكمة ضالة المؤمن، فحيثما وجدها فهو أحق بها .<br />
+5ـ القراءة والعودة إلى المصادر بمختلف أنواعها، إذ هي مبدأ التعلم الحقيقي ، وقد حث الإسلام على القراءة، وعملا بقوله تعالى : ( اقرأ باسم ربك الذي خلق ) . <br />
+وينبغي أن تتناسب المواد التي تقدم للطلبة مع بيئة التعلم وأهداف الدولة التي يقيم فيها المعهد وأغراض الدارسين أنفسهم، فالحكايات والقصص المستخدمة في بيئة قد لا تتناسب مع بيئة أخرى، وأحيانا تكون الصور أو المناظر التي تستخدم في المواد المعروضة قد لا تتناسب مع ثقافة المجتمع المسلم, فعلى سبيل المثال: تشتهر المجتمعات الإسلامية بكره الكلاب والخنازير، وبعض الصور المنافية لقيم العفة والحياء ولا تتماشى مع بيئة الدارسين، والإنسان إذا كره شيئا ترفعت نفسه عن قبوله مهما تغير القالب الذي قدم فيه .<br />
+ <br />
+وقد تواترت عبارات الباحثين حول التأكيد على العلاقة بين القراءة والكتابة لأن الجمع بين القراءة الكتابة يمكن أن يساعد الطلاب على تحسين قدراتهم اللغوية، خاصة وأن القراءة هي المدخلات والكتابة هي المخرجات ، وبشكل أكثر تحديدا، فالقراءة الموسعة والكتابة معا أكثر فائدة لتحسين المهارات اللغوية لدى الطلاب من مجرد الاكتفاء بأنشطة القراءة الموسعة دون التدريب على الكتابة ، بل هي وسيلة ممتازة لتحسين إتقان اللغة لما توفره من فرص للدارسين على التفكير الناقد، وتنظيم الأفكار، وتبادل المعارف ، ثم إن لمهارة القراءة علاقة وثيقة بالمهارات الأخرى وهي ليست منفصلة عن بعضها بعضا، فهي مرتبطة على نحو متكامل ببعضها ؛ فالصوت يجمع بين مهارتي الاستماع والكلام، ويجمع الرمز الكتابي بين مهارتي القراءة والكتابة، والكلام والكتابة مهارتا إنتاج، والقراءة والاستماع مهارتا استقبال واستيعاب . <br />
+وبالتالي فإن العلاقة بين القراءة والكتابة علاقة تكاملية ؛ ذلك أن عملية تكوين قطعة مكتوبة تعتمد على إعادة قراءة ما تمت كتابته، كذلك فإنه قبل الكتابة تتم عملية القراءة بحثاً عن المعلومات التي نحتاج إدخالها في النص الكتابي، وهكذا فإن عملية الكتابة تعتمد على القراءة قبل وفي أثناء عملية الإبداع اللغوي، وبعد الانتهاء من عملية كتابة النص للقيام بتعديل بعض الفقرات التي نرى أنها بحاجة إلى تعديل , وبالله التوفيق
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_855572" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_855572" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=855572" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_855572" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_855727">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2017-05-02,&nbsp;<span class="time">06:57 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post855727" href="showthread.php?t=160924&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=855727#post855727" class="postcounter">#5</a><a id="postcount855727" name="5"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=131346&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="ثمر الألباب غير متواجد حالياً"><strong>ثمر الألباب</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=131346&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=131346&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ثمر الألباب غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Feb 2016</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>66</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_855727">
+				<blockquote class="postcontent restore">
+					<div class="cms_table"><table width="100%" class="cms_table"><tr valign="top" class="cms_table_tr"><TD colspan="2" class="cms_table_td"></TD>
+</tr>
+<tr valign="top" class="cms_table_tr"><TD class="cms_table_hr" colspan="2"><hr /></TD>
+</tr>
+<tr valign="top" class="cms_table_tr"><TD colspan="2" class="cms_table_td"><font color="#ff0000">القراءة الموسعة Reading Extensive<br />
+<br />
+<br />
+مفهوم القراءة الموسعة ( تمهيد ) :<br />
+تمهيد :<br />
+والقراءة الموسعة هي أحد إجراءات تدريس اللغة العربية كلغة ثانية أو أجنبية، حيث من المفترض أن يقرأ الطلاب صفحات كثيرة من المواد والنصوص والكتب من أجل المتعة والفهم العام من خلال القراءة الفردية الصامتة، ويشترط فيها أن يختار الطلاب الكتب التي يريدون قراءتها بأنفسهم بشكل مستقل ، ولا يطلب منهم تدريبات بعد القراءة سوى تلخيص بعض الأفكار في دفاتر الملاحظة تمهيدا لأنشطة ومهارات الكتابة الموسعة فيما بعد .<br />
+<br />
+وفردية القراءة تعني أن يختار الطلاب الكتب التي يرغبون في قراءتها ذاتيا حسب اهتمام ومستوى لغة المتعلم في بيئة خالية من الإشراف المباشر والتقييم، حيث يتم التركيز على متعة التعلم وحصول المعرفة والفهم الكلي للمضمون دون التركيز على تفاصيل التراكيب اللغوية أو معاني الكلمات أو أي جزئيات أخرى، وكذلك لهم الحق في التوقف عن القراءة متى ما رأوا المادة صعبة أو غير مثيرة لاهتماماتهم، ويمكن إدخال القراءة الموسعة في أي مستوى من مستويات تعليم اللغة الثانية، مهما كان المحتوى وسن الطلاب ولغتهم ، بشرط واحد، وهو أن يكون لدى الطلاب الحد الأدنى من المهارات الأساسية في تعلم اللغات الأجنبية بما فيها القراءة والكتابة<br />
+<br />
+وترى الغالبية العظمى من التربويين أن القراءة الموسعة لا تتم في ظروف صفية أو بيئة تعلم مقيدة بكتاب منهجي معين ، بل من شروطها أن يختار المتعلمون بأنفسهم ما يرغبون في قراءته .<br />
+<br />
+والقراءة الموسعة Reading Extensive) ) ) تعد أهم المصادر التي توفر دخلا لغويا طبعيا مفهوما، يثري لغة المتعلم، ويتحول إلى لغة مكتسبة ، فالقراءة خارج المقررات الدراسية لاسيما القراءة في الصحف والمجلات العربية أفضل أنواع القراءة وأكثرها فائدة في الوقاية من التحجر، لأن لغتها طبعية غير مصنوعة ولا أكاديمية، ويليها القراءة في العلوم الشرعية، والقراءة في الثقافة العامة .<br />
+<br />
+وتستهدف القراءة الموسعة تكوين قارئ ناضج، ينهض بمسؤولياته، ويشارك بصورة إيجابية في مشكلات مجتمعه وقضاياه، وتنمية القدرة على الاستقلال في القراءة عند الطالب وتشجيعه على القراءة الحرة التي لا يتقيد فيها بالفصل الدراسي, ويدور النشاط في هذا النوع من القراءة على مواد قرائية تتماشى مع هدف الإمتاع وتحقيق هدف التعزيز حول موضوعات مبسطة وقصص قصيرة ذات صلة باهتمامات الطلاب اختير محتواها اللغوي في ضوء ما درسه الطلاب في القراءة المكثفة .<br />
+<br />
+وحاجة الدارس للقراءة والكتابة في ضوء المدخل الوظيفي كحاجته للاستماع والتحدث في ضوء المدخل التواصلي ، فالقراءة الموسعة شرط للثقافة الواسعة، وما يجنيه الدارس الجديد من خلال قراءته للمواد والنصوص العربية في المستويين الثالث والرابع تضارع ما يجنيه من فوائد السيطرة على مهارتي الاستماع والتحدث في المستويين الأول والثاني، وهي في الرتبة المصدر الثاني بعد الاستماع للحصول على المعلومات والأفكار والأحاسيس التي لدى الآخرين، ومن أهميتها التعرف على ما كان لدى الأجيال عبر القرون المختلفة، كما نستطيع التعرف على ما لدى الآخرين المعاصرين لنا، والذين تفصلهم المسافات عنا، ولا نستطيع الاستماع إليهم مباشرة</font><br />
+<font color="#ff0000"><br />
+</font></TD>
+</tr>
+</table></div>
+
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_855727" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_855727" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=855727" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_855727" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_855728">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2017-05-02,&nbsp;<span class="time">06:58 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post855728" href="showthread.php?t=160924&amp;s=40a3dbf8dad57f073fe7698bbce8648b&amp;p=855728#post855728" class="postcounter">#6</a><a id="postcount855728" name="6"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=131346&amp;s=40a3dbf8dad57f073fe7698bbce8648b" title="ثمر الألباب غير متواجد حالياً"><strong>ثمر الألباب</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=131346&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=finduser&amp;userid=131346&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ثمر الألباب غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Feb 2016</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>66</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> 
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_855728">
+				<blockquote class="postcontent restore">
+					<div class="cms_table"><table width="100%" class="cms_table"><tr valign="top" class="cms_table_tr"><TD colspan="2" class="cms_table_td"></TD>
+</tr>
+<tr valign="top" class="cms_table_tr"><TD class="cms_table_hr" colspan="2"><hr /></TD>
+</tr>
+<tr valign="top" class="cms_table_tr"><TD colspan="2" class="cms_table_td"><font color="#ff0000">القراءة الموسعة Reading Extensive<br />
+<br />
+<br />
+</font>مفهوم القراءة الموسعة ( تمهيد ) :<br />
+تمهيد :<br />
+والقراءة الموسعة هي أحد إجراءات تدريس اللغة العربية كلغة ثانية أو أجنبية، حيث من المفترض أن يقرأ الطلاب صفحات كثيرة من المواد والنصوص والكتب من أجل المتعة والفهم العام من خلال القراءة الفردية الصامتة، ويشترط فيها أن يختار الطلاب الكتب التي يريدون قراءتها بأنفسهم بشكل مستقل ، ولا يطلب منهم تدريبات بعد القراءة سوى تلخيص بعض الأفكار في دفاتر الملاحظة تمهيدا لأنشطة ومهارات الكتابة الموسعة فيما بعد .<br />
+<br />
+وفردية القراءة تعني أن يختار الطلاب الكتب التي يرغبون في قراءتها ذاتيا حسب اهتمام ومستوى لغة المتعلم في بيئة خالية من الإشراف المباشر والتقييم، حيث يتم التركيز على متعة التعلم وحصول المعرفة والفهم الكلي للمضمون دون التركيز على تفاصيل التراكيب اللغوية أو معاني الكلمات أو أي جزئيات أخرى، وكذلك لهم الحق في التوقف عن القراءة متى ما رأوا المادة صعبة أو غير مثيرة لاهتماماتهم، ويمكن إدخال القراءة الموسعة في أي مستوى من مستويات تعليم اللغة الثانية، مهما كان المحتوى وسن الطلاب ولغتهم ، بشرط واحد، وهو أن يكون لدى الطلاب الحد الأدنى من المهارات الأساسية في تعلم اللغات الأجنبية بما فيها القراءة والكتابة<br />
+<br />
+وترى الغالبية العظمى من التربويين أن القراءة الموسعة لا تتم في ظروف صفية أو بيئة تعلم مقيدة بكتاب منهجي معين ، بل من شروطها أن يختار المتعلمون بأنفسهم ما يرغبون في قراءته .<br />
+<br />
+والقراءة الموسعة Reading Extensive) ) ) تعد أهم المصادر التي توفر دخلا لغويا طبعيا مفهوما، يثري لغة المتعلم، ويتحول إلى لغة مكتسبة ، فالقراءة خارج المقررات الدراسية لاسيما القراءة في الصحف والمجلات العربية أفضل أنواع القراءة وأكثرها فائدة في الوقاية من التحجر، لأن لغتها طبعية غير مصنوعة ولا أكاديمية، ويليها القراءة في العلوم الشرعية، والقراءة في الثقافة العامة .<br />
+<br />
+وتستهدف القراءة الموسعة تكوين قارئ ناضج، ينهض بمسؤولياته، ويشارك بصورة إيجابية في مشكلات مجتمعه وقضاياه، وتنمية القدرة على الاستقلال في القراءة عند الطالب وتشجيعه على القراءة الحرة التي لا يتقيد فيها بالفصل الدراسي, ويدور النشاط في هذا النوع من القراءة على مواد قرائية تتماشى مع هدف الإمتاع وتحقيق هدف التعزيز حول موضوعات مبسطة وقصص قصيرة ذات صلة باهتمامات الطلاب اختير محتواها اللغوي في ضوء ما درسه الطلاب في القراءة المكثفة .<br />
+<br />
+وحاجة الدارس للقراءة والكتابة في ضوء المدخل الوظيفي كحاجته للاستماع والتحدث في ضوء المدخل التواصلي ، فالقراءة الموسعة شرط للثقافة الواسعة، وما يجنيه الدارس الجديد من خلال قراءته للمواد والنصوص العربية في المستويين الثالث والرابع تضارع ما يجنيه من فوائد السيطرة على مهارتي الاستماع والتحدث في المستويين الأول والثاني، وهي في الرتبة المصدر الثاني بعد الاستماع للحصول على المعلومات والأفكار والأحاسيس التي لدى الآخرين، ومن أهميتها التعرف على ما كان لدى الأجيال عبر القرون المختلفة، كما نستطيع التعرف على ما لدى الآخرين المعاصرين لنا، والذين تفصلهم المسافات عنا، ولا نستطيع الاستماع إليهم مباشرة<br /></TD>
+</tr>
+</table></div>
+
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_855728" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_855728" class="newreply" href="newreply.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=newreply&amp;p=855728" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_855728" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=160924&amp;s=40a3dbf8dad57f073fe7698bbce8648b" class="popupctrl"><span class="ctrlcontainer">مجلس اللغة العربية وعلومها</span></a>
+		<a href="showthread.php?t=160924#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=40a3dbf8dad57f073fe7698bbce8648b">لوحة التحكم</a></li>
+		<li><a href="private.php?s=40a3dbf8dad57f073fe7698bbce8648b">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=40a3dbf8dad57f073fe7698bbce8648b">الاشتراكات</a></li>
+		<li><a href="online.php?s=40a3dbf8dad57f073fe7698bbce8648b">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=40a3dbf8dad57f073fe7698bbce8648b">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=40a3dbf8dad57f073fe7698bbce8648b">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=40a3dbf8dad57f073fe7698bbce8648b">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=40a3dbf8dad57f073fe7698bbce8648b">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=40a3dbf8dad57f073fe7698bbce8648b">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=40a3dbf8dad57f073fe7698bbce8648b">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=40a3dbf8dad57f073fe7698bbce8648b">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=40a3dbf8dad57f073fe7698bbce8648b">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=40a3dbf8dad57f073fe7698bbce8648b">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=160829&amp;s=40a3dbf8dad57f073fe7698bbce8648b">طبل سليمان... ماذا يقصد به في نص الثعالبي الآتي؟ أفيدوني بارك اله فيكم</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=160927&amp;s=40a3dbf8dad57f073fe7698bbce8648b">مذاكرة نحوية ..</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9">العربية</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%A1%D8%A9">القراءة</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D8%A7%D9%84%D9%84%D8%BA%D8%A9">اللغة</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D8%A7%D9%84%D9%85%D9%88%D8%B3%D8%B9%D8%A9">الموسعة</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D8%A8%D8%BA%D9%8A%D8%B1%D9%87%D8%A7">بغيرها</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D8%AA%D8%B9%D9%84%D9%8A%D9%85">تعليم</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D9%84%D9%84%D9%86%D8%A7%D8%B7%D9%82%D9%8A%D9%86">للناطقين</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D9%85%D9%86">من</a>، 
+		
+			<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;tag=%D9%88%D8%B3%D8%A7%D8%A6%D9%84">وسائل</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=40a3dbf8dad57f073fe7698bbce8648b">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=160924#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=40a3dbf8dad57f073fe7698bbce8648b&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=40a3dbf8dad57f073fe7698bbce8648b" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=40a3dbf8dad57f073fe7698bbce8648b">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=160924#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">08:14 AM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

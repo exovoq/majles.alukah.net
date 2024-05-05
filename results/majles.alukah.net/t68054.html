@@ -1,0 +1,2535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=696d1a7d9adaea36633b28fa7c3827c1&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=68054";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - المجلس العام لطالبات العلم - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=12" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="ادم, المضيع, الوقت, بنات" />
+	<meta name="description" content="الحياة فرصة، والعاقل مَن يستغلُّ كلَّ فرصة في تحقيق أهدافه وطموحاته. 
+  
+أن يحزن الإنسان على فوات محبوب، أو خَسارة فُرصة، فهذا أمر طبَعِي ومألوف، ولكن أن يَبْكي لعدم قدرته على العمل الصالح، فتلك مَنْزلة لا يصل إليها إلا القلَّة من البشر، فهذا هو الرسول الكريم - صلَّى الله عليه وسلَّم - يحثُّ على النفقة في سبيل الله، فينفق البعضُ ولكنْ ثمَّة فريق ليس لديهم ما يُنْفِقون مع رغبتهم الشديدة في الخير، وتمنِّي وجود المال لبذْلِه، وتصل بهم الدرجة إلى الحزن ثم البكاء؛ لأنهم لم يجدوا ما ينفقون؛ لذلك" />
+
+	<title> *بنات ادم في الوقت المضيع*</title>
+	<link rel="canonical" href="showthread.php?t=68054&s=696d1a7d9adaea36633b28fa7c3827c1" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=696d1a7d9adaea36633b28fa7c3827c1 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=696d1a7d9adaea36633b28fa7c3827c1">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1"><font color="#0000FF">المجلس العام لطالبات العلم</font></a></li>
+
+		
+	<li class="navbit lastnavbit"><span> *بنات ادم في الوقت المضيع*</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=696d1a7d9adaea36633b28fa7c3827c1&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 7 من 7
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=68054&s=696d1a7d9adaea36633b28fa7c3827c1" title="تحديث الصفحة">*بنات ادم في الوقت المضيع*</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=68054" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;t=68054&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=addsubscription&amp;t=68054" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;search_type=1&amp;searchthreadid=68054&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="68054" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_425178">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-11-08,&nbsp;<span class="time">08:11 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post425178" href="showthread.php?t=68054&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=425178#post425178" class="postcounter">#1</a><a id="postcount425178" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=68114&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الاترجة غير متواجد حالياً"><strong>الاترجة</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=68114&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=68114&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="الاترجة غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>16</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon3.png" alt="Lightbulb" /> *بنات ادم في الوقت المضيع*
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_425178">
+				<blockquote class="postcontent restore">
+					<font color="#800000">الحياة فرصة، </font>والعاقل مَن يستغلُّ كلَّ فرصة في تحقيق أهدافه وطموحاته.<br />
+ <br />
+أن يحزن الإنسان على فوات محبوب، أو خَسارة فُرصة، فهذا أمر طبَعِي ومألوف، ولكن أن يَبْكي لعدم قدرته على العمل الصالح، فتلك مَنْزلة لا يصل إليها إلا القلَّة من البشر، فهذا هو الرسول الكريم - صلَّى الله عليه وسلَّم - يحثُّ على النفقة في سبيل الله، فينفق البعضُ ولكنْ ثمَّة فريق ليس لديهم ما يُنْفِقون مع رغبتهم الشديدة في الخير، وتمنِّي وجود المال لبذْلِه، وتصل بهم الدرجة إلى الحزن ثم البكاء؛ لأنهم لم يجدوا ما ينفقون؛ لذلك استحَقَّ أولئك أن يُسجَّل موقفهم في الكتاب الخالد؛ في القرآن الكريم، في سورة التوبة، حيث يقول تعالى: &#64831; <font color="green">تَوَلَّوْا وَأَعْيُنُهُمْ تَفِيضُ مِنَ الدَّمْعِ حَزَنًا أَلَّا يَجِدُوا مَا يُنْفِقُونَ</font> &#64830; [التوبة: 92]؛ ليس حزنًا فقط، بل وبكاء.<br />
+ <br />
+ولَئِن سجَّلَ القرآن موقف أولئك النَّفر فقد سجَّلَت لنا السُّنَّة موقف الصِّدِّيقة بنت الصِّدِّيق؛ فها هي عائشة - رضي الله عنها - يُصيبها الحزن؛ لا لِعَدم حضور حفلة، ولا لخسارتها الفستان الفلاني، ولا... وإنما لأنه قد جاءها <font color="#000080">(الحيض)</font> مما يمنعها من بعض العمل الصَّالح <font color="#000080">(العُمْرة)</font>؛ وذلك أثناء حجة الوداع مع النبي الكريم - صلَّى الله عليه وسلَّم - لذا حرص الرسول - صلَّى الله عليه وسلَّم - على مواساتها وتطمينها، والسَّعْيِ في بيان أنَّ ما أصابها هو أمر ((قد كتَبَه الله على بنات آدم)).<br />
+ <br />
+نعَم، هو أمْرٌ كتبه الله على كلِّ بنات آدم، ولكن هذا لا يَعْنِي أنَّ المرأة لا تعمل عملاً صالِحًا أثناء هذه الفترة الزَّمنية من عمرها، بل العاقلة هي التي تنتهز هذه الفرصة لاختبار نفسها في علاقتها مع رَبِّها ومدى حرصها على العمل الصالح.<br />
+ <br />
+الوقت هو الحياة، والعمر واحد، والزَّمن لا يرجع، والسعيد هو مَن يستغلُّ تلك اللحظات في زراعة الأعمال؛ للحصول على الثِّمار في يوم الحصاد، ومن هنا كان طَرْح تلك الرسالة التي تُقدِّم بعض البرامج العمليَّة التي يمكن للمرأة أن تستثمرها في تربيتها لنفسها وتوثيق صلتها بربِّها حتى تكون تلك الفترة الزمنية من العمر ميدانًا للتسابق إلى مغفرة الله ورضوانه خاصَّة للنِّساء اللَّواتي حثَّهنَّ الرسول الكريم على التصدُّق؛ لأنه رآهُنَّ أكثر أهل النار، ويزيد الأمر أهمِّية أنَّ المرأة تستقبل مولودًا جديدًا بعد النِّفاس تستعدُّ معه لحياة جديدة وتنشئة سعيدة وتربية مجيدة على منهج السَّلَف الصالح، فهي تحتاج إلى المزيد من الوقت والجهد؛ من أجل إتقان العمل في الحياة الجديدة.<br />
+ <br />
+<font color="#008080">ونظرة سريعة إلى مقدار الوقت الذي يَشْغَله هذا الأمر يبيِّن أهميته:</font><br />
+فإذا افترضنا أنَّ المرأة تَبْلغ في سنِّ 13 سنة، وأن عمرها 63 سنة، فيكون عدد سنوات التَّكليف 50 سنة، ومعدَّل الدورة الشهرية للمرأة 7 أيام شهريًّا؛ أيْ: 168 ساعة شهريًّا:<br />
+168 × 12 = 2016 ساعة سنويًّا.<br />
+2016 × 50 = 100800 ساعة طول حياتها.<br />
+ <br />
+<font color="#008080">وإذا أنجَبَت خمسةً من الأبناء وكانت مُدَّة النِّفاس 40 يومًا، فإن:</font><br />
+5× 40 × 24 = 4800 ساعة طوال حياتها، فيصبح مجموع ساعات الحيض والنفاس:<br />
+100800 + 4800 = 105600 ساعة<br />
+ <br />
+<font color="#008080">ومجموع ساعات عمرها في سنِّ التكليف:</font><br />
+50 × 360× 24 = 432000 ساعة<br />
+ <br />
+<font color="#800000">أيْ: إنَّ نسبة عدد ساعات مُدَّة الحيض والنفاس إلى عدد الساعات الكلِّي لعمر التكليف </font>هو 25 % من عمر المرأة التكليفي.<br />
+ <br />
+وهذا رقم بلا شكٍّ كبير؛ فهو يستحقُّ أن تفكِّر فيه المرأة، وأن تجتهد في استغلاله، وأن تجعله سببًا في زيادة قربها من الله.<br />
+ <br />
+من أجل هذا؛ يُسعدنا أن نقدِّم بينكم هذه الرسالة، والتي نسعى من خلالها إلى مُساعدة المرأة في استغلال هذا الوقت مِن أجْل تقوية علاقتها بالله - عزَّ وجلَّ - وعدم انقطاعها، بل وتُسْهِم في زيادة إيمانها، فكما نَعْلم، الإيمان يزيد وينقص؛ يَزِيد بالطَّاعات والقُرُبات، وينقص بالمعاصي والسيِّئات، ولا يمكن أن يكون ثابتًا.<br />
+ <br />
+<font color="#008080">وقبل الحديث عن بعض الأفكار لا بُدَّ من التذكير ببعض المسائل الهامَّة:</font><br />
+<font color="#000000"><b>أنواع الدِّماء الخارجة من رَحِم المرأة:</b></font><br />
+اتَّفق المسلمون على أن الدِّماء التي تخرج من الرحم ثلاثة:<br />
+<font color="#3366ff">1-</font> دم الحيض: وهو الخارج على جهة الصِّحَّة <font color="#000080">(في حالة الصحة)</font>.<br />
+<font color="#3366ff">2-</font> دم استحاضة: وهو الخارج على جهة المرض، وأنه غير دم الحيض؛ لقوله - صلَّى الله عليه وسلَّم -: ((إنما ذلك عرْقٌ، وليس بالحيضة))؛ متفق عليه.<br />
+<font color="#3366ff">3-</font> دم نفاس: وهو الخارج مع الولادة.<br />
+ <br />
+<font color="#008080"><b>من فوائد خروج هذا الدم (من الحِكَم الرَّبَّانية):</b></font><br />
+<font color="#008000">•</font> تجديد الرَّحِم وتنظيفه لاستقبال مولود جديد.<br />
+<font color="#008000">•</font> تنشيط الدَّورة الدموية للمرأة.<br />
+<font color="#008000">•</font> عدم اختلاط الأنساب.<br />
+ <br />
+<font color="#008080"><b>من أحكام الحيض والاستحاضة:</b></font><br />
+اتَّفق المسلمون على أن الحيض يَمنع أربعة أشياء:<br />
+<font color="#3366ff">1-</font> فعل الصلاة، ولا قضاء على المرأة في ذلك؛ فدعي الصلاة))؛ ضعَّفَه الشيخ الألباني في &quot;<font color="#000080">صحيح الجامع الصغير</font>&quot; و<font color="#000080">&quot;الضعيفة&quot;</font> لحديث عائشة أنها قالت: &quot;كُنَّا نؤمر بقضاء الصوم، ولا نؤمر بقضاء الصلاة&quot;؛ البخاري.<br />
+<font color="#3366ff">2-</font> فِعْل الصوم مع القضاء؛ لحديث عائشة أنها قالت: &quot;كُنَّا نؤمر بقضاء الصَّوم، ولا نُؤْمَر بقضاء الصلاة&quot;؛ البخاري.<br />
+<font color="#3366ff">3-</font> الطَّواف؛ لحديث عائشة حين أمَرَها رسولُ الله أن تفعل كلَّ ما يفعل الحاجُّ غير الطواف بالبيت؛ أخرجه البخاري.<br />
+<font color="#3366ff">4-</font> الجماع في الفرْج؛ لقوله تعالى: &#64831; <font color="green">فَاعْتَزِلُوا النِّسَاءَ فِي الْمَحِيضِ</font> &#64830; [البقرة: 222].<br />
+ <br />
+<font color="#008080"><b>واختلفوا في مسائل، أهمها:</b></font><br />
+<font color="#008000">•</font> قراءة القرآن؛ لحديث: ((لا يقرأ الجنب ولا الحائض شيئًا من القرآن))؛ وهو ضعيف كما ذكر الشيخ الألباني - رحمه الله.<br />
+<font color="#008000">•</font> مسُّ المصحف، ولا دليل صريح على منع ذلك.<br />
+ <br />
+وليس هدَفُنا هنا تبْيينَ ومناقشة الأحكام الشرعية المتعلِّقة بالحيض والنفاس أو الاستحاضة، وإنما اكتفَيْنا بالإشارة إلى مُجْمَل الكلام في ذلك، ومَن رَغِبَت في الزِّيادة فعليها مراجعة كتب أهل العلم في ذلك.<br />
+ <br />
+ونحن هنا نتحدَّث عن برامِجَ عمَليَّة تطبيقيَّة يُمْكِن للمرأة أن تُطَبِّقها في كلِّ مكان وأيِّ زمان، ولتحقيق أفضل النتائج والحصول على أحسن المكاسب لا بُدَّ من تخطيطٍ بسيط لتلك العملية؛ فكلُّ عمل لا بُدَّ له من خُطَّة، فالطَّبخ مثلاً لا بُدَّ له من خطوات؛ ليتم على الصُّورة المطلوبة، وكذلك <font color="#000080">&quot;المكياج&quot;</font> لا بُدَّ أن يكون بطريقة معيَّنة وبكميَّة مناسبة، فمِن باب أَوْلى قضية المحافظة على المكاسب الإيمانية وزيادة العلاقة مع الله، ولعلَّ من أكبر أسباب ضعف الارتقاء الإيماني ضعْفَ التَّخطيط وعدم وضوح البرامج المناسبة.<br />
+ <br />
+والتخطيط هنا عملية بسيطة؛ فهو ليس تخطيطًا بمعناه الكبير والواسع، وإنما هو مجموعة خطوات من أجْل ترتيب العمل وتنظيمه بأبسط صُورة ممكِنَة، فلا نستصعب الأمر، ولنبدأ:<br />
+<font color="#008080"><b>خطوات إعداد خطة العمل:</b></font><br />
+<font color="#3366ff">1-</font> تحديد الأهداف المطلوبة<font color="#000080"> (كمًّا وكيفًا)</font>، مثلاً: حفظ جُزْئين من القرآن الكريم في السَّنَة.<br />
+<font color="#3366ff">2-</font> اختيار أفضل الوسائل المناسبة مثل الأشرطة، الكتب، اللِّقاءات.<br />
+<font color="#3366ff">3-</font> تقسيم الوقت <font color="#000080">(اختيار أنْسَب الأوقات)</font>.<br />
+<font color="#3366ff">4-</font> تنفيذ الخُطَّة وتسجيل الملاحظات.<br />
+<font color="#3366ff">5-</font> تطوير الخُطَّة والتجديد فيها.<br />
+ <br />
+<font color="#008080"><b>الأعمال في أوقات الحيض والنفاس:</b></font><br />
+لَمَّا كان الله قد خلَقَنا لعبادته: &#64831; <font color="green">وَمَا خَلَقْتُ الْجِنَّ وَالْإِنْسَ إِلَّا لِيَعْبُدُونِ</font> &#64830; [الذاريات: 56] كان من المُسَلَّم به أن تستغرق العبادة كلَّ الوقت وكلَّ الحياة بما فيها وقْت الحيض، ومن هنا كان هناك الكثير من الأعمال التي يمكن أن تقوم بها المرأة.<br />
+ <br />
+<font color="#008080">ونستطيع تقسيم الأعمال الصالحة التي يمكن أن تقوم بها المرأة في أوقات الحيض والنِّفاس إلى:</font><br />
+<font color="#3366ff">1-</font> أعمال مُتَّفق بين العلماء أنَّه لا يجوز أن تَعْمَلها، وهي الصَّلاة والصِّيام، والطَّواف والمكث في المسجد.<br />
+<font color="#3366ff">2- </font>أعمال مختلف بين العلماء في جوازها، وهي: قراءة القرآن ومسُّ المصحف.<br />
+<font color="#3366ff">3-</font> أعمال يجوز عملها باتِّفاق العلماء، وهي كلُّ ما بقي من الأعمال الصالحة، مثل ذِكْر الله، والصَّدقة، والاستماع للقرآن، وقراءة الكتب وغيرها.<br />
+ <br />
+ولا ننسى أنَّ كلَّ عمل تقوم به المرأة في بيتها <font color="#000080">(كالتَّنظيف وتربية الأبناء والاهتمام بالنَّفْس والأكل و...) </font>أو خارجه <font color="#000080">(كالزِّيارات وحضور اللقاءات و..)</font> يمكن أنْ تُؤجر عليه إذا أخلَصَت النِّيَّة لله في هذه الأعمال؛ مِمَّا يجعل وقتنا كُلَّه عبادة لله، وفي كلِّ حركة أجْر، فلِلَّه الحمد على ذلك.<br />
+ <br />
+<font color="#008080"><b>يمكن للمرأة أن تقسم الأعمال إلى قسمين:</b></font><br />
+<font color="#3366ff"><b>القسم الأول:</b></font> أعمال تتكرر في كل شهر مثل قراءة القرآن ومراجعة الحفظ.<br />
+<font color="#3366ff"><b>القسم الثاني:</b></font> أعمال لا تتكرر مثل تلخيص شريط، وقراءة كتاب معين، وحفظ بعض أحاديث الرسول - صلَّى الله عليه وسلَّم.<br />
+ <br />
+<font color="#008080">نستطيع تقسيم أوقات اليوم إلى:</font><br />
+<font color="#008000">• </font>وقت للعمل <font color="#000080">(للمرأة العاملة)</font>.<br />
+<font color="#008000">• </font>وقت للراحة<font color="#000080"> (النوم والاسترخاء و...)</font>.<br />
+<font color="#008000">•</font> وقت الطعام.<br />
+<font color="#008000">•</font> وقت للتربية <font color="#000080">(الذاتية والأولاد)</font>.<br />
+<font color="#008000">•</font> وقت إنجاز الأعمال المنْزلية <font color="#000080">(الطَّبخ والتنظيف و..)</font>.<br />
+<font color="#008000">•</font> وقت للترفيه.<br />
+<font color="#008000">•</font> أوقات للتجميل والاهتمام بالنفس.<br />
+<font color="#008000">•</font> أوقات لزيارة الأقارب والأصحاب.<br />
+ <br />
+<font color="#008080"><b>من الأفكار:</b></font><br />
+<font color="#3366ff">1-</font> اختيار كتاب في التفسير؛ للاطِّلاع عليه: تخصيص سور معينة في كل شهر.<br />
+<font color="#3366ff">2-</font> تخصيص مجموعة من الأشرطة النافعة وتَلْخيصها.<br />
+<font color="#3366ff">3-</font> مراجعة حفظ القرآن عن طريق أشرطة الكاسيت: تخصيص مقدار معيَّن في كل شهر.<br />
+<font color="#3366ff">4-</font> اختيار موضوع للبحث فيه.<br />
+ <br />
+<font color="#008080">ويسعدنا أن نضع بين أيديكنَّ جدولاً مقترحًا لبعض الأعمال الصالحة:</font><br />
+<br />
+<br />
+<br />
+<div style="text-align: right;"><font color="#008000">• </font>قراءة حزْب من القرآن يوميًّا.<br />
+<div style="text-align: right;"><font color="#008000">•</font> حِفْظ أو مراجعة صفحة أو أكثر من القرآن.<br />
+<font color="#008000">•</font> قراءة كتيب أو رسالة في أحاديث الرسول - صلَّى الله عليه وسلَّم - أو سيرته.</div></div><br />
+ <font color="#008000">•</font> قراءة حزب أو أكثر من القرآن يوميًّا.<br />
+<div style="text-align: right;"><font color="#008000">•</font> حفظ أو مراجعة صفحة من القرآن.<br />
+<font color="#008000">•</font> حضور درس نسائي.<br />
+<font color="#008000">•</font> الاستماع إلى مجموعة أشرطة في موضوع واحد <font color="#000080">(مثل الدَّار الآخرة)</font></div> <br />
+ <br />
+ <br />
+<br />
+<div style="text-align: center;">ربيع الأول</div><br />
+<div style="text-align: right;"><font color="#008000">• </font>قراءة حزب أو أكثر من القرآن يوميًّا.<br />
+<font color="#008000">•</font> حفظ أو مراجعة صفحة من القرآن.<br />
+<font color="#008000">•</font> تفريغ شريط نافع.<br />
+<font color="#008000">•</font> الاطِّلاع على شيء من سيرة المصطفى.<br />
+<font color="#008000">•</font> حفظ ودراسة خمسة أحاديث للرسول - صلَّى الله عليه وسلَّم -</div> <br />
+ <br />
+ ربيع الثاني<br />
+<br />
+<div style="text-align: right;"><font color="#008000">•</font> قراءة حزب أو أكثر من القرآن يوميًّا.<br />
+<font color="#008000">• </font>حفظ أو مراجعة صفحة من القرآن.<br />
+<font color="#008000">•</font> قراءة حُرَّة.<br />
+<font color="#008000">• </font>إعداد وطرح موضوع تربوي أو اجتماعي في إحدى الدَّوريات.</div> <br />
+ <br />
+ جمادى الأولى<br />
+<br />
+<div style="text-align: right;"><font color="#008000">•</font> قراءة حزب<b> أو أكثر</b> من القرآن يوميًّا.<br />
+<font color="#008000">•</font> حفظ أو مراجعة صفحة من القرآن.<br />
+<font color="#008000">•</font> عمل برنامج مَنْزلي للأبناء <font color="#000080">(مسابقة مثلاً)</font><br />
+<font color="#008000">•</font> من القصص <font color="#000080">(برنامج ذاتي من اختيارك لما ترغبين فيه من القصص المفيدة)</font>.</div> <br />
+ <br />
+ جمادى الثانية<br />
+<br />
+<div style="text-align: right;"><font color="#008000">•</font> قراءة حزب<b> أو أكثر</b> من القرآن يوميًّا.<br />
+<font color="#008000">• </font>حفظ أو مراجعة صفحة من القرآن.<br />
+<font color="#008000">•</font> الاستماع لبرنامج إذاعي أو تلفزيوني ثم تلخيصه.<br />
+<font color="#008000">•</font> رصْد السُّلوكيات الذاتية ووضع برنامج بسيط لتعديل واحد.</div> <br />
+ <br />
+ رجب<br />
+<br />
+<div style="text-align: right;"><font color="#008000">•</font> قراءة حزب <b>أو أكثر </b>من القرآن يوميًّا.<br />
+<font color="#008000">•</font> حفظ أو مراجعة صفحة<b> أو أكثر</b> من القرآن.<br />
+<font color="#008000">•</font> قراءة باب فقهي والمناقشة فيه مع الآخرين.<br />
+<font color="#008000">• </font>حفظ مجموعة من الأذكار وتعليمها الأبناء.</div> <br />
+ <br />
+ شعبان<br />
+<br />
+<div style="text-align: right;"><font color="#008000">•</font> قراءة حزب <b>أو أكثر </b>من القرآن يوميًّا.<br />
+<font color="#008000">•</font> حفظ أو مراجعة صفحة<b> أو أكثر</b> من القرآن.<br />
+<font color="#008000">•</font> وضع برنامج رمضاني بالتعاون مع الأُسْرة.<br />
+<font color="#008000">• </font>من القصص.</div> <br />
+ <br />
+ رمضان<br />
+<br />
+<div style="text-align: right;"><font color="#008000">•</font> قراءة حزب<b> أو أكثر</b> من القرآن يوميًّا.<br />
+<font color="#008000">•</font> حفظ أو مراجعة صفحة من القرآن.<br />
+<font color="#008000">•</font> قراءة وحفظ مجموعة من أحاديث المصطفى - صلَّى الله عليه وسلَّم.<br />
+<font color="#008000">•</font> حضور محاضرة.</div> <br />
+ <br />
+ شوال<br />
+<br />
+<div style="text-align: right;"><font color="#008000">•</font> قراءة حزب<b> أو أكثر</b> من القرآن يوميًّا.<br />
+<font color="#008000">•</font> حفظ أو مراجعة صفحة من القرآن.<br />
+<font color="#008000">•</font> البحث في موضوع معيَّن <font color="#000080">(بحث بسيط).</font><br />
+<font color="#008000">•</font> تنمية المواهب الذاتية.</div> <br />
+ <br />
+ ذو القعدة<br />
+<br />
+<div style="text-align: right;"><font color="#008000">•</font> قراءة حزب <b>أو أكثر </b>من القرآن يوميًّا.<br />
+<font color="#008000">•</font> حفظ أو مراجعة صفحةأو أكثر من القرآن.<br />
+<font color="#008000">• </font>الاستماع لسلسة أشرطة حول موضوع معين <font color="#000080">(مثل الآخرة، أعمل القلوب،..)</font><br />
+<font color="#008000">•</font> برنامج رياضي <font color="#000080">(كالمشي و..)</font></div> <br />
+ <br />
+ ذو الحجة<br />
+<br />
+<div style="text-align: right;"><font color="#008000">•</font> قراءة حزبأو أكثر من القرآن يوميًّا.<br />
+<font color="#008000">•</font> حفظ أو مراجعة صفحةأو أكثر من القرآن.<br />
+<font color="#008000">•</font> مراجعة خطة البرنامج الذاتية ووضع خطة العام القادم.<br />
+<font color="#008000">•</font> الرُّقية الشرعية.</div> <br />
+ <br />
+<font color="#008080"><b>طريقة تعبئة الجدول:</b></font><br />
+<font color="#008000">•</font> وضع علامة (&#8730;) في خانة <font color="#000080">&quot;نُفِّذ&quot;</font> أو<font color="#000080"> &quot;لم يُنفَّذ</font>&quot; عند التنفيذ أو عدمه.<br />
+<font color="#008000">•</font> تسجيل ملاحظات على البرنامج مثل: تأجَّلَ إلى... لم يُنفَّذ بسبب..... البرنامج مناسب جدًّا ويُفَضَّل تكراره، البرنامج طويل على المُدَّة المقترحة، يمكن إضافة برنامج......<br />
+ <br />
+<font color="#3366ff"><b>2- جدول النفساء:</b></font><br />
+<br />
+<div style="text-align: center;">اليوم<br />
+<br />
+<br />
+البرنامج<br />
+<br />
+<br />
+التنفيذ<br />
+<br />
+<br />
+ملاحظات<br />
+<br />
+<br />
+نفذ<br />
+<br />
+<br />
+لم ينفذ<br />
+<br />
+<br />
+1 - 5</div><br />
+<div style="text-align: right;"><font color="#008000">• </font>راحة واهتمام بالصِّحة</div> <br />
+ <br />
+ <br />
+<br />
+<div style="text-align: center;">6 - 10</div><br />
+<div style="text-align: right;"><font color="#008000">•</font> راحة واهتمام بالصحَّة.<br />
+<font color="#008000">•</font> قراءة رسالة أو سماع أشرطة عن أحكام النفاس وأحكام المولود الجديد.</div> <br />
+ <br />
+ <br />
+<br />
+<div style="text-align: center;">11 - 15</div><br />
+<div style="text-align: right;"><font color="#008000">•</font> الاهتمام بالصحَّة وبالمولود.<br />
+<font color="#008000">•</font> قراءة جزء أو أكثر من القرآن الكريم.</div> <br />
+ <br />
+ <br />
+<br />
+<div style="text-align: center;">16 - 20</div><br />
+<div style="text-align: right;"><font color="#008000">•</font> الاهتمام بالصحة وبالمولود.<br />
+<font color="#008000">•</font> قراءة جزء أو أكثر من القرآن الكريم مع تفسير بعض الآيات المقروءة.</div> <br />
+ <br />
+ <br />
+<br />
+<div style="text-align: center;">21 - 25</div><br />
+<div style="text-align: right;"><font color="#008000">•</font> الاهتمام بالصحة وبالمولود.<br />
+<font color="#008000">•</font> قراءة جزء أو أكثر من القرآن الكريم مع تفسير بعض الآيات المقروءة.<br />
+<font color="#008000">•</font> سماع شريط لموضوع ترغب فيه المرأة نفْسُها.</div> <br />
+ <br />
+ <br />
+<br />
+<div style="text-align: center;">26 - 30</div><br />
+<div style="text-align: right;"><font color="#008000">•</font> الاهتمام بالصحة وبالمولود.<br />
+<font color="#008000">•</font> قراءة جزء أو أكثر من القرآن الكريم مع تفسير بعض الآيات المقروءة.<br />
+<font color="#008000">•</font> قراءة وحفظ مجموعة من الأحاديث القصيرة المتعلِّقة بالأخلاق والسُّلوك.</div> <br />
+ <br />
+ <br />
+<br />
+<div style="text-align: center;">31 – 35</div><br />
+<div style="text-align: right;"><font color="#008000">•</font> الاهتمام بالصحة وبالمولود.<br />
+<font color="#008000">•</font> قراءة جزء أو أكثر من القرآن الكريم مع تفسير بعض الآيات المقروءة.<br />
+<font color="#008000">•</font> قراءة أو سماع مجموعة من القصص المفيدة والمسلِّية</div> <br />
+ <br />
+ <br />
+<br />
+<div style="text-align: center;">35 - 40</div><br />
+<div style="text-align: right;"><font color="#008000">• </font>الاستعداد للانتهاء من النفاس.<br />
+<font color="#008000">•</font> مراجعة ذاتية لفترة النفاس.<br />
+<font color="#008000">•</font> وضع برنامج للفترة القادمة (فردي وأُسَري).</div> <br />
+<font color="#008080"><b>من نتائج البرنامج - بعد تنفيذه لمدَّة سَنَة -:</b></font><br />
+<font color="#008000">•</font> حفظ أو مراجعة 12 صفحة من القرآن الكريم؛ أي: أكثر من نصف جزء.<br />
+<font color="#008000">•</font> قراءة ستة أجزاء أو أكثر من القرآن الكريم.<br />
+ <br />
+ومن المهم جدًّا إعطاء هذه المهامِّ وقتًا كافيًا من أجل إنجازٍ أفضل؛ فالمرأة <font color="#000080">(مثل الرجل)</font> عليها مسؤوليات، ومُطالَبَة بواجبات، ولا تنسَيْ - يا أختي - أنَّك تُؤْجَرين على كلِّ تلك الأعمال إذا أخلَصْتِ النِّيَّة لله فيها، وكانت خالية من المخالفات الشرعية.<br />
+ <br />
+والمقصد هنا الاستثمار الأجدى لما يتبقَّى من الوقت، وهو كثير، وقد يُبارِك الله فيه فتتم فيه الكثير من الأعمال، والجميع قد مرَّ بتجارب في حياته أثبتت له أنه قادر على إيجاد وقْتٍ لكلِّ عمل، بشرط أن يكون راغبًا في ذلك العمل، مُحبًّا له، والناس متفاوتون في ذلك على حسب هِمَمِهم؛ فنحن نرى من نسائنا ونطمح منهنَّ أن يكنَّ صاحباتِ همم عالية، فالانقطاع الإجباري عن الصلاة وبعض العبادات قد يوفِّر للمرأة وقتًا كافيًا لتحقيق ما ترغب فيه من أهداف وطموحات، وتختلف النِّساء في استثماره.<br />
+ <br />
+ومن الأسباب التي تجعل البعض لا يُحسن استغلال هذا الوقت: عدم المعرفة بكيفيَّة استثماره؛ لذا يسَعُنا أن نقدِّم بين أيديكنَّ برنامجًا مقترَحًا شاملاً كاملاً، يساعدكُنَّ على تحقيق كلِّ ما ترغَبْن وتَرْجُنَّ، مع ربط ذلك كلِّه بمزرعة الآخرة؛ للحصول على السعادة في الدارين، دار الدنيا ودار الآخرة، وهذا البرنامج ما هو إلاَّ اقتراحات، ويمكن الإضافة عليه أو تغييره بحسب الظروف؛ فهو ليس مُلْزِمًا، ولكنها ومضات وإشارات على طريق، ومصابيح يمكن أن تهتدي بها المرأة في حياتها.<br />
+ <br />
+<font color="#008080">وقبل الدخول في البرنامج لا بُدَّ من التنبيه على بعض الملاحظات، وهي:</font><br />
+<font color="#3366ff">1-</font> استغلال الوقت يجب أن يكون في كلِّ حياتنا، وليس في هذا الوقت فقط.<br />
+ <br />
+<font color="#3366ff">2-</font> البرنامج يمكن تنفيذه في كلِّ الأوقات، وليس في وقت الحيض أو النِّفاس فقط.<br />
+ <br />
+<font color="#3366ff">3-</font> التَّخطيط السليم بداية لحياة سعيدة - بإذن الله.<br />
+ <br />
+<font color="#3366ff">4-</font> التَّغيير أو التنقُّل في البرنامج مطلوب إذا كان يحقِّق الأهداف المرجُوَّة.<br />
+ <br />
+<font color="#3366ff">5-</font> ثمرة البرنامج تظهر عند تطبيقه بعد مدَّة من الزمن؛ لذا لا بُدَّ من ملاحظة النتائج على الذات بين الحين والآخر.<br />
+ <br />
+<font color="#3366ff">6-</font> عدم الاستسلام عند الضعف لفترة معيَّنة، بل يجب معاودة الكَرَّة مرَّة ومراتٍ؛ فنحن في معركة دائمة مع الشيطان، فالاستسلام بداية النهاية.<br />
+ <br />
+<font color="#3366ff">7-</font> مسافة الأَلْف مِيل تبدأ بِخُطوة واحدة، فلْنَستعن بالله، ولنبدأ بلا تأجيل ولا تسويف، فصعوبة الأعمال تكون في بدايتها غالبًا؛ ولذا نجد الشيطان حريصًا جدًّا على إعاقة الإنسان عن البدء في العمل وتذكيره بالصعوبات والعقبات، والسَّعي في صدِّه عن العمل، وهي أول الخُطَط الشيطانية، فمن استطاع تجاوُزَها والتغلُّب على الشيطان فيها، فإنه يكون قد أعلن بداية انتصاره على عدوِّه الأوَّل وهو الشيطان، ألاَ فلْنُعْلِن الحرب على الشيطان، ولنبدأ بالعمل، فالنصر حليف العاملين - بإذن الله.<br />
+ <br />
+<font color="#3366ff">8-</font> التَّدرُّج في البرنامج مطلوب، فقد يصعب تنفيذه كله دَفْعة واحدة، وليس هذا مبررًّا للتَّرك.<br />
+ <br />
+<font color="#3366ff">9-</font> الاستمرارية في التنفيذ محمودة، وكما قال الرسول الكريم - صلى الله عليه وسلم -: ((أحبُّ الأعمال إلى الله أدْوَمُها وإنْ قَلَّ))<br />
+ <br />
+<font color="#3366ff">10-</font> الرُّكن الأهَمُّ في نجاح البرنامج وفي الحياة كلها هو الإخلاص لله - تعالى.<br />
+ <br />
+وفي الختام يسرُّنا أن نضع الجدول المقترح للحائض والنُّفساء، لكنَّه فارغ؛ لكي تَضَعِي أنت فيه ما يُناسبك من أعمال تتَّفق مع مواهبك ورغباتك، ولا ننسى أنَّ الهدف الأسْمَى من ذلك كلِّه هو زيادة القُرْب من الله:<br />
+<div style="text-align: center;"><font color="#000080"><b>والسلام عليكم ورحمة الله وبركاته</b></font><br />
+<font color="#000080">كل انسان اعلم بذاته فافعلوا ماتروه صحيح</font></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_425178" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_425178" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=425178" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_425178" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_428028">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-11-14,&nbsp;<span class="time">01:21 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post428028" href="showthread.php?t=68054&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=428028#post428028" class="postcounter">#2</a><a id="postcount428028" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=32904&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="أم نور الهدى غير متواجد حالياً"><strong>أم نور الهدى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=32904&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=32904&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أم نور الهدى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Mar 2009</dd>
+						<dt>الدولة</dt> <dd>في سجن الدنيا .. أنتظر أجلي ..</dd>
+						
+						<dt>المشاركات</dt> <dd>323</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: *بنات ادم في الوقت المضيع*
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_428028">
+				<blockquote class="postcontent restore">
+					برنامج مفيد، بارك الله فيكِ ..
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><img src="images/smilies/start.gif" border="0" alt="" title="فتح قوس - باختصار=ففف" class="inlineimg" />وَمَا قَدَرُوا اللَّـهَ حَقَّ قَدْرِهِ وَالْأَرْضُ جَمِيعًا قَبْضَتُهُ يَوْمَ الْقِيَامَةِ وَالسَّمَاوَاتُ مَطْوِيَّاتٌ بِيَمِينِهِ<font size="5"> &#1754;</font> سُبْحَانَهُ وَتَعَالَى&#1648; عَمَّا يُشْرِكُونَ <img src="images/smilies/end.gif" border="0" alt="" title="قفل قوس - باختصار=ققق" class="inlineimg" /></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_428028" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_428028" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=428028" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_428028" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_428635">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-11-15,&nbsp;<span class="time">11:53 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post428635" href="showthread.php?t=68054&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=428635#post428635" class="postcounter">#3</a><a id="postcount428635" name="3"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=10450&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="مروة عاشور غير متواجد حالياً"><strong>مروة عاشور</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=10450&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=10450&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="مروة عاشور غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						مشرفة سابقة
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Sep 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>2,172</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: *بنات ادم في الوقت المضيع*
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_428635">
+				<blockquote class="postcontent restore">
+					وعليكم السلام ورحمة الله وبركاته,<br />
+ <br />
+شكر الله لكِ.. <br />
+نقل طيب نفع الله به, وشكر لكاتبه (جمال يوسف المهميلي)<br />
+<a href="http://www.alukah.net/LinkClick.aspx?id=1745" target="_blank" rel="nofollow">http://www.alukah.net/LinkClick.aspx?id=1745</a><br />
+ <br />
+.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><font size="5">أرجو من أخواتي الفاضلات قبول عذري عن استقبال الاستشارات على الخاص.<br />
+ونرحب بكن في قسم الاستشارات على شبكة ( الألوكة )<br />
+انسخي الرابط:<br />
+</font>http://www.alukah.net/Fatawa_Counsels/Counsels/PostQuestion.aspx</div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_428635" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_428635" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=428635" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_428635" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_429721">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-11-18,&nbsp;<span class="time">01:08 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post429721" href="showthread.php?t=68054&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=429721#post429721" class="postcounter">#4</a><a id="postcount429721" name="4"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=34464&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="فتاة التوحيد والعقيده غير متواجد حالياً"><strong>فتاة التوحيد والعقيده</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=34464&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=34464&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		<li class="left">
+			<a href="http://www.tvquran.com/" class="siteicon_homepage">
+				زيارة الصفحة الرئيسية
+			</a>
+		</li>
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="فتاة التوحيد والعقيده غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Mar 2009</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,257</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: *بنات ادم في الوقت المضيع*
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_429721">
+				<blockquote class="postcontent restore">
+					بوركتي في النقل أختي العزيزه
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none">]قال رسول الله صلي الله عليه وسلم &quot;لأن يطعن في رأس أحدكم بمخيط من حديد خير له من أن يمس امرأة لا تحل له&quot;<br />
+<br />
+قلبي مملكه وربي يملكه&gt;&gt;سابقا</div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_429721" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_429721" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=429721" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_429721" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_430585">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-11-20,&nbsp;<span class="time">05:02 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post430585" href="showthread.php?t=68054&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=430585#post430585" class="postcounter">#5</a><a id="postcount430585" name="5"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=67931&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="العارفة بالله غير متواجد حالياً"><strong>العارفة بالله</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=67931&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=67931&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="العارفة بالله غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>72</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: *بنات ادم في الوقت المضيع*
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_430585">
+				<blockquote class="postcontent restore">
+					جزاك الله خيرا
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_430585" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_430585" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=430585" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_430585" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_433142">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-11-24,&nbsp;<span class="time">03:36 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post433142" href="showthread.php?t=68054&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=433142#post433142" class="postcounter">#6</a><a id="postcount433142" name="6"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=62119&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="الحضرمية غير متواجد حالياً"><strong>الحضرمية</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=62119&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=62119&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="الحضرمية غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jun 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>127</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: *بنات ادم في الوقت المضيع*
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_433142">
+				<blockquote class="postcontent restore">
+					تشكرين على هذا النقل الطيب <br />
+وجراك الله خيرا
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_433142" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_433142" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=433142" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_433142" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_433397">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-11-25,&nbsp;<span class="time">12:07 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post433397" href="showthread.php?t=68054&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=433397#post433397" class="postcounter">#7</a><a id="postcount433397" name="7"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=60093&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="عبق الياسمين غير متواجد حالياً"><strong>عبق الياسمين</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=60093&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=60093&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="عبق الياسمين غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>May 2010</dd>
+						<dt>الدولة</dt> <dd>في أرض الله الواسعة .</dd>
+						
+						<dt>المشاركات</dt> <dd>195</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: *بنات ادم في الوقت المضيع*
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_433397">
+				<blockquote class="postcontent restore">
+					<span style="font-family: comic sans ms"><font size="6">جزاك الله كل خير , بحق برنامج نافع مشكورة على النقل الطيب .</font></span>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><font size="5"><font color="royalblue">وما استعصى على قوم منال .... </font></font><font size="5"><font color="royalblue">إذا الإقدام كان لهم ركاباً</font></font></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_433397" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_433397" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=433397" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_433397" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=68054&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="popupctrl"><span class="ctrlcontainer">المجلس العام لطالبات العلم</span></a>
+		<a href="showthread.php?t=68054#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=696d1a7d9adaea36633b28fa7c3827c1">لوحة التحكم</a></li>
+		<li><a href="private.php?s=696d1a7d9adaea36633b28fa7c3827c1">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1">الاشتراكات</a></li>
+		<li><a href="online.php?s=696d1a7d9adaea36633b28fa7c3827c1">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=56462&amp;s=696d1a7d9adaea36633b28fa7c3827c1">تحصين الأطفال من البكاء والخوف والفزع عند النوم</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=61946&amp;s=696d1a7d9adaea36633b28fa7c3827c1">جمعُ ما لم يثبتِ اسماً لله..</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D8%AF%D9%85">ادم</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D9%85%D8%B6%D9%8A%D8%B9">المضيع</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D9%88%D9%82%D8%AA">الوقت</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A8%D9%86%D8%A7%D8%AA">بنات</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%81%D9%8A">في</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=68054#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=68054#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">04:48 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

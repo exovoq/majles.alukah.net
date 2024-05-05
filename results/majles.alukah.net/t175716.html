@@ -1,0 +1,2183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=ec1b4717d08f17a417a70c4e8f25f7a8&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=175716";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="الحج, السلوكية, وآثاره, الله, على, الآثار, هذه, تعالى, إلى, ذلك, الذي, العبادات, الحديث, الأخلاق, الناس, الحلقة, آثار, وهو, الصلاة, هذا, فيه, عليه, قلوب, ولا, العبادة, الموضوع, وسلم, التي, لماذا, كلمة, إنما, صلى, عنه, ابن, مما, لها, يجد, إلا, قوله, الورقة, عبادة, درجة, العلم, الدين, مادة, إذا, رضي, قال, الإيمان, حلاوة" />
+	<meta name="description" content="الحج وآثاره السلوكية (1/4) 
+د.عمر بن عبد الله  المقبل 
+         
+              الحمد لله رب العالمين ،والصلاة والسلام على خيرته من خلقه ،نبينا محمد وعلى آله وصحابته أجمعين :  
+أما  بعد : فهذه حلقات علميةٌ ،تربويةٌ ،تتصل بركن من أركان الإسلام العظام   ،ألا وهو الحج ،وهي تركز على الجانب السلوكي ،والأثر الذي ينبغي أن تحدثه   هذه العبادة في قلوب مؤديها. 
+ولا ريب أن الحديث عن موضوع كهذا طويلٌ  ،لكنها ورقةٌ تضاف إلى مجلدات كتب  في هذا الموضوع ،لعلها تسهم في التنبيه  إلى شيء من مقاصد الشرع العظيم في " />
+
+	<title> الحج وآثاره السلوكية</title>
+	<link rel="canonical" href="showthread.php?t=175716&s=ec1b4717d08f17a417a70c4e8f25f7a8" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> الحج وآثاره السلوكية</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 4 من 4
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=175716&s=ec1b4717d08f17a417a70c4e8f25f7a8" title="تحديث الصفحة">الحج وآثاره السلوكية</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=175716" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;t=175716&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=addsubscription&amp;t=175716" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;search_type=1&amp;searchthreadid=175716&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="175716" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_912527">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-07-08,&nbsp;<span class="time">09:34 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post912527" href="showthread.php?t=175716&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=912527#post912527" class="postcounter">#1</a><a id="postcount912527" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,743</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> الحج وآثاره السلوكية
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_912527">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><font size="5"><span style="font-family: decotype naskh"><font color="red"><font size="6">الحج وآثاره السلوكية (1/4)<br />
+د.عمر بن عبد الله  المقبل</font><br />
+        <br />
+      </font>        الحمد لله رب العالمين ،والصلاة والسلام على خيرته من خلقه ،نبينا محمد وعلى آله وصحابته أجمعين : <br />
+أما  بعد : فهذه حلقات علميةٌ ،تربويةٌ ،تتصل بركن من أركان الإسلام العظام   ،ألا وهو الحج ،وهي تركز على الجانب السلوكي ،والأثر الذي ينبغي أن تحدثه   هذه العبادة في قلوب مؤديها.<br />
+ولا ريب أن الحديث عن موضوع كهذا طويلٌ  ،لكنها ورقةٌ تضاف إلى مجلدات كتب  في هذا الموضوع ،لعلها تسهم في التنبيه  إلى شيء من مقاصد الشرع العظيم في  مشروعية هذه العبادات .<br />
+أسأل الله تعالى أن يرزقنا القيام بعبادته على الوجه الذي يرضيه عنا ،وأن يعفو عن ما زلت به الجوارح ،إنه أكرم مسؤول .<br />
+وسأتناول في الحلقات الأربع ـ التي تنتظم هذه الورقة ـ المواضيع الآتية : <br />
+الحلقة الأولى : لماذا الحديث عن الآثار السلوكية ؟<br />
+الحلقة الثانية :  كيف تؤثر العبادات في سلوكياتنا ؟ولماذا لا يجد الكثير آثارها في حياتهم؟.<br />
+الحلقة الثالثة :  من آثار الحج السلوكية (الجزء الأول). <br />
+الحلقة الرابعة :  من آثار الحج السلوكية (الجزء الثاني). <br />
+<br />
+<br />
+<font color="#0000ff"> لماذا الحديث عن الآثار السلوكية ؟ </font><br />
+وأرى أنه يحسن ـ قبل الولوج إلى الموضوع ـ أن أوضح مفردات عنوان هذه الورقة (آثار الحج السلوكية) :<br />
+أولاً  : كلمة (الآثار) جمع أثر ، هو في اللغة يطلق على معان منها : بقية  الشيء ،  ويقال : أثّر فيه تأثيراً ، أي ترك فيه أثراً وهذا الذي يعنينا  هنا ، فنحن  نتحدث عما تتركه عبادة الحج العظيمة من آثار في الحجاج(1).<br />
+ثانياً :  كلمة ( السلوكية ) السلوك أصله من سلك طريقا ، أو مكاناً يسلكه  أي دخل فيه ،  ومن ذلك قوله تعالى ( أسلك يدك في جيبك )  أي أدخلها في  جيبك،ومنه أيضاً (  كذلك سلكناه في قلوب المجرمين ) أي أدخلنا الكفر  والتكذيب،ونظمنا  ه في قلوب  أهل الإجرام كما يدخل السلك في الإبرة ،  فتشرّبته وصار وصفاً لها (2).<br />
+وهكذا  الإنسان إذا تحققت فيه آثار العبادات وتحلى بالآداب الشرعية ،  وأصبحت  أخلاقه انعكاساً لما يعلمه ويعمل به من دين الله عز وجل ،صح أن  يقال له :  إن فلاناً سلوكه حسنٌ ،لأنه تشرّب الأخلاق الطيبة ،وانتظمت في  تصرفاته حتى  أصبحت وصفاً له .<br />
+إذاً فالحديث عن بقية الآثار التي تتركها عبادة الحج ، وتؤثر في حياته ... في عباداته ومعاملاته ...في أخلاقه . <br />
+أما لماذا الحديث عن الآثار السلوكية ؟ وهو عنوان هذه الحلقة ،فيمكن  إجمال  الأسباب فما يلي :<br />
+أولاً  : الحديث عن الآثار السلوكية في الحقيقة حديث عن الأخلاق ـ بمعناها  الواسع  ـ لأن العرب تقول عن السجية والطبع الملازم للمرء :خلُق (3) ،وهذا  معنى  كونه سلوكا أي صار سجية ووصفا له ، وليست هذه الورقة حديثاً عن  الأخلاق ـ  رغم أهميتها ـ إنما المقصود الإشارة إلى أن الأخلاق والسلوك  الحسن له أهمية  عظيمة وشأن كبير في حياة المسلم ،بل الأخلاق لها شأنها ـ  عند جميع الأمم ـ  مسلِمها وكافرها،وحسبك أن تعلم أن من أعظم الطرق التي  ملك بها النبي  صلى  الله عليه وسلم  قلوب الناس في دعوته : سلوكه الحسن ،  وتعامله الفذ ، وخلقه  العظيم الذي امتدحه الله سبحانه وتعالى به في قوله :  ( وإنك لعلى خلق عظيم  ) .<br />
+وما أجمل قول الشاعر الذي نبه إلى عظمة شأن الأخلاق حيث يقول :<br />
+<br />
+<br />
+<div style="text-align: center;"> <span style="font-family: times new roman"><br />
+</span> <br />
+<span style="font-family: times new roman"><br />
+</span> <br />
+<span style="font-family: times new roman"><br />
+</span> <br />
+<span style="font-family: times new roman"><br />
+</span> <br />
+<span style="font-family: times new roman"><br />
+</span> <br />
+   <span style="font-family: arabic typesetting">أيها الطالب فخراً بالنـسب                     إنما النــــــاسُ لأم ولأبْ!<br />
+ هل تراهم خُلقوا من فضـة ؟              أو حـديد أو نحـاس أو ذهـبْ ؟<br />
+ أو تَرى فضلهـموا في خلْقهم        هل سوى لحمٍ وعـظمٍ وعصـبْ ؟<br />
+ إنما الفضــلُ بعـقل راجحٍ                 وبأخـلاق كـــــرام وأدبْ!<br />
+ ذاك من فاخرَ في النــاس به            فـاق من فــاخرَ منـهم وغلبْ</span>    <br />
+</div><br />
+<br />
+فتبين مما سبق أن الحديث عن الحج وآثاره السلوكية حديث مهم ، لارتباطه بأمر عظيم  ألا وهو حسن الخلق ، وسلامة السلوك .<br />
+ ثانياً : أنه ما من عبادة وإلا وقد رتب الشرع المطهر عليها آثاراً على العبد في حياته.<br />
+وهذه  الآثار تختلف بحسب مكانة هذه العبادة ومنزلتها من الدين ،كما أنها  تختلف  باعتبار آخر ألا وهو العابد نفسه،إذ لا ريب أن الناس ليسوا على درجة  واحد  من العلم والخشية ،وبالتالي ليسوا على درجة واحدة في تعظيم هذه  الشعائر  ،ولا في درجة الإخلاص والصدق الذي يكون في قلوبهم حين الدخول في  العبادة .<br />
+يقول  شيخ الإسلام ابن تيمية ـ رحمه الله تعالى ـ &quot;إذا لم تجد للعمل حلاوة  في  قلبك وانشراحاً فاتهمه،فإن الرب تعالى شكور،يعني لابد أن يثيب العامل  على  عمله في الدنيا،من حلاوة يجدها في قلبه،وقوة وانشراح وقرة عين،فحيث لم  يجد  ذلك فعمله مدخول&quot;(4)ا هـ .<br />
+ولقد برّ في كلامه وصدق رحمه الله ،فقد ثبت  في السنة أحاديث كثيرة تؤيد ما  قاله منها : ما ثبت في صحيح مسلم عن العباس  بن عبدالمطلب  رضي الله عنه   أن النبي  صلى الله عليه وسلم  قال : &quot; ذاق  طعم الإيمان من رضي بالله ربا  وبالإسلام دينا وبمحمد  صلى الله عليه وسلم   رسولا &quot;.<br />
+ومنها : ما ثبت في الصحيحين عن أنس  رضي الله عنه  أن النبي   صلى الله  عليه وسلم  قال:&quot;ثلاث من كن فيه وجد بهن حلاوة الإيمان : أن يكون  الله  ورسوله أحب إليه مما سواهما ، وأن يحب المرء لا يحبه إلا لله ، وأن  يكره  أن يعود في الكفر بعد إذ أنقذه الله منه كما يكره أن يقذف في النار &quot; .<br />
+قال  بعض أهل العلم : &quot;إنما عبّر بالحلاوة ؛لأن الله شبه الإيمان بالشجرة  في  قوله تعالى: &quot; مثلا كلمة طيبة &quot; فالكلمة هي كلمة الإخلاص،والشجرة أصل   الإيمان،وأغصانه  ا اتباع الأمر واجتناب النهي، وورقها ما يهتم به المؤمن من   الخير، وثمرها عمل الطاعات، وحلاوة الثمر جنى الثمرة، وغاية كماله تناهي   نضج الثمرة  ،وبه تظهر حلاوتها &quot;(5).<br />
+ثالثاً : نتحدث عن الآثار السلوكية  لما يلاحظ من وجود الهوة الكبيرة بين  العلم والعمل ،وبين ما يتلقاه الناس ـ  إما في حقول التعليم أو عن طريق خطب  الجمعة أو المحاضرات أو غيرها من  مجالات التلقي ـ وبين التطبيق ، وتبعاً  لذلك فإنه يُلاحظ  ضعف أو تلاشي  آثار العبادات على كثير من المؤدين لها،  حتى أصبحت العبادات جسداً بلا روح  عند كثير من الناس ، ولا حول ولا قوة  إلا بالله .<br />
+هاهي الصلاة ـ أيها  القارئ الكريم ـ عماد الدين ،أعظم الأركان الخمسة بعد  الشهادتين ،والتي لها  من المنزلة في الدين ما ليس لغيرها من العبادات .. <br />
+الصلاة التي قال الله تعالى عنها ( إن الصلاة تنهى عن الفحشاء والمنكر ) .. <br />
+تأمل في أثرها في أكثر المصلين !! <br />
+أليس  في المصلين من يخرج للتو من صلاة الجمعة ،وهو مع ذلك يقارف كبيرة أو  يصر  على صغيرة ،فهو يكذب في الحديث والمعاملة ! ويطلق بصره في الحرام ـ  وربما  وهو في طريق عودته لمنزله من الصلاة ! أو يستمع إلى ما حرم الله !!<br />
+وقل مثل ذلك عن رمضان الذي انصرم قبل شهرين تقريباً !!<br />
+فأين  التالون لكتاب الله تعالى ؟ وأين المحافظون على الصلاة جماعة ؟ وأين  من  يغضون أبصارهم ويحفظون جوارحهم عن المحرمات مخافة أن يؤثر ذلك في تمام   أجرهم ؟!<br />
+وهكذا الحج فكم له من الآثار العظيمة والثمرات الهضيمة ـ والتي  هي موضوع  حديثنا ـ ومع ذلك ، ورغم كثرة الحجاج ، بل ورغم كثرة حجِّ بعض  الناس إلى  بيت الله الحرام ، إلا أن المستفيد من الحج ، ومن آثاره قليل ،  والله  المستعان .<br />
+رابعاً : من أسباب طرق هذا الموضوع ، أنك ترى كثيراً  منا يحرص أن يكون  أكله وشربه ، وأوقات راحته على ما اعتاده ودرج عليه ،فإذا  وقع تغيير بسبب  غيره تراه يغضب ،ويحرص على أن يحترم الآخرون عاداته  وأوقاته ؛ لماذا ؟!<br />
+لأن أكله ونومه حسب عادته مما يشرح نفسه ويريح بدنه  ،وهو مع ذلك لا يبذل  ولا قليلا من الجهد لتفقد عباداته حتى تحدث أثرا عظيما  في شرح نفسه ،وراحة  قلبه وبدنه ، وتحقيق مراد الله تعالى منه في تلك  العبادة .<br />
+إذا علم هذا ، فإن سؤالاً ملحاً ينبغي أن يطرح ،وهو : كيف  تؤثر العبادات  في سلوكياتنا ؟ولماذا لا يجد الكثير من الناس آثارها في  حياتهم؟ هذا ما  ستجيب عنه الحلقة الثانية بإذن الله .<br />
+<br />
+*    *    *    *    *<br />
+<br />
+<br />
+الهوامش :<br />
+(1) القاموس المحيط (435،436) مادة أثر .<br />
+(2) ينظر : معجم مقاييس اللغة 3/97 ،ولسان العرب 10/442 مادة سلَكَ،وتفسير ابن كثير والسعدي للآية رقم (200) من سورة الشعراء .<br />
+(3) القاموس المحيط (1137) مادة خلق .<br />
+(4)  نقله عنه ابن القيم في &quot; المدارج &quot; في منزلة المراقبة ، ينظر &quot;تهذيبها  &quot;  للعزي 1/ 498 ، ط. الرسالة ، وينظر كلام ابن القيم في 1/360 فهو مهم في  هذا  الموضوع .<br />
+(5) فتح الباري 1/77-78 ح(16) .<br />
+</span></font></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_912527" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_912527" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=912527" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_912527" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_912528">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-07-08,&nbsp;<span class="time">09:40 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post912528" href="showthread.php?t=175716&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=912528#post912528" class="postcounter">#2</a><a id="postcount912528" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,743</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: الحج وآثاره السلوكية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_912528">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><font size="5"><span style="font-family: traditional arabic"><font size="6"><font color="red">الحج وآثاره السلوكية (2/4)<br />
+د.عمر بن عبد الله  المقبل</font></font><br />
+<br />
+        <font color="#0000ff">كيف تؤثر العبادات في سلوكياتنا؟ ولماذا لا يجد الكثير آثارها في حياتهم؟</font><br />
+كان هذا السؤال المطروح في الحلقة الماضية، وللجواب عنه يقال:<br />
+أما السبل المعينة على تفعيل أثر العبادات في النفوس، فيمكن إيضاحها فيما يلي:<br />
+أولاً: قراءة النصوص من الكتاب والسنة الصحيحة، التي وردت في شأن تلك العبادة التي نفعلها.<br />
+<br />
+ثانياً:  بعد جمع النصوص يستعين المسلم في فهمها بكتب التفاسير فيما يتعلق  بالآيات،  وعلى كتب شروح الأحاديث ـ إن أمكن ذلك ـ وإلا فبسؤال أهل العلم  لفهم ما قد  يشكل منها.<br />
+<br />
+ثالثاً: من الوسائل التي تجعل العبادات مؤثرة في سلوك الشخص: استشعار أهمية العبادة ومعناها، والحكمة منها.<br />
+<br />
+وأن  يعلم أن الغاية العظمى من العبادات هو إصلاح القلوب، ولا يتم لها ذلك  إلا  بأن تذل وتخضع وتستكين لخالقها، وتنيب وتعود لربها، وترهب وترغب  لمولاها،  فبذلك يتم صلاح القلب، ويسعد العبد في دنياه وأخراه، ولهذا كان  شيخ الإسلام  ابن تيمية ـ رحمه الله تعالى ـ يقول: من أراد السعادة الأبدية  فليزم عتبة  العبودية(1).<br />
+<br />
+رابعاً: مطالعة سير وأحوال السلف الصالح ـ رحمهم الله  تعالى ـ في تلك  العبادة وهذا له أثر عظيم  ومشاهد، إذ مع استشعار أن القدوة  المطلقة هو  رسول الله صلى الله عليه وسلم وفي سيرته خير وكفاية، إلا أن  المسلم أيضاً  سيزداد خيراً حينما يقرأ في هذا الباب.<br />
+<br />
+يقول ابن  الجوزي ـ رحمه الله تعالى ـ &quot;وقد كان جماعة من السلف يقصدون  العبد الصالح  للنظر إلى سمته وهديه لا لاقتباس علمه، وذلك ثمرة علمه: هديه  وسمته، فافهم  هذا، وامزج طلب الفقه والحديث بمطالعة سير السلف والزهاد في  الدنيا ليكون  سبباً لرقة قلبك&quot;(2) ا هـ.<br />
+<br />
+والمقصود أن القارىء في سير السلف الصالح  سيمر بمواقف وأخبار تدمع لها  العين، ويرق لها القلب، سيتذكرها القارىء لها  حينما يمر بنفس المواقف التي  مروا بها ـ كما سأذكر بعضاً منها في ثنايا  هذه الورقة إن شاء الله تعالى  ـ.<br />
+<br />
+فمثلاً: في الحج، وغيره من مواسم  العبادات الأخرى على مدار العام، يمكن أن  يقرأ الإنسان في كتاب &quot; لطائف  المعارف فيما لمواسم العام من الوظائف &quot;  للحافظ ابن رجب ـ رحمه الله تعالى ـ  فإنه جمع في كتابه بين الأحكام  والمواعظ بأسلوب متميز.<br />
+<br />
+ويمكن  الاستفادة ـ أيضاً ـ من بعض الكتب التي خرجت في هذا الوقت، اعتنت  بالفهرسة  الموضوعية لبعض الكتب، ككتاب &quot; نزهة الفضلاء في تهذيب سير أعلام  النبلاء &quot;  فالمؤلف وفقه الله جعل في آخر المجلد الثالث فهرساً لما تضمنه  المختصر من  قصص وأخبار جاءت عن الصحابة والتابعين ومن بعدهم رحمهم الله  تعالى ممن ورد  ذكرهم في أصل الكتاب &quot; سير أعلام النبلاء &quot; للذهبي ـ رحمه  الله تعالى ـ.      <br />
+<br />
+رابعاً:وهو مهم أيضاً، وقد أشار إليه ابن الجوزي في كلمته  السابقة، وهو أن  يصحب الإنسان رفقة صالحة، فيها طلاب علم أو علماء ـ إن  تيسر ذلك ـ  ليستفيد منهم في تصحيح عبادته، وليستفيد مما يلقى من الدروس  والمواعظ في  رحلة الحج، ولهذا قال جابر رضي الله عنه في صفة حج النبي صلى  الله عليه  وسلم: فقدم المدينة بشر كثير كلهم يلتمس أن يأتم برسول الله صلى  الله عليه  وسلم ويعمل مثل عمله.<br />
+<br />
+وما سبق في ( ثالثا ورابعا ) يقودنا  إلى نقطة هامة في هذا الموضوع ألا وهي   أنه ينبغي للإنسان ألا يغفل عن  قراءة كتب فيها مواعظ في أيامه كلها،  وخاصة في مواسم العبادات كرمضان  والحج، لأن القلب إذا قسا ـ والعياذ بالله  ـ لم يتلذذ بالعبادة، ولم ينتفع  بالمواعظ إلا ما شاء الله.<br />
+<br />
+ومما ينبه إليه هنا أن بعض من منَّ الله  عليهم بسلوك طريق الهداية أو حتى  طريق طلب العلم الشرعي يغفلون عن هذا  الجانب، إما لانهماكهم في الطلب، أو  ظناً منهم أن هذا من شأن العوام، وهذا  خطأ يجب أن يصحح.<br />
+<br />
+وسبحان الله! مَن الناسُ بعد محمد صلى الله عليه وسلم وأصحابه رضي الله عنهم؟ <br />
+هذا  ابن مسعود رضي الله عنه يحكي حالهم ـ كما في الصحيحين ـ &quot; كان رسول  الله  صلى الله عليه وسلم يتخولنا بالموعظة في الأيام مخافة السآمة علينا &quot;   والشاهد أنه صلى الله عليه وسلم كان يتعاهد أصحابه رضي الله عنهم بالوعظ   والتذكير بين الحين والآخر.<br />
+<br />
+وهذه لفتة من عالم مجرب، من أئمة العلم والوعظ في نفس الوقت، وهو ابن الجوزي ـ رحمه الله تعالى ـ حيث يقول: <br />
+&quot;رأيت  الاشتغال بالفقه وسماع الحديث لا يكاد يكفي في صلاح القلب، إلا أن  يمزج  بالرقائق والنظر في سير السلف الصالحين؛ لأنهم تناولوا مقصود النقل،  وخرجوا  عن مقصود الأفعال المأمور بها إلى ذوق معانيها، والمراد بها، وما  أخبرتك  بهذا إلا بعد معالجة وذوق...&quot;(3) ا هـ.<br />
+<br />
+إذاً.. لماذا لا يجد الكثير آثار  العبادات  في حياتهم؟ وهو الجزء المتمم لهذه الحلقة، فأقول:<br />
+أشرت  قبل قليل إلى بعض الأسباب عند الحديث عن بعض الطرق التي يمكن أن  نعملها  لكي نجد للعبادة آثاراً على سلوكنا، وأن للعلم أثراً في زيادة  تعظيم العبد  لشعائر الله التي قال الله فيها: (وَمَنْ يُعَظِّمْ شَعَائِرَ  اللَّهِ  فَإِنَّهَا مِنْ تَقْوَى الْقُلُوبِ) (الحج: من الآية32).<br />
+<br />
+وفرق كبير  ـ أخي القارئ ـ بين مَن يتلقى تعظيم الشعائر من الاعتياد والنظر  لمن حوله  من أمه وأبيه، أومن المجتمع الذي يحيط به فقط، وبين من يتلقى  تعظيمها غضةً  طريةً من نصوص الوحي، وسير السلف الصالح؛لأن تعظيمه حينئذ  يكون مبنياً على  علم وخشية وإجلال لمستحق التعظيم والإجلال، ولهذا قال  سبحانه: (إِنَّمَا  يَخْشَى اللَّهَ مِنْ عِبَادِهِ الْعُلَمَاءُ )(فاطر:  من الآية28)، وهذا  مما يستدل به على فضيلة العلم لأنه يدعو إلى خشية الله  تعالى، ولهذا قال  بعض السلف &quot; مَن كان بالله أعرف كان منه أخوف&quot;.<br />
+<br />
+فإذا تيقن الإنسان  أن هذه الشعيرة من شعائر الله أحدث ذلك له تعظيما لها،  ولهذا نجد بعض  العامة يعظمون الشعائر ـ تعظيم الموقن بأن هذا الشرع صادر  عن علم وحكمة  لأنه من عند الله ـ وهو يقين مجمل.<br />
+<br />
+إلا أن أهل العلم  ـ وهم على  درجات أيضاً ـ يتميزون بالعلم المفصل بكثير  من الجزيئات التي تجعل إيمانهم  أعظم، ويقينهم بإحكام هذه الشريعة أكثر،  وأنها صادرة عن علم تام، وحكمة  بالغة، وأن الأمر كما قال جل جلاله:  (وَلَوْ كَانَ مِنْ عِنْدِ غَيْرِ  اللَّهِ لَوَجَدُوا فِيهِ اخْتِلافاً  كَثِيراً) (النساء: من الآية82).<br />
+<br />
+ولهذا  قال الله عز وجل في أواخر سورة الإسراء مخاطباً كل من كذب بالقرآن  ومبينا  فضيلة أهل العلم (قُلْ آمِنُوا بِهِ أَوْ لا تُؤْمِنُوا ـ أي فليس  لله حاجة  فيكم، فإن لله عباداً غيركم، وهم الذين آتاهم الله العلم النافع ـ  إِنَّ  الَّذِينَ أُوتُوا الْعِلْمَ مِنْ قَبْلِهِ إِذَا يُتْلَى  عَلَيْهِمْ  يَخِرُّونَ لِلْأَذْقَانِ سُجَّداً وَيَقُولُونَ سُبْحَانَ  رَبِّنَا إِنْ  كَانَ وَعْدُ رَبِّنَا لَمَفْعُولاً وَيَخِرُّونَ  لِلْأَذْقَانِ يَبْكُونَ  وَيَزِيدُهُمْ خُشُوعاً) (الإسراء:107-109).<br />
+فهذا هو السبب الأول في فقد بعض الناس لآثار العبادات، وهو قلة العلم بالنصوص الشرعية الواردة في تلك العبادة.<br />
+<br />
+وأرجو  ألا يفهم ـ القارئ الكريم ـ أني أحجر تعظيم الحرمات على أهل العلم  فحسب  فيصاب البعض بالإحباط، فقد أشرت إلى أن من العامة مَن عنده تعظيم  ويقين،  لكنه ليس بمنزلة تعظيم ويقين الذين أوتوا العلم، وما ذكرته إنما هو  إشادة  بالعلم وأهله، وحث على طلب العلم حسب القدرة والطاقة. <br />
+<br />
+<font color="#0000ff">ثانياً: من أسباب حرمان آثار العبادات وعدم التلذذ بها: </font><br />
+ضعف  الإخلاص لله تعالى والمتابعة للنبي صلى الله عليه وسلم في تلك  العبادة،  وهذان الأمران كما أنهما شرطان في قبول العمل، فهما أيضاً مؤثران  تأثيراً  عظيما في الشعور بلذة العبادة وأثرها، ولهذا ليست العبرة بكثرة  العمل،  وإنما بحسنه، كما قال سبحانه: (الَّذِي خَلَقَ الْمَوْتَ  وَالْحَيَاةَ  لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلاً) (الملك: من  الآية2) ولم يقل  أكثركم عملاً، والمراد بحسن العمل هو أن يكون خالصاً لله  صواباً على سنة  رسول الله صلى الله عليه وسلم، كما فسره بذلك طائفة من  السلف كالفضيل  وغيره.<br />
+<br />
+وبقدر ما يكون الإخلاص يعظم الأثر ويزداد النفع، يقول ابن  القيم رحمه الله  تعالى: &quot;والأعمال تتفاضل بتفاضل ما في القلوب من الإيمان  والمحبة  والتعظيم والإجلال وقصد وجه المعبود وحده دون شيء من الحظوظ سواه،  حتى  تكون صورة العملين واحدة، وبينهما في الفضل ما لا يحصيه إلا الله،  وتتفاضل  أيضاً بتجريد المتابعة، فبين العملين من الفضل، بحسب ما يتفاضلان  به في  المتابعة، فتتفاضل الأعمال بحسب تجريد الإخلاص والمتابعة تفاضلاً لا  يحصيه  إلا الله تعالى&quot;(4) ا هـ. <br />
+<br />
+والشاهد من كلامه ـ رحمه الله ـ أن  الأعمال إذا كان يقع بينها هذا التفاضل  بسبب ما بينها من التجريد  والمتابعة، فلا بد أن تكون آثارها كذلك؛ لأن  الآثار ـ في الحقيقة ـ فرع عن  سلامة الأعمال من محبطاتها أو منقصات أجرها.<br />
+<br />
+<font color="#0000ff">ثالثاً: من أسباب حرمان آثار العبادات وعدم التلذذ بها: </font><br />
+اقتراف الذنوب والمعاصي!<br />
+ولله! كم لهذا السبب من أثر عميق في محق البركات السماوية والأرضية!<br />
+ومن أعظم البركات التي تمحقها الذنوب محق بركة العبادة وفقد آثارها، وحرمان لذتها؟! <br />
+يقول  الله عز وجل: (وَلَوْ أَنَّ أَهْلَ الْقُرَى آمَنُوا وَاتَّقَوْا   لَفَتَحْنَا عَلَيْهِمْ بَرَكَاتٍ مِنَ السَّمَاءِ وَالْأَرْضِ وَلَكِنْ   كَذَّبُوا فَأَخَذْنَاهُمْ بِمَا كَانُوا يَكْسِبُونَ) (الأعراف:96).<br />
+<br />
+وقد  تواترت الأحاديث عن النبي صلى الله عليه وسلم التي تدل على أن ما أصاب   ويصيب الأمم الغابرة واللاحقة من نقص الدين والدنيا إنما هو بسبب الذنوب،   ولست بصدد الحديث عن آثار الذنوب والمعاصي، ولكنها إشارات عابرة، وأحيل   القارئ الكريم في هذا إلى الإمام ابن القيم ـ رحمه الله تعالى ـ &quot;ومن أحيل   على مليء فليحتل&quot; في كتابه ((الجواب الكافي لمن سأل عن الدواء الشافي))  فقد  شفى وكفى.<br />
+<br />
+سئل وهيب بن الورد ـ رحمه الله ـ:أيجد لذة الطاعة من يعصي؟ قال: ولا من همّ! ـ أي من همّ بالمعصية ـ!<br />
+فإذا كان هذا أثر الهم بالمعصية فما الظن باقترافها، والولوغ فيها والإصرار عليها؟!<br />
+<br />
+وإليك  ـ أيها القارئ الفاضل ـ نفثة ربانية من كلام من نوّر الله بصائرهم  بهذه  الأمور، فعرفوا خطورة الذنب الواحد، فضلاً عن ذنوب كثيرة، يقول ابن  الجوزي ـ  رحمه الله ـ:<br />
+&quot;وربما كان العقاب العاجل معنوياً، كما قال بعض أحبار بني  إسرائيل:يا رب  كم أعصيك ولا تعاقبني؟فقيل له:كم أعاقبك وأنت لا تدري!أليس  قد حرمتك حلاوة  مناجاتي؟...إلى أن قال:فرب شخص أطلق بصره فحرم اعتبار  بصيرته، أو لسانه  فحرم صفاء قلبه، أو آثر شبهة في مطعمه فأظلم سره، وحرم  قيام الليل وحلاوة  المناجاة، إلى غير ذلك...وهذا أمر يعرفه أهل محاسبة  النفس(5)&quot;ا هـ. <br />
+<br />
+ويقول الإمام ابن القيم ـ رحمه الله تعالى ـ عندما تحدث عن عقوبات  الذنوب والمعاصي: <br />
+&quot;ومن  عقوبات الذنوب أنها تضعف في القلب تعظيم الرب جل جلاله، وتضعف وقاره  في  قلب العبد ولا بد، شاء أم أبى، ولو تمكن وقار الله وعظمته من قلب العبد  لما  تجرأ على معاصيه... إلى أن قال:فإن عظمة الله تعالى وجلاله في قلب  العبد  تقتضي تعظيمَ حرماته، وتعظيمُ حرماته تحول بينه وبين الذنوب(6) &quot;ا  هـ.<br />
+<br />
+والمقصود هنا بيان أثر الذنوب في حرمان لذة العبادة، وآثارها على سلوك الفرد.<br />
+وبعد هذا، فلنلج إلى لب هذه الورقة، للحديث عن شيء من الآثار السلوكية للحج، في الحلقتين التاليتين بإذن الله.<br />
+<br />
+______________<br />
+(1) نقله ابن القيم عنه في مدارج السالكين، ينظر:&quot;تهذيبها&quot; 1/368 في آخر كلامه على منزلة التوبة.<br />
+(2) صيد الخاطر  ص (292).<br />
+(3) صيد الخاطر  ص (292).<br />
+(4) ينظر تهذيب مدارج السالكين 1/300.<br />
+(5) صيد الخاطر (80)  وفي نفس الصفحة تجد كلمة وهيب بن الورد السابقة.<br />
+(6) الجواب الكافي ص/ 67، ط. دار البيان.<br />
+<br />
+</span></font></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_912528" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_912528" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=912528" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_912528" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_912529">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-07-08,&nbsp;<span class="time">09:42 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post912529" href="showthread.php?t=175716&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=912529#post912529" class="postcounter">#3</a><a id="postcount912529" name="3"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,743</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: الحج وآثاره السلوكية
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_912529">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><span style="font-family: andalus"><font size="6"><font color="red">الحج وآثاره السلوكية  (3/4)<br />
+د.عمر بن عبد الله  المقبل  </font></font></span><br />
+      <br />
+      هذه الحلقة ،هي الجزء الأول من الحديث عن لب هذه الورقة ، وبيت القصيد فيها ، ألا وهو ذكر  بعض آثار الحج السلوكية.<br />
+<br />
+وقبل  أن أذكر هذه الآثار ، يقال : لا يخفى أن الحج عبادة من أعظم العبادات  ،  رتب الشرع عليه ثواباً عظيماً لمن كان حجه مبروراً ، كما قال _عليه  الصلاة و  السلام_  فيما رواه الشيخان:&quot; الحج المبرور ليس له جزاء إلا  الجنة &quot; ،  وعندهما أيضاً أنه _صلى الله عليه وسلم_ قال: &quot; من أتى هذا  البيت فلم يرفث  ولم يفسق رجع كما ولدته أمه &quot; .<br />
+وهذه الفضيلة العظيمة إحدى بل هي من أجل  المنافع التي أشار إليها _تبارك  وتعالى_ بقوله : &quot; ليشهدوا منافع لهم&quot;  ،وتأمل ـ أيها القارئ الكريم ـ قوله  : &quot; منافع &quot; فهي عامة في المنافع  الدينية والدنيوية .<br />
+<br />
+والمتأمل في الحج يجد أن أعظم مقاصده هو تحقيق  العبودية لله_جل وعلا_  وتوحيدُه بإفراده وحده  _سبحانه_ بالعبادة ، ولهذا  لما ذكر الله_تعالى_   جملة من آيات الحج قال:&quot;ولكل أمة جعلنا منسكاً  ليذكروا اسم الله على ما  رزقهم من بهيمة الأنعام فإلهكم إله واحد فله  أسلموا وبشر المخبتين&quot; [الحج  :34].<br />
+قال بعض أهل العلم في تفسيره لهذه  الآية : &quot; إن أجناس الشرائع وإن اختلفت  في بعض التفاصيل فهي متفقة على هذا  الأصل وهو ألوهية الله، وإفراده  بالعبودية،وترك الشرك به،ولهذا قال:&quot; فله  أسلموا&quot;                                                                                                                              أي:انقادوا  واستسلموا له لا لغيره، فإن  الإسلامَ له،هو الطريق الموصل إلى دار السلام  وهي الجنة &quot; ا هـ .<br />
+إن مظاهر التسليم والانقياد في هذه العبادة واضحةٌ جداً ، ولهذه المظاهر أثر عظيم على زيادة الإيمان ، واستقامة السلوك .<br />
+<br />
+إذا  عُلِمَ هذا ، فليس من المستغرب أن تكون جميع المظاهر التي يراها  المسلم  إنما هي نابعة من شجرة التوحيد المباركة ،ولا يمكن أن تنفصل عنه،  حتى ما قد  يظنه البعض من أنه مظهر اجتماعي أو نحو ذلك ،فإنه عند التأمل  فرع من فروع  تلك الشجرة التي أصلها ثابت وفرعها في السماء ،فاجتماع   المسلمين،وتآلفه  م،وتعارفهم  على بعض هو من ثمار الموالاة لأهل ( لا إله إلا   الله ) .<br />
+<br />
+والمقصود أن مظاهر التوحيد في الحج كثيرة،تبرز للمسلم في  كل موقف من  المواقف التي تتصل بنسكه ، ولعلي أبدأ بأول هذه المواقف مع  الإشارة إلى  بعض آثارها السلوكية :<br />
+الموقف الأول : <br />
+عندما يسافر  الإنسان إلى البيت الحرام لأداء شعيرة الحج ، ألا يستشعر  مِنّة الله عليه  وفضلَه ،أن هداه لهذا السفر المبارك في الوقت الذي يسافر  فيه البعض من  المسلمين يمنة ويسرة لإمضاء إجازة العيد للترويح ، أو لتحصيل  شهوة قد تكون  محرمة ، أو يسافر إلى بلاد الكفر من غير حاجة أو ضرورة !  وهل يتذكر ـ  المسلم ـ نعمة الله عليه أن يسر له السفر والوصول إلى تلك  البقاع المقدسة  ،في الوقت الذي يتمنى ويشتاق كثير من المسلمين في مشارق  الأرض ومغاربها  الوصول إلى البيت فلا يستطيعون إما لقلة ذات أيديهم أو  لغير ذلك من الموانع  ؟! ولهذا لما رأى بعض الصالحين الحجاج وقت خروجهم من  بلدهم إلى مكة يريدون  الحج وقف يبكي ويقول : واضعفاه .. ثم تنفس وقال :  هذه حسرة من انقطع عن  الوصول إلى البيت ، فكيف تكون حسرة من انقطع عن  الوصول إلى رب البيت .<br />
+ولعل  البعض قرأ قصة ذلك المسلم الذي قدم من الجمهوريات الإسلامية ـ بعد  سقوط  الشيوعية ـ فلما وصل إلى المسجد الحرام ورأى الكعبة بكى بحرقة ، وأخذ  يتذكر  ويقول : هذا بيت الله الذي كان يحدثنا عنه والدي ، والذي كان يتحرق  شوقاً  إلى رؤيته  لكنه منع من قبل طواغيت الكفر ، فمات قبل أن يراه .<br />
+<br />
+الموقف الثاني : <br />
+ في لباس الإحرام يتجرد المسلم من اللباس الذي اعتاده ،إلى لباس يستوي فيه   الجميع :الغني والفقير، والأمير والحقير، وهو تأكيد لأصل عظيم في هذا  الدين  ،ألا وهو أن الناس سواء لا فضل لعربي على أعجمي ،ولا لأبيض على أسود  إلا  بالتقوى : <br />
+أرى الناس أصنافاً ومن كل بقعة * *إليك انتهوا من غربة وشتات<br />
+تـســاووا فلا أنساب فيها تفاوت* * *لديك ولا الأقدار مختلفات<br />
+ وقول الله أبلغ :&quot; يا أيها الناس إنا خلقناكم من ذكر وأنثى وجعلناكم   شعوباً وقبائل لتعارفوا إن أكرمكم عند الله أتقاكم ، إن الله عليم خبير) .<br />
+هذا  المشهد العظيم يبعث في النفس آثاراً عظيمة ،منها : أن توحيد اللباس  فيه  إشارة إلى توحيد الكلمة والمقصد، &quot;فإلهكم إله واحد فله أسلموا وبشر   المخبتين &quot; .<br />
+ومنها : أن الناس في ميزان العبودية سواء الله ربهم وهم  عبيده ، فأكرمهم  عنده أتقاهم ، وأرفعهم منزلة من زاد ذله لمولاه ،وعَظُمَ  انكساره بين يدي  ربه ،وكًثُرَ طرقه لباب سيده ،أما مناصب الدنيا فلا وزن  لها هنا.<br />
+الموقف الثالث : <br />
+التلبية ، وما أدراك ما لتلبية ؟ التي  تستمر مع الحاج منذ تلبسه بالحج إلى  أن يرمي جمرة العقبة يوم العيد ، هذا  النداء الخالد الذي يعلن فيه العبد  استجابته لنداء الله الذي أعلنه إبراهيم  _عليه  الصلاة والسلام_ كما في  قوله _سبحانه_ : &quot; وأذن في الناس بالحج&quot;  هذه التلبية التي قال عنها جابر  ـ  رضي الله عنه ـ في وصفه لحجة المصطفى  _عليه الصلاة والسلام_:&quot; فأهل رسول  الله_صلى الله عليه وسلم_  بالتوحيد &quot;  ،وتأمل قوله: &quot; بالتوحيد &quot; ،وذاك  لأمرين :<br />
+ أحدهما : أن أهل الجاهلية كانوا إذا لبوا قالوا: &quot; لبيك لا شريك لك ، إلا شريكاً هو لك تملكه وما ملك &quot; فكانوا يشركون في التلبية .<br />
+الثاني  : أن هذه الجملة العظيمة اشتملت على أنواع التوحيد الثلاثة؛  الربوبية  والألوهية والأسماء والصفات، فقوله: &quot; الملك لك&quot; إشارة إلى توحيد  الربوبية ،  وقوله:&quot; لبيك لا شريك لك&quot; إشارة إلى الألوهية ، وقوله:&quot; إن  الحمد والنعمة  لك&quot; إشارة إلى توحيد الأسماء والصفات .<br />
+<br />
+إذن هي ألفاظ ومعان عظيمة ،  فيها ثناء على الله _تعالى_، واعتراف  باستحقاقه للعبادة وحده _سبحانه_  ،واعتراف بأن النعم كلها من عنده ، وأنه  _سبحانه_ هو المستحق للحمد كله ،  لهذا ينبغي أن يكون لها آثار على سلوك  الحاج ، ومن ذلك : <br />
+1 ـ أن يحمد  الله _عز وجل_ على هدايته للتوحيد في الوقت الذي يقع فيه بعض  المنتسبين  للإسلام في صور من الشرك عظيمة إما لجهلهم ، أو لاعتقادهم أن  عملهم هو  الدين الحق فزُين ذلك لهم حتى صار ديناً لا يتحولون عنه _والعياذ  بالله_ ،  فليحمد العبد ربه وليعلم أن هدايته محض فضل الله _تعالى_ عليه .<br />
+2 ـ ومن  الآثار أيضاً : أن يحمد المسلم ربه أن جعل قلبه مستيقناً يقيناً  لا شك فيه  بأن الله _تعالى_ هو المستحق للعبادة وحده لا شريك له ،لكمال  ربوبيته  وألوهيته وأسمائه وصفاته ، وأن ما سوى الله من المعبودات لا يستحق  ذلك ،  يستحضر العبد ذلك وهو يرى بعض صور الشرك التي يقع فيها بعض الحجاج  الجهلة !<br />
+ويستحضر  المسلم ذلك وهو يتذكر الأمم الكثيرة ـ الغابرة والحاضرة ـ التي  وقعت في  لوثة الشرك فرأته ديناً صواباً ـ عياذاً بالله ـ  يتذكر وحمد ربه  أن عصمه  من ذلك ، وهذا يدعوه إلى سؤال الله _تعالى_ الثبات على التوحيد  حتى الممات ،  فإن القلوب بين إصبعين من أصابع الرحمن يقلبها كيف يشاء .<br />
+3 ـ ومن  الآثار أيضاً : أن يكون العبد على وجل وخوف إذا لبى من عدم إجابة  تلبيته  وقبول حجه ،وهذا الخوف ينبغي أن يدفعه لمزيد الإحسان في العمل ،  وفي الوقت  نفسه ينبغي أن يحذر من القنوط ، بل يجمع بينهما . <br />
+فهذه إشارة عابرة إلى  التلبية وما فيها من معان عظيمة ، والتي  ينبغي أن  نتذكرها حينما نلبي ،  وألا نكون كحال بعض الناس الذي يرددها وكأنه يردد  قصيدة ملحنة !! <br />
+ولعل  تذكر هذه المعاني ـ أخي القارئ ـ لعل هذا هو السبب فيما نقل عن بعض  السلف  أنه كان إذا لبى غلبه تذكره فأغمي عليه ،كما روى ذلك الإمام مالك عن  علي بن  الحسين ( زين العابدين )           ـ رحمهما الله تعالى ـ أنه  أحرم ،فلما  أراد أن يلبي قالها ،فأغمي عليه وسقط من ناقته فهشم _رحمه  الله_ ،فقيل له  في ذلك ؟ فقال : أخشى أن أجاب بلا لبيك !<br />
+وقد رأيت بنفسي رجلاً ـ صحبته  في الحج ـ لما أحرم بدأ بالتلبية فغلبه  البكاء،وذلك أنه تذكر موقفاً وقع  لأحد أئمة التابعين وهو محمد بن المنكدر ،  وذلك أنه روي عنه أنه لما بدأ في  التلبية سكت في منتصفها وقال :أخشى أن  أُجاب بغير ما أريد،يعني أنه خشي أن  يقال له : لا لبيك ولا سعديك، فغلبه  البكاء حتى سقط عن راحلته      ـ رحمه  الله تعالى ـ . <br />
+<br />
+الموقف الرابع : <br />
+الحاج يفعل في حجه أموراً  كثيرة ،قد لا يدرك لها حكمة سوى تحقيق العبودية  والاستسلام  لله_تعالى_،والمت  ابعة للنبي_ صلى الله عليه وسلم_ ، وهذا كله  يثمر التقوى،  ومن ذلك مثلاً : <br />
+تقبيل الحجر الأسود ، أمر لا يعلم له المسلم تفسيراً  سوى المتابعة المحضة  للنبي_صلى الله عليه وسلم_ ولهذا كان عمر_رضي الله  عنه_  يقول ـ كما في  الصحيحين ـ :&quot; والله إني لأقبلك،وإني لأعلم أنك حجر لا  تضر ولا تنفع ،  ولولا أني رأيت رسول الله _صلى الله عليه وسلم_ يقبلك ما  قبلتك &quot;ولله در  عمر،فإنه أراد أن يعلم ويربي من تبلغه هذه المقولة أن الأمر  محض استسلام  ومتابعة :<br />
+فما البيت والأركان والحـجر والصفا* وما زمـزم أنت الذي قصدنـاه<br />
+وأنت منانا ، أنت غايـــة سؤلــنا *** وأنت الذي دنـيا وأخرى أردناه<br />
+وهكذا الشأن ـ أيها الأحبة ـ في جميع المناسك ،يسأل الحاج أحياناً : <br />
+لماذا  الطواف بالبيت ؟ ولماذا لم يكن خمسة أشواط بدل سبعة ؟ وما الحكمة من  السعي  ؟ ورمي الجمار ؟ والمبيت بمنى والنحر ، و....و.... أسئلة كثيرة  ..لا نعلم  لها جواباً إلا أن الأمر محض استسلام وتعبد ، وتعظيم لشعائر  الله _عز وجل_ ،  وإقامة ذكره _سبحانه وبحمده_ ، وأن الهدف من ذلك هو حصول  تقوى الله  _سبحانه_ ، ولهذا قال الله _عز وجل_:&quot; لن ينال الله لحومها و لا  دماؤها  ولكن يناله التقوى منكم كذلك سخرها لكم لتكبروا الله على ما هداكم  وبشر  المحسنين&quot; والشاهد قوله : &quot; لتكبروا الله على ما هداكم&quot; أي: لتعظموه  وتجلوه  جزاء هدايته إياكم فإنه يستحق أكمل الحمد ،وأجل الثناء ، وأعلى  التعظيم،  ويقول _تعالى_ : &quot; ذلك ومن يعظم شعائر الله فإنها من تقوى  القلوب&quot; ، ويقول  _سبحانه_ :&quot;الحج أشهر معلومات فمن فرض فيهن الحج فلا رفث  ولا فسوق ولا جدال  في الحج وما تفعلوا من خير يعلمه الله وتزودا فإن خير  الزاد التقوى واتقون  يا أولي الألباب&quot; .<br />
+ومع هذه التساؤلات التي أشرت إليها آنفاً، فالمسلم  لا يعتريه شك  في أن  هذه الأعمال هي من صلب أعمال المناسك ،وأنه لو لم  يفعلها لم يصح حجه أو  نقص أجر حجه ، ولكن ابحث عن أثر هذا الاستسلام في  حياة بعض الحجاج خاصة  والمسلمين عامة !! <br />
+وابحث عن هذا الإقدام على الامتثال للأوامر ، فسترى عجباً .<br />
+إن  من الناس من يبلغه الأمر عن الله وعن رسوله_صلى الله عليه وسلم_ في بعض   الأمور ، فيبدأ في التساؤلات ،وإبداء الإشكالات التي لا تنبئ عن بحث عن   الحق أو التماس للحِكَم ، ولكنها تنبئ عن نوع من التردد أو التباطؤ في فعل   هذا الأمر أو اجتناب ذاك النهي !!<br />
+فلماذا هذا النظر إلى الأوامر  والنواهي ؟! والله _تبارك وتعالى_ يقول في  محكم كتابه : &quot;وما كان لمؤمن ولا  مؤمنة إذا قضى الله ورسوله أمراً أن يكون  لهم الخيرة من أمرهم  ومن يعص  الله ورسوله فقد ضل ضلالاً مبيناً&quot;.<br />
+<br />
+الموقف الخامس : <br />
+يجد المسلم  في الحج والعمرة أيضاً أن الإحرام له محظورات يمتنع المسلم  منها حال  إحرامه ـ رغم أنها من أطيب الطيبات ـ كالطيب ولبس الثياب التي  تفصل على  الجسم ، وغيرها من المحظورات، ويلحظ المسلم أيضاً أن الحرم له  أحكامه التي  تخصه، فلا ينفر صيده، ولا يعضد شوكه ، ولا تحل لقطة الحرم إلا  لمنشد ،إلى  غير ذلك من الأحكام التي جاءت بها النصوص ، وبسط أهل العلم  الكلام عليها  ،وأيضاً شُرع للمسلم أن يأتي البيت على أحسن هيئة ، ولباس  معظم ـ وهو  الإحرام ـ ولا يجوز للحاج أن يخرج من مكة بعد حجه إلا بعد طواف  الوداع ما  لم يكن معذوراً شرعاً ، ويلاحظ المسلم أيضاً أن الحج مضبوط  بأوقات وأماكن  محددة ، لا يجوز أن يتجاوزها المسلم ، فلماذا كل هذا ؟<br />
+لا شك أن هذا كله  من تعظيم شعائر الله_تعالى_ ؛ لأن تعظيمها تعظيم لأمر  الله ، وهذا يورث في  النفس من الاستكانة ، والخضوع ،والاستسلام والذل لله ،  وانشراح الصدر ما  لا يستطيع وصفه أعظم الناس بلاغة وفصاحة، وهذا ـ والله ـ  هو مقصود العبودية  الأعظم، وبه تعلو درجة العبد عند ربه وتمحى عنه آثار  الذنوب والمعاصي . <br />
+ومن  ذلك أيضاً أثر سلوكي آخر ألا وهو : قيام عبودية المراقبة لله_تعالى_ ،   فالحاج يطوف ويسعى ويرمي الجمار ويبيت بمنى ويقف بعرفة وينصرف منها كل  ذلك  حسب العدد والزمان والمكان الذي حدده الشرع، ولا يخطر بباله أن يجعل  الطواف  ثمانية أشواط مثلاً،والسعي ـ لأنه طويل ـ سيختصره إلى خمس،أو أنه  يفكر في  أن يزيد في عدد حصى الجمار ،كلا كل ذلك ليس في باله ولم يحم طائر  تفكيره  حوله ، فلماذا ؟ لأنه يعلم أن الله _تعالى_ مطلع عليه ولأنه يخشى  فساد أو  نقص حجه ؟<br />
+وهذا أثر عظيم ، ودرس كبير ، يبعث المسلم إلى مراقبة  ربه_تعالى_ في سائر  أعماله وشتى أحواله ، فالمطلع على أحوال الحج مطلع على  غيره من الأعمال . <br />
+ومن الآثار السلوكية أيضاً : الاعتياد على اغتنام  الأوقات ـ رأس مال  الإنسان ـ والعلم بأن لكل وقت من أوقات المسلم له وظيفته  التي جعلها الله  لها .<br />
+فهذا الحاج لو فاته الوقوف بعرفة،أو رمى في غير  وقت الرمي،أو بات خارج منى  ـ بلا عذر ـ أو غيرها من الأعمال ،إما أن يفسد  حجه أو ينقص حسب رتبة  العمل .<br />
+والمقصود من ذلك أن يعود المسلم نفسه على ترتيب وقته ومحاولة اغتنامه ، وعدم تضييعه ، فإن العمر قصير والواجبات كثيرة .<br />
+وللحديث صلة في الحلقة القادمة _بإذن الله_ .<br />
+    </font></span></div></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_912529" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_912529" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=912529" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_912529" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_912530">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-07-08,&nbsp;<span class="time">09:45 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post912530" href="showthread.php?t=175716&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=912530#post912530" class="postcounter">#4</a><a id="postcount912530" name="4"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,743</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: الحج وآثاره السلوكية
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_912530">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"> 			 				<div style="margin-right:40px"> 					<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="6"><font color="red">الحج وآثاره السلوكية  (4/4)<br />
+<br />
+</font></font></span><span style="font-family: traditional arabic"><font size="5"><font size="6"><font color="red">د.عمر بن عبد الله  المقبل  <br />
+</font></font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><br />
+</font></span><br />
+          <span style="font-family: traditional arabic"><font size="5">         كانت الحلقة الماضية استعراضاً لجملة من المواقف التي يمر بها  الحاج، ولها آثار على النفس، وفي هذه الحلقة نستكمل ما بقي منها:<br />
+<br />
+<font color="#0000ff">الموقف السادس: </font><br />
+في  الحج، لا تكاد تخطئ عين الحاج مريضاً، أو محتاجاً، أو معاقاً، أو  مفترشاً  الأرض إلى آخر تلك الصور المتكررة، والتي تبعث في نفسه شعوراً  بأمور، ينبغي  أن تظهر آثارها على سلوكه، ومن ذلك: <br />
+أن يشكر الله تعالى بلسانه وجوارحه، على أن عافاه مما ابتلى به هؤلاء الناس.<br />
+قد تبصر عيناك ـ في عرصات المشاعر المقدسة ـ مريضاً، فليكن ذلك دافعاً على اللهج بحمد الله على نعمة الصحة.<br />
+وقد تقع عينك على محتاج! فاحمد الله أن أغناك من فضله فلم تحتج،وتمد يدك إلى مخلوق.<br />
+وإن التفت فرأيت معاقاً، فاحمد الله على إطلاق جوارحك.<br />
+وإن رمقت بمقلتك أعمى فاحمد الله على نعمة البصر، وهكذا في أنواع من النعم تراها اجتمعت فيك، وفقدها ـ أو فقد بعضها ـ غيرك.<br />
+ومن الآثار: أن يتذكر المسلم برؤيته لهذه المناظر تفاوت الناس يوم القيامة!<br />
+فهاهم  في الدنيا منهم الصحيح القوي،ومنهم المريض الضعيف،ومنهم من هو بين  ذلك،وهم  يوم القيامة سيتفاوتون على قدر أعمالهم،فمنهم منه في أعلى  الدرجات،ومنهم  منه في أدناها. <br />
+وثمة أثر سلوكي آخر يدفعك إليه نظرك إلى هذه المناظر، ألا وهو: <br />
+البذلُ والإنفاقُ، وسخاوةُ النفس لهؤلاء المحتاجين وأمثالهم، فتعطف على الفقراء، وتحسن إلى المساكين، وتبذل للمنقطعين.<br />
+<br />
+ومن  الحجاج من يبلغ مرتبة أعلى في الإنفاق، فيبذل ماله حتى على إخوانه   الأغنياء الذين يستطيعون الحج بأنفسهم؛رغبة في الثواب والأجر، ومن أشهر من   عرف عنه ذلك: <br />
+الإمام عبدالله بن المبارك ـ رحمه الله تعالى ـ الذي كان  إذا أراد الحج من  بلده (مروْ) جمع أصحابه وقال:من يريد منكم الحج؟ فيأخذ  نفقاتهم، فيضعها  عنده في صندوق ويقفل عليه، ثم يحملهم وينفق عليهم أوسع  النفقة، ويطعمهم  أطيب الطعام، ثم يشتري لهم من مكة ما يريدون من الهدايا  والتحف، ثم يرجع  إلى بلده، فإذا وصلوا صنع لهم طعاما، ثم جمعهم عليه،ودعا  بالصندوق الذي  فيه نفقاتهم، فرد إلى كل واحد منهم نفقته(1). فرحمه الله  رحمة واسعة.<br />
+وذُكِر أن الحسن بن عيسى الماسرجسي ـ وهو أحد المحدثين الثقات ـ أنفق في حجته التي مات فيها: (300000) ثلاثمائة ألف درهم(2).<br />
+<br />
+ومن  العجيب أن هذا المحدث كان نصرانيا فأسلم وحسن إسلامه وطلب العلم حتى  صار  له فيه شأن، ولقد عُدّت المحابر في مجلسه اثنا عشر ألف محبرة، وسبحان  الله   ما أعظمه من دين!!من أخذ به عزّ ومن أعرض عنه ذلّ!!<br />
+فأين التجار  المسلمون الذين ولدوا وعاشوا بين المسلمين؟! نعم في الناس  بقية ـ ولله  الحمد ـ لكن من المؤكد أن حاجة الحجيج إلى أنواع من البذل  والإحسان، دون  أعداد التجار الذين يعرفون.<br />
+ولهذا يقال لإخواننا الذين وسّع الله عليهم:  لا ينبغي أن يكون التنافس  مقتصرا على أمر الدنيا، فما أحسن أن تجمعوا مع  أمر الدنيا أمر الآخرة!<br />
+<br />
+وقد أشار الله عز وجل إلى ذلك في كتابه، حيث  قدم التزود بالتقوى على تجارة  الدنيا فقال: &quot;وَتَزَوَّدُو�  � فَإِنَّ خَيْرَ  الزَّادِ التَّقْوَى  وَاتَّقُونِ يَا أُولِي الْأَلْبَابِ لَيْسَ  عَلَيْكُمْ جُنَاحٌ أَنْ  تَبْتَغُوا فَضْلاً مِنْ رَبِّكُمْ&quot; (البقرة: من  الآيتين197، 198).<br />
+<br />
+<font color="#0000ff">الموقف السابع: </font><br />
+يلمس  المتتبع لحجة النبي صلى الله عليه وسلم مخالفته للمشركين في شعائرهم  التي  كانوا عليها في الجاهلية، ومن هذه الشعائر التي خالف النبي صلى الله  عليه  وسلم فيها أهل الجاهلية:<br />
+أ/ مخالفته لهم في التلبية كما سبق أن أشرت إليه.<br />
+<br />
+ب/  مخالفته لهم في الاعتمار في أشهر الحج، في الوقت الذي كان أهل الجاهلية   يعتقدون أن العمرة في أشهر الحج من أفجر الفجور في الأرض، كما ثبت ذلك في   الصحيحين من حديث ابن عباس رضي الله عنه.<br />
+<br />
+ج/ كانت قريش لا تقف بعرفة  كما يقف سائر الناس،بحجة أنهم أهل الحرم!!   فخالفهم النبي صلى الله عليه  وسلم فوقف بعرفة حتى غربت الشمس ثم دفع، كما  في الصحيحين من حديث عائشة،  وجبير بن مطعم رضي الله عنهما.<br />
+<br />
+د/ كان أهل الجاهلية يتأخرون في  الدفع من مزدلفة حتى تشرق الشمس ويقولون  أشرق ثبير(3) كيما نغير، وثبير جبل  معروف على يسار الذاهب إلى منى وهو  أعظم جبال مكة(4).<br />
+والمعنى: لتطلع عليك الشمس يا جبل حتى ننفر، فخالفهم النبي صلى الله عليه وسلم فكان يفيض من مزدلفة قبل شروق الشمس.<br />
+<br />
+هـ/  ومما يلحق بهذا الموضوع أيضا، أن النبي صلى الله عليه وسلم ـ بعد  فراغه من  حجه ـ نزل في خيف بني كنانة، وهو موطن تعاقدت فيه قريش وتعاهدت  على مقاطعة  النبي صلى الله عليه وسلم ومن معه من المؤمنين، وفرضوا عليهم  حصارا  اقتصاديا، بل وفرضوا عليهم حصارا اجتماعيا تمثل في امتناعهم من  تزويج كل من  آمن بالنبي صلى الله عليه وسلم، فأراد عليه الصلاة والسلام أن  يظهر منة  الله تعالى عليه بظهور التوحيد وأهله، وانقماع الشرك وأهله،  فقال ـ كما في  الصحيحين من حديث أبي هريرة رضي الله عنه ـ قال لنا رسول  الله صلى الله  عليه وسلم ونحن بمنى: &quot; نحن نازلون غدا بخيف بني كنانة، حيث  تقاسموا على  الكفر، وذلك أن قريشا وبني كنانة تحالفت على بني هاشم وبني  المطلب ألا  يناكحوهم ولا يبايعوهم حتى يسلموا إليهم رسول الله صلى الله  عليه وسلم،  يعني بذلك المحصّب&quot;.<br />
+<br />
+يقول ابن القيم ـ رحمه الله تعالى ـ معلقا على  هذا الحديث: &quot;وكانت عادته  صلوات الله وسلامه عليه أن يقيم شعار التوحيد في  مواضع شعائر الكفر  والشرك، فيظهر شعائر الإسلام في المكان الذي أظهروه، فيه  شعائر الكفر&quot;(5).<br />
+<br />
+والآثار السلوكية التي نستفيدها من هذه المخالفات الصريحة من النبي صلى الله عليه وسلم لأهل الإشراك كثيرة من أهمها:<br />
+1  ـ حرص الإسلام على تميز أتباعه في كل شيء في عباداتهم وأعيادهم ولباسهم   وكلامهم، وغير ذلك، وخاصة في باب العبادات،بل إنه سد كل باب يفضي إلى   التشبه بهم وحرم على المسلمين ذلك، كما في الحديث الذي أخرجه أبو داود   وأحمد عن ابن عمر رضي الله عنه أن النبي صلى الله عليه وسلم قال:&quot; من تشبه   بقوم فهو منهم&quot;. قال شيخ الإسلام ابن تيمية ـ رحمه الله تعالى ـ: إسناده   جيد.<br />
+<br />
+2 ـ  تأكيد الأمر العظيم، والأصل الأصيل، الذي هو أحد الأصول  التي قام  عليها هذا الدين، ألا وهو البراءة من المشركين في شعائرهم  وأعيادهم  وأخلاقهم ولباسهم وغير ذلك مما تميزوا به، وهذه البراءة تقتضي  بغضهم  وعداوتهم، وبغض ما هم عليه من كفر وشرك والحذر من التشبه بهم في أي  شيء من  خصائصهم، وليس هذا أمرا غريبا بل هو ملة إبراهيم صلى الله عليه وسلم  الذي  أعلنه صراحة في وجوه الكفار، كما قال الله عز وجل: &quot;قَدْ كَانَتْ  لَكُمْ  أُسْوَةٌ حَسَنَةٌ فِي إِبْرَاهِيمَ وَالَّذِينَ مَعَهُ إِذْ  قَالُوا  لِقَوْمِهِمْ إِنَّا بُرَآءُ مِنْكُمْ وَمِمَّا تَعْبُدُونَ مِنْ  دُونِ  اللَّهِ كَفَرْنَا بِكُمْ وَبَدَا بَيْنَنَا وَبَيْنَكُمُ  الْعَدَاوَةُ  وَالْبَغْضَاءُ أَبَداً حَتَّى تُؤْمِنُوا بِاللَّهِ  وَحْدَهُ&quot; (الممتحنة:  من الآية4) فهو يعلن عليه الصلاة والسلام أن العداوة  والبغضاء لا أمد لها  سوى الإيمان بالله وحده عز وجل وأن يكونوا حنفاء لله  غير مشركين به، وقد  سار على هذه الطريق ابنه الخليل الثاني نبينا محمد صلى  الله عليه وسلم  فبعث أبا بكر رضي الله عنه عام تسعة من الهجرة ليعلن  البراءة من المشركين،  وألا يحج بعد هذا العام مشرك ـ كما في الصحيحين ـ من  حديث أبي هريرة رضي  الله عنه.<br />
+<br />
+ومع وضوح مكانة هذا الأصل، وكونه من  المسلمات في الشرع، حتى قال عنه بعض  أهل العلم: &quot;ليس في كتاب الله تعالى  حكم فيه من الأدلة أكثر ولا أبين من  هذا الحكم  بعد وجوب التوحيد وتحريم  ضده&quot;(6).<br />
+<br />
+أقول: مع وضوح مكانته من الدين إلا أننا وللأسف لازال بعض  المسلمين أو ممن  ينتسب إلى الإسلام من يخرق هذا الأصل العظيم: فمنم من يهون  من شأن عداوة  الكفار عموما أو من عداوة اليهود والنصارى على وجه الخصوص،  حتى ظن بعضهم  أنه يمكن أن نتقارب مع أهل الكتب السماوية المنسوخة بدين  الإسلام، أو أنه  يمكن أن نلتقي تحت مظلة الإنسانية.ومنهم من يظن أن المخرج  لهذا التخلف  الذي تعيشه أمة الإسلام هو السير في ركاب الغرب والشرق وأخذ  جميع ما  عندهم،من غير تمييز بين النافع والضار.<br />
+<br />
+ومن مظاهر خرق هذا  الأصل ما يراه كل مسلم من التشبه بالكفار في لباسهم أو  سلوكهم،ومن أوضح  الصور ما نراه من القصات الغريبة،ولبس القبعات،والتي زاد  سعارها مع هذا  البث الفضائي المحموم، إلى غير ذلك من المظاهر التي تدل على  وجوب تكثيف  الحديث عن هذا الأصل العظيم، خاصة في هذا الزمان الذي أصبح  الحديث عن  المسلمات من الواجبات والله المستعان. <br />
+<br />
+3 ـ وفي قصة النزول بالمحصب،  فوائد وعبر ومنها: أن العبد ينبغي له أن  يتذكر دائما منة الله عليه  بالهداية والتوفيق، وأن يسعى لإظهار الدين  وخاصة في الأماكن التي كانت  مجمعا للشر، أو كان الشخص نفسه ممن عاش فيها  مدة من الزمن أيام غفلته،وكل  هذا مع مراعاة تحقيق المصالح، ودرء المفاسد.<br />
+<br />
+<font color="#0000ff">الموقف الثامن: </font><br />
+النحر  في دين الله له شأن عظيم، قرنه الله عز وجل في كتابه بالصلاة، كما  في قوله  سبحانه: &quot;قُلْ إِنَّ صَلاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي  لِلَّهِ  رَبِّ الْعَالَمِينَ&quot; (الأنعام:162) على أحد القولين في الآية وفي  قوله  تعالى: &quot;فَصَلِّ لِرَبِّكَ وَانْحَرْ&quot; (الكوثر:2)، وفي صحيح مسلم عن  علي  رضي الله عنه قال: قال رسول الله صلى الله عليه وسلم: &quot;لعن الله من  ذبح  لغير الله&quot;.<br />
+<br />
+وللنحر في الحج منزلة عظيمة، فالمسلم ينحر ذبيحته تقربا  إلى الله عز وجل  إما هديا، أو جبرانا لما وقع في نسكه من الخلل أو يذبح  تطوعا، وأهل  الأمصار يشاركون الحجاج في عبادة النحر بذبح الأضاحي إحياء  لسنة خليل  الرحمن:إبراهيم عليه الصلاة والسلام، الذي ابتلي بذلك البلاء  العظيم الذي  لا يصبر عليه كل أحد، أمر بذبح ابنه، ومتى؟! عند كبر في السن،  ويأس من  الولد، وبعدما صار الولد قطعة من القلب!<br />
+أَمَا ـ والله ـ إنه لو وكّل غيره بذبح ابنه لما كان الأمر هيناً، فكيف به وهو يؤمر أن يباشر الذبح بنفسه؟!<br />
+<br />
+ويبلغ  التسليم منه المبلغ العظيم حينما عرض على ابنه إسماعيل أن يشاركه في   الابتلاء، فقال له: &quot;يا بني إني أرى في المنام أني أذبحك فانظر ماذا ترى   قال يا أبت افعل ما تؤمر&quot; فلما حصل التسليم منهما لم يكن للذبح وإراقة  الدم  حاجة؛ لأن إبراهيم نجح في هذا الابتلاء ليعطي كل حنيف مسلمٍ درسا  عظيما في  صدق الامتثال، وسرعة المبادرة وإن كان ذلك بخلاف ما تهواه النفس.<br />
+<br />
+إذا تبين هذا، فإن لهذه العبادة آثار عظيمة يجدر ألا تغيب عن بال المسلم حين يباشرها أو ينظر إليها، ومن ذلك:<br />
+1  ـ أن يحمد الله عز وجل أن جعله لا يذبح إلا له، في الوقت الذي يرى فيه  أو  يعلم عن أناس ممن ينتسبون إلى المسلمين يذبحون وينذرون الدماء لطوائف  من  المخلوقين:إما أولياء ـ وقد لا يكونون كذلك أصلا ـ أو جن أو غيرهم   المخلوقين الذين صرف العبادة لهم شرك أكبر مخرج من الملة.<br />
+<br />
+2 ـ وقفة  تأمل مع عدد الإبل التي ذبحها النبي صلى الله عليه وسلم في حجته،  وهي مئة  ناقة!! ذبح منها ثلاثاً وستين بيده الشريفة، وأكمل الباقي علي بن  أبي طالب  رضي الله عنه.<br />
+<br />
+ونحن نعلم أنه كان يكفيه لنسكه سبع بدنه أو شاة واحدة، فلماذا كل هذا؟ <br />
+ما  هو ـ والله ـ إلا التعظيم لشعائر الله، وما هو إلا الجود والسخاء الذي  عرف  به صلى الله عليه وسلم وما هو ـ والله ـ إلا الانشراح والراحة التي  يجدها  بأبي هو وأمي صلى الله عليه وسلم في التقرب إلى الله بهذه العبادة  العظيمة:  عبادةِ النحر، ووالله ، لو كان يرضي ربه نحر نفسه لفعل،وهذا  الشعور يجده  الحجاج أيضا كلٌ بحسب ما يقوم بقلبه من اليقين،  والتعظيم،والحب،  وليس هذا  فحسب:<br />
+<br />
+<div style="text-align: center;"> <span style="font-family: times new roman"><br />
+</span> <br />
+<span style="font-family: times new roman"><br />
+</span> <br />
+<span style="font-family: times new roman"><br />
+</span> <br />
+   فلو كان يرضي الله بذل نفوسهم  <br />
+ لدانوا به طوعا وللأمر سلموا    كما بذلوا عند الجهاد نحورهم  <br />
+ لأعدائه حتى جرى منهم الدمُ    ولكنهم دانوا بوضع رؤوسهم  <br />
+ وذلك ذل للعبيد وميسمُ(7)    <br />
+</div><br />
+3  ـ أن في قصة إبراهيم عليه الصلاة والسلام عبرة في قوة الانقياد والتسليم   لأمر الله تعالى، وهذا أمر ملاحظ في الحج أيضا، فترى مواقع المفتين تمتلئ   بالسائلين عن دقيق الأمور وجليلها، وهم في نفس الوقت على أتم الاستعداد   لفعل ما يُفْتون به ولو كلفهم ذلك بذل شيء من المال، بل لو كلفهم ذلك إعادة   الحج مرة أخرى!<br />
+<br />
+وهذا الشعور شعورٌ حسن، ولكن أين هؤلاء عن السؤال عن أمور دينهم قبل الحج وبعده؟ <br />
+ثم أين استعدادهم لامتثال أوامر الله عز وجل ولو كانت تخالف أهواءهم؟ <br />
+وأين أثر قصة إبراهيم في نفوسهم؟<br />
+<br />
+سبحان  الله! ما أعظم الفرق بين الصحابة وبين غيرهم! الصحابة الذين ضربوا  أروع  الأمثلة في الانقياد والتسليم، وإن كان الأمر في أول وهلة على غير ما  تهواه  نفوسهم،وإليكم مثالا واحدا يجلي هذا المعنى:<br />
+ففي الصحيحين أن ظهير بن  رافع رضي الله عنه لما بلغه أن النبي صلى الله  عليه وسلم نهى عن صورة معينة  من صور المزارعة، قال لقد نهانا رسول الله  صلى الله عليه وسلم عن أمر كان  لنا رافقا ـ يعني فيه رفق بنا ـ قال رضي  الله عنه: وطواعية الله ورسوله خير  لنا(8).<br />
+<br />
+<font color="#0000ff">الموقف التاسع: </font><br />
+في يوم عرفة مواقف عظيمة، لها أثرها على السلوك وتزكية النفس، ومن ذلك:<br />
+أ/ تذكر عظمة الله جل جلاله في اختلاف الألسنة والألوان والأحجام، فكم لغة يُتكَلَّم بها في هذا الموقف؟ <br />
+وكم الدعوات التي ترتفع إلى السماء تسأل الله الرحمة والمغفرة؟. <br />
+وكم في القلوب من النوايا والرغبات؟. <br />
+فسبحان من لا تختلف عليه اللغات! ولا تشتبه عليه الأصوات! <br />
+وإذا كان هذا محل للتأمل فما الظن بلغات أهل الأرض كلهم؟ <br />
+وما الظن بحاجات الخلق كلهم؟ أنسِهم وجنِهم؟ المكلف وغير المكلف؟!.<br />
+<br />
+ب/موقف عرفة موقف عظيم، يجعل نفس المؤمن تتأرجح بين منزلتي الخوف والرجاء!<br />
+فالعبد يخاف حينما يتذكر ذنوبا بينه وبين ربه اقتحمها عن عمد وإصرار!<br />
+ويخاف المؤمن حينما يتذكر أن الله شديد العقاب،ويغار على حرماته أن تنتهك، ويخاف أن تزل قدمه بعد ثبوتها أن يختم له بخاتمة سيئة!<br />
+ويخاف  المؤمن وهو يتذكر تلك الأحوال التي وقعت لجماعات من السلف الصالح  الذين  كانوا أئمة في العلم والعمل، وأنهم ـ مع صلاحهم وتقواهم ـ يخافون  الرد وعدم  القبول! ومن ذلك: <br />
+الموقف الذي وقع بين بكر بن عبدالله المزني،  وعبدالله بن الشخير ـ وهما من  سادات التابعين ـ حيث وقفا بعرفة، فقال  أحدهما: اللهم لا ترد أهل الموقف  من أجلي، وقال الآخر:ما أشرفه من موقف  وأرجاه لولا أني فيهم! <br />
+قال الذهبي ـ رحمه الله تعالى ـ معلقا: كذلك ينبغي للعبد أن يزري على نفسه ويهضمها(9).<br />
+<br />
+ووقف  الفضيل بن عياض بعرفة والناس يدعون، وهو يبكي بكاء الثكلى المحترقة  قد حال  البكاء بينه وبين الدعاء، فلما كادت الشمس أن تغرب رفع رأسه إلى  السماء  وقال: واخجلتاه منك وإن عفوت. <br />
+ومراده ـ رحمه الله ـ أني على خجل وحياء منك بسبب ذنوبي وإن عفوت عنها، وهذا ـ والله ـ مقام من الخوف رفيع(10).<br />
+<br />
+يقول  ابن الجوزي ـ رحمه الله تعالى ـ معلقا على هذا الموقف: &quot; ينبغي  للعاقل أن  يكون على خوف من ذنوبه وإن تاب منها وبكى عليها،وإني رأيت أكثر  الناس قد  سكنوا إلى قبول التوبة، وكأنهم قد قطعوا على ذلك، وهذا أمر غائب،  ثم لو  غفرت بقي الخجل من فعلها، ويؤيد الخوف بعد التوبة، أنه في الصحاح:  أن الناس  يأتون إلى آدم فيقولون: اشفع لنا، فيقول:ذنبي...إلى أن  قال:فهؤلاء إذا  اعتبرت ذنوبهم لم يكن أكثرها ذنوبا حقيقة،وثم إن كانت فقد  تابوا منها  واعتذروا،وهم بعد على خوف منها...إلخ كلامه النفيس&quot;(11).<br />
+ووقف بعض الخائفين بعرفة إلى أن قرب غروب الشمس،فنادى:الأ�  �ان..الأمان قد دنا الانصراف،فليت شعري ما فعلت بحاجة المسكين!!<br />
+<div style="text-align: center;"> <span style="font-family: times new roman"><br />
+</span> <br />
+<span style="font-family: times new roman"><br />
+</span> <br />
+   الأمان الأمان وزري ثقيل  <br />
+ وذنوبي إذا عددن تطول    أوبقتني أوثقتني ذنوبي  <br />
+ فتُرى إلى الخلاص سبيل؟(12)    <br />
+</div><br />
+وكما  أن العبد يخاف في ذلك الموقف، فهو أيضا يرجو ربه حينما يتذكر سعة  رحمة  الله عز وجل وعظيم مغفرته، نعم يرجو ربه الذي قال في كتابه: &quot;قُلْ  يَا  عِبَادِيَ الَّذِينَ أَسْرَفُوا عَلَى أَنْفُسِهِمْ لا تَقْنَطُوا  مِنْ  رَحْمَةِ اللَّهِ إِنَّ اللَّهَ يَغْفِرُ الذُّنُوبَ جَمِيعاً  إِنَّهُ هُوَ  الْغَفُورُ الرَّحِيمُ&quot; (الزمر:53)، والذي قال أيضاً:  &quot;وَرَحْمَتِي  وَسِعَتْ كُلَّ شَيْءٍ&quot; (الأعراف: من الآية156) نعم.. يرجو  رحمة أرحم  الراحمين حينما يتذكر قول النبي صلى الله عليه وسلم  في الحديث  الذي رواه  مسلم عن عائشة رضي الله عنها &quot;ما من يوم أكثر من أن يعتق الله  فيه عبدا من  النار من يوم عرفة،وإنه ليدنو ثم يباهي بهم الملائكة فيقول:  ما أراد  هؤلاء؟&quot;<br />
+<br />
+فأي فخر وأي شرف لك ـ يا عبدالله ـ أعظم من أن يباهي بك رب العالمين؟!<br />
+وبمن يباهي بك؟! يباهي بك ملائكته الذين يسبحون الليل والنهار لا يفترون!<br />
+فيا من يحب أن يباهي به ربه ملائكته، اعمل على تحقيق هذه المباهاة بالتزام أمر ربك، وترك نواهيه!<br />
+ارحم  نفسك وارحم عباد الله تنل رحمة ربك، فقد قال نبيك صلى الله عليه  وسلم:  &quot;الراحمون يرحمهم الرحمن، ارحموا من في الأرض يرحمكم من في السماء&quot;.  <br />
+<br />
+والعبد  يرجو مغفرة الله ورضوانه وخاصة في مثل هذا المقام العظيم، حينما  يتذكر بعض  الأحوال التي وقعت للسلف الصالح رضي الله عنهم، ومن ذلك:<br />
+1 ـ أن ابن  المبارك جاء إلى الإمام سفيان الثوري عشية عرفة وهو جاث على  ركبتيه وعيناه  تهملان، فقال ابن المبارك :من أسوأ هذا الجمع حالاً؟ قال  سفيان: الذي يظن  أنه لا يغفر لهم.<br />
+<div style="text-align: center;"> <span style="font-family: times new roman"><br />
+</span> <br />
+<span style="font-family: times new roman"><br />
+</span> <br />
+   وإني لأدعو الله أسأل عفوه  <br />
+ وأعلم أن الله يعفو ويغفر    لئن أعظم الناسُ الذنوب فإنها  <br />
+ وإن عظمت في رحمة الله تصغ    <br />
+</div><br />
+2  ـ وروي عن الفضيل أنه نظر إلى نشيج الناس وبكائهم عشية عرفة، فقال:  أرأيتم  لو أن هؤلاء صاروا إلى رجل فسألوه دانقا (يساوي سدس درهم) أكان  يردهم؟  قالوا: لا.قال: والله للمغفرة عند الله أهون من إجابة رجل لهم  بدانق!!.<br />
+والمقصود  أن يجمع العبد بين هاتين العبادتين:الخوف والرجاء وليغلب إحداهما  على  الأخرى حسب الشعور الذي ينتابه في تلك اللحظات المهيبة.<br />
+<br />
+ج/ ومن  المعاني العظيمة التي تتجلى في موقف عرفة: ذلك المشهد العظيم الذي  يذكر  بالموقف الأكبر يوم القيامة، يوم يجمع الله الأولين والآخرين في صعيد  واحد  فيقفون خمسين ألف سنة، وهم في العرق على قدر أعمالهم ـ كما ثبت في  الصحيح  ـ! <br />
+<br />
+نعم!! إنه موقف مؤثر والله،ويزداد تأثيره في النفس حينما يرى  الإنسان  انصراف الناس من الموقف عرفة،ويتذكر بذلك انصراف الناس من الموقف  الأكبر:  فريقٌ في الجنة، وفريقٌ في السعير!<br />
+ويتذكر ذلك ـ أيضاً ـ حينما ينصرف الناس من حجهم إلى بلدانهم: <br />
+أناسٌ  مقبولون قد غفرت ذنوبهم، وآخرون يعودون إلى أوطانهم وليس لهم من  حجهم إلا  التعب والنصب ـ نسأل الله العافية والسلامة ـ!! فيالها من حسرة  عظيمة إن لم  يقبل من العبد عملُه.<br />
+<br />
+وفي &quot;السير&quot; للذهبي: أن عمر بن ذر خرج إلى  مكة، فكان إذا لبى لم يلب أحد  أحسن من صوته، فلما أتى الحرم قال ـ مناجيا  ربه ـ: ما زلنا نهبط حفرة  ونصعد أكمة، ونعلو شرفا، ويبدو لنا عَلَمٌ (جبل)،  حتى أتيناك بها، فليس  أعظم المؤنة علينا تعب أبداننا،ولا لإنفاق أموالنا،  ولكن أعظم المؤنة أن  نرجع بالخسران!! يا خير من نزل النازلون بفنائه!.<br />
+<br />
+وفي الختام أعترف بأن الموضوع يستحق أكثر مما ذكر، وهناك جوانب تستحق الوقوف معها، لكن هذا ما تيسر عرضه في هذه الورقة.<br />
+أسأل  الله تعالى أن ينفعنا بما علمنا وسمعنا، وأن يتقبل من الجميع صالح   أعمالهم، وأن ييسر للحجاج حجهم، وأن يتمم سعينا وسعيهم بالغفران والقبول،   وأن يجعل ما علمناه حجة لنا لا علينا وصلى الله وسلم وبارك على نبينا محمد   وعلى آله وصحبه أجمعين، والحمد لله رب العالمين.<br />
+<br />
+<br />
+________________<br />
+(1) تهذيب الكمال 16/21.<br />
+(2) السير 12/29.<br />
+(3) هذا اللفظ في البخاري مع الفتح (3/621) ح(1684)، والزيادة (كيما نغير) عند ابن ماجه وغيره.<br />
+(4) فتح الباري 3/621.<br />
+(5) زاد المعاد 2/294.<br />
+(6) سبيل النجاة والفكاك للشيخ حمد بن عتيق /31.<br />
+(7) ميمية ابن القيم المطبوعة مع النونية /254.<br />
+(8)  وهذا بناء على فهم الصحابي أنه ج نهى عن تلك الصورة، وإلا فالحقيقة أن   النبي ج إنما نهى عن صورة فيها غرر ـ كما يتبين من مراجعة بقية روايات  هذا  الحديث ـ. <br />
+والشاهد من هذا: أن هذا الصحابي عزم على ترك ما فهمه، مع  اعتقاده أن تلك  الصورة من المزارعة فيها نفع لهم، كل ذلك من تمام التسليم  والانقياد.<br />
+(9) السير 4/534، اللطائف (496).<br />
+(10) اللطائف (496 ).<br />
+(11) صيد الخاطر (502).<br />
+(12) اللطائف (496).</font></span><span style="font-family: traditional arabic"><font size="5"><br />
+</font></span></div> 				</div>  			   		<br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_912530" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_912530" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=912530" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_912530" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=175716&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=175716#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">لوحة التحكم</a></li>
+		<li><a href="private.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الاشتراكات</a></li>
+		<li><a href="online.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=175710&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الكاسيات العاريات فهل يكون اللعن على مسمعهن أم سراً</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=175736&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المحبة</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A7%D9%84%D8%AD%D8%AC">الحج</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A7%D9%84%D8%B3%D9%84%D9%88%D9%83%D9%8A%D8%A9">السلوكية</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D9%88%D8%A2%D8%AB%D8%A7%D8%B1%D9%87">وآثاره</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=175716#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=175716#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">01:40 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	<img src="https://majles.alukah.net/cron.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;rand=1714905605" alt="" width="1" height="1" border="0" />
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

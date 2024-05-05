@@ -1,0 +1,2328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=696d1a7d9adaea36633b28fa7c3827c1&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=191919";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="البنيان, المرصوص, هذا, عليه, على, قال, تعالى, ولا, الله, الناس, بسبب, هذه, المفلس, وهذا, إذا, الرجل, ومن, والنكتة, حسناته, يوم, إلا, الإثم, عرض, وقد, الجنة, وهي, يفقد, رضي, عنه, الله[, رواه, حقيقة, رسول, أبي, نفسه, البادئ, فعلى, فمن, ومعلوم, فعن, تكلم, بغير, النار», مال, قبل, النار،, جميع, حقه, الضرورات, استوفى" />
+	<meta name="description" content="البنيان المرصوص (1) 
+ 
+خالدة النصيب 
+ 
+ 
+ 
+ 
+ 
+      حرم الله سبحانه وتعالى الظلم على نفسه وجعله بين الناس محرما، بل حتى  الحيوانات التي لا تكليف عليها، والبهائم إذا حشرت يوم القيامة أخذت كل شاة  حقها من الأخرى؛ فعن أبي هريرة - رضي الله عنه - أن رسول الله" />
+
+	<title> البنيان المرصوص</title>
+	<link rel="canonical" href="showthread.php?t=191919&s=696d1a7d9adaea36633b28fa7c3827c1" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=696d1a7d9adaea36633b28fa7c3827c1 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=696d1a7d9adaea36633b28fa7c3827c1">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> البنيان المرصوص</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=696d1a7d9adaea36633b28fa7c3827c1&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 6 من 6
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=191919&s=696d1a7d9adaea36633b28fa7c3827c1" title="تحديث الصفحة">البنيان المرصوص</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=191919" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;t=191919&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=addsubscription&amp;t=191919" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;search_type=1&amp;searchthreadid=191919&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="191919" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_963112">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2021-10-07,&nbsp;<span class="time">12:15 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post963112" href="showthread.php?t=191919&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=963112#post963112" class="postcounter">#1</a><a id="postcount963112" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,746</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> البنيان المرصوص
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_963112">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><b><font color="#ff0000"><font size="6"><span style="font-family: arabic typesetting">البنيان المرصوص (1)</span></font></font></b><b><span style="font-family: arabic typesetting"><font size="5"><font color="#008000"><font size="6"><br />
+<br />
+خالدة النصيب</font></font><br />
+</font></span></b><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>      حرم الله سبحانه وتعالى الظلم على نفسه وجعله بين الناس محرما، بل حتى  الحيوانات التي لا تكليف عليها، والبهائم إذا حشرت يوم القيامة أخذت كل شاة  حقها من الأخرى؛ فعن أبي هريرة - رضي الله عنه - أن رسول الله[ قال:  «لتؤدن الحقوق إلى أهلها يوم القيامة حتى يقاد للشاة الجلحاء من الشاة  القرناء» رواه مسلم، والجلحاء: التي لا قرن لها فهي تأخذ حقها بسبب وقوع  الظلم عليها من الشاة القرناء بسبب أنه لا قرون لها، وهو قصاص مقابلة لا  قصاص تكليف، لكن ليتبين لنا كيف أن الله تعالى عظم شأن الحقوق وأن من ظلم  في الدنيا ولم يأخذ حقه أخذه يوم القيامة لا محالة؛ لهذا شرع لنا كمسلمين  النصرة لمن وقع عليه الظلم ولمن كان ظالما، فهذا ينصر بأن يرجع له حقه،  وذاك ينصر بكفه عن ظلمه، كل هذا حتى يبقى المجتمع متماسكا متعاضدا لا يبغي  أحد على أحد، وحتى يبقى المسلمون إخوانا كما وصفهم الرسول[.</b><br />
+</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>لكن  لماذا هذا الأمر بنصرة الظالم والمظلوم؟ الجواب: حفاظا على المجتمع  وتماسكه ونبذا لأمور الجاهلية البغيضة التي تدعو للتعاضد بالقبائل في أمور  الدنيا ومتعلقاتها، وكانت الجاهلية تأخذ حقوقها بالعصبات والقبائل فجاء  الإسلام بإبطال ذلك، وفصل القضايا بالأحكام الشرعية، فإذا اعتدى إنسان على  آخر حكم القاضي بينهما وألزمه مقتضى عدوانه كما تقرر من قواعد الإسلام، جاء  في مسلم عن جابر بن عبد الله يقول: كنا مع النبي[ في غزاة، فكسع رجل من  المهاجرين رجلا من الأنصار؛ فقال الأنصاري: يا للأنصار، وقال المهاجري: يا  للمهاجرين؛ فقال رسول الله: «ما بال دعوى الجاهلية؟!» قالوا: يا رسول الله  كسع رجل من المهاجرين رجلا من الأنصار، فقال: «دعوها فإنها منتنة»، فسمعها  عبد الله ابن أبي فقال: قد فعلوها؟! والله لئن رجعنا إلى المدينة ليخرجن  منها الأعز الأذل، فقال عمر: دعني أضرب عنق هذا المنافق، فقال: «دعه لا  يتحدث الناس أن محمدا يقتل أصحابه» وفي رواية: «فلا بأس ولينصر الرجل أخاه  ظالما أو مظلوما، إن كان ظالما فلينهه فإنه له نصر، وإن كان مظلوما  فلينصره» رواه مسلم.</b></font></span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>      قال النووي: وأما تسميته[ ذلك دعوى الجاهلية فهو كراهة منه لذلك؛ فإنه  مما كانت عليه الجاهلية، ثم قال: وأما قوله[ في آخر هذه القصة «لا بأس»  فمعناه: لم يحصل من هذه القصة بأس مما كنت خفته؛ فإنه خاف أن يكون حدث أمر  عظيم يوجب الفتنة، وليس هو عائدا إلى رفع كراهة الدعاء بدعوى الجاهلية.  انتهى كلام النووي، رحمه الله.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>      وأما كراهة النبي[ لدعوى الجاهلية فهو كراهته لأخذ الحقوق بدون الرجوع  إلى السلطة الشرعية، وكراهة الرجوع إلى القبيلة والحكم بحكمها وإن كان  يخالف الشريعة، وهذا من متعلقات الدنيا الزائلة، وقد تحدث فيه الفتن، أقصد  فتن الهرج والمرج، قال ابن تيمية رحمه الله في مجموع الفتاوى (جزء 28 صفحة  422): «فإن الذين يتعصبون للقبائل وغير القبائل مثل قيس ويمن وهلال وأسد  ونحو ذلك كل هؤلاء إذا قتلوا فإن القاتل والمقتول في النار، كذلك صح عن  النبي[ قال: «إذا التقى المسلمان بسيفيهما فالقاتل والمقتول في النار» قيل:  هذا القاتل فما بال المقتول؟ قال: «إنه كان حريصا على قتل صاحبه» متفق  عليه».</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>      لكن إذا أردت النصرة لأخيك فليكن، سواء كان من قبيلتك أم من قبيلة أخرى،  وسواء كان ظالما أم مظلوما، فنصرة المظلوم تكون بالرجوع إلى الحكم الشرعي  والسلطة الشرعية بعدم التعدي على الآخرين بغير وجه حق قال في «فتح الباري»:  «نصر المظلوم فرض كفاية، وهو عام في المظلومين وكذلك في الناصرين؛ بناء  على أن فرض الكفاية مخاطب به الجميع وهو الراجح». ا.هــ. </b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>      فليس شرطا أن يكون من القبيلة حتى أنصره، بل أنصره لأنه رجل من  المسلمين، ثم قال: «ويتعين أحيانا على من له القدرة عليه وحده إذا لم يترتب  على إنكاره مفسدة أشد من مفسدة المنكر، فلو علم أو غلب على ظنه أنه لا  يفيد سقط الوجوب وبقي أصل الاستحباب بالشرط المذكور، فلو تساوت المفسدتان  تخير، وشرط الناصر أن يكون عالما بكون الفعل ظلما ويقع النصر مع وقوع الظلم  وهو حينئذ حقيقة». انتهى.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>والمقصود  من هذا الكلام أنه لا بد في نصر المظلوم من تحقق المصلحة في هذه النصرة  وبعد التحقق من وقوع الظلم، أما إن كان سيقع عليه الضرر فإنه يسقط عنه وجوب  النصرة ويصبح مستحبا في حقه، هذا فيما يتعلق بالمظلوم، أما نصرة الظالم  فهي تختلف وتكون بكفه عن الظلم وحجزه عنه؛ لحديث: «قالوا: يا رسول الله هذا  ننصره مظلوما فكيف ننصره ظالما؟ قال: «تأخذ فوق يديه» رواه البخاري، قال  ابن بطال: النصر عند العرب الإعانة وتفسيره لنصر الظالم بمنعه من الظلم، من  تسمية الشيء بما يؤول إليه وهو من وجيز البلاغة، قال البيهقي: معناه أن  الظالم مظلوم في نفسه، فيدخل فيه ردع المرء عن ظلمه لنفسه حسا ومعنى.  انتهى.</b></font></span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>ويشار  إلى أن النصرة في زمن الجاهلية معناها يختلف عما فسره الرسول[، فلقد فسره  بأن تكفه عن ظلمه لنفسه ولغيره، وليس موافقته على الباطل والوقوف معه في  باطله؛ فتكون النصرة بنهيه وردعه وكفه عن ظلمه، ولأن في ذلك حفظا له عن  إهلاك نفسه بظلمه وفيه وقاية المجتمع من شره، وفيه أن من ينصر المظلوم يريد  له الخير ولا يبطن له الشر؛ لهذا نرى فيه الحكمة في الإنكار وعدم إضمار  العداوة للظالم، وهذا مما يعين على الإصلاح، وتكون النية في ذلك إرادة  الخير للظالم بكفه عن ظلمه ومحبته وعدم بغضه، وهذا مما يشيع التكافل في  المجتمع الواحد ونبذ الفرقة والعدوان، وفيه شيوع المحبة بين الناس، وأن  يشيع التكافل في المجتمع الواحد ونبذ الفرقة و العدوان، وفيه شيوع المحبة  بين الناس والإخوان، وفيه القوة للمجتمع المسلم؛ فالمؤمن ضعيف في نفسه قوي  بإخوانه، فينبغي عند إرادة النصرة سواء للظالم أو المظلوم تقديم الحكمة على  كل شيء؛ فالحكمة ضالة المؤمن أنى وجدها فهو أحق بها، أي لا يزال يتطلبها  كما يتطلب الرجل ضالته ، وأهل النفوس الزكية يعتبرون بما يرون ويسمعون،  والحق أحق بالاتباع.</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_963112" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_963112" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=963112" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_963112" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_963113">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2021-10-07,&nbsp;<span class="time">12:21 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post963113" href="showthread.php?t=191919&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=963113#post963113" class="postcounter">#2</a><a id="postcount963113" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,746</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: البنيان المرصوص
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_963113">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><b><font color="#ff0000"><font size="6"><span style="font-family: arabic typesetting">البنيان المرصوص (2)- هكذا فلنكن<br />
+</span></font></font></b><b><span style="font-family: arabic typesetting"><font size="5"><font color="#008000"><font size="6"><br />
+خالدة النصيب</font></font><br />
+</font></span></b><span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>قال  تعالى: {إن الله يحب الذين يقاتلون في سبيله صفا كأنهم بنيان مرصوص}  (الصف: 4) قال الفراء ومنذر بن سعيد: المرصوص هو المعقود بالرصاص ويراد به  المحكم، وقال المبرد: رصصت البناء: لاءمت بين أجزائه وقاربته حتى يصير  كقطعة واحدة، وقيل: المراد استواء نياتهم في الثبات حتى يكونوا في اجتماع  الكلمة كالبنيان المرصوص، قال السعدي -رحمه الله-: وهذا حث لعباده على  الجهاد في سبيله وتعليم لهم كيف يصفون، وأنه ينبغي لهم أن يصفوا في الجهاد  صفا متراصا متساويا من غير خلل يقع في الصفوف، وتكون صفوفهم على نظام  وترتيب به تحصل المساواة بين المجاهدين و التعاضد وإرهاب العدو وتنشيط  بعضهم بعضا؛ ولهذا كان النبي[ إذا حضر القتال صف أصحابه ورتبهم في مواقفهم  بحيث لا يحصل اتكال بعضهم على بعض، بل تكون كل طائفة منهم مهتمة بمركزها  وقائمة بوظيفتها، وبهذه الطريقة تتم الأعمال ويحصل الكمال. انتهى.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>فهذا  التراص والتساوي من غير خلل، وهذا النظام والترتيب تكون نتيجته عدم  الاتكالية على الآخر، واهتمام كل بمركزه ووظيفته حتى يحصل الكمال للمجتمع،  وتراص البنيان مطلوب ليس في الجهاد فقط، بل هو مطلوب في المجتمع حتى يتحقق  فيه التراحم والتعاطف والتعاضد؛ فعن أبي موسى قال: قال رسول الله[: «المؤمن  للمؤمن كالبنيان يشد بعضه بعضا» رواه مسلم، وفي رواية للبخاري: «وشبك بين  أصابعه». فتعاون المؤمنين فيما بينهم يشد بنيان المجتمع، قال ابن بطال:  والمعاونة في أمور الآخرة وكذا في الأمور المباحة من الدنيا مندوب إليها،  وقال النووي: هذه الأحاديث صريحة في تعظيم حقوق المسلمين بعضهم على بعض،  وحثهم على التراحم والملاطفة والتعاضد في غير إثم ولا مكروه. انتهى.  فالمؤمنون بالمجتمع كالجسد الواحد بل هم كرجل واحد؛ فعن النعمان بن بشير  قال: قال رسول الله[: «المسلمون كرجل واحد إن اشتكى عينه اشتكى كله، وإن  اشتكى رأسه اشتكى كله» رواه مسلم في كتاب البر باب تراحم المؤمنين. فإن  الإنسان منا إذا مرض عضو من أعضائه دعا بعضه بعضا إلى المشاركة في ذلك؛  فتكون النتيجة السهر والحمى حتى الأجهزة الداخلية كالجهاز الهضمي والجهاز  التنفسي وغيره من الأجهزة مترابطة لحكمة ارتضاها الله تعالى في خلقه؛ فلا  بد من ظهور أعراض المرض حتى يشكو الإنسان ويأخذ العلاج، وإلا بقي مريضا  وانتشر المرض في جسده وربما أدى إلى وفاته، فنسأل الله العافية.</b></font></span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b> وفي  رواية أخرى: «إذا اشتكى منه عضو تداعى له سائر الجسد بالسهر والحمى» رواه  مسلم. وفي اللغة: تداعت الحيطان: أي تساقطت أو قربت من التساقط، وهذا حال  المجتمع إن كان مفككا لا يوجد فيه تعاون ولا يشفع فيه أحد لأحد؛ فالشفاعة  أصل من أصول الأدب في التعامل مع الناس؛ لقوله[: «اشفعوا تؤجروا، وليقض  الله على لسان نبيه ما شاء» رواه البخاري، قال في «فتح الباري»: في الحديث  الحض على الخير بالفعل وبالتسبب إليه بكل وجه، والشفاعة إلى الكبير في كشف  كربة ومعونة ضعيف؛ إذ ليس كل أحد يقدر على الوصول إلى الرئيس ولا التمكن  منه ليلج عليه أو يوضح له مراده ليعرف حاله ووجهه، وإلا فقد كان[ لا يحتجب،  قال عياض: ولا يستثنى من الوجوه التي تستحب الشفاعة فيها إلا الحدود، وإلا  فما لأحد إلا تجوز الشفاعة فيه ولا سيما ممن وقعت منه الهفوة أو كان من  أهل الستر والعفاف، قال: وأما المصرون على فسادهم المشتهرون في باطلهم فلا  يشفع فيهم ليزجروا عن ذلك. انتهى. وهذا من التعاون بين أفراد المجتمع؛ قال  تعالى: {من يشفع شفاعة حسنة يكن له نصيب منها ومن يشفع شفاعة سيئة يكن له  كفل منها وكان الله على كل شيء مقيتا} (النساء: 85) فهناك من الشفاعة ما لم  يأذن به المشرع فلا يؤجر عليها؛ فالأجر على الشفاعة ليس على العموم، بل هو  مخصوص بما تجوز فيه الشفاعة وهي الشفاعة الحسنة، وضابطها: ما أذن فيه  المشرع، ومن شفع لأحد في الخير كان له نصيب من الأجر، ومن شفع له بالباطل  كان له نصيب من الوزر، قال السعدي -رحمه الله-: فمن شفع لغيره وقام معه على  أمر من أمور الخير، ومنه الشفاعة للمظلومين لمن ظلمهم ــ كان له نصيب من  شفاعته، بحسب سعيه وعمله ونفعه، ولا ينقص من أجر الأصيل والمباشر شيء، ومن  عاون غيره على أمر من الشر كان عليه كفل من الإثم بحسب ما قام به وعاون  عليه؛ ففي هذا الحث العظيم على التعاون على البر والتقوى، والزجر العظيم عن  التعاون على الإثم والعدوان. انتهى.</b></font></span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>وفي  الشفاعة إحقاق للحق ونفع الناس وإشاعة المحبة بينهم، وبها حياة المجتمع  وبقاؤه، والله تعالى يسخر بعض الناس لبعض ليحصل النفع ويقوم التعاون، وهذا  من حكمته تعالى، والشفاعة تعد من تفريج الكرب؛ فتفريج الكرب يكون بإزالته  بالمال أو الجاه أو المساعدة، ويدخل فيها من أزالها بإشارته ورأيه ودلالته،  ومن ساعد الناس بماله أو جاهه تمثلت فيه صفة الجود التي هي من صفات الله  تعالى، ومن بذل نفسه بالشفاعة للناس ربما تعرض للوم والذم من الآخر، وربما  أقفلت في وجهه الأبواب، لكن من سعى في حاجة أخيه سعى الله في حاجته وأحبه  بسبب نفعه لأخيه، ولا يكون وراء هذه الشفاعة مصلحة شخصية؛ حتى ينال الأجر  بتجرده ونيته الصالحة.</b></font></span><br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_963113" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_963113" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=963113" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_963113" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_963114">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2021-10-07,&nbsp;<span class="time">12:25 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post963114" href="showthread.php?t=191919&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=963114#post963114" class="postcounter">#3</a><a id="postcount963114" name="3"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,746</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: البنيان المرصوص
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_963114">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><br />
+<span style="font-family: arabic typesetting"><font size="5"><b><font color="#ff0000"><font size="6"><span style="font-family: arabic typesetting">البنيان المرصوص (3)<br />
+ </span></font></font></b><b><span style="font-family: arabic typesetting"><font size="5"><font color="#008000"><font size="6"><br />
+خالدة النصيب<br />
+<br />
+<br />
+</font></font></font></span></b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b><font color="#000080">حقيقة المفلس</font></b></font></span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>جاءت  الشريعة بالمحافظة على الضرورات الخمس الواجبة رعايتها في جميع الأديان  وبحفظها يكون صلاح المعاش والمعاد ونظام أحوال الدارين، وهي الدين والعقل  والنفس والنسب والمال، فمن هذه الضرورات المحافظة على الأعراض وعدم المساس  بها أو قربها وهي من حسن الخلق، ومن سوء الخلق أن يسب الرجل أخاه، ويعد  السب من المساس بالأعراض فيجري على اللسان ما يغضب الآخر ويبوء به الساب  بالإثم والخسران بل يشهر إفلاسه، والإنسان إذا أشهر إفلاسه ذل وهان وحزن  وخسر الدنيا، ومن تعرض لأعراض الناس خسر الدنيا والآخرة؛ فعن أبي هريرة-  رضي الله عنه- أن رسول الله[ قال: «أتدرون من المفلس؟» قالوا: المفلس فينا  من لا درهم له ولا متاع، فقال: «إن المفلس من أمتي من يأتي يوم القيامة  بصلاة وصيام وزكاة، ويأتي وقد شتم هذا وقذف هذا وأكل مال هذا وسفك دم هذا  وضرب هذا، فيعطى هذا من حسناته وهذا من حسناته، فإن فنيت حسناته قبل أن  يقضى ما عليه أخذ من خطاياهم فطرحت عليه ثم طرح في النار» رواه مسلم.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>لنتدبر  معا قول النبي[ ففيه الهدى، فهذا الرجل الذي يتكلم في أعراض الناس وقد  يكونون من أهله وأقاربه أو جيرانه أو عموم الناس أو من يساوونه في المرتبة  وتوجد بينه وبينهم منافسة؛ هذا الرجل في ظاهره الصلاح نظرا لالتزامه بصلاته  وصيامه وزكاته، لكنه أفسد هذه الأعمال بالتعرض لأعراض الناس وسبهم وقذفهم،  وبسبب هذا قد يفقد أعماله الصالحة التي طالما أداها وحافظ عليها وداوم على  فعلها، كالمرأة التي كانت تؤذي جيرانها بلسانها؛ فقال الرسول[: «هي في  النار» مع أنها كانت تكثر من الصيام والقيام، لكن الله تعالى لا يحب التعرض  للناس بسوء بسبب أن الضرر متعد على الآخر، ويحب أداء الحقوق لأهلها، فإذا  لم تؤد هذه الحقوق استوفى كل ذي حق حقه يوم القيامة حيث لا ينفع مال ولا  بنون؛ فلا وساطات ولا شفاعات إلا من أذن له الله تعالى له، فهذا المتعدي  يفقد حسناته وتوضع عليه خطايا خصمه ثم يطرح في النار بسبب الخوض في  الأعراض؛ فيشهر إفلاسه من الحسنات وهذه حقيقة المفلس في يوم يحتاج فيه   للحسنات.</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>قال  المازري : وزعم المبتدعة أن هذا الحديث معارض لقوله تعالى: {ولا تزر وازرة  وزر أخرى}، وهذا الاعتراض غلط منه وجهالة بينة؛ لأنه إنما عوقب بفعله  ووزره وظلمه فتوجهت عليه حقوق لغرمائه، فدفعت إليهم من حسناته، فلما فرغت  وبقيت بقية قوبلت على حسب ما اقتضته حكمة الله تعالى في خلقه وعدله في  عباده، فأخذ قدرها من سيئات خصومه فوضع عليه فعوقب به في النار، فحقيقة  العقوبة إنما هي بسبب ظلمه ولم يعاقب بغير جناية وظلم منه، وهذا كله مذهب  أهل السنة، انتهى.</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>ومعلوم  أن هناك قنطرة بين الجنة والنار يقتص فيها من كل غريم لغريمه، والنكتة هنا  أن هذه القنطرة توضع قبل الدخول إلى الجنة وبعد جواز الصراط فوق النار،  فيحال بينه وبين دخول الجنة بسبب حقوق العباد، وهذا قمة الخيبة والخسران.</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>أما  إذا استب اثنان فعلى البادئ منهما؛ فعن أبي هريرة - رضي الله عنه -  أن  رسول الله[ قال: «المستبان ما قالا فعلى البادئ ما لم يعتد المظلوم» رواه  مسلم، قال النووي: معناه أن إثم السباب الواقع من اثنين مختص بالبادئ منهما  كله، إلا أن يتجاوز الثاني قدر الانتصار فيقول للبادئ أكثر مما قال له وفي  هذا جواز الانتصار، ولا خلاف في جوازه، وقد تظاهرت عليه دلائل الكتاب  والسنة؛ قال تعالى: {ولمن انتصر بعد ظلمه فأولئك ما عليهم من سبيل}، وقال  تعالى: {والذين إذا أصابهم البغي هم ينتصرون}، ومع هذا فالصبر والعفو أفضل؛  قال تعالى: {ولمن صبر وغفر إن ذلك لمن عزم الأمور}.</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>واعلم  أن سباب المسلم بغير حق حرام؛ كما قال[: «سباب المسلم فسوق»، ولا يجوز  للمسبوب أن ينتصر إلا بمثل ما سبه ما لم يكن كذبا أو قذفا أو سبا لأسلافه،  فمن صور المباح أن ينتصر بـ: يا ظالم يا أحمق أو يا جافي أو نحو ذلك؛ لأنه  لا يكاد أحد ينفك من هذه الأوصاف، قالوا: وإذا انتصر المسبوب استوفى ظلامته  وبرئ الأول من حقه وبقي عليه إثم الابتداء أو الإثم المستحق لله تعالى،  وقيل: يرتفع عنه جميع الإثم بالانتصار منه ويكون معنى «على البادئ»: أي  عليه اللوم والذم، لا الإثم. ا.هــ </b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>ومعلوم  أن من مقاصد الشريعة حفظ الأعراض، ومن تكلم في عرض أخيه عرض نفسه لكلام  الناس في عرضه، وربما قيل: لماذا تكلم فلان في عرض فلان؟ أليس هو من فعل  كذا وكذا؟! للذي تكلم؛ فيبوء بالخسران بسبب مساسه بأعراض الناس؛ فليتق الله  كل من سولت له نفسه في الكلام في الناس، وليعلم أن الأيام دول .</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"><b>النكتة:  الأثر الصغير من أي لون كان، والنكتة كالنقطة وهي اللطيفة المؤثرة في  القلب، وتطلق على المسائل الحاصلة بالنقل المؤثرة في القلب، والنكتة مسألة  لطيفة أخرجت بدقة نظر وإمعان فكر، وسميت المسألة الدقيقة نكتة؛ لتأثر  الخواطر في استنباطها.</b></font></span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_963114" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_963114" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=963114" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_963114" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_963115">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2021-10-07,&nbsp;<span class="time">12:32 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post963115" href="showthread.php?t=191919&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=963115#post963115" class="postcounter">#4</a><a id="postcount963115" name="4"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,746</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: البنيان المرصوص
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_963115">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span><br />
+<b><font color="#ff0000"><font size="6"><span style="font-family: arabic typesetting">البنيان المرصوص (4)<br />
+</span></font></font></b><br />
+<br />
+<font color="#ff0000"><font size="6"><span style="font-family: arabic typesetting"><br />
+</span></font></font><br />
+<b><span style="font-family: arabic typesetting"><font size="5"><font color="#008000"><font size="6">خالدة النصيب</font></font></font></span></b><span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"> <b>كان  عليه الصلاة والسلام يعامل الناس بالرفق، وما كان يعنف أحداً، وكان  متواضعا بشدة، ولم يكن فاحشا ولا متفحشا، وكان حسن الخلق، وكان يقول[: «ما  نقصت صدقة من مال، وما زاد الله عبدا بعفو إلا عزا، وما تواضع أحد لله إلا  رفعه» رواه مسلم. وكان من خلقه[ أنه لا يرد على من آذاه بلسانه لكن الله  يرد عنه الأذى، فعن عائشة - رضي الله عنها-: «أن يهود أتوا النبي[ فقالوا:  السام عليكم، فقالت عائشة: عليكم ولعنكم الله وغضب الله عليكم، فقال مهلا  يا عائشة! عليك بالرفق وإياك والعنف والفحش، قالت: أو لم تسمع ما قالوا:  قال: أو لم تسمعي ما قلت: رددت عليهم فيستجاب لي فيهم ولا يستجاب لهم فيّ»  رواه البخاري. فمن آذى النبي[ بلسانه قابله بالرفق وعدم العنف وترك الكلام  الفاحش، وقد يكون من المصلحة ترك الرد والسكوت عمن آذاك تألفا له ورغبة في  رجوعه عن الباطل، وكأنه يعلمنا[ كيف نرد على من آذاه، ففي زماننا هناك من  تكلم على النبي[ وآذاه بلسانه، ومن آذى النبي[ آذانا، لكن أسلوبه[ في الرد  أحكم وأسلم فلم يقاطع ولم يعنف ولم يسب، بل كان رده برد السلام وكان رده  بأسلوب الإحسان إلى من أساء إليك؛ لأن هذا أوفق في ردعه عن إساءته، فرفقك  بمن أساء خير من عنفك، فلا مظاهرات ولا مهاترات لكن بالتي هي أحسن كما علم  النبي[ عائشة كيفية الرد، ومعلوم أن من أساء إليك إذا رآك غاضبا فرح لأنه  نال مراده بإغضابك، وعن عائشة - رضي الله عنها - : «أن رجلا استأذن على  النبي[ فلما رآه قال: بئس أخو العشيرة، فلما جلس تطلق النبي[ في وجهه  وانبسط إليه، فلما انطلق الرجل قالت له عائشة: يا رسول الله حين رأيت الرجل  قلت له كذا وكذا ثم تطلقت في وجهه وانبسطت إليه؟ فقال  رسول الله[: يا  عائشة متى عهدتني فاحشا؟! إن شر الناس عند الله منزلة يوم القيامة من تركه  الناس اتقاء شره» رواه البخاري.</b> </font></span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>وقد  نوزع في كون ما وقع من ذلك غيبة، وإنما هو نصيحة ليحذر السامع، وإنما لم  يواجه المقول فيه بذلك لحسن خلقه[، ويستنبط منه أن المجاهر بالفسق والشر لا  يكون ما يذكر عنه من ذلك من ورائه من الغيبة المذمومة، ويذكر عن أبي  الدرداء قوله: إنا لنكشر في وجوه أقوام وإن قلوبنا لتلعنهم. والكشر: ظهور  الأسنان وأكثر ما يطلق عند الضحك، قال ابن بطال: والمداراة من أخلاق  المؤمنين، وهي خفض الجناح للناس ولين الكلمة وترك الإغلاظ لهم في القول  وذلك من أقوى أسباب الألفة، وظن بعضهم أن المداراة هي المداهنة فغلط؛ لأن  المداراة مندوب إليها والمداهنة محرمة، والفرق أن المداهنة من الدهان وهو  الذي يظهر على الشيء ويستر باطنه، وفسرها العلماء بأنها معاشرة الفاسق  وإظهار الرضا بما هو فيه من غير إنكار عليه، والمداراة هي الرفق بالجاهل في  التعليم وبالفاسق في النهي عن فعله وترك الإغلاظ عليه حيث لا يظهر ما هو  فيه، والإنكار عليه بلطف القول والفعل ولا سيما إذا احتيج إلى تألفه ونحو  ذلك، وشرح ابن بطال الحديث على أن المذكور كان منافقا وأن النبي[كان مأمورا  بالحكم بما ظهر لا بما يعلمه في الأمر نفسه، وقال ابن بطال: إن الرجل هو  عيينة بن حصن ابن حذيفة بن بدر الفزاري وكان يقال له «الأحمق المطاع»، ورجا  النبي[ بإقباله عليه تألفه ليسلم قومه لأنه كان رئيسهم. انتهى. وقد أبدى  له النبي[ طلاقة وجهه، قال الخطابي: جمع هذا الحديث علما وأدبا وليس في قول  النبي[ في أمته بالأمور التي يسميهم بها ويضيفها إليهم من المكروه غيبة،  وإنما يكون ذلك من بعضهم في بعض، بل الواجب عليه أن يبين ذلك ويفصح به  ويعرف الناس أمره، فإن ذلك من باب النصيحة والشفقة على الأمة، ولكنه لما  جبل عليه من الكرم وأعطيه من حسن الخلق أظهر له البشاشة ولم يجابهه  بالمكروه؛ لتقتدي به أمته في اتقاء شر من هذا سبيله وفي مداراته ليسلموا من  شره وغائلته.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>وقال  ابن رجب: وظاهر كلامه أن يكون هذا من جملة الخصائص، وليس كذلك؛ بل كل من  اطلع من حال شخص على شيء وخشي أن غيره يغتر بجميل ظاهره فيقع في محذور ما،  فعليه أن يطلعه على ما يحذر من ذلك قاصدا نصيحته، وإنما الذي يمكن أن يختص  به النبي[ أن يكشف له عن حال من يغتر بشخص من غير أن يطلعه المغتر على  حاله؛ فيذم الشخص بحضرته ليتجنبه المغتر ليكون نصيحة، بخلاف غير النبي[ فإن  جواز ذمه للشخص يتوقف على تحقق الأمر بالقول أو الفعل ممن يريد نصحه.  انتهى.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>وقال  القرطبي: في الحديث جواز غيبة المعلن بالفسق أو الفحش ونحو ذلك والدعاء  إلى البدعة، مع جواز مداراتهم اتقاء شرهم ما لم يؤد ذلك إلى المداهنة في  دين الله تعالى، والنبي[ إنما بذل له من دنياه حسن عشرته والرفق في  مكالمته، ومع ذلك فلم يناقض قوله فيه فعله؛ فإن قوله فيه قول حق وفعله معه  حسن عشرة؛ فيزول مع هذا التقرير الإشكال بحمد الله تعالى. انتهى.</b></font></span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>وقال  عياض: لم يكن عيينة - والله أعلم- حينئذ أسلم؛ فلم يكن القول فيه غيبة،  وكان أسلم ولم يكن إسلامه ناصحا، فأراد النبي[ أن يبين ذلك لئلا يغتر به من  لم يعرف باطنه، وقد كانت منه في حياة النبي[  وبعده أمور تدل على ضعف  إيمانه؛ فيكون ما وصفه به النبي[ من جملة علامات النبوة، وأما إلانة القول  له بعد أن دخل فعلى سبيل التألف له، وهذا الحديث أصل في المداراة وفي جواز  غيبة أهل الكفر والفسق ونحوهم. انتهى.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>والحاصل أن كل هذا ذكر لبيان وجوب الرفق بالمسيء؛ لأن هذا أدعى لكفه عن إساءته، وهو مما يشد البنيان المرصوص، أقصد بنيان المجتمع.</b></font></span><br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_963115" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_963115" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=963115" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_963115" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_963116">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2021-10-07,&nbsp;<span class="time">12:37 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post963116" href="showthread.php?t=191919&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=963116#post963116" class="postcounter">#5</a><a id="postcount963116" name="5"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,746</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: البنيان المرصوص
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_963116">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><br />
+<span style="font-family: arabic typesetting"><font size="5"><b><font color="#ff0000"><font size="6"><span style="font-family: arabic typesetting">البنيان المرصوص (5)<br />
+ </span></font></font></b><br />
+ <br />
+ <font color="#ff0000"><font size="6"><span style="font-family: arabic typesetting"><br />
+ </span></font></font><br />
+ <b><span style="font-family: arabic typesetting"><font size="5"><font color="#008000"><font size="6">خالدة النصيب</font></font></font></span></b><span style="font-family: arabic typesetting"><font size="5"><br />
+ <br />
+<br />
+</font></span></font></span><br />
+<br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>إن  الستر مندوب إليه في شريعتنا السمحة الغراء، وهو من الفضائل عند الله وعند  الناس بأن تستر على أخيك في حال زلته، بأن تستر عيبه ولا تفضحه، والستير  صفة من صفات الله تعالى، والله تعالى يحب من عباده أن يتصفوا بصفاته بما  يليق بهم، وصحيح أن المخلوقين لا يشبهون الله في صفاته ولله المثل الأعلى  والكمال المطلق، لكن لأن ديننا أمر بالستر فعلينا من هذه الصفة بقدر ما  نستطيع، قال [: «من ستر مسلما ستره الله يوم القيامة» جزء من حديث رواه  مسلم، قال النووي: أما الستر المندوب إليه هنا فالمراد به الستر على ذوي  الهيئات ونحوهم ممن ليس هو معروفا بالأذى والفساد، فأما المعروف بذلك  فيستحب ألا يستر عليه بل ترفع قضيته إلى ولي الأمر إن لم يخف من ذلك مفسدة؛  لأن الستر على هذا يطمعه في الإيذاء والفساد وانتهاك الحرمات وجسارة غيره  على مثل فعله.</b></font></span><br />
+<br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>هذا  كله في ستر معصية وقعت وانقضت، أما معصية رآه عليها وهو بعد متلبس بها  فتجب المبادرة بإنكارها عليه ومنعه منها على من قدر على ذلك ولا يحل  تأخيرها، فإن عجز لزمه رفعها إلى ولي الأمر إذا لم يترتب على ذلك مفسدة،  وأما جرح الرواة والشهود والأمناء على الصدقات والأوقاف والأيتام ونحوهم  فيجب جرحهم  عند الحاجة، ولا يحل الستر عليهم إذا رأى منهم ما يقدح في  أهليتهم، وليس هذا من الغيبة المحرمة بل من النصيحة الواجبة انتهى. وفي  حديث عائشة رضي الله عنها قالت: قال رسول الله [: «أقيلوا ذوي الهيئات  عثراتهم إلا الحدود» صحيح أبي داود برقم 4375، و«أقيلوا» أمر من «الإقالة»  أي أعفوا، وذوو الهيئات: أصحاب المروءات والخصال الحميدة وقيل: ذوو الوجوه  عند الناس أو هم أصحاب  الصغائر دون الكبائر، أو أنهم الذين إذا ألموا  بالذنب ندموا عليه وتابوا منه، وروى البيهقي عن الشافعي - رحمه الله - أنه  قال: «وذوو الهيئات الذين يقالون عثراتهم: الذين ليسوا يعرفون بالشر فيزل  أحدهم  الزلة» قال ابن عبد الملك: «الهيئة الحالة التي يكون عليها الإنسان  من الأخلاق المرضية» انتهى، وعثراتهم زلاتهم أو أنها صغائر الذنوب التي لا  توجب الحدود، أو أنها أول معصية زل فيها مطيع قال الخطابي: «فيه دليل على  أن الإمام مخير في  التعزير إن شاء عزر وإن شاء ترك». والشاهد أن المراد من  ذكر الحديث أن من عثر بدون قصد هو كمن تتعثر قدمه  وتزل فلا يؤاخذ على هذا  ولا يؤدب عليه، ويستحب التجافي عن زلته والعفو عنه والتجاوز وفي حديث آخر  عن عبد الله بن عمرو بن العاص أن رسول الله [ قال: «تعافوا الحدود فيما  بينكم فما بلغني من حد فقد وجب» صحيح، سنن أبي داود برقم 4376. وهذا أمر من  التعافي أي العفو والخطاب لغير الأئمة، وهو أمر بالتجاوز عنها وعدم رفعها  إلى الإمام فمتى علمها الإمام أقامها، وفيه أن الإمام لا يجوز له العفو عن  حدود الله إذا رفع الأمر إليه، وهو بإطلاقه يدل على أنه ليس للمالك أن يجري  الحد على مملوكه، بل يعفو عنه أو يرفع إلى الحاكم أمره وفي الحديث الترغيب  بالستر على الناس والعفو عنهم ووجوب التناصح في السر والخفية وعدم  تعمد  الفضيحة بين الناس؛ لما في ذلك من شيوع أجواء التكافل الاجتماعي  والتعاون  على البر والتقوى والسماحة في الدين؛ لأن الإمام مخير في التعزير.</b><br />
+</font></span><br />
+<span style="font-family: arabic typesetting"><br />
+</span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_963116" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_963116" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=963116" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_963116" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_963117">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2021-10-07,&nbsp;<span class="time">12:41 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post963117" href="showthread.php?t=191919&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=963117#post963117" class="postcounter">#6</a><a id="postcount963117" name="6"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,746</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: البنيان المرصوص
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_963117">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><br />
+<span style="font-family: arabic typesetting"><font size="5"><span style="font-family: arabic typesetting"><font size="5"><b><font color="#ff0000"><font size="6"><span style="font-family: arabic typesetting">البنيان المرصوص (6)<br />
+ </span></font></font></b><br />
+ <br />
+ <font color="#ff0000"><font size="6"><span style="font-family: arabic typesetting"><br />
+ </span></font></font><br />
+ <b><span style="font-family: arabic typesetting"><font size="5"><font color="#008000"><font size="6">خالدة النصيب</font></font></font></span></b><span style="font-family: arabic typesetting"><font size="5"><br />
+ <br />
+<br />
+</font></span></font></span><b>من صور الظلم</b> </font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>قال  الله تعالى: {ثم أورثنا الكتاب الذين اصطفينا من عبادنا فمنهم ظالم لنفسه  ومنهم مقتصد ومنهم سابق بالخيرات بإذن الله}  (فاطر: 32) هناك عباد من عباد  الله وسماهم الله عباده؛ لأنه اصطفاهم ليكونوا من عباده، وحتى يتمسكوا  بكتابه، فهم ورثوا الكتاب كما يرث الوارث المال، وانقسموا إلى ثلاث فرق:  الظالم لنفسه، والمقتصد، والسابق للخيرات، فأما الظالم لنفسه فهو المفرط في  بعض الواجبات والمرتكب لبعض المحرمات، خلط عملا صالحا وآخر سيئا مع أنه من  أهل الإيمان، أما كيف يظلم الإنسان نفسه فبأن يبخسها حقها ولا يحاسبها ولا  يوفر لها سبل الثبات على دين الله والاستقامة، وبأن يقصر في حق ربه فيكون  ظالما لنفسه؛ لأنه لم يؤد حق الله، ولنذكر صور ظلم النفس وظلم الآخرين حتى  يتبين لنا ما الظلم، فمن صور ظلم الإنسان لنفسه:</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>•  أن يعرض عمن يذكره بآيات الله وينصحه لما فيه الخير له، ظانا أن هذا  الناصح يريد الاستهزاء  به وأنه لا شأن له به لينصحه، ومقابلة النصح شر  مقابلة.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• عدم التصديق بالحق بالتكذيب بالقرآن والسنة وتفسيرهما على غير مراد الله ورسوله[.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• التقرب إلى المفسدين ورفاق السوء والابتعاد عن المتقين والرفقة الصالحة، فلا يأتي إليهم ولا يستشيرهم ولا يحبهم</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>•  قضاء أغلب الأوقات في غير فائدة، وذلك هو الغبن الذي ذكره النبي [ بقوله:  «نعمتان مغبون فيهما كثير من الناس: الصحة، والفراغ» رواه البخاري عن ابن  عباس.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• اتباع الباطل والجري وراءه حتى عند التأكد من ضرره وحرمته، وهذا من شدة الظلم.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• عدم الاهتمام بمصالح الدنيا والدين؛ فالدين فيه العصمة، والدنيا فيها المعاش، والآخرة إليها المعاد.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• التغافل عن فناء الدنيا والخلود في الآخرة، فيعيش ولا ينظر لخاتمته، فإما خاتمة حسنة، وإما سيئة عياذا بالله!</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• سماع المواعظ وعدم الاستماع إليها، وذلك بعدم الاستفادة منها وظنه أنه غير مخاطب بها.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• تجاوز الحد والطغيان والإسراف على النفس في المعاصي وطاعة أهلها والدعوة إليها.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• القسوة والتعنت وعدم طلب الاسترشاد بالحق.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• إتيان الفواحش التي بها فساد البر والبحر، وقد تنزل على إثرها العقوبات الإلاهية.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• الجرأة بقول الزور وفعله واتهام الآخرين به.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• دعاء غير الله كعبادة القبور وشد الرحال إليها والنذر عندها والعكوف عليها.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• الصد عن طريق الاستقامة والتجافي عنه والإقبال على سبل الشيطان.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• مخالفة العمل للقول، وقد قال تعالى: {يأيها الذين آمنوا لم تقولون ما لا تفعلون}.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• الظهور بمظهر الفسقة، والتزيي بزيهم، وإثارة الشبهات حوله.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• إنفاق المال في الباطل.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• مصادمة الفطرة بإتيان ما نهى الله عنه من شهوات أو شبهات.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>وأما ظلم الآخرين فمنه:</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• اعتداء الظالم على المظلوم في نفسه أو ماله أو عرضه.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• فمن قتل إنسانا أو ضربه أو شتمه أو سبه أو لعنه أو آذاه أي إيذاء في نفسه؛ فهو ظالم.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>-------------------------------</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• ومن أخذ مالا لإنسان أو تسبب في أخذ مال له بغير حق، صغيرا كان هذا المال أو كبيرا؛ فإنه ظالم.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>•  من عاب إنسانا يستنقصه، أو اتهمه بالفحش، أو شنع على غير من يعرفه بأمر هو  بريء منه، أو ليس بريئا لكنه مستور ولم يجاهر بما يفعل من الذنوب؛ فإنه  ظالم.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• ومثله ما إذا لم يفعل ذلك بنفسه ولكنه سلط أتباعه ليفعلوا ذلك.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• من عاكس فتاة بغير علم أهلها أو وقع في فاحشة مع فتاة؛ فهو ظالم.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• من منع وصول حق لأي إنسان فهو ظالم، سواء أدفع رشوة أم لم يدفع، وسواء أكان المنع مباشر أم غير مباشر. </b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• من استغل منصبه في إذلال الناس أو إيذائهم أو منع حقوقهم فهو ظالم.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• من تلاعب بمشاعر إنسان مستغلا حاجة هذا الإنسان للعمل أو القوت لنفسه وعياله فهو ظالم.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• من استنفد قوة عامل في عمل من أعماله ثم لم يعطه الأجر على ما يستحقه عرفا، مستغلا ضعف العامل أو حاجته أو كثرة أمثاله؛ فهو ظالم.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• تفضيل عامل على آخر في الأجر وهما متساويان في الرتبة.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• من أعان أخاه على غيره بالباطل فهو ظالم؛ قال تعالى: {فتلك بيوتهم خاوية بما ظلموا إن في ذلك لآية لقوم يعلمون} (النمل: 52).</b></font></span><br />
+<br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• إطلاق الأوصاف والأسماء المشينة على الآخرين.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• التكبر على الغير والحقد والحسد.</b></font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><b>• إنقاص الكيل وعدم إتمامه وبخس المكاييل والموازين.</b></font></span><br />
+<span style="font-family: arabic typesetting"><font size="5"> <b>• إلقاء الشبه على الناس واتهامهم بغير وجه حق.</b><br />
+</font></span><br />
+<br />
+<span style="font-family: arabic typesetting"><font size="5"><br />
+</font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_963117" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_963117" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=963117" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_963117" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=191919&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=191919#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=696d1a7d9adaea36633b28fa7c3827c1">لوحة التحكم</a></li>
+		<li><a href="private.php?s=696d1a7d9adaea36633b28fa7c3827c1">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1">الاشتراكات</a></li>
+		<li><a href="online.php?s=696d1a7d9adaea36633b28fa7c3827c1">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=191911&amp;s=696d1a7d9adaea36633b28fa7c3827c1">إياك والوقوع في شرك الشيطان - أين تذهب بك خواطرك؟!</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=191924&amp;s=696d1a7d9adaea36633b28fa7c3827c1">وقفة تأمل مع أحاديث الفتن والتلاحم</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%A8%D9%86%D9%8A%D8%A7%D9%86">البنيان</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D9%85%D8%B1%D8%B5%D9%88%D8%B5">المرصوص</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=191919#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=191919#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">04:55 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

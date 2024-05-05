@@ -1,0 +1,2809 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=cd93f500ca62f8883cb640bdd64e0938&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=40197";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس اللغة العربية وعلومها - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=10" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="النحويون, والمعربون" />
+	<meta name="description" content="اقرأ النصوص الآتية، ثم أجب عن السؤال: ل يختلف النحويون عن المعربين؟ 
+ 
+ 
+1- أوضح المسالك إلى ألفية ابن مالك - ( / 0) 
+في قولهم: &quot;لو: حرف امتناع لامتناع&quot; ما يفهم منه؛ أنها حرف يدل على امتناع الجواب لامتناع الشرط، ولا شك في أن هذا غير صحيح؛ لأن امتناع اشرط، لا يستلزم امتناع الجواب؛ فقد يستلزمه؛ أو لا يستزمه، اللهم إلا إذا لم يكن للجواب سبب غيره؛ كما أوضح المصنف. 
+ولعل المعربين، يقصدون بهذا التعبير الكثير الغالب؛ والصواب؛ أن يقال: إن &quot;لو&quot; حرف يدل على ما كان سيقع في الماضي؛ لوقوع غيره في الماضي" />
+
+	<title> النحويون والمعربون</title>
+	<link rel="canonical" href="showthread.php?t=40197&s=cd93f500ca62f8883cb640bdd64e0938" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=cd93f500ca62f8883cb640bdd64e0938" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=cd93f500ca62f8883cb640bdd64e0938" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="cd93f500ca62f8883cb640bdd64e0938" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=cd93f500ca62f8883cb640bdd64e0938" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=cd93f500ca62f8883cb640bdd64e0938 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=cd93f500ca62f8883cb640bdd64e0938"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=cd93f500ca62f8883cb640bdd64e0938">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=cd93f500ca62f8883cb640bdd64e0938">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=cd93f500ca62f8883cb640bdd64e0938">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=cd93f500ca62f8883cb640bdd64e0938" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=cd93f500ca62f8883cb640bdd64e0938">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=cd93f500ca62f8883cb640bdd64e0938">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=10&amp;s=cd93f500ca62f8883cb640bdd64e0938">مجلس اللغة العربية وعلومها</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> النحويون والمعربون</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=cd93f500ca62f8883cb640bdd64e0938&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 10 من 10
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=40197&s=cd93f500ca62f8883cb640bdd64e0938" title="تحديث الصفحة">النحويون والمعربون</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=40197" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;t=40197&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=addsubscription&amp;t=40197" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;search_type=1&amp;searchthreadid=40197&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="cd93f500ca62f8883cb640bdd64e0938" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="40197" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_268512">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-08-31,&nbsp;<span class="time">02:37 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post268512" href="showthread.php?t=40197&amp;s=cd93f500ca62f8883cb640bdd64e0938&amp;p=268512#post268512" class="postcounter">#1</a><a id="postcount268512" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=11626&amp;s=cd93f500ca62f8883cb640bdd64e0938" title="فريد البيدق غير متواجد حالياً"><strong>فريد البيدق</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=11626&amp;s=cd93f500ca62f8883cb640bdd64e0938" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=finduser&amp;userid=11626&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="فريد البيدق غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>903</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> النحويون والمعربون
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_268512">
+				<blockquote class="postcontent restore">
+					<span style="font-family: times new roman"><font size="3">اقرأ النصوص الآتية، ثم أجب عن السؤال: ل يختلف النحويون عن المعربين؟<br />
+<br />
+<br />
+1- أوضح المسالك إلى ألفية ابن مالك - ( / 0)</font></span><br />
+<font size="3"><span style="font-family: times new roman">في قولهم: &quot;لو: حرف امتناع لامتناع&quot; ما يفهم منه؛ أنها حرف يدل على امتناع الجواب لامتناع الشرط، ولا شك في أن هذا غير صحيح؛ لأن امتناع اشرط، لا يستلزم امتناع الجواب؛ فقد يستلزمه؛ أو لا يستزمه، اللهم إلا إذا لم يكن للجواب سبب غيره؛ كما أوضح المصنف.</span></font><br />
+<font size="3"><span style="font-family: times new roman">ولعل المعربين، يقصدون بهذا التعبير الكثير الغالب؛ والصواب؛ أن يقال: إن &quot;لو&quot; حرف يدل على ما كان سيقع في الماضي؛ لوقوع غيره في الماضي أيضا.</span></font><br />
+<br />
+<font size="3"><span style="font-family: times new roman">2- إعراب الأربعين النووية - (1 / 29)</span></font><br />
+<font size="3"><span style="font-family: times new roman">« ألا وإن لكل ملك حمى » : « ألا » : أداة تنبيه . « الواو » زائدة(1) للتوكيد . «إنَّ » حرف توكيد ونصب . « اللام » : حرف جر . « كل » : اسم مجرور وعلامة جره الكسرة وهو مضاف والجار والمجرور متعلقان بمحذوف خبر إن مقدم . « ملك » : مضاف إليه مجرور وعلامة جره الكسرة . « حمى » : اسم إن مؤخر منصوب وعلامة نصبه فتحة مقدرة منع من ظهورها التعذر .</span></font><br />
+<font size="3"><span style="font-family: times new roman">« ألا وإن حمى الله محارمه » : « ألا وإن » : سبق إعرابها . « حمى » : اسم منصوب وعلامة نصبه فتحة مقدرة منع من ظهورها التعذر وهو مضاف . «الله» : لفظ الجلالة مضاف إليه مجرور وعلامة جره الكسرة . « محارمه » : محارم خبر إن مرفوع وعلامة رفعه الضمة وهو مضاف الهاء ضمير متصل مبني على الضم في محل جر بالإضافة .</span></font><br />
+<font size="3"><span style="font-family: times new roman">__________</span></font><br />
+<font size="3"><span style="font-family: times new roman">(1) ليس المقصود بالزائد في عرف النحويين ما لا معنى له وإنما المقصود أنها مؤكدة . لهذا نجد بعض المعربين يعرب هذه الواو مؤكدة أو صلة من غير ذكر زائدة .</span></font><br />
+<br />
+<br />
+<font size="3"><span style="font-family: times new roman">3- التطبيق النحوي - ( / 0)</span></font><br />
+<font size="3"><span style="font-family: times new roman">حدى عشرة: فاعل مبني على الفتح الجزأين في محل رفع &quot;إحدى مبني على فتح مقدر منع من ظهوره التعذر&quot;.</span></font><br />
+<font size="3"><span style="font-family: times new roman">وهكذا في:</span></font><br />
+<font size="3"><span style="font-family: times new roman">رأيت إحدى عشرة بنتا.</span></font><br />
+<font size="3"><span style="font-family: times new roman">مررت بإحدى عشرة بنتا.</span></font><br />
+<font size="3"><span style="font-family: times new roman">جاء اثنا عشر رجلا.</span></font><br />
+<font size="3"><span style="font-family: times new roman">اثنا عشر: فاعل مرفوع بالألف في جزئه الألف مبني على الفتح في جزئه الثاني.</span></font><br />
+<font size="3"><span style="font-family: times new roman">&quot;ملحوظة: يشيع عند المعربين إعراب عشر: بدل نون المثنى مبني على الفتح لا محل له من الإعراب&quot;.</span></font><br />
+<br />
+<font size="3"><span style="font-family: times new roman">4- الجنى الداني في حروف المعاني – ابن أم قاسم المرادي</span></font><br />
+<font size="3"><span style="font-family: times new roman">أ- تنبيه</span></font><br />
+<font size="3"><span style="font-family: times new roman">إذ المذكورة لازمة للظرفية، إلا أن يضاف إليها زمان، نحو: يومئذ، وحينئذ. ولا تتصرف، بغير ذلك، فلا تكون فاعلة، ولا مبتدأ. وأجاز الأخفش والزجاج، وتبعهما كثير من المعربين، أن تقع مفعولاً به. وذكروا ذلك في آيات كثيرة، كقوله تعالى &quot; واذكروا إذ أنتم قليل &quot; ف إذ في هذه الآية ونحوها مفعول به. ومن لم ير ذلك جعل المفعول محذوفاً، وإذ ظرف عامله ذلك المحذوف. والتقدير: واذكروا نعمة الله عليكم إذ، أو: واذكروا حالكم إذ، ونحو ذلك.</span></font><br />
+<br />
+<font size="3"><span style="font-family: times new roman">ب- الجنى الداني في حروف المعاني - (1 / 51)</span></font><br />
+<font size="3"><span style="font-family: times new roman">وتأول الزجاج قوله لا البخل، فقال: لا مفعولة، والبخل بدل منها. وروى عن يونس، عن أبي عمرو، أن الرواية فيه لا البخل، بخفض اللام، لأن لا قد تتضمن جوداً، إذا قالها من أمر بمنع الحقوق والبخل عن الواجبات. وتأول قوله ألا أحبه على تقدير: إرادة ألا أحبه. قلت: وهو جار في البيت الثالث.</span></font><br />
+<font size="3"><span style="font-family: times new roman">ومن زيادة لا قوله تعالى &quot; لئلا يعلم أهل الكتاب &quot; ، أي: يعلم. نص على ذلك الأئمة. وجعل كثير منهم لا زائدة، في قوله تعالى &quot; ما منعك ألا تسجد &quot; ، وفي قوله تعالى &quot; وحرام على قرية، أهلكناها، أنهم لا يرجعون &quot; . وتأول ذلك بعض المعربين، وهو أولى من دعوى الزيادة. والله أعلم.</span></font><br />
+<font size="3"><span style="font-family: times new roman">ج- الجنى الداني في حروف المعاني - (1 / 52)</span></font><br />
+<font size="3"><span style="font-family: times new roman">الثالث: بيان الجنس، نحو &quot; فاجتنبوا الرجس، من الأوثان &quot; ، &quot; ويلبسون ثياباً خضراً، من سندس &quot; . قالوا: وعلامتها ؟أن يحسن جعل الذي مكانها، لأن المعنى: فاجتنبوا الرجس، الذي هو وثن. ومجيئها لبيان الجنس مشهور، في كتب المعربين. وقال به قوم، من المتقدمين والمتأخرين، وأنكره أكثر المغاربة، وقالوا: هي في قوله تعالى من الأوثان لابتداء الغاية وانتهائها، لأن الرجس ليس هو ذاتها ف من في الآية ك من، في نحو: أخذته من التابوت. وأما قوله من سندس ففي موضع الصفة، فهي للتبعيض.</span></font><br />
+<br />
+<font size="3"><span style="font-family: times new roman">5- الكوكب الدري فيما يتخرج على الأصول النحوية من الفروع الفقهية - (1 / 40)</span></font><br />
+<font size="3"><span style="font-family: times new roman">عليه أنه لم ينقله عن الإمام بل عن بعض أصحابه مع أنه مقطوع به في كلام الإمام نفسه نعم إذا اقتصر على قوله وقفته على أولادي بطنا بعد بطن ولم يذكر أولاد الأولاد فيحتمل أن يدخل فيه البطون كلها ويحتمل عدم دخولهم وأ يكون المراد بما هو يحدث من أولاد أولاده وسماه بطنا فإن كان حيا فيتجه الرجوع إليه مسألة</span></font><br />
+<font size="3"><span style="font-family: times new roman">إذ ظرف للوقت الماضي من الزمان لازم للنصب على الظرفيه والإضافة إلى جملة ملفوظ بها أو مقدرة وأجاز الأخفش والزجاج نصبه على المفعولية وتبعهما أكثر المعربين وجعلوا من قوله تعالى { واذكروا إذ أنتم } وقدروا لفظ اذكروا حيث وقع</span></font><br />
+<font size="3"><span style="font-family: times new roman">وذكر ابن مالك أنها تجيىء حرفا للتعليل ونسبه بعضهم لسيبويه وجعل منه قوله تعالى { وإذ لم يهتدوا به فسيقولون هذا إفك قديم } إذا علمت</span></font><br />
+<br />
+<font size="3"><span style="font-family: times new roman">6- اللغة العربية معناها ومبناها - ( / 0)</span></font><br />
+<font size="3"><span style="font-family: times new roman">في النص يسعى دائمًا وراء القرائن اللفظية والمعنوية والحالية ليرى أيّ المعاني المتعددة لهذا المبنى هو المقصود, ومن هنا نرى التفاضل بين المعربين للجملة الواحدة.</span></font><br />
+<br />
+<font size="3"><span style="font-family: times new roman">7- المجتبى من مشكل إعراب القرآن الكريم - (1 / 7)</span></font><br />
+<font size="3"><span style="font-family: times new roman">5 - ينتخب العبارة السهلة المأنوسة التي تتضح لجلِّ طلبة العلم، ومن هنا بذلتُ الجهد في توضيح عبارات المعربين التي قد تحتاج في عصرنا إلى تذليل غامضها، والكشف عن مقصودها .</span></font><br />
+<br />
+<font size="3"><span style="font-family: times new roman">8- النحو الوافي - (1 / 84)</span></font><br />
+<font size="3"><span style="font-family: times new roman">أ- زيادة وتفصيل:</span></font><br />
+<font size="3"><span style="font-family: times new roman">&quot;أ&quot; الإعراب المحليّ والتقديريّ.</span></font><br />
+<font size="3"><span style="font-family: times new roman">يتردد على ألسنة المعربين أن يقولوا فى المبنيات، وفى كثير من الجمل المحكية وغير المحكية، إنه فى محل كذا - من رفع، أونصب، أوجر، أوجزم... فما معنى أنه فى محل مُعَيَّن؟ فمثلا: يقولون فى &quot;جاء هؤلاءِ&quot;... إن كلمة: &quot;هؤلاءِ&quot; مبنية على الكسر فى محل رفع فاعل - وفى: &quot;قرأت الصحف من قبلُ&quot;...إن كلمة: &quot;قبلُ&quot; مبنية على الضم فى محل جر... وفى: &quot;رأيت ضيفًا يبتسم&quot;، إن الجملة المضارعية فى محل نصب صفة1... وهكذا.</span></font><br />
+<font size="3"><span style="font-family: times new roman">ب- النحو الوافي - (4 / 493)</span></font><br />
+<font size="3"><span style="font-family: times new roman">ومما تقدم يتبين خطأ التعبير الشائع على ألسنة المعربين وهو: &quot;أنها حرف امتناع لامتناع&quot;؛ يريدون: أنها حرف يدل على امتناع الجواب لامتناع الشرط. وإنما كان هذا خطأ لما قدمناه من أن امتناع الشرط لا يستلزم امتناع الجواب؛ فقد يستلزمه، أو لا يستلزمه -طبقات للبيان السالف- إلا أن كان غرضهم أن ذلك الامتناع هو الكثير الغالب.</span></font><br />
+<font size="3"><span style="font-family: times new roman">والصواب ما ردده سيبويه من أنها: &quot;حرف يدل على ما كان سيقع لوقوع غيره&quot;، أي: لما كان سيقع في الماضي؛ لوقوع غيره في الماضي أيضا. وهذه العبارة صحيحة دقيقة، لا تحتاج إلى تأويل أو تقدير، أو زيادة.</span></font><br />
+<br />
+<font size="3"><span style="font-family: times new roman">9- توضيح المقاصد والمسالك بشرح ألفية ابن مالك - (2 / 750)</span></font><br />
+<font size="3"><span style="font-family: times new roman">وأما بيان الجنس، فمشهور في كتب المعربين، وقال به جماعة من المتقدمين والمتأخرين &quot;وأنكره&quot;1 &quot;أكثره&quot;2 المغاربة.</span></font><br />
+<font size="3"><span style="font-family: times new roman">ثم قال:</span></font><br />
+<font size="3"><span style="font-family: times new roman">وزيد في نفي وشبهه فجر ... نكرة كما لباغٍ من مفر</span></font><br />
+<br />
+<font size="3"><span style="font-family: times new roman">10- حاشية الصبان - (1 / 153)</span></font><br />
+<font size="3"><span style="font-family: times new roman">أ- فائدة: الجملة وشبهها من الظرف والجار والمجرور بعد النكرة المحضة صفتان نحو رأيت طائرًا يصيح أو فوق غصن أو على غصن وبعد المعرفة المحضة حالان نحو رأيت الهلال يضيء أو بين السحاب أو في الأفق وبعد النكرة التي كالمعرفة أو المعرفة التي كالنكرة محتملان للوصفية والحالية نحو هذا ثمر يانع يعجب الناظر أو فوق أغصانه أو على أغصانه لأن النكرة الموصوفة كالمعرفة ونحو يعجبني الزهر يفوح نشره أو فوق أغصانه أو على أغصانه لأن المعرف الجنسي كالنكرة فقول المعربين: الجمل وشبهها بعد النكرات صفات وبعد المعارف أحوال ليس على إطلاقه كذا في المغني. وأسلفنا عن الدماميني جواز كون الظرف بعد المعرفة المحضة صفة بتقدير متعلقة معرفة.</span></font><br />
+<br />
+<font size="3"><span style="font-family: times new roman">ب- حاشية الصبان - (1 / 164)</span></font><br />
+<font size="3"><span style="font-family: times new roman">وقد عد في المعنى من الأمور التي اشتهرت بين المعربين والصواب خلافها قولهم بل حرف إضراب, قال وصوابه حرف استدراك وإضراب فإنها بعد النفي والنهي بمنزلة لكن سواء ا. هـ</span></font><br />
+<font size="3"><span style="font-family: times new roman">ج- حاشية الصبان - (1 / 343)</span></font><br />
+<font size="3"><span style="font-family: times new roman">قوله: &quot;امتنع&quot; أي: فعلان لكون النون بعد الألف مبدلة من ألف التأنيث, فكما لا ينصرف حمراء لا ينصرف سكران واستدل على الإبدال بقولهم: بهراني وصنعاني في النسب إلى بهراء وصنعاء. وأجيب بأن النون بدل من الواو والأصل بهراوي وصنعاوي وأيضًا المذكر سابق عن المؤنث لا العكس. قوله: &quot;لكونهما زائدتين إلخ&quot; إن أرادوا مطلق الزيادة ورد عليهم عفريت وإن أرادوا خصوص الألف والنون سألناهم عن علة الخصوصية فلا يجدون معدلًا عن التعليل بأنهما لا يقبلان الهاء فيرجعون إلى ما اعتبره البصريون كذا في المغني. لا يقال هلا اكتفى في علة المنع بالزيادة كما اكتفى بألف التأنيث؛ لأنا نقول المشبه به من كل وجه على أن في المغني أن تعليل منع صرف نحو: سكران بالوصفية والزيادة اشتهر بين المعربين مع أنه مذهب الكوفيين, أما البصريون فمذهبهم أن المانع الزيادة المشبهة لألفي التأنيث؛ ولهذا قال الجرجاني: ينبغي أن تعد موانع الصرف لا تسعة.</span></font><br />
+<br />
+<font size="3"><span style="font-family: times new roman">11- شرح (قطر الندى وبل الصدى) لابن هشام - (1 / 2)</span></font><br />
+<font size="3"><span style="font-family: times new roman">نأتي لمسألة تتعلق بهذه الأحرف الناسخة وهذه الأحرف: &quot;إن، أن، وليت، ولكن، ولعل، وكأن&quot;، تأتي هذه الأحرف أحيانا ومعها &quot;ما&quot;، نقول فيها &quot;إنما، وأنما، وليتما، وكأنما، ولكنما، ولعلما&quot;، يسمون هذه الـ&quot;ما&quot;، &quot;ما&quot; هذه المتصلة بالحرف الناسخ يسمونها &quot;ما&quot; الحرفية، ويسمونها أحيانا بالكافة، فإذا جاءت &quot;إنما&quot; يعربها بعض المعربين يقول: &quot;كافة ومكفوفة&quot; ويقصد مكفوفة وكافة؛ لأن &quot;إن&quot; مكفوفة عن العمل &quot;وما&quot; كفتها عن العمل فحصل فيه نوع من التعريف غير المرتب، يكون كافة ومكفوفة، كافة لـ &quot;ما&quot;، والمكفوفة لـ &quot;إن&quot;.</span></font><br />
+<br />
+<font size="3"><span style="font-family: times new roman">12- شرح قطر الندى - (1 / 57)</span></font><br />
+<font size="3"><span style="font-family: times new roman">رفع الفعل المضارع </span></font><br />
+<font size="3"><span style="font-family: times new roman">ص فصل يرفع المضارع خاليا من ناصب وجازم نحو يقوم زيد ش أجمع النحويون على أن الفعل المضارع إذا تجرد من الناصب والجازم كان مرفوعا كقولك يقوم زيد ويقعد عمرو وإنما اختلفوا في تحقيق الرافع له ما هو فقال الفراء وأصحابه رافعه نفس تجرده من الناصب والجازم وقال الكسائي حروف المضارعة وقال ثعلب مضارعته للاسم وقال البصريون حلوله محل الاسم قالوا ولهذا إذا دخل عليه نحو أن ولن ولم ولما امتنع رفعه لان الاسم لا يقع بعدها فليس حينئذ حالا محل الاسم وأصح الأقوال الأول وهو الذي يجري على ألسنة المعربين يقولون مرفوع لتجرده من الناصب والجازم ويفسد قول الكسائي أن جزء الشيء لا يعمل فيه وقول ثعلب أن المضارعة إنما اقتضت إعرابه من حيث الجملة ثم يحتاج كل نوع من أنواع الإعراب إلى عامل يقتضيه ثم يلزم على المذهبين أن يكون المضارع مرفوعا دائما ولا قائل به ويرد قول البصريين ارتفاعه في نحو هلا يقوم لان الاسم لا يقع بعد حروف التحضيض</span></font><br />
+<br />
+<font size="3"><span style="font-family: times new roman">13- مغني اللبيب - (1 / 12)</span></font><br />
+<font size="3"><span style="font-family: times new roman">بسم الله الرحمن الرحيم </span></font><br />
+<font size="3"><span style="font-family: times new roman">قال سيدنا ومولانا الشيخ الإمام العالم العلامة جمال الدين رحلة الطالبين أبو محمد عبد الله بن يوسف بن هشام الأنصاري قدس الله روحه ونور ضريحه </span></font><br />
+<font size="3"><span style="font-family: times new roman">أما بعد حمد الله على إفضاله والصلاة والسلام على سيدنا محمد وعلى آله فإن أولى ما تقترحه القرائح وأعلى ما تجنح إلى تحصيله الجوانح ما يتيسر به فهم كتاب الله المنزل ويتضح به معنى حديث نبيه المرسل فإنهما الوسيلة إلى السعادة الأبدية والذريعة إلى تحصيل المصالح الدينية والدنيوية وأصل ذلك علم الإعراب الهادي إلى صوب الصواب وقد كنت في عام تسعة وأربعين وسبعمئة أنشأت بمكة زادها الله شرفا كتابا في ذلك منورا من أرجاء قواعده كل حالك ثم إنني أصبت به وبغيره في منصرفي إلى مصر ولما من الله تعالى علي في عام ستة وخمسين بمعاودة حرم الله والمجاورة في خير بلاد الله شمرت عن ساعد الاجتهاد ثانيا واستأنفت العمل لا كسلا ولا متوانيا ووضعت هذا التصنيف على أحسن إحكام وترصيف وتتبعت فيه مقفلات مسائل الإعراب فافتتحتها ومعضلات يستشكلها الطلاب فأوضحتها ونقحتها وأغلاطا وقعت لجماعة من المعربين وغيرهم فنبهت عليها وأصلحتها.</span></font><br />
+<br />
+<font size="3"><span style="font-family: times new roman">14- مغني اللبيب - (1 / 184)</span></font><br />
+<font size="3"><span style="font-family: times new roman">حرف السين المهملة </span></font><br />
+<font size="3"><span style="font-family: times new roman">السين المفردة حرف يختص بالمضارع ويخلصه للاستقبال وينزل منه منزلة الجزء ولهذا لم يعمل فيه مع اختصاصه به وليس مقتطعا من سوف خلافا للكوفيين ولا مدة الاستقبال معه أضيق منها مع سوف خلافا للبصريين ومعنى قول المعربين فيها حرف تنفيس حرف توسيع وذلك أنها تقلب المضارع من الزمن الضيق وهو الحال إلى الزمن الواسع وهو الاستقبال وأوضح من عبارتهم قول الزمخشري وغيره حرف استقبال وزعم بعضهم أنها قد تأتي للاستمرار لا للاستقبال ذكر ذلك في قوله تعالى ( ستجدون آخرين ) الآية واستدل عليه بقوله تعالى ( سيقول السفهاء من الناس ما ولاهم عن قبلتهم ) مدعيا أن ذلك إنما نزل بعد قولهم ( ما ولاهم ) قال فجاءت السين إعلاما بالاستمرار لا بالاستقبال انتهى.</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_268512" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_268512" class="newreply" href="newreply.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=newreply&amp;p=268512" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_268512" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_268859">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-09-01,&nbsp;<span class="time">11:36 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post268859" href="showthread.php?t=40197&amp;s=cd93f500ca62f8883cb640bdd64e0938&amp;p=268859#post268859" class="postcounter">#2</a><a id="postcount268859" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=39673&amp;s=cd93f500ca62f8883cb640bdd64e0938" title="أحمد عبد الله حسين غير متواجد حالياً"><strong>أحمد عبد الله حسين</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=39673&amp;s=cd93f500ca62f8883cb640bdd64e0938" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=finduser&amp;userid=39673&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أحمد عبد الله حسين غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2009</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>146</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: النحويون والمعربون
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_268859">
+				<blockquote class="postcontent restore">
+					<font size="5"><font color="darkgreen">ما فهمته أن المعربين هم الذين يصوغون تعبيرات الإعراب ، أو يذكرون هذه التعبيرات في كتاباتهم ، وأن النحاة هم من يقعدون ويستنبطون قواعد النحو من النصوص .</font></font><br />
+<font size="5"><font color="darkgreen">فهل هذا بقريب من الصواب ؟؟؟؟</font></font><br />
+<font size="5"><font color="darkgreen">جزاكم الله خيرا </font></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><b><font color="#333399"><span style="font-family: Old Antic Outline Shaded"><span style="font-family: DecoType Naskh Variants"><font size="5"><font color="#800000">تواضعْ تكنْ كالنجم لاحَ لناظرٍ * على صفحات الماء وهْوَ رفيعُ</font></font></span></span></font></b></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_268859" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_268859" class="newreply" href="newreply.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=newreply&amp;p=268859" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_268859" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_269169">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-09-02,&nbsp;<span class="time">03:23 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post269169" href="showthread.php?t=40197&amp;s=cd93f500ca62f8883cb640bdd64e0938&amp;p=269169#post269169" class="postcounter">#3</a><a id="postcount269169" name="3"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=41069&amp;s=cd93f500ca62f8883cb640bdd64e0938" title="عُبيد السعيد غير متواجد حالياً"><strong>عُبيد السعيد</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=41069&amp;s=cd93f500ca62f8883cb640bdd64e0938" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=finduser&amp;userid=41069&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="عُبيد السعيد غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Aug 2009</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>193</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: النحويون والمعربون
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_269169">
+				<blockquote class="postcontent restore">
+					<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				<div class="bbcode_postedby">
+					<img src="images/metro/purple/misc/quote_icon.png" alt="اقتباس" /> المشاركة الأصلية كتبت بواسطة فريد البيدق
+					<a href="showthread.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;p=268512#post268512" rel="nofollow"><img class="inlineimg" src="images/metro/purple/buttons/viewpost-left.png" alt="مشاهدة المشاركة" /></a>
+				</div>
+				<div class="message"><span style="font-family: times new roman"><font size="3">اقرأ النصوص الآتية، ثم أجب عن السؤال: ل يختلف النحويون عن المعربين؟</font></span><br />
+ <br />
+ <br />
+<br />
+ <br />
+<font size="3"><span style="font-family: times new roman">8- النحو الوافي - (1 / 84)</span></font><br />
+<font size="3"><span style="font-family: times new roman">أ- زيادة وتفصيل:</span></font><br />
+<font size="3"><span style="font-family: times new roman">&quot;أ&quot; الإعراب المحليّ والتقديريّ.</span></font><br />
+<font size="3"><span style="font-family: times new roman">يتردد على ألسنة المعربين أن يقولوا فى المبنيات، وفى كثير من الجمل المحكية وغير المحكية، إنه فى محل كذا - من رفع، أونصب، أوجر، أوجزم... فما معنى أنه فى محل مُعَيَّن؟ فمثلا: يقولون فى &quot;جاء هؤلاءِ&quot;... إن كلمة: &quot;هؤلاءِ&quot; مبنية على الكسر فى محل رفع فاعل - وفى: &quot;قرأت الصحف من قبلُ&quot;...إن كلمة: &quot;قبلُ&quot; مبنية على الضم فى محل جر... وفى: &quot;رأيت ضيفًا يبتسم&quot;، إن الجملة المضارعية فى محل نصب صفة1... وهكذا.</span></font><font size="3"><span style="font-family: times new roman">.</span></font></div>
+			
+		</div>
+	</div>
+</div>الموضوع طويل جداً وغير واضح أخي فريد البيدق ..<br />
+ <br />
+وخاصة هذه الفقرة التي ورد فيها سؤال ولم يرد له جواب !<br />
+ <br />
+ <br />
+أشكرك
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_269169" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_269169" class="newreply" href="newreply.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=newreply&amp;p=269169" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_269169" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_269510">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-09-03,&nbsp;<span class="time">03:18 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post269510" href="showthread.php?t=40197&amp;s=cd93f500ca62f8883cb640bdd64e0938&amp;p=269510#post269510" class="postcounter">#4</a><a id="postcount269510" name="4"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=8179&amp;s=cd93f500ca62f8883cb640bdd64e0938" title="أبو عبدالعزيز الشثري غير متواجد حالياً"><strong>أبو عبدالعزيز الشثري</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=8179&amp;s=cd93f500ca62f8883cb640bdd64e0938" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=finduser&amp;userid=8179&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أبو عبدالعزيز الشثري غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>34</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: النحويون والمعربون
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_269510">
+				<blockquote class="postcontent restore">
+					أخي الفاضل..<br />
+لا اختلاف بين الطائفتين..<br />
+النحوي هو من يجلب الماء،والمعرب هو من يسقي الزرع .. <br />
+فالماء عند الجالب والساقي سواء..<br />
+وليس الجلب كالسقاء..<br />
+ <br />
+ <br />
+لكن لما نزح بعض العلماء إلى العناية بالإعراب وأفردوا فيه مؤلفات صار للإعراب ألفاظ ومصطلحات ثابتة..<br />
+فما يُحكى من خلاف فللتنبه إلى أن الاصطلاح الإعرابي قد لايحمل المعنى النحويَّ المراد،أو أن القاعدة الإعرابية ليست مطردة بالنظر إلى التفصيل الكائن في أصل المسألة النحوية ، وهكذا ..<br />
+ <br />
+والله تعالى أعلم..
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_269510" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_269510" class="newreply" href="newreply.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=newreply&amp;p=269510" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_269510" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_270417">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-09-04,&nbsp;<span class="time">11:25 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post270417" href="showthread.php?t=40197&amp;s=cd93f500ca62f8883cb640bdd64e0938&amp;p=270417#post270417" class="postcounter">#5</a><a id="postcount270417" name="5"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=11626&amp;s=cd93f500ca62f8883cb640bdd64e0938" title="فريد البيدق غير متواجد حالياً"><strong>فريد البيدق</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=11626&amp;s=cd93f500ca62f8883cb640bdd64e0938" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=finduser&amp;userid=11626&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="فريد البيدق غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>903</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: النحويون والمعربون
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_270417">
+				<blockquote class="postcontent restore">
+					دامت متابعاتك شاعرنا الحبيب المتميز أحمد!
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_270417" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_270417" class="newreply" href="newreply.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=newreply&amp;p=270417" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_270417" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_270419">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-09-04,&nbsp;<span class="time">11:28 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post270419" href="showthread.php?t=40197&amp;s=cd93f500ca62f8883cb640bdd64e0938&amp;p=270419#post270419" class="postcounter">#6</a><a id="postcount270419" name="6"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=11626&amp;s=cd93f500ca62f8883cb640bdd64e0938" title="فريد البيدق غير متواجد حالياً"><strong>فريد البيدق</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=11626&amp;s=cd93f500ca62f8883cb640bdd64e0938" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=finduser&amp;userid=11626&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="فريد البيدق غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>903</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: النحويون والمعربون
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_270419">
+				<blockquote class="postcontent restore">
+					أكرمت أخي عبيد!<br />
+ليس المراد من الاقتباس إكمال المقتبس، إنما المراد  السياقات التي فرقت بين النحاة والمعربين.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_270419" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_270419" class="newreply" href="newreply.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=newreply&amp;p=270419" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_270419" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_270422">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-09-04,&nbsp;<span class="time">11:30 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post270422" href="showthread.php?t=40197&amp;s=cd93f500ca62f8883cb640bdd64e0938&amp;p=270422#post270422" class="postcounter">#7</a><a id="postcount270422" name="7"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=11626&amp;s=cd93f500ca62f8883cb640bdd64e0938" title="فريد البيدق غير متواجد حالياً"><strong>فريد البيدق</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=11626&amp;s=cd93f500ca62f8883cb640bdd64e0938" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=finduser&amp;userid=11626&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="فريد البيدق غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>903</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: النحويون والمعربون
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_270422">
+				<blockquote class="postcontent restore">
+					بوركت أخي أبا عبد العزيز!<br />
+أهذا من تطور العلوم؟ أيمكننا اعتبار الإعراب علما جديدا؟
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_270422" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_270422" class="newreply" href="newreply.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=newreply&amp;p=270422" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_270422" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_270760">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-09-05,&nbsp;<span class="time">09:38 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post270760" href="showthread.php?t=40197&amp;s=cd93f500ca62f8883cb640bdd64e0938&amp;p=270760#post270760" class="postcounter">#8</a><a id="postcount270760" name="8"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=39673&amp;s=cd93f500ca62f8883cb640bdd64e0938" title="أحمد عبد الله حسين غير متواجد حالياً"><strong>أحمد عبد الله حسين</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=39673&amp;s=cd93f500ca62f8883cb640bdd64e0938" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=finduser&amp;userid=39673&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أحمد عبد الله حسين غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2009</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>146</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: النحويون والمعربون
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_270760">
+				<blockquote class="postcontent restore">
+					<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				<div class="bbcode_postedby">
+					<img src="images/metro/purple/misc/quote_icon.png" alt="اقتباس" /> المشاركة الأصلية كتبت بواسطة فريد البيدق
+					<a href="showthread.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;p=270417#post270417" rel="nofollow"><img class="inlineimg" src="images/metro/purple/buttons/viewpost-left.png" alt="مشاهدة المشاركة" /></a>
+				</div>
+				<div class="message">دامت متابعاتك شاعرنا الحبيب المتميز أحمد!</div>
+			
+		</div>
+	</div>
+</div><div style="text-align: center;"><font size="5"><font color="darkgreen"> دمت موفقا أستاذي الكريم</font></font></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;"><b><font color="#333399"><span style="font-family: Old Antic Outline Shaded"><span style="font-family: DecoType Naskh Variants"><font size="5"><font color="#800000">تواضعْ تكنْ كالنجم لاحَ لناظرٍ * على صفحات الماء وهْوَ رفيعُ</font></font></span></span></font></b></div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_270760" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_270760" class="newreply" href="newreply.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=newreply&amp;p=270760" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_270760" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_270762">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-09-05,&nbsp;<span class="time">09:49 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post270762" href="showthread.php?t=40197&amp;s=cd93f500ca62f8883cb640bdd64e0938&amp;p=270762#post270762" class="postcounter">#9</a><a id="postcount270762" name="9"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=8688&amp;s=cd93f500ca62f8883cb640bdd64e0938" title="البسام غير متواجد حالياً"><strong>البسام</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=8688&amp;s=cd93f500ca62f8883cb640bdd64e0938" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=finduser&amp;userid=8688&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="البسام غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>146</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: النحويون والمعربون
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_270762">
+				<blockquote class="postcontent restore">
+					<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				<div class="bbcode_postedby">
+					<img src="images/metro/purple/misc/quote_icon.png" alt="اقتباس" /> المشاركة الأصلية كتبت بواسطة فريد البيدق
+					<a href="showthread.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;p=270422#post270422" rel="nofollow"><img class="inlineimg" src="images/metro/purple/buttons/viewpost-left.png" alt="مشاهدة المشاركة" /></a>
+				</div>
+				<div class="message">بوركت أخي أبا عبد العزيز!<br />
+أهذا من تطور العلوم؟ أيمكننا اعتبار الإعراب علما جديدا؟</div>
+			
+		</div>
+	</div>
+</div> جعل بعض العلماء الإعراب علمًا مستقلاً [ ظ : الزيادة والإحسان في علوم القرآن : 1 / 401]
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_270762" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_270762" class="newreply" href="newreply.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=newreply&amp;p=270762" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_270762" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_271001">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2009-09-06,&nbsp;<span class="time">01:57 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post271001" href="showthread.php?t=40197&amp;s=cd93f500ca62f8883cb640bdd64e0938&amp;p=271001#post271001" class="postcounter">#10</a><a id="postcount271001" name="10"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=11626&amp;s=cd93f500ca62f8883cb640bdd64e0938" title="فريد البيدق غير متواجد حالياً"><strong>فريد البيدق</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=11626&amp;s=cd93f500ca62f8883cb640bdd64e0938" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=finduser&amp;userid=11626&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="فريد البيدق غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Oct 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>903</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: النحويون والمعربون
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_271001">
+				<blockquote class="postcontent restore">
+					زدني أخي البسام نفعك الله تعالى!
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_271001" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_271001" class="newreply" href="newreply.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=newreply&amp;p=271001" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_271001" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=40197&amp;s=cd93f500ca62f8883cb640bdd64e0938" class="popupctrl"><span class="ctrlcontainer">مجلس اللغة العربية وعلومها</span></a>
+		<a href="showthread.php?t=40197#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=cd93f500ca62f8883cb640bdd64e0938">لوحة التحكم</a></li>
+		<li><a href="private.php?s=cd93f500ca62f8883cb640bdd64e0938">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=cd93f500ca62f8883cb640bdd64e0938">الاشتراكات</a></li>
+		<li><a href="online.php?s=cd93f500ca62f8883cb640bdd64e0938">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=cd93f500ca62f8883cb640bdd64e0938">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=cd93f500ca62f8883cb640bdd64e0938">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=cd93f500ca62f8883cb640bdd64e0938">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=cd93f500ca62f8883cb640bdd64e0938">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=cd93f500ca62f8883cb640bdd64e0938">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=cd93f500ca62f8883cb640bdd64e0938">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=cd93f500ca62f8883cb640bdd64e0938">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=cd93f500ca62f8883cb640bdd64e0938">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=cd93f500ca62f8883cb640bdd64e0938">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=cd93f500ca62f8883cb640bdd64e0938">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=cd93f500ca62f8883cb640bdd64e0938">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=cd93f500ca62f8883cb640bdd64e0938">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=cd93f500ca62f8883cb640bdd64e0938">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=cd93f500ca62f8883cb640bdd64e0938">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=cd93f500ca62f8883cb640bdd64e0938">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=cd93f500ca62f8883cb640bdd64e0938">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=cd93f500ca62f8883cb640bdd64e0938">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=cd93f500ca62f8883cb640bdd64e0938">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=cd93f500ca62f8883cb640bdd64e0938">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=cd93f500ca62f8883cb640bdd64e0938">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=cd93f500ca62f8883cb640bdd64e0938">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=cd93f500ca62f8883cb640bdd64e0938">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=40033&amp;s=cd93f500ca62f8883cb640bdd64e0938">من فنون القول : المحادثة والمحاورة والمجادلة</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=40502&amp;s=cd93f500ca62f8883cb640bdd64e0938">أيهما أكثر دقة &quot;استخرج من كذا.. كذا&quot; أو &quot;أخرج من كذا.. كذا&quot;؟ ولماذا ؟</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;tag=%D8%A7%D9%84%D9%86%D8%AD%D9%88%D9%8A%D9%88%D9%86">النحويون</a>، 
+		
+			<a href="tags.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;tag=%D9%88%D8%A7%D9%84%D9%85%D8%B9%D8%B1%D8%A8%D9%88%D9%86">والمعربون</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=cd93f500ca62f8883cb640bdd64e0938">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=40197#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=cd93f500ca62f8883cb640bdd64e0938&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=cd93f500ca62f8883cb640bdd64e0938" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=cd93f500ca62f8883cb640bdd64e0938">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=40197#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">02:35 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

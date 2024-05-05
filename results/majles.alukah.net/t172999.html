@@ -1,0 +1,1356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=696d1a7d9adaea36633b28fa7c3827c1&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=172999";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الرقائق وتهذيب السلوك وتزكية النفوس - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=32" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="النفس, مجاهدة" />
+	<meta name="description" content="مجاهدة النفس 
+ صلاح الدين سلطان 
+ 
+ 	 	 مجاهدة  للنفس هي التي تعالج الشهوات، ومجاهدة النفس إنما تكون لكبح  جماحها  وامتلاك زمامها، وحملها علي ما يرضي ربها، وتصفية كدرها، وتنقية  فطرتها،  ولذا كان الأمر الرباني لنبيه صلي الله عليه وسلم وللمؤمنين معه  بالقيام  بالليل والذكر الدائم بالنهار، وهو أمر يحتاج إلي رياضة نفسية  وعزيمة  إيمانية، وهمة أخلاقية، وإرادة قوية. قال - تعالى -: (وَالَّذِينَ   جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا وَإِنَّ اللَّهَ لَمَعَ   الْمُحْسِنِينَ)(العنكبوت: (69). 
+" />
+
+	<title> مجاهدة النفس</title>
+	<link rel="canonical" href="showthread.php?t=172999&s=696d1a7d9adaea36633b28fa7c3827c1" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=696d1a7d9adaea36633b28fa7c3827c1 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=696d1a7d9adaea36633b28fa7c3827c1">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> مجاهدة النفس</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=696d1a7d9adaea36633b28fa7c3827c1&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 1 من 1
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=172999&s=696d1a7d9adaea36633b28fa7c3827c1" title="تحديث الصفحة">مجاهدة النفس</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=172999" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;t=172999&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=addsubscription&amp;t=172999" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;search_type=1&amp;searchthreadid=172999&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="172999" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_903342">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-03-23,&nbsp;<span class="time">01:43 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post903342" href="showthread.php?t=172999&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=903342#post903342" class="postcounter">#1</a><a id="postcount903342" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,746</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> مجاهدة النفس
+		</h2>
+		
+				
+					
+					
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_903342">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><span style="font-family: andalus"><font size="6"><font color="navy">مجاهدة النفس<br />
+ صلاح الدين سلطان</font></font></span></font></span><span style="font-family: arabic typesetting"><b><font size="5"><br />
+<br />
+</font> 	 	 <font size="5">مجاهدة  للنفس هي التي تعالج الشهوات، ومجاهدة النفس إنما تكون لكبح  جماحها  وامتلاك زمامها، وحملها علي ما يرضي ربها، وتصفية كدرها، وتنقية  فطرتها،  ولذا كان الأمر الرباني لنبيه صلي الله عليه وسلم وللمؤمنين معه  بالقيام  بالليل والذكر الدائم بالنهار، وهو أمر يحتاج إلي رياضة نفسية  وعزيمة  إيمانية، وهمة أخلاقية، وإرادة قوية. قال - تعالى -: (وَالَّذِينَ   جَاهَدُوا فِينَا لَنَهْدِيَنَّهُ  مْ سُبُلَنَا وَإِنَّ اللَّهَ لَمَعَ   الْمُحْسِنِينَ)(  العنكبوت: (69).</font><br />
+ <font size="5">والمجاهدة  بغير علم كمن يقود شاحنة كبيرة إلى جبل وعر توشك أن تهوي في  مكان سحيق، أو  من بذل النفس والمال حميةً جاهلية أو عصبية قبلية، أو من  أجهد نفسه ليجمع  مالاً لأولاده دون تربية إيمانية، فيلقي منهم عقوقاً  وإنكاراً للجميل،  وإهمالاً له في ذات كبره. قال - تعالى -: (فَلاَ  تُعْجِبْكَ أَمْوَالُهُمْ  وَلاَ أَوْلاَدُهُمْ إِنَّمَا يُرِيدُ اللّهُ  لِيُعَذِّبَهُم بِهَا فِي  الْحَيَاةِ الدُّنْيَا وَتَزْهَقَ أَنفُسُهُمْ  وَهُمْ كَافِرُونَ)(التو  بة:  (55).</font><br />
+ <font size="5"><font color="#800000">ويمكن بيان مجاهدة النفس من جوانب عدة أهمها ما يلي:</font></font><br />
+ <font size="5"><font color="#800000">1. تعريف مجاهدة النفس:</font></font><br />
+ <font size="5">قال ابن  منظور المصري في لسان العرب في تعريف المجاهدة بأنها مصدر جاهد  يجاهد  جهاداً ومجاهدة وهو مأخوذ من مادة &quot;ج هـ د&quot; التي تدل علي المشقة.  ويقال  المجهود هو اللبن الذي أخرج زبده لأنه لا يخرج إلا بتعب ومشقة. ولذا  لا  يقال اجتهد فلان في حمل حّبة، بل اجتهد في حمل صخرة، لما في الصخرة من   المشقة والعناء، وسمي قيام الليل تهجداً لما فيه من تعب ومعاناة في حمل   النفس على ترك النوم في الفراش الوثير ليقوم بين يدي الله رب العالمين.</font><br />
+ <font size="5">أما  المجاهدة للنفس اصطلاحاً فقد عرفها الجرجاني في كتاب التعريفات  (204)  بأنها محاربة النفس الأمارة بالسوء بتحميلها ما يشق عليها بما هو  مطلوب في  الشرع، وقال المناوي هي حمل النفس علي المشاق البدنية ومخالفة  الهوى،  وقيل هي بذل المستطاع في أمر المطاع وهو الله - عز وجل -.</font><br />
+ <font size="5">ويبدو لي  أن أعرف مجاهدة النفس بأنها حمل النفس على أداء الواجبات،  والتزامات  المكارم والمروءات، وترك المحرمات، والترفع عن السفاسف  والمكروهات.</font><br />
+ <font size="5"><font color="#800000">2. أهمية مجاهدة النفس:</font></font><br />
+ <font size="5">1. نجد في  الواقع بعضا ًمن الأطباء يدخنون أو يشربون الخمور وهم أعلم  الناس بضررهما  لكن شهوتهم تغلبهم ولا يعقل أن يكون إصلاحهم عن طريق شرح  آثار التدخين  والخمر لأنهم أعلم من غيرهم في هذا، لكن لابد من تدريبهم على  مجاهدة النفس  حتى يمنع نفسه من إدمانها.</font><br />
+ <font size="5">2. لو جلس  أي إنسان في قاعات التدريس في أحسن الجامعات أو المعاهد  التدريبية فتعلم  فنون الخطابة، وقواعد السباحة، وآداب القيادة للسيارات فلن  يجدي هذا العلم  شيئاً حتى يجاهد الإنسان نفسه في مواجهة الجمهور خطيباً،  أو ينزل إلى  عباب البحار أو حمامات السباحة، أو يتحرك بالسيارة في الطرقات،  وهى تحتاج  إلى مواجهة الخوف والهلع الذي يعترى كل من يبدأ شيئاً جديداً  مثل ذلك.</font><br />
+ <font size="5">3. إن  مواجهة ضغط شهوة الرجال إلى النساء أو النساء إلى الرجال والوصول  إلى غض  البصر وحفظ الفرج لا يحدث فقط باستحضار نصوص العفة، وعقوبة مقترف  الزنا أو  مقدماته، بل يلزم أن يواجه هذا الطوفان من سعار الشهوة بالصيام  الذي هو  وجاء لهذه الشهوة في وسط المثيرات حولنا، وبالقيام الذي يعظم  الخشية لله،  وبمواجهة النفس في نزواتها أن يخوض مع الخائضين سواء عن طريق  الانترنت أو  التليفزيون أو الأفلام الهابطة والمجلات الفاسدة، ويلزم مع هذا  إشغال  النفس بالحلال الطيب من التريض، وأن يكون يومه وليله مليئاً  بالواجبات  الشريفة، والأعمال الكثيفة فإن الشباب والفراغ والجدة مفسدة  للمرء أيما  مفسدة كما قال الشاعر.</font><br />
+ <font size="5">4. مهما  توسع الأخ أو الأخت في حفظ النصوص الشرعية والآثار التربوية عن  فضل القيام  والصلاة مع الخشوع والخضوع، وسكب الدموع خشية رب الأرض  والسماوات، فلن  يحصل على انتظامه في القيام والصلاة على وقتها والخشوع في  أركانها حتى  يجاهد نفسه ويعصر قلبه، ويظل ذاكراً لذنبه، متذكراً موقفه بين  يدي ربه،  وعندئذ سيذوق حلاوة مجاهدته ولذا قال أحد الصالحين: جاهدت نفسي في  قيام  الليل عاما فذقت حلاوته عشرين عاماً، وهو معنى قوله - تعالى -:   (تَتَجَافَى جُنُوبُهُم عَنِ المَضَاجِعِ يَدعُونَ رَبَّهم خَوفًا   وَطَمَعًا وَمِمَّا رَزَقنَـهُم يُنفِقُونَ)(السج  دة: ?16?).</font><br />
+ <font size="5">5. يقول  سفيان الثوري: ما عالجت شيئاً أشد عليّ من نفسي، مرة لي ومرة  عليّ. ويقول  الحسن البصري: ما الدابة الجموح بأحوج إلى اللجام الشديد من  نفسك. راجع  إحياء علوم الدين للغزالى ص (3/71).</font><br />
+ <font size="5">6. ذكر ابن  رجب في جامع العلوم والحكم ص (172) أن أبا بكر الصديق كتب  لعمر بن الخطاب  عندما استخلفه: إن أول ما أحذرك منه نفسك التي بين جنبيك.  فإذا كان سيدنا  أبو بكر يرى أن أول الخطر من نفس عمر، ويري سفيان الثوري أن  علاج أهواء  النفس من أشق الأعمال، ويرى الحسن البصري أن جهاد النفس أشد من  اللجام  للدابة الجموح، فإننا يجب أن نهتم في هذه الفتن المتراكبة والأهواء   المتعاقبة، والأجواء الهابطة بأعلى درجات المجاهدة للنفس حتى يسلس قيادها،   ولذا قال الله - تعالى -: (فَأَمَّا مَن طَغَى * وَآثَرَ الْحَيَاةَ   الدُّنْيَا * فَإِنَّ الْجَحِيمَ هِيَ الْمَأْوَى * وَأَمَّا مَنْ خَافَ   مَقَامَ رَبِّهِ وَنَهَى النَّفْسَ عَنِ الْهَوَى) (النازعات: 37-40).</font><br />
+ <font size="5">ومن الآيات  يبدو جلياً أن مدار الصلاح والنجاح والفوز بالجنة على جهاد  النفس ومعالجة  الأهواء، وأن الإخفاق في ذلك يورد الإنسان المهالك ويعرضه  لغضبة ربه وشدة  نقمته والاكتواء بناره.</font><br />
+ <font size="5"><font color="#800000">3. صور من المجاهدة للنفس:</font></font><br />
+ <font size="5">1- قصة  طالوت: اجتاز قوم طالوت اختبارين ورسبوا في اختبار هوى النفس حتى  مع  المباح، حيث ادعى عشرات الآلاف أنهم يعزمون على الجهاد فلما كتب عليهم   القتال تولوا إلا قليلاً منهم، وهؤلاء القليل كانت عندهم شبهات علمية في   الفهم لصفات القائد، وخرج بعضهم وعالج العلم بعضاً آخر عندما ذكر لهم نبيهم   أن الله اصطفاه عليهم وزاده بسطة في العلم والجسم، ومع نجاحهم في   الاختبارين، لكن يحكي القرآن بأسى شديد أن كثيراً منهم لم يوفقوا في مواجهة   أهوائهم، كما قال - سبحانه -: (فَلَمَّا فَصَلَ طَالُوتُ بِالجُنُودِ   قَالَ إِنَّ اللَّهَ مُبتَلِيكم بِنَهَرٍ فَمَن شَرِبَ مِنهُ فَلَيسَ   مِنِّى وَمَن لَّم يَطعَمهُ فَإِنَّهُ مِنِّى إِلَّا مَنِ اغتَرَفَ غُرفَةَ   بِيَدِهِ فَشَرِبُواْ مِنهُ إِلَّا قَلِيلاً مِّنهُم فَلَمَّا جَاوَزَهُ   هُوَ وَالَّذِينَ ءَامَنُواْ مَعَهُ قَالُواْ لَا طَاقَةَ لَنَا ليَومَ   بِجَالُوتَ وَجُنُودِهِ قَالَ الَّذِينَ يَظُنُّونَ أَنَّهُم مُّلَـاقُواْ   اللَّهِ كَم مِّن فِئَةٍ قَلِيلَةٍ غَلَبَت فِئَةً كَثِيرَةَ بِإِذنِ   اللَّهِ* واللَّهُ مَعَ الصَّـابِرِينَ)(  البقرة: (249).</font><br />
+ <font size="5">2- عرب  الجاهلية لما أسلموا: لم يكن الأمر سهلاً أن يتحول عرب الجاهلية  من مجالس  السكر في الليل، والظلم بالنهار إلى عبّادٍ قائمين في الليل،  وصوامٍ  خاشعين في النهار، حتى نزل القرآن في آخر سورة المزمل يطلب التخفيف  على  أنفسهم، بل مرّ هذا- قطعا - عبر مجاهدة كبيرة للنفس.</font><br />
+ <font size="5">3- روى  البخاري ومسلم بسندهما عن أنس بن مالك أن أنس بن النضر قال- بعد  أن فاتته  غزوة بدر لئن أشهدني الله قتال المشركين ليرين الله ما أصنع. فلما  كان يوم  أحد وانكشف المسلمون دخل يضرب في صفوف الكافرين حتى ُوجد به بضع  وثمانون  ضربة بالسيف، وطعنة بالرمح ورمية بسهم، وقد قتل ومثل به المشركون  فما عرفه  أحد إلا أخته ببنانه.</font><br />
+ <font size="5">ونزل فيه  قوله - تعالى -: (مِّنَ المُؤمِنِينَ رِجَالٌ صَدَقُواْ مَا  عَـاهَدُواْ  اللَّهَ عَلَيهِ* فَمِنهُم مَّن قَضَى نَحبَهُ وَمِنهم مَّن   يَنتَظِرُ*...)(الأ  حزاب: من الآية (23) وهذا قطعا ًمرّ عبر مجاهدة كبيرة   للنفس حتى ينال هذا الرضا الرباني.</font><br />
+ <font size="5">4- هاجر  كثيرٌ من هؤلاء المخلصين لدينهم وأمتهم إلى أوربا وأمريكا  والصين  واستراليا واليابان وكانت الأهواء حولهم تدعوهم إلى تلبية غرائز  النفس  والانغماس في شهوات المجتمع لكنهم كانوا أوفياء لدينهم وجاهدوا  أنفسهم  وأحيوا ليلهم بالقيام والذكر والدعاء والقنوت، وأحيوا نهارهم  بالحركة  والدعوة وبناء المراكز الإسلامية والمدارس والمؤسسات التي صارت  واجهات  للدعوة الإسلامية تقدم للناس النور والخير والهدى والرشاد، وهؤلاء  أرجو أن  يصدق فيهم حديث الإمام مسلم عن معقل بن يسار أن رسول الله - صلى  الله  عليه وسلم - قال: ((العبادة في الهرج كهجرة إلىّ)) والهرج هو الفتن   واختلاط الأمور وقلة من يعين على الطاعة لأن العبادة هنا تحتاج إلى مجاهدة   شديدة.</font><br />
+ <font size="5"><font color="#800000">4. كيف نجاهد أنفسنا؟</font></font><br />
+ <font size="5">هناك قواعد عامة وأساليب خاصة تعين على مجاهدة أنفسنا ولا تغني إحداهما عن الأخرى.</font><br />
+ <font size="5"><font color="#800000">أ- القواعد العامة في مجاهدة النفس:</font></font><br />
+ <font size="5">1- إحياء  حب الله - تعالى - في القلب حتى يكون حبه - سبحانه - أرقى من  حب النفس  والأهل والولد والمال وذلك بالإكثار من النظر في الكون المنظور،  والكتاب  المسطور، ودوام الذكر، والتلذذ بالأوراد الإيمانية من صلاة في  الليل وصيام  في النهار.</font><br />
+ <font size="5">2- إحياء  الخوف من الله - تعالى - بمطالعة مصارع الظالمين، ومهالك  الفاسقين ومآلات  المفسدين، ويقارن الإنسان حاله بحالهم، ويتهم نفسه، ويعظم  عنده الخوف على  نفسه لكثرة النعم الإلهية، وقلة الأعمال الخيرية، وكثرة  الذنوب اليومية،  ويتذكر الموت وسكراته والقبر وظلماته، والحشر وأنّاته،  والصراط وسقطاته،  والنار ولهيبها، وجهنَّم وسعيرها، والزقوم والحميم  والمقامع الحديدية،  والصرخات التي تخرج من العصاة وهم في النار يعذَّبون،  وفي هذا يروي ابن  أبى الدنيا في كتابه محاسبة النفس ص (34) أن إبراهيم  التيمي قال: مثلت  نفسي في الجنة آكل من ثمارها، وأشرب من أنهارها، وأعانق  أبكارها، ثم مثلت  نفسي في النار آكل من زقومها، وأشرب من صديدها، وأعالج  سلاسلها وأغلالها،  فقلت لنفسي: أي نفس، أي شيء تريدين؟ قالت: أريد أن  أُردَّ إلى الدنيا  فأعمل صالحاً، قال: قلت: فأنت في الأمنية فاعملي.</font><br />
+ <font size="5">3 - قوة  الإرادة والعزيمة على مواجهة النفس بقوة الجناجين السابقين  &quot;الخوف  والرجاء&quot; &quot;الرهبة والرغبة&quot; واليقين أن العبد مهما كان ضعفه إذا لجأ  إلى  ربه واستعان به أعانه، وقد دعا سيدنا يوسف في الفتنة التي تعرض لها  فقال:  (رَبِّ السِّجنُ أَحَبُّ إِلَىَّ مِمَّا يَدعُونَنِى إِلَيهِ*  وَإِلَّا  تَصرِف عَنِّى كَيدَهُنَّ أَصبُ إِلَيهنَّ وَأَكُن مِّنَ  الجَـاهِلِينَ)  (يوسف: من الآية (33) فصرف الله عنه كيدهن واحتمل بهمة  عالية السجن  مظلوماً بسبب عِفَّته، وانشغل في سجنه بنشر دعوته حتى كتب الله  له الخروج  إلى التمكين بتقواه وحسن صبره، ولعل مما يعين في هذا حديث  البخاري: إذا  سألتم الله فاسألوه الفردوس الأعلى من الجنة.</font><br />
+ <font size="5">ونذكر قول الشاعر:</font><br />
+ <font size="5">لأستسهلن الصعب أو أدرك المنى *** فما انقادت الآمال إلا لصابر</font><br />
+ <font size="5">وقول الشاعر:</font><br />
+ <font size="5">أبارك في الناس أهل الطموح *** ومن يستلذ ركوب الخطر</font><br />
+ <font size="5">ومن لا يحب صعود الجبال *** يعش أبد الدهر بين الحفر</font><br />
+ <font size="5">ومن لم يعانقه شوك الحياة *** تبخر في جوها واندثر</font><br />
+ <font size="5">وقول الشاعر:</font><br />
+ <font size="5">لا تحسبن المجد تمراً أنت آكله *** لن تبلغ المجد حتى تلعق الصبرا</font><br />
+ <font size="5"><font color="#800000">ب- الأساليب الخاصة في مجاهدة النفس:</font></font><br />
+ <font size="5">هذه  الأساليب الخاصة تعتمد على صدق العبد مع ربه ومعرفته بمواضع ضعفه  وقوته  فلا يضع نفسه فى موضع يعلم أن نفسه تميل مع الهوى وتخالف الرشاد  والهدى.</font><br />
+ <font size="5"><font color="#800000">وبناء عليه أحب أن أسوق هذه الأمثلة الخاصة في مجاهدة النفس:</font></font><br />
+ <font size="5">1- من  اعتاد على شراب متكرر من الشاي أو القهوة أو غيرهما يلزم أن يجاهد  نفسه  حتى لا يكون أسيراً لعادة، ولذلك يقال أفضل عادة ألا تكون لك عادة.</font><br />
+ <font size="5">2- أن تترك  بين فترة وأخرى على المائدة نوعاً من الطعام وهو أحب الأنواع  إليك فإنك  بهذا تهذب في النفس سطوتها في التلذذ بالمطاعم الخاصة.</font><br />
+ <font size="5">3- إن كان  من طبع الأخ أو الأخت الإسراف والتبذير حتى في أبواب الخير،  فيجب أن يجاهد  نفسه أو أن تجاهد نفسها في الادخار والتوفير ولو بالقليل،  وإن كان عكس  ذلك شحيحاً بخيلاً فيجب أن يجاهد نفسه في البذل والإنفاق  والتوسعة على  الأهل والأقارب والمؤسسات الخيرية.</font><br />
+ <font size="5">4- إن كان  من طبع الأخ أنه سريع الغضب بطئ الفيء فيجب أن يلاحظ نفسه  ويتذكر أن  الشديد الذي يملك نفسه عند الغضب، فإن انفلتت نفسه في غضبة لغير  الله -  تعالى - عالجها بالصيام والقيام وعاقبها بالحرمان مما تحب ومن  عقوبته  لنفسه سرعة الفيء، والمبادرة إلى خصمه: ((وخيرهما الذي يبدأ  بالسلام)).</font><br />
+ <font size="5">5- إن كان  الأخ أو الأخت يميل إلى الصمت الطويل حتى إنه ليوغر صدر زوجته  التي تنتظر  منه كلمة طيبة أو لفتة كريمة بعد طعام، أو حسن لبس، أو جمال  هيئة، فيجب أن  يجاهد نفسه في الالتفات إلى أن الكلمة الطيبة صدقة وأن من  أدخل السرور  على أهل بيت من بيوت المسلمين لم يرض الله له جزاءاً إلا  الجنة.</font><br />
+ <font size="5">أما كثير  الكلام بطبعه فيجب أن تأتي عليه فترات يجاهد نفسه بحسن  الاستماع وقلة  الكلام، وضبط اللسان ويتذكر حديث الترمذي بسند حسن صحيح عن  معاذ ابن جبل:  ((ثكلتك أمك يا معاذ، وهل يكب الناس في النار على وجهوهم أو  على مناخرهم  إلا حصائد ألسنتهم))، ولعله يعالج نفسه بطول الخلوة وقلة  الجولة مع  الآخرين، فإن الخلوة تعين على الصمت إلا من ذكر الله أو تفكر في  آلائه&quot;.</font><br />
+ <font size="5">6- هناك  إخوة وأخوات لا يحبون القراءة ويملون من قراءة فصل في كتاب  وهؤلاء يجب أن  يجاهدوا أنفسهم بالبدء في قراءة منهجية بدلاً من القراءات  العشوائية  لوريقات مبعثرة، فيتمون بعض الكتب الصغيرة، ثم يتجهون إلى الكتب  الكبيرة  ويتذكرون أن خير جليس في الأنام كتاب، وأن أصحاب العلم هم شركاء  الملائكة  الكرام في الشهادة لله بالوحدانية لقوله - تعالى -: (شَهِدَ  اللّهُ  أَنَّهُ لاَ إِلَـهَ إِلاَّ هُوَ وَالْمَلاَئِكَة  ُ وَأُوْلُواْ  الْعِلْمِ  قَآئِمَاً بِالْقِسْطِ)(آل عمران: من الآية(18). وأن الدنيا  رجلان عالم  ومتعلم ولا خير فيما سواهما كما أخبرنا الحبيب محمد - صلى الله  عليه  وسلم-.</font><br />
+ <font size="5">7- إذا  اعتاد الأخ أن يقود سيارته بسرعة زائدة فليجاهد نفسه بأن يقول  هذا الأسبوع  لن أتجاوز ولا مرة في السرعة، فإن حدث عاقب نفسه بمشيٍ طويل أو  حرمان من  شراب سلسبيل، أو طعام شهي، أو يتصدق بشيء كأنه أخذ نصف مخالفة،  لكنه  يقدمها صدقة لباب من أبواب الخير، حتى يعود ضابطاً لنفسه في القيادة   مجاهدا لنفسه في جوانب أخرى.</font><br />
+ <font size="5">8- من  اعتاد أن يتوضأ لكل صلاة فقط فلينظر في قوله - تعالى -: (إِنَّ  اللّهَ  يُحِبُّ التَّوَّابِينَ وَيُحِبُّ الْمُتَطَهِّرِي  نَ) (البقرة: من   الآية(222) وليعاهد ربه أن يلزم نفسه بالوضوء في كل وقت وحين، فكلما انتقض   الوضوء توضأ سواء للصلاة أو الطعام أو القراءة أو الخروج حتى يكون دائماً   حاملاً لسلاح الإيمان وقادراً على مواجهة وساوس الشيطان، ومستعداً للقاء   الرحمن.</font><br />
+ <font size="5">9- من تشبع  قلبه واقتنع عقله بفضل عبادة فليتخذ قراره بأن تكون ثابتاً  من ثوابت  حياته، مثل صلاة السنن، وصلاة الضحى، وصيام ثلاثة أيام من كل شهر،  وصدقة  السر، وأذكار دائمة: ((فخير الأعمال أقلها وأدومها)) كما روى  البخاري  بسنده عن عائشة في الحديث عن رسول الله - صلى الله عليه وسلم- .</font><br />
+ <font size="5">10- من  استهوته شهوة النساء وغلبت عليه فتنة الجمال، وأهواء الإعلانات  والأفلام،  فليفزع إلى الصوم فهو الوجاء، وليهرع إلى ملاطفة أهله، وأن يشبع  من الحلال  أو يبادر إلى الزواج إن لم يكن متزوجاً، ويشغل ليله ونهاره  بأعمال تستغرق  طاقاته وهمومه، ولا يدع الفراغ والفكر ليفسد عليه عفته  ومروءته.</font><br />
+ <font size="5">أخيراً لا  يُعرف نظام أو قانون عادل في أية دولة أو شركة أو مؤسسة إلا  وفيها نظام  الإحسان لمن أحسن وعقاب من يخالف، ونحتاج بحق أن نتعامل مع  أنفسنا بهذا  المنطق.</font><br />
+ <font size="5">لو حاولنا  أن نربط بين زيادة ثوابت الدنيا، ومحاولات الشيطان أن نتراجع  في ثوابت  الآخرة، فقد يكون من المناسب لمن أدرك أن الدنيا مليئة بالخداع  والزينة،  وهي دار الغرور والآخرة هي دار القرار فأقترح لمن قصر في ثابت من  ثوابت  الآخرة أن يمنع نفسه من شيء يحبه من ثوابت الآخرة، ليس تحريما بل  تعليما،  ليس قسوة بل قوة في مواجهة انفلات النفس من الواجبات، وانجرار  الهوى وراء  الشيطان والنزوات، والمدرب في الملاعب أو للقوات، والقوات  المحاربة لا  يمكن أن يصنع لاعبا أو محاربا إلا إذا عوده على عادات جديدة  ومنع عنه  أشياء مباحة حتى يقدر أن يقاوم هواه. ومن هنا اقترح بعضا من  العقوبات التي  لها صلة بثوابت الدنيا والآخرة منها ما يلي:</font><br />
+ <font size="5">1. إذا  فاتتك صلاة الفجر في المسجد، فاحرم نفسك من نوعٍ من الطعام تحبه  أو شراب  تعودت عليه طوال اليوم، أو امنع نفسك من النوم على سرير ليلة  واحدة.</font><br />
+ <font size="5">2. من فاته  في يوم قراءة القرآن الكريم ضاعف القراءة في اليوم التالي،  وامنع نفسك من  مشاهدة التلفزيون ساعة من ليل أو نهار وخصصها لقراءة القرآن.</font><br />
+ <font size="5">3. من  فاتته الأذكار في الصباح والمساء يمكنه أن يغلق التلفون النقال  ساعة فقط  من يومه يفرغ فيها في خلوة مع الله، ليعوض ما فاته، ويحمل نفسه  على أنوار  الذكر.</font><br />
+ <font size="5">بهذا فقط تسلس النفس وتنقاد، يقول الشاعر:</font><br />
+ <font size="5">والنفس كالطفل أن تتركه شب على *** حب الرضاع وإن تفطمه ينفطم</font><br />
+ <font size="5">صلاح أمرك للأخلاق مرجعه *** فقوّم النفس بالأخلاق  تستقيم</font></b></span><br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_903342" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_903342" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=903342" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_903342" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=172999&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="popupctrl"><span class="ctrlcontainer">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</span></a>
+		<a href="showthread.php?t=172999#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=696d1a7d9adaea36633b28fa7c3827c1">لوحة التحكم</a></li>
+		<li><a href="private.php?s=696d1a7d9adaea36633b28fa7c3827c1">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1">الاشتراكات</a></li>
+		<li><a href="online.php?s=696d1a7d9adaea36633b28fa7c3827c1">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=172994&amp;s=696d1a7d9adaea36633b28fa7c3827c1">آداب العشرة وذكر الصحبة والأخوة</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=173005&amp;s=696d1a7d9adaea36633b28fa7c3827c1">ذلك بما قدمت يداك وأن الله ليس بظلام للعبيد</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D9%86%D9%81%D8%B3">النفس</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%85%D8%AC%D8%A7%D9%87%D8%AF%D8%A9">مجاهدة</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=172999#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=172999#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">04:55 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	<img src="https://majles.alukah.net/cron.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;rand=1714917301" alt="" width="1" height="1" border="0" />
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

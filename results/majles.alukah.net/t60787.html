@@ -1,0 +1,2834 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=ec1b4717d08f17a417a70c4e8f25f7a8&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=60787";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - استراحة طالبات العلم - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=33" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="أتريدين, إسعاد, السر, زوجك, هذا" />
+	<meta name="description" content="بسم الله الرحمن الرحيم 
+السلام عليكم ورحمة الله وبركاته 
+حياكن الله أخواتي في الله ، وأسأل الله أن يطيب لي المُقام بينكن ، وأسأل الله النفع والتوفيق والسداد لي ولكُنّ . 
+هذا موضوع وفي الواقع منقول عن أخت في الله أحببت أن أضعه بين أيديكن لعل الله أن ينفع به أخواتي الألوكيات وكذلك الزائرات ، صحيح الموضوع طويل لكن يعج بالفوائد والوعظ .." />
+
+	<title> أتريدين إسعاد زوجك ؟ هذا هو السر...</title>
+	<link rel="canonical" href="showthread.php?t=60787&s=ec1b4717d08f17a417a70c4e8f25f7a8" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=21&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس النساء</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=33&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8"><font color="#0000FF">استراحة طالبات العلم</font></a></li>
+
+		
+	<li class="navbit lastnavbit"><span> أتريدين إسعاد زوجك ؟ هذا هو السر...</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 9 من 9
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=60787&s=ec1b4717d08f17a417a70c4e8f25f7a8" title="تحديث الصفحة">أتريدين إسعاد زوجك ؟ هذا هو السر...</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=60787" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;t=60787&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=addsubscription&amp;t=60787" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;search_type=1&amp;searchthreadid=60787&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="60787" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_383492">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-07-04,&nbsp;<span class="time">04:31 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post383492" href="showthread.php?t=60787&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=383492#post383492" class="postcounter">#1</a><a id="postcount383492" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=62453&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="أم أمامة الليبية غير متواجد حالياً"><strong>أم أمامة الليبية</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=62453&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=62453&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أم أمامة الليبية غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>52</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> أتريدين إسعاد زوجك ؟ هذا هو السر...
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_383492">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: decotype naskh variants"><font size="5"><font color="#000000">بسم الله الرحمن الرحيم</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">السلام عليكم ورحمة الله وبركاته</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5">حياكن الله أخواتي في الله ، وأسأل الله أن يطيب لي المُقام <span style="font-family: traditional arabic">بينكن</span> ، وأسأل الله النفع والتوفيق والسداد لي و<span style="font-family: traditional arabic">لكُنّ</span> .</font></span><br />
+<span style="font-family: traditional arabic"><font size="5">هذا موضوع وفي الواقع منقول عن أخت في الله أحببت أن أضعه بين أيديكن لعل الله أن ينفع به أخواتي <span style="font-family: traditional arabic">الألوكيات</span> وكذلك الزائرات ، صحيح الموضوع طويل لكن يعج بالفوائد والوعظ ..</font></span></div> <br />
+ <br />
+ <br />
+<div class="bbcode_container">
+	<div class="bbcode_quote">
+		<div class="quote_container">
+			<div class="bbcode_quote_container"></div>
+			
+				 <span style="font-family: traditional arabic"><font size="5"><font color="#000000">السلام عليكم ورحمة الله وبركاته</font></font></span><br />
+ <br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">أخواتي الفاضلات .. يا من أحببتكن في الله في هذه الشبكة المباركة</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">في البداية سأوضح ما دفعني لكتابة هذا الموضوع ,ألا وهو سر السعادة الزوجية من حياتي الشخصية.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">كنت بالأمس , أتحدث إلى أخت فاضلة هي مقبلة على الزواج .. وفقها الله </font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فطلبت مني أن انصحها بعض النصائح حول الزواج وحول كيفية معاملة الزوج .</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فقدمت لها ما قدمت بتوفيق الله .. وما شدني لكتابة الموضوع أكثر .. هو أن كثيرا من الأخوات تتساءل عن كيفية تعاملي مع زوجي .. حفظه الله لي وباعد عنه كل شر وجعله تاجاً على رأسي .. اللهم أمين</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فقررت بعد محادثة الأخت أن أكتب في هذا الموضوع .. و هذا أول موضوع أكتبه مما يمليه عليَ عقلي ووجداني.. اسأل الله أن يكون نافعا .. ويكون خالصا لوجهه تعالى .. اللهم آمين</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وعلى بركة الله ابدأ موضوعي.</font></font></span><br />
+ <br />
+ <br />
+ <br />
+<div style="text-align: center;"><font color="#548dd4"><span style="font-family: pt bold heading"><font size="5">أسرار سعادتي الزوجية من حياتي الشخصية</font></span></font></div> <br />
+<font size="5"><u><font color="red"><span style="font-family: traditional arabic">ا لـ سـ عـ ا د ة</span></font></u><span style="font-family: traditional arabic"><font color="#000000"> ( السعادة ) .. ما أجملها من حروف تتكلم بها الزوجة الوفية</font></span></font><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وما أعظمها من كلمة ترهف لها الآذان السمعية .. وما أروعها من شعور يتمتع به الإنسان فيعيش الحياة , حياةً هنية .. نعم , إنها السعادة .. إنها الشعور الوجداني الذي يوقره الله في قلب عباده فيشعرون بحياتهم , إنها الراحة النفسية التي يبحث عنها كل إنسان من غنيٍ وفقير.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">إنها الإحساس الذي يبحث عنه كل البشر, حتى أثرياء العالم يبحثون عنها .. ولم يستطيعون شرائها بطائل الأموال مهما بلغت عدد الأصفار الأمامية..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">والأجمل عندما نربطها بالحياة الزوجية .. فكم يتنهد الإنسان خاصة الأزواج لحاجتهم لهذه المشاعر.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">أجل.. السعادة الزوجية .. التي يبحث عنها كل زوجين في هذه الحياة الدنيا .. لينعموا بحياة هادئة , خالية من المنغصات , والمشاكل , والهموم والأحزان.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">خاصة في هذا الزمن المليء بالفتن والملذات والشهوات , فكم من زوجة تبكي ليل نهار على ما فاتها من عمر دون ان تجد السعادة , وكم من زوج يشعر بالهم والحزن عند قرع وقت انتهاء العمل ليعود لبيته الذي تزاحمه المشاحنات والشجار..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وكم من زوج يفر هارباً من بيته إلى منتصف الليل حتى تنام زوجته لعله لا يسمع بما تمل منه أذنه من مشاكل ونكد وهم وغم.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">نعم .. فوالله أخواتي كثيراً من الأزواج يكرهون ان يعودوا لبيوتهم ويفضلون العمل 24 ساعة على أن يعودوا إلى بيوتهم..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وكله هذا يعود إلى زوجته .. لربما بعض الأخوات تقول لي .. كيف ذلك؟؟ فهناك أزواج يتقلبون في أفكارهم حتى يخلق لك مشكلة تنغص عليك حياتك..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">سأقولها وبكل قوة .. لا .. ليس هو السبب .. مهما كان الرجل فأنتي السبب يا أخية بعد توفيق الله لكِ.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فمفاتيح سعادتك وسعادة أسرتك من زوج وأبناء كلها بيدك أنتي .. نعم لا شك أنه يجب أن يكون هناك تعاون ومساعدة من قبل الزوج ليرتقوا إلى قمة السعادة. لكن أنتي الأساس.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فدعيني أختي الفاضلة أخاطب عقلك ووجدانك بما يرضي الله في سلوكك من أقوال وأفعال وتصرفات</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">في فن التعامل مع الزوج.. نعم فن .. فمهارة التعامل مع الزوج تحتاج لمهارة وإلى صبر ولين وحسن تدبير وتصرف .. أجل . السعادة الزوجية هي فن على الزوجة أن تتقن إبداعه حتى ترسم الابتسامة على وجه زوجها وأبنائها.</font></font></span><br />
+ <br />
+<u><font color="#00b050"><span style="font-family: pt bold heading"><font size="5">أولاً : الصــــــدق.</font></span></font></u><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">إن الزوج يحب أن تكون زوجته صادقة معه في كل شيء . فإياكي والكذب , حتى وإن وقعتي في مشكلة , فلا تبوحي له إلا الصدق .. حتى إن كانت عاقبة صدقك تسبب لك مشكلة فلا تهابي .. فإن كان الكذب ينجِّي فالصدق أنجى. فإن كذبت الزوجة على زوجها ولو مرة سيبقى يكذبها إلى أبد الدهر حتى إن صدقت معه بعد ذلك .. يبقى أثر كذبتها في عقله لن يمحيه الا أن يشاء الله .. فلا تكوني إلا صادقة معه بكل شيء.</font></font></span><br />
+ <br />
+<u><font color="#00b050"><span style="font-family: pt bold heading"><font size="5">ثانيا : الطاعة للزوج:</font></span></font></u><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فالرجل مهما كان يحب أن تطيعه زوجته في كل شيء .. إلا أن يطلب منك معصية - لا قدر الله - لقول رسول الله صلى الله عليه وسلم : لا طاعة لمخلوق في معصية الخالق&quot;</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فإن كان غير ذلك فأطيعيه.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">مثلا: قال لك لا تذهبي إلى فرح فلانة لما فيه منكرات وفي نفسك تراودك إلى الذهاب فأطيعيه لأنه يريد أن يردعك عن غضب الله مهما كانت نفسك تراودك للذهاب فطاعة الله أولا ثم طاعة زوجك.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">مثالا أخر : أنجبتي بنت وقلتي سأسميها كذا .. وهو يقول كذا</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لم لا تدعينه يختار الاسم .. فهي ابنته .. فلا تقفي له على كل شيء مثل ( ناقر ونقير ) هكذا يقولون في مجتمعنا.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">دعيه ياأختي يشعر بقوامته عليك في كل شيء .. فهو الرجل .. لا أنتي.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فو الله إن أكثر ما ينغص الأزواج هو كثرة مجادلة الزوجة بلا فائدة .. وغالبا ما تكون على باطل تريد أن تبين أن لها قوة شخصية وأنها وأنها ... إلخ.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">ويستمر الجدال إلى أمرين .. </font></font></span><br />
+<font size="5"><u><font color="#7030a0"><span style="font-family: traditional arabic">الأمر الأول :</span></font></u><span style="font-family: traditional arabic"><font color="#000000"> أن يغضب عليها ولربما فقد سيطرته وضربها وتذهب إلى بيت أهلها وتستمر المفاوضات حول رجوعها وشروط لها أول ما لها من آخر من قبل الأهل .. وتبدأ النخرة في السعادة تزداد شيئا فشيئا.</font></span></font><br />
+<font size="5"><u><font color="#7030a0"><span style="font-family: traditional arabic">والأمر الثاني :</span></font></u><span style="font-family: traditional arabic"><font color="#000000"> يترك لها البيت ويخرج يدور في الشارع لا يريد مقابلتها ولا رؤيتها أو يذهب لأحد أصدقائه هاربا .. ولربما ذهب الزوج لبعض المقاهي .. لينسى همه ( هذا بعض ما نراه في الواقع).</font></span></font><br />
+ <br />
+<u><font color="#00b050"><span style="font-family: pt bold heading"><font size="5">ثالثا: التواضع والزهد:</font></span></font></u><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فا الله الله في تواضعك وزهدك ياأختي .. الله الله في الترفع عن ملذات الحياة وشهواتها</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">الله الله في عدم كثرة طلباتك من زوجك ..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فهناك كثرا من الأخوات تضيق وتخنق زوجها بكثرة كلمة ( هات هات هات ) أو احضر لي كذا واحضر لي كذا ..أريد كذا.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وخاصة صاحبة الموضة فحدث ولا حرج .. اليوم موضة فستان بكم والآخر دون كم ، وغدا بنطال برِجل والآخر دون رجل ..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">اليوم شعرها أصفر .. غدا أحمر بعده أخضر ثم أزرق .. ومصاريف لاتعد ولا تحصى</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لربما تضحكين .. نعم والله هذا الواقع .. وأعرف واحدة توجب على نفسها أن تذهب إلى الكوافيرة كل شهر ، والله المستعان لتغير لون شعرها .. طبعاااااا.. كيف تريد أن تغيظ جارتها؟؟ .. وقريبتها .. وسلفتها - زوجة أخ الزوج - ؟؟ كيف؟؟؟</font></font></span><br />
+ <br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وهناك من يريد أن يجدد العفش كل فترة .. لماذا؟؟ أكل هذا طمع في الدنيا ! فما هو عند الله خير وأبقى .. اتركي يا أخية زينة الدنيا .. وما الدنيا إلا لهو ولعب وغرور.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">واعملي لآخرتك .. اعملي لليوم الذي سوف تتركين فيه قصرك وفيلتك .. وسيارتك .. وأدوات زينتك</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وتوضعي في حفرة من جدرانها من تراب وطين.</font></font></span><br />
+ <br />
+<u><font color="#00b050"><span style="font-family: pt bold heading"><font size="5">رابعا: الشكر والثناء على الزوج:</font></span></font></u><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">هناك كثيرا من النساء لم يسمع منها زوجها كلمة شكر .. لربما تتعجبين .. نعم ! فهناك عزة نفسها ، سبحان الله تمنعها من ذلك.. </font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لو أحضر لها زوجها هدية بسيطة زهيدة لا تمدحه ولربما ألقتها من خلفه إن لم يكن أمامه في سلة المهملات ..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فيا أخيتي .. كون زوجك قدم لك هدية حتى وإن كان قلما أو حتى مذكرة.. فلم لا تشكرينه . فما قدمها لك إلا لأنك في عقله وتفكيره .. فوجب عليك شكره.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">بالله عليك يا من تزوجتي .. كم مرة شكرتي زوجك على كلمة طيبة قالها لكِ ؟؟ كم مرة شكرتيه على انه قام بإصلاح صنبور المياه - مثلاً - .. أو قام بتصليح باب أو شباك؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">مهما فعل الرجل نقول هو الرجل يجب عليه .. وأنا معك في وجوب هذا الأمر عليه ..</font></font></span><br />
+<font size="5"><font color="#000000">و</font><span style="font-family: traditional arabic"><font color="#000000">لكن ألا يجب عليك أن تشكريه ؟؟</font></span></font><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">كم مرة أثنيتي عليه لأنه اختارك من بين مليارات البنات التي تتمنى أن يمن الله عليها بنعمة الزواج.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">كم وكم وكم .. ؟؟ اجلسي مع نفسك وعددي تلك المرات من بين تلك السنوات التي طالت..</font></font></span><br />
+ <br />
+<u><font color="#00b050"><span style="font-family: pt bold heading"><font size="5">خامسا: التعاون على طاعة الله وعبادته:</font></span></font></u><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">كم يشعر الرجل بمدى سعادته حين يرتبط بزوجة هي مثالٌ واضحٌ للزوجة الصالحة , التي تعينه على أمر هذه الدنيا .. التي زادت فيها الشهوات والفتن والملذات..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وكم من رجال يبحثون عن زوجة صالحة . ويمهرها بدمائه وروحه قبل المال .. المهم أن تعينه على تخطي أشواك هذه الدنيا ليفوز معها بالآخرة..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وكم من زوجة تتمثل وقت الخطوبة ( الفترة ما بين العقد والبناء ) بأنها عالمة في الدين</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">ثم بعد ذلك .. يبدأ الستار ينسدل عن ذلك الوجه الذي تلعثمت به..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فأتعجب من أمر .. وأنتي أجيبي بنفسك عليه ..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">طالما أنك تمثلين في هذه الفترة أنك صاحبة دين وأنك سوف وسوف وسوف تعملين وتفعلين لم لا تستمرين في ذلك لطالما أنك تعرفين أن هذا الشيء محبب لزوجك؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لم تنقلبين رأسا على عقب بعد أن يعقد عليكِ أو بعد البناء خاصة ؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لم لا تستمري فيما كنتِ عليه ولا تدعي الألوان التي في قلبك تظهر عليكِ وتغير من سماتك وصفاتك ؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لم لا ! عندما يكون زوجك نائما تقومين وتبللي يديك بماء ورد .. أو عطر .. أو حتى ماء باردا , وتمسحي يدك على وجهه بكل رفق .. وتقولي هيا بنا لننعم بطاعة الله ؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">هيا لنقوم الليل .. لم لا تدعو لزوجك في سجودك ؟؟ لم تجعلين دعائك في السجود في الأوقات التي تريدين فقط شيئاً من زوجك .. وتطيلي السجود - تقولين: يارب تجعل زوجي يوافق على أن يحضر لي كذا ، يارب .. يا رب - سبحان الله !</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">هذا ما يحصل وكثيرا من تنصح صديقتها .. ( أتريدي أن يقبل زوجك .. صلي ركعتين وادعي لله أن يقبل كذا)</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لم لا تدعين له دائما بالهداية والرزق والصلاح .... إلخ؟؟</font></font></span><br />
+ <br />
+<u><font color="#00b050"><span style="font-family: pt bold heading"><font size="5">سادسا : التعاون على طلب العلم:</font></span></font></u><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">أقولها لك .. في يوم أن يكون زوجك خارج البيت .. وقد أنهيتي عملك.. فلا تضيعي وقتك بما لا يجدي نفعا ..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">قومي بحفظ بعض الآيات .. أو سورة ما ..حسب قدرتك .. وحين يعود ويكون فارغا .. قولي له أريدك أن تسمِع لي ما حفظت ؟؟ فكم سيسعد زوجك بهذا؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لم لا تتناولون كتابا معينا .. أنتي تقرئين مثلا عليه .. وهو يوضح لك أو يشرح لك أو العكس.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لم لا تتناولون موضعا معين وكل منكما يبحث عن الفتاوي حول هذا الموضوع وتتناقشون فيه بدلا من ضياع الوقت في القيل والقال وسيرة فلانة وفلانة والغيبة والنميمة على الناس ، وطول الجلوس على التلفاز الذي لا يغني ولا يمن من جوع - وعدم وجوده في البيت أفضل لكي ولأبنائك - ؟؟</font></font></span><br />
+ <br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">إن كان زوجك طالب علم .. لم لا ترافقيه لطلب العلم. فهناك المساجد مقسومة إلى قسم رجال ونساء ؟؟ لربما يكون طلب العلم في البيت أفضل لكن إن كان عندك فراغ ولم يرزقك الله بالأولاد بعد وتخشين على ضياع وقتك ..فلم لا تذهبين لسماع الدروس .. ثم تخرجون لينتظرك هو عند باب المسجد والفرحة تغمر قلبه؟؟</font></font></span><br />
+ <br />
+<u><font color="#00b050"><span style="font-family: pt bold heading"><font size="5">سابعا: كيفية استقبال الزوج</font></span></font></u><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">طبعا لم تسنح لي هذه الفرصة .. لكن اسأل الله أن يجمعني بزوجي على خير.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فيا أختي استقبلي زوجك بالترحاب .. وبالابتسامة الخفيفة .. وبملابس جميلة ..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فكثيرا من النساء تنتظر زوجها حتى تقول له قيل وقال , قيل وقال :</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وفلانة أتت إلينا, وقالت وفعلت وعملت .. وأمك اتصلت وقالت وعملت وفعلت</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وابنك تشاجر مع ابن الجيران ووووووو... تصدعين رأسه من باب البيت قبل أن يدخل.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">بل إن كانت هناك مشكلة لا أقول لك أن تخفي عن زوجك ..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">بل تمهلي .. حتى يذهب عنه تعب العمل .. حتى يتذوق الطعام .. ويستريح ..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وإلى أن يكون مرتاحا فتقولي له بكل هدوء.. ولا يعني هذا أن تقولي له كل شيء ..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">بل هو ما لا يمكن أن تخفيه عليه .. من مشاكل الجيران مثلا ومشاكل النساء ومشاكل نساء الإخوة إلى آخره .. فحاولي أن تتحملي قدراً من المسؤولية لتحلي بعض مشاكلك بنفسك.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فهموم ومشاكل عمله فوق رأسه فلا تكثري عليه بحمل المسئوليات .. لأنك أنتي أيضا مسؤولة معه في كل شيء في بيتك.</font></font></span><br />
+<font size="5"><span style="font-family: traditional arabic"><font color="#000000">حتى دعيني أذكر لك موقف .. هناك إحدى الزوجات تقولي لي إن لم يريد أولادي أن يدرسوا أو حتى لا يريدون أن يطيعوني في أمر ما .. اتصل على والدهم يأتي من العمل ( هو يعمل ميكانيكي سيارات) ويأتي ليؤدبهم.. يعني أمر غريب .. أنتي جالسة في البيت ملكة؟؟؟ حتى زوجك تناديه يحل </font></span><span style="font-family: traditional arabic"><font color="#000000">لك مشاكل دراسة أبنائك؟؟</font></span></font><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وأنتي لماذا تجلسين في البيت؟؟ من أجل الميكياج والكوافيرة والصبغات والموضات؟؟ الله المستعان.</font></font></span><br />
+ <br />
+<u><font color="#00b050"><span style="font-family: pt bold heading"><font size="5">ثامنا: ترتيب البيت وإعداد الطعام:</font></span></font></u><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">أنا أحاول أن اسرد قصص واقعية لأقرب لكن الموضوع </font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">هناك من الزوجات .. في يوم إجازة زوجها .. سبحان الله يكثر الشغل والعمل في البيت كل أيام الأسبوع تكون عند الجارة .. أو الجارة عندها .. وفي تتبع الموضة وغيره .. وفي يوم إجازة زوجها كي تبين له أنها نشيطة وتتعب في البيت</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">تراكم العمل .. ليوم الخميس أو الجمعة .. من غسيل ، من طهي الطعام ، من ترتيب..... إلخ</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">طيب يا أختي يا من تفعلين هذا؟؟ باقي الأسبوع أين كنتي؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لم لا تنهي كل أعمالك قبل أجازة زوجك ؟؟ بدل من أن يسمع صوت الغسالة تدوي </font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وصوت الترتيب كأنه في معركة .. حتى يخرج ويقول لك بعد أن تنتهي اتصلي علي</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لم كل هذا .. لم لا تنظمين حياتك ؟؟ هو يعلم جيدا ما تقومي به من جهد في البيت</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فلا داعي في كل إجازة أن تعملي نفسك مرتبة ونظيفة ومجتهدة .. إن كان ذلك فهو عكس ما تريدين توضحيه تماما .</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لم لا تعدين الطعام مبكرا .. لم تنتظرين حتى يعود من العمل حتى تعدين الطعام</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لا ضير إن اعددتي الطعام وقمتي بتسخينه ووقت دخوله البيت</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وتقومين بتحضير المائدة مباشرة حتى يبدل ملابس عمله؟؟</font></font></span><br />
+ <br />
+<u><font color="#00b050"><span style="font-family: pt bold heading"><font size="5">تاسعا: عند حدوث أي شجار </font></span></font></u><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">طبعا لا تخلو حياة زوجية من أي سوء تفاهم .. ولن أصدق أي أخت تقول لي أنا بحياتي لم يحصل معي سوء تفاهم مع زوجي .. فهذا محال .. مهما بلغت السعادة الزوجية والتفاهم والاحترام , إلا انه لا شك انه يحدث بعض سوء التفاهم أحيانا بين الزوجين.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">طيب , في حين حدوث سوء تفاهم أو مشكلة أو شجار .. ماذا يتوجب عليك أن تعملي؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">طبعا أول شيء السكوت .. ولا أقصد بالسكوت اللامبالاة .. يعني تدعيه يصرخ وأنتي تضحكي وتوزعي ابتساماتك على جميع الجدران .. أو تلعبين بيديك أو شعرك .</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لا .. ليس هذا ما قصدته .. ولا أن تعطيه ظهرك أثناء كلامه مها كان .</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">بل استمعي له وأحسني الاستماع .. ولا تعطيه ظهرك .. ولا تجادليه أبدا .. حتى وإن سب أو شتم فلا تردي ، فهو ليس بعدو حتى تردي الصاع بصاعين ..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">قد تقولي لي أين كرامتي أين عزة نفسي كيف يسب ؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">يا أختي أقول لك .. طبعا هناك والله أزواج على خلق ودين .. لكن عند حدوث مشكلة قد تخرج منه كلمات قد يندم عليها بعد أن يفيق من المشكلة .. لكن وقت الغضب لا يستطيع أحد أن يتمالك نفسه.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">ثم إن مشكلة الكرامة وعزة النفس هذه أهم عوامل حدوث المشاكل الزوجية بل قد تحول إلى الطلاق والفراق..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">ياأختي .. لما صدر مثلا من زوجك كلمة في وقت غضب .. وقد رددتي عليه بحدة وعصبية فهل تكوني بهذا صنتي كرامتك وعزة نفسك؟؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">بل هذا والله كل الذل والإهانة ؟؟ فالمقارنة بينك وبين الرجل - وإن كان زوجك - مع الفارق !!</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">أنتي لم تسكتي على سب أو شتم أو حتى إن ضرب .. لم تسكتي لغريب</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">بل هو زوجك والله .. سترك وغطاكِ يحميكي بعد الله من تلفظ أي إنسان عليكِ؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">أي كرامة التي تتحدثين عنها عندما تنهي المشاكل بأسلوب قد يزيد من احترام زوجك لكي بعد أن يهدأ ؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">أما لو زدتي المشكلة سوءً و ذهبتي مثلا إلى بيت اهلك تكوني بهذا عندك كرامة؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لا يا أختي .. ليس هذا .. وخطئ من قال لك عندما يكون الحق لك لا تتنازلي .. دعيه يتعلم .. دعيه ..يتربى .. علميه الأدب .. والله هذا ما يحدث في مجتمعاتنا بشكل عام.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">أي أدب وأي تربية التي تتحدثين عنها ؟؟؟ أنتي أيتها المرأة ستربي رجل ؟؟؟ غريب عجيب أمر نساء هذه الدنيا ، هذا جهل وظلم.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فيا امة الله .. عند حدوث مشاكل استعيذي بالله من الشيطان الرجيم .. ولا تدعي الشيطان يخرب عليكِ بيتك بسبب كلمة كرامة وعزة..؟؟ نعم لا شك أن يكون هناك احترام متبادل وتفاهم لكن وقت الغضب أختي يجب أن تعلمي أن العقل يغيب .. ولا تفكير .. فاعذريه.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وإن ترك البيت مثلا أو غضب .. بعد قليل أرسلي له رسالة .. مثلا (( البيت لايطاق بدونك(( .. ((يازوجي سامحني)) .. ((يازوجي لا تهنأ لي حياة بغضبك علي))</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">أو ((ارض عني)) .. ((رضي الله عنك)) وهكذا ..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">إن قلب الرجل دائما أقولها .. كقلب الطفل - مع احترامي لجميع الرجال - فهو يحتاج لأم بعد أن فارقها في بيت أهله .. فكوني أنتي مثل الأم التي ترعى طفلها . نعم .. مثل الطفل أقل كلمة ترضيه وأقل كلمة تغضبه .. الرجل لا يحتاج منك سوى الكلام الطيب سوى أن تشعريه بمدى احترامك وتقديرك وتوقيرك له .. لا يريد منك سوى هذا يحتاج لحبك وحنانك .. ورعايتك فعامليه كقلب طفل تماما ..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">ولا تستمعي لمن يقل لك عكس ذلك .. فأنتي أدرى بزوجك من أي إنسان.</font></font></span><br />
+ <br />
+<u><font color="#00b050"><span style="font-family: pt bold heading"><font size="5">عاشرا: أن كان زوجك معددا :</font></span></font></u><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فلا تجعلي من الغيرة باباً لهدم بيتك وبيوت زوجاته الأخريات .. بل هو تزوجهن مثل ما تزوجك أنت ، فلم تكن العلاقة محرمة - والعياذ بالله - فلهن مثل ما لك تماما .. من مصاريف وبيت وأعمال وغير ذلك.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فكثيرا من النساء - وهذا يحدث كثيرا - .. لو كان زوجها معددا .. تأتي لخبيرات هدم البيوت الزوجية .. وينصحنها : ((كرهيه فيها)) ... ((اقهريها)) .. ((عانديها)) .. ((اعملي كذا)) .. حتى يطلقها وتنفردي فيه أنتي؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">والله هذا ما يحصل فعلا وسمعتها بأذني التي سوف يأكلها الدود..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لم هذا؟؟ والله حرام ما تفعلنه يا معشر النساء .. تدورون خلف دمار بيت زوجة هانئة في بيتها. لماذا؟؟ أتحبين أن يُفعل هذا بك ؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">والمصيبة الكبرى .. منهن من تناصح وتقول .. اكسريه بالمصاريف حتى لا يستطيع فتح بيتين فيضطر إلى طلاقها ... لم لا تحسبين انك ممكن أنتي من تطلقين؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">أين تمسكك بقول رسول الله صلى الله عليه وسلم: &quot;لا يؤمن أحدكم حتى يحب لأخيه ما يحبه لنفسه&quot; رواه البخاري ومسلم.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وهناك من الأخوات من لم يكن زوجها عندها لا تسأل عنه إطلاقا لطالما كان في بيت إحدى زوجاته الأخريات ولا كان لها زوج.. لماذا؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">أهل هو زوجك فقط بين جدران بيتك؟؟ وعندما يخرج لزوجاته ليس بزوجك؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لمَ لا تتصلين به عندما يكون ليس عندك اليوم مثلا .. يا أبا فلان اهتم بنفسك .. ياأبا فلان كل جيدا يا أبافلان ارضى عنى مثلا.. لماذا يا أختي ؟؟</font></font></span><br />
+ <br />
+<font size="5"><u><font color="#00b050"><span style="font-family: pt bold heading">الحادي عشر : تربية الأبناء :</span></font></u> </font><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">كثيرا من النساء من تشتكي عدم مبالاة زوجها بتربية أبنائها .. والله أمر غريب .. وأنا أصف وبكل قوة هذه الزوجة أو هذه الأخت بأنها غبية مع احترامي للجميع طبعا</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فعلا غباء .. يعني زوجك طوال اليوم خارج البيت يعاني من عناء العمل ومشقة الأوامر من الرؤساء وكثرة الزبائن.. وأنتي في البيت ( فقط أعمال البيت) وتريدين بعد أن يعود للبيت مساء أن يربي؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">يربى ماذا ؟؟ هناك بعض الرجال من شدة التعب لا يطول العشاء .. ويرتمي على الفراش كأنه كان في معركة .. </font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فأين دورك؟؟ أنتي في البيت وكل التربية عليكِ ؟؟ لا تستمعي لمن يقول لك دعيه يأتي لك بخادمة أنتي عند بيت اهلك ماشاء الله كان الخدم والحشم في بيتك؟؟؟ غريب والله</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لم لا تربين أولادك على الصلاح والتربية والتنظيم والترتيب .. وتجعلي زوجك يهنأ ويسعد بعد عناء العمل برؤية أبنائه بأبهى طلة وأحلى شكل وأعظم خلق وتربية..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">كيف يربي يا من تدعي ذلك .. وهو لا يجد وقتا حتى ليرى أولاده من طول عناء العمل؟؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">متى يربيهم في منتصف الليل؟؟ الناس نيام وهو يصرخ اعمل كذا وافعل كذا؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لا حول ولا قوة إلا بالله العلي العظيم على نساء من مثل هذا الحال ... الله يهديهن.</font></font></span><br />
+ <br />
+<u><font color="#00b050"><span style="font-family: pt bold heading"><font size="5">الثاني عشر : إفشاء أسرار البيت</font></span></font></u><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">عند حدوث أول مشكلة بين الزوج وزوجته تجدين كل الأمة علمت بهذه المشكلة .. طبعا , ألسنا بعصر تكنولوجيا المعلومات والتقنيات ؟؟ وسائل الاتصال تعددت</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">رنة تليفون على فلان وفلانة وكل الدنيا تعلم بالقضية وتصبح أكبر من قضية فلسطين وتحتاج لحل ومفاوضات وقمم..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">نعم هذا ما يحدث في الواقع .. لماذا؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لماذا تدخلين أهلك في المشكلة وإخوانك وأعمامك وكأن هناك مجزرة في البيت؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لم لا تحلين مشاكلك بنفسك وتكسرين المشاكل .. ولا تقولي عزة وكرامة </font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">والله ما تدخل أهل في مشكلة بين الزوجين إلا وقد كبرت ما تقلصت ..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فالأفضل الستر على مثل هذه المشاكل .. حتى إن جاء اهلك بوقت صدفة أثناء مشاكلك.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لا تظهري ذلك أبدا بالبكاء والدعاء والنحيب وكأنه قاطع لرأسك</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">بل تجاهلي المشكلة أمام الناس .. واضحكي وابتسمي وكأنه لا يوجد شيء.. واقضي مشكلتك بنفسك بينك وبين زوجك.. لم الطرف الثالث في المشكلة؟؟</font></font></span><br />
+ <br />
+<u><font color="#00b050"><span style="font-family: pt bold heading"><font size="5">الثالث عشر : النميمة</font></span></font></u><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">هناك الكثير من النساء ينشرح صدرها في القيل والقال .. وهي وظيفتها في الدنيا</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وخاصة إذا كان زوجها المصون معددا .. فمثلا يكون قد تمشكل أو حدث سوء تفاهم مع زوجة غيرها .. فيأتي لها ويبوح لها ويفضفض على أساس أن عندها الراحة إن شاء الله .. وما أن يخرج الزوج للصلاة ... (( ورررررر صاروخ)) على التليفون</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">قال يا فلانة صار كذا كذا ؟؟ والله الراجل قال لي كذا وكذا .. وتعمل الزوجة هذه نفسها خبيرة نفسية .. وتعطي نصائح .. والزوجة الأخرى تتمزق قهرا وغضبا</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فما أن يصل الزوج لبيت زوجته الأخرى تبدأ المشاحنات التي لها أول ما لها من آخر؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">يعني يا أخت الرجل قال لك ورأى في نفسه أنك ثقة .. تذهبين لفلانة وفلانة هل وهل هل .. استمعي وانصتي لزوجك وخففي عنه .. ولا دخل لك بما حدث</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">حتى إن أخبرتك زوجته الأخرى . تمثلي بأنك لا تعرفين شيئا .. هذا هو الصح.</font></font></span><br />
+ <br />
+ <br />
+ <br />
+<u><font color="#00b050"><span style="font-family: pt bold heading"><font size="4">ال<font size="5">رابع عشر : أخذ الرخصة في النوافل:</font></font></span></font></u><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فقدرك الله يا أختي على عمل الخير والطاعات والعبادات والتقرب إلى الله أكثر وأكثر حتى تلقينه على دينك</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فإن شاء الله عندما تنوين صيام نافلة مثلا يوم اثنين أو خميس .... إلخ .. فعليك أن تأخذي الإذن منه</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">والرخصة .. فمثلا عندما تنوين الصيام لنفالة أخبريه بذلك قبل بيوم من الصيام بكلمات لطيفة هادئة</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">(( يا زوجي العزيز غدا إن شاء الله أحب أن أصوم .. فهل تمانعني ))</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فإن قال نعم : فقد حصلتي على الأجرين إن شاء الله .. أجر طاعة الزوج وأجر الصيام.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">ولكن ماذا لو قال لك لا؟؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">هل تعانديه؟؟ هل تجادليه؟؟ هل وهل وهل؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">الجواب : لا , بالطبع .. لا جدال ’ لا مناقشة .. لأنك بذلك أيضا إن شاء الله تحصلين على أجرين .. اجر طاعة الزوج .. وأجر النية والله أعلم.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فيا حبيبة الرحمن .. إن طاعة الزوج واجبة والنوافل سنة مستحبة .. فكيف تقدمين المستحب على الواجب؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لذلك . وجب عليك طاعته في كل أمر ..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">حتى في خروجك .. لا تخرجي من البيت إلا بإذنه .. ويا حبذا لو كان معك يرافقك فذلك أفضل</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">بمعنى: قال لك زوجك اليوم لا تخرجي إلى بيت أهلك .. خلاص انتهى الأمر .. لا تخرجي يعني لا تخرجي .. لم الجدال والعناد؟؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وهكذا في شتى أمور حياتك اليومية .. وفقك الله.</font></font></span><br />
+<u><font color="#00b050"><span style="font-family: pt bold heading"><font size="5">الخامس عشر: محبة والديه وأقاربه:</font></span></font></u><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">إن الزوج يهنأ ويسعد بمدى احترام زوجته لأهله , ومدى تقديرها لوالديه وخدمتهم</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فماذا ستنقصين لو قمتي على خدمة أهله.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">ماذا لو طهوتي طعاما .. وتذكرتي أهله بطبق ؟؟ </font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">ماذا يحدث لو أنك دعوتي أهله لتناول الغداء.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">ماذا لو قمتي بعمل نوعا من الكعك أو الحلويات وقدمتي لأهله بعضا منها</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">خاصة إاذا كانت والدته عجوز لا تستطع على فعل ذلك.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">ماذا لو استيقظتي مبكرا , قمتي بترتيب منزلك , بطهي الطعام ,, غسيل وغيره من أعمال البيت .. وذهبتي لأهله ( طبعا بعد إذن زوجك كما اتفقنا في البند السابق ) لتنظفي بيتهم</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">والله يا أختي لن ينقص ذلك من وزنك شيئا ..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">هناك أخت أذكر أنها قالت لي عندها مشكلة مع أهل زوجها .. أنها مهما قدمت لا تُشكر</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">ولا يشعرونها بحبها ..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لربما في نوع من الناس هكذا .. لكن , ما العمل في مثل هذا الأمر؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">أنصتي إليّ جيدا : الصبر الصبر الصبر ... اليوم لن يقولوا شيئا .. غدا ستثيرين انتباههم لمعاملتك .. بعد غد الاهتمام ثم الشكر ثم .. ثم .. إلى أن تصبحين مقربة لوالديه أكثر من ابنتهم .</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">كل شيء في بدايته يكون غريبا صعبا .. لكن بالصبر تحصلين على كل شيء .</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لا تتوقفي عن فعل الخير لأهله أبدا .. وتذكري إن لم تنالي ثوابك في الدنيا , فهو لك في الآخرة .. والمؤمن لا يبالي بأمر الدنيا قدر ما يهتم بالآخرة ونحن متفقات على ذلك.</font></font></span><br />
+ <br />
+<u><font color="#00b050"><span style="font-family: pt bold heading"><font size="5">السادس عشر: مجاملة أهله وذويه والمقربين له:</font></span></font></u><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">نعم .. فهذا شأن ديننا أصلا .. أن نجامل إخواننا المسلمين في أفراحهم وأحزانهم</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فمثلا : والدته لا قدر الله مرضت .. تقومين بزيارتها .. تخدمينها بعينيك , تقدمي لها هدية</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">تحاولي التخفيف عنها .</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">أخته أنجبت : ماذا لو قمتي بزيارة بيت اخته وقدمتي لها المساعدة من طهي طعام وترتيب وقدمتي لها هدية وهنأتيها بمولودها.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">هناك زوجات تقول ( قدر ما أعطيهم وأقدم لهم لآ يجدي نفعا )</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">طيب أيتها المسلمة .. أنتي تقدمي كل هذا من أجل ان يرد إليك؟؟ أم من أجل رضى الله؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">ومن أجل أن تدخري رصيدا للآخرة؟؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">كذلك نفس الشيء .. لو قال زوجك لك .. أدخلي بيتي فلان وفلان</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">ولكن لا تدخلي بيتي فلان وفلان .. وجب عليك الطااااااااااعة  .</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فتقربي ممن زوجك يحبهم وجامليهم في أفراحهم وواسيهم في أحزانهم .</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">بهذا تنالين رضا الله ثم كسب قلب زوجك ثم محبة الناس إليك.</font></font></span><br />
+ <br />
+<u><font color="#00b050"><span style="font-family: pt bold heading"><font size="5">السابع عشر : مناداة الزوج بأحب الأسماء:</font></span></font></u><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">إن كل رجل يختلف عن الآخر في مناداة الزوجة له .. فمنهم من يحب أن تناديه باسمه</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">منهم من يحب أن تناديه ببعض كلمات الغزل .. منهم من يحب أن تناديه بكنيته وهكذا</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لكن هناك بعض الأمور لا بد من مراعاتها:</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">إن كان زوجك ممن يحب أن تناديه باسمه .. فهذا يكون بينك وبينه</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لا أن يكون أهله عنده وتناديه باسمه .. فحاولي دائما أختي ان تعلي من قدر زوجك أمام الناس ووراء الناس أيضا.</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">فأمام الناس لا تناديه لا بغزل ولا باسمه .. بل قولي له يا أبا فلان .. فهو يستشعر امام الناس بكنيته لمدى توقيرك واحترامك له.</font></font></span><br />
+ <br />
+<u><font color="#00b050"><span style="font-family: pt bold heading"><font size="5">الثامن عشر : تعرفي على خريطة عقله وقلبه:</font></span></font></u><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">لم في فترة الخطوبة ( أي ما بين العقد والبناء ) تحاولي أن تتعرفي على خريطة عقله وقلبه</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">مثلا ماذا يحب من الطعام ؟ ماذا يكره من الطعام ؟ ماذا عن الشراب؟</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">ماذا يحب من ألوان ؟؟ ماذا يحب وماذا وماذا .. كل التفاصيل .</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">ماذا يحب في صفات المرأة وأخلاقها .. ماذا يكره أن يجد في المرأة من صفات وهكذا</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وهو نفس الشيء صارحيه بكل شيء مما تحبينه فيه ومما تكرهين ولكن بطريقة أدبية ولبقة.</font></font></span><br />
+ <br />
+ <br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">وأخيرا .. هناك كثيرا من النصائح لكني تعبت من الكتابة حاليا .. والوقت متأخرا جدا ..فأتمنى من الله العلي القدير أن يكون هذا الموضوع ينال إعجاب الجميع .. واهم من هذا أن تستفيد منه الأخوات سواء متزوجات أو غير متزوجات .. وان تنقل هذه الحقائق إلى المتزوجات لعل الله يسعد بها أسر مرهقة من الهموم ..</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">واسأل الله عزوجل أن أكون قد وفقت في هذا الموضوع .. وان يكون خالصا لوجهه تعالى بعيدا عن الرياء والشبهات .. وإن كانت هناك أي ملاحظة من الأخوات أن يبدين بها بكل سعة صدر رحب إن شاء الله .. وأنا أتقبل أي نقد لهذا الموضوع إن شاء الله ..وبارك الله فين ووفقكن الله في الدنيا والآخرة وأسعدكن الله مع أزواجكن ورزقكن الذرية الصالحة .</font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#000000">والسلام عليكم ورحمة الله وبركاته</font></font></span> 
+			
+		</div>
+	</div>
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_383492" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_383492" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=383492" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_383492" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_383596">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-07-04,&nbsp;<span class="time">12:48 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post383596" href="showthread.php?t=60787&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=383596#post383596" class="postcounter">#2</a><a id="postcount383596" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=10450&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="مروة عاشور غير متواجد حالياً"><strong>مروة عاشور</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=10450&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=10450&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="مروة عاشور غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						مشرفة سابقة
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Sep 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>2,172</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أتريدين إسعاد زوجك ؟ هذا هو السر...
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_383596">
+				<blockquote class="postcontent restore">
+					وعليكم السلام ورحمة الله وبركاته,<br />
+ <br />
+حياك الله أختنا م أمامة وحيا الله أهل ليبيا الكرام<br />
+القدر الذي قرأته ماتع ونافع بإذن الله, فشكر الله لك نقلك وأثابك خيرًا<br />
+ <br />
+لكن مجرد نصيحة..<br />
+ <br />
+عند نقل موضوع طويل يحسن أن يُجزأ على فقرات أو حلقات لتسهل متابعته, ولإثارة عنصر التشويق لدى الأخوات<br />
+ولي عودة لإكمال قرائته -بإذن الله.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><font size="5">أرجو من أخواتي الفاضلات قبول عذري عن استقبال الاستشارات على الخاص.<br />
+ونرحب بكن في قسم الاستشارات على شبكة ( الألوكة )<br />
+انسخي الرابط:<br />
+</font>http://www.alukah.net/Fatawa_Counsels/Counsels/PostQuestion.aspx</div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_383596" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_383596" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=383596" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_383596" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_383688">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-07-04,&nbsp;<span class="time">04:36 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post383688" href="showthread.php?t=60787&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=383688#post383688" class="postcounter">#3</a><a id="postcount383688" name="3"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=62453&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="أم أمامة الليبية غير متواجد حالياً"><strong>أم أمامة الليبية</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=62453&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=62453&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أم أمامة الليبية غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>52</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أتريدين إسعاد زوجك ؟ هذا هو السر...
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_383688">
+				<blockquote class="postcontent restore">
+					جزاكِ الله خيرا وأسأل الله لك التوفيق والسداد أخية.<br />
+ <br />
+ولي قول فيمَ ذكرتِ أخيرا ..<br />
+من كان لها حب المطالعة والعلم والتعلم فهي تتلذذ وتستزيد بالمفيد النافع من المواضيع دون أن تشعر بمرور الوقت! بلغت ما بلغت تلك المواضيع من حديث طويل .فهنيئا لمن وهبه الله هذه الصفة.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_383688" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_383688" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=383688" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_383688" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_383711">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-07-04,&nbsp;<span class="time">05:55 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post383711" href="showthread.php?t=60787&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=383711#post383711" class="postcounter">#4</a><a id="postcount383711" name="4"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=10450&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="مروة عاشور غير متواجد حالياً"><strong>مروة عاشور</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=10450&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=10450&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="مروة عاشور غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						مشرفة سابقة
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Sep 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>2,172</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أتريدين إسعاد زوجك ؟ هذا هو السر...
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_383711">
+				<blockquote class="postcontent restore">
+					نعم أختي الفاضلة<br />
+لكن قد يكون لبعض الأخوات ما ذكرت من حب التعلم والحرص عليه, ويحول ضيق الوقت دون تحصيلها الفائدة فيفوتها أجر التحصيل, هذه التي أعني.. وأكرر شكري لك سائلة المولى أن يضاعف لك الأجر.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><font size="5">أرجو من أخواتي الفاضلات قبول عذري عن استقبال الاستشارات على الخاص.<br />
+ونرحب بكن في قسم الاستشارات على شبكة ( الألوكة )<br />
+انسخي الرابط:<br />
+</font>http://www.alukah.net/Fatawa_Counsels/Counsels/PostQuestion.aspx</div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_383711" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_383711" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=383711" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_383711" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_384208">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-07-06,&nbsp;<span class="time">01:18 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post384208" href="showthread.php?t=60787&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=384208#post384208" class="postcounter">#5</a><a id="postcount384208" name="5"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=62119&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="الحضرمية غير متواجد حالياً"><strong>الحضرمية</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=62119&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=62119&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="الحضرمية غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jun 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>127</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أتريدين إسعاد زوجك ؟ هذا هو السر...
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_384208">
+				<blockquote class="postcontent restore">
+					حياك الله ياأم أمامة الليبية  وجزاك الله خيرا على الموضوع <br />
+الزوجة  لن تكون سعيدة الا من موفقها الله للسعاد ة مهما عملت من اسباب لتسعد
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_384208" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_384208" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=384208" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_384208" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_390784">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-07-24,&nbsp;<span class="time">01:25 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post390784" href="showthread.php?t=60787&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=390784#post390784" class="postcounter">#6</a><a id="postcount390784" name="6"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=34464&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="فتاة التوحيد والعقيده غير متواجد حالياً"><strong>فتاة التوحيد والعقيده</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=34464&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=34464&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		<li class="left">
+			<a href="http://www.tvquran.com/" class="siteicon_homepage">
+				زيارة الصفحة الرئيسية
+			</a>
+		</li>
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="فتاة التوحيد والعقيده غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Mar 2009</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>1,257</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أتريدين إسعاد زوجك ؟ هذا هو السر...
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_390784">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"> <br />
+<span style="font-family: comic sans ms"><font size="6"><font color="indigo">بارك الله فيما<font color="plum"> نقلتي</font> وجزاها الله خيرا أختنا<font color="plum"> الكاتبة</font></font></font></span><br />
+<span style="font-family: comic sans ms"><font size="6"><font color="indigo"><font color="red">نقاط مهمة جدا</font> </font></font></span><br />
+<span style="font-family: comic sans ms"><font size="6"><font color="indigo">وفعلا يجب قبل أن تقدم الفتاة على الزواج لابد أن تستفيد من مثل هذه المواضيع</font></font></span><br />
+<span style="font-family: comic sans ms"><font size="6"><font color="indigo">وفعلا أختي <font color="plum">أم أمامة الليبية</font></font></font></span><br />
+<span style="font-family: comic sans ms"><font size="6"><font color="indigo">أنا أوافقك جدا ..</font></font></span><br />
+<span style="font-family: comic sans ms"><font size="6"><font color="indigo">ولكن يختلف الناس والأجناس </font></font></span><br />
+<span style="font-family: comic sans ms"><font size="6"><font color="indigo">مثلا أقرب مثال <font color="plum">أم امامة الليبية</font> وأختي <font color="plum">التوحيد</font></font></font></span><br />
+<span style="font-family: comic sans ms"><font size="6"><font color="indigo">كلاكما لكم ميزة أثناء القراءة</font></font></span><br />
+ <br />
+<span style="font-family: comic sans ms"><font size="6"><font color="#4b0082"><img src="images/smilies/smile.png" border="0" alt="" title="Smile" class="inlineimg" /></font></font></span></div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none">]قال رسول الله صلي الله عليه وسلم &quot;لأن يطعن في رأس أحدكم بمخيط من حديد خير له من أن يمس امرأة لا تحل له&quot;<br />
+<br />
+قلبي مملكه وربي يملكه&gt;&gt;سابقا</div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_390784" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_390784" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=390784" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_390784" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_390819">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-07-24,&nbsp;<span class="time">07:23 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post390819" href="showthread.php?t=60787&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=390819#post390819" class="postcounter">#7</a><a id="postcount390819" name="7"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=63382&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="صفيه غير متواجد حالياً"><strong>صفيه</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=63382&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=63382&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="صفيه غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>62</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أتريدين إسعاد زوجك ؟ هذا هو السر...
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_390819">
+				<blockquote class="postcontent restore">
+					بارك الله فيك ام امامه ......تنزيل اكثر من رائع جزاك الله جنة وسرورا
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_390819" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_390819" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=390819" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_390819" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_396445">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2010-08-10,&nbsp;<span class="time">02:22 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post396445" href="showthread.php?t=60787&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=396445#post396445" class="postcounter">#8</a><a id="postcount396445" name="8"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=62453&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="أم أمامة الليبية غير متواجد حالياً"><strong>أم أمامة الليبية</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=62453&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=62453&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="أم أمامة الليبية غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jul 2010</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>52</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أتريدين إسعاد زوجك ؟ هذا هو السر...
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_396445">
+				<blockquote class="postcontent restore">
+					أسعدتني جدا ردودكن يا أخوات ، وأسأل الله أن يبارك فيكن وينفع بكن .
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_396445" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_396445" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=396445" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_396445" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_619181">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2012-10-11,&nbsp;<span class="time">06:30 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post619181" href="showthread.php?t=60787&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=619181#post619181" class="postcounter">#9</a><a id="postcount619181" name="9"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=10450&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="مروة عاشور غير متواجد حالياً"><strong>مروة عاشور</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=10450&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=10450&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="مروة عاشور غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						مشرفة سابقة
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Sep 2007</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>2,172</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: أتريدين إسعاد زوجك ؟ هذا هو السر...
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_619181">
+				<blockquote class="postcontent restore">
+					للرفع, رفع الله قدر كاتبته وناقلته.
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><font size="5">أرجو من أخواتي الفاضلات قبول عذري عن استقبال الاستشارات على الخاص.<br />
+ونرحب بكن في قسم الاستشارات على شبكة ( الألوكة )<br />
+انسخي الرابط:<br />
+</font>http://www.alukah.net/Fatawa_Counsels/Counsels/PostQuestion.aspx</div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_619181" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_619181" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=619181" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_619181" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=60787&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="popupctrl"><span class="ctrlcontainer">استراحة طالبات العلم</span></a>
+		<a href="showthread.php?t=60787#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">لوحة التحكم</a></li>
+		<li><a href="private.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الاشتراكات</a></li>
+		<li><a href="online.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=31710&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">شتان ما بين الثرى والثريا</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=105703&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">غفوة أم غفلــــــة ..</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A3%D8%AA%D8%B1%D9%8A%D8%AF%D9%8A%D9%86">أتريدين</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A5%D8%B3%D8%B9%D8%A7%D8%AF">إسعاد</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A7%D9%84%D8%B3%D8%B1">السر</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%B2%D9%88%D8%AC%D9%83">زوجك</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D9%87%D8%B0%D8%A7">هذا</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D9%87%D9%88">هو</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=60787#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=60787#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">01:54 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

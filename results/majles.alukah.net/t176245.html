@@ -1,0 +1,1563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=ec1b4717d08f17a417a70c4e8f25f7a8&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=176245";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس اللغة العربية وعلومها - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=10" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="العربيّة, الكتابة, الواقع, باللغة, بَين, وَالطمُوح" />
+	<meta name="description" content="الكتابة باللغة العربيّة بَين الواقع وَالطمُوح  
+             سَمر روحي الفيصَل  
+ 
+     
+                                   
+                                                           الكتابة  كلمة غامضة جداً لتعدد معانيها  واتساع دلالتها. والمشكلة التي نعاني منها  هي أن هذه الكلمة مألوفة، كثيرة الدوران  على الألسنة والأقلام، حتى أن  القارئ يكاد يظن أنه يعرف دلالتها حق المعرفة، فإذا  تصدى لتعريفها اكتشف  أنها من السهل الممتنع. ولا أدعي أنني في هذه الدراسة قادر على  الإحاطة  بمعاني هذه الكلمة" />
+
+	<title> الكتابة باللغة العربيّة بَين الواقع وَالطمُوح</title>
+	<link rel="canonical" href="showthread.php?t=176245&s=ec1b4717d08f17a417a70c4e8f25f7a8" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=10&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس اللغة العربية وعلومها</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> الكتابة باللغة العربيّة بَين الواقع وَالطمُوح</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 2 من 2
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=176245&s=ec1b4717d08f17a417a70c4e8f25f7a8" title="تحديث الصفحة">الكتابة باللغة العربيّة بَين الواقع وَالطمُوح</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=176245" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;t=176245&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=addsubscription&amp;t=176245" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;search_type=1&amp;searchthreadid=176245&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="ec1b4717d08f17a417a70c4e8f25f7a8" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="176245" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_913774">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-07-27,&nbsp;<span class="time">01:52 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post913774" href="showthread.php?t=176245&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=913774#post913774" class="postcounter">#1</a><a id="postcount913774" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,745</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> الكتابة باللغة العربيّة بَين الواقع وَالطمُوح
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_913774">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><font size="6"><font color="red">الكتابة باللغة العربيّة بَين الواقع وَالطمُوح <br />
+</font></font>      <font size="6"><font color="red">       سَمر روحي الفيصَل </font></font><br />
+<br />
+    </font></span></div>                                  <br />
+                                               <span style="font-family: traditional arabic"><font size="5">            <b>الكتابة  كلمة غامضة جداً لتعدد معانيها  واتساع دلالتها. والمشكلة التي نعاني منها  هي أن هذه الكلمة مألوفة، كثيرة الدوران  على الألسنة والأقلام، حتى أن  القارئ يكاد يظن أنه يعرف دلالتها حق المعرفة، فإذا  تصدى لتعريفها اكتشف  أنها من السهل الممتنع. ولا أدعي أنني في هذه الدراسة قادر على  الإحاطة  بمعاني هذه الكلمة ودلالاتها، وإنما أدعي أنني سأحول ذلك لأخلص إلى الهدف   الرئيس من الدراسة، وهو تحليل واقع الكتابة باللغة العربية وبيان ما نطمح  إليه في  أمرها. وأزعم، هنا، أن القضية تجاوز الناحية المنهجية التي تقتضي  تحديد المصطلحات  قبل الشروع في الدراسة إلى تلك التجربة التاريخية  المرتبطة في التراث العربي بقضية  &quot;الكتابة&quot;.‏ </b><br />
+  <font color="#008080"><b>أولاً ـ كلمة &quot;الكتابة&quot; ودلالاتها:‏ </b></font><br />
+  <b>بين معجمات اللغة العربية اتفاق على أن  &quot;الكتابة&quot; مصدر من مصادر  الفعل &quot;كتب&quot;، بمعنى &quot;خط&quot;(1). تقول هذه المعجمات: كتب  الكتاب: خطه، فهو:  كاتب، ج: كَتَبَة وكتّاب. واكتتب الكتاب لنفسه: انتسخه. وهو  يُكتِّب  الناس: يعلمهم الكتابة. ولا تخرج المعجمات اللغوية القديمة عما سبق في   تحديد الدلالة اللغوية للكتابة وهو ـ في التعبير اللغوي الحديث ـ نقل أصوات  اللغة  المنطوقة إلى حروف وكلمات مكتوبة، أو كما قال الكفوي في الكليات ـ  &quot;جمع الحروف  المنظومة وتأليفها بالقلم. ومنه الكتاب لجمعه أبوابه وفصوله  ومسائله&quot;(2). ولكن  الكفوي يضيف أن الكتابة &quot;قد تطلق على الإملاء، وقد تطلق  على الإنشاء&quot;، أي أنه نص  على أن هذا المصدر (الكتابة) استعمل بمعنى اسم  (المفعول) المكتوب، لكنه حمل  دلالتين: دلالة الإملاء والخط، ودلالة  الإنشاء. وقد أفادت المعجمات اللغوية الحديثة  ومعجمات المصطلحات من هاتين  الدلالتين، وسعت إلى تحديد معنى &quot;الكتابة&quot; فزادته  إشكالاً واتساعاً. إذ  نصت على أن &quot;الكتابة&quot; صناعة الكاتب(3)، والكاتب: مَنْ يتعاطى  صناعة  النثر(4)، أو هو الماهر في الإنشاء، ومَنْ حرفته الكتابة(5).‏ </b> <br />
+  <b>من الواضح أن المعجمات اللغوية العربية  القديمة والحديثة لم تخطئ حين  حددت &quot;الكتابة&quot; بالإملاء والخط. فهذا هو المعنى  اللغوي للكلمة، وهو الأصل  فيها. كما أنه المعنى المراد من الكلمة حين تستعمل في حقل  التربية. أما  المعنى الثاني، وهو الإنشاء أو صناعة الكتابة، فهو في رأيي المعنى  المجازي  الذي اكتسبته الكلمة في أثناء تطورها التاريخي. وقد سعت معجمات المصطلحات   إلى مقاربة هذا المعنى، فنصت على الكتابة الإنشائية وطريقتها(6)، وعلى  تفصيلات أخرى  تنحو بالكلمة المجازية نحو الكتابة الأدبية والصحفية وتأليف  البحوث. بيد أن هذه  المعجمات لم تصل إلى مستوى تعريف هذا المعنى المجازي  بكلمات واضحة دقيقة محددة، مما  أسهم في إبقائه غائماً متسع الدلالة. والظن  أننا ـ في اللغة العربية ـ مضطرون إلى  التمييز، بين المعنى الحقيقي  والمجازي، ثم التمييز بين المعاني المجازية نفسها. وفي  رأيي أننا قادرون  على ذلك إذا اتفقنا على:‏ </b><br />
+  <b>أ ـ استعمال كلمة &quot;الكتابة&quot; للدلالة على  المعنى اللغوي وحده، أي الإملاء والخط.‏ </b><br />
+  <b>ب ـ إضافة كلمة أخرى للتمييز بين المعاني  المجازية. وأقترح هنا العبارتين الآتيتين:‏ </b><br />
+  <b>ـ الكتابة الوظيفية: للدلالة على النصوص  المكتوبة التي تؤدي مهام الإيصال اللغوي المختلفة في الحياة اليومية.‏ </b> <br />
+  <b>ـ الكتابة الإبداعية: للدلالة على النصوص  المكتوبة الساعية إلى الخلق الأصيل الجديد النافع الماتع في العلوم والفنون  والآداب.‏ </b><br />
+  <b>ههنا يمكننا القول إن تحليل &quot;الكتابة  باللغة العربية بين الواقع  والطموح&quot; لابد من أن يشمل الأقسام الثلاثة: الكتابة ـ  الكتابة الوظيفية ـ  الكتابة الإبداعية، تبعاً لما بينها من ارتباط وثيق.‏  </b><br />
+  <font color="#008080"><b>ثانياً: الكتابة بين الواقع والطموح:‏ </b></font><br />
+  <b>إتقان الكتابة بشقيها، الإملاء والخط  أساس لابد منه في السلوك اللغوي  للإنسان العربي. وهذا الإتقان شيء مكتسب وليس  فطرياً، ولهذا السبب عد من  المهمات الأولى للتعليم في المدرسة الابتدائية، بيد أن  واقع الكتابة داخل  المدارس والجامعات والمعاهد، وخارجها يشير إلى أن هناك عناية  مقبولة  بالإملاء، أي كتابة الكلمات كتابة صحيحة خالية من الغلط. وهذه العناية لا   تعني أننا حققنا ما نصبو إليه، وهو إتقان مهارة الإملاء، وإنما تعني أن  المدرسة  العربية تُعير الإملاء قدراً من اهتمامها يُمكّن العربي من  الكتابة السليمة. ودليل  هذه العناية اقتصار مشكلات الإملاء العربي على  قضايا لا تجاوز أصابع اليد عداً،  أبرزها كتابة الهمزة المتوسطة والمتطرفة،  وكتابة الألف اللينة في آخر الأسماء،  وكتابة حروف لا تُنطق ونطق حروف لا  تُكتب. وما عدا ذلك يبدو هيناً ليناً يمكن  تلافيه بيسر وبشيء من التدقيق  في أثناء التعليم. كما يمكن تلافي مشكلات الإملاء  بالاتفاق بين الدول  العربية على قواعد لا يخرج عليها أحد في أثناء الاستعمال. وقد  تم هذا  الاتفاق كما هو معروف (7)، إلا أنه لم يُجسد في الاستعمال لغياب السلطة   القومية الواحدة وسيادة السلطات القطرية بما تضمه من أمزجة فردية وآراء  متباينة لا  علاقة لها، في الحالات كلها، باللغة العربية وقدرة أبنائها على  توحيد الإملاء.‏ </b><br />
+  <b>أما واقع الخط العربي فبائس جداً، ومن ثم  كثرت في السنوات الأخيرة  الشكاوى حول تدني سوية الخط لدى تلاميذ المدارس وطلبة  المعاهد والجامعات.  ووضح أثر هذا التدني في الحياة العامة. إذ غدا المرء يعاني من  سوء خط  الموظفين والمعلمين والمهندسين والأطباء والعاملين في الحقول الاجتماعية   والاقتصادية والإدارية. ولا عجب في ذلك. فطلبة الأمس موظفو اليوم، وتلميذ  اليوم  موظف الغد. وهذه السلسلة البديهية غير خافية على أحد من العاملين في  الحقل التربوي.  لأنهم معنيون بإعداد الجيل الناشئ ليتسنم أمور المجتمع في  المستقبل. وقد كثرت  البحوث والدراسات حول أفضل السبل لإعداد هذا الجيل،  إلا أن حظ الخط العربي من هذه  البحوث ما زال ضئيلاً، بل إن الاهتمام بالخط  العربي لا يداني الاهتمام بشقيقه  الإملاء على الرغم من الشكاوى التي  نسمعها حول الأغلاط الإملائية لدى الكُتاب  صغاراً وكباراً.‏ </b><br />
+  <b>ـ لماذا تدنت سوية الخط؟‏ </b> <br />
+  <b>يعتقد الباحثون أن العاملين في الحقل  التربوي قادرون على الإشارة إلى  ثغرات كثيرة في مناهج التعليم قادت إلى هذا التدني  في سوية الخط. ويقف  التعليم الشكلي للخط على رأس هذه الثغرات. و المراد بهذا  التعليم أن  المناهج التعليمية العربية تنص دائماً على حصص معينة لتعليم الخط في كل   مرحلة من مراحل التعليم. وتكتفي الكتب المدرسية التي تجسد هذه المناهج  بتدوين  عبارات معينة تطلب من التلميذ كتابتها على دفتره. وقد تدقق الكتب  أكثر من ذلك  فتذيّل العبارات المدونة بشكل من أشكال الحروف العربية مكتوب  بحسب قاعدة الخط  المراد تدريب التلاميذ عليها. والواضح أن واضع المنهاج  ومؤلف الكتاب المدرسي  استراحا إلى أنهما أديا واجبهما، وتركا مهمة التنفيذ  إلى المعلم داخل الصف. وقياساً  إلى ما نراه في الحياة اليومية من تدني  سوية الخط نعتقد أن المعلم داخل الصف لم  ينجح في الغالب الأعم في أداء  مهمته، وسنحاول، هنا، تقديم وجهة نظرنا في الأسباب  التي قادت المعلم إلى  الإخفاق، ثم نقترح ما نراه ملائماً للقضاء عليها.‏  </b><br />
+  <b>ـ لماذا نعلم االخط العربي؟‏ </b> <br />
+  <b>يعتقد الباحث أن المعلم يجهل الهدف من  تعليم الخط. بل إنه يؤمن أن  الخط فن جميل يُستعمل في الأغراض التزيينية. وهذا  الإيمان صحيح إذا تحدثنا  عن الخط حديثاً مطلقاً من كل قيد. فإذا قيدنا الحديث  بالهدف التربوي  لاحظنا أن الجانب الجمالي ثانوي، وأن الهدف الرئيسي هو الاتصال  اللغوي.  والمراد بذلك أن اللغة وسيلة الاتصال بين الناس في المجتمع، يعبر حاملها عن   أفكاره وآرائه وحاجاته بوساطتها، ويتواصل مع الآخرين من خلالها، فيلتقيهم  ويشاركهم  عملية البناء الاجتماعي. وباختصار، فاللغة وسيلة التعبير، لكن  اللغة تضم شقين: شقاً  ملفوظاً وشقاً مكتوباً. أي أن وسيلة التعبير هي  اللسان واليد. والإنسان يتواصل مع  الآخرين بالكتابة لهم وقراءة ما يكتبون،  كما يتواصل معهم بالكلام المنطوق، إضافة  إلى أن الكتابة وسيلة نقل الماضي  إلى الحاضر (من خلال كتب التراث)، وستكون هي نفسها  وسيلة نقل الحاضر إلى  المستقبل. ومن ثم يؤمن الباحث أن الكتابة لا تقل أهمية عن  النطق في  التعبير عن الإنسان. ولكي تؤدي الكتابة الغرض من خلقها لابد من أن تكون   سليمة وواضحة. أما السلامة فينهض بها &quot;الإملاء&quot;، وأما الوضوح فينهض  بـ&quot;الخط&quot;.‏ </b><br />
+  <b>أريد القول ان الهدف من تعليم الخط  العربي هو توفير &quot;الوضوح&quot; أي أن  يكتب الإنسان بخط يستطيع الآخرون قراءته فلا يلتبس  أمره عليهم. ومن ثم  اقترن البعد عن اللبس بالوضوح، وغدا كل منهما وجهاً لعملة واحدة  . فالفاء  والغين في وسط الكلمة يلتبس أمرهما على القارئ إذا لم يفرق الكاتب بينهما   بجعل العين مطموسة والفاء غير مطموسة. والميم الرقعية يجب طمسها وإلا فإنها  ستلتبس  بالميم النسخية التي لا نطمسها في أثناء الكتابة. غير أن الوضوح  ليس مطلقاً، وإنما  هو مُقيد بنوع الخط. أي أن الوضوح في الخط الريحاني  يختلف عن الوضوح في الخط  الديواني. ولكي نجعل التلميذ يكتسب صفة الوضوح في  الخط لابدمن تدريبه على المقارنة  بين أنواع الخط العربي، وخاصة مراعاة  شروط كتابة الحروف متصلة ومنفصلة، فوق السطر  وتحته. فنحن ـ على سبيل  التمثيل لا الحصر ـ نرسم حروف الخط الرقعي كلها فوق السطر  ما عدا الأشكال  السبعة التالية: (ج ح خ ع غ ـهـ) (الهاء في وسط الكلمة)، ونرسم  الراء  والزاي في الخط نفسه فوق السطر، في حين نُنزل ذيلهما تحت السطر في الخط   النسخي.‏ </b><br />
+  <b>على أن الوضوح وحده غير كافٍ. إذ لابد من  السرعة، أي الكتابة بخط  واضح في أقصر وقت ممكن. والسرعة هي التي تعلل اختيار الخط  الرقعي أساساً  لكتابة التلميذ في غالبية الدول العربية. فهو أسهل أنواع الخطوط  العربية  من حيث المهارات الحركية اللازمة لأداء المهمات الكتابية في زمن قصير   نسبياً. ولا عجب أن يحتل هذا الخط مكانة هامة في مناهج التعليم العربية،  فحروفه  واضحة، وقراءته ميسورة، وزمن كتابته قصير إذا قورن بزمن الكتابة  بالخط الكوفي أو  النسخي أو غيرهما من أ نواع الخط العربي.‏ </b><br />
+  <b>ولابد من الدقة إلى جانب الوضوح والسرعة،  أي أنه لابد للتلميذ من  مراعاة حجم كل حرف، من وضع النقاط في أمكنتها من الحروف  المنقوطة، وحُسن  وصل الحروف بعضها ببعض، كما يحتاج التلميذ إلى الترتيب الذي يعني  المحافظة  على المسافة بين الكلمات وحُسن توزيعها في السطر والتقيد بتقسيم الصفحة   إلى فقرات.‏ </b><br />
+  <b>إن الهدف التربوي من تعليم الخط هو تدريب  التلاميذ على مهارات  الاتصال اللغوي السليم، وهي الوضوح والسرعة والدقة والترتيب.  ولابد من أن  يعي المعلم هذا الهدف ويعمل على تحقيقه إذا رغب في أن يؤدي مهمته  التربوية  أداءً سليماً، ويُسهم في تجسيد ما نرنو إليه.‏ </b><br />
+  <font color="#008080"><b>ثالثاً: الكتابة الوظيفية بين الواقع  والطموح:‏ </b></font><br />
+  <b>المراد بالكتابة الوظيفية كل كتابة تلبي  حاجة من حاجات الإنسان في  الحياة، سواء أكانت هذه الحاجة خاصة أم عامة، من نحو  كتابة الرسائل  والتقارير والإعلانات والعرائض ومحاضر الجلسات والاجتماعات وإلقاء  الخطب  والتعليمات والإرشادات وتدوين المذكرات وملء الاستمارات، وما إلى ذلك من  أمور  تتصل بحياة الإنسان وتؤدي مهمة اتصاله بالآخرين في المجتمع. والمعروف  أن الكتابة  الوظيفية تستعمل النثر وحده، وتحرص على أن يكون هذا النثر  واضحاً محدداً بعيداً عن  البلاغة والحيل الأسلوبية وتفصيلات الإنشاء  والخيال والعاطفة، قريباً من المباشرة  والموضوعية والعناية بالمضمون.‏ </b><br />
+  <b>وإذا كانت مهمتا الإيصال والاتصال من  المهام اللغوية الرئيسة فإن  المنطق يفرض العناية الفائقة بالكتابة الوظيفية لأنها  تكسب الإنسان العربي  هاتين المهارتين، وتجعله قادراً على توظيف الكتابة (الإملاء  والخط) في  شؤون الحياة المختلفة. بل إن إتقان الكتابة الوظيفية يجعل الإنسان العربي   يربط لغته بالحياة، ويدفعه إلى الإيمان بوظيفتها الاجتماعية. والعجب العجاب  أن نرى  الكثرة الكاثرة من حملة الشهادات تقف عاجزة عن استعمال الكتابة في  تحرير رسالة أو  كتابة محضر اجتماع أو تدوين تعليمات وإرشادات تريد  إيصالها إلى الآخرين. وقد نمت  حِرْفة على حساب الجهل بالكتابة الوظيفية  ندعوها في سورية &quot;العرضحلجي&quot;، نرى  ممتهنَيها يصطفون أمام الدوائر  والمؤسسات ليكتبوا لأصحاب الحاجات أسطراً معدودات  تجسّد الأمر الذي يرغبون  في إيصاله إلى إحدى الجهات الرسمية، وليس لممتهني هذه  الحرفة من علم غير  إتقان هذا اللون من الكتابة الوظيفية، فلماذا لا يتقن صاحب  الحاجة هذا  اللون وهو يملك أداة الكتابة؟....‏ </b><br />
+  <b>والحق أن الكتابة الوظيفية تُكتسب  اكتساباً، أي أنها خاضعة للدربة  والمران، ولكن العربي لا يتلقى في حياته المدرسية  تدريباً يؤهله لاكتساب  مهاراتها. وقد رجعت إلى مجموعة من الكتب التي تدور حول طرائق  تعليم اللغة  العربية، فما وجدت بينها غير كتابين يشيران إلى الكتابة الوظيفية  ويحضان  عليها (8)، وكأن الطالب العربي لا يحتاج إلى هذه الكتابة في أثناء تعلمه   اللغة العربية. هل نعد ذلك جناية على اللغة العربية؟ أعتقد أن طموحنا  اللغوي هو دفع  الإنسان العربي إلى استعمال اللغة العربية الفصيحة في  الحياة اليومية. وإذا كانت  العامية تحول دون ذلك في عمليات الاتصال الشفهي  فإن الكتابة تجسد بعض طموحنا لأنها  تستعمل الفصيحة وحدها ولا تقترب من  العامية، لكننا حين نهمل تدريب الطلاب على  مهارات الكتابة الوظيفية نعمل  على إبقاء الفصيحة بعيدة عن الحياة، ونستمر نتغنى  لفظياً بطموحنا اللغوي.  إن حياة اللغة في استعمالها، والمؤكد أن استعمال الكتابة  الوظيفية يسهم في  إكساب الفصيحة المرونة ويزيد ثروتها اللغوية ويمنح العرب إيماناً  بقدرتها  على تلبية حاجات الحياة بدلاً من الظن باقتصارها على تلبية الحاجات  الأدبية  وحدها.‏ </b><br />
+  <b>ولقد كان أجدادنا يعون أهمية الكتابة  الوظيفية. وقد جسدوا وعيهم في  كتب تُعلَم هذه الكتابة، انطلاقاً من أنها &quot;صناعة&quot;  قابلة للتعلُّم، هذا  ابن قتيبة (213هـ/ 276هـ)، يؤلف &quot;أدب الكاتب&quot;(9)، ليعلم  الكتّاب بعضاً من  صناعتهم. ولهذا السبب قسم كتابه إلى أربعة كتب فرعية: أولها كتاب  المعرفة،  وثانيها كتاب تقويم اليد، وثالثها كتاب تقويم اللسان، ورابعها كتاب   الأبنية. صحيح أن مصطلح &quot;الكاتب&quot; لدى ابن قتيبة واسع يشمل الأدباء، لكن  الصحيح  أيضاً أنه قصد أساساً إلى تزويد كتّاب ديوان الإنشاء الذين ينهضون  بمهمة تحرير  الرسائل الديوانية ببعض المعارف اللغوية والنحوية والصرفية  والعامة بغية رفع  مستواهم الثقافي، ذلك المستوى الذي يؤثر تأثيراً مباشراً  في كتاباتهم الوظيفية...  ويُخيل إليَّ أن ابن قتيبة كان يعتقد أن المعارف  وحدها قادرة على التأثير المباشر  في مهارات الكتابة الوظيفية، فاكتفى بما  رآه ضرورياً منها وعزف عن الخوض في  الأساليب التي تنمي مهارات الكتابة.  وهذا ما جعل كتابه عاماً صالحاً للمبتدئين  وشداة اللغة، والنحو والصرف،  إضافة إلى الخدمات المعرفية التي قدمها للغة الكتّاب  في زمانه.‏ </b><br />
+  <b>ثم حظيت الكتابة الوظيفية بكتاب &quot;صبح  الأعشى في صناعة الإنشا&quot; لأبي  العباس القلقشندي (756هـ821هـ)، وهو كتاب ضخم في  أربعة عشر جزءاً، يؤرخ  لصناعة الكتابة من بداياتها إلى منتصف القرن التاسع الهجري  تقريباً. وهو ـ  أيضاً ـ كتاب تعليمي، لكن الكليات والجزئيات والمعارف والمهارات  مجتمعة  لم تغب عن مؤلفه. فقد حدد في بدايات الجزء الأول مراده من كتابة الإنشاء   قائلاً: &quot;المراد بها كل ما رجع من صناعة الكتابة إلى تأليف الكلام وترتيب  المعاني:  من المكاتبات والولايات والمسامحات والإطلاقات ومناشير الإقطاعات  والهُدن والأمانات  والايمان وما في معنى ذلك ككتابة الحكم ونحوها&quot;(10)،  وهذا التحديد يعبر بوضوح عن  ألوان من الكتابة الوظيفية يُعنى بها الكاتب  في ديوان الإنشاء، وقد خصها القلقشندي  بالذكر لأنه ألّف كتابه من أجل  صناعة الإنشاء وحدها (11)، كما فعل ضياء الدين بن  الأثير في &quot;المثل السائر  في أدب الكاتب والشاعر&quot;، وأبو هلال العسكري في &quot;الصناعتين:  الشعر  والنثر&quot;(12). وإذا قصرنا كلامنا على اللغة العربية لاحظنا أن القلقشندي  عدها  &quot;رأس مال الكاتب، وأسّ كلامه، وكنز إنفاقه، من حيث أن الألفاظ قوالب  للمعاني التي  يقع التصرف فيها بالكتابة، وحينئذٍ يحتاج إلى طول الباع  فيها، وسعة الخطو، ومعرفة  بسائطها... والتصرف في بعضها دون بعض، ومن ثم  أشار إلى الألفاظ التي انتخبها  الكُتاب من اللغة العربية لطلاوتها  ورشاقتها، ووضح أسلوب التصرف بها وتصريفها في  وجوه الكتابة، وعُني بإيراد  النموذجات الدالة على ذلك... ومن المفيد القول إن  القلقشندي لم يكن يرغب  في أن يحيط كاتب ديوان الإنشاء باللغة كلها، وإنما كان يرغب  في أن يتزود  هذا الكاتب بما يحتاج إليه منها. والدليل على ذلك أنه كرر الحديث عن   الاختيار حين انتقل إلى النحو(14) والصرف(15) وغيرهما.‏ </b><br />
+  <b>إن كتاب &quot;صبح الأعشى في صناعة الإنشا&quot;  موسوعة في صناعة الكتابة، ينم  عنوانه عن أن القلقشندي مؤمن بأن الإنسان &quot;الأعشى&quot;  الذي لا يملك مهارات  صناعة الإنشاء قادر على اكتسابها إذا استوعب ما يحتاج إليه  الكاتب من مواد  الكتابة، وكأن هذه المواد &quot;صُبح&quot; ينير للأعشى السبيل إلى إتقان  الكتابة.  بل إن القلقشندي أصر على أن كتابة الإنشاء صناعة، تحتاج كأية صناعة إلى   مران وتربية ومعاناة. وهذا ما يجعلنا ننادي بتعديل في التربية الحديثة  للإنسان  العربي، بحيث يضم هذا التعديل تدريباً علمياً على ألوان الكتابة  الوظيفية نُحقق  بوساطته طموحنا في استعمال اللغة العربية في الحياة  اليومية. ونقترح بين يدي هذا  التعديل هدفاً ومهارات محددة. أما الهدف فهو  تلبية حاجات الإنسان العربي المختلفة،  و&quot;تقوية الروابط الفكرية والثقافية  بين الأفراد والجماعات&quot;، (16). وزيادة ثقة  العربي بلغته ونفسه. وأما  المهارات التي نقترح التركيز عليها فهي:‏ </b><br />
+  <b>ـ مهارات كتابة الرسائل الشخصية والعامة،  بتحديد الحاجة الاجتماعية  للرسالة، واللون الملائم لهذه الحاجة (رسالة إلى الأهل أو  الصديق ـ برقية ـ  دعوة عامة ـ بطاقة مناسبة.....)، والغرض من كتابة الرسالة،  والأسلوب  المناسب لكل لون، والعناية بالصدق في التعبير عن الآراء والمشاعر   والابتعاد عن العبارات العامة.‏ </b><br />
+  <b>ـ مهارات كتابة التقارير عن ألوان النشاط  في المجتمع المحيط بالإنسان، باصطناع أسلوب المشكلات.‏ </b><br />
+  <b>ـ مهارات كتابة الاستمارات والبيانات  والطلبات واللافتات، والتركيز  في أثناء التدريب على قيمة التكثيف اللغوي المصحوبة  بالوضوح والتحديد.‏ </b><br />
+  <b>وليست القضية، من قبل ومن بعد، قضية  اقتراحات محددة، وإنما هي قضية  التربية العربية التي لم تضع في &quot;استراتيجيتها&quot;  تنمية مهارات الاتصال  اللغوي بين أفراد المجتمع العربي، مكتفية بالتعبير الإبداعي،  غافلة عن أن  اللغة العربية وسيلة لتلبية الحاجات الاجتماعية، أو قُل ان  &quot;استراتيجية&quot;  التربية اللغوية العربية تحتاج إلى الانطلاق من أن اللغة العربية أداة   اتصال، أي إبلاغ وإخبار، وليست غاية في حد ذاتها. ولابد لهذا الاتصال من  مهارات،  أهمها بالنسبة إلى الكتابة مهارات الإرسال بأركانها الأربعة:  الكاتب والأفكار  المراد إيصالها والرموز الكتابية والقارئ المتلقي  للأفكار.‏ </b><br />
+  <b>ولاشك في أن واقع الكتابة الوظيفية سيبقى  متردياً إذا لم نعدل  &quot;استراتيجية&quot; التربية اللغوية بغية نقل اللغة العربية إلى حقل  الاستعمال  لتكتسب الحيوية والسعة.‏ </b><br />
+  <font color="#008080"><b>رابعاً: الكتابة الإبداعية بين الواقع  والطموح:‏ </b></font><br />
+  <b>المراد بالكتابة الإبداعية كل كتابة فنية  أو منهجية قادرة على  التأثير في القارئ وإقناعه بمحتواها الجديد أو النافع أو  الماتع. وهي تشمل  العلوم والفنون والأدب، وليست مقصورة على أجناس الأدب وما ينتجه  الأدباء.  كما أن لها قيداً واحداً هو الإبداع، أي خلق الجديد المفيد الماتع الذي   يحرك العقل أو الوجدان أو كليهما. ولابد للكاتب المبدع من الموهبة في حقل  اختصاصه.  ومن امتلاك المعارف والمهارات اللغوية التي يستعملها في إنتاج  النصوص الإبداعية،  ومن الخطأ الشائع الاعتقاد بأن الإبداع حكر على الأجناس  الأدبية (الشعر ـ المقالة ـ  القصة ـ الرواية ـ المسرح). ففي الكتابة  التاريخية إبداع لا يقل أهمية عن الإبداع  في الكتابة العلمية والفلسفية  والأدبية. والدليل على ذلك أن هناك أعضاء في مجامع  اللغة العربية  اختصاصيين في الطب والكيمياء والفيزياء والفلسفة، يتقنون اللغة  العربية  ويجيدون استعمالها في إنتاج نصوص إبداعية ومعجمية اختصاصية لا يشك أحد في   مستواها وفائدتها ودقتها. وهناك ـ أيضاً ـ اتحادات عربية (كاتحاد الكتاب  العرب  بدمشق واتحاد كتاب المغرب.....). تضم كتاباً من اختصاصات متنوعة،  ولا تقتصر على  الأدباء. بل إنها ترفض أن تسمى &quot;اتحاد الأدباء&quot; تبعاً  لإيمانها بالدلالة الواسعة  للكتابة والكاتب.‏ </b><br />
+  <b>وعلى الرغم من أن الكُتّاب قلة (أو :  نخبة) في المجتمع العربي، إلا  أن طموحنا يفترض أنهم مهندسو العقل والروح، وأن  إنتاجهم يعبر عن رؤيا  شاملة للكون والمجتمع &quot;تنطلق من الحاضر لتفسر الماضي وتشمل  المستقبل حاملة  تطلعات الأمة إلى عالم أفضل&quot;(17). ونحن نطرح هذا الافتراض، افتراض  توافر  الرؤيا لدى الكاتب لسببين: أولهما إيماننا بأن الكتابة لا تكون إبداعية إذا   لم تتوافر فيها الرؤيا الشاملة، وثانيهما معرفتنا بالواقع التعس الذي  يعيش فيه  الكُتاب العرب. وهذان السببان، في رأيي، يعبران عن الواقع الذي  ننطلق منه والطموح  الذي نرنو إليه.‏ </b><br />
+  <b>يتبع</b></font></span><br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_913774" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_913774" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=913774" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_913774" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_913775">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-07-27,&nbsp;<span class="time">01:53 AM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post913775" href="showthread.php?t=176245&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;p=913775#post913775" class="postcounter">#2</a><a id="postcount913775" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" title="ابو وليد البحيرى غير متواجد حالياً"><strong>ابو وليد البحيرى</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=147888&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=finduser&amp;userid=147888&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="ابو وليد البحيرى غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jan 2018</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>40,745</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> رد: الكتابة باللغة العربيّة بَين الواقع وَالطمُوح
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_913775">
+				<blockquote class="postcontent restore">
+					<div style="text-align: center;"><span style="font-family: traditional arabic"><font size="5"><font size="6"><font color="red">الكتابة باللغة العربيّة بَين الواقع وَالطمُوح <br />
+ </font></font> <font size="6"><font color="red">       سَمر روحي الفيصَل <br />
+<br />
+</font></font></font></span><br />
+<span style="font-family: traditional arabic"><font size="5"><font color="#800000"><b>أ ـ إعداد الكاتب:‏ </b></font><br />
+  <b>نقصد بإعداد الكاتب تدريبه على أسرار  حرفة الكتابة وأساليبها، بغية  صقل موهبته ومساعدتها على الإنتاج الإبداعي الأصيل.  وهذا يعني أن الإعداد  لا يخلق الموهبة لدى فاقدها، لأن هذه الموهبة استعداد فطري  وليست أمراً  مكتسباً. وما الإعداد إلا تعريف الموهوب بطبيعة الكتابة، وتدريبه على   أسرارها وأساليبها، وغرس مهاراتها فيه. أي أن الإعداد هو إكساب الكاتب  مهارات صناعة  الكتابة بعد توافر الموهبة لديه. ومسوّغ الاهتمام بإعداد  الكاتب ماهو معروف من أن  الموهبة لا تكفي وحدها لإنتاج الكتابة الإبداعية،  إضافة إلى أنها قابلة للتفتح  والنمو إذا بزغت في بيئة مواتية، وللضمور  والموت إذا لم يكن في البيئة ما يساعدها  على الحياة. ولهذا السبب تُعنى  الأمم بالكشف عن الموهوبين في المدارس الثانوية  والجامعات، وتصطنع  الأساليب لتدريبهم بغية الإفادة من إنتاجهم، وهي ـ في ذلك ـ  تنطلق من أن  الموهوب يختلف عن المبدع. فالموهوب هو الذي يملك قدرة عقلية عالية، في  حين  يتّسم المبدع بالإنجاز الجديد الأصيل، لكنها ترعى الموهوب ليصبح مبدعاً،  لأنها  تنظر إلى المستقبل في أثناء تعاملها مع الموهوبين في حين تنظر إلى  الماضي في أثناء  تعاملها مع المبدعين، وكأنها ـ في حال الموهوبين ـ تضع  الإعداد والرعاية والتوجيه  نصب أعينها كي تتمكن من الإفادة منهم في  المستقبل (18). وغير خاف على أحد أن &quot;معهد  غوركي للآداب&quot; يؤدي هذه المهمة  في الاتحاد السوفييتي. فهو يقبل الموهوبين ويُعدّهم  طوال سنوات ليكونوا  أعضاء في اتحاد الكتاب السوفييت. وتلجأ أمم أخرى إلى تخصيص  أمكنة لممارسة  الهوايات والنشاطات يتوافر فيها مشرفون مؤهلون لاكتشاف المواهب  ورعايتها  وتوجيهها.‏ </b><br />
+  <b>تلك حال إعداد الكاتب لدى الأمم  الأجنبية، وهي حال نرنو إليها في  الوطن العربي، ذلك أن آلاف المواهب وئدت لدينا  لفقدان الرعاية والتوجيه،  وغالبت مواهب أخرى الصعاب فنجحت في الوصول إلى مستوى  إبداعي هزيل أو متوسط  أو جيد بحسب قدرتها الذاتية والإمكانات الفردية لمن يحيطون  بها. ولا تكفي  هنا، الدعوة إلى الاهتمام بالموهبة، ولا حضّ المسؤولين على افتتاح   المعاهد القادرة على اكتشاف الموهوبين ورعايتهم وغرس مهارات الكتابة فيهم،  لأن  القضية ليست قضية افتتاح معاهد لإعداد الكُتّاب، ولا قضية إيمان بأثر  الموهوبين في  المجتمع العربي، وإنما هي قضية موقفنا من اللغة العربية  الفصيحة، وهو موقف ينم عن  أننا لا نحترم هذه اللغة وإن كنا نُكثر من  التغني اللفظي بها. والميدان التربوي خير  مثال على النيات الطيبة التي  تكمن وراء تغنينا اللفظي باللغة العربية، وإخفاقنا في  ترجمتها إلى سلوك  لغوي إيجابي.‏ </b><br />
+  <b>أين الخطأ التربوي المفضي إلى إهمال  إعداد الكاتب؟ يخيل إليَّ أن  هناك خطأ في تدريس اللغة العربية، وآخر في فهم علاقة  العلوم والفنون  باللغة العربية. أما خطأ التدريس فكامن في الاتجاه إلى تزويد الطالب   بالمعارف اللغوية والأدبية، وإهمال تدريبه على المهارات الخاصة بالكتابة.  وقد نتجت  عن ذلك مشكلة &quot;التعبير الإبداعي&quot;، تلك المشكلة التي شغلت  المعنيين بتدريس اللغة  العربية من معلمين ومدرسين ومؤلفين دون أن يعثروا  على حل ناجع لها، حتى إن الدراسات  العلمية &quot;أظهرت بجلاء أن أكثر من نصف  المعلمين يرون أن درس الإنشاء ثقيل على النفس  وممل&quot;(19)، بل إن المعلمين  التقوا طلابهم في هذا الأمر، إذ أن الطلاب عدوا &quot;الكتابة  من أقل المهارات  اللغوية أهمية، وأن أكثر من ثلثهم يشعرون بأن درس الإنشاء ممل  وثقيل  عليهم&quot;(20)، على الرغم من أن إقرار المعلمين والطلاب معاً بأهمية التعبير  في  تحصيل المواد الدراسية. والحق أن نتائج هذه الدراسة دقيقة في دلالتها  على واقع  التعبير الإبداعي لدى المعلمين والطلاب العرب. فهم يشعرون بأنه  &quot;ثقيل ممل&quot;، لأنهم  لا يملكون المهارات التي يتحلى بها الكاتب، ولا يعرفون  الأساليب التي تفضي إليها،  ولهذا السبب يهربون من التعبير، وهو فرع غير  مقنن، إلى فروع اللغة الأخرى، وهي فروع  مقننة سواء أكان الفرع نحواً أم  قراءة أم أدباً، إنهم يلجؤون إلى المعارف لأنهم  اعتادوا التعامل معها،  ويهربون من التعبير لأنه مهارات مركبة متنوعة. وقد سلكتُ  المعلمين والطلاب  في سلك واحد لأن الخطأ في تدريس اللغة العربية يشملهم جميعاً.  فالمعلمون  في أثناء إعدادهم التربوي لم يتلقوا شيئاً يعينهم على إعداد الطالب   الكاتب، وحين تسنموا أمور تدريس هذه المادة اضطروا إلى تدريس شيء يفتقرون  إلى  مهاراته، فبدا الأمر &quot;ثقيلاً مملاً&quot;، بالنسبة إليهم، وإلى طلابهم  الذين لم يفيدوا  منهم.‏ </b><br />
+  <b>وليس في المكتبة العربية ما يعين هؤلاء  المعلمين والطلاب على تذليل  هذه العقبة، فالكتب الاختصاصية بطرائق تدريس اللغة  العربية تُفرد صفحات  مطولة لتعليم التعبير الإبداعي وتصحيح موضوعاته، لكنها لاتهتم  بإعداد  الطالب الكاتب، وكأنها تفترض أن المعلم يتقن المهارات الضرورية للتعبير   الإبداعي، وأن سلوك الطالب سيتحلى بها إذا التفت المعلم إلى تصحيح  الموضوعات. أما  الشيء الواجب تصحيحه في هذه الموضوعات فأمر لا تلتفت إليه  ولا تُعنى به. كذلك الأمر  بالنسبة إلى الكتب التي تصدت لتعليم الكتابة.  فهي نادرة في المكتبة العربية، ولو  أنعمنا النظر فيها لما خرجنا بشيء يخدم  هدفنا. فكتاب &quot;صناعة الكتابة&quot;(12)، يطرح  مفهوماً سليماً للكتابة  الإبداعية، لكنه يكتفي في أثناء تجسيد هذا المفهوم بمجموعة  من المعارف  العروضية والبلاغية، وكأنه كتاب في العروض والبلاغة وليس كتاباً في  صناعة  الكتابة.‏ </b><br />
+  <b>إن الخطأ في تدريس اللغة العربية هو  المسؤول عن التردي في إعداد  الطالب الكاتب والمعلم المربي، وهو نفسه المسؤول عن  القصور في الكتب  الخاصة بطرائق تعليم اللغة العربية وبصناعة الكتابة الإبداعية. وقد  حددنا  هذا الخطأ في الاتجاه إلى تزويد الطالب بالمعارف اللغوية والأدبية، وإهمال   تدريبه على المهارات الخاصة بالكتابة. ونود هنا تقديم أمثلة توضح هذا  الخطأ بغية  تلافيه، انطلاقاً من أن هذا التوضيح يشير إلى بعض مهارات  الكتابة الإبداعية ويقترح  حلاً مقبولاً لمشكلة &quot;التعبير الإبداعي&quot; في  المدارس والمعاهد والجامعات، ويسهم في  اكتشاف الطالب الموهوب.‏ </b><br />
+  <font color="#0000ff"><b>*مثال من النحو:‏ </b></font><br />
+  <b>يلتفت المعلمون في أثناء تعليم النحو إلى  تزويد الطالب بالمعارف  النحوية، فيقولون في درس الفاعل ان &quot;الولد&quot; فاعل في الجملة  الآتية: &quot;نام  الولد على السرير&quot;، لأنه القائم بالفعل. ويقولون أيضاً ان هذا الفاعل  يأتي  بعد الفعل، فإذا تقدم عليه أصبح مبتدأ: &quot;الولد نام على السرير&quot;، وما قاله   المعلمون صحيح، ضروري لمعارف الطالب النحوية، لكنه غير كاف إذا انطلقنا من  أن الهدف  من تعليم النحو هو تدريب الطالب على اكتساب مهارات صوغ الجملة  العربية. وهذا  الاكتساب يحتاج إلى &quot;علم النحو الوظيفي&quot;، الذي يطرح السؤال  الآتي: لِمَ قُدّم  &quot;الولد&quot; في الجملة الثانية على الفعل؟ لقد قُدّ م  &quot;الولد&quot; على الفعل لأن الكاتب  أراد تنبيه القارئ على الفاعل. ولو رغب في  تنبيه هذا القارئ على المكان لقدّم &quot;على  السرير&quot;: &quot;على السرير نام الولد&quot;،  وهذا التحليل المستند إلى علم النحو الوظيفي يضع  أمام الطالب الطرق  الممكنة لصوغ الجملة العربية، ويتيح له فرص اختيار أكثرها قدرة  على  التأثير في القارئ. ولاشك في أن تحليل المستوى التركيبي سيرسخ في الطالب   الموهوب قاعدة مهمة، هي &quot;أن لكل تعبير في اللغة وظيفة يؤديها، وأن أي  اختلاف في  التعبير، على أي مستوى، أكان مستوى لفظياً أم متعلقاً بالتأخير  والتقديم في أجزائه  أو بالحذف أو بالزيادة، سيؤدي بطبيعة الحال إلى تعديل  أو تغير في وظيفته. ودرجة  إحاطة الطالب بالعلاقة الوثيقة بين التعبير  والوظيفة لها أكبر الأثر في أسلوبه  الكتابي أو الخطابي&quot;(22).‏ </b><br />
+  <font color="#0000ff"><b>*مثال من البلاغة:‏ </b></font><br />
+  <b>النقص الذي أشرنا إليه في المثال السابق  هو إهمال تحليل المستوى  التركيبي للجملة استناداً إلى علم النحو الوظيفي، وقد  يُرَدّ على هذا  النقص بأن الدراسات الأسلوبية الحديثة لم تدخل مدارسنا وجامعاتنا  بعد، ولا  وجه للوم المعلمين إذا أهملوا الإفادة منها في تدريب الطالب على مهارات   الكتابة. وهذا الرد مقبول لكنه غير مقنع لسببين: أولهما أننا نسوّغ إهمالنا  البحث  عن الوسائل الكفيلة بخدمة لغتنا العربية بجهلنا الدراسات اللغوية  الحديثة التي قدمت  علم النحو الوظيفي وأمثاله. ومسوّغ &quot;الجهل&quot; غير مقنع،  ولو سلمنا به لما أمكننا  التسليم بجهلنا التراث اللغوي العربي الذي قدم  نظرية تفضي إلى علم النحو الوظيفي،  هي نظرية النظم لدى عبد القاهر  الجرجاني. وثانيهما أن لدينا علماً بين علوم البلاغة  العربية، هو علم  المعاني، انصرف إلى الجملة وأجزائها، ولاحق قضايا التقديم  والتأخير. ومن  ثمَّ كان المعلم قادراً على سد النقص في الدرس النحوي التقليدي  بالاستعانة  بعلم المعاني في تحليل تقديم كلمة على أخرى في الجملة المذكورة في  المثال  السابق وفي غيرها من الجمل، كقولنا: &quot;يأكل التفاحة&quot;، و&quot;هو يأكل التفاحة&quot;،   فتقديم الضمير &quot;هو&quot; (المسند إليه)، في الجملة الثانية ذو غرض بلاغي هو  تقوية الحكم  وتقريره، لأنك لا تريد من الجملة الثانية أن غيره لا يأكل  التفاحة، ولا أن تعرض  بإنسان آخر يأكل التفاحة، وإنما تريد أن تقرر في ذهن  السامع أنه هو نفسه يأكل  التفاحة، وفي ذلك نوع من الإعلام بعد التنبيه  كما نص عبد القاهر الجرجاني.‏  </b><br />
+  <font color="#0000ff"><b>*مثال من الأدب:‏ </b></font><br />
+  <b>إن شعور المعلمين بثقل التعبير الإبداعي  نابع من أنهم يفتقرون إلى  المهارات التي تمكنهم من الحكم الكلي على موضوعات الطلاب.  والظن أن  التعليم الذي تلقاه هؤلاء المعلمون قادهم إلى التوقف عند الألفاظ والجمل،   والعزوف عن الحكم على النص. وهم يشعرون في قرارة نفوسهم أن حكمهم على  الألفاظ  والجمل وحدها لا يقيس قدرة الطالب الكتابية، ولا يعين الموهوب  منهم على تغذية  موهبته في الكتابة. بيد أنهم لا يملكون غير المعارف التي  تؤهلهم للحكم على صحة  الألفاظ استناداً إلى قواعد الإملاء والصرف، كما  أنهم لا يملكون غير المعارف التي  يحكمون بوساطتها على الجملة استناداً إلى  قواعد النحو. تلك هي الحدود التي يقفون  عندها استناداً إلى ما يملكون.  وهذه الحدود تدل على النقص في تدريس اللغة العربية،  ذلك النقص الماثل في  إهمال &quot;الأسلوبية&quot; التي تُعين المعلم على تقديم حكم شامل على  الكتابة  الإبداعية التي يقدمها الطالب، سواء أكانت شعراً أم قصة أم مقالة أم   مسرحية.... فالمعلم يُدرّس طلابه &quot;الضمير&quot; و&quot;الروابط&quot; في النحو، لكنه يجهل  أن  الأسلوبية تفيد من الضمير والروابط في الحكم الكلي على النص، كما تفيد  من المهارات  التي رسختها الأجناس الأدبية في الحكم على النصوص الإبداعية.  وقد لاحظ مفيق دوشق  بعد دراسته مائة مقالة كتبها طلاب جامعيون في اختصاصات  مختلفة أن هناك غموضاً في  وظيفة &quot;الفِقَر&quot;، في المقالة، وفي فلسفة وجودها  واستعمالها، وفي تقسيم المقالة إلى  مقدمة ومتن وخاتمة، إضافة إلى ضعف  الترابط المنطقي والسياقي، وتدني القدرة على  الإقناع والتأثير.‏ </b><br />
+  <b>إن الأمثلة الثلاثة السابقة إشارات موجزة  إلى تعديل الخطأ في الاتجاه  السائد في تدريس اللغة العربية. غير أن نجاحنا في تلافي  هذا الخطأ لا  يعني القضاء على الخطأ التربوي المفضي إلى إهمال إعداد الكاتب. ذلك أن   هناك خطأ آخر لا يقل أهمية عن سابقه، هو الفهم السائد لعلاقة العلوم  والفنون باللغة  العربية. وهذا الخطأ نابع من أننا نعتقد أن إعداد الكاتب  مهمة مادة اللغة العربية  ليس غير، وكل تقصير في هذا الإعداد يُعزى إلى هذه  المادة دون غيرها. وقد نتجت عن  هذا الاعتقاد مشكلة خطيرة، وهي تنصُّل  مدرّسي العلوم والفنون من المسؤولية اللغوية  أولاً، ومن إعداد الكاتب  ثانياً. ولعل ذلك كله نتيجة بديهية لانصراف الدراسات  اللغوية العربية إلى  النصوص الأدبية وحدها، وعزوفها عن تحليل استعمال اللغة العربية  في الحقول  العلمية والفنية. ومن ثم ساد الظن بأن مشكلة &quot;التعبير الإبداعي&quot;، مشكلة   خاصة بمادة اللغة العربية وليست عامة شاملة المواد كلها. كيف تنمو مهارات  الكتابة  الإبداعية لدى الطالب الموهوب وهو يرى الانفصال بين فروع اللغة  العربية، والقطيعة  بين مادة اللغة العربية والمواد الأخرى؟.. كيف نُدرّس  الطالب المنطق في مادة  الفلسفة ولا نسمح له باستخدامه في بناء المقالة؟  أليس المنطق ضرورياً لترابط  الأفكار وترتيبها؟ ألا يعاني الطالب الموهوب  من الخلل في ربط أفكاره بعضها ببعض؟...  لابد من أن يُدرّب الطالب على  الكتابة في المواد كلها، تجسيداً لوحدة اللغة  ووظيفتها، وصوناً للموهبة من  أن تضيع في الطريق الطويلة الشائكة المفضية إلى  الإبداع.‏ </b><br />
+  <font color="#800000"><b>ب ـ مشكلات الكاتب والكتابة الإبداعية:‏ </b></font><br />
+  <b>أعتقد أن المشكلة الأولى التي تواجه  الكاتب في مجتمعنا العربي هي  دخوله حقل الكتابة الإبداعية دون إعداد تربوي سليم.  فموهبته تدفعه ـ على  سبيل التمثيل لا الحصر ـ إلى كتابة القصة، فيروح يكتب في هذا  الجنس الأدبي  دون أن يملك المهارات التي تصقل موهبته وتجعل إنتاجه القصصي إبداعاً   أصيلاً. وتراه يلجأ إلى قراءة القصص التي كتبها قاصون عرب وأجانب ليعوض  النقص في  إعداده التربوي، لكنه يخفق غالباً في أن يفيد من ثقافته القصصية  لأنه لا يعرف لهذه  الثقافة هدفاً غير الاطلاع على القصص والاستمتاع  الجمالي بها. أما البحث عن أسرار  القص (من زاوية الرؤية ووحدتي الحدث و  الانطباع إلى تفصيلات الإنشاء) فأمر لا يدركه  لأنه لم يتلقّ إعداداً يؤهله  لهذا الإدراك ويسمح له بتوظيف قراءته في صقل موهبته  القصصية. وربما نشر  هذا الكاتب قصصه في المجلات والكتب، لكنه يبقى في قرارة نفسه  مؤمناً بأنه  لا يملك أسرار الصناعة التي شغف بها واتجه إليها، وأزعم أن هذا الأمر  سبب  من أسباب تدني مستوى الكتابة الإبداعية في مجتمعنا العربي، كما أزعم أن  تلافيه  ممكن إذا وفرنا للموهبة فرصة الإعداد السليم، واللافت للنظر أننا  ندرب الجندي  ليقاتل، والطبيب ليداوي، والعامل ليعمل، فلماذا لا ندرب  الكاتب ليكتب؟...‏  </b><br />
+  <b>يواجه الكاتب العربي مشكلة ثانية، هي  معرفته بأن إنتاجه لا يلبي  حاجاته المعيشية فيضطر إلى العمل في حرفة أو وظيفة تؤمن  له دخلاً يقيه  العوز وذل السؤال، ومن ثم تبقى الكتابة هواية يمارسها في أوقات فراغه  من  عمله اليومي. وهذا الأمر الاقتصادي الصرف يصدق على الكتَّاب المبتدئين في  هذه  الصناعة وعلى المجودين فيها، ولا بد من أن يؤثر تأثيراً سلبياً في  مستوى الكتابة  الإبداعية العربية. وأزعم أن القضاء على هذا التأثير السلبي  ممكن إذا انطلقنا من أن  الثقافة حاجة ضرورية للإنسان، ورحنا نوفر فرص  الحياة الكريمة للكتّاب، والتفتنا في  أثناء ذلك إلى تنظيم العلاقة بين  الكاتب والناشر، وإلى رفع القيود التي تكبل حركة  انتشار الكتاب في الوطن  العربي.‏ </b><br />
+  <b>هناك مشكلة ثالثة يواجهها الكاتب العربي،  هي مشكلة العلاقة بالسلطة.  وهذه المشكلة شائكة ذات تأثير كبير في مستوى الكتابة  الإبداعية. فعِلّة  وجود الكاتب هي الكتابة؛ فإذا لم يكتب فقَد علة وجوده. والكتابة  الإبداعية  منحَازة إلى الإنسان الحر الكريم، عاملة على الدفاع عنه ورفعة شأنه. أما   علة وجود السلطة فهي الحكم، فإذا لم تحكم فقدت علة وجودها. والحكم هو تنظيم  المجتمع  وتنميته وتهيئة أسباب السعادة لأبنائه... ويخيل إليَّ أن الكاتب  يلتقي السلطة في  الهدف ويختلف عنها في أسلوب الوصول إليه. ومن الخطأ الظن  أن الكاتب والسلطة لا  يلتقيان، وأن التعارض بينهما أزلي. بيد أن المنطق  العلمي شيء مغاير للواقع الملموس.  ففي هذا الواقع سلطة تفهم الحكم على أنه  السيطرة والسيادة والتميز وقمع المقهور  ليزداد رضوخاً وتبعية. وهذا أمر  يرفضه الكاتب ويرغب في تغييره بوساطة الكتابة، لكن  ذلك يعرّضه لأذى  السلطة، فماذا يفعل؟ إذا صمت عن ممارسات السلطة شعر بخيانة الهدف  من  الكتابة، وإذا عالج هذه الممارسات مُنع من النشر أو سرِّح من عمله أو قيدت  حركته  أو زج به في السجن. الواضح أن غالبية الكتّاب العرب اكتفت بالكتابة  عن السبب دون  المسبب، أو راحت تغرق في حيل أسلوبية شكلية تحجب عنها مساءلة  الرقيب وأذاه، أو  استسلمت للأمر الواقع وشرعت تكتب ما يعزز أيديولوجية  السلطة الحاكمة. وقد أثر ذلك  في عنصر الصدق ـ وهو جوهر الكتابة الإبداعية ـ  وقاد الكتّاب إلى نوع غريب من الحياد  جعل القارئ العربي يشك في مصداقية  الكاتب والكتابة. &quot;وبما أن لكل أيديولوجيا  سلطتها، ولكل سلطة  أيديولوجيتها، فإن لكل قطر أدباءه ومفكريه المنسجمين مع الوضع  القائم. فلا  عجب أن طغت الانتهازية والسوقية والوسطية على الفكر والأدب، مع ما  يترتب  على ذلك من طغيان المباشرة والتقليدية والامتثال والراهنية&quot;(23)، إضافة إلى   جعل الخيال الإبداعي مهيضاً كسير الجناح، هل يكمن حل هذه المشكلة في  الديمقراطية؟  أن الديمقراطية لا تُمنح وإنما تكتسب اكتساباً، فماذا فعل  الكتّاب العرب لاكتساب  هذه الديمقراطية وترسيخها في المجتمع العربي؟...‏ </b><br />
+  <b>المشكلة الرابعة التي تواجه الكاتب  العربي تتعلق بالمنهجية ومناهج  البحث. فهذا الكاتب لم يمر بفترة إعداد وتدريب على  قواعد الكتابة، من  اختيار الموضوع وتدوين متنه وهوامشه ومصادره ومراجعه وما إلى ذلك  من  إرشادات ووسائل اصطلح على تسميتها بالمنهجية. ونستطيع القول إن افتقار  الكاتب  العربي إلى مرحلة الإعداد جعل كتابته تفتقر إلى المنهجية التي  تكسبها المستوى  العلمي المطلوب. وهكذا بتنا نقرأ بحوثاً ودراسات عربية لا  تتوافر فيها الأمانة  العلمية، ولا الهدف الواضح المحدد، ولا الاطلاع على  الدراسات السابقة، مما جعلها  بعيدة عن الإبداع الأصيل، ذلك الإبداع الذي  لا يتجاهل ما كتبه السابقون في حقل  اختصاص الكاتب، وإنما يستند إليه ليبدأ  من حيث انتهوا، ويبني فوق ما أشادوه،  معترفاً بما قدموه، محدداً هدفه،  متقناً أسلوب الوصول إليه، إن الإبداع ليس خلقاً  من عدم، وإنما هو خلق  الإضافة الجديدة النافعة الماتعة. وقد أسهم في تدني المستوى  العلمي  للكتابة الإبداعية العربية أمر آخر افتقر إليه الكاتب العربي، هو ضعف  اطلاعه  على مناهج البحث، وهو شيء آخر غير المنهجية. إن منهج البحث هو  الطريق الواضحة التي  يسلكها الكاتب في كتاباته، وهذه الطريق تختلف بحسب  العلوم لكنها مرتبطة دائماً  بالمنطق وطرق الاستدلال والاستنتاج والتحليل.  وسواء أكان منهج البحث وصفياً أم  استقرائياً أم تحليلياً تركيبياً أم  قياسياً أم استنباطياً أم غير ذلك فإنه مجموعة  طرق واضحة ذللها الباحثون  الغربيون وقننوا إجراءاتها دون أن يصبحوا عبيداً لها.  والمشكلة التي  واجهها الكاتب العربي هي انبهاره بهذه المناهج، ووقوفه منها موقف  التقديس،  ومن ثم رأيناه يجهد في تطبيقها &quot;حرفياً&quot;، دون أن يبحث في تراثه عن   مثيلاتها أو يسعى إلى وضعها في سياق الثقافة العربية أو يفيد من مفهوماتها  ومعارفها  في تشكيل موقفه الخاص. وإن لذلك كله أثراً سلبياً في الكتابة  العربية، يتجلى حيناً  في &quot;التغريب&quot;، وحيناً في رفض التراث وتوهين  إنجازاته.‏ </b><br />
+  <b>إن المشكلات السابقة بعض مما يعانيه  الكاتب والكتابة الإبداعية  العربية. ولاشك في أن هناك كُتاباً لم يتأثروا بها، أو  عانوا من بعضها دون  بعض، كما أن هناك كتابات إبداعية أصيلة خرقت المحرمات، وتسلحت  بمنهجية  صارمة، وأحسنت توظيف مناهج البحث الحديثة، وأحيت التراث المنهجي العربي،   وعبرت عن قدرتها على تقديم رؤيا يتلامح فيها مصير الأمة العربية.‏ </b><br />
+  <b>وبعد:‏ </b><br />
+  <b>فقد حاولنا في هذه الدراسة تحديد الدلالة  اللغوية والاصطلاحية لكلمة  &quot;الكتابة&quot; ثم رحنا نبحث في أقسامها الثلاثة: الكتابة ـ  الكتابة الوظيفية ـ  الكتابة الإبداعية. فنبهنا على الواقع البائس للخط العربي،  وأشرنا إلى  ضرورة تعديل الهدف من تعليمه لتتحقق الغاية الأساسية منه، وهي الاتصال   اللغوي السليم، كما نبهنا على أهمية الكتابة الوظيفية في حياة الإنسان  العربي،  ووضحنا ما جره إهمال التدريب عليها. ثم حللنا واقع الكتابة  الإبداعية من جانبي  الإعداد والمشكلات. وكنا، في أثناء ذلك كله، نجعل  الواقع طريقاً إلى الطموح، دون أن  نغفل عن التداخل بين جوانب المشكلة  اللغوية ـ التربوية التي انصرفنا إليها.‏  </b><br />
+  <br />
+  <br />
+  <br />
+  <br />
+   <b>(1) ـ انظر: أساس البلاغة للزمخشري 535،  وترتيب القاموس المحيط  للزاوي 4/10-11، والمعجم الوسيط 2/ 774 –775، و المعجم  المدرسي 894.‏ </b><br />
+  <b>(2) ـ الكليات للكفوي 4/117 –119.‏ </b><br />
+  <b>(3) ـ المعجم الوسيط 2/ 774 –775.  والمعجم المدرسي 894.‏ </b><br />
+  <b>(4) ـ المعجم الوسيط 2/ 774 –775.‏ </b><br />
+  <b>(5) ـ المعجم الأدبي ـ جبور عبد النور ـ  ص 218.‏ </b><br />
+  <b>(6) ـ معجم مصطلحات الأدب ـ مجدي وهبة ـ  ص 612.‏ </b><br />
+  <b>(7) ـ اقترح المؤتمر الثقافي العربي  الأول (بيت مري ـ لبنان 1947)،  قواعد محددة للإملاء العربي، انظر نصها في ص 120 من  :تيسير تعليم اللغة  العربية، سجل ندوة الجزائر 1976 ـ اتحاد المجامع اللغوية  العلمية العربية ـ  القاهرة 1977. كما اقترح مجمع اللغة العربية بالقاهرة، في دورته  السادسة  والأربعين عام 1980، ضوابط للإملاء انظر نصها في ص 147 ومابعد من: العيد   الذهبي لمجمع اللغة العربية ـ د.عدنان الخطيب ـ دار الفكر ـ دمشق 1986.‏  </b><br />
+  <b>(8) ـ هما: المرجع في تدريس اللغة  العربية ـ د.سامي الدهان ـ مكتبة  أطلس ـ دمشق 1962. و: في طرائق تدريس اللغة  العربية ـ د. محمود أحمد السيد  ـ جامعة دمشق 1981.‏ </b><br />
+  <b>(9) ـ الاعتماد هنا على طبعة محب الدين  الخطيب ـ المكتبة التجارية ـ القاهرة 1346هـ.‏ </b><br />
+  <b>(10) ـ صبح الأعشى في صناعة الإنشا  للقلقشندي 1/ 54 ـ الطبعة المصورة  عن الطبعة الأميرية ـ وزارة الثقافة والإرشاد  القومي ـ القاهرة 1963.‏ </b><br />
+  <b>(11) ـ بعد فراغ القلقشندي من فنون  المكاتبات الديوانية أخذ يخوض في  الكتابات التي تصدر عن كُتّاب الديوان خارج الشؤون  الرسمية، فذكر المقامات  ورسائل الغزو والصيد والمفاخرات وغير ذلك. وقدم لذلك كله  بنموذجات دالة  عليه. انظر الأجزاء 11 – 12- 13 –14 خصوصاً، وراجع ص 282 ومابعد من:  حمزة،  د.عبد اللطيف ـ القلقشندي في كتابه صبح الأعشى ـ أعلام العرب 12 ـ وزارة   الثقافة ـ القاهرة 1962.‏ </b><br />
+  <b>(12) ـ هناك كتب أخرى في هذا الحقل، منها  &quot;صناعة الكتاب&quot; لأبي جعفر النحاس، و&quot;كنز الكتاب&quot; لأبي الفتح كُشاجِم.‏ </b> <br />
+  <b>(13) ـ صبح الأعشى 1/ 150.‏ </b> <br />
+  <b>(14) ـ انظر: صبح الأعشى 1/167.‏  </b><br />
+  <b>(15) ـ انظر: صبح الأعشى 1/177.‏  </b><br />
+  <b>(16) ـ في طرائق تدريس اللغة العربية ـ  د.محمود أحمد السيد ـ ص 366.‏ </b><br />
+  <b>(17) ـ المشاكل المشتركة للأدباء العرب ـ  محي الدين صبحي ـ مجلة &quot;شؤون عربية&quot; ـ العدد 59 ـ أيلول/سبتمبر 1989 ـ ص 161.‏ </b><br />
+  <b>(18) ـ انظر ص 21 وما بعد من: الفيصل،  سمر روحي ـ تنمية ثقافة الطفل  العربي ـ الجمعية الكويتية لتقدُّم الطفولة العربية ـ  الكويت 1988.‏ </b><br />
+  <b>(19) ـ اتجاهات الطلبة والمعلمين نحو  الكتابة باللغة العربية في  المدارس الثانوية الأردنية ـ د.خلف المخزومي ود.مفيق  دوشق ـ مجلة مجمع  اللغة العربية الأردني ـ العدد 35ـ تموز / كانون الأول 1988 ـ ص  267.‏ </b><br />
+  <b>(20) ـ المرجع السابق ـ ص 269.‏  </b><br />
+  <b>(21) ـ للدكتور فيكتور الكك والدكتور  أسعد علي ـ بيروت 1972.‏ </b><br />
+  <b>(22) ـ تدريس اللغة العربية لأغراض  أكاديمية في ضوء الدراسات  الأسلوبية الحديثة ـ د.مفيق دوشق ـ مجلة مجمع اللغة  العربية الأردني ـ  العدد 30 ـ كانون الثاني / حزيران 1986 ـ ص 155.‏ </b> <br />
+  <b>(23) ـ المشاكل المشتركة للأدباء العرب ـ  محي الدين صبحي ـ ص 162‏ </b></font></span><br />
+</div>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+					<blockquote class="signature restore"><div class="signaturecontainer"><div class="spoiler"><script>
+function showHide(what){
+a=what.getElementsByTagName("div")[0];
+if(a.style.display=='none'){
+a.style.display='block';
+}else{
+a.style.display='none';
+}}
+</script>
+<input type="button" onclick="showHide(this.parentNode)" value="اضغط هنا لمشاهدة توقيعي"><div style="display:none"><div style="text-align: center;">اذا الايمان ضاع فلا أمان<br />
+ولا دنيا لمن لم يحى دينا<br />
+ومن رضى الحياة بغير دين<br />
+فقد جعل الفنـاء له قرينا<br />
+</div></div></div></div></blockquote>
+				
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_913775" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_913775" class="newreply" href="newreply.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=newreply&amp;p=913775" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_913775" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=176245&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8" class="popupctrl"><span class="ctrlcontainer">مجلس اللغة العربية وعلومها</span></a>
+		<a href="showthread.php?t=176245#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">لوحة التحكم</a></li>
+		<li><a href="private.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الاشتراكات</a></li>
+		<li><a href="online.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=176230&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">النحو التوليدي التحويلي: المرجع والمفهوم</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=176272&amp;s=ec1b4717d08f17a417a70c4e8f25f7a8">نحو مفهوم عربيّ لــ&quot;علم اللّسـَان&quot; قراءة تأصيلـيّة في نصّـيْن من التّراث العربي</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D9%91%D8%A9">العربيّة</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A7%D9%84%D9%83%D8%AA%D8%A7%D8%A8%D8%A9">الكتابة</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A7%D9%84%D9%88%D8%A7%D9%82%D8%B9">الواقع</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A8%D8%A7%D9%84%D9%84%D8%BA%D8%A9">باللغة</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D8%A8%D9%8E%D9%8A%D9%86">بَين</a>، 
+		
+			<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;tag=%D9%88%D9%8E%D8%A7%D9%84%D8%B7%D9%85%D9%8F%D9%88%D8%AD">وَالطمُوح</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=176245#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=ec1b4717d08f17a417a70c4e8f25f7a8&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=ec1b4717d08f17a417a70c4e8f25f7a8" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=ec1b4717d08f17a417a70c4e8f25f7a8">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=176245#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">01:54 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>

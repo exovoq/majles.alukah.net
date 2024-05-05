@@ -1,0 +1,2836 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar" id="vbulletin_html">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://majles.alukah.net" />
+<base href="https://majles.alukah.net/" /><!--[if IE]></base><![endif]-->
+<meta name="generator" content="vBulletin" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=422"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=422"><\/script>');
+		}
+	}
+	var SESSIONURL = "s=696d1a7d9adaea36633b28fa7c3827c1&";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/metro/purple/misc";
+	var IMGDIR_BUTTON = "images/metro/purple/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "422";
+	var BBURL = "https://majles.alukah.net";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=174512";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+
+	
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+        var AJAXBASEURL = "https://majles.alukah.net/"; 
+        <!-- var AJAXBASEURL = "https://majles.alukah.net/"; -->
+
+// -->
+</script>
+<script type="text/javascript" src="https://majles.alukah.net/clientscript/vbulletin-core.js?v=422"></script>
+
+
+
+	<link rel="alternate" type="application/rss+xml" title="المجلس العلمي تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2" />
+	
+		<link rel="alternate" type="application/rss+xml" title="المجلس العلمي - مجلس الفقه وأصوله - تغذية RSS" href="https://majles.alukah.net/external.php?type=RSS2&amp;forumids=15" />
+	
+
+
+
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/main-rollup.css?d=1714808354" />
+        
+
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/popupmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-chrome-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/vbulletin-formcontrols-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/editor-ie.css?d=1714808354" />
+	<![endif]-->
+
+
+<!--Google Web Fonts /-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = this.hash;
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		var popMargTop = ($(loginBox).height() + 24) / 2; 
+		var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		$(loginBox).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 
+	return false;
+	});
+	
+	$('#navbar_username').focus(function() {
+		$('#navbar_username').parent().addClass('active');
+	}); 
+	$('#navbar_username').blur(function() {
+		$('#navbar_username').parent().removeClass('active');
+	}); 
+	$('#navbar_password').focus(function() {
+		$('#navbar_password_hint').parent().addClass('active');
+	}); 
+	$('#navbar_password').blur(function() {
+		$('#navbar_password_hint').parent().removeClass('active');
+	}); 
+
+});
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1391140-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZNQHMH01E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4ZNQHMH01E');
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+
+<!--
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"QZPPk1a4SBe05T", domain:"alukah.net",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=QZPPk1a4SBe05T" style="display:none" height="1" width="1" alt="" /></noscript>
+-->
+
+<!-- End Alexa Certify Javascript -->  
+	<meta name="keywords" content="أحكام, الأول, التاسع, الثالث, الثامن, الثاني, الجزء, الخامس, الرابع, السابع, السادس, الصيام, مُختصر, الله, صيام, وهو, ومن, يجب, وصيام, الفجر, إلي, طلوع, الشمس, ذلك, إلى, المُكلف, غُروب, كان, شهر, وقت, ابن, =========, علي, غير, بخصوصه, مريم, والله, ونحو, الشرع, رحمه, الذي, المشروع, يوم, قسمين, الكلام, القسم, يكون, أقسام, غروب, وينقسم" />
+	<meta name="description" content="■ مُختصر أحكام الصيام :  
+============== 
+( الجزء الأول ) 
+■ إعداد / عبدرب الصالحين العتموني 
+■ إن الحمد لله نحمده ونستعينه ونستغفره ونعوذ بالله من شرور أنفسنا ومن سيئات أعمالنا من يهده الله فلا مضل له ومن يضلل فلا هادي له وأشهد أن لا إله إلا الله وحده لا شريك له وأشهد أن محمداً عبده ورسوله صلى الله عليه وسلم . 
+■ وبعد : 
+■ معنى الصيام لغة : 
+===========  
+الصيام في اللغة : هو الإمساك والكف والامتناع عن الشئ فإذا أمسك شخص عن الكلام أو الطعام فلم يتكلم ولم يأكل فإنه يقال له في اللغة : صائم ومن" />
+
+	<title> ■ مُختصر أحكام الصيام : ( الجزء الأول )</title>
+	<link rel="canonical" href="showthread.php?t=174512&s=696d1a7d9adaea36633b28fa7c3827c1" />
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-rollup.css?d=1714808354" />
+	
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/toolsmenu-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postlist-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/showthread-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/postbit-ie.css?d=1714808354" />
+	<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/poll-ie.css?d=1714808354" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/style00039r/additional.css?d=1714808354" />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=39&langid=4&d=1714808354&sheet=MARCO1_CKEditor_CSS.css" />
+</head>
+
+<body>
+
+<!-- lightbox 
+<link rel="stylesheet" href="../lightbox/lightbox.min.css">
+<a href="../images/eid/adha2016.jpg" data-lightbox="eidlightb" title="كل عام وأنتم بخير" id="eidlightb"> 
+-->
+
+<!-- Metro Theme from PixelGoose.com v.1.1.1 -->
+
+
+<div class="above_body"> <!-- closing tag is in template navbar -->
+
+<div id="header" class="floatcontainer doc_header">
+
+
+
+<div id="top_header">
+
+	
+		<div id="globalsearch" class="globalsearch">
+			<form action="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=process" method="post" id="navbar_search" class="navbar_search">
+				
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="process" />
+				<input type="text" value="" name="query" class="textbox" tabindex="99"/>
+				<input type="submit" class="searchbutton" name="submit" onClick="document.getElementById('navbar_search').submit;" tabindex="100"/>
+			</form>
+		</div>
+		<ul class="advanced_search">
+				<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="4">البحث المتقدم</a></li>
+				
+		
+		</ul>
+	
+
+
+
+	<div id="toplinks" class="toplinks">
+		
+			<ul class="nouser">
+			
+				<li><a href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a></li>
+			
+				<li>أو</li>
+				<li><a href="#login-box" class="login-window">تسجيل الدخول</a></li>
+			</ul>
+		
+	</div>
+
+	
+</div>
+
+
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="images/metro/purple/misc/close_popup.png" class="close-button" title="Close" alt="Close" /></a>
+        <div id="login-text">تسجيل الدخول إلى حسابك</div>
+			<script type="text/javascript" src="clientscript/vbulletin_md5.js?v=422"></script>
+			<form id="navbar_loginform" action="login.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=login" method="post" onSubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+				<fieldset id="logindetails" class="logindetails">
+                
+					<div>
+					<div class="navbar_username_outer"><input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="اسم العضو" /></div>
+					<div class="navbar_password_outer"><input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" />
+					<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="كلمة المرور" style="display:none;" /></div>
+                    
+					<div class="login-ctrl">
+                        <div id="remember" class="remember">
+                            <label for="cb_cookieuser_navbar">
+							<input type="checkbox" name="cookieuser" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103" checked /> حفظ البيانات؟</label>
+                        </div>                
+                        
+                        <input type="submit" class="loginbutton" tabindex="104" value="تسجيل الدخول" title="ادخل اسم العضو وكلمة المرور الخاصة بك في الحقول المجاورة لتسجيل الدخول، أو اضغط على رابط 'التسجيل' لإنشاء حساب خاص بك." accesskey="s" />
+                        </div>
+                    </div>
+				</fieldset>
+
+
+				<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+				<input type="hidden" name="securitytoken" value="guest" />
+				<input type="hidden" name="do" value="login" />
+				<input type="hidden" name="vb_login_md5password" />
+				<input type="hidden" name="vb_login_md5password_utf" />
+			</form>
+			<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'اسم العضو')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#000000';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='اسم العضو';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+            
+            <div class="register-ctrl">
+            	<a class="login-popup-register" href="register.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow">التسجيل</a>
+                <div class="login-popup-fb">
+				
+
+                </div>
+            </div>
+</div>
+
+<div id="middle_header">
+<!--hrer= /*index.php?s=696d1a7d9adaea36633b28fa7c3827c1 -->
+<a name="top" href="https://www.alukah.net/" class="logo-image" target="_blank"><img src="images/metro/purple/misc/vbulletin4_logo.png" alt="المجلس العلمي - Powered by vBulletin" /></a>
+
+
+
+
+
+
+<div style="text-align:center; width:50%; margin:10px 150px ; position:absolute;">
+
+<div style="text-align:center; margin:10px 200px 0 0 ;">
+<img id="icon_SupervisedBy" alt="إشراف" width="64px" height="40px" style="display: block;margin-left: auto; margin-right: auto;" src="https://www.alukah.net/images/alukah30/icons/icon_supervisedby2.png" title="شبكة الالوكة والمجلس العلمي تحت إشراف الدكتور سعد بن عبد الله الحميد" />
+</div>
+    
+<div style="text-align:center;">
+<a href="https://www.alukah.net/web/homayed/" target="_blank" title="موقع الشيخ الدكتور سعد بن عبد الله الحميد" style="position:absolute; z-index:1000000">
+<img id="imgDrSaad"  width="200px" height="50px" alt="الدكتور سعد بن عبد الله الحميد" src="https://www.alukah.net/images/alukah30/drsaad2.png" title="الدكتور سعد بن عبد الله الحميد" />
+</a>
+</div>
+  
+</div>
+
+<!--
+<div style="margin:42px 150px 0 0 ; position:absolute;">
+<div  style="text-align:center;margin:0 190px 0 0 ; color:#fff; font-size:20px; font-weight:bold;" > إشراف
+</div>
+
+<div  style="text-align:center;margin:5px 30px 0 0 ; width:450px; font-weight:bold;">
+<a href="https://www.alukah.net/web/homayed/" style="font-size:22px; position:absolute; z-index:1000000; color:#fff;" target="_blank">د. سعد بن عبد الله الحميد</a>
+</div>
+
+</div>
+-->
+
+
+<div id="navbar" class="navbar" align="right">
+	<ul id="navtabs" class="navtabs floatcontainer">
+		
+		
+	
+		<li class="selected" id="vbtab_forum">
+			<a class="navtab" href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1"><span>المجلس العلمي</span></a>
+		</li>
+		
+		
+			<ul class="floatcontainer">
+				
+					
+						
+							<li id="vbflink_bbmenu"><a href="forum.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية</a></li>
+						
+					
+				
+					
+						
+							<li id="vbflink_newposts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getnew&amp;contenttype=vBForum_Post">المشاركات الجديدة</a></li>
+						
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_actions">
+							<a href="javascript://" class="popupctrl">تطبيقات عامة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbalink_mfr"><a href="forumdisplay.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=markread&amp;markreadhash=guest">اجعل المنتديات مقروءة</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="vbmenu_qlinks">
+							<a href="javascript://" class="popupctrl">خيارات سريعة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="vbqlink_posts"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=getdaily&amp;contenttype=vBForum_Post">مشاركات اليوم</a></li>
+								
+									<li id="vbqlink_leaders"><a href="showgroups.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض الإداريين</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						<li class="popupmenu" id="menu_nza3_367">
+							<a href="javascript://" class="popupctrl">روابط مفيدة</a>
+							<ul class="popupbody popuphover">
+								
+									<li id="link_nza3_554"><a href="register.php?do=requestemail">تفعيل العضوية بالبريد</a></li>
+								
+									<li id="link_nza3_560"><a href="login.php?do=lostpw">استعادة كلمة السر</a></li>
+								
+									<li id="link_nza3_539"><a href="register.php?a=ver">تفعيل حسابك</a></li>
+								
+									<li id="link_odc0_710"><a href="memberlist.php?s=696d1a7d9adaea36633b28fa7c3827c1">قائمة الاعضاء</a></li>
+								
+							</ul>
+						</li>
+					
+				
+					
+						
+							<li id="link_odc0_904"><a href="http://majles.alukah.net/t76439/">شروط التسجيل وقوانين المشاركة</a></li>
+						
+					
+				
+			</ul>
+		
+
+		
+	</ul>
+</div>
+</div>
+</div>
+</div><!-- closing div for above_body -->
+
+<div class="body_wrapper">
+<div id="breadcrumb" class="breadcrumb">
+	<ul class="floatcontainer">
+		<li class="navbithome"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1" accesskey="1"><img src="images/metro/purple/misc/navbit-home.png" alt="الرئيسية" /></a></li>
+		
+	<li class="navbit"><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العلمى</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a></li>
+
+	<li class="navbit"><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+
+		
+	<li class="navbit lastnavbit"><span> ■ مُختصر أحكام الصيام : ( الجزء الأول )</span></li>
+
+	</ul>
+	<hr />
+</div>
+
+<center>
+<div style="width:43%;">
+
+<!-- <div style="text-align:center;border:1px solid green"> -->
+<!--
+<div style="text-align:center;">
+<img alt="عيد أضحى مبارك" src="https://www.alukah.net/images/eid/adha1443.jpg" width="90%" height="90%">
+</div>
+-->
+<!--
+<div style="text-align:center;">
+<img alt="عيد فطر مبارك" src="https://www.alukah.net/images/eid/fetr1444.png" width="90%" height="90%">
+</div>
+-->
+
+<div style="text-align:center">
+<img alt="تابعونا على" src="https://www.alukah.net/images/alukah30/icons/followus.png">
+
+<a href="https://www.facebook.com/MajlesAlAlukak" target="_blank">
+<img alt="المجلس العلمي على Facebook" src="https://www.alukah.net/images/alukah30/facebook.png">
+</a>
+<a href="http://www.twitter.com/AlukahMajles" target="_blank">
+<img alt="المجلس العلمي على Twitter" src="https://www.alukah.net/images/alukah30/twitter.png">
+</a>
+</div>
+
+<!--
+<div style="text-align:center;">
+<a href="https://www.alukah.net/spotlight/1121/" target="_blank" title="رمضان - ملفات خاصة">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_2524/ramadan2.gif" title="رمضان - ملفات خاصة" />
+</a>
+</div>
+-->
+
+<div style="text-align:center;">
+<a href="https://www.alukah.net/LinkClick.aspx?id=3510" target="_blank" title="حقوق الملكية الفكرية">
+<img id="imgIpr"  width="600px" height="118px" alt="الدكتور سعد بن عبد الله الحميد" src="https://ban.alukah.net/Banners/Ban_3510/ipr_banner.jpg" title="حقوق الملكية الفكرية" />
+</a>
+</div>
+
+<br>
+<!-- Hijri -->
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+
+<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 2; // change minus two to minus one to plus a day
+}
+
+function hijriToString()
+{
+var months = new Array("محرم","صفر","ربيع أول","ربيع ثانى","جمادى أول","جمادى ثانى","رجب","شعبان","رمضان","شوال","ذو القعدة","ذو الحجة");
+return this.day +1 + " " + months[this.month - 1]+ " " + this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed();
+// added by abdeldayem to handle the hijri date
+i.day = i.day - 1; 
+//i.day = i.day; 
+
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت");
+var monthname=new Array("يناير","فبراير","مارس","إبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر");
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+document.write(weekday[dow] + " " + d + " " + monthname[m] + " " + y);
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+
+
+document.write(" ميلادي - " + h.toString() + " هجري &nbsp;&nbsp;");
+
+</script>
+</div>
+<br />
+
+<!-- <div style="border:2px solid green;"> --> 
+<div style="color: #46a46f; font-size: 1.5em;background-color:#F0F0F0;border:2px solid green;">
+<script async src="https://cse.google.com/cse.js?cx=011544761177997904624:e_zodn6n5rq"></script>
+<div class="gcse-search"></div>
+</div>
+
+<!-- Google Search -->
+<!--
+<div style="border:2px solid green;">
+<script>
+  (function() {
+var cx = '009743828569820032437:hgatw04ac0g';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+-->
+
+</div>
+</center>
+
+
+
+	<form action="profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+		<input type="hidden" name="do" value="dismissnotice" />
+		<input type="hidden" name="s" value="s=696d1a7d9adaea36633b28fa7c3827c1&amp;" />
+		<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="" />
+		<input type="hidden" name="url" value="" />
+		<ol>
+			<li class="restore" id="navbar_notice_8">
+	
+	إذا كانت هذه هي زيارتك الأولى ، كن متأكدا من اطلاعك على <a href="http://majles.alukah.net/t76439/" target="_blank"><strong> شروط التسجيل وقوانين المشاركة بالضغط هنا.</strong></a> قد تضطر إلى التسجيل قبل أن تتمكن من المشاركة في المنتدى <a href="http://majles.alukah.net/register.php" target="_blank"><strong>اضغط هنا للتسجيل.</strong></a> لبدء مشاهدة موضوعات الأعضاء، قم باختيار المنتدى الذي تريد زيارته من الاختيار أدناه.
+</li><li class="restore" id="navbar_notice_10">
+	
+	السادة أعضاء ورواد المجلس العلمي الكرام: لأفضل تصفح للمجلس العلمي ننصح باستخدام متصفح
+<a target="_blank" href="https://www.google.com/intl/ar/chrome/browser/desktop/index.html">
+<font color="#FF0000">كروم</font></a> أو متصفح
+<a target="_blank" href="https://www.mozilla.org/ar/firefox/new">
+<font color="#FF0000">فايرفوكس</font></a>.
+</li>
+		</ol>
+	</form>
+
+
+
+
+
+	<div id="above_postlist" class="above_postlist">
+		
+		<div id="pagination_top" class="pagination_top">
+		
+			<div id="postpagestats_above" class="postpagestats">
+				النتائج 1 إلى 9 من 9
+			</div>
+		</div>
+	</div>
+	<div id="pagetitle" class="pagetitle">
+		<h1>
+			الموضوع: <span class="threadtitle"><a href="showthread.php?t=174512&s=696d1a7d9adaea36633b28fa7c3827c1" title="تحديث الصفحة">■ مُختصر أحكام الصيام : ( الجزء الأول )</a></span>
+		</h1>
+		
+			
+<span id="fb-root"></span>
+<script type="text/javascript" src="//connect.facebook.net/en_US/all.js#appId=747619195293622&amp;xfbml=1"></script>
+
+<fb:like href="https://majles.alukah.net/showthread.php?t=174512" font="tahoma" layout="standard" show_faces="false" width="260" action="like" colorscheme="light"></fb:like>
+		
+	</div>
+	<div id="thread_controls" class="thread_controls toolsmenu">
+		<div>
+		<ul id="postlist_popups" class="postlist_popups popupgroup">
+			
+			
+			<li class="popupmenu" id="threadtools">
+				<h6><a class="popupctrl" href="javascript://">أدوات الموضوع</a></h6>
+				<ul class="popupbody popuphover">
+					<li><a href="printthread.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;t=174512&amp;pp=20&amp;page=1" accesskey="3" rel="nofollow">مشاهدة صفحة طباعة الموضوع</a></li>
+					
+					<li>
+						
+							<a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=addsubscription&amp;t=174512" rel="nofollow">الإشترك في هذا الموضوع&hellip;</a>
+						
+					</li>
+					
+				</ul>
+			</li>
+
+			
+
+			
+				<li class="popupmenu searchthread menusearch" id="searchthread">
+					<h6><a class="popupctrl" href="javascript://">بحث في الموضوع</a></h6>
+					<form action="search.php" method="post">
+						<ul class="popupbody popuphover">
+							<li>
+								<input type="text" name="query" class="searchbox" value="بحث..." tabindex="13" />
+								<input type="submit" class="button" value="البحث" tabindex="14" />
+							</li>
+							<li class="formsubmit" id="popupsearch">
+								<div class="submitoptions">&nbsp;</div>
+								<div class="advancedsearchlink"><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;search_type=1&amp;searchthreadid=174512&amp;contenttype=vBForum_Post">البحث المتقدم</a></div>
+							</li>
+						</ul>
+						<input type="hidden" name="s" value="696d1a7d9adaea36633b28fa7c3827c1" />
+						<input type="hidden" name="securitytoken" value="guest" />
+						<input type="hidden" name="do" value="process" />
+						<input type="hidden" name="searchthreadid" value="174512" />
+						<input type="hidden" name="search_type" value="1" />
+						<input type="hidden" name="contenttype" value="vBForum_Post" />
+					</form>
+				</li>
+			
+
+			
+
+			
+
+			
+			</ul>
+		</div>
+	</div>
+
+<div id="postlist" class="postlist restrain">
+	
+
+	
+		<ol id="posts" class="posts" start="1">
+			
+<li class="postbit postbitim postcontainer old" id="post_908606">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-19,&nbsp;<span class="time">09:29 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post908606" href="showthread.php?t=174512&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=908606#post908606" class="postcounter">#1</a><a id="postcount908606" name="1"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=142982&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="عبد رب الصالحين أبوضيف غير متواجد حالياً"><strong>عبد رب الصالحين أبوضيف</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=142982&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=142982&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="عبد رب الصالحين أبوضيف غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jun 2017</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>37</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon4.png" alt="Exclamation" /> ■ مُختصر أحكام الصيام : ( الجزء الأول )
+		</h2>
+		
+				
+					
+					
+				
+				
+		<div class="content">
+			<div id="post_message_908606">
+				<blockquote class="postcontent restore">
+					<font color="#1C1E21"><span style="font-family: Helvetica">■ مُختصر أحكام الصيام : <br />
+==============<br />
+( الجزء الأول )</span></font><br />
+<font color="#1C1E21"><span style="font-family: Helvetica">■ إعداد / عبدرب الصالحين العتموني</span></font><br />
+<font color="#1C1E21"><span style="font-family: Helvetica"><span style="font-family: inherit">■ إن الحمد لله نحمده ونستعينه ونستغفره ونعوذ بالله من شرور أنفسنا ومن سيئات أعمالنا من يهده الله فلا مضل له ومن يضلل فلا هادي له وأشهد أن لا إله إلا الله وحده لا شريك له وأشهد أن محمداً عبده ورسوله صلى الله عليه وسلم .</span><br />
+<span style="font-family: inherit">■ وبعد :</span><br />
+<span style="font-family: inherit">■ معنى الصيام لغة :<br />
+=========== <br />
+الصيام في اللغة : هو الإمساك والكف والامتناع عن الشئ فإذا أمسك شخص عن الكلام أو الطعام فلم يتكلم ولم يأكل فإنه يقال له في اللغة : صائم ومن ذلك قوله تعالى إخباراً عن مريم : ( إِنِّي نَذَرْتُ لِلرَّحْمَنِ صَوْمًا فَلَنْ أُكَلِّمَ الْيَوْمَ إِنْسِيًّا ) مريم : 26 إمساكاً عن الكلام .</span><br />
+<span style="font-family: inherit">■ معنى الصيام شرعاً : <br />
+=============<br />
+الصيام في اصطلاح الشرع : هو التعبد لله تعالي بالإمساك والامتناع عن الأكل والشرب والجماع ونحو ذلك من سائر المُفطرات من طلوع الفجر إلى غُروب الشمس مع النية .</span><br />
+<span style="font-family: inherit">■ وقت الصيام :<br />
+=========<br />
+وقت الصيام : يبدأ من حين أن يتبين طُلوع الفجر الصادق وينتهي بتحقق غُروب الشمس .<br />
+قال ابن عبدالبر رحمه الله : ( النهار الذي يجب صيامه من طلوع الفجر إلى غروب الشمس، على هذا إجماع علماء المسلمين ) أهـ .<br />
+وقال ابن هبيرة رحمه الله : ( واتفقوا على أن وجوب الصوم ووقته من أول طلوع الفجر الثاني إلى غروب الشمس ) أهـ .</span><br />
+<span style="font-family: inherit">■ أقسام الصيام : <br />
+=========<br />
+الصيام المشروع ينقسم إلي قسمين : <br />
+- القسم الأول : ( صيام واجب ) وينقسم إلي ثلاثة أقسام : <br />
+● (1) ما يجب للزمان نفسه وليس له سبب من المُكلف وهو &quot; صيام شهر رمضان &quot; .<br />
+● (2) ما يجب لعلة وسبب من المُكلف وهو &quot; صيام الكفارات &quot; .<br />
+● (3) ما يجب بإيجاب المُكلف علي نفسه وهو &quot; صيام النذر &quot; .<br />
+- القسم الثاني : ( صيام تطوع ) وينقسم إلي قسمين : <br />
+● (1) صيام مُطلق : وهو المشروع فعله من غير تقييد له بخصوصه بشرط أن يكون الصيام في غير الأيام المنهي عن الصيام فيها. <br />
+● (2) صيام مُقيد ( مُعين ) : وهو الذي ورد في الشرع استحبابه بخصوصه مثل صيام يوم الاثنين والخميس وصيام الأيام البيض وصيام الثلاثة أيام من كل شهر وصيام الست من شوال وصيام يوم عرفة وعاشوراء ونحو ذلك .</span><br />
+<span style="font-family: inherit">● أخي الحبيب :</span><br />
+<span style="font-family: inherit">● أكتفي بهذا القدر وللحديث بقية في الجزء الثاني إن شاء الله . <br />
+● وأسأل الله عز وجل أن يكون هذا البيان شافياً كافياً في توضيح المراد وأسأله سبحانه أن يرزقنا التوفيق والصواب في القول والعمل .<br />
+● وما كان من صواب فمن الله وما كان من خطأ أو زلل فمنى ومن الشيطان والله ورسوله من بريئان والله الموفق وصلي اللهم علي نبينا محمد وعلي آله وأصحابه أجمعين .</span><br />
+<span style="font-family: inherit">■ ■ ■ ■ ■<br />
+لا تنسونا من الدعاء<br />
+أخوكم / عبد رب الصالحين العتموني<br />
+مصر / محافظة سوهاج / مركز طما / قرية العتامنة <br />
+01002889832 / 01144316595</span><br />
+</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_908606" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_908606" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=908606" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_908606" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_908607">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-19,&nbsp;<span class="time">09:30 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post908607" href="showthread.php?t=174512&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=908607#post908607" class="postcounter">#2</a><a id="postcount908607" name="2"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=142982&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="عبد رب الصالحين أبوضيف غير متواجد حالياً"><strong>عبد رب الصالحين أبوضيف</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=142982&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=142982&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="عبد رب الصالحين أبوضيف غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jun 2017</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>37</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> ■ مُختصر أحكام الصيام : ( الجزء الثاني )
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_908607">
+				<blockquote class="postcontent restore">
+					<font color="#1C1E21"><span style="font-family: Helvetica">■ مُختصر أحكام الصيام : <br />
+==============</span></font><br />
+<font color="#1C1E21"><span style="font-family: Helvetica">( الجزء الثاني )</span></font><br />
+<font color="#1C1E21"><span style="font-family: Helvetica"><span style="font-family: inherit">■ إعداد / عبدرب الصالحين العتموني</span><br />
+<span style="font-family: inherit">■ إن الحمد لله نحمده ونستعينه ونستغفره ونعوذ بالله من شرور أنفسنا ومن سيئات أعمالنا من يهده الله فلا مضل له ومن يضلل فلا هادي له وأشهد أن لا إله إلا الله وحده لا شريك له وأشهد أن محمداً عبده ورسوله صلى الله عليه وسلم .</span><br />
+<span style="font-family: inherit">■ وبعد :</span><br />
+<span style="font-family: inherit">■ حُكم صيام شهر رمضان : <br />
+===============<br />
+صيام شهر رمضان واجب بالكتاب والسنة والإجماع وهو أحد أركان الإسلام التي عُلمت من الدين بالضرورة .</span><br />
+<span style="font-family: inherit">■ حُكم من ترك صيام شهر رمضان : <br />
+====================<br />
+من ترك صيام شهر رمضان مُنكراً لفرضيته كافر بإجماع المسلمين ومن ترك صيامه مُتعمداً بدون عذر شرعي وهو يعتقد فرضيته لا يكفر علي الراجح من قولي العلماء ولكنه فاسق من الفساق ومُرتكب لكبيرة من الكبائر وهو علي خطر عظيم .</span><br />
+<span style="font-family: inherit">■ متي فُرض صيام شهر رمضان ؟ <br />
+===================<br />
+فُرض صيام رمضان يوم الاثنين لليلتين خلتا من شعبان من السنة الثانية من الهجرة فصام رسول الله صلي الله عليه وسلم تسع رمضانات إجماعاً لأنه تُوفي في السنة الحادية عشرة .</span><br />
+<span style="font-family: inherit">■ سبب تسمية شهر رمضان بهذا الاسم : <br />
+======================<br />
+قيل : لأن رمضان مصدر رمضئ إذا احترق من الرمضاء فأضيف إليه الشهر وجعل علماً عليه ومُنع الصرف فيه للعلمية وزيادة الألف والنون وسمَّوْه بذلك لارتماضهم فيه من حر الجوع ومُقاساة شدته .<br />
+وقيل : لما نقلوا أسماء الشهور عن اللغة القديمة سموها بالأزمنة التي وقعت فيها فوافق هذا الشهر أيام رمض الحر .<br />
+فرمضان مُشتق من الرمَضَ رمض يرمض رمضاً وهو شدة الحر .</span><br />
+<span style="font-family: inherit">● أخي الحبيب :</span><br />
+<span style="font-family: inherit">● أكتفي بهذا القدر وللحديث بقية في الجزء الثالث إن شاء الله .</span><br />
+<span style="font-family: inherit">● وأسأل الله عز وجل أن يكون هذا البيان شافياً كافياً في توضيح المراد وأسأله سبحانه أن يرزقنا التوفيق والصواب في القول والعمل .<br />
+● وما كان من صواب فمن الله وما كان من خطأ أو زلل فمنى ومن الشيطان والله ورسوله من بريئان والله الموفق وصلي اللهم علي نبينا محمد وعلي آله وأصحابه أجمعين .</span><br />
+<span style="font-family: inherit">■ ■ ■ ■ ■<br />
+لا تنسونا من الدعاء<br />
+أخوكم / عبد رب الصالحين العتموني<br />
+مصر / محافظة سوهاج / مركز طما / قرية العتامنة <br />
+01002889832 / 01144316595</span><br />
+</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_908607" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_908607" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=908607" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_908607" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_908608">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-19,&nbsp;<span class="time">09:31 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post908608" href="showthread.php?t=174512&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=908608#post908608" class="postcounter">#3</a><a id="postcount908608" name="3"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=142982&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="عبد رب الصالحين أبوضيف غير متواجد حالياً"><strong>عبد رب الصالحين أبوضيف</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=142982&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=142982&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="عبد رب الصالحين أبوضيف غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jun 2017</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>37</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon1.png" alt="افتراضي" /> ■ مُختصر أحكام الصيام : ( الجزء الثالث )
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_908608">
+				<blockquote class="postcontent restore">
+					<font color="#1C1E21"><span style="font-family: Helvetica"><span style="font-family: inherit"><span style="font-family: inherit">■ مُختصر أحكام الصيام :<br />
+==============</span><br />
+<span style="font-family: inherit">( الجزء الثالث )</span><br />
+<span style="font-family: inherit"><span style="font-family: inherit">■ إعداد / عبد رب الصالحين العتموني</span><br />
+<span style="font-family: inherit">■ إن الحمد لله نحمده ونستعينه ونستغفره ونعوذ بالله من شرور أنفسنا ومن سيئات أعمالنا من يهده الله فلا مضل له ومن يضلل فلا هادي له وأشهد أن لا إله إلا الله وحده لا شريك له وأشهد أن محمداً عبده ورسوله صلى الله عليه وسلم .</span><br />
+<span style="font-family: inherit">■ وبعد :</span><br />
+<span style="font-family: inherit">■ بم يثبت دخول شهر رمضان ؟ <br />
+==================<br />
+يثبت دخول شهر رمضان بأحد أمرين :<br />
+الأول : رُؤية هلاله وتثبت هذه الرؤية بشهادة رجل واحد على الراجح من قولي العلماء بشرط أن يكون مُسلماً بالغاً عاقلاً عدلاً موثوقاً بخبره وأن يكون قوي البصر .<br />
+الثاني : إكمال عدة شعبان ثلاثين يوماً .<br />
+فإذا كانت السماء صافية وخالية من كل ما يمنع الرُؤية من غيم أو سحاب ونحوه ليلة الثلاثين من شعبان ولم يرو الهلال وجب الصوم .</span><br />
+<span style="font-family: inherit">■ حُكم صيام يوم الشك :<br />
+=============<br />
+يحرم صيام يوم الثلاثين من شعبان إذا قصد به الاحتياط لصيام رمضان على الراجح من قولي العلماء وذلك إذا حال دون رؤية الهلال &quot; غيم &quot; والغيم هو السحاب أو &quot; قتر &quot; وهو التراب الذي يأتي مع الرياح وكذلك غيرهما مما يمنع رُؤيته لأنه يُعتبر في هذه الحالة هو يوم الشك المنهي عن صيامه .</span><br />
+<span style="font-family: inherit">■ الطريقة الشرعية لثبوت دخول شهر رمضان :<br />
+==========================<br />
+الطريقة الشرعية لثُبوت دخول شهر رمضان هي : أن يتراءى الناس الهلال وينبغي أن يكون ذلك ممن يُوثق به في دينه وفي قوة نظره فإذا رأوه وجب العمل بمقتضى هذه الرؤية صوماً إن كان الهلال هلال رمضان وإفطاراً إن كان الهلال هلال شوال ولا يجوز اعتماد حساب المراصد الفلكية إذا لم يكن رُؤية فإن كان هناك رُؤية ولو عن طريق المراصد الفلكية فإنها مُعتبرة أما مُجرد الحساب فإنه لا يجوز العمل به ولا الاعتماد عليه .</span><br />
+<span style="font-family: inherit">■ حُكم استعمال المنظار المُقرِّب في رؤية الهلال :<br />
+===========================<br />
+● استعمال المنظار المُقرِّب في رُؤية الهلال لا بأس به ولكن ليس بواجب لأن الظاهر من السنة أن الاعتماد على الرُؤية المُعتادة لا على غيرها ولكن لو استعمل فرآه من يُوثق به فإنه يُعمل بهذه الرُؤية وقد كان الناس قديماً يستعملون ذلك لما كانوا يصعدون ( المنائر ) في ليلة الثلاثين من شعبان أو ليلة الثلاثين من رمضان فيتراءونه بواسطة هذا المنظار .<br />
+وعليه فمتى ثبتت رُؤية الهلال بأي وسيلة فإنه يجب العمل بمُقتضى هذه الرُؤية .</span><br />
+<span style="font-family: inherit">● أخي الحبيب :</span><br />
+<span style="font-family: inherit">● أكتفي بهذا القدر وللحديث بقية في الجزء الرابع إن شاء الله .</span><br />
+<span style="font-family: inherit">● وأسأل الله عز وجل أن يكون هذا البيان شافياً كافياً في توضيح المراد وأسأله سبحانه أن يرزقنا التوفيق والصواب في القول والعمل .<br />
+● وما كان من صواب فمن الله وما كان من خطأ أو زلل فمنى ومن الشيطان والله ورسوله من بريئان والله الموفق وصلي اللهم علي نبينا محمد وعلي آله وأصحابه أجمعين .</span><br />
+<span style="font-family: inherit">■ ■ ■ ■ ■<br />
+لا تنسونا من الدعاء<br />
+أخوكم / عبد رب الصالحين العتموني<br />
+مصر / محافظة سوهاج / مركز طما / قرية العتامنة <br />
+01002889832 / 01144316595</span><br />
+<br />
+<br />
+</span><br />
+</span><br />
+</span></font><br />
+<font color="#1C1E21"><span style="font-family: Helvetica"><span style="font-family: inherit"><span style="font-family: inherit"><span style="font-family: inherit"><br />
+</span><br />
+</span><br />
+</span><br />
+</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_908608" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_908608" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=908608" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_908608" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_908610">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-19,&nbsp;<span class="time">09:32 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post908610" href="showthread.php?t=174512&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=908610#post908610" class="postcounter">#4</a><a id="postcount908610" name="4"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=142982&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="عبد رب الصالحين أبوضيف غير متواجد حالياً"><strong>عبد رب الصالحين أبوضيف</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=142982&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=142982&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="عبد رب الصالحين أبوضيف غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jun 2017</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>37</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon4.png" alt="Exclamation" /> ■ مُختصر أحكام الصيام : ( الجزء الرابع )
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_908610">
+				<blockquote class="postcontent restore">
+					<font color="#1C1E21"><span style="font-family: Helvetica">■ مُختصر أحكام الصيام : <br />
+==============</span></font><br />
+<font color="#1C1E21"><span style="font-family: Helvetica">( الجزء الرابع )</span></font><br />
+<font color="#1C1E21"><span style="font-family: Helvetica"><span style="font-family: inherit">■ إعداد / عبد رب الصالحين العتموني</span><br />
+<span style="font-family: inherit">■ إن الحمد لله نحمده ونستعينه ونستغفره ونعوذ بالله من شرور أنفسنا ومن سيئات أعمالنا من يهده الله فلا مضل له ومن يضلل فلا هادي له وأشهد أن لا إله إلا الله وحده لا شريك له وأشهد أن محمداً عبده ورسوله صلى الله عليه وسلم .</span><br />
+<span style="font-family: inherit">■ وبعد :</span><br />
+<span style="font-family: inherit">■ بم يثبت دخول شهر شوال ؟ <br />
+================<br />
+يثبت دخول شهر شوال بإكمال عدة رمضان ثلاثين يوماً أو برُؤية هلاله بشهادة اثنان ذوا عدل ولا تُقبل فيه شهادة العدل الواحد وهو الراجح من قولي العلماء .</span><br />
+<span style="font-family: inherit">■ حُكم اختلاف المطالع في الصيام :<br />
+=================== <br />
+لا يجب الصوم في رمضان ولا الفطر في شوال إلا لمن رأي الهلال أو من كان مُوافقاً لمن رآه في مطالع الهلال لأن مطالع الهلال تختلف باتفاق أهل المعرفة فإذا اختلفت وجب أن يُحكم لكل بلد برُؤيته والبلاد التي تُوافق في مطالع الهلال فهي تبعاً له وإلا فلا وهو الراجح من قولي العلماء .</span><br />
+<span style="font-family: inherit">■ معرفة الهلال بالرؤية لا بالحساب : <br />
+====================<br />
+لا اعتبار بمعرفة الحساب والمنازل في دخول وقت الصوم لأن الرُؤية هي المُستند الشرعي في أحكام الصيام والإفطار فلا يصح الاعتماد علي الحساب بحال من الأحوال .</span><br />
+<span style="font-family: inherit">■ حُكم من رأي هلال رمضان وحده :<br />
+====================<br />
+من رأي هلال رمضان وحده بيقين كأن يكون في صحراء وليس معه أحد ورأي الهلال أو يجتمع معه الناس لرُؤية الهلال فيراه هو ولا يراه غيره لكن رُدَّ قوله لجهالته أو لسبب لآخر كأن يكون في بلدة يشترط فيها شاهدان لزمه الصوم وصار في حقه واجباً لأنه تيقن رُؤية الهلال ويصوم سراً وهذا من باب الاحتياط ولئلا يُعلن مُخالفة الناس وهو الراجح من قولي العلماء .</span><br />
+<span style="font-family: inherit">● أخي الحبيب :</span><br />
+<span style="font-family: inherit">● أكتفي بهذا القدر وللحديث بقية في الجزء الخامس إن شاء الله .</span><br />
+<span style="font-family: inherit">● وأسأل الله عز وجل أن يكون هذا البيان شافياً كافياً في توضيح المراد وأسأله سبحانه أن يرزقنا التوفيق والصواب في القول والعمل .<br />
+● وما كان من صواب فمن الله وما كان من خطأ أو زلل فمنى ومن الشيطان والله ورسوله من بريئان والله الموفق وصلي اللهم علي نبينا محمد وعلي آله وأصحابه أجمعين .</span><br />
+<span style="font-family: inherit">■ ■ ■ ■ ■<br />
+لا تنسونا من الدعاء<br />
+أخوكم / عبد رب الصالحين العتموني<br />
+مصر / محافظة سوهاج / مركز طما / قرية العتامنة <br />
+01002889832 / 01144316595</span><br />
+</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_908610" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_908610" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=908610" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_908610" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_908611">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-19,&nbsp;<span class="time">09:33 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post908611" href="showthread.php?t=174512&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=908611#post908611" class="postcounter">#5</a><a id="postcount908611" name="5"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=142982&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="عبد رب الصالحين أبوضيف غير متواجد حالياً"><strong>عبد رب الصالحين أبوضيف</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=142982&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=142982&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="عبد رب الصالحين أبوضيف غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jun 2017</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>37</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon4.png" alt="Exclamation" /> ■ مُختصر أحكام الصيام : ( الجزء الخامس )
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_908611">
+				<blockquote class="postcontent restore">
+					<font color="#1D2129"><span style="font-family: Helvetica">■ مُختصر أحكام الصيام : <br />
+==============</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">( الجزء الخامس )</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ إعداد / عبد رب الصالحين العتموني</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ إن الحمد لله نحمده ونستعينه ونستغفره ونعوذ بالله من شرور أنفسنا ومن سيئات أعمالنا من يهده الله فلا مضل له ومن يضلل فلا هادي له وأشهد أن لا إله إلا الله وحده لا شريك له وأشهد أن محمداً عبده ورسوله صلى الله عليه وسلم .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ وبعد :</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ حُكم الدعاء عند رُؤية الهلال : <br />
+==================<br />
+يُستحب لمن رأى الهلال أن يقول : ( اللهم أهله علينا باليُمن والإيمان والسلامة والإسلام ربي وربك الله ) ثبت ذلك عن رسول الله صلي الله عليه وسلم من حديث طلحة بن عبيدالله عند الترمذي وأحمد وصححه الشيخ الألباني رحمه الله .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ حُكم من لم يعلم بدخول شهر رمضان إلا بعد طُلوع الفجر : <br />
+==============================  ===<br />
+من لم يعلم بدخول شهر رمضان إلا بعد طلوع الفجر فعليه أن يُمسك بقية يومه وعليه القضاء وهو الراجح من قولي العلماء لأنه لم ينو الصيام من الليل بل مضي عليه جزء من اليوم بلا نية وتبيت النية في صيام الواجب شرط لصحته .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ شُروط صحة الصيام :<br />
+=============<br />
+يُشترط لصحة الصيام أمران : <br />
+- (1) النية .<br />
+- (2) الطهارة من الحيض والنفاس .<br />
+● ويشترط في النية الجزم المُنافي للتردد والتعيين أي أن هذا اليوم الذي يصومه من رمضان أو من قضائه أو من كفارته وهكذا .<br />
+● ويُشترط فيها تبييتها من الليل ( ما بين غُروب الشمس إلي طُلوع الفجر ) ويحصل ذلك في أي جزء منه وهذا في الصيام الواجب .<br />
+● والراجح من قولي العلماء أنها تكفي نية واحدة عن الشهر كله في أوله ما لم يحصل له عُذر ينقطع به التتابع مثل المُسافر الذي أفطر في سفره فإن عاد يجب عليه أن يُجدد النية للصوم .<br />
+● ويجوز إنشاء الصوم من النهار في التطوع المُطلق سواء كان ذلك قبل الزوال أو بعده عند بعض العلماء بشرط أن لا يأتي مُفطراً من بعد طُلوع الفجر .<br />
+ولكن هل يُثاب ثواب يوم كامل أو يثاب من النية ؟ <br />
+الراجح من قولي العلماء أنه لا يُثاب إلا من وقت النية فقط لأنه قبل النية لم يكن صائماً .<br />
+أما النفل المُعين في الصيام مثل صيام يوم الاثنين والخميس وصيام الأيام البيض وصيام الثلاثة أيام من كل شهر وصيام الست من شوال وصيام يوم عرفة وعاشوراء ونحو ذلك إذا نواه الإنسان أثناء النهار لا يحصل له ثواب ذلك اليوم كاملاً .<br />
+فمثلاً من نوي صيام يوم الاثنين في أثناء النهار فلا يُثاب ثواب من صام يوم الاثنين من أول النهار ولا يصدق عليه أنه صام يوم الاثنين لأن الصوم من طُلوع الفجر إلي غُروب الشمس لابد أن تستوعب النية هذا الزمن ولو خلا جزء من هذا الزمن عن النية لا يقال الناس أنه صام يومه لأن يومه يكون ناقصاً وكذلك لو أن أحداً قام من بعد طُلوع الفجر ولم يأكل شيئاً وفي نصف النهار نوي الصوم علي أنه من أيام الست ثم صام بعد هذا اليوم خمسة أيام فيكون قد صام خمسة أيام ونصفاً فهذا لا يحصل علي ثواب أجر صيام الأيام الستة لأنه لم يصم ستة أيام ولأن الأعمال بالنيات وهذا يقال في صوم عرفة أما لو كان الصوم نفلاً مُطلقاً فإنه يصح ويُثاب من وقت نيته فقط .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">● أخي الحبيب :</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">● أكتفي بهذا القدر وللحديث بقية في الجزء السادس إن شاء الله .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">● وأسأل الله عز وجل أن يكون هذا البيان شافياً كافياً في توضيح المراد وأسأله سبحانه أن يرزقنا التوفيق والصواب في القول والعمل .<br />
+● وما كان من صواب فمن الله وما كان من خطأ أو زلل فمنى ومن الشيطان والله ورسوله من بريئان والله الموفق وصلي اللهم علي نبينا محمد وعلي آله وأصحابه أجمعين .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ ■ ■ ■ ■<br />
+لا تنسونا من الدعاء<br />
+أخوكم / عبد رب الصالحين العتموني<br />
+مصر / محافظة سوهاج / مركز طما / قرية العتامنة <br />
+01002889832 / 01144316595</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_908611" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_908611" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=908611" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_908611" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_908612">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-19,&nbsp;<span class="time">09:34 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post908612" href="showthread.php?t=174512&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=908612#post908612" class="postcounter">#6</a><a id="postcount908612" name="6"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=142982&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="عبد رب الصالحين أبوضيف غير متواجد حالياً"><strong>عبد رب الصالحين أبوضيف</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=142982&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=142982&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="عبد رب الصالحين أبوضيف غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jun 2017</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>37</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon4.png" alt="Exclamation" /> ■ مُختصر أحكام الصيام : ( الجزء السادس )
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_908612">
+				<blockquote class="postcontent restore">
+					<font color="#1C1E21"><span style="font-family: Helvetica"><span style="font-family: inherit"><span style="font-family: inherit">■ مُختصر أحكام الصيام : <br />
+==============</span><br />
+<span style="font-family: inherit">( الجزء السادس )</span><br />
+<span style="font-family: inherit"><span style="font-family: inherit">■ إعداد / عبد رب الصالحين العتموني</span><br />
+<span style="font-family: inherit">■ إن الحمد لله نحمده ونستعينه ونستغفره ونعوذ بالله من شرور أنفسنا ومن سيئات أعمالنا من يهده الله فلا مضل له ومن يضلل فلا هادي له وأشهد أن لا إله إلا الله وحده لا شريك له وأشهد أن محمداً عبده ورسوله صلى الله عليه وسلم .</span><br />
+<span style="font-family: inherit">■ وبعد :</span><br />
+<span style="font-family: inherit">■ أركان الصيام :<br />
+=========<br />
+أركان الصيام التي تتركب منه حقيقته هي :<br />
+(1) الإمساك : وهو : الكف عن المُفطرات .<br />
+(2) الزمان : والمُراد به النهار وهو : من طُلوع الفجر إلى غُروب الشمس .</span><br />
+<span style="font-family: inherit">■ علي من يجب الصيام ؟ <br />
+==============<br />
+أجمع العلماء : على أن الصيام يجب على : <br />
+1- المُسلم : ( فلا صيام على كافر ) .<br />
+2- العاقل : ( وهو : من يعقل الأشياء ويُدركها ويفهمها أما من لم يُدرك الأشياء فلا يجب عليه الصيام مثل المجنون ومن كبر سنه حتى صار لا يعقل ) .<br />
+3- البالغ : ( فلا يجب الصيام علي الصبي ) .<br />
+والبالغ هو : ( من اتصف بأحد علامات البلوغ وهي ثلاثة بالنسبة للذكر : خُروج شعر العانة أو بُلوغ السنة الخامسة عشر أو إنزال المني وتزيد المرأة أمر رابع وهو الحيض ) .<br />
+4- الصحيح : فلا صيام علي مريض ومن في حُكمه مثل الشيخ الكبير والحامل والمُرضع .<br />
+5- المُقيم : ( فلا يجب علي مُسافر ) والعلة في الفطر السفر وليست المشقة .<br />
+6- الخلو من الموانع : ( فلا يجب علي حائض أو نُفساء ) .</span><br />
+<span style="font-family: inherit">● الصبي ( وإن كان الصيام غير واجب عليه ) إلا أنه ينبغي لولي أمره أن يأمره به ليعتاده من الصغر مادام مُستطيعاً له وقادراً عليه ويصح منه وله أجر الصيام على الصحيح ولوالديه أجر التعليم والتربية والحث على الصيام .</span><br />
+<span style="font-family: inherit">● أخي الحبيب :</span><br />
+<span style="font-family: inherit">● أكتفي بهذا القدر وللحديث بقية في الجزء السابع إن شاء الله .</span><br />
+<span style="font-family: inherit">● وأسأل الله عز وجل أن يكون هذا البيان شافياً كافياً في توضيح المراد وأسأله سبحانه أن يرزقنا التوفيق والصواب في القول والعمل .<br />
+● وما كان من صواب فمن الله وما كان من خطأ أو زلل فمنى ومن الشيطان والله ورسوله من بريئان والله الموفق وصلي اللهم علي نبينا محمد وعلي آله وأصحابه أجمعين .</span><br />
+<span style="font-family: inherit">■ ■ ■ ■ ■<br />
+لا تنسونا من الدعاء<br />
+أخوكم / عبد رب الصالحين العتموني<br />
+مصر / محافظة سوهاج / مركز طما / قرية العتامنة <br />
+01002889832 / 01144316595</span><br />
+<br />
+<br />
+</span><br />
+</span><br />
+</span></font><br />
+<font color="#1C1E21"><span style="font-family: Helvetica"><span style="font-family: inherit"><span style="font-family: inherit"><span style="font-family: inherit"><br />
+</span><br />
+</span><br />
+</span><br />
+</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_908612" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_908612" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=908612" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_908612" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_908613">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-19,&nbsp;<span class="time">09:35 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post908613" href="showthread.php?t=174512&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=908613#post908613" class="postcounter">#7</a><a id="postcount908613" name="7"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=142982&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="عبد رب الصالحين أبوضيف غير متواجد حالياً"><strong>عبد رب الصالحين أبوضيف</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=142982&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=142982&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="عبد رب الصالحين أبوضيف غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jun 2017</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>37</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon4.png" alt="Exclamation" /> ■ مُختصر أحكام الصيام : ( الجزء السابع )
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_908613">
+				<blockquote class="postcontent restore">
+					<font color="#1D2129"><span style="font-family: Helvetica">■ مُختصر أحكام الصيام : <br />
+==============</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">( الجزء السابع )</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ إعداد / عبد رب الصالحين العتموني</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ إن الحمد لله نحمده ونستعينه ونستغفره ونعوذ بالله من شرور أنفسنا ومن سيئات أعمالنا من يهده الله فلا مضل له ومن يضلل فلا هادي له وأشهد أن لا إله إلا الله وحده لا شريك له وأشهد أن محمداً عبده ورسوله صلى الله عليه وسلم .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ وبعد :</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ من يُرخص لهم الفطر ويجب عليهم القضاء فقط :<br />
+===========================</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">● (1) المريض الذي يُرجى شفاء مرضه :</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">يباح الفطر للمريض الذي يُرجى بُرؤه (شفاؤه ) ويجب عليه القضاء .<br />
+والمرض المُبيح للفطر هو المرض الشديد الذي يزيد بالصوم أو يخشى تأخر برئه .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">● (2) المُسافر :</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">● أجمع العلماء علي جواز الفطر للمُسافر سواء كان قادراً علي الصيام أم عاجزاً وسواء شق عليه الصوم أم لم يشق ويجب عليه القضاء <br />
+ولكن اختلفوا في الأفضل له هل الفطر أم الصوم ؟ <br />
+والصواب أنه يفعل الأيسر له فإن كان الفطر أفضل له أفطر وإن كان الصيام أفضل له صام . <br />
+● السفر المُبيح للفطر هو السفر الذي تُقصر الصلاة بسببه ومُدة الإقامة التي يجوز للمُسافر أن يفطر فيها هي المُدة التي يجوز له أن يقصر الصلاة فيها وفيها خلاف كبير بين العلماء ومذهب الجمهور أن السفر الذي تُقصر الصلاة بسببه يُقدر بمسافة مسيرة يومين قاصدين للإبل وهي : مسافة ستة عشرة فرسخاً ومقدارها بالكيلو : ( 81 كم ) بالتقريب لا التحديد . <br />
+والصواب أن السفر ليس له حد لا في اللغة ولا في الشرع بل المرجع في ذلك إلي العُرف فلا اعتبار بمسافة السفر وهذا اختيار شيخ الإسلام ابن تيمية وابن القيم رحمهما الله .<br />
+ولا اعتبار كذلك بوسيلة السفر أكانت مُرهقة أم مُريحة فاسم المُسافر يُطلق علي كل من سافر سفراً طال أو قصر وسواء شق عليه ذلك أم كان مُستريحاً ولا دليل علي التفريق في ذلك ولأن العلة في الفطر السفر وليست المشقة فكل سفر يجوز فيه الفطر ولو كان سفراً مُريحاً بالطائرة أو بغيرها .<br />
+● إذا كان السفر أو المرض يشق علي الصائم مشقة شديدة غير مُحتملة ويضره فإنه يحرم عليه الصوم .<br />
+● إذا كان السفر لا يشق علي الصائم فإن الصوم له أفضل من الفطر وهو الراجح وهو مذهب أبوحنيفة ومالك والشافعي لأنه أسهل علي الإنسان لأن الإنسان إذا صام مع الناس كان أسهل عليه ولأن فيه إبراء الذمة ولأنه يُدرك الزمن الفاضل وهو رمضان فإن رمضان أفضل من غيره لأنه محل الوجوب وكذلك إذا كان الصوم والفطر عنده سواء وليس لأحدهما مزية علي الآخر فإن الصوم له أفضل لأن الصوم في نفس الشهر أسهل من القضاء غالباً .<br />
+وذهب بعض العلماء إلي أن الفطر أفضل وهو مذهب ابن عمر‏ وابن عباس وسعيد بن المسيب والشعبي‏‏ والأوزاعي وإسحاق وأحمد وهذا اختيار شيخ الإسلام ابن تيمية رحمه الله .<br />
+● يجوز للسائق الذي يُسافر بصفة مُستمرة أن يترخص برخص السفر من فطر وقصر وجمع ومسح علي الخفين ثلاثة أيام ويجب عليه قضاء ما أفطره من رمضان إذا كان في أهله ويستغل أيام الشتاء في القضاء لأنها قصيرة وباردة وذلك أسهل له .<br />
+● إذا قدم المُسافر إلي بلده مُفطراً في نهار رمضان ووجد زوجته قد طهرت من حيضها في هذا اليوم جاز له ولها الجماع في نهار رمضان علي الراجح .<br />
+● من نوي السفر وعزم عليه عزماً أكيداً أثناء صيامه فله الفطر ولكن متي يفطر ؟ <br />
+في هذه المسألة خلاف بين العلماء :<br />
+قيل : يبدأ الفطر من حيث عزم على السفر وبه قال الحسن البصري وعطاء .<br />
+وقيل : لا يُفطر حتى يُفارق عامر بلدته وهو قول جمهور العلماء وهو الراجح لأنه لم يزل في حُكم المُقيم حتى يخرج لأنه قد يُعرض له ما يمنعه من سفره أما من نوي السفر ولم يشرع فيه بالخروج فهو ناوٍ فقط وليس له حُكم المُسافر وفرق بين نية السفر والسفر ذاته لأن السفر هو العذر وليست نيته ولذلك لا تُشرع رُخص السفر من قصر للصلاة ونحوها إلا بعد الشروع فيه .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">● (3) الحائض والنفساء :</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">أجمع العلماء على أنه يجب الفطر على الحائض والنفساء ويحرم عليهما الصيام وإذا صامتا لا يصح صومهما ويقع باطلاً وعليهما القضاء .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">● (4) الحامل والمُرضع علي الراجح :</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">يجوز للحامل والمُرضع الفطر في رمضان إذا كانت لا تطيق الصيام وخشيت على نفسها أو علي جنينها أو علي طفلها من الضرر إن هي صامت .<br />
+أما إذا كان بدنها قوياً وكان ذلك لا يضر لا الجنين ولا الطفل فإنه لا يحل لها أن تفطر وإذا أفطرت للحاجة أو للخوف على نفسها أو جنينها أو طفلها فإنها تقضي إلى أن يبقى من رمضان القادم مثل ما عليها من الأيام ففي هذه الحالة يجب أن تصوم القضاء ولها أن تقضي يوماً بعد يوم أو يوماً بعد يومين أو من كل أسبوع يومين حسب نشاطها وقدرتها إلا أنها لا تُؤخره إلى رمضان الثاني .<br />
+وذهب بعض العلماء إلي وجوب الإطعام مع القضاء إذا كان عُذرهما الخوف علي المولود ولكن ليس في وجوب الإطعام دليل من الكتاب والسنة وليس عليهما سوي القضاء علي كل حال وهذا مذهب أبي حنيفة والشافعي وأحمد وهو الراجح .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">● (5) من اضطر إلي إنقاذ معصوم من هلكة ولا يُمكن إنقاذه إذا لم يُفطر مثل إنقاذ الحريق أو الغريق ونحوهما .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">● أخي الحبيب :</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">● أكتفي بهذا القدر وللحديث بقية في الجزء الثامن إن شاء الله .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">● وأسأل الله عز وجل أن يكون هذا البيان شافياً كافياً في توضيح المراد وأسأله سبحانه أن يرزقنا التوفيق والصواب في القول والعمل .<br />
+● وما كان من صواب فمن الله وما كان من خطأ أو زلل فمنى ومن الشيطان والله ورسوله من بريئان والله الموفق وصلي اللهم علي نبينا محمد وعلي آله وأصحابه أجمعين .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ ■ ■ ■ ■<br />
+لا تنسونا من الدعاء<br />
+أخوكم / عبد رب الصالحين العتموني<br />
+مصر / محافظة سوهاج / مركز طما / قرية العتامنة <br />
+01002889832 / 01144316595</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_908613" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_908613" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=908613" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_908613" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_908614">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-19,&nbsp;<span class="time">09:36 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post908614" href="showthread.php?t=174512&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=908614#post908614" class="postcounter">#8</a><a id="postcount908614" name="8"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=142982&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="عبد رب الصالحين أبوضيف غير متواجد حالياً"><strong>عبد رب الصالحين أبوضيف</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=142982&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=142982&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="عبد رب الصالحين أبوضيف غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jun 2017</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>37</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon4.png" alt="Exclamation" /> ■ مُختصر أحكام الصيام : ( الجزء الثامن )
+		</h2>
+		
+				
+				
+		<div class="content">
+			<div id="post_message_908614">
+				<blockquote class="postcontent restore">
+					<font color="#1C1E21"><span style="font-family: Helvetica"><span style="font-family: inherit"><span style="font-family: inherit">■ مُختصر أحكام الصيام :<br />
+==============</span><br />
+<span style="font-family: inherit">( الجزء الثامن )</span><br />
+<span style="font-family: inherit"><span style="font-family: inherit">■ إعداد / عبد رب الصالحين العتموني</span><br />
+<span style="font-family: inherit">■ إن الحمد لله نحمده ونستعينه ونستغفره ونعوذ بالله من شرور أنفسنا ومن سيئات أعمالنا من يهده الله فلا مضل له ومن يضلل فلا هادي له وأشهد أن لا إله إلا الله وحده لا شريك له وأشهد أن محمداً عبده ورسوله صلى الله عليه وسلم .</span><br />
+<span style="font-family: inherit">■ وبعد :</span><br />
+<span style="font-family: inherit">■ من يُرخص لهم الفطر وعليهم الإطعام فقط :<br />
+=========================<br />
+● (1) المريض الذي لا يُرجى شفاء مرضه .<br />
+● (2) الشيخ الكبير والمرأة العجوز .<br />
+المريض الذي لا يُرجى بُرؤه والشيخ الكبير والمرأة العجوز هؤلاء جميعاً يُرخص لهم في الفطر<br />
+إذا كان الصيام يُجهدهم ويشق عليهم مشقة شديدة في جميع فُصول السنة وعليهم أن يُطعموا عن كل يوم مسكيناً .<br />
+وهذا قول علي وابن عباس‏‏ وأبي هريرة وأنس وسعيد بن جبير‏‏ وطاوس وأبي حنيفة والثوري‏‏ والأوزاعي وهو الراجح .<br />
+وقال مالك‏ :‏ لا يجب عليهم شيء لأنهم تركوا الصوم لعجزهم فلم يجب عليهم الإطعام وللشافعي قولان كالمذهبين .</span><br />
+<span style="font-family: inherit">● مقدار الإطعام : <br />
+==========<br />
+قُدر ( أي الإطعام ) بنحو صاع أو نصف صاع نبوي أو مُد على خلاف في ذلك من تمر أو بر أو أرز أو غيره مما يحصل به الإطعام .</span><br />
+<span style="font-family: inherit">● كيفية الإطعام لها صُورتان : <br />
+=================<br />
+الأولي : يصنع طعاماً فيدعو إليه الفقراء أو المساكين بحسب الأيام التي عليه فيُغديهم أو يُعشيهم فقد كان أنس بن مالك رضي الله عنه عندما كبر يجمع ثلاثين فقيراً ويُطعمهم خُبزاً وأُدماً . <br />
+الثانية : يُعطي كل فقير أو مسكين طعاماً غير مطبوخ ويقوم الفقير أو المسكين بإعداده بنفسه ويحسن أن يجعل معه ما يُؤدمه من لحم وغيره .<br />
+● من جاز له الفطر وزال عُذره أثناء النهار لا يلزمه الإمساك في بقية اليوم مثل المُسافر إذا قدم بلده وهو مُفطر بل يجب عليه القضاء فقط ومثله الحائض والنفساء إذا طهرتا أثناء النهار ذهب إلي ذلك أحمد في رواية عنه .</span><br />
+<span style="font-family: inherit">● أخي الحبيب :</span><br />
+<span style="font-family: inherit">● أكتفي بهذا القدر وللحديث بقية في الجزء التاسع إن شاء الله .</span><br />
+<span style="font-family: inherit">● وأسأل الله عز وجل أن يكون هذا البيان شافياً كافياً في توضيح المراد وأسأله سبحانه أن يرزقنا التوفيق والصواب في القول والعمل .<br />
+● وما كان من صواب فمن الله وما كان من خطأ أو زلل فمنى ومن الشيطان والله ورسوله من بريئان والله الموفق وصلي اللهم علي نبينا محمد وعلي آله وأصحابه أجمعين .</span><br />
+<span style="font-family: inherit">■ ■ ■ ■ ■<br />
+لا تنسونا من الدعاء<br />
+أخوكم / عبد رب الصالحين العتموني<br />
+مصر / محافظة سوهاج / مركز طما / قرية العتامنة <br />
+01002889832 / 01144316595</span><br />
+<br />
+<br />
+</span><br />
+</span><br />
+</span></font><br />
+<font color="#1C1E21"><span style="font-family: Helvetica"><span style="font-family: inherit"><span style="font-family: inherit"><span style="font-family: inherit"><br />
+</span><br />
+</span><br />
+</span><br />
+</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_908614" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_908614" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=908614" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_908614" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+<li class="postbit postbitim postcontainer old" id="post_908615">
+	<div class="postdetails_noavatar">
+		<div class="posthead">
+                        
+                                <span class="postdate old">
+                                        
+                                                <span class="date">2019-05-19,&nbsp;<span class="time">09:37 PM</span></span>
+                                        
+                                </span>
+                                <span class="nodecontrols">
+                                        
+                                                <a name="post908615" href="showthread.php?t=174512&amp;s=696d1a7d9adaea36633b28fa7c3827c1&amp;p=908615#post908615" class="postcounter">#9</a><a id="postcount908615" name="9"></a>
+                                        
+                                        
+                                        
+                                </span>
+                        
+		</div>
+
+		<div class="userinfo_noavatar">
+			<div class="contact">
+				
+				<div class="username_container">
+					
+						<div class="popupmenu memberaction">
+	<a class="username offline popupctrl" href="member.php?u=142982&amp;s=696d1a7d9adaea36633b28fa7c3827c1" title="عبد رب الصالحين أبوضيف غير متواجد حالياً"><strong>عبد رب الصالحين أبوضيف</strong></a>
+	<ul class="popupbody popuphover memberaction_body">
+		<li class="left">
+			<a href="member.php?u=142982&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="siteicon_profile">
+				الملف الشخصي
+			</a>
+		</li>
+		
+		<li class="right">
+			<a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=finduser&amp;userid=142982&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+				مشاهدة المشاركات
+			</a>
+		</li>
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+
+		
+		
+	</ul>
+</div>
+						<img class="inlineimg onlinestatus" src="images/metro/purple/statusicon/user-offline.png" alt="عبد رب الصالحين أبوضيف غير متواجد حالياً" border="0" />
+
+					
+					<span class="usertitle">
+						
+					</span>
+					
+
+                                        
+					
+					
+						<div class="imlinks">
+							    
+						</div>
+					
+				</div>
+			</div>
+			
+				<div class="userinfo_extra">
+					<dl class="userstats">
+						<dt>تاريخ التسجيل</dt> <dd>Jun 2017</dd>
+						
+						
+						<dt>المشاركات</dt> <dd>37</dd>	
+						
+					</dl>
+					
+					
+				</div>
+			
+		</div>
+	</div>
+
+	<div class="postbody">
+		
+		<div class="postrow">
+		
+		<h2 class="posttitle icon">
+			<img src="images/icons/icon4.png" alt="Exclamation" /> ■ مُختصر أحكام الصيام : ( الجزء التاسع )
+		</h2>
+		
+				
+				
+					
+				
+		<div class="content">
+			<div id="post_message_908615">
+				<blockquote class="postcontent restore">
+					<font color="#1D2129"><span style="font-family: Helvetica">■ مُختصر أحكام الصيام : <br />
+==============<br />
+( الجزء التاسع )</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ إعداد / عبد رب الصالحين العتموني</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ إن الحمد لله نحمده ونستعينه ونستغفره ونعوذ بالله من شرور أنفسنا ومن سيئات أعمالنا من يهده الله فلا مضل له ومن يضلل فلا هادي له وأشهد أن لا إله إلا الله وحده لا شريك له وأشهد أن محمداً عبده ورسوله صلى الله عليه وسلم .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ وبعد :</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ مُستحبات الصيام وآدابه : <br />
+===============<br />
+يُستحب للصائم أن يُراعي في صيامه الآداب الآتية :</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ السحور : وهو الأكل والشرب في وقت السحر بنية الصوم وقد أجمعت الأمة على استحبابه وأنه لا إثم على من تركه .<br />
+ويتحقق السحور بكثير الطعام وقليله ولو بجرعة ماء ولو جعل في السحور تمراً فهو أفضل .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ تأخير السحور إلي الجزء الأخير من الليل : ويبتدئ وقت السحور من مُنتصف الليل إلى طلوع الفجر .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ تعجيل الفطر : يُستحب للصائم أن يُعجل الفطر متى تحقق غُروب الشمس .<br />
+■ الفطر علي رُطب أو تمر أو ماء ويكون وتراً : والرُطب هو : التمر اللين الذي لم ييبس أما اليابس فهو التمر .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ الدعاء عند الفطر وأثناء الصيام : فعن أنس بن مالك رضي الله عنه قال : قال رسول الله صلى الله عليه وسلم : ( ثلاث دعوات لا تُرد دعوة الوالد ودعوة الصائم ودعوة المُسافر ) رواه البيهقي وصححه الشيخ الألباني رحمه الله .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ الدعاء عند الفطر بما يأتي : عن عبدالله بن عمر رضي الله عنهما قال : ( كان رسول الله صلى الله عليه وسلم إذا أفطر قال ذهب الظمأ وابتلت العروق وثبت الأجر إن شاء الله ) رواه أبوداود والنسائي والبيهقي والدارقطني وحسنه الشيخ الألباني رحمه الله .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ الجُود ومُدارسة القرآن : والجُود ومُدارسة القرآن مُستحبان في كل وقت إلا أنهما آكد في رمضان فعن ابن عباس رضي الله عنهما قال : ( كان رسول الله صلى الله عليه وسلم أجود الناس وكان أجود ما يكون في رمضان حين يلقاه جبريل وكان جبريل يلقاه في كل ليلة من رمضان فيدارسه القرآن فلرسول الله صلى الله عليه وسلم حين يلقاه جبريل أجود بالخير من الريح المُرسلة ) رواه البخاري ومسلم .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ الاجتهاد في العبادة في العشر الأواخر من رمضان : فعن عائشة رضي الله عنها قالت : ( كان النبي صلى الله عليه وسلم إذا دخل العشر شد مئزره وأحيا ليله وأيقظ أهله ) رواه البخاري .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ الترفع عما يُحبط ثواب الصوم من المعاصي : مثل الكذب والغيبة والنميمة والخُصومة والمراء والبُعد عن جميع الشهوات والمُحرمات فعن أبي هريرة رضي الله عنه قال : قال رسول الله صلى الله عليه وسلم : ( من لم يدع قول الزور والعمل به فليس لله حاجة في أن يدع طعامه وشرابه ) رواه البخاري .<br />
+عن أبي هريرة رضي الله عنه قال : قال رسول الله صلى الله عليه وسلم : ( إذا كان يوم صوم أحدكم فلا يرفث ولا يصخب ) رواه البخاري ومسلم .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ أن يقول إذا شُتم إني صائم : فعن أبي هريرة رضي الله عنه قال : قال رسول الله صلى الله عليه وسلم : ( إذا كان يوم صوم أحدكم فلا يرفث ولا يصخب فإن سابه أحد أو قاتله فليقل إني امرؤ صائم ) رواه البخاري ومسلم .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">ويُستحب أن يجهر بها سواء كان صومه فريضة أو نافلة وهو اختيار شيخ الإسلام ابن تيمية رحمه الله وفي هذا فائدتان :<br />
+1- علم الشاتم بأن المشتوم لم يترك مُقابلته إلا لكونه صائماً لا لعجزه .<br />
+2- تذكير الشاتم بأن الصائم لا يُشاتم أحداً فيكون مُتضمناً نهيه عن الشتم .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">● أخي الحبيب :</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">● أكتفي بهذا القدر وللحديث بقية في الجزء العاشر إن شاء الله .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">● وأسأل الله عز وجل أن يكون هذا البيان شافياً كافياً في توضيح المراد وأسأله سبحانه أن يرزقنا التوفيق والصواب في القول والعمل .<br />
+● وما كان من صواب فمن الله وما كان من خطأ أو زلل فمنى ومن الشيطان والله ورسوله من بريئان والله الموفق وصلي اللهم علي نبينا محمد وعلي آله وأصحابه أجمعين .</span></font><br />
+<font color="#1D2129"><span style="font-family: Helvetica">■ ■ ■ ■ ■<br />
+لا تنسونا من الدعاء<br />
+أخوكم / عبد رب الصالحين العتموني<br />
+مصر / محافظة سوهاج / مركز طما / قرية العتامنة <br />
+01002889832 / 01144316595</span></font>
+				</blockquote>
+			</div>
+
+			
+
+
+		</div>
+		
+				
+			
+
+			
+		</div>
+	</div>
+	<div class="postfoot">
+		<div class="textcontrols floatcontainer">
+			<span class="postcontrols">
+				<img style="display:none" id="progress_908615" src="images/metro/purple/misc/progress.gif" alt="" />
+				
+				
+				
+					<a id="qrwq_908615" class="newreply" href="newreply.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=newreply&amp;p=908615" rel="nofollow" title="رد مع اقتباس"><img id="quoteimg_908615" src="clear.gif" alt="رد مع اقتباس" />  رد مع اقتباس</a> 
+				
+				
+				
+			</span>
+			<span class="postlinking">
+				
+					
+				
+				
+
+				 
+				
+
+					
+
+					
+					 
+
+					
+					
+					
+					
+					
+			</span>
+		</div>
+	</div>
+	<hr />
+</li>
+
+		</ol>
+		<div class="separator"></div>
+		<div class="postlistfoot">
+			
+		</div>
+
+	
+
+</div>
+
+<div id="below_postlist" class="noinlinemod below_postlist">
+	
+	<div id="pagination_bottom" class="pagination_bottom">
+	
+		<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+	
+		<span class="shade">الانتقال السريع</span>
+		<a href="showthread.php?t=174512&amp;s=696d1a7d9adaea36633b28fa7c3827c1" class="popupctrl"><span class="ctrlcontainer">مجلس الفقه وأصوله</span></a>
+		<a href="showthread.php?t=174512#top" class="textcontrol" onclick="document.location.hash='top';return false;">الأعلى</a>
+	
+	<ul class="navpopupbody popupbody popuphover">
+		
+		<li class="optionlabel">أقسام المنتدى</li>
+		<li><a href="usercp.php?s=696d1a7d9adaea36633b28fa7c3827c1">لوحة التحكم</a></li>
+		<li><a href="private.php?s=696d1a7d9adaea36633b28fa7c3827c1">الرسائل الخاصة</a></li>
+		<li><a href="subscription.php?s=696d1a7d9adaea36633b28fa7c3827c1">الاشتراكات</a></li>
+		<li><a href="online.php?s=696d1a7d9adaea36633b28fa7c3827c1">المتواجدون الآن</a></li>
+		<li><a href="search.php?s=696d1a7d9adaea36633b28fa7c3827c1">البحث في المنتدى</a></li>
+		<li><a href="index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الصفحة الرئيسية للمنتدى</a></li>
+		
+			<li class="optionlabel">المنتديات</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=1&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس العلوم الشرعية</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=3&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس الشرعي العام</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=2&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس العقيدة والقضايا الفكرية المعاصرة</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=14&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس التفسير وعلوم القرآن</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=11&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الحديث وعلومه</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=15&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الفقه وأصوله</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=25&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس السيرة النبوية والتاريخ والتراجم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=32&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الرقائق وتهذيب السلوك وتزكية النفوس</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=10&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس اللغة العربية وعلومها</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=23&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس الأدب الإسلامي</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=34&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس تراجم العلماء وطلبة العلم المعاصرين</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=20&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المنهجية في طلب العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=18&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الكتب والمخطوطات</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=9&amp;s=696d1a7d9adaea36633b28fa7c3827c1">أخبار الكتب</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=8&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجلس المخطوطات</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=21&amp;s=696d1a7d9adaea36633b28fa7c3827c1">مجالس النساء</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=12&amp;s=696d1a7d9adaea36633b28fa7c3827c1">المجلس العام لطالبات العلم</a></li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=33&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة طالبات العلم</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+			
+				<li><a href="forumdisplay.php?f=19&amp;s=696d1a7d9adaea36633b28fa7c3827c1">الاستراحة</a>
+					<ol class="d1">
+						
+		
+			
+				<li><a href="forumdisplay.php?f=4&amp;s=696d1a7d9adaea36633b28fa7c3827c1">استراحة المجلس</a></li>
+			
+		
+			
+					</ol>
+				</li>
+			
+		
+		
+	</ul>
+</div>
+<div class="clear"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+	<!-- next / previous links -->
+	<div class="navlinks">
+		
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<strong>&laquo;</strong>
+				<a href="showthread.php?t=174492&amp;s=696d1a7d9adaea36633b28fa7c3827c1">زكاة الفطر</a>
+-->
+
+			
+			 | 
+			
+
+<!-- Hide next / previous links be Abdeldayem 24-04-2024
+				<a href="showthread.php?t=174534&amp;s=696d1a7d9adaea36633b28fa7c3827c1">بين التكريم والتكليف</a>
+				<strong>&raquo;</strong>
+-->
+			
+		
+	</div>
+	<!-- / next / previous links -->
+
+<div id="thread_info" class="thread_info block">
+
+
+
+	
+	
+	
+	
+	
+	<h4 class="threadinfohead blockhead">الكلمات الدلالية لهذا الموضوع</h4>
+	<div id="thread_tags_list" class="thread_info_block blockbody formcontrols">
+		<div class="inner_block">
+			
+			<div id='tag_list_cell'>
+				
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A3%D8%AD%D9%83%D8%A7%D9%85">أحكام</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%A3%D9%88%D9%84">الأول</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%AA%D8%A7%D8%B3%D8%B9">التاسع</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB">الثالث</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86">الثامن</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A">الثاني</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%AC%D8%B2%D8%A1">الجزء</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3">الخامس</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9">الرابع</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%B3%D8%A7%D8%A8%D8%B9">السابع</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3">السادس</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%85">الصيام</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%D9%85%D9%8F%D8%AE%D8%AA%D8%B5%D8%B1">مُختصر</a>، 
+		
+			<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;tag=%E2%96%A0">■</a>
+		
+
+<img src="images/metro/purple/misc/11x11progress.gif" id="tag_form_progress" class="inlineimg hidden" alt="" />
+			</div>
+			<p>
+				<a href="tags.php?s=696d1a7d9adaea36633b28fa7c3827c1">عرض سحابة الكلمة الدلالية</a>
+			</p>
+		</div>
+	</div>
+	
+	<div class="options_block_container">
+		
+		<div class="options_block">
+			<h4 class="collapse blockhead options_correct">
+				<a class="collapse" id="collapse_posting_rules" href="showthread.php?t=174512#top"><img src="images/metro/purple/buttons/collapse_40b.png" alt="" /></a>
+				ضوابط المشاركة
+			</h4>
+			<div id="posting_rules" class="thread_info_block blockbody formcontrols floatcontainer options_correct">
+				
+<div id="forumrules" class="info_subblock">
+
+	<ul class="youcandoblock">
+		<li><strong>لا تستطيع</strong> إضافة مواضيع جديدة</li>
+		<li><strong>لا تستطيع</strong> الرد على المواضيع</li>
+		<li><strong>لا تستطيع</strong> إرفاق ملفات</li>
+		<li><strong>لا تستطيع</strong> تعديل مشاركاتك</li>
+		<li>&nbsp;</li>
+	</ul>
+	<div class="bbcodeblock">
+		<ul>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode" target="_blank">أكواد المنتدى</a>  <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showsmilies" target="_blank">الابتسامات</a> <strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#imgcode" target="_blank">كود [IMG]</a><strong>متاحة</strong></li>
+			<li><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=bbcode#videocode" target="_blank">[VIDEO]</a> الكود هو <strong>متاحة</strong></li>
+			<li>كود HTML <strong>معطلة</strong></li>
+		</ul>
+	</div>
+	<p class="rules_link"><a href="misc.php?s=696d1a7d9adaea36633b28fa7c3827c1&amp;do=showrules" target="_blank">قوانين المنتدى</a></p>
+
+</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- lightbox
+<script src="../lightbox/lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+  document.getElementById("eidlightb").click(); //simulates a link click
+  setTimeout('document.getElementsByClassName("lb-close")[0].click();', 10000); //waits 10 seconds and then hides closes the lightbox window
+  });
+  </script>
+-->
+
+
+
+
+
+<div id="footer" class="floatcontainer footer">
+
+	<form action="index.php" method="get" id="footer_select" class="footer_select">
+
+		
+			<select name="styleid" onchange="switch_id(this, 'style')">
+				<optgroup label="اختيار التصميم السريع"><option class="hidden"></option></optgroup>
+				
+					
+					<optgroup label="&nbsp;الستايلات الرئيسية">
+									
+					
+	<option value="25" class="" >-- Metro Fluid</option>
+
+	<option value="27" class="" >-- Metro Orange Fluid</option>
+
+	<option value="29" class="" >-- Metro Green Fluid</option>
+
+	<option value="31" class="" >-- Metro Red Fluid</option>
+
+	<option value="33" class="" >-- Metro Teal Fluid</option>
+
+	<option value="35" class="" >-- Metro Golden Fluid</option>
+
+	<option value="37" class="" >-- Metro Violet Red Fluid</option>
+
+	<option value="39" class="" selected="selected">-- Alukah</option>
+
+	<option value="41" class="" >-- Metro Lime Fluid</option>
+
+	<option value="43" class="" >-- Metro Black &amp; White Fluid</option>
+
+					
+					</optgroup>
+										
+				
+				
+					
+					<optgroup label="&nbsp;ستايلات الجوال">
+					
+					
+	<option value="57" class="" >-- Metro Mobile Golden</option>
+
+					
+					</optgroup>
+										
+				
+			</select>	
+		
+		
+		
+	</form>
+
+	<ul id="footer_links" class="footer_links">
+		<li><a href="sendmessage.php?s=696d1a7d9adaea36633b28fa7c3827c1" rel="nofollow" accesskey="9">الاتصال بنا</a>  |  </li>
+		<li><a href="www.alukah.net">الألوكة</a>  |  </li>
+		
+		
+		<li><a href="archive/index.php?s=696d1a7d9adaea36633b28fa7c3827c1">الأرشيف</a>  |  </li>
+		
+		
+		
+		<li><a href="showthread.php?t=174512#top" onclick="document.location.hash='top'; return false;">الأعلى</a></li>
+	</ul>
+	
+	
+	
+	
+	<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+        
+</div>
+</div> <!-- closing div for body_wrapper -->
+
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">الساعة الآن <span class="time">04:36 PM</span></div>
+
+<div id="footer_copyright" class="shade footer_copyright">
+	<!-- Do not remove this copyright notice -->
+	Powered by <a href="https://www.vbulletin.com" id="vbulletinlink">®vBulletin</a><br />Copyright &copy; 2024 vBulletin Solutions، Inc. All rights reserved. 
+	<!-- Do not remove this copyright notice -->	
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	<!-- Do not remove cronimage or your scheduled tasks will cease to function -->
+	
+	
+</div>
+
+ 
+
+
+<!--
+<p align="center">
+<a href="https://www.alexa.com/siteinfo/alukah.net"><script type="text/javascript" src="https://xslt.alexa.com/site_stats/js/t/a?url=alukah.net"></script></a></p>
+-->
+
+</div>
+</body>
+</html>
